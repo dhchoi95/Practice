@@ -1,0 +1,421 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  OWNER
+  MANAGER
+  STAFF
+}
+
+enum TxType {
+  RECEIPT
+  USAGE
+  WASTE
+  COUNT
+  SALE_CORRECTION
+}
+
+enum ReservationStatus {
+  PENDING
+  CONFIRMED
+  SEATED
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+enum OrderStatus {
+  DRAFT
+  ORDERED
+  PARTIALLY_RECEIVED
+  RECEIVED
+  CANCELLED
+}
+
+enum FinanceType {
+  INCOME
+  EXPENSE
+}
+
+enum MaintenanceStatus {
+  OPEN
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+model User {
+  id           String        @id @default(uuid()) @db.Uuid
+  email        String        @unique
+  passwordHash String
+  name         String
+  active       Boolean       @default(true)
+  createdAt    DateTime      @default(now())
+  memberships  StoreMember[]
+}
+
+model Organization {
+  id          String   @id @default(uuid()) @db.Uuid
+  name        String
+  ownerUserId String   @db.Uuid
+  stores      Store[]
+  createdAt   DateTime @default(now())
+}
+
+model Store {
+  id             String                 @id @default(uuid()) @db.Uuid
+  organizationId String                 @db.Uuid
+  name           String
+  timezone       String                 @default("Asia/Seoul")
+  active         Boolean                @default(true)
+  organization   Organization           @relation(fields: [organizationId], references: [id])
+  members        StoreMember[]
+  menus          Menu[]
+  ingredients    Ingredient[]
+  inventory      Inventory[]
+  transactions   InventoryTransaction[]
+  sales          DailySale[]
+  reservations   Reservation[]
+  tables         DiningTable[]
+  suppliers      Supplier[]
+  orders         PurchaseOrder[]
+  facilities     Facility[]
+  maintenance    MaintenanceRequest[]
+  finances       FinancialTransaction[]
+  createdAt      DateTime               @default(now())
+}
+
+model StoreMember {
+  id      String  @id @default(uuid()) @db.Uuid
+  storeId String  @db.Uuid
+  userId  String  @db.Uuid
+  role    Role
+  active  Boolean @default(true)
+  store   Store   @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([storeId, userId])
+  @@index([userId, active])
+}
+
+model StoreInvitation {
+  id         String    @id @default(uuid()) @db.Uuid
+  storeId    String    @db.Uuid
+  email      String
+  role       Role
+  tokenHash  String    @unique
+  expiresAt  DateTime
+  acceptedAt DateTime?
+  invitedBy  String    @db.Uuid
+  createdAt  DateTime  @default(now())
+
+  @@index([storeId, email])
+}
+
+model Menu {
+  id       String      @id @default(uuid()) @db.Uuid
+  storeId  String      @db.Uuid
+  name     String
+  priceWon BigInt
+  active   Boolean     @default(true)
+  store    Store       @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  recipes  Recipe[]
+  sales    DailySale[]
+
+  @@unique([storeId, name])
+}
+
+model Ingredient {
+  id           String                 @id @default(uuid()) @db.Uuid
+  storeId      String                 @db.Uuid
+  name         String
+  unit         String
+  minimumQty   Decimal                @db.Decimal(18, 3)
+  targetQty    Decimal                @db.Decimal(18, 3)
+  packQty      Decimal                @db.Decimal(18, 3)
+  unitCost     Decimal                @default(0) @db.Decimal(18, 6)
+  supplierId   String?                @db.Uuid
+  active       Boolean                @default(true)
+  store        Store                  @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  inventory    Inventory?
+  transactions InventoryTransaction[]
+  recipeItems  RecipeItem[]
+  orderItems   PurchaseOrderItem[]
+
+  @@unique([storeId, name])
+}
+
+model Recipe {
+  id            String       @id @default(uuid()) @db.Uuid
+  menuId        String       @db.Uuid
+  version       Int
+  effectiveFrom DateTime     @default(now())
+  active        Boolean      @default(true)
+  menu          Menu         @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  items         RecipeItem[]
+  sales         DailySale[]
+
+  @@unique([menuId, version])
+}
+
+model RecipeItem {
+  id           String     @id @default(uuid()) @db.Uuid
+  recipeId     String     @db.Uuid
+  ingredientId String     @db.Uuid
+  quantity     Decimal    @db.Decimal(18, 3)
+  recipe       Recipe     @relation(fields: [recipeId], references: [id], onDelete: Cascade)
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+
+  @@unique([recipeId, ingredientId])
+}
+
+model Inventory {
+  id           String     @id @default(uuid()) @db.Uuid
+  storeId      String     @db.Uuid
+  ingredientId String     @unique @db.Uuid
+  quantity     Decimal    @default(0) @db.Decimal(18, 3)
+  version      Int        @default(0)
+  store        Store      @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+}
+
+model InventoryTransaction {
+  id             String     @id @default(uuid()) @db.Uuid
+  storeId        String     @db.Uuid
+  ingredientId   String     @db.Uuid
+  quantityDelta  Decimal    @db.Decimal(18, 3)
+  type           TxType
+  occurredAt     DateTime   @default(now())
+  idempotencyKey String
+  payloadHash    String?
+  reason         String?
+  actorId        String     @db.Uuid
+  sourceId       String?
+  createdAt      DateTime   @default(now())
+  store          Store      @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  ingredient     Ingredient @relation(fields: [ingredientId], references: [id])
+
+  @@unique([storeId, idempotencyKey])
+  @@index([storeId, ingredientId, createdAt])
+}
+
+model DailySale {
+  id             String      @id @default(uuid()) @db.Uuid
+  storeId        String      @db.Uuid
+  menuId         String      @db.Uuid
+  businessDate   DateTime    @db.Date
+  quantity       Int
+  unitPriceWon   BigInt
+  discountWon    BigInt      @default(0)
+  refundWon      BigInt      @default(0)
+  revision       Int         @default(1)
+  recipeId       String?     @db.Uuid
+  recipeSnapshot Json
+  idempotencyKey String
+  createdBy      String      @db.Uuid
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  store          Store       @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  menu           Menu        @relation(fields: [menuId], references: [id])
+  recipe         Recipe?     @relation(fields: [recipeId], references: [id])
+  events         SaleEvent[]
+
+  @@unique([storeId, menuId, businessDate])
+  @@unique([storeId, idempotencyKey])
+  @@index([storeId, businessDate])
+}
+
+model SaleEvent {
+  id             String    @id @default(uuid()) @db.Uuid
+  saleId         String    @db.Uuid
+  kind           String
+  revision       Int
+  quantityDelta  Int
+  amountDelta    BigInt
+  idempotencyKey String
+  payloadHash    String?
+  occurredAt     DateTime  @default(now())
+  businessDate   DateTime? @db.Date
+  createdAt      DateTime  @default(now())
+  sale           DailySale @relation(fields: [saleId], references: [id], onDelete: Cascade)
+
+  @@unique([saleId, idempotencyKey])
+}
+
+model DiningTable {
+  id           String        @id @default(uuid()) @db.Uuid
+  storeId      String        @db.Uuid
+  label        String
+  capacity     Int
+  active       Boolean       @default(true)
+  store        Store         @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  reservations Reservation[]
+
+  @@unique([storeId, label])
+  @@index([storeId])
+}
+
+model Reservation {
+  id           String            @id @default(uuid()) @db.Uuid
+  storeId      String            @db.Uuid
+  customerName String
+  phone        String?
+  startAt      DateTime
+  endAt        DateTime
+  partySize    Int
+  tableId      String?           @db.Uuid
+  source       String
+  status       ReservationStatus @default(CONFIRMED)
+  note         String?
+  createdBy    String            @db.Uuid
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  store        Store             @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  table        DiningTable?      @relation(fields: [tableId], references: [id])
+
+  @@index([storeId, startAt, endAt])
+}
+
+model Supplier {
+  id      String          @id @default(uuid()) @db.Uuid
+  storeId String          @db.Uuid
+  name    String
+  contact String?
+  active  Boolean         @default(true)
+  store   Store           @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  orders  PurchaseOrder[]
+
+  @@unique([storeId, name])
+}
+
+model PurchaseOrder {
+  id         String              @id @default(uuid()) @db.Uuid
+  storeId    String              @db.Uuid
+  supplierId String?             @db.Uuid
+  status     OrderStatus         @default(DRAFT)
+  note       String?
+  createdBy  String              @db.Uuid
+  createdAt  DateTime            @default(now())
+  updatedAt  DateTime            @updatedAt
+  store      Store               @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  supplier   Supplier?           @relation(fields: [supplierId], references: [id])
+  items      PurchaseOrderItem[]
+  receipts   PurchaseReceipt[]
+
+  @@index([storeId, status])
+}
+
+model PurchaseOrderItem {
+  id           String        @id @default(uuid()) @db.Uuid
+  orderId      String        @db.Uuid
+  ingredientId String        @db.Uuid
+  orderedQty   Decimal       @db.Decimal(18, 3)
+  receivedQty  Decimal       @default(0) @db.Decimal(18, 3)
+  unitPriceWon BigInt
+  order        PurchaseOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  ingredient   Ingredient    @relation(fields: [ingredientId], references: [id])
+
+  @@unique([orderId, ingredientId])
+}
+
+model PurchaseReceipt {
+  id             String        @id @default(uuid()) @db.Uuid
+  orderId        String        @db.Uuid
+  idempotencyKey String
+  payloadHash    String?
+  actorId        String        @db.Uuid
+  receivedAt     DateTime      @default(now())
+  order          PurchaseOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@unique([orderId, idempotencyKey])
+}
+
+model Facility {
+  id               String               @id @default(uuid()) @db.Uuid
+  storeId          String               @db.Uuid
+  name             String
+  category         String
+  status           String               @default("NORMAL")
+  nextInspectionAt DateTime?
+  memo             String?
+  store            Store                @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  maintenance      MaintenanceRequest[]
+  history          MaintenanceHistory[]
+
+  @@index([storeId, nextInspectionAt])
+}
+
+model MaintenanceRequest {
+  id          String               @id @default(uuid()) @db.Uuid
+  storeId     String               @db.Uuid
+  facilityId  String               @db.Uuid
+  title       String
+  description String?
+  status      MaintenanceStatus    @default(OPEN)
+  reportedBy  String               @db.Uuid
+  costWon     BigInt?
+  completedAt DateTime?
+  createdAt   DateTime             @default(now())
+  store       Store                @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  facility    Facility             @relation(fields: [facilityId], references: [id])
+  history     MaintenanceHistory[]
+
+  @@index([storeId, status])
+}
+
+model MaintenanceHistory {
+  id                     String                @id @default(uuid()) @db.Uuid
+  storeId                String                @db.Uuid
+  facilityId             String                @db.Uuid
+  requestId              String?               @db.Uuid
+  eventType              String
+  performedAt            DateTime              @default(now())
+  memo                   String?
+  financialTransactionId String?               @unique @db.Uuid
+  actorId                String?               @db.Uuid
+  facility               Facility              @relation(fields: [facilityId], references: [id])
+  request                MaintenanceRequest?   @relation(fields: [requestId], references: [id])
+  financialTransaction   FinancialTransaction? @relation(fields: [financialTransactionId], references: [id])
+
+  @@index([storeId, performedAt])
+}
+
+model FinancialTransaction {
+  id                 String              @id @default(uuid()) @db.Uuid
+  storeId            String              @db.Uuid
+  occurredAt         DateTime
+  type               FinanceType
+  category           String
+  amountWon          BigInt
+  description        String?
+  sourceType         String?
+  sourceId           String?
+  idempotencyKey     String
+  actorId            String              @db.Uuid
+  createdAt          DateTime            @default(now())
+  store              Store               @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  maintenanceHistory MaintenanceHistory?
+
+  @@unique([storeId, idempotencyKey])
+  @@unique([storeId, sourceType, sourceId])
+  @@index([storeId, occurredAt])
+}
+
+model AuditLog {
+  id            String   @id @default(uuid()) @db.Uuid
+  storeId       String   @db.Uuid
+  actorId       String   @db.Uuid
+  action        String
+  entityType    String
+  entityId      String
+  occurredAt    DateTime @default(now())
+  changeSummary Json?
+
+  @@index([storeId, occurredAt])
+}

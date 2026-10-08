@@ -1,0 +1,7 @@
+function scaled(value:string|number){const s=String(value);if(!/^\d+(\.\d{1,3})?$/.test(s))throw new Error('invalid quantity');const [whole,frac='']=s.split('.');return BigInt(whole)*1000n+BigInt(frac.padEnd(3,'0'))}
+function formatScaled(n:bigint){const w=n/1000n,f=String(n%1000n).padStart(3,'0').replace(/0+$/,'');return f?`${w}.${f}`:String(w)}
+export function recommendOrderDecimal(current:string|number,minimum:string|number,target:string|number,pack:string|number,incoming:string|number=0){const c=scaled(current),m=scaled(minimum),t=scaled(target),p=scaled(pack),inc=scaled(incoming);if(c>m)return '0';if(p<=0n||t<m)throw new Error('invalid stock policy');const needed=t-c-inc;if(needed<=0n)return '0';return formatScaled(((needed+p-1n)/p)*p)}
+export function recommendOrder(current:number,minimum:number,target:number,pack:number,incoming=0){return Number(recommendOrderDecimal(current,minimum,target,pack,incoming))}
+export function saleNet(quantity:number,unitPrice:bigint,discount:bigint,refund=0n){if(!Number.isSafeInteger(quantity)||quantity<0||unitPrice<0n||discount<0n||refund<0n)throw new Error('invalid sale');const gross=BigInt(quantity)*unitPrice;if(discount>gross||refund>gross-discount)throw new Error('adjustments exceed gross');return gross-discount-refund}
+export function intervalsOverlap(aStart:Date,aEnd:Date,bStart:Date,bEnd:Date){return aStart<bEnd&&bStart<aEnd}
+export function parseWon(value:unknown){if(typeof value!=='string'||!/^\d{1,12}$/.test(value))throw new Error('invalid amount');return BigInt(value)}
