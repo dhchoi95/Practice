@@ -411,6 +411,7 @@ export default function Workspace({
                   <>
                     <Metric
                       primary
+                      actionHref={`/${storeId}/sales`}
                       title="오늘 입력된 매출"
                       value={
                         dashboard.todaySaleEntered === false
@@ -707,10 +708,12 @@ export default function Workspace({
                                 className="btn secondary small"
                                 onClick={() => {
                                   setSelectedSale(s);
-                                  window.scrollTo({
-                                    top: 0,
-                                    behavior: 'smooth',
-                                  });
+                                  document
+                                    .querySelector('main.main')
+                                    ?.scrollTo({
+                                      top: 0,
+                                      behavior: 'smooth',
+                                    });
                                 }}
                               >
                                 정정
@@ -1405,10 +1408,12 @@ export default function Workspace({
                                 className="btn secondary small"
                                 onClick={() => {
                                   setSelectedReservation(r);
-                                  window.scrollTo({
-                                    top: 0,
-                                    behavior: 'smooth',
-                                  });
+                                  document
+                                    .querySelector('main.main')
+                                    ?.scrollTo({
+                                      top: 0,
+                                      behavior: 'smooth',
+                                    });
                                 }}
                               >
                                 내용 변경
@@ -2122,11 +2127,13 @@ function Metric({
   value,
   note,
   primary = false,
+  actionHref,
 }: {
   title: string;
   value: string;
   note: string;
   primary?: boolean;
+  actionHref?: string;
 }) {
   return (
     <section className={`card metric-card ${primary ? 'primary' : ''}`}>
@@ -2135,6 +2142,11 @@ function Metric({
       <p className="muted" style={{ fontSize: 13, margin: 0, lineHeight: 1.6 }}>
         {note}
       </p>
+      {actionHref && (
+        <Link className="hero-action" href={actionHref}>
+          하루 판매 정리 →
+        </Link>
+      )}
     </section>
   );
 }

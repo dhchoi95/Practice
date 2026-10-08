@@ -53,7 +53,8 @@ test.describe('owner workflow on a 360px phone viewport', () => {
     const inventory = page.getByRole('table').first();
     await expect(inventory).toContainText(/80(?:\.0+)? 개/);
 
-    await page.getByRole('link', { name: '발주' }).click();
+    await page.getByRole('button', { name: '더보기', exact: true }).click();
+    await page.getByRole('link', { name: '발주', exact: true }).click();
     await expect(
       page.getByText('60 개', { exact: false }).first(),
     ).toBeVisible();
@@ -89,7 +90,8 @@ test.describe('owner workflow on a 360px phone viewport', () => {
       '예약을 등록했습니다.',
     );
 
-    await page.getByRole('link', { name: '시설' }).click();
+    await page.getByRole('button', { name: '더보기', exact: true }).click();
+    await page.getByRole('link', { name: '시설', exact: true }).click();
     await page
       .getByLabel('문제 요약')
       .fill(`E2E repair ${fixture.suffix.slice(0, 8)}`);
@@ -112,7 +114,7 @@ test.describe('owner workflow on a 360px phone viewport', () => {
     );
     await expect(page.getByText('수리비 50,000원')).toBeVisible();
 
-    await page.getByRole('link', { name: '대시보드' }).click();
+    await page.getByRole('link', { name: '오늘', exact: true }).click();
     await expect(
       page.getByRole('heading', { name: '매장의 하루, 한눈에' }),
     ).toBeVisible();
@@ -129,6 +131,21 @@ test.describe('owner workflow on a 360px phone viewport', () => {
       scrollWidth: document.documentElement.scrollWidth,
     }));
     expect(desktop.width).toBe(1440);
+    const shell = page.locator('.app-shell');
+    const bounds = await shell.boundingBox();
+    expect(bounds?.width).toBeLessThanOrEqual(480);
+    expect(bounds?.x).toBeGreaterThan(0);
+    await expect(
+      page.getByRole('navigation', { name: '주요 메뉴' }),
+    ).toBeVisible();
+    await page.getByRole('button', { name: '더보기', exact: true }).click();
+    await expect(
+      page.getByRole('link', { name: '설정', exact: true }),
+    ).toBeVisible();
+    await page.getByRole('button', { name: '닫기', exact: true }).click();
+    await expect(
+      page.getByRole('link', { name: '설정', exact: true }),
+    ).not.toBeVisible();
     expect(desktop.scrollWidth).toBeLessThanOrEqual(desktop.width);
   });
 });

@@ -52,6 +52,14 @@ try {
         fullPage: true,
       });
   }
+  await page.goto(`${origin}/${storeId}/dashboard`);
+  await page.waitForFunction(
+    () => !document.body.textContent.includes('매장 기록을 불러오고 있습니다'),
+  );
+  await page.getByRole('button', { name: '더보기', exact: true }).click();
+  await page.getByRole('link', { name: '설정', exact: true }).waitFor();
+  await page.screenshot({ path: 'artifacts/more-desktop.png', fullPage: true });
+  await page.getByRole('button', { name: '닫기', exact: true }).click();
   await page.setViewportSize({ width: 360, height: 800 });
   for (const section of ['dashboard', 'inventory']) {
     await page.goto(`${origin}/${storeId}/${section}`);
