@@ -29,3 +29,9 @@ GitHub의 `.github/workflows/content-quality.yml`은 저장소에 반영된 뒤 
 `content-feedback-template.json`이 예시입니다. 메뉴·문장 인용·모호하거나 부정확한 부분·원하는 설명 방향이면 충분합니다. 방문자 출생정보를 수집하지 않습니다. 재현이 필요하면 가상의 평가 사례 ID와 계산 feature를 연결합니다.
 
 독립 검토 전에는 원고를 `human-reviewed`로 바꾸지 않습니다. 이번 지적도 `implemented-pending-independent-review` 상태로 남깁니다.
+
+## 1.2.0에서 추가한 절차
+
+현재 수용 사례는 29개(기존 23개 보존)다. 자유문 counterExample의 존재와 의미 검증 완료를 구분한다. `semantic-cases.json`의 10개는 사람 검토 대기로 유지한다. `content:review`로 실제 원고·주장 해시와 출처 상태를 확인하고, `content:assembled`로 전체 결과의 반복·충돌·구체성·범위를 검토한다. 시범 복합 조건 4개는 `content:compound`의 명시적 로컬 실험에서만 포함한다. 검토 전 draft는 일반 repository와 빌드에 들어가지 않는다.
+
+새 작업에서는 먼저 baseline 해시와 실패 입력을 고정하고, 수정 후 verify/build/브라우저/실제 PDF를 실행한다. 기존 검토 해시와 달라진 주장은 새 버전의 검토 기록으로 연결한다. 자동 스크립트는 human-reviewed나 독립 승인 상태를 부여하지 않는다. 1.2.0의 상세 구조·실제 명령·남은 검토 후보는 `content-schema-1.2.0.md`, `content-improvement-1.2.0.md`, `content-review/assembled-notes.md`를 따른다. 이 문서 앞부분의 23개/135개는 1.1.0 당시의 기록이다.

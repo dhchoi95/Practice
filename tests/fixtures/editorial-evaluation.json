@@ -15,7 +15,20 @@
     ],
     "forbiddenRuleIds": [
       "relation-love-order"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-love-7-interpretation",
+      "relation-love-output-interpretation"
+    ],
+    "forbiddenClaimIds": [
+      "relation-love-order-interpretation"
+    ],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "same-stem-order-context",
@@ -33,7 +46,20 @@
     ],
     "forbiddenRuleIds": [
       "relation-love-output"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-love-7-interpretation",
+      "relation-love-order-interpretation"
+    ],
+    "forbiddenClaimIds": [
+      "relation-love-output-interpretation"
+    ],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "unknown-hour-known-day",
@@ -50,7 +76,17 @@
     ],
     "forbiddenRuleIds": [
       "neutral"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-personality-7-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "dst-unknown-personality",
@@ -66,7 +102,18 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "dst-unknown-general",
@@ -82,7 +129,18 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "peer-career-specific",
@@ -94,7 +152,18 @@
     "expectedRuleIds": [
       "core-careermoney-0",
       "relation-careermoney-peer"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-careermoney-0-interpretation",
+      "relation-careermoney-peer-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "output-relationships-specific",
@@ -106,7 +175,18 @@
     "expectedRuleIds": [
       "core-relationships-2",
       "relation-relationships-output"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-relationships-2-interpretation",
+      "relation-relationships-output-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "wealth-single-no-spouse-prediction",
@@ -118,7 +198,18 @@
     "expectedRuleIds": [
       "core-single-4",
       "relation-single-wealth"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-single-4-interpretation",
+      "relation-single-wealth-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "order-mind-no-diagnosis",
@@ -130,7 +221,18 @@
     "expectedRuleIds": [
       "core-mind-6",
       "relation-mind-order"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-mind-6-interpretation",
+      "relation-mind-order-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "resource-general-count-only",
@@ -142,7 +244,18 @@
     "expectedRuleIds": [
       "core-general-8",
       "relation-resource"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-general-8-interpretation",
+      "relation-resource-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "larger-count-wins",
@@ -157,7 +270,19 @@
     ],
     "forbiddenRuleIds": [
       "relation-love-peer"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "relation-love-output-interpretation"
+    ],
+    "forbiddenClaimIds": [
+      "relation-love-peer-interpretation"
+    ],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "count-tie-is-stable",
@@ -172,7 +297,19 @@
     ],
     "forbiddenRuleIds": [
       "relation-love-peer"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "relation-love-output-interpretation"
+    ],
+    "forbiddenClaimIds": [
+      "relation-love-peer-interpretation"
+    ],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "zero-is-not-presence",
@@ -186,6 +323,18 @@
     ],
     "forbiddenRulePrefixes": [
       "relation-"
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-love-0-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "relation-"
     ]
   },
   {
@@ -198,6 +347,18 @@
       "core-love-0"
     ],
     "forbiddenRulePrefixes": [
+      "relation-"
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "core-love-0-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
       "relation-"
     ]
   },
@@ -213,7 +374,18 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "day-period-requires-relation",
@@ -225,7 +397,17 @@
     },
     "expectedRuleIds": [
       "period-day-0"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "period-day-0-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "month-period-requires-relation",
@@ -237,7 +419,17 @@
     },
     "expectedRuleIds": [
       "period-month-5"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "period-month-5-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "year-period-requires-relation",
@@ -249,7 +441,17 @@
     },
     "expectedRuleIds": [
       "period-year-9"
-    ]
+    ],
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [
+      "period-year-9-interpretation"
+    ],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": []
   },
   {
     "id": "unknown-period-neutral",
@@ -265,7 +467,19 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "lichun-partial-day-retained",
@@ -280,7 +494,17 @@
     "forbiddenRulePrefixes": [
       "relation-"
     ],
-    "limited": false
+    "limited": false,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "synthetic-birth-runtime",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "relation-"
+    ]
   },
   {
     "id": "spoofed-year-period-without-day",
@@ -296,7 +520,19 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "spoofed-month-period-without-day",
@@ -312,7 +548,19 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ]
   },
   {
     "id": "spoofed-day-period-without-day",
@@ -328,6 +576,167 @@
       "core-",
       "relation-"
     ],
-    "limited": true
+    "limited": true,
+    "reviewSource": "implementation-author; retained v1.1.0 acceptance case, not independent holdout",
+    "inputKind": "partial-features",
+    "issueIds": [
+      "AUDIT-002"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ]
+  },
+  {
+    "id": "missing-day-spoofed-relation",
+    "category": "love",
+    "features": {
+      "relations.output": 2
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "core-",
+      "relation-"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "core-",
+      "relation-"
+    ],
+    "limited": true,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "null-relation-is-not-zero",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 7,
+      "relations.output": null
+    },
+    "expectedRuleIds": [
+      "core-love-7"
+    ],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ],
+    "expectedClaimIds": [
+      "core-love-7-interpretation"
+    ],
+    "forbiddenClaimPrefixes": [
+      "relation-"
+    ],
+    "limited": false,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "count-order-reversal",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 7,
+      "relations.output": 1,
+      "relations.order": 2
+    },
+    "expectedRuleIds": [
+      "relation-love-order"
+    ],
+    "forbiddenRulePrefixes": [],
+    "expectedClaimIds": [
+      "relation-love-order-interpretation"
+    ],
+    "forbiddenClaimPrefixes": [],
+    "limited": false,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "all-zero-visible-relations",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 7,
+      "relations.peer": 0,
+      "relations.output": 0,
+      "relations.wealth": 0,
+      "relations.order": 0,
+      "relations.resource": 0
+    },
+    "expectedRuleIds": [
+      "core-love-7"
+    ],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ],
+    "expectedClaimIds": [
+      "core-love-7-interpretation"
+    ],
+    "forbiddenClaimPrefixes": [
+      "relation-"
+    ],
+    "limited": false,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "missing-day-spoofed-period",
+    "category": "year",
+    "features": {
+      "period.kind": "year",
+      "period.relation": "편재"
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "period-"
+    ],
+    "expectedClaimIds": [],
+    "forbiddenClaimPrefixes": [
+      "period-"
+    ],
+    "limited": true,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "vowel-ending-visible-day",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 2
+    },
+    "expectedRuleIds": [
+      "core-love-2"
+    ],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ],
+    "expectedClaimIds": [
+      "core-love-2-interpretation"
+    ],
+    "forbiddenClaimPrefixes": [
+      "relation-"
+    ],
+    "limited": false,
+    "inputKind": "partial-features",
+    "reviewSource": "implementation-author; prompted by independent review, not independently labeled",
+    "issueIds": [
+      "CR-01"
+    ]
   }
 ]

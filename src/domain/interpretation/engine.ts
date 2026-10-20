@@ -1,11 +1,14 @@
-import type { Features } from '../saju/types';
+import type { Features,FeaturePath } from '../saju/types';
 import type { Condition, ContentCategory, ContentSystem, InterpretationRule } from './schema';
 import { contentRepository,type ContentRepository } from './repository';
 import { siteConfig } from '@/config/site';
 import { sharedExplanations } from './shared';
 import { interpretationBases,appliedFact } from './knowledge';
+import { reasoningFor } from './reasoning';
 export interface InterpretationSection {id:string;title:string;paragraphs:string[];tips:string[];basis:string[]}
-export interface InterpretationResult {headline:string;keywords:string[];sections:InterpretationSection[];practicalTips:string[];appliedRuleIds:string[];sharedExplanationIds:string[];skippedRuleReasons:{id:string;reason:string}[];limitations:string[];contentVersion:string}
+export interface RuleTrace {ruleId:string;contentVersion:string;reasoningVersion:2;usedFeatures:Features;basisIds:string[];claimIds:string[];displayedParagraphIndexes:number[];displayedTipIndexes:number[];sharedExplanationIds:string[];premises:{id:string;feature:FeaturePath;op:'eq'|'gte';value:string|number;observed:Features[FeaturePath]}[]}
+export interface InterpretationResult {headline:string;keywords:string[];sections:InterpretationSection[];practicalTips:string[];appliedRuleIds:string[];ruleTraces:RuleTrace[];sharedExplanationIds:string[];skippedRuleReasons:{id:string;reason:string}[];limitations:string[];contentVersion:string;ruleEngineVersion:string;basisGroups?:{label:string;basis:string[]}[]}
+export const ruleEngineVersion='2.0.0';
 export function evaluate(c:Condition,f:Features):boolean {
   if('all'in c)return c.all.every(x=>evaluate(x,f));
   if('any'in c)return c.any.some(x=>evaluate(x,f));
@@ -39,6 +42,7 @@ export function selectRules(candidates:InterpretationRule[],features:Features) {
 }
 const sectionOrder=['overview','detail','balance','context','practice'];
 function basisFor(rule:InterpretationRule,features:Features):string[] {
+  if(rule.reasoning)return [...new Set(rule.reasoning.premises.map(p=>appliedFact(interpretationBases.find(b=>b.id===p.basisKey)!,features))),...rule.reasoning.interpretations.map(c=>c.text),rule.evidence?.limitation??'생활 제안은 실제 상황에 맞을 때만 참고해 주세요.'];
   if(rule.evidence){
     const basis=interpretationBases.find(b=>b.id===rule.evidence!.basisKey)!;
     return [appliedFact(basis,features),rule.evidence.rationale,rule.evidence.limitation];
@@ -49,6 +53,16 @@ function basisFor(rule:InterpretationRule,features:Features):string[] {
   if(rule.system!=='saju')return ['직접 선택하거나 달력으로 분류한 유형에 맞춘 가벼운 창작 읽을거리예요.'];
   return ['확정된 기둥에서 확인한 글자의 분류를 바탕으로 더한 보완 설명이에요.'];
 }
+function dependencies(c:Condition):FeaturePath[]{return 'feature'in c?[c.feature]:('all'in c?c.all:c.any).flatMap(dependencies);}
+export function traceRule(rule:InterpretationRule,features:Features,indexes:number[]):RuleTrace{
+  const reasoning=reasoningFor(rule);
+  const keys=[...new Set([...rule.requires,...dependencies(rule.conditions),...(rule.exclusions?dependencies(rule.exclusions):[]),...(rule.rankingFeature?[rule.rankingFeature]:[])])].sort();
+  return {ruleId:rule.id,contentVersion:rule.contentVersion,reasoningVersion:2,usedFeatures:Object.fromEntries(keys.filter(k=>Object.hasOwn(features,k)).map(k=>[k,features[k]])),basisIds:[...new Set(reasoning.premises.map(p=>p.basisKey))],claimIds:[...reasoning.interpretations,...reasoning.proposals].map(c=>c.id),displayedParagraphIndexes:indexes,displayedTipIndexes:rule.practicalTips.map((_,i)=>i),sharedExplanationIds:rule.sharedExplanationId?[rule.sharedExplanationId]:[],premises:reasoning.premises.map(p=>({id:p.id,feature:p.feature,op:p.op,value:p.value,observed:features[p.feature]}))};
+}
+export function traceVisibleTips(trace:RuleTrace,rule:InterpretationRule,tips:string[]):RuleTrace {
+  const reasoning=reasoningFor(rule),displayedTipIndexes=rule.practicalTips.flatMap((tip,i)=>tips.includes(tip)?[i]:[]);
+  return {...trace,displayedTipIndexes,claimIds:[...reasoning.interpretations.map(c=>c.id),...reasoning.proposals.filter(c=>c.tipIndexes.some(i=>displayedTipIndexes.includes(i))).map(c=>c.id)]};
+}
 export function interpret(system:ContentSystem,category:ContentCategory,features:Features,repo:ContentRepository=contentRepository):InterpretationResult {
   const cats:ContentCategory[]=category==='general'?['general','personality','careerMoney','love','relationships']:[category];
   const candidates=repo.find(system,cats).filter(r=>category!=='general'||r.category==='general'||r.section==='overview');
@@ -56,17 +70,27 @@ export function interpret(system:ContentSystem,category:ContentCategory,features
   const ordered=selected.sort((a,b)=>sectionOrder.indexOf(a.section)-sectionOrder.indexOf(b.section)||cats.indexOf(a.category)-cats.indexOf(b.category)||a.id.localeCompare(b.id,'en'));
   const seen=new Set<string>();
   let length=0;
-  const sections=ordered.map(r=>({id:r.id,title:r.title,paragraphs:[...(r.sharedExplanationId?[sharedExplanations.find(s=>s.id===r.sharedExplanationId)!.text]:[]),...(category==='general'&&r.category!=='general'?r.paragraphs.slice(0,2):r.paragraphs)].filter(p=>{if(seen.has(p))return false;seen.add(p);return true;}),tips:r.practicalTips,basis:basisFor(r,features)})).filter(s=>{
-    if(!s.paragraphs.length)return false;
-    const size=s.paragraphs.join('').length;
-    if(category==='general'&&length+size>1800)return false;
-    length+=size;return true;
-  });
+  const ruleTraces:RuleTrace[]=[],sections:InterpretationSection[]=[];
+  for(const r of ordered){
+    const all=[...(r.sharedExplanationId?[sharedExplanations.find(s=>s.id===r.sharedExplanationId)!.text]:[]),...(category==='general'&&r.category!=='general'?r.paragraphs.slice(0,2):r.paragraphs)];
+    const local=new Set<string>();
+    const indexes=all.flatMap((p,i)=>{if(seen.has(p)||local.has(p))return [];local.add(p);return [i];});
+    const paragraphs=indexes.map(i=>all[i]),size=paragraphs.join('').length;
+    if(!paragraphs.length){skipped.push({id:r.id,reason:'표시 문장 중복'});continue;}
+    if(category==='general'&&length+size>1800){skipped.push({id:r.id,reason:'종합 결과 1,800자 제한'});continue;}
+    paragraphs.forEach(p=>seen.add(p));length+=size;
+    sections.push({id:r.id,title:r.title,paragraphs,tips:r.practicalTips,basis:basisFor(r,features)});
+    const trace=traceRule(r,features,indexes);
+    if(r.sharedExplanationId&&!indexes.includes(0))trace.sharedExplanationIds=[];
+    ruleTraces.push(trace);
+  }
   const insufficient=sections.length===0;
   const missingDay=system==='saju'&&(features['natal.dayStem']===null||features['natal.dayStem']===undefined);
   if(missingDay)sections.unshift({id:'unknown-day',title:'일간을 정하지 않고 읽는 안내',paragraphs:['입력한 날짜는 출생 시각에 따라 표준시의 날짜가 달라질 수 있어 일주와 일간을 확정하지 않았어요. 일간을 전제로 한 기본 성향·관계·기간 해석은 적용하지 않아요. 아래에 남은 내용은 확정된 글자의 집계 설명과 일반적인 생활 안내예요.'],tips:['출생 시각을 확인할 수 있다면 시·분을 보완하고 사주표의 미확정 표시가 바뀌는지 확인해 주세요.'],basis:['일간 미확정에 따른 계산 범위 안내이며 개별 성향 해석이 아니에요.']});
   if(insufficient&&!missingDay)sections.push({id:'neutral',title:'확정된 정보부터 살펴볼게요',paragraphs:['지금 확인한 정보로 적용할 수 있는 풀이가 충분하지 않아요. 계산표의 미확정 항목을 확인하거나 출생 시각을 보완해 주세요. 특별한 사주라서 풀이가 안 되는 것은 아니에요.'],tips:['입력 날짜와 시간 모름 선택을 확인해 보세요.'],basis:['필수 feature가 없거나 준비된 콘텐츠와 일치하지 않아 중립 안내를 보여드려요.']});
   const stemKeywords=[['성장','나의 기준','꾸준함'],['유연함','연결','나의 뜻'],['표현','활기','듣는 여유'],['집중','세심함','온기'],['안정','나의 속도','작은 변화'],['돌봄','구체적인 실천','균형'],['결정','분명함','대화'],['섬세함','마무리','적정선'],['탐색','넓은 관점','작은 시작'],['관찰','맥락','마음 표현']];
   const keywords=system!=='saju'?['가벼운 이야기','나의 경험','작은 실천']:missingDay?['확정된 정보','입력 확인']:['year','month','day'].includes(category)?['관계의 균형','일상의 계획','작은 실천']:(stemKeywords[Number(features['natal.dayStem'])]??['확정된 정보','입력 확인']);
-  return {headline:missingDay?'일간이 미확정이라 기본 성향 풀이는 제한해요':sections[0].title,keywords,sections,practicalTips:[...new Set(sections.flatMap(r=>r.tips))].slice(0,5),appliedRuleIds:sections.filter(s=>s.id!=='neutral'&&s.id!=='unknown-day').map(r=>r.id),sharedExplanationIds:[...new Set(ordered.filter(r=>sections.some(s=>s.id===r.id)).flatMap(r=>r.sharedExplanationId?[r.sharedExplanationId]:[]))],skippedRuleReasons:skipped,limitations:[...(insufficient&&!missingDay?['풀이 콘텐츠가 부족해 중립 안내를 보여드려요.']:[]),...(missingDay?['일주를 확정할 수 없어 일간에 의존하는 문장은 제외했어요. 알려진 글자의 설명만 참고해 주세요.'] :[])],contentVersion:siteConfig.contentVersion};
+  const practicalTips=[...new Set(sections.flatMap(r=>r.tips))].slice(0,4);
+  const visibleTraces=ruleTraces.map(t=>traceVisibleTips(t,ordered.find(r=>r.id===t.ruleId)!,practicalTips));
+  return {headline:missingDay?'일간이 미확정이라 기본 성향 풀이는 제한해요':sections[0].title,keywords,sections,practicalTips,appliedRuleIds:visibleTraces.map(r=>r.ruleId),ruleTraces:visibleTraces,sharedExplanationIds:[...new Set(visibleTraces.flatMap(r=>r.sharedExplanationIds))],skippedRuleReasons:skipped,limitations:[...(insufficient&&!missingDay?['풀이 콘텐츠가 부족해 중립 안내를 보여드려요.']:[]),...(missingDay?['일주를 확정할 수 없어 일간에 의존하는 문장은 제외했어요. 알려진 글자의 설명만 참고해 주세요.'] :[])],contentVersion:siteConfig.contentVersion,ruleEngineVersion};
 }

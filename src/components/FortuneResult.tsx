@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { categories,type Category } from '@/config/site';
 import { useSession } from './SessionProvider';
 import { useSeoulDate } from './LiveDate';
+import { composePeriodReading } from '@/domain/interpretation/period-reading';
 import { interpret,type InterpretationResult } from '@/domain/interpretation/engine';
 import { targetPeriod,type PeriodKind,type TargetPeriod } from '@/domain/fortune/period';
 import { CalculationDetails } from './CalculationDetails';
@@ -33,9 +34,7 @@ export function FortuneResult({category}:{category:Category}){
   try{
     if(isPeriod&&birth){
       period=targetPeriod(category.slug as PeriodKind,birth.calculation.dayMaster,{now:()=>new Date(`${today}T12:00:00+09:00`)});
-      const readings=period.segments.map(s=>interpret('saju',category.content,{...birth.calculation.features,...s.features}));
-      const seen=new Set<string>();
-      reading={...readings[0],sections:readings.flatMap(r=>r.sections).filter(s=>{if(seen.has(s.id))return false;seen.add(s.id);return true;}),practicalTips:[...new Set(readings.flatMap(r=>r.practicalTips))],limitations:readings.flatMap(r=>r.limitations)};
+      reading=composePeriodReading(period,birth.calculation.features);
     }else reading=interpret(category.system,category.content,isSaju?birth!.calculation.features:{'light.sign':sign});
   }catch{
     return <section className="empty-state"><h2>이 기간의 계산을 마치지 못했어요</h2><p>기간 운세는 한국시간 1962~2050년을 지원해요. 기기 날짜를 확인하거나 기본 사주풀이를 이용해 주세요.</p><Link prefetch={false} href="/fortune/saju/" className="button primary">기본 사주풀이로 이동</Link></section>;
@@ -63,7 +62,7 @@ export function FortuneResult({category}:{category:Category}){
       {period.segments.map(s=><section className="period-segment" key={s.start}><h3>{s.label}</h3><p>{pillarText(s.pillar)} · 일간과의 관계 {s.features['period.relation']??'미확정'}</p></section>)}
     </div></details>}
     {isSaju&&birth&&<CalculationDetails result={birth.calculation}/>}
-    <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body"><ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul><p>전통적 상징을 바탕으로 독립 작성하고 자동 형식 검사를 거친 원고예요. 독립적인 명리 검토 완료나 미래 예측의 정확성을 뜻하지 않아요. 의료·투자·법률 판단은 실제 정보와 적절한 도움을 바탕으로 해주세요.</p></div></details>
+    <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body">{reading.basisGroups?reading.basisGroups.map(group=><section key={group.label}><h3>{group.label}</h3><ul>{group.basis.map(b=><li key={b}>{b}</li>)}</ul></section>):<ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul>}<p>전통적 상징을 바탕으로 독립 작성하고 자동 형식 검사를 거친 원고예요. 독립적인 명리 검토 완료나 미래 예측의 정확성을 뜻하지 않아요. 의료·투자·법률 판단은 실제 정보와 적절한 도움을 바탕으로 해주세요.</p></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>{isSaju?'입력 수정':'선택 바꾸기'}</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
     <ShareActions slug={category.slug}/>
     <section className="other-readings no-print"><h2>{isSaju?'같은 정보로 다른 풀이 보기':'다른 운세도 가볍게'}</h2><div className="other-links">{categories.filter(c=>isSaju?c.system==='saju':true).map(c=><Link prefetch={false} href={isSaju?`/result/${c.slug}/`:`/fortune/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>

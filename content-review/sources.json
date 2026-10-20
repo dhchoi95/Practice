@@ -1,0 +1,72 @@
+[
+  {
+    "author": null,
+    "checkedLocation": "src/content/rules.json",
+    "checkedAt": "2026-10-20",
+    "reviewer": "implementation-author (소스 확인)",
+    "id": "original-editorial",
+    "kind": "internal-policy",
+    "title": "서비스 독립 창작 원고",
+    "url": null,
+    "identifier": "src/content/rules.json",
+    "applicablePolicy": "KST-MIDNIGHT-1.0 / 내부 해석 정책 1.2.0",
+    "usageScope": "생활 질문과 실행 제안의 내부 집필 정책",
+    "status": "internal-policy"
+  },
+  {
+    "author": null,
+    "checkedLocation": "src/domain/saju/tables.ts",
+    "checkedAt": "2026-10-20",
+    "reviewer": "implementation-author (소스 확인)",
+    "id": "traditional-mapping",
+    "kind": "internal-policy",
+    "title": "공개한 상징·오행·음양 대응 정책",
+    "url": null,
+    "identifier": "src/domain/saju/tables.ts",
+    "applicablePolicy": "KST-MIDNIGHT-1.0 / 내부 해석 정책 1.2.0",
+    "usageScope": "오행·음양 대응과 관계명 정의. 성격·사건의 참값 근거로 사용하지 않음",
+    "status": "internal-policy"
+  },
+  {
+    "author": null,
+    "checkedLocation": null,
+    "checkedAt": null,
+    "reviewer": null,
+    "id": "korean-lunar-calendar",
+    "kind": "software",
+    "title": "korean_lunar_calendar_js",
+    "url": "https://github.com/usingsky/korean_lunar_calendar_js",
+    "identifier": "korean-lunar-calendar",
+    "applicablePolicy": "음양력 변환",
+    "usageScope": "계산 자료에 한정. 해석의 진실성·미래 적중의 증거 아님",
+    "status": "pending-external-check"
+  },
+  {
+    "author": null,
+    "checkedLocation": null,
+    "checkedAt": null,
+    "reviewer": null,
+    "id": "lunar-typescript",
+    "kind": "software",
+    "title": "lunar-typescript",
+    "url": "https://github.com/6tail/lunar-typescript",
+    "identifier": "lunar-typescript",
+    "applicablePolicy": "절기 순간 변환",
+    "usageScope": "계산 자료에 한정. 해석의 진실성·미래 적중의 증거 아님",
+    "status": "pending-external-check"
+  },
+  {
+    "author": null,
+    "checkedLocation": null,
+    "checkedAt": null,
+    "reviewer": null,
+    "id": "iana-tz",
+    "kind": "software",
+    "title": "IANA Time Zone Database",
+    "url": "https://www.iana.org/time-zones",
+    "identifier": "iana-tz",
+    "applicablePolicy": "한국 표준시·서머타임",
+    "usageScope": "계산 자료에 한정. 해석의 진실성·미래 적중의 증거 아님",
+    "status": "pending-external-check"
+  }
+]

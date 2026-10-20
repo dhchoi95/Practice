@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
-    "build": "npm run content:validate && npm run content:evaluate && next build --webpack",
+    "build": "npm run content:validate && npm run content:evaluate && next build --webpack && npm run content:build-policy",
     "start": "node scripts/serve.mjs",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -16,7 +16,11 @@
     "content:preview": "tsx scripts/content-tools.ts preview",
     "content:lint": "tsx scripts/content-tools.ts lint",
     "content:evaluate": "node --import tsx scripts/evaluate-content.ts",
-    "verify": "npm run lint && npm run typecheck && npm test && npm run content:lint && npm run content:coverage && npm run content:evaluate"
+    "verify": "npm run lint && npm run typecheck && npm test && npm run content:lint && npm run content:coverage && npm run content:evaluate && npm run content:review && npm run content:assembled && npm run content:compound",
+    "content:review": "node --import tsx scripts/review-content.ts",
+    "content:assembled": "node --import tsx scripts/evaluate-assembled.ts",
+    "content:compound": "node --import tsx scripts/preview-compound.ts",
+    "content:build-policy": "node scripts/verify-static-content.mjs"
   },
   "engines": {
     "node": "^22.12.0 || ^24.0.0 || >=26.0.0"

@@ -10,7 +10,7 @@ import fitz
 root = Path(__file__).resolve().parents[1]
 checks = {}
 texts = {}
-filenames = ['result-closed.pdf', 'result-open.pdf', 'year-boundary.pdf']
+filenames = ['result-closed.pdf', 'result-open.pdf', 'year-boundary.pdf', 'grammar-copula.pdf', 'grammar-year-trace.pdf']
 filenames += [f'period-{kind}-{state}.pdf' for kind in ['year', 'month', 'day']
               for state in ['unknown', 'known']]
 for filename in filenames:
@@ -24,7 +24,14 @@ for filename in filenames:
         if filename == 'year-boundary.pdf':
             required = ['대상기간과절기구간보기', '2026년', '2027년1월1일00:00',
                         '내사주표와오행살펴보기', '왜이런풀이인가요']
-        forbidden = ['이운세메뉴공유하기']
+        if filename == 'grammar-copula.pdf':
+            required = ['계산된일간은병화예요', '계산표준시:2000-01-0910:30', '왜이런풀이인가요']
+        if filename == 'grammar-year-trace.pdf':
+            required = ['앞구간·편재', '뒤구간·정관', '편재를해당시간범위', '정관을해당시간범위',
+                        '2026년1월1일00:00', '2026년2월4일05:02', '2027년1월1일00:00',
+                        '내사주표와오행살펴보기', '왜이런풀이인가요']
+        forbidden = ['이운세메뉴공유하기', '병화이에요', '무토이에요', '임수이에요', '편재을', '편재이에요',
+                     'period-year-4', 'period-year-7']
         if filename.startswith('period-'):
             _, kind, state = path.stem.split('-')
             required = ['대상기간과절기구간보기', '2026년', '내사주표와오행살펴보기',

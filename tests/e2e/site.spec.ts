@@ -256,3 +256,46 @@ test('disabled JavaScript cannot submit birth data to a server',async({browser})
   const context=await browser.newContext({baseURL:'http://127.0.0.1:3000',javaScriptEnabled:false});const page=await context.newPage();const requests:string[]=[];page.on('request',r=>requests.push(r.url()));
   await page.goto('/fortune/saju/');await fillBirth(page);await expect(page.getByRole('button',{name:/무료로 .* 보기/})).toBeDisabled();await page.getByLabel('일',{exact:true}).press('Enter');await page.waitForLoadState('networkidle');await expect(page).toHaveURL('/fortune/saju/');expect(requests.some(url=>url.includes('year=')||url.includes('1992'))).toBe(false);await expect(page.getByText(/브라우저 안에서 계산하려면 자바스크립트가 필요해요/)).toBeVisible();await context.close();
 });
+
+test('CR-01 vowel-ending explanation is correct on screen and in native PDF',async({page})=>{
+  await page.setViewportSize({width:390,height:900});
+  await page.goto('/fortune/love/');await fillBirth(page,{year:'2000',month:'1',day:'9',knownTime:true});await submit(page);
+  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
+  await why.locator('summary').click();await expect(why).toContainText('계산된 일간은 병화예요');await expect(why).not.toContainText('병화이에요');
+  const before=await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));
+  await fs.mkdir('reports/content-improvement-1.2.0/screenshots',{recursive:true});
+  // Capture from document origin so offscreen fixed skip links stay outside the full-page image.
+  await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
+  await page.screenshot({path:'reports/content-improvement-1.2.0/screenshots/corrected-love-390.png',fullPage:true});
+  await page.pdf({path:'reports/print/grammar-copula.pdf',format:'A4',printBackground:true});
+  expect(await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open))).toEqual(before);
+});
+test('CR-01 and CR-02 annual basis identifies both actual segments without public debug IDs',async({page})=>{
+  await page.setViewportSize({width:390,height:900});await page.clock.install({time:new Date('2026-10-20T03:00:00Z')});
+  await page.goto('/fortune/year/');await fillBirth(page,{knownTime:true});await submit(page);
+  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
+  await why.locator('summary').click();
+  await expect(why.getByRole('heading',{name:'앞 구간 · 편재',exact:true})).toBeVisible();await expect(why.getByRole('heading',{name:'뒤 구간 · 정관',exact:true})).toBeVisible();
+  await expect(why).toContainText('편재를 해당 시간 범위');await expect(why).toContainText('정관을 해당 시간 범위');await expect(why).not.toContainText('편재을');await expect(why).not.toContainText('편재이에요');
+  await expect(page.locator('main')).not.toContainText('period-year-4');await expect(page.locator('main')).not.toContainText('period-year-7');
+  await expect(page.locator('.result-content')).toContainText('앞 구간 ·');await expect(page.locator('.result-content')).toContainText('뒤 구간 ·');
+  await fs.mkdir('reports/content-improvement-1.2.0/screenshots',{recursive:true});
+  // Capture from document origin so offscreen fixed skip links stay outside the full-page image.
+  await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
+  await page.screenshot({path:'reports/content-improvement-1.2.0/screenshots/annual-basis-390.png',fullPage:true});
+  await page.pdf({path:'reports/print/grammar-year-trace.pdf',format:'A4',printBackground:true});
+  await expect(why).toHaveAttribute('open','');
+});
+test('period trace stays in memory and expanded result reflows at 320px and enlarged 390px',async({page,context})=>{
+  const requests:{url:string;body:string}[]=[],logs:string[]=[];
+  page.on('request',r=>requests.push({url:decodeURIComponent(r.url()),body:r.postData()??''}));page.on('console',m=>logs.push(m.text()));
+  await page.clock.install({time:new Date('2026-10-20T03:00:00Z')});await page.goto('/fortune/year/');await fillBirth(page,{knownTime:true,nickname:'기간진단개인정보검사'});await submit(page);
+  await page.getByText('왜 이런 풀이인가요?',{exact:true}).click();
+  for(const width of [320,390]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
+  await page.locator('main p, main li, main h3').evaluateAll(es=>es.forEach(e=>{(e as HTMLElement).style.fontSize=`${parseFloat(getComputedStyle(e).fontSize)*2}px`;}));
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect(await page.evaluate(()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage)}))).toEqual({local:[],session:[]});expect(await context.cookies()).toEqual([]);
+  for(const bad of ['기간진단개인정보검사','1992-05-15','10:30','period-year-4'])expect(JSON.stringify(requests)+logs.join(' ')).not.toContain(bad);
+  expect(requests.every(r=>!r.body)).toBe(true);expect(page.url()).not.toMatch(/[?#]/);
+  await page.reload();await expect(page.locator('.empty-state')).toBeVisible();
+});

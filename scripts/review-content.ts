@@ -1,0 +1,32 @@
+import fs from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { z } from 'zod';
+import raw from '../src/content/rules.json';
+import drafts from '../content-review/compound-drafts.json';
+import sources from '../content-review/sources.json';
+import semantic from '../content-review/semantic-cases.json';
+import reviews from '../content-review/reviews.json';
+import { canonicalContent,sourceRecordSchema,semanticCaseSchema,reviewRecordSchema } from '../src/domain/interpretation/review';
+import { validateRules } from '../src/domain/interpretation/repository';
+import { reasoningFor } from '../src/domain/interpretation/reasoning';
+import { sourceIds } from '../src/content/sources';
+const hash=(v:unknown)=>createHash('sha256').update(canonicalContent(v)).digest('hex');
+const rules=validateRules([...raw,...drafts]),sourceRecords=z.array(sourceRecordSchema).parse(sources),cases=z.array(semanticCaseSchema).parse(semantic),ledger=z.array(reviewRecordSchema).parse(reviews);
+const errors:string[]=[];
+if(new Set(sourceRecords.map(s=>s.id)).size!==sourceRecords.length||sourceIds.some(id=>!sourceRecords.some(s=>s.id===id)))errors.push('출처 ID 누락·중복');
+const claims=rules.flatMap(r=>{const reasoning=reasoningFor(r);return [...reasoning.interpretations,...reasoning.proposals];});
+if(new Set(ledger.map(r=>r.id)).size!==ledger.length)errors.push('검토 ID 중복');
+const records=ledger.map(review=>{
+  const rule=rules.find(r=>r.id===review.ruleId);
+  const stale=!rule||review.contentHash!==hash(rule)||review.contentVersion!==rule.contentVersion||review.claims.some(c=>{const claim=claims.find(x=>x.id===c.id);return !claim||hash(claim)!==c.hash;});
+  if(stale)errors.push(`검토 대상 변경: ${review.id}`);
+  return {...review,stale};
+});
+for(const c of cases)if(c.claimIds.some(id=>!claims.some(claim=>claim.id===id)))errors.push(`의미 검토 주장 연결: ${c.id}`);
+const queue=rules.filter(r=>r.evidence).map(r=>({ruleId:r.id,contentVersion:r.contentVersion,contentHash:hash(r),reasoning:reasoningFor(r),independentStatus:'pending',semanticCaseIds:cases.filter(c=>c.claimIds.some(id=>reasoningFor(r).interpretations.some(x=>x.id===id))).map(c=>c.id)}));
+const report={passed:!errors.length,meaning:'필드·해시·연결 검사이며 외부 출처의 진실성·전문가 검토·미래 예측 정확성을 인증하지 않습니다.',sources:sourceRecords,records,semanticCases:cases,independentQueue:queue,errors};
+await fs.mkdir('reports/content-improvement-1.2.0',{recursive:true});
+await fs.writeFile('reports/content-improvement-1.2.0/review-ledger.json',JSON.stringify(report,null,2)+'\n');
+console.log(`${report.passed?'PASS':'FAIL'} · 출처 ${sources.length} · 검토 기록 ${ledger.length} · 독립 검토 대기 ${queue.length} · 의미 사례 pending ${cases.length}`);
+if(process.argv.includes('--preview'))console.log(JSON.stringify(queue.slice(0,2),null,2));
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}

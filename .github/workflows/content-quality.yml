@@ -5,6 +5,7 @@ on:
       - 'src/**'
       - 'tests/**'
       - 'scripts/**'
+      - 'content-review/**'
       - 'package*.json'
       - '.github/workflows/content-quality.yml'
   workflow_dispatch:
@@ -29,7 +30,7 @@ jobs:
         with:
           name: content-evaluation
           path: |
-            reports/content-improvement-1.1.0/evaluation.json
+            reports/content-improvement-1.2.0/
             reports/content-inventory.json
             reports/content-coverage.json
             reports/content-preview.json

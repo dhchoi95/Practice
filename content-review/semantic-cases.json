@@ -1,0 +1,162 @@
+[
+  {
+    "id": "SEM-001",
+    "claimIds": [
+      "core-love-7-interpretation"
+    ],
+    "scenario": "같은 신금 일간이지만 표현을 다듬느라 대화를 늦추는 습관이 없는 가상 독자. 일간을 생활 행동의 증거로 읽을 수 있는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "대화를 늦춘 실제 경험 유무",
+    "suggestedRevision": "그런 경험이 있는 경우라는 조건을 유지하고 해당하지 않으면 적용하지 않아도 된다고 명시한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-002",
+    "claimIds": [
+      "relation-love-output-interpretation"
+    ],
+    "scenario": "식상 집계가 두 개이지만 대화보다 상대 이야기를 먼저 듣는 가상 독자. 표현이 많은 사람으로 단정되는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "현재 대화 방식과 상대의 요청",
+    "suggestedRevision": "관계 개수와 행동량을 분리하고 이미 듣고 있다면 추가 표현을 권하지 않는다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-003",
+    "claimIds": [
+      "core-careermoney-7-interpretation"
+    ],
+    "scenario": "완성도를 점검하지만 마감도 잘 지키는 가상 독자. 세부 점검을 줄이라는 제안이 상황에 맞는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "업무의 실제 검수 기준과 마감 부담",
+    "suggestedRevision": "필수 검수와 선택 수정을 구분하고 문제가 없으면 습관을 바꿀 필요가 없다는 문맥을 확인한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-004",
+    "claimIds": [
+      "period-year-4-interpretation"
+    ],
+    "scenario": "해당 천간 관계의 해에도 새 프로젝트나 지출 변화 없이 기존 생활을 유지하는 가상 독자. 연간 질문이 사건 예고로 읽히는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "실제 계획의 변화 여부",
+    "suggestedRevision": "새 일이 생긴다는 예고가 아니라 이미 검토 중인 계획이 있을 때만 쓰는 질문임을 확인한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-005",
+    "claimIds": [
+      "core-general-0-interpretation"
+    ],
+    "scenario": "계획을 자주 바꾸면서도 일을 잘 마치는 갑목 일간의 가상 독자. 방향과 꾸준함 상징과 달라도 문제가 없는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "실제 성과와 생활 조건",
+    "suggestedRevision": "다른 방법을 고르는 것이 성격 결함이라는 인상을 주는 문장을 낮춘다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-006",
+    "claimIds": [
+      "relation-mind-resource-interpretation"
+    ],
+    "scenario": "자료와 조언을 찾아보는 것이 부담이 아니라 도움이 되는 가상 독자. 정보 탐색을 중단하라는 뜻으로 읽히는가?",
+    "question": "어떤 문장이 전제를 넘어서는지, 조건과 수정 표현을 구체적으로 기록해 주세요.",
+    "missingPremise": "도움을 받은 실제 경험과 원하는 휴식 방식",
+    "suggestedRevision": "정보 수집이 부담일 때에만 제안을 적용하는지 검토한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; human semantic review candidate, not an engine feature",
+    "issueIds": [
+      "AUDIT-002"
+    ]
+  },
+  {
+    "id": "SEM-007",
+    "claimIds": [
+      "pilot-love-output-wealth-interpretation"
+    ],
+    "scenario": "동일한 집계 조합이지만 함께 계획 중인 활동이나 대화 자료가 없는 가상 독자. 기존 단일 관계 보완보다 이 질문을 우선할 실제 상황이 있는가?",
+    "question": "실제 상황이 없을 때 새 과제를 억지로 만들게 하는지, 두 집계가 본문 차이를 설명하는지 검토해 주세요.",
+    "missingPremise": "현재 검토 중인 계획·학습 자료·당사자의 요청",
+    "suggestedRevision": "첫 문장의 상황 조건을 유지하고 해당하지 않으면 사용하지 않아도 되는 선택지로 읽히게 한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; compound pilot semantic review candidate",
+    "issueIds": [
+      "UP-04"
+    ]
+  },
+  {
+    "id": "SEM-008",
+    "claimIds": [
+      "pilot-love-output-resource-interpretation"
+    ],
+    "scenario": "동일한 집계 조합이지만 함께 계획 중인 활동이나 대화 자료가 없는 가상 독자. 기존 단일 관계 보완보다 이 질문을 우선할 실제 상황이 있는가?",
+    "question": "실제 상황이 없을 때 새 과제를 억지로 만들게 하는지, 두 집계가 본문 차이를 설명하는지 검토해 주세요.",
+    "missingPremise": "현재 검토 중인 계획·학습 자료·당사자의 요청",
+    "suggestedRevision": "첫 문장의 상황 조건을 유지하고 해당하지 않으면 사용하지 않아도 되는 선택지로 읽히게 한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; compound pilot semantic review candidate",
+    "issueIds": [
+      "UP-04"
+    ]
+  },
+  {
+    "id": "SEM-009",
+    "claimIds": [
+      "pilot-careermoney-output-wealth-interpretation"
+    ],
+    "scenario": "동일한 집계 조합이지만 이미 전달·학습 절차를 무리 없이 운영하는 가상 독자. 기존 단일 관계 보완보다 이 질문을 우선할 실제 상황이 있는가?",
+    "question": "실제 상황이 없을 때 새 과제를 억지로 만들게 하는지, 두 집계가 본문 차이를 설명하는지 검토해 주세요.",
+    "missingPremise": "현재 검토 중인 계획·학습 자료·당사자의 요청",
+    "suggestedRevision": "첫 문장의 상황 조건을 유지하고 해당하지 않으면 사용하지 않아도 되는 선택지로 읽히게 한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; compound pilot semantic review candidate",
+    "issueIds": [
+      "UP-04"
+    ]
+  },
+  {
+    "id": "SEM-010",
+    "claimIds": [
+      "pilot-careermoney-output-resource-interpretation"
+    ],
+    "scenario": "동일한 집계 조합이지만 이미 전달·학습 절차를 무리 없이 운영하는 가상 독자. 기존 단일 관계 보완보다 이 질문을 우선할 실제 상황이 있는가?",
+    "question": "실제 상황이 없을 때 새 과제를 억지로 만들게 하는지, 두 집계가 본문 차이를 설명하는지 검토해 주세요.",
+    "missingPremise": "현재 검토 중인 계획·학습 자료·당사자의 요청",
+    "suggestedRevision": "첫 문장의 상황 조건을 유지하고 해당하지 않으면 사용하지 않아도 되는 선택지로 읽히게 한다.",
+    "reviewer": null,
+    "status": "pending",
+    "source": "implementation-author; compound pilot semantic review candidate",
+    "issueIds": [
+      "UP-04"
+    ]
+  }
+]

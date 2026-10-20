@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "CR-01-core-general-7-1-2-0",
+    "ruleId": "core-general-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "4310d4e32ce95222fc00c98182cfb4ecff2b80c2953fcda15b494e5fa73051e8",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-general-7-interpretation",
+        "hash": "58c638f4a6a8c462dec775ddfaec76718e1937ba465917a0d890e715e19ee2da"
+      },
+      {
+        "id": "core-general-7-proposal",
+        "hash": "8cf03f1e2b7f6f3477d2b9d89454fbeb2dfa66bb77cbd316eb9f113ff7c0f671"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-general-9-1-2-0",
+    "ruleId": "core-general-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "89296a83508f7e7e6f4b805f73590d2271ab74288068ba2a02fa92deea9f138f",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-general-9-interpretation",
+        "hash": "5cddb046a652d77fbc8b71e1b284d26ea3394d40a2a7c16e2558a05a657b36c6"
+      },
+      {
+        "id": "core-general-9-proposal",
+        "hash": "90d0b41969a6ada54d4a675d2042a3f047dfce885610958958d4eac876fec6f1"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-0-1-2-0",
+    "ruleId": "core-personality-0",
+    "contentVersion": "1.2.0",
+    "contentHash": "7ffe76c36df6f68b84666c049dbfe92b5868a554006691572444e9ce19fb0e10",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-0-interpretation",
+        "hash": "0f1f10344bc12b9e56ef23f52189802e38d62ab2e8bb604be5050c7832aeada3"
+      },
+      {
+        "id": "core-personality-0-proposal",
+        "hash": "b6f1a5557975c50409428378178e2ec5922bca9a8c6ca18766611d7e9fb8a369"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-1-1-2-0",
+    "ruleId": "core-personality-1",
+    "contentVersion": "1.2.0",
+    "contentHash": "b9fd9a4ee9678e3fb277010194a0301ac5b609d0dcfbccf386e15f7d680235f1",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-1-interpretation",
+        "hash": "d7722722f75bb9587fde720dd0b79d460400738a52602b3ab0795c055b793d55"
+      },
+      {
+        "id": "core-personality-1-proposal",
+        "hash": "5c0cb8d2cf9001ec17e0371f1397d508a1fae2364ef2b89d0585d3cd15273faf"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-2-1-2-0",
+    "ruleId": "core-personality-2",
+    "contentVersion": "1.2.0",
+    "contentHash": "f34aa8a4e82426172556c5111675ee38c55c6449d8f5acebb3caf726b35521fb",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-2-interpretation",
+        "hash": "1fd013f409c35b7c4e48b6c417c134aa9850d65affcbafee4364240a85e0b14b"
+      },
+      {
+        "id": "core-personality-2-proposal",
+        "hash": "fe6da90628e0aec766eb9f2007f7baa4d594bf87290ec37908e3a741eb408a5e"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-3-1-2-0",
+    "ruleId": "core-personality-3",
+    "contentVersion": "1.2.0",
+    "contentHash": "d74199755c505bd7c374216fdd29a1124e54c41aea2666d32d86bc485f40c1f5",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-3-interpretation",
+        "hash": "0b5bf1bff1704b22eab61718ffcd315a40cb8293e220a89a761a3a47454d4b5c"
+      },
+      {
+        "id": "core-personality-3-proposal",
+        "hash": "c594bbfdb132c255efcb760a4044c0ef74c94dc581fab0baa4270cc4c63f9c38"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-4-1-2-0",
+    "ruleId": "core-personality-4",
+    "contentVersion": "1.2.0",
+    "contentHash": "45253aa1faac4723f9bbf67aceae56df76b1b03ab03f7f6b0873153296289f5f",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-4-interpretation",
+        "hash": "572daa2f1422f56b7bdc0dbec29f0677e553f6dc774a513147f47ae09a855dda"
+      },
+      {
+        "id": "core-personality-4-proposal",
+        "hash": "8ca6ec2158c713c8f96361ab94ae39a0a3b40a618201c4d8853fb55eebabd5ce"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-5-1-2-0",
+    "ruleId": "core-personality-5",
+    "contentVersion": "1.2.0",
+    "contentHash": "d51bd0cdf79d67abd0a8c44257422997ce5a480fd076a62ad3adcd70587d510d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-5-interpretation",
+        "hash": "cdacf7bf363bb849266df60c102b0cd852e2ffd71628673bc97ef9d50a1c2bf5"
+      },
+      {
+        "id": "core-personality-5-proposal",
+        "hash": "9e3770cdd223836e86b2b0a4ce650480428cbcb916686a83859ee000ee816fa9"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-6-1-2-0",
+    "ruleId": "core-personality-6",
+    "contentVersion": "1.2.0",
+    "contentHash": "50b67e9b1150a85ccd2cacceb103e8f36f8cfc42cc6091a3f798759dc616bf14",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-6-interpretation",
+        "hash": "d00f67cb51000cff7c9217e84dfb75b19b5244933d5902c783815d6976b21197"
+      },
+      {
+        "id": "core-personality-6-proposal",
+        "hash": "7ae7bb421c93d8c3e637082c1603e69c4a278d83ce08fc32781460f2dcb9439f"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-7-1-2-0",
+    "ruleId": "core-personality-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "12ac6d9f6542ff4f8f6bbc25de9cf9c38180fe181f920e01f006c8797f546398",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-7-interpretation",
+        "hash": "3cf900bfc9d5e0e11918fe3ee4a0cc47536397656993ff811fadc9a4a8f2d0de"
+      },
+      {
+        "id": "core-personality-7-proposal",
+        "hash": "f152ed2379fbe762575d4cac0fea7b8425658583f63858ccb29b6fd02700b319"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-8-1-2-0",
+    "ruleId": "core-personality-8",
+    "contentVersion": "1.2.0",
+    "contentHash": "56dbb65acde023b31bbe17f2a6e46c10c1e8054e252f908faaaec18e3ce86bec",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-8-interpretation",
+        "hash": "bc38bac5382dd874f9ca7fbdba5893e03c648359b22ec77467b74f23f9d2b850"
+      },
+      {
+        "id": "core-personality-8-proposal",
+        "hash": "ebec253975ba62abe904ac3462b496f7e5461a8099b8d7a21460f1ec1e1eeae6"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-personality-9-1-2-0",
+    "ruleId": "core-personality-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "e764f9193839b4e8a72bb021ff61bc46e7e2d9a23886a06d2243e648aee12f19",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-personality-9-interpretation",
+        "hash": "4466bbb8d4f5bf527c238a0168ff59836fc71d1ecf870713a80c8f9f4fc41617"
+      },
+      {
+        "id": "core-personality-9-proposal",
+        "hash": "6187f3cb87439ae71bfb7f9c5712c927f8693195cb4fdf2b125fd006495ccca7"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-love-7-1-2-0",
+    "ruleId": "core-love-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "6dd6166c5c4bb128fb80cfb20e02776bf009cb17ac9a999abde86dd1f6f200a2",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-love-7-interpretation",
+        "hash": "fe242a25ce893ee8cd1b92bbe802be65c59e5f2cff53c40a08df67ff1dac845f"
+      },
+      {
+        "id": "core-love-7-proposal",
+        "hash": "bdbb279fd5d1ea2698e3f35d52d5fb984afdba8372c11fa1a5206f560d35b4ab"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [
+      "SEM-001"
+    ],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-love-9-1-2-0",
+    "ruleId": "core-love-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "675a7a9224f34c758485ae290017a6dc49e2ff93fea4c024e77864f4e4a22c1e",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-love-9-interpretation",
+        "hash": "306dae22229bcae7b62fdc928876cb67a2c57c29ca3fe420e55d2d2857cd8b12"
+      },
+      {
+        "id": "core-love-9-proposal",
+        "hash": "dad7ba13c5928eafbc1c1374dabddf365c51263cd60ab531be1d06543171c150"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-careermoney-7-1-2-0",
+    "ruleId": "core-careermoney-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "4a64adcc567b2ebe2cab47f02278ed5ab2eb72543318d7a2c06a4323bed6cf42",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-careermoney-7-interpretation",
+        "hash": "f3e3806ed7513bfb8086c17d634ceff4b9acac70033859410b3804ded35c3787"
+      },
+      {
+        "id": "core-careermoney-7-proposal",
+        "hash": "aec1e0956707e96b8f6149075483f2a75d256e7b6aa106a2a756ae6394f9e707"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [
+      "SEM-003"
+    ],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-careermoney-9-1-2-0",
+    "ruleId": "core-careermoney-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "b1cfb510bfaf6edc98fd9a4c510a0275431b8f641f9f3d06a3b17970e53a7eff",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-careermoney-9-interpretation",
+        "hash": "ace35b549f4e5ff80bba6c9eabd23cc19015db639c27fc2932163ccc5c84c79d"
+      },
+      {
+        "id": "core-careermoney-9-proposal",
+        "hash": "988afca715e7ee784ce6aac43e7dae3e9ea241e286cbe7bc8c59d40815fd306c"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-relationships-7-1-2-0",
+    "ruleId": "core-relationships-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "da72bf3b52e6f33046c871789dfd18a680202235d2b7d8f497b8c417daac671d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-relationships-7-interpretation",
+        "hash": "5eed8a0c99758a868b8250a101a8d7d047f67a2684ee3566876fe93104f7d179"
+      },
+      {
+        "id": "core-relationships-7-proposal",
+        "hash": "88f7bb3b63c3435ea5217b8eee417f41e1b2ba757f16ac1d6a5d414a709bf035"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-relationships-9-1-2-0",
+    "ruleId": "core-relationships-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "1351197096f198a7d235286198a49d9bb9d3eb8ac72565f4cf959e799e0271df",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-relationships-9-interpretation",
+        "hash": "7c2e373924db89c660d39ec521c1b41873460a5ce29afefc5c806b9100b63dff"
+      },
+      {
+        "id": "core-relationships-9-proposal",
+        "hash": "5d0e6b3353c29ceb7426c020700adc0cbd403c30608bef5a6c256fba41810577"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-single-7-1-2-0",
+    "ruleId": "core-single-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "7ac89587081c80ed1f7ddf2ed5c33d5fc1fef02fb45d2fa536d5fa2216c5391d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-single-7-interpretation",
+        "hash": "c9dc7f5fb5705902c022275ba3b5085c3c9841632c2491c6c53554effed2f43a"
+      },
+      {
+        "id": "core-single-7-proposal",
+        "hash": "de0aeceae2d2f82ded5a08be13498b9d4381b6b45fee42d221cc95ce519ebabe"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-single-9-1-2-0",
+    "ruleId": "core-single-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "f9eb84a28fb2b888302ce80c350e8797f7e5931dcedd0076a83961f54198df1a",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-single-9-interpretation",
+        "hash": "a624e657f0f480da4205e8cb5ff87b84577d50b4917eaba1ea85c933ba28ea57"
+      },
+      {
+        "id": "core-single-9-proposal",
+        "hash": "3f3829808a69f157f45932ebfc43aca5af6fa6959b8da5162adc81777805f507"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-mind-7-1-2-0",
+    "ruleId": "core-mind-7",
+    "contentVersion": "1.2.0",
+    "contentHash": "15c88c85f144c6cd3facec5d73b70948527d33853f3855c9b47ee0b1b80fc28d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-mind-7-interpretation",
+        "hash": "e3b51f4d2a953b1f26ec2652b3ea8986e8e680d624b8b09893a64eb807e57076"
+      },
+      {
+        "id": "core-mind-7-proposal",
+        "hash": "6ac0b3771a1726a2ca69ee54e88e52653d22f27eb49a4875ed86c8f118961ea1"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-core-mind-9-1-2-0",
+    "ruleId": "core-mind-9",
+    "contentVersion": "1.2.0",
+    "contentHash": "1f39305d284872215238bceb6d36126fd81583908449c14fdee3d9c9c9e717e7",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "core-mind-9-interpretation",
+        "hash": "74d743331b29a7fdf7cfd4ca44814fc840455240f235a4284b92146ae3d7b303"
+      },
+      {
+        "id": "core-mind-9-proposal",
+        "hash": "52057f430afc142d2c4e24fb578e38481e9fb75eea850463a4947345592f5eae"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-day-1-1-2-0",
+    "ruleId": "period-day-1",
+    "contentVersion": "1.2.0",
+    "contentHash": "3f482db59c13285be38b35ac4c3e5b0c5655659e9aa791e650108befdf8c5c2f",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-day-1-interpretation",
+        "hash": "3332ae601bbf951c663e22b13e03b6916f9d82a96b50b47f38c71286d7e35d1e"
+      },
+      {
+        "id": "period-day-1-proposal",
+        "hash": "54752ac66b3e90249ad580c1797122f52987b821361198e6bfacb78a0ee74032"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-day-4-1-2-0",
+    "ruleId": "period-day-4",
+    "contentVersion": "1.2.0",
+    "contentHash": "b4a6c9ed649811afd769fe625b02cbbf4ac387295fa0193831e5184f8488d930",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-day-4-interpretation",
+        "hash": "6a0055407647ae393968b9fb4d2905aac8af132de2be2f9b2997457bac8b26b1"
+      },
+      {
+        "id": "period-day-4-proposal",
+        "hash": "05a74a461d267b8aa685e4a90cf68866805bb5e100274795f451e1d52012b7b2"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-day-5-1-2-0",
+    "ruleId": "period-day-5",
+    "contentVersion": "1.2.0",
+    "contentHash": "c2c06efc60f338c9ae4286ff40429da3ddf49221fbe2a85c25e0b6a382228a8a",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-day-5-interpretation",
+        "hash": "44b446311a816b33e5d7eb307ca4c7006e9e359e275524c71de1bc958e7a3503"
+      },
+      {
+        "id": "period-day-5-proposal",
+        "hash": "c528dba247324adb305848b2140154b58b3a73a17c389b8425015fa459c27626"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-month-1-1-2-0",
+    "ruleId": "period-month-1",
+    "contentVersion": "1.2.0",
+    "contentHash": "380819b1d0b3243eccf55fdf997d50d0cf1386127c0840855b103b07d2aedebb",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-month-1-interpretation",
+        "hash": "0c853321c8103d8853d7862ca2fc0532691453b6f288e4aaf2a467760f687c9b"
+      },
+      {
+        "id": "period-month-1-proposal",
+        "hash": "ff9a39080dfcc39e0bbd7f5f14e843b20d56597021492d58a2a0bb233071aa03"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-month-4-1-2-0",
+    "ruleId": "period-month-4",
+    "contentVersion": "1.2.0",
+    "contentHash": "95abdae4c7647cbfd2913c6a3a7a3e241d75861c9aa6dbd4956361e668ecfc92",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-month-4-interpretation",
+        "hash": "c2b1b498fd3cae190bb90559fac141dee272b855ec27c5417ac4bcad4bc44c43"
+      },
+      {
+        "id": "period-month-4-proposal",
+        "hash": "f339b9324650e9960bbf6023aca2e3eeada08883f7ea4610e445e46238c37936"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-month-5-1-2-0",
+    "ruleId": "period-month-5",
+    "contentVersion": "1.2.0",
+    "contentHash": "7aaff5356bcd6a2129b46d9da342d4c3073d718a1cc5b1a6b23659217ca5b716",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-month-5-interpretation",
+        "hash": "8628f83a4fc3e5a50b37c3f21097f9fd790de15bbf42f4d4a06976175775e19d"
+      },
+      {
+        "id": "period-month-5-proposal",
+        "hash": "4cae102b86d71bdbde39bf9f2d518edf9da69edbd42d5ae9181c884a1b826e13"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-year-1-1-2-0",
+    "ruleId": "period-year-1",
+    "contentVersion": "1.2.0",
+    "contentHash": "2f9f5fd56382977309eabf89519fb4d4186f054cd0c8ff2b078ba507e6f429b9",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-year-1-interpretation",
+        "hash": "35b748aa5a800004974fbd9dac17c13419de7bd2c0c163f8839c15a7107d8de4"
+      },
+      {
+        "id": "period-year-1-proposal",
+        "hash": "9e52ad892224fcf32c113e3898b53b35a58b610fb7b73f1e31d89b1c0a9183fc"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-year-4-1-2-0",
+    "ruleId": "period-year-4",
+    "contentVersion": "1.2.0",
+    "contentHash": "8f48fdd8f168d35fcfd2bfbad558cf15d4a1a32f6b6a89e0eb2967c9fb8c98bb",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-year-4-interpretation",
+        "hash": "8911ab5c3e173cd97150ee53d9b45b544fb4ce0b21ca2b0d508793fae5e28fd9"
+      },
+      {
+        "id": "period-year-4-proposal",
+        "hash": "49345435465e18fe7d5715e56d87bc2e994429b32fdb508fada4e0f8ba6fd2aa"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [
+      "SEM-004"
+    ],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-period-year-5-1-2-0",
+    "ruleId": "period-year-5",
+    "contentVersion": "1.2.0",
+    "contentHash": "5b38ee0843ff59968756051adb743f96e393eb3c4dda7884ddd357527123b88d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "period-year-5-interpretation",
+        "hash": "43a27f2d2496d7c06e9d314070c2c7afda1c5e7f3e9e558c70b160f6c89995bc"
+      },
+      {
+        "id": "period-year-5-proposal",
+        "hash": "a343923c9e939aa273407cb1b80e330b3365417a3589311ad410e1d46b09fe91"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-relation-personality-peer-1-2-0",
+    "ruleId": "relation-personality-peer",
+    "contentVersion": "1.2.0",
+    "contentHash": "08f490cd34b63e95da7a2df40f611f090e6a4c3a9b0d2e4498d155864e1385d2",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "relation-personality-peer-interpretation",
+        "hash": "2c45524b8dc76850210a21a4ab0e9dd645589c34c483ee972692b65a63a755ee"
+      },
+      {
+        "id": "relation-personality-peer-proposal",
+        "hash": "e14d6771c7ebc25fb13bbd5cac86643cf7ea35ab3853748305898641eb2ebb60"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-relation-personality-output-1-2-0",
+    "ruleId": "relation-personality-output",
+    "contentVersion": "1.2.0",
+    "contentHash": "aa8fca21e33f04179d889b1233cee7a6376163cfe057de4136b305d9d14fa80f",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "relation-personality-output-interpretation",
+        "hash": "d1335041105059ab5565f571eb59991bc406dfffbe17d6b6df07b6545fdd0625"
+      },
+      {
+        "id": "relation-personality-output-proposal",
+        "hash": "aea3e8dbc44158e1ab973a1612d2b1386593e1005d79a2ac5ae7fd7190b709d1"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-relation-personality-wealth-1-2-0",
+    "ruleId": "relation-personality-wealth",
+    "contentVersion": "1.2.0",
+    "contentHash": "27eb257aef7229fb7425bc70cc27bf95019ba7e9c3c92713247b1e5cb5304878",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "relation-personality-wealth-interpretation",
+        "hash": "42e863570c206bf1f19a4a2fa2127746db7cfb2fc37a1647b7ede734065c8768"
+      },
+      {
+        "id": "relation-personality-wealth-proposal",
+        "hash": "381ccb8f1e6c3f38820a684e2c6c56b4e0ccde4559bb8befed2c6bd3db651195"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-relation-personality-order-1-2-0",
+    "ruleId": "relation-personality-order",
+    "contentVersion": "1.2.0",
+    "contentHash": "5f9742e28c62b8f214ee6c194d9f623d68c796e3b8f279456c10ebcdcae74d29",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "relation-personality-order-interpretation",
+        "hash": "e4b0b6d1eabdd9489eab4567913e652e29c0f5e8d181c5010f23f25e7965ccc1"
+      },
+      {
+        "id": "relation-personality-order-proposal",
+        "hash": "930dbfa459fc7d92f6acb1b7a34b55ddc0b306e9c6065368016a256970775571"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "CR-01-relation-personality-resource-1-2-0",
+    "ruleId": "relation-personality-resource",
+    "contentVersion": "1.2.0",
+    "contentHash": "70d09503d21f3269fbf3701986943e43c4379ac3d07bc9b940de3136d0fa373b",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-20",
+    "claims": [
+      {
+        "id": "relation-personality-resource-interpretation",
+        "hash": "8474c76758cca2b59c962596398e9dc4cd132816cc935713a3c841bebcc928d9"
+      },
+      {
+        "id": "relation-personality-resource-proposal",
+        "hash": "2869a9764018f3c3883f5e3929d7d284d5373d5a0ffa6121b8943d4e907ed76e"
+      }
+    ],
+    "corrections": [
+      "독립 검토 CR-01에 따른 조사 또는 부자연스러운 관찰 표현 교정"
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "CR-01"
+    ],
+    "status": "implemented-pending-independent-review"
+  }
+]

@@ -3,11 +3,12 @@ import { contentRepository,validateRules } from '../src/domain/interpretation/re
 import { categories } from '../src/config/site';
 import { calculateSaju } from '../src/domain/saju/calculate';
 import { interpret,type InterpretationResult } from '../src/domain/interpretation/engine';
+import { composePeriodReading } from '../src/domain/interpretation/period-reading';
 import { targetPeriod } from '../src/domain/fortune/period';
 import { stemNames } from '../src/domain/saju/tables';
 import raw from '../src/content/rules.json';
 import type { BirthInput } from '../src/domain/saju/types';
-import { particleErrors,templateDuplicates } from '../src/domain/interpretation/quality';
+import { languageAudit,templateDuplicates } from '../src/domain/interpretation/quality';
 import { sharedExplanations } from '../src/domain/interpretation/shared';
 import { interpretationBases } from '../src/domain/interpretation/knowledge';
 export const syntheticProfiles:BirthInput[]=[];
@@ -26,9 +27,9 @@ if(command==='validate'){
   for(const r of rules)for(const p of [...r.paragraphs,...r.practicalTips]){
     if(seen.has(p))errors.push(`동일 문장: ${r.id} / ${seen.get(p)}`);seen.set(p,r.id);
     if(forbidden.test(p))errors.push(`검토할 표현: ${r.id}`);
-    for(const error of particleErrors(p))errors.push(`조사 확인: ${r.id} / ${error}`);
+
   }
-  for(const s of sharedExplanations)for(const error of particleErrors(s.text))errors.push(`공통 설명 조사 확인: ${s.id} / ${error}`);
+  errors.push(...languageAudit(rules));
   errors.push(...templateDuplicates(rules.filter(r=>r.id.startsWith('element-'))).map(pair=>`주제명 치환/유사 템플릿: ${pair}`));
   if(errors.length)throw new Error(errors.join('\n'));
   await fs.mkdir('reports',{recursive:true});
@@ -40,7 +41,7 @@ if(command==='validate'){
     const result=calculateSaju(input,clock);if(result.dayMaster!==null)stems.add(result.dayMaster);
     for(const c of categories.filter(c=>c.system==='saju')){
       const f=['year','month','day'].includes(c.slug)?{...result.features,...targetPeriod(c.slug as 'year'|'month'|'day',result.dayMaster,clock).segments[0].features}:result.features;
-      const reading=interpret('saju',c.content,f,contentRepository);
+      const reading=['year','month','day'].includes(c.slug)?composePeriodReading(targetPeriod(c.slug as 'year'|'month'|'day',result.dayMaster,clock),result.features):interpret('saju',c.content,f,contentRepository);
       const limited=result.dayMaster===null;
       const passed=limited?reading.limitations.length>0:reading.sections.length>0&&reading.limitations.length===0;
       if(!passed)failures++;

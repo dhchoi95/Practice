@@ -6,6 +6,13 @@ export const systems=['saju','zodiac','constellation','bloodType'] as const;
 export type ContentSystem=typeof systems[number];
 export type Condition={feature:FeaturePath;op:'eq'|'in'|'gte'|'lte';value:FeatureValue|FeatureValue[]}|{all:Condition[]}|{any:Condition[]};
 const scalar=z.union([z.string(),z.number().finite(),z.boolean()]);
+export const premiseSchema=z.object({id:z.string(),basisKey:z.string(),feature:z.enum(featurePaths),op:z.enum(['eq','gte']),value:z.union([z.string(),z.number()])}).strict();
+export const reasoningSchema=z.object({
+  schemaVersion:z.literal(2),
+  premises:z.array(premiseSchema).min(1).max(10),
+  interpretations:z.array(z.object({id:z.string(),text:z.string().min(30),sourceIds:z.array(z.string()).min(1),status:z.literal('internal-policy')}).strict()).min(1).max(5),
+  proposals:z.array(z.object({id:z.string(),tipIndexes:z.array(z.number().int().min(0)).min(1),status:z.literal('suggestion')}).strict()).min(1).max(5),
+}).strict();
 const conditionSchema:z.ZodType<Condition>=z.lazy(()=>z.union([
   z.object({feature:z.enum(featurePaths),op:z.enum(['eq','in','gte','lte']),value:z.union([scalar,z.array(scalar).min(1).max(20)])}).strict(),
   z.object({all:z.array(conditionSchema).min(1).max(12)}).strict(),
@@ -21,6 +28,7 @@ export const ruleSchema=z.object({
   paragraphs:z.array(z.string().min(10).max(800)).min(1).max(5),practicalTips:z.array(z.string().min(5).max(300)).min(1).max(4),
   sharedExplanationId:z.string().optional(),
   evidence:z.object({basisKey:z.string(),rationale:z.string().min(30),counterExample:z.string().min(30),limitation:z.string().min(30)}).strict().optional(),
+  reasoning:reasoningSchema.optional(),
   relatedGlossaryKeys:z.array(z.string()).max(10),
   provenance:z.object({kind:z.enum(['calculation-rule','traditional-interpretation','original-editorial']),sourceIds:z.array(z.string()).min(1),note:z.string().min(5)}),
   reviewStatus:z.enum(['draft','automated-checked','human-reviewed']),contentVersion:z.string(),updatedAt:z.iso.date(),
