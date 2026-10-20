@@ -1,0 +1,785 @@
+[
+  {
+    "id": "independent-calendar-1",
+    "kind": "calendar",
+    "input": {
+      "year": 1962,
+      "month": 1,
+      "day": 1
+    },
+    "normalizedSolar": "1962-01-01",
+    "expected": {
+      "year": 1961,
+      "month": 11,
+      "day": 25,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-2",
+    "kind": "calendar",
+    "input": {
+      "year": 1962,
+      "month": 2,
+      "day": 5
+    },
+    "normalizedSolar": "1962-02-05",
+    "expected": {
+      "year": 1962,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-3",
+    "kind": "calendar",
+    "input": {
+      "year": 1964,
+      "month": 2,
+      "day": 29
+    },
+    "normalizedSolar": "1964-02-29",
+    "expected": {
+      "year": 1964,
+      "month": 1,
+      "day": 17,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-4",
+    "kind": "calendar",
+    "input": {
+      "year": 1970,
+      "month": 2,
+      "day": 6
+    },
+    "normalizedSolar": "1970-02-06",
+    "expected": {
+      "year": 1970,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-5",
+    "kind": "calendar",
+    "input": {
+      "year": 1980,
+      "month": 2,
+      "day": 16
+    },
+    "normalizedSolar": "1980-02-16",
+    "expected": {
+      "year": 1980,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-6",
+    "kind": "calendar",
+    "input": {
+      "year": 1987,
+      "month": 5,
+      "day": 10
+    },
+    "normalizedSolar": "1987-05-10",
+    "expected": {
+      "year": 1987,
+      "month": 4,
+      "day": 13,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-7",
+    "kind": "calendar",
+    "input": {
+      "year": 1988,
+      "month": 10,
+      "day": 9
+    },
+    "normalizedSolar": "1988-10-09",
+    "expected": {
+      "year": 1988,
+      "month": 8,
+      "day": 29,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-8",
+    "kind": "calendar",
+    "input": {
+      "year": 1990,
+      "month": 1,
+      "day": 27
+    },
+    "normalizedSolar": "1990-01-27",
+    "expected": {
+      "year": 1990,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-9",
+    "kind": "calendar",
+    "input": {
+      "year": 1996,
+      "month": 2,
+      "day": 19
+    },
+    "normalizedSolar": "1996-02-19",
+    "expected": {
+      "year": 1996,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-10",
+    "kind": "calendar",
+    "input": {
+      "year": 2000,
+      "month": 1,
+      "day": 7
+    },
+    "normalizedSolar": "2000-01-07",
+    "expected": {
+      "year": 1999,
+      "month": 12,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-11",
+    "kind": "calendar",
+    "input": {
+      "year": 2000,
+      "month": 2,
+      "day": 29
+    },
+    "normalizedSolar": "2000-02-29",
+    "expected": {
+      "year": 2000,
+      "month": 1,
+      "day": 25,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-12",
+    "kind": "calendar",
+    "input": {
+      "year": 2012,
+      "month": 5,
+      "day": 21
+    },
+    "normalizedSolar": "2012-05-21",
+    "expected": {
+      "year": 2012,
+      "month": 4,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-13",
+    "kind": "calendar",
+    "input": {
+      "year": 2017,
+      "month": 6,
+      "day": 23
+    },
+    "normalizedSolar": "2017-06-23",
+    "expected": {
+      "year": 2017,
+      "month": 5,
+      "day": 29,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-14",
+    "kind": "calendar",
+    "input": {
+      "year": 2017,
+      "month": 6,
+      "day": 24
+    },
+    "normalizedSolar": "2017-06-24",
+    "expected": {
+      "year": 2017,
+      "month": 5,
+      "day": 1,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-15",
+    "kind": "calendar",
+    "input": {
+      "year": 2017,
+      "month": 7,
+      "day": 22
+    },
+    "normalizedSolar": "2017-07-22",
+    "expected": {
+      "year": 2017,
+      "month": 5,
+      "day": 29,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-16",
+    "kind": "calendar",
+    "input": {
+      "year": 2017,
+      "month": 7,
+      "day": 23
+    },
+    "normalizedSolar": "2017-07-23",
+    "expected": {
+      "year": 2017,
+      "month": 6,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-17",
+    "kind": "calendar",
+    "input": {
+      "year": 2020,
+      "month": 5,
+      "day": 23
+    },
+    "normalizedSolar": "2020-05-23",
+    "expected": {
+      "year": 2020,
+      "month": 4,
+      "day": 1,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-18",
+    "kind": "calendar",
+    "input": {
+      "year": 2023,
+      "month": 3,
+      "day": 21
+    },
+    "normalizedSolar": "2023-03-21",
+    "expected": {
+      "year": 2023,
+      "month": 2,
+      "day": 30,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-19",
+    "kind": "calendar",
+    "input": {
+      "year": 2023,
+      "month": 3,
+      "day": 22
+    },
+    "normalizedSolar": "2023-03-22",
+    "expected": {
+      "year": 2023,
+      "month": 2,
+      "day": 1,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-20",
+    "kind": "calendar",
+    "input": {
+      "year": 2023,
+      "month": 4,
+      "day": 19
+    },
+    "normalizedSolar": "2023-04-19",
+    "expected": {
+      "year": 2023,
+      "month": 2,
+      "day": 29,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-21",
+    "kind": "calendar",
+    "input": {
+      "year": 2023,
+      "month": 4,
+      "day": 20
+    },
+    "normalizedSolar": "2023-04-20",
+    "expected": {
+      "year": 2023,
+      "month": 3,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-22",
+    "kind": "calendar",
+    "input": {
+      "year": 2024,
+      "month": 2,
+      "day": 9
+    },
+    "normalizedSolar": "2024-02-09",
+    "expected": {
+      "year": 2023,
+      "month": 12,
+      "day": 30,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-23",
+    "kind": "calendar",
+    "input": {
+      "year": 2024,
+      "month": 2,
+      "day": 10
+    },
+    "normalizedSolar": "2024-02-10",
+    "expected": {
+      "year": 2024,
+      "month": 1,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-24",
+    "kind": "calendar",
+    "input": {
+      "year": 2024,
+      "month": 2,
+      "day": 29
+    },
+    "normalizedSolar": "2024-02-29",
+    "expected": {
+      "year": 2024,
+      "month": 1,
+      "day": 20,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-25",
+    "kind": "calendar",
+    "input": {
+      "year": 2024,
+      "month": 12,
+      "day": 7
+    },
+    "normalizedSolar": "2024-12-07",
+    "expected": {
+      "year": 2024,
+      "month": 11,
+      "day": 7,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-26",
+    "kind": "calendar",
+    "input": {
+      "year": 2025,
+      "month": 7,
+      "day": 25
+    },
+    "normalizedSolar": "2025-07-25",
+    "expected": {
+      "year": 2025,
+      "month": 6,
+      "day": 1,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-27",
+    "kind": "calendar",
+    "input": {
+      "year": 2025,
+      "month": 8,
+      "day": 22
+    },
+    "normalizedSolar": "2025-08-22",
+    "expected": {
+      "year": 2025,
+      "month": 6,
+      "day": 29,
+      "leap": true
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-28",
+    "kind": "calendar",
+    "input": {
+      "year": 2025,
+      "month": 8,
+      "day": 23
+    },
+    "normalizedSolar": "2025-08-23",
+    "expected": {
+      "year": 2025,
+      "month": 7,
+      "day": 1,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  },
+  {
+    "id": "independent-calendar-29",
+    "kind": "calendar",
+    "input": {
+      "year": 2026,
+      "month": 10,
+      "day": 20
+    },
+    "normalizedSolar": "2026-10-20",
+    "expected": {
+      "year": 2026,
+      "month": 9,
+      "day": 10,
+      "leap": false
+    },
+    "source": "Unicode ICU Dangi / Node v24.19.0 / ICU 78.3",
+    "sourceUrl": "https://unicode-org.github.io/icu/userguide/datetime/calendar/",
+    "verifiedAt": "2026-10-20",
+    "policy": "Korean civil calendar at Seoul noon; compare only lunar date",
+    "comparableFields": [
+      "lunar.year",
+      "lunar.month",
+      "lunar.day",
+      "lunar.leap"
+    ],
+    "independent": true
+  }
+]

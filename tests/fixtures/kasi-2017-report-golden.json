@@ -1,0 +1,60 @@
+{
+  "source": {
+    "officialUrl": "https://astro.kasi.re.kr/life/pageView/5",
+    "query": {
+      "search_year": "2017",
+      "search_month": [
+        "02",
+        "03"
+      ],
+      "search_dp": "1",
+      "search_check": "G"
+    },
+    "evidence": "docs/external-review-1.0.0.md, section 4.1, 2017 comparison table",
+    "evidenceSha256": "6294dd6b2adea26ac78420f3c477d6205c854db128e3d511e1726f85ced9e938",
+    "method": "검토자가 KASI 공개 월력 59행을 직접 조회해 확인한 보고서의 세 날짜를 전사함. 이번 수정 환경의 공식 페이지 직접 조회는 프록시 403으로 실패했으며 원본 59행 표는 첨부되지 않음. 앱 계산값으로 expected를 생성하지 않음.",
+    "checkedAt": "2026-10-20",
+    "icuException": "보고서상 ICU Dangi와 다른 구간은 2017-02-26~2017-03-27. ICU 값에 맞춰 앱을 변경하지 않음."
+  },
+  "cases": [
+    {
+      "solar": {
+        "year": 2017,
+        "month": 2,
+        "day": 26
+      },
+      "lunar": {
+        "year": 2017,
+        "month": 2,
+        "day": 1,
+        "leap": false
+      }
+    },
+    {
+      "solar": {
+        "year": 2017,
+        "month": 3,
+        "day": 27
+      },
+      "lunar": {
+        "year": 2017,
+        "month": 2,
+        "day": 30,
+        "leap": false
+      }
+    },
+    {
+      "solar": {
+        "year": 2017,
+        "month": 3,
+        "day": 28
+      },
+      "lunar": {
+        "year": 2017,
+        "month": 3,
+        "day": 1,
+        "leap": false
+      }
+    }
+  ]
+}

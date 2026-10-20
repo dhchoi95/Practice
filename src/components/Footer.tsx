@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { siteConfig } from '@/config/site';
+export function Footer(){return <footer className="site-footer"><div className="wrap"><div className="footer-top"><Link prefetch={false} className="footer-brand" href="/">{siteConfig.name}</Link><nav aria-label="하단 안내">{[['guide','이용안내'],['glossary','용어사전'],['privacy','개인정보 안내'],['terms','이용약관'],['credits','출처']].map(([slug,label])=><Link prefetch={false} key={slug} href={`/${slug}/`}>{label}</Link>)}</nav></div><p>전통 해석으로 나를 돌아보는 가벼운 읽을거리예요.<br className="mobile-only"/> 중요한 결정에는 충분한 정보와 나의 판단을 함께해 주세요.</p><p className="footer-note">가입 없이 무료로 · 출생정보는 브라우저 안에서만</p>{siteConfig.instagram&&<a href={siteConfig.instagram} rel="noreferrer">인스타그램</a>}</div></footer>;}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "element-symbol-0",
+    "element": "목",
+    "text": "목은 전통적으로 시작과 성장을 상징해요. 알려진 글자에서 목이 두 개 이상 집계될 때 이 상징을 관찰의 소재로 더해요. 이 개수는 기운의 강약·능력·용신을 뜻하지 않으며, 실제 경험이 해석보다 우선해요.",
+    "reviewStatus": "automated-checked",
+    "contentVersion": "1.0.1",
+    "updatedAt": "2026-10-20",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "element-symbol-1",
+    "element": "화",
+    "text": "화는 전통적으로 표현과 밝음을 상징해요. 확인한 글자에서 화가 두 개 이상이면 일상에서 드러내고 나누는 장면을 돌아보는 소재로 삼아요. 이 개수는 기운의 강약·능력·용신을 뜻하지 않으며, 실제 경험이 해석보다 우선해요.",
+    "reviewStatus": "automated-checked",
+    "contentVersion": "1.0.1",
+    "updatedAt": "2026-10-20",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "element-symbol-2",
+    "element": "토",
+    "text": "토는 전통적으로 바탕과 돌봄에 연결해 읽어요. 알려진 글자에 토가 두 개 이상 있을 때 생활을 받쳐주는 조건을 살피는 질문을 더해요. 이 개수는 기운의 강약·능력·용신을 뜻하지 않으며, 실제 경험이 해석보다 우선해요.",
+    "reviewStatus": "automated-checked",
+    "contentVersion": "1.0.1",
+    "updatedAt": "2026-10-20",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "element-symbol-3",
+    "element": "금",
+    "text": "금은 전통적으로 구분과 정돈의 상징으로 읽어요. 확인된 글자에서 금이 두 개 이상이면 기준을 세우고 조절하는 장면에 관한 관점을 더해요. 이 개수는 기운의 강약·능력·용신을 뜻하지 않으며, 실제 경험이 해석보다 우선해요.",
+    "reviewStatus": "automated-checked",
+    "contentVersion": "1.0.1",
+    "updatedAt": "2026-10-20",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "element-symbol-4",
+    "element": "수",
+    "text": "수는 전통적으로 흐름과 탐색을 상징해요. 알려진 글자에 수가 두 개 이상 집계되면 맥락을 살피고 생각을 정리하는 질문을 덧붙여요. 이 개수는 기운의 강약·능력·용신을 뜻하지 않으며, 실제 경험이 해석보다 우선해요.",
+    "reviewStatus": "automated-checked",
+    "contentVersion": "1.0.1",
+    "updatedAt": "2026-10-20",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  }
+]
