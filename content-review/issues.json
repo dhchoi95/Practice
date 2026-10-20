@@ -1,0 +1,63 @@
+[
+  {
+    "id": "AUDIT-001",
+    "source": "implementation-audit",
+    "issueType": "repeated-and-vague",
+    "ruleFamilies": [
+      "core-"
+    ],
+    "finding": "기본 원고에서 일간별 관찰 문장을 여러 주제에 반복함.",
+    "change": "주제별 상황·실행·반대 사례로 교체하고 기본 원고 70개를 개정함.",
+    "regressionCases": [
+      "same-stem-output-context",
+      "same-stem-order-context"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "AUDIT-002",
+    "source": "implementation-audit",
+    "issueType": "untraceable-premise",
+    "ruleFamilies": [
+      "core-",
+      "period-",
+      "relation-"
+    ],
+    "finding": "계산 전제와 해석 확장·반대 사례의 연결이 구조화되어 있지 않았음.",
+    "change": "근거 정의 25개와 원고 135개의 evidence 연결. 근거를 보장하지 않는 적용 조건은 검증 실패.",
+    "regressionCases": [
+      "spoofed-relation-without-day-is-blocked",
+      "unknown-period-neutral"
+    ],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "AUDIT-003",
+    "source": "implementation-audit",
+    "issueType": "korean-particle",
+    "ruleFamilies": [
+      "core-careermoney-",
+      "core-relationships-"
+    ],
+    "finding": "관리을·사이을 조사 오류가 공통 도입에 남아 있었음.",
+    "change": "해당 도입을 교체하고 선정 명사의 받침/조사 검사 범위를 확대함.",
+    "regressionCases": [],
+    "status": "implemented-pending-independent-review"
+  },
+  {
+    "id": "AUDIT-004",
+    "source": "implementation-audit-expanded-counterexample",
+    "issueType": "missing-required-day-for-period",
+    "ruleFamilies": [
+      "period-"
+    ],
+    "finding": "일간 없이 기간 관계값만 잘못 전달된 입력에서 기간 원고가 선택될 수 있었음. 정상 계산 경로는 미확정 일간의 관계값도 null로 만듦.",
+    "change": "기간 원고 30개에 natal.dayStem을 필수 조건으로 추가하고 근거 검증에서도 요구함.",
+    "regressionCases": [
+      "spoofed-year-period-without-day",
+      "spoofed-month-period-without-day",
+      "spoofed-day-period-without-day"
+    ],
+    "status": "implemented-pending-independent-review"
+  }
+]

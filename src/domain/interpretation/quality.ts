@@ -1,7 +1,7 @@
 import type { InterpretationRule } from './schema';
 
 // Deliberately limited to vocabulary used in these manuscripts; not a grammar checker.
-const terms=['목','화','토','금','수','비견','겁재','식신','상관','편재','정재','편관','정관','편인','정인'];
+const terms=['목','화','토','금','수','비견','겁재','식신','상관','편재','정재','편관','정관','편인','정인','관리','사이','돌봄','표현','관계','직업','재물'];
 export function particleErrors(text:string):string[]{
   const errors:string[]=[];
   for(const term of terms){

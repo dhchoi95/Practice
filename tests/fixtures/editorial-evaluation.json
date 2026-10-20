@@ -1,0 +1,333 @@
+[
+  {
+    "id": "same-stem-output-context",
+    "category": "love",
+    "birth": {
+      "year": 1992,
+      "month": 5,
+      "day": 15,
+      "hour": 10,
+      "minute": 30
+    },
+    "expectedRuleIds": [
+      "core-love-7",
+      "relation-love-output"
+    ],
+    "forbiddenRuleIds": [
+      "relation-love-order"
+    ]
+  },
+  {
+    "id": "same-stem-order-context",
+    "category": "love",
+    "birth": {
+      "year": 2000,
+      "month": 1,
+      "day": 4,
+      "hour": 10,
+      "minute": 30
+    },
+    "expectedRuleIds": [
+      "core-love-7",
+      "relation-love-order"
+    ],
+    "forbiddenRuleIds": [
+      "relation-love-output"
+    ]
+  },
+  {
+    "id": "unknown-hour-known-day",
+    "category": "personality",
+    "birth": {
+      "year": 1992,
+      "month": 5,
+      "day": 15,
+      "unknownTime": true
+    },
+    "expectedRuleIds": [
+      "core-personality-7",
+      "unknown-personality"
+    ],
+    "forbiddenRuleIds": [
+      "neutral"
+    ]
+  },
+  {
+    "id": "dst-unknown-personality",
+    "category": "personality",
+    "birth": {
+      "year": 1987,
+      "month": 6,
+      "day": 1,
+      "unknownTime": true
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "dst-unknown-general",
+    "category": "general",
+    "birth": {
+      "year": 1987,
+      "month": 6,
+      "day": 1,
+      "unknownTime": true
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "peer-career-specific",
+    "category": "careerMoney",
+    "features": {
+      "natal.dayStem": 0,
+      "relations.peer": 2
+    },
+    "expectedRuleIds": [
+      "core-careermoney-0",
+      "relation-careermoney-peer"
+    ]
+  },
+  {
+    "id": "output-relationships-specific",
+    "category": "relationships",
+    "features": {
+      "natal.dayStem": 2,
+      "relations.output": 2
+    },
+    "expectedRuleIds": [
+      "core-relationships-2",
+      "relation-relationships-output"
+    ]
+  },
+  {
+    "id": "wealth-single-no-spouse-prediction",
+    "category": "single",
+    "features": {
+      "natal.dayStem": 4,
+      "relations.wealth": 2
+    },
+    "expectedRuleIds": [
+      "core-single-4",
+      "relation-single-wealth"
+    ]
+  },
+  {
+    "id": "order-mind-no-diagnosis",
+    "category": "mind",
+    "features": {
+      "natal.dayStem": 6,
+      "relations.order": 2
+    },
+    "expectedRuleIds": [
+      "core-mind-6",
+      "relation-mind-order"
+    ]
+  },
+  {
+    "id": "resource-general-count-only",
+    "category": "general",
+    "features": {
+      "natal.dayStem": 8,
+      "relations.resource": 2
+    },
+    "expectedRuleIds": [
+      "core-general-8",
+      "relation-resource"
+    ]
+  },
+  {
+    "id": "larger-count-wins",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 0,
+      "relations.peer": 1,
+      "relations.output": 2
+    },
+    "expectedRuleIds": [
+      "relation-love-output"
+    ],
+    "forbiddenRuleIds": [
+      "relation-love-peer"
+    ]
+  },
+  {
+    "id": "count-tie-is-stable",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 0,
+      "relations.peer": 1,
+      "relations.output": 1
+    },
+    "expectedRuleIds": [
+      "relation-love-output"
+    ],
+    "forbiddenRuleIds": [
+      "relation-love-peer"
+    ]
+  },
+  {
+    "id": "zero-is-not-presence",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 0,
+      "relations.output": 0
+    },
+    "expectedRuleIds": [
+      "core-love-0"
+    ],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ]
+  },
+  {
+    "id": "missing-is-not-presence",
+    "category": "love",
+    "features": {
+      "natal.dayStem": 0
+    },
+    "expectedRuleIds": [
+      "core-love-0"
+    ],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ]
+  },
+  {
+    "id": "spoofed-relation-without-day-is-blocked",
+    "category": "love",
+    "features": {
+      "natal.dayStem": null,
+      "relations.output": 2
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "day-period-requires-relation",
+    "category": "day",
+    "features": {
+      "natal.dayStem": 0,
+      "period.kind": "day",
+      "period.relation": "비견"
+    },
+    "expectedRuleIds": [
+      "period-day-0"
+    ]
+  },
+  {
+    "id": "month-period-requires-relation",
+    "category": "month",
+    "features": {
+      "natal.dayStem": 0,
+      "period.kind": "month",
+      "period.relation": "정재"
+    },
+    "expectedRuleIds": [
+      "period-month-5"
+    ]
+  },
+  {
+    "id": "year-period-requires-relation",
+    "category": "year",
+    "features": {
+      "natal.dayStem": 0,
+      "period.kind": "year",
+      "period.relation": "정인"
+    },
+    "expectedRuleIds": [
+      "period-year-9"
+    ]
+  },
+  {
+    "id": "unknown-period-neutral",
+    "category": "year",
+    "features": {
+      "natal.dayStem": null,
+      "period.kind": "year",
+      "period.relation": null
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "lichun-partial-day-retained",
+    "category": "personality",
+    "birth": {
+      "year": 2024,
+      "month": 2,
+      "day": 4,
+      "unknownTime": true
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "relation-"
+    ],
+    "limited": false
+  },
+  {
+    "id": "spoofed-year-period-without-day",
+    "category": "year",
+    "features": {
+      "natal.dayStem": null,
+      "period.kind": "year",
+      "period.relation": "비견"
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "spoofed-month-period-without-day",
+    "category": "month",
+    "features": {
+      "natal.dayStem": null,
+      "period.kind": "month",
+      "period.relation": "비견"
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  },
+  {
+    "id": "spoofed-day-period-without-day",
+    "category": "day",
+    "features": {
+      "natal.dayStem": null,
+      "period.kind": "day",
+      "period.relation": "비견"
+    },
+    "expectedRuleIds": [],
+    "forbiddenRulePrefixes": [
+      "period-",
+      "core-",
+      "relation-"
+    ],
+    "limited": true
+  }
+]

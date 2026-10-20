@@ -9,6 +9,7 @@ import raw from '../src/content/rules.json';
 import type { BirthInput } from '../src/domain/saju/types';
 import { particleErrors,templateDuplicates } from '../src/domain/interpretation/quality';
 import { sharedExplanations } from '../src/domain/interpretation/shared';
+import { interpretationBases } from '../src/domain/interpretation/knowledge';
 export const syntheticProfiles:BirthInput[]=[];
 for(const year of [1972,1992,2002])for(const unknownTime of [true,false])for(let day=1;day<=10;day++)syntheticProfiles.push({year,month:5,day,calendar:'solar',leap:false,unknownTime,hour:unknownTime?undefined:10,minute:unknownTime?undefined:30,nickname:''});
 syntheticProfiles.push({year:2017,month:5,day:1,calendar:'lunar',leap:true,unknownTime:true,nickname:''},{year:2024,month:2,day:4,calendar:'solar',leap:false,unknownTime:true,nickname:''},{year:1987,month:6,day:1,calendar:'solar',leap:false,unknownTime:true,nickname:''});
@@ -17,7 +18,7 @@ const command=process.argv[2]||'validate';
 const rules=validateRules(raw);
 if(command==='validate'){
   if(rules.length<180)throw new Error('초기 콘텐츠 180개 미달');
-  console.log(`PASS · 조건별 원고 ${rules.length}개 / 공통 설명 ${sharedExplanations.length}개 별도 · 스키마/조건/ID/용어/출처 검사`);
+  console.log(`PASS · 조건별 원고 ${rules.length}개 / 공통 설명 ${sharedExplanations.length}개 / 근거 정의 ${interpretationBases.length}개 별도 · 스키마/조건/ID/용어/출처 검사`);
   console.log(JSON.stringify(Object.fromEntries(['saju','zodiac','constellation','bloodType'].map(s=>[s,rules.filter(r=>r.system===s).length]))));
 }else if(command==='lint'){
   const errors:string[]=[],seen=new Map<string,string>();

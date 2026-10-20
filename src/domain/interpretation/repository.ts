@@ -3,6 +3,7 @@ import { glossary } from '@/content/glossary';
 import { sourceIds } from '@/content/sources';
 import { ruleSchema, type InterpretationRule, type ContentCategory, type ContentSystem } from './schema';
 import { sharedExplanations } from './shared';
+import { interpretationBases,impliesBasis } from './knowledge';
 export interface ContentRepository {find(system:ContentSystem,categories:ContentCategory[]):InterpretationRule[]; all():InterpretationRule[]}
 export function validateRules(data:unknown):InterpretationRule[] {
   if(!Array.isArray(data)||data.length>10000)throw new Error('콘텐츠는 10,000개 이하의 배열이어야 합니다.');
@@ -16,6 +17,12 @@ export function validateRules(data:unknown):InterpretationRule[] {
     const shared=sharedExplanations.find(s=>s.id===r.sharedExplanationId);
     if(shared&&!r.requires.includes(`elements.${shared.element}`))throw new Error(`공통 설명의 오행 조건 확인: ${r.id}`);
     if(r.paragraphs.some(p=>/확정한 일간|알려진 일간|확정한 기둥과 일간/.test(p))&&!r.requires.includes('natal.dayStem'))throw new Error(`일간 전제 조건 확인: ${r.id}`);
+    if(r.evidence){
+      const basis=interpretationBases.find(b=>b.id===r.evidence!.basisKey);
+      if(!basis||!r.requires.includes(basis.feature)||!impliesBasis(r.conditions,basis))throw new Error(`풀이 근거와 적용 조건 확인: ${r.id}`);
+      if(basis.kind!=='day-symbol'&&!r.requires.includes('natal.dayStem'))throw new Error(`천간 관계의 일간 조건 확인: ${r.id}`);
+    }
+    if(r.rankingFeature&&(!r.requires.includes(r.rankingFeature)||!r.exclusiveGroup||!r.evidence||interpretationBases.find(b=>b.id===r.evidence?.basisKey)?.feature!==r.rankingFeature))throw new Error(`관계 선택 기준 확인: ${r.id}`);
   }
   return rules;
 }

@@ -42,6 +42,23 @@ test('missing exact minute is rejected rather than filled as midnight',async({pa
 test('edit input changes actual natal result',async({page})=>{
   await birthResult(page);const before=await page.locator('.result-hero h2').textContent();await page.getByRole('link',{name:'입력 수정',exact:true}).click();await page.getByLabel('일',{exact:true}).fill('16');await submit(page);expect(await page.locator('.result-hero h2').textContent()).not.toBe(before);
 });
+test('same day stem receives different contextual love content from actual natal relations',async({page})=>{
+  await page.setViewportSize({width:390,height:900});
+  await page.goto('/fortune/love/');await fillBirth(page,{knownTime:true});await submit(page);
+  const headline=await page.locator('.result-hero h2').textContent();
+  await expect(page.locator('.result-content')).toContainText('애정의 표현과 전달된 뜻을 확인해요');
+  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
+  await why.locator('summary').click();await expect(why).toContainText('식상 관계가 2개');
+  await expect(why).toContainText('개수는 강약이 아니에요');
+  await why.locator('summary').click();
+  await fs.mkdir('reports/content-improvement-1.1.0/screenshots',{recursive:true});
+  await page.screenshot({path:'reports/content-improvement-1.1.0/screenshots/love-output-390.png',fullPage:true});
+  await page.getByRole('link',{name:'입력 수정',exact:true}).click();await fillBirth(page,{year:'2000',month:'1',day:'4',knownTime:true});await submit(page);
+  expect(await page.locator('.result-hero h2').textContent()).toBe(headline);
+  await expect(page.locator('.result-content')).toContainText('관계를 지키는 약속의 범위를 정해요');
+  await expect(page.locator('.result-content')).not.toContainText('애정의 표현과 전달된 뜻을 확인해요');
+  await page.screenshot({path:'reports/content-improvement-1.1.0/screenshots/love-order-390.png',fullPage:true});
+});
 test('all core and period categories reuse the same birth state',async({page})=>{
   await birthResult(page);for(const [slug,title] of [['personality','성격풀이'],['love','연애사주'],['career-money','직업·재물'],['relationships','대인관계'],['single','솔로사주'],['mind','마음돌봄'],['day','오늘 운세'],['month','이번 달 운세'],['year','올해 운세']]){
     await page.locator('.other-links').getByRole('link',{name:title,exact:true}).click();await expect(page).toHaveURL(`/result/${slug}/`);await expect(page.locator('.reading-section').first()).toBeVisible();await expect(page.locator('.empty-state')).toHaveCount(0);

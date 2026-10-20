@@ -1,0 +1,13 @@
+{
+  "exampleOnly": true,
+  "id": "FEEDBACK-EXAMPLE",
+  "source": "user-feedback",
+  "menu": "love",
+  "ruleIds": ["core-love-7"],
+  "featureCaseId": null,
+  "issueType": "too-vague",
+  "quotedText": "검토할 문장을 인용합니다.",
+  "expectedChange": "추가로 설명할 상황이나 근거를 적습니다.",
+  "verificationStatus": "unverified",
+  "status": "open"
+}

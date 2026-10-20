@@ -3,6 +3,7 @@ import type { Condition, ContentCategory, ContentSystem, InterpretationRule } fr
 import { contentRepository,type ContentRepository } from './repository';
 import { siteConfig } from '@/config/site';
 import { sharedExplanations } from './shared';
+import { interpretationBases,appliedFact } from './knowledge';
 export interface InterpretationSection {id:string;title:string;paragraphs:string[];tips:string[];basis:string[]}
 export interface InterpretationResult {headline:string;keywords:string[];sections:InterpretationSection[];practicalTips:string[];appliedRuleIds:string[];sharedExplanationIds:string[];skippedRuleReasons:{id:string;reason:string}[];limitations:string[];contentVersion:string}
 export function evaluate(c:Condition,f:Features):boolean {
@@ -20,7 +21,8 @@ export function evaluate(c:Condition,f:Features):boolean {
 export function selectRules(candidates:InterpretationRule[],features:Features) {
   const skipped:{id:string;reason:string}[]=[],selected:InterpretationRule[]=[];
   const groups=new Set<string>(),axes=new Map<string,string>();
-  const sorted=[...candidates].sort((a,b)=>b.priority-a.priority||b.specificity-a.specificity||a.id.localeCompare(b.id,'en'));
+  const support=(a:InterpretationRule,b:InterpretationRule)=>Number(!!a.rankingFeature)-Number(!!b.rankingFeature)||(a.rankingFeature&&b.rankingFeature?String(a.exclusiveGroup).localeCompare(String(b.exclusiveGroup),'en')||Number(features[b.rankingFeature]??0)-Number(features[a.rankingFeature]??0):0);
+  const sorted=[...candidates].sort((a,b)=>b.priority-a.priority||support(a,b)||b.specificity-a.specificity||a.id.localeCompare(b.id,'en'));
   for(const r of sorted){
     let reason='';
     if(r.requires.some(k=>features[k]===null||features[k]===undefined))reason='필수 정보 미확정';
@@ -36,12 +38,16 @@ export function selectRules(candidates:InterpretationRule[],features:Features) {
   return {selected,skipped};
 }
 const sectionOrder=['overview','detail','balance','context','practice'];
-function basisFor(rule:InterpretationRule):string[] {
+function basisFor(rule:InterpretationRule,features:Features):string[] {
+  if(rule.evidence){
+    const basis=interpretationBases.find(b=>b.id===rule.evidence!.basisKey)!;
+    return [appliedFact(basis,features),rule.evidence.rationale,rule.evidence.limitation];
+  }
   if(rule.provenance.kind==='calculation-rule')return ['알려진 계산 항목의 범위와 개수를 설명해요.'];
   if(rule.requires.includes('period.relation'))return ['내 일간과 해당 기간 천간의 십성 관계를 해석의 소재로 삼았어요.'];
   if(rule.requires.includes('natal.dayStem'))return ['일간에 연결한 전통적 상징을 출발점으로 쓴 창작 풀이예요. 개인 전체를 설명하지 않아요.'];
   if(rule.system!=='saju')return ['직접 선택하거나 달력으로 분류한 유형에 맞춘 가벼운 창작 읽을거리예요.'];
-  return ['확인 가능한 원국 feature에 맞춘 보완 설명이에요.'];
+  return ['확정된 기둥에서 확인한 글자의 분류를 바탕으로 더한 보완 설명이에요.'];
 }
 export function interpret(system:ContentSystem,category:ContentCategory,features:Features,repo:ContentRepository=contentRepository):InterpretationResult {
   const cats:ContentCategory[]=category==='general'?['general','personality','careerMoney','love','relationships']:[category];
@@ -50,7 +56,7 @@ export function interpret(system:ContentSystem,category:ContentCategory,features
   const ordered=selected.sort((a,b)=>sectionOrder.indexOf(a.section)-sectionOrder.indexOf(b.section)||cats.indexOf(a.category)-cats.indexOf(b.category)||a.id.localeCompare(b.id,'en'));
   const seen=new Set<string>();
   let length=0;
-  const sections=ordered.map(r=>({id:r.id,title:r.title,paragraphs:[...(r.sharedExplanationId?[sharedExplanations.find(s=>s.id===r.sharedExplanationId)!.text]:[]),...(category==='general'&&r.category!=='general'?r.paragraphs.slice(1,3):r.paragraphs)].filter(p=>{if(seen.has(p))return false;seen.add(p);return true;}),tips:r.practicalTips,basis:basisFor(r)})).filter(s=>{
+  const sections=ordered.map(r=>({id:r.id,title:r.title,paragraphs:[...(r.sharedExplanationId?[sharedExplanations.find(s=>s.id===r.sharedExplanationId)!.text]:[]),...(category==='general'&&r.category!=='general'?r.paragraphs.slice(0,2):r.paragraphs)].filter(p=>{if(seen.has(p))return false;seen.add(p);return true;}),tips:r.practicalTips,basis:basisFor(r,features)})).filter(s=>{
     if(!s.paragraphs.length)return false;
     const size=s.paragraphs.join('').length;
     if(category==='general'&&length+size>1800)return false;

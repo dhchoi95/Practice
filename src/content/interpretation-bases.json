@@ -1,0 +1,352 @@
+[
+  {
+    "id": "stem-0",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 0,
+    "fact": "갑은 양의 목에 대응하는 천간입니다.",
+    "editorialTheme": "방향과 성장",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-1",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 1,
+    "fact": "을은 음의 목에 대응하는 천간입니다.",
+    "editorialTheme": "환경에 맞춘 연결",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-2",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 2,
+    "fact": "병은 양의 화에 대응하는 천간입니다.",
+    "editorialTheme": "표현과 공유",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-3",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 3,
+    "fact": "정은 음의 화에 대응하는 천간입니다.",
+    "editorialTheme": "가까운 대상에 대한 집중",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-4",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 4,
+    "fact": "무은 양의 토에 대응하는 천간입니다.",
+    "editorialTheme": "중심과 유지",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-5",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 5,
+    "fact": "기은 음의 토에 대응하는 천간입니다.",
+    "editorialTheme": "구체적인 돌봄",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-6",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 6,
+    "fact": "경은 양의 금에 대응하는 천간입니다.",
+    "editorialTheme": "기준과 구분",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-7",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 7,
+    "fact": "신은 음의 금에 대응하는 천간입니다.",
+    "editorialTheme": "세부의 정돈",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-8",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 8,
+    "fact": "임은 양의 수에 대응하는 천간입니다.",
+    "editorialTheme": "폭넓은 탐색",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "stem-9",
+    "kind": "day-symbol",
+    "feature": "natal.dayStem",
+    "op": "eq",
+    "value": 9,
+    "fact": "계은 음의 수에 대응하는 천간입니다.",
+    "editorialTheme": "맥락의 관찰",
+    "scope": "일간 하나의 전통적 상징을 빌린 관찰 질문입니다. 원국 전체의 성향·적성·강약 판정이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-0",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "비견",
+    "fact": "비견은 일간과 같은 오행이며 음양이 같은 천간 관계입니다.",
+    "editorialTheme": "자율과 협업",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-1",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "겁재",
+    "fact": "겁재은 일간과 같은 오행이며 음양이 다른 천간 관계입니다.",
+    "editorialTheme": "자원과 경계",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-2",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "식신",
+    "fact": "식신은 일간이 생하는 오행이며 음양이 같은 천간 관계입니다.",
+    "editorialTheme": "익힌 것의 산출",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-3",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "상관",
+    "fact": "상관은 일간이 생하는 오행이며 음양이 다른 천간 관계입니다.",
+    "editorialTheme": "표현과 개선",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-4",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "편재",
+    "fact": "편재은 일간이 극하는 오행이며 음양이 같은 천간 관계입니다.",
+    "editorialTheme": "외부 제안과 자원",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-5",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "정재",
+    "fact": "정재은 일간이 극하는 오행이며 음양이 다른 천간 관계입니다.",
+    "editorialTheme": "반복 자원의 관리",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-6",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "편관",
+    "fact": "편관은 일간을 극하는 오행이며 음양이 같은 천간 관계입니다.",
+    "editorialTheme": "책임과 지원",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-7",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "정관",
+    "fact": "정관은 일간을 극하는 오행이며 음양이 다른 천간 관계입니다.",
+    "editorialTheme": "역할과 합의",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-8",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "편인",
+    "fact": "편인은 일간을 생하는 오행이며 음양이 같은 천간 관계입니다.",
+    "editorialTheme": "탐색과 검토",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "god-9",
+    "kind": "period-relation",
+    "feature": "period.relation",
+    "op": "eq",
+    "value": "정인",
+    "fact": "정인은 일간을 생하는 오행이며 음양이 다른 천간 관계입니다.",
+    "editorialTheme": "배움과 활용",
+    "scope": "일간과 대상 기간의 천간 관계 한 가지만 사용합니다. 세운 전체·십성의 길흉·실제 사건 예측이 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "group-peer",
+    "kind": "visible-stems",
+    "feature": "relations.peer",
+    "op": "gte",
+    "value": 1,
+    "fact": "비겁은 일간과 같은 오행의 천간 관계를 묶은 이름입니다.",
+    "editorialTheme": "협업과 자율",
+    "scope": "일간을 제외한 확정 천간만 셉니다. 지지·지장간·월령을 포함한 십성 강약이나 원국 전체의 우세가 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "group-output",
+    "kind": "visible-stems",
+    "feature": "relations.output",
+    "op": "gte",
+    "value": 1,
+    "fact": "식상은 일간이 생하는 오행의 천간 관계를 묶은 이름입니다.",
+    "editorialTheme": "표현과 결과",
+    "scope": "일간을 제외한 확정 천간만 셉니다. 지지·지장간·월령을 포함한 십성 강약이나 원국 전체의 우세가 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "group-wealth",
+    "kind": "visible-stems",
+    "feature": "relations.wealth",
+    "op": "gte",
+    "value": 1,
+    "fact": "재성은 일간이 극하는 오행의 천간 관계를 묶은 이름입니다.",
+    "editorialTheme": "시간과 비용",
+    "scope": "일간을 제외한 확정 천간만 셉니다. 지지·지장간·월령을 포함한 십성 강약이나 원국 전체의 우세가 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "group-order",
+    "kind": "visible-stems",
+    "feature": "relations.order",
+    "op": "gte",
+    "value": 1,
+    "fact": "관성은 일간을 극하는 오행의 천간 관계를 묶은 이름입니다.",
+    "editorialTheme": "책임과 기준",
+    "scope": "일간을 제외한 확정 천간만 셉니다. 지지·지장간·월령을 포함한 십성 강약이나 원국 전체의 우세가 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  },
+  {
+    "id": "group-resource",
+    "kind": "visible-stems",
+    "feature": "relations.resource",
+    "op": "gte",
+    "value": 1,
+    "fact": "인성은 일간을 생하는 오행의 천간 관계를 묶은 이름입니다.",
+    "editorialTheme": "배움과 도움",
+    "scope": "일간을 제외한 확정 천간만 셉니다. 지지·지장간·월령을 포함한 십성 강약이나 원국 전체의 우세가 아닙니다.",
+    "sourceIds": [
+      "traditional-mapping",
+      "original-editorial"
+    ]
+  }
+]

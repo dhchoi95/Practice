@@ -58,8 +58,8 @@ describe('deterministic ordering and conflict resolution',()=>{
 describe('real content and synthetic profile coverage',()=>{
   const clock={now:()=>new Date('2026-10-20T03:00:00Z')};
   const input={year:1992,month:5,day:15,calendar:'solar' as const,leap:false,unknownTime:false,hour:10,minute:30,nickname:''};
-  it('180 conditional records and five separately counted shared explanations',()=>{
-    const rules=contentRepository.all();expect(rules).toHaveLength(180);
+  it('210 conditional records and five separately counted shared explanations',()=>{
+    const rules=contentRepository.all();expect(rules).toHaveLength(210);
     expect(rules.filter(r=>r.id.startsWith('core-'))).toHaveLength(70);
     expect(rules.filter(r=>r.id.startsWith('element-'))).toHaveLength(35);
     expect(sharedExplanations).toHaveLength(5);

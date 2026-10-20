@@ -4,7 +4,7 @@ export const siteConfig = {
   // 운영 도메인 확정 후 NEXT_PUBLIC_SITE_URL에 https://실제도메인을 설정하세요.
   url: process.env.NEXT_PUBLIC_SITE_URL || '',
   instagram: '',
-  contentVersion: '1.0.2',
+  contentVersion: '1.1.0',
 };
 export const categories = [
   {slug:'saju', name:'정통사주', short:'내 사주를 차근차근', description:'타고난 기질부터 일과 관계까지, 내 사주의 기본을 편안하게 살펴보세요.', system:'saju', content:'general', icon:'book', color:'sand'},
