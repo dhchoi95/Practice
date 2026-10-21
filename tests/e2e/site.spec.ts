@@ -46,7 +46,7 @@ test('same day stem receives different contextual love content from actual natal
   await page.setViewportSize({width:390,height:900});
   await page.goto('/fortune/love/');await fillBirth(page,{knownTime:true});await submit(page);
   const headline=await page.locator('.result-hero h2').textContent();
-  await expect(page.locator('.result-content')).toContainText('애정의 표현과 전달된 뜻을 확인해요');
+  await expect(page.locator('.result-content')).toContainText('장난이 다르게 들렸을 때');
   const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
   await why.locator('summary').click();await expect(why).toContainText('식상 관계가 2개');
   await expect(why).toContainText('개수는 강약이 아니에요');
@@ -55,8 +55,8 @@ test('same day stem receives different contextual love content from actual natal
   await page.screenshot({path:'reports/content-improvement-1.1.0/screenshots/love-output-390.png',fullPage:true});
   await page.getByRole('link',{name:'입력 수정',exact:true}).click();await fillBirth(page,{year:'2000',month:'1',day:'4',knownTime:true});await submit(page);
   expect(await page.locator('.result-hero h2').textContent()).toBe(headline);
-  await expect(page.locator('.result-content')).toContainText('관계를 지키는 약속의 범위를 정해요');
-  await expect(page.locator('.result-content')).not.toContainText('애정의 표현과 전달된 뜻을 확인해요');
+  await expect(page.locator('.result-content')).toContainText('지키기 어려운 날의 약속까지');
+  await expect(page.locator('.result-content')).not.toContainText('장난이 다르게 들렸을 때');
   await page.screenshot({path:'reports/content-improvement-1.1.0/screenshots/love-order-390.png',fullPage:true});
 });
 test('all core and period categories reuse the same birth state',async({page})=>{
@@ -263,10 +263,10 @@ test('CR-01 vowel-ending explanation is correct on screen and in native PDF',asy
   const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
   await why.locator('summary').click();await expect(why).toContainText('계산된 일간은 병화예요');await expect(why).not.toContainText('병화이에요');
   const before=await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));
-  await fs.mkdir('reports/content-improvement-1.2.0/screenshots',{recursive:true});
+  await fs.mkdir('reports/content-improvement-1.3.0/screenshots',{recursive:true});
   // Capture from document origin so offscreen fixed skip links stay outside the full-page image.
   await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
-  await page.screenshot({path:'reports/content-improvement-1.2.0/screenshots/corrected-love-390.png',fullPage:true});
+  await page.screenshot({path:'reports/content-improvement-1.3.0/screenshots/corrected-love-390.png',fullPage:true});
   await page.pdf({path:'reports/print/grammar-copula.pdf',format:'A4',printBackground:true});
   expect(await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open))).toEqual(before);
 });
@@ -276,13 +276,13 @@ test('CR-01 and CR-02 annual basis identifies both actual segments without publi
   const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
   await why.locator('summary').click();
   await expect(why.getByRole('heading',{name:'앞 구간 · 편재',exact:true})).toBeVisible();await expect(why.getByRole('heading',{name:'뒤 구간 · 정관',exact:true})).toBeVisible();
-  await expect(why).toContainText('편재를 해당 시간 범위');await expect(why).toContainText('정관을 해당 시간 범위');await expect(why).not.toContainText('편재을');await expect(why).not.toContainText('편재이에요');
+  await expect(why).toContainText('편재를 이 구간의 생활 이야기');await expect(why).toContainText('정관을 이 구간의 생활 이야기');await expect(why).not.toContainText('편재을');await expect(why).not.toContainText('편재이에요');
   await expect(page.locator('main')).not.toContainText('period-year-4');await expect(page.locator('main')).not.toContainText('period-year-7');
   await expect(page.locator('.result-content')).toContainText('앞 구간 ·');await expect(page.locator('.result-content')).toContainText('뒤 구간 ·');
-  await fs.mkdir('reports/content-improvement-1.2.0/screenshots',{recursive:true});
+  await fs.mkdir('reports/content-improvement-1.3.0/screenshots',{recursive:true});
   // Capture from document origin so offscreen fixed skip links stay outside the full-page image.
   await page.evaluate(()=>window.scrollTo({top:0,left:0,behavior:'instant'}));
-  await page.screenshot({path:'reports/content-improvement-1.2.0/screenshots/annual-basis-390.png',fullPage:true});
+  await page.screenshot({path:'reports/content-improvement-1.3.0/screenshots/annual-basis-390.png',fullPage:true});
   await page.pdf({path:'reports/print/grammar-year-trace.pdf',format:'A4',printBackground:true});
   await expect(why).toHaveAttribute('open','');
 });
@@ -298,4 +298,43 @@ test('period trace stays in memory and expanded result reflows at 320px and enla
   for(const bad of ['기간진단개인정보검사','1992-05-15','10:30','period-year-4'])expect(JSON.stringify(requests)+logs.join(' ')).not.toContain(bad);
   expect(requests.every(r=>!r.body)).toBe(true);expect(page.url()).not.toMatch(/[?#]/);
   await page.reload();await expect(page.locator('.empty-state')).toBeVisible();
+});
+
+test('KR-02 edited general roles and suggestions stay readable and survive actual print',async({page})=>{
+  await page.setViewportSize({width:390,height:900});await birthResult(page,true);
+  for(const text of ['쉬려던 시간','실수 뒤에도 나를 공평하게','수정 부탁','바라는 걸'])await expect(page.locator('.result-content')).toContainText(text);
+  await expect(page.locator('.practical-panel')).not.toContainText('완료 조건 세 개');
+  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});await why.locator('summary').click();
+  for(const width of [390,320]){
+    await page.setViewportSize({width,height:900});await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await page.screenshot({path:`reports/content-improvement-1.3.0/screenshots/editorial-general-${width}.png`,fullPage:true});
+  }
+  const states=()=>page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));const before=await states();
+  await page.pdf({path:'reports/print/editorial-general.pdf',format:'A4',printBackground:true});expect(await states()).toEqual(before);
+});
+test('KR-03 and KR-06 dates sit beside the reading and love does not presume a partner',async({page})=>{
+  await page.setViewportSize({width:390,height:900});await page.clock.install({time:new Date('2026-10-20T03:00:00Z')});
+  await page.goto('/fortune/love/');await fillBirth(page,{knownTime:true});await submit(page);
+  await expect(page.locator('.result-content')).toContainText('지금 만나는 사람이 없다면');await expect(page.locator('.result-content')).toContainText('내게 당연한 일도 상대는 모를 수 있어요');
+  await page.pdf({path:'reports/print/editorial-love.pdf',format:'A4',printBackground:true});
+  await page.locator('.other-links').getByRole('link',{name:'올해 운세',exact:true}).click();
+  const range=page.getByRole('complementary',{name:'풀이가 적용되는 구간'});
+  await expect(range).toContainText('2026년 1월 1일 ~ 2026년 2월 4일');await expect(range).toContainText('2026년 2월 4일 ~ 2026년 12월 31일');
+  await expect(page.locator('.result-content')).not.toContainText('분기마다');await expect(page.locator('.result-content')).not.toContainText('연간 총비용');
+  await page.getByText('대상 기간과 절기 구간 보기',{exact:true}).click();await expect(page.locator('.period-segment')).toHaveCount(2);
+  await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
+  await page.screenshot({path:'reports/content-improvement-1.3.0/screenshots/editorial-year-range-390.png',fullPage:true});
+});
+test('all 13 edited menu flows render their own actual content at mobile width',async({page})=>{
+  await page.setViewportSize({width:390,height:900});await birthResult(page,true);
+  for(const label of ['정통사주','성격풀이','연애사주','직업·재물','대인관계','솔로사주','마음돌봄','올해 운세','이번 달 운세','오늘 운세']){
+    await page.locator('.other-links').getByRole('link',{name:label,exact:true}).click();
+    await expect(page.locator('.result-content')).not.toBeEmpty();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+  for(const [slug,label] of [['zodiac','쥐띠'],['constellation','염소자리'],['blood-type','A형']]){
+    await page.goto(`/fortune/${slug}/`);await page.getByRole('radio',{name:label,exact:slug!=='constellation'}).check();await page.getByRole('button',{name:/.*(운세|풀이) 보기/}).click();
+    await expect(page.locator('.result-content')).not.toBeEmpty();await page.getByText('왜 이런 풀이인가요?',{exact:true}).click();
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
 });

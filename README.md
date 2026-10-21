@@ -2,7 +2,7 @@
 
 가입·결제·실행 중 AI 호출 없이 사용하는 한국어 무료 사주·운세 사이트입니다. Next.js 정적 HTML과 브라우저 계산으로 동작합니다. 출생정보는 브라우저 메모리에만 두며 새로고침하면 사라집니다.
 
-현재 작업본은 콘텐츠 1.2.0 개선안입니다. 1.1.0 독립 검토의 한국어·기간 이력 문제를 수정하고 근거·평가·검토 구조를 보완했습니다. 새 복합 원고 4개는 일반 빌드에서 제외한 draft이며 독립 의미 검토는 대기 상태입니다. [고도화 결과](docs/content-improvement-1.2.0.md), [콘텐츠·검토 구조](docs/content-schema-1.2.0.md), [반복 개선 방법](docs/content-improvement-method.md), [이전 운영 준비 상태](docs/launch-status-1.0.2.md)를 확인하세요.
+현재 작업본은 콘텐츠 1.3.0 한국어 편집본입니다. 정상 원고210개를 검토해179개의 본문 등을 교정하고31개는 유지했습니다. 기간 표현과 검토 이력도 보완했습니다. [편집 결과](docs/content-improvement-1.3.0.md), [한국어 기준](docs/editorial-standard-1.3.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
 
 ## 처음 실행하기
 
@@ -41,7 +41,7 @@ npm run build
 npm run test:e2e
 ```
 
-`verify`는 lint → TypeScript → 단위·통합 검사 → 원고 중복·표현 검사 → 합성 프로필 coverage → 고정 평가 사례 → 출처·검토 이력 → 전체 결과 → 별도 복합 시범 순서입니다. `build`가 먼저 성공해야 E2E가 실제 `out/` 정적 파일을 검사할 수 있습니다. 이 클라우드에는 `/usr/bin/chromium`이 있습니다. 다른 기기에서 브라우저가 없다면 다음을 한 번 실행하세요.
+`verify`는 lint → TypeScript → 단위·통합 검사 → 원고 중복·표현 검사 → 합성 프로필 coverage → 고정 평가 사례 → 출처·검토 이력 → 전체 결과 → 별도 복합 시범 → 한국어 편집 이력 순서입니다. `build`가 먼저 성공해야 E2E가 실제 `out/` 정적 파일을 검사할 수 있습니다. 이 클라우드에는 `/usr/bin/chromium`이 있습니다. 다른 기기에서 브라우저가 없다면 다음을 한 번 실행하세요.
 
 ```bash
 npx playwright install chromium
@@ -49,7 +49,7 @@ npx playwright install chromium
 
 Playwright는 시스템 Chromium이 있으면 사용하고, 없으면 설치한 브라우저를 사용합니다. 별도 경로는 `PLAYWRIGHT_CHROMIUM_EXECUTABLE`로 지정할 수 있습니다. 실행 결과는 `playwright-report/`, 실패 추적은 `test-results/`, 화면과 원고 검토 자료는 `reports/`에 생깁니다. 이 폴더에는 합성 입력만 사용합니다.
 
-E2E는 닫힌/열린 상세와 연·월·일의 일간 확정/미확정을 포함한 실제 PDF 11개를 `reports/print/`에 만듭니다. PyMuPDF가 있는 검토 환경에서는 `python3 scripts/verify-print-pdfs.py`로 표·계산 기준의 PDF 텍스트 포함과 두 출력의 동일성을 추가 검사합니다. 기간 상세에는 실제로 제공한 관계 해석만 안내하는지도 검사하고, 새 PDF 두 개는 교정 문장과 두 구간 근거를 확인합니다. 앱 실행에는 Python이 필요하지 않습니다. `tsx` CLI의 IPC 권한 오류가 나는 환경에서는 콘텐츠 명령을 `node --import tsx scripts/content-tools.ts lint`처럼 실행할 수 있습니다.
+E2E는 닫힌/열린 상세와 연·월·일의 일간 확정/미확정을 포함한 실제 PDF 13개를 `reports/print/`에 만듭니다. PyMuPDF가 있는 검토 환경에서는 `python3 scripts/verify-print-pdfs.py`로 표·계산 기준의 PDF 텍스트 포함과 두 출력의 동일성을 추가 검사합니다. 기간 상세에는 실제로 제공한 관계 해석만 안내하는지도 검사하고, 교정 문장·기간 근거와 새 종합/연애 본문도 PDF에서 확인합니다. 앱 실행에는 Python이 필요하지 않습니다. `tsx` CLI의 IPC 권한 오류가 나는 환경에서는 콘텐츠 명령을 `node --import tsx scripts/content-tools.ts lint`처럼 실행할 수 있습니다.
 
 ## 운영용 정적 파일 만들기
 

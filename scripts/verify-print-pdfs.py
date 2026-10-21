@@ -10,7 +10,7 @@ import fitz
 root = Path(__file__).resolve().parents[1]
 checks = {}
 texts = {}
-filenames = ['result-closed.pdf', 'result-open.pdf', 'year-boundary.pdf', 'grammar-copula.pdf', 'grammar-year-trace.pdf']
+filenames = ['result-closed.pdf', 'result-open.pdf', 'year-boundary.pdf', 'grammar-copula.pdf', 'grammar-year-trace.pdf', 'editorial-general.pdf', 'editorial-love.pdf']
 filenames += [f'period-{kind}-{state}.pdf' for kind in ['year', 'month', 'day']
               for state in ['unknown', 'known']]
 for filename in filenames:
@@ -27,10 +27,16 @@ for filename in filenames:
         if filename == 'grammar-copula.pdf':
             required = ['계산된일간은병화예요', '계산표준시:2000-01-0910:30', '왜이런풀이인가요']
         if filename == 'grammar-year-trace.pdf':
-            required = ['앞구간·편재', '뒤구간·정관', '편재를해당시간범위', '정관을해당시간범위',
+            required = ['앞구간·편재', '뒤구간·정관', '편재를이구간의생활이야기', '정관을이구간의생활이야기',
                         '2026년1월1일00:00', '2026년2월4일05:02', '2027년1월1일00:00',
                         '내사주표와오행살펴보기', '왜이런풀이인가요']
-        forbidden = ['이운세메뉴공유하기', '병화이에요', '무토이에요', '임수이에요', '편재을', '편재이에요',
+        if filename == 'editorial-general.pdf':
+            required += ['실수뒤에도나를공평하게', '어디까지하면끝인지정해요', '정리를멈출시간']
+        if filename == 'editorial-love.pdf':
+            required += ['지금만나는사람이없다면', '내게당연한일도상대는모를수있어요']
+        if filename == 'grammar-year-trace.pdf':
+            required += ['2026년1월1일~2026년2월4일', '2026년2월4일~2026년12월31일']
+        forbidden = ['기대의세밀함', '인수조건', '분기마다', '이운세메뉴공유하기', '병화이에요', '무토이에요', '임수이에요', '편재을', '편재이에요',
                      'period-year-4', 'period-year-7']
         if filename.startswith('period-'):
             _, kind, state = path.stem.split('-')

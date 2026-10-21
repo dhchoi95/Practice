@@ -35,3 +35,9 @@ GitHub의 `.github/workflows/content-quality.yml`은 저장소에 반영된 뒤 
 현재 수용 사례는 29개(기존 23개 보존)다. 자유문 counterExample의 존재와 의미 검증 완료를 구분한다. `semantic-cases.json`의 10개는 사람 검토 대기로 유지한다. `content:review`로 실제 원고·주장 해시와 출처 상태를 확인하고, `content:assembled`로 전체 결과의 반복·충돌·구체성·범위를 검토한다. 시범 복합 조건 4개는 `content:compound`의 명시적 로컬 실험에서만 포함한다. 검토 전 draft는 일반 repository와 빌드에 들어가지 않는다.
 
 새 작업에서는 먼저 baseline 해시와 실패 입력을 고정하고, 수정 후 verify/build/브라우저/실제 PDF를 실행한다. 기존 검토 해시와 달라진 주장은 새 버전의 검토 기록으로 연결한다. 자동 스크립트는 human-reviewed나 독립 승인 상태를 부여하지 않는다. 1.2.0의 상세 구조·실제 명령·남은 검토 후보는 `content-schema-1.2.0.md`, `content-improvement-1.2.0.md`, `content-review/assembled-notes.md`를 따른다. 이 문서 앞부분의 23개/135개는 1.1.0 당시의 기록이다.
+
+## 1.3.0의 한국어 편집과 기록
+
+현재 작업은 정상179개 본문 등을 교정하고31개는 유지했다. 원고 수나 모델 성능 대신 생활 장면·중복·기간·관계의 전제를 편집했다. 자세한 기준과 전후24쌍은 editorial-standard-1.3.0.md 및 생성 보고서를 따른다.
+
+과거 검토를 새 해시로 덮어쓰지 않는다. review-snapshots.json으로 이전 원문을 보존하고 supersedes로 후속 기록을 연결한다. content:record는 명시적 로컬 실행에서 구현자 교정만 추가하고, content:review는 과거/현재의 해시·주장 소유·연결을 검사한다. 독립 편집/명리 승인을 자동 부여하지 않는다. 세부 방법은 review-history-1.3.0.md를 따른다. content:editorial은 기존36개 기록과 선택 필드 보존, 변경/유지/13메뉴,24쌍,빈도와6개 실제 표시 이력을 확인한다. 이 역시 의미 승인이나 모델 학습이 아니다.

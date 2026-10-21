@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { categories,type Category } from '@/config/site';
 import { useSession } from './SessionProvider';
 import { useSeoulDate } from './LiveDate';
+import { segmentDateRange } from '@/domain/fortune/period-label';
 import { composePeriodReading } from '@/domain/interpretation/period-reading';
 import { interpret,type InterpretationResult } from '@/domain/interpretation/engine';
 import { targetPeriod,type PeriodKind,type TargetPeriod } from '@/domain/fortune/period';
@@ -50,6 +51,7 @@ export function FortuneResult({category}:{category:Category}){
   })):reading.sections;
   return <>
     <div className="result-hero"><p className="eyebrow">{isSaju?nickname?`${nickname} 님의 ${category.name}`:`나의 ${category.name}`:`${lightName} · 가벼운 이야기`}</p><span className="result-period">{period?.label??(!isSaju&&category.system!=='bloodType'?`${today.replaceAll('-','. ')} · 한국시간`:'타고난 기질을 돌아보는 기본 풀이')}</span><h2>{reading.headline}</h2><div className="keywords">{reading.keywords.map((k,i)=><span key={i}>{k}</span>)}</div></div>
+    {period&&<aside className="period-range-note" aria-label="풀이가 적용되는 구간">{period.segments.map((segment,i)=><p key={segment.start}><strong>{period.segments.length===1?'대상 구간':i===0?'앞 구간':'뒤 구간'}</strong> · {segmentDateRange(segment)}</p>)}{period.segments.length>1&&<p className="helper">경계 날짜에는 절입 시각에 구간이 바뀌어요. 정확한 시각은 아래 기간 상세에서 볼 수 있어요.</p>}</aside>}
     {limitations.length>0&&<aside className="result-limitation" aria-label="입력과 풀이의 한계">{limitations.map((text,i)=><p key={i}>{text}</p>)}</aside>}
     <div className="result-content">{visibleSections.map(section=><section className="reading-section" key={section.id}><h3>{section.title}</h3>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}</div>
     {editorial&&<section className="practical-panel"><span className="pill-label">오늘의 가벼운 조언 · 날짜별 편집 문구</span><h2>{editorial.title}</h2><p>{editorial.text}</p><p className="helper">이 문구의 순환은 사주·천문 계산 결과가 아니에요.</p></section>}
@@ -62,7 +64,7 @@ export function FortuneResult({category}:{category:Category}){
       {period.segments.map(s=><section className="period-segment" key={s.start}><h3>{s.label}</h3><p>{pillarText(s.pillar)} · 일간과의 관계 {s.features['period.relation']??'미확정'}</p></section>)}
     </div></details>}
     {isSaju&&birth&&<CalculationDetails result={birth.calculation}/>}
-    <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body">{reading.basisGroups?reading.basisGroups.map(group=><section key={group.label}><h3>{group.label}</h3><ul>{group.basis.map(b=><li key={b}>{b}</li>)}</ul></section>):<ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul>}<p>전통적 상징을 바탕으로 독립 작성하고 자동 형식 검사를 거친 원고예요. 독립적인 명리 검토 완료나 미래 예측의 정확성을 뜻하지 않아요. 의료·투자·법률 판단은 실제 정보와 적절한 도움을 바탕으로 해주세요.</p></div></details>
+    <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body">{reading.basisGroups?reading.basisGroups.map(group=><section key={group.label}><h3>{group.label}</h3><ul>{group.basis.map(b=><li key={b}>{b}</li>)}</ul></section>):<ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul>}<p>전통적인 상징에 빗대어 일상을 돌아보는 글이에요. 원고의 형식과 적용 조건은 자동으로 검사했지만, 독립적인 명리 검토를 마친 것은 아니에요. 개인의 성격이나 미래를 확인한 결과도 아니에요. 의료·투자·법률 판단에는 실제 정보와 적절한 도움을 받아 주세요.</p></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>{isSaju?'입력 수정':'선택 바꾸기'}</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
     <ShareActions slug={category.slug}/>
     <section className="other-readings no-print"><h2>{isSaju?'같은 정보로 다른 풀이 보기':'다른 운세도 가볍게'}</h2><div className="other-links">{categories.filter(c=>isSaju?c.system==='saju':true).map(c=><Link prefetch={false} href={isSaju?`/result/${c.slug}/`:`/fortune/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>

@@ -17,3 +17,5 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 @media(max-width:280px){.constellation-select{grid-template-columns:1fr}}
 
 @media print{.disclosure>summary{display:block;list-style:none;padding:0;margin:20px 0 12px;font-size:15pt}.disclosure-body{padding:0}.disclosure{overflow:visible}.disclosure p,.disclosure li{font-size:11pt}}
+
+.period-range-note{margin:0 0 20px;padding:14px 18px;border-left:3px solid var(--line);font-size:15px}.period-range-note p+p{margin-top:8px}

@@ -47,7 +47,7 @@ function basisFor(rule:InterpretationRule,features:Features):string[] {
     const basis=interpretationBases.find(b=>b.id===rule.evidence!.basisKey)!;
     return [appliedFact(basis,features),rule.evidence.rationale,rule.evidence.limitation];
   }
-  if(rule.provenance.kind==='calculation-rule')return ['알려진 계산 항목의 범위와 개수를 설명해요.'];
+  if(rule.provenance.kind==='calculation-rule')return ['지금 알 수 있는 글자를 나눠 센 결과를 설명해요.'];
   if(rule.requires.includes('period.relation'))return ['내 일간과 해당 기간 천간의 십성 관계를 해석의 소재로 삼았어요.'];
   if(rule.requires.includes('natal.dayStem'))return ['일간에 연결한 전통적 상징을 출발점으로 쓴 창작 풀이예요. 개인 전체를 설명하지 않아요.'];
   if(rule.system!=='saju')return ['직접 선택하거나 달력으로 분류한 유형에 맞춘 가벼운 창작 읽을거리예요.'];
@@ -86,8 +86,8 @@ export function interpret(system:ContentSystem,category:ContentCategory,features
   }
   const insufficient=sections.length===0;
   const missingDay=system==='saju'&&(features['natal.dayStem']===null||features['natal.dayStem']===undefined);
-  if(missingDay)sections.unshift({id:'unknown-day',title:'일간을 정하지 않고 읽는 안내',paragraphs:['입력한 날짜는 출생 시각에 따라 표준시의 날짜가 달라질 수 있어 일주와 일간을 확정하지 않았어요. 일간을 전제로 한 기본 성향·관계·기간 해석은 적용하지 않아요. 아래에 남은 내용은 확정된 글자의 집계 설명과 일반적인 생활 안내예요.'],tips:['출생 시각을 확인할 수 있다면 시·분을 보완하고 사주표의 미확정 표시가 바뀌는지 확인해 주세요.'],basis:['일간 미확정에 따른 계산 범위 안내이며 개별 성향 해석이 아니에요.']});
-  if(insufficient&&!missingDay)sections.push({id:'neutral',title:'확정된 정보부터 살펴볼게요',paragraphs:['지금 확인한 정보로 적용할 수 있는 풀이가 충분하지 않아요. 계산표의 미확정 항목을 확인하거나 출생 시각을 보완해 주세요. 특별한 사주라서 풀이가 안 되는 것은 아니에요.'],tips:['입력 날짜와 시간 모름 선택을 확인해 보세요.'],basis:['필수 feature가 없거나 준비된 콘텐츠와 일치하지 않아 중립 안내를 보여드려요.']});
+  if(missingDay)sections.unshift({id:'unknown-day',title:'일간을 정하지 않고 읽는 안내',paragraphs:['입력한 날짜는 출생 시각에 따라 표준시의 날짜가 달라질 수 있어 일주와 일간을 확정하지 않았어요. 일간을 전제로 한 기본 성향·관계·기간 해석은 적용하지 않아요. 아래에는 지금 알 수 있는 글자의 개수 설명과 일반적인 생활 안내만 남겼어요.'],tips:['출생 시각을 확인할 수 있다면 시·분을 보완하고 사주표의 미확정 표시가 바뀌는지 확인해 주세요.'],basis:['일간 미확정에 따른 계산 범위 안내이며 개별 성향 해석이 아니에요.']});
+  if(insufficient&&!missingDay)sections.push({id:'neutral',title:'확정된 정보부터 살펴볼게요',paragraphs:['지금 확인한 정보로 적용할 수 있는 풀이가 충분하지 않아요. 계산표의 미확정 항목을 확인하거나 출생 시각을 보완해 주세요. 특별한 사주라서 풀이가 안 되는 것은 아니에요.'],tips:['입력 날짜와 시간 모름 선택을 확인해 보세요.'],basis:['풀이에 필요한 정보가 없거나 준비한 글이 없어 일반 안내를 보여드려요.']});
   const stemKeywords=[['성장','나의 기준','꾸준함'],['유연함','연결','나의 뜻'],['표현','활기','듣는 여유'],['집중','세심함','온기'],['안정','나의 속도','작은 변화'],['돌봄','구체적인 실천','균형'],['결정','분명함','대화'],['섬세함','마무리','적정선'],['탐색','넓은 관점','작은 시작'],['관찰','맥락','마음 표현']];
   const keywords=system!=='saju'?['가벼운 이야기','나의 경험','작은 실천']:missingDay?['확정된 정보','입력 확인']:['year','month','day'].includes(category)?['관계의 균형','일상의 계획','작은 실천']:(stemKeywords[Number(features['natal.dayStem'])]??['확정된 정보','입력 확인']);
   const practicalTips=[...new Set(sections.flatMap(r=>r.tips))].slice(0,4);

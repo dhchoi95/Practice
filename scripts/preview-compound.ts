@@ -14,8 +14,8 @@ const profiles=(['love','careerMoney'] as ContentCategory[]).flatMap(category=>(
   if(!experimentalResult.appliedRuleIds.includes(id)||experimentalResult.appliedRuleIds.includes(`relation-${category.toLowerCase()}-output`))errors.push(`실험 우선순위: ${id}`);
   return {id,inputKind:'partial-features (known stem count combination; no fabricated birth date)',features,category,normal:normalResult,experimental:experimentalResult};
 }));
-await fs.mkdir('reports/content-improvement-1.2.0',{recursive:true});
-await fs.writeFile('reports/content-improvement-1.2.0/compound-preview.json',JSON.stringify({passed:!errors.length,policy:'Four drafts, two topics. Explicit offline includeDrafts:true only. No environment flag or public route.',drafts,profiles,errors},null,2)+'\n');
-await fs.writeFile('reports/content-improvement-1.2.0/compound-preview.md',profiles.map(p=>`## ${p.id}\n\n입력: ${JSON.stringify(p.features)}\n\n일반: ${p.normal.appliedRuleIds.join(', ')}\n\n실험: ${p.experimental.appliedRuleIds.join(', ')}\n\n${p.experimental.sections.filter(s=>s.id.startsWith('pilot-')).map(s=>s.title+'\n\n'+s.paragraphs.join('\n\n')).join('\n\n')}`).join('\n\n'));
+await fs.mkdir('reports/content-improvement-1.3.0',{recursive:true});
+await fs.writeFile('reports/content-improvement-1.3.0/compound-preview.json',JSON.stringify({passed:!errors.length,policy:'Four drafts, two topics. Explicit offline includeDrafts:true only. No environment flag or public route.',drafts,profiles,errors},null,2)+'\n');
+await fs.writeFile('reports/content-improvement-1.3.0/compound-preview.md',profiles.map(p=>`## ${p.id}\n\n입력: ${JSON.stringify(p.features)}\n\n일반: ${p.normal.appliedRuleIds.join(', ')}\n\n실험: ${p.experimental.appliedRuleIds.join(', ')}\n\n${p.experimental.sections.filter(s=>s.id.startsWith('pilot-')).map(s=>s.title+'\n\n'+s.paragraphs.join('\n\n')).join('\n\n')}`).join('\n\n'));
 console.log(`${errors.length?'FAIL':'PASS'} · draft ${drafts.length} · 일반 210 / 실험 ${experimental.all().length} · 비교 사례 ${profiles.length}`);
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
