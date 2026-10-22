@@ -12,7 +12,7 @@ import { particleErrors } from '../src/domain/interpretation/quality';
 import type { BirthInput } from '../src/domain/saju/types';
 import { LunarUtil } from 'lunar-typescript';
 import { hiddenStems } from '../src/domain/advanced/mappings';
-import { stemNames,branchNames } from '../src/domain/saju/tables';
+import { stemNames,stemHanja,branchNames } from '../src/domain/saju/tables';
 const dir='reports/integrated-2.0.0';await fs.mkdir(`${dir}/baseline`,{recursive:true});
 const hash=(v:unknown)=>createHash('sha256').update(canonicalContent(v)).digest('hex');
 const records=validateManuscripts([...natalModules,...periodModules]);
@@ -22,7 +22,8 @@ const baseline:{path:string;hash:string}[]=JSON.parse(await fs.readFile('content
 for(const b of baseline)if(createHash('sha256').update(await fs.readFile(b.path)).digest('hex')!==b.hash)errors.push(`호환 소스 변경 ${b.path}`);
 await fs.writeFile(`${dir}/baseline/manifest.json`,JSON.stringify({commit:'eee3ef1c9d6d3a1bf65085d0a989fb94499135e7',sources:baseline,compatibilityPolicy:'KST-MIDNIGHT-1.0',compatibilityContent:'1.4.0'},null,2)+'\n');
 // Cross-table agreement with the installed software, not an independent classical-source verification.
-const hiddenComparison=hiddenStems.map((stems,b)=>({branch:branchNames[b],app:stems.map(s=>stemNames[s]),software:LunarUtil.ZHI_HIDE_GAN[LunarUtil.ZHI[b+1]]}));
+const hiddenComparison=hiddenStems.map((stems,b)=>{const app=stems.map(s=>stemHanja[s]),software=LunarUtil.ZHI_HIDE_GAN[LunarUtil.ZHI[b+1]];return {branch:branchNames[b],app:stems.map(s=>stemNames[s]),appHanja:app,software,mainMatches:app[0]===software[0],membersMatch:JSON.stringify([...app].sort())===JSON.stringify([...software].sort()),orderMatches:JSON.stringify(app)===JSON.stringify(software)};});
+for(const r of hiddenComparison){if(!r.mainMatches||!r.membersMatch)errors.push(`지장간 본기·구성 차이 ${r.branch}`);if(!r.orderMatches)warnings.push(`지장간 보조 순서 차이: ${r.branch}, 서비스 ${r.appHanja.join('·')} / 소프트웨어 ${r.software.join('·')}. 서비스 고정 순서·가중치이며 원전 검토 대기.`);}
 await fs.writeFile(`${dir}/hidden-table-software-comparison.json`,JSON.stringify(hiddenComparison,null,2)+'\n');
 const example:BirthInput={year:1995,month:11,day:8,hour:15,minute:3,unknownTime:false,calendar:'solar',leap:false,nickname:''};
 const scenarios=[{id:'city-unknown-standard',options:{enabled:true,timePolicy:'standard' as const,luckClass:'male' as const}},{id:'city-unknown-solar-request',options:{enabled:true,timePolicy:'true-solar' as const,luckClass:'male' as const}},...['suwon','seongnam','anyang'].flatMap(cityId=>(['standard','mean-solar','true-solar'] as const).map(timePolicy=>({id:`${cityId}-${timePolicy}`,options:{enabled:true,cityId,timePolicy,luckClass:'male' as const}})))];
