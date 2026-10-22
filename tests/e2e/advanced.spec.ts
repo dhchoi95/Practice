@@ -41,3 +41,9 @@ test('all sixteen MBTI labels lead to six genuine selectable topics without infe
  expect((await page.getByRole('combobox',{name:'읽을 주제',exact:true}).boundingBox())!.height).toBeGreaterThanOrEqual(44);
  const bodies=[];for(let i=0;i<6;i++){await page.getByRole('combobox',{name:'읽을 주제',exact:true}).selectOption(String(i));bodies.push(await page.locator('.reading-section').last().innerText());}expect(new Set(bodies).size).toBe(6);await page.screenshot({path:`${dir}/screenshots/mbti-390.png`,fullPage:true});await page.reload();await expect(page.getByText('유형을 먼저 선택해 주세요')).toBeVisible();
 });
+
+test('advanced today follows Korean midnight while an explicitly selected date stays fixed',async({page})=>{
+ await page.clock.install({time:new Date('2026-10-22T14:59:30Z')});await advanced(page);await page.locator('.other-links').getByRole('link',{name:'오늘 운세',exact:true}).click();const panel=page.locator('.advanced-experience'),date=panel.getByLabel('조회 날짜',{exact:true});await expect(date).toHaveValue('2026-10-22');const before=await panel.locator('#advanced-period .advanced-period').innerText();
+ await page.clock.fastForward(60000);await expect(date).toHaveValue('2026-10-23');expect(await panel.locator('#advanced-period .advanced-period').innerText()).not.toBe(before);
+ await date.fill('2026-10-20');await page.clock.fastForward(86400000);await expect(date).toHaveValue('2026-10-20');
+});
