@@ -2,7 +2,7 @@
 
 가입·결제·실행 중 AI 호출 없이 사용하는 한국어 무료 사주·운세 사이트입니다. Next.js 정적 HTML과 브라우저 계산으로 동작합니다. 출생정보는 브라우저 메모리에만 두며 새로고침하면 사라집니다.
 
-현재 작업본은 콘텐츠 1.3.0 한국어 편집본입니다. 정상 원고210개를 검토해179개의 본문 등을 교정하고31개는 유지했습니다. 기간 표현과 검토 이력도 보완했습니다. [편집 결과](docs/content-improvement-1.3.0.md), [한국어 기준](docs/editorial-standard-1.3.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
+현재 작업본은 콘텐츠 1.4.0 한국어 교정본입니다. korean-skills의 실제 지침을 순서대로 적용하고, 정상 원고210개 중196개에서 필요한 필드를 고쳤으며14개는 유지했습니다. 제목뿐 아니라 본문·생활 제안·근거와 입력·공유·홈 안내도 검토했습니다. [교정 결과](docs/content-improvement-1.4.0.md), [현재 문체 기준](docs/korean-style-guide-1.4.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
 
 ## 처음 실행하기
 
@@ -70,4 +70,4 @@ npm start
 - [1.0.2 재검토 지적 수정 대응](docs/review-response-1.0.2.md), [접수한 1.0.1 재검토 보고서](docs/external-rereview-1.0.1.md)
 - [1.0.1 수정 대응](docs/review-response-1.0.1.md), [최초 검토 보고서](docs/external-review-1.0.0.md)
 
-서비스명은 `src/config/site.ts`, 디자인은 `src/styles/tokens.css`, 원고는 `src/content/rules.json`에서 바꿉니다. 운영 전 실제 서비스명·도메인·연락처·호스팅 로그 정책을 결정하고 개인정보 안내를 갱신하세요. 실기기 인스타그램 브라우저 확인과 독립 명리 원고 검토는 별도로 필요합니다. 이번 작업은 외부 공개 배포·계정 변경·도메인 구매를 하지 않습니다.
+서비스명은 `src/config/site.ts`, 디자인은 `src/styles/tokens.css`, 원고는 `src/content/rules.json`에서 바꿉니다. 운영 전 실제 서비스명·도메인·연락처·호스팅 로그 정책을 확인하고 개인정보 안내를 갱신하세요. 실기기 인스타그램 브라우저 확인과 독립 명리 원고 검토는 별도로 필요합니다. 정적 빌드와 GitHub 푸시, 호스팅 반영 확인은 각각 구별해 기록합니다.

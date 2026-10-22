@@ -23,8 +23,8 @@ const records=history.records;
 for(const c of cases)if(c.claimIds.some(id=>!claims.some(claim=>claim.id===id)))errors.push(`의미 검토 주장 연결: ${c.id}`);
 const queue=rules.filter(r=>r.evidence).map(r=>({ruleId:r.id,contentVersion:r.contentVersion,contentHash:hash(r),reasoning:reasoningFor(r),independentStatus:'pending',semanticCaseIds:cases.filter(c=>c.claimIds.some(id=>reasoningFor(r).interpretations.some(x=>x.id===id))).map(c=>c.id)}));
 const report={passed:!errors.length,meaning:'필드·해시·연결 검사이며 외부 출처의 진실성·전문가 검토·미래 예측 정확성을 인증하지 않습니다.',sources:sourceRecords,records,semanticCases:cases,independentQueue:queue,errors};
-await fs.mkdir('reports/content-improvement-1.3.0',{recursive:true});
-await fs.writeFile('reports/content-improvement-1.3.0/review-ledger.json',JSON.stringify(report,null,2)+'\n');
+await fs.mkdir('reports/content-improvement-1.4.0',{recursive:true});
+await fs.writeFile('reports/content-improvement-1.4.0/review-ledger.json',JSON.stringify(report,null,2)+'\n');
 console.log(`${report.passed?'PASS':'FAIL'} · 출처 ${sources.length} · 검토 기록 ${reviews.length} · 독립 검토 대기 ${queue.length} · 의미 사례 pending ${cases.length}`);
 if(process.argv.includes('--preview'))console.log(JSON.stringify(queue.slice(0,2),null,2));
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}

@@ -31,12 +31,12 @@ for filename in filenames:
                         '2026년1월1일00:00', '2026년2월4일05:02', '2027년1월1일00:00',
                         '내사주표와오행살펴보기', '왜이런풀이인가요']
         if filename == 'editorial-general.pdf':
-            required += ['실수뒤에도나를공평하게', '어디까지하면끝인지정해요', '정리를멈출시간']
+            required += ['작은실수로나를너무탓할때', '어디까지하면끝인지정해요', '다음에해도되는일을남겨두고']
         if filename == 'editorial-love.pdf':
-            required += ['지금만나는사람이없다면', '내게당연한일도상대는모를수있어요']
+            required += ['지금만나는사람이없다면', '내게는당연해도상대는모를수있어요']
         if filename == 'grammar-year-trace.pdf':
             required += ['2026년1월1일~2026년2월4일', '2026년2월4일~2026년12월31일']
-        forbidden = ['기대의세밀함', '인수조건', '분기마다', '이운세메뉴공유하기', '병화이에요', '무토이에요', '임수이에요', '편재을', '편재이에요',
+        forbidden = ['섬세한기준을나에게도다정하게', '기대의세밀함', '인수조건', '분기마다', '이운세메뉴공유하기', '병화이에요', '무토이에요', '임수이에요', '편재을', '편재이에요',
                      'period-year-4', 'period-year-7']
         if filename.startswith('period-'):
             _, kind, state = path.stem.split('-')

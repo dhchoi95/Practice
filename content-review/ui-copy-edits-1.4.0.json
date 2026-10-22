@@ -1,0 +1,582 @@
+[
+  {
+    "path": "src/config/site.ts",
+    "before": "나를 알아가는 작은 시간. 회원가입 없이 만나는 무료 사주와 오늘의 운세.",
+    "after": "브라우저에서 계산하는 무료 사주와 운세. 가입 없이 이용하고, 입력정보는 새로고침하면 사라져요.",
+    "reason": "서비스 기능과 입력 보관 방식을 직접 알리는 소개로 변경.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "내 사주를 차근차근",
+    "after": "사주표와 기본 풀이",
+    "reason": "메뉴에서 실제로 볼 내용을 알림.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "타고난 기질과 나의 방식",
+    "after": "내 경험과 비교하는 성격 이야기",
+    "reason": "성격이 계산으로 확정된다는 인상을 줄이고 실제 비교 방법을 알림.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "마음을 주고받는 나의 방식",
+    "after": "바라는 것을 전하는 대화",
+    "reason": "감성적인 표현을 실제 대화 내용으로 구체화.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "일의 방향과 돈을 대하는 태도",
+    "after": "맡은 일의 범위와 실제 비용",
+    "reason": "본문에서 다루는 업무·비용으로 구체화.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "사람 사이에서 찾는 나의 강점",
+    "after": "말과 역할을 나누는 방법",
+    "reason": "확인되지 않은 강점 대신 실제 생활 제안의 범위를 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "새로운 인연을 준비하며",
+    "after": "새로 알아가는 사람과의 대화",
+    "reason": "인연의 예고보다 실제 읽을 상황을 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "혼자 있는 시간을 편안하게",
+    "after": "식사와 휴식, 도움을 구하는 방법",
+    "reason": "마음돌봄 메뉴가 다룰 실제 내용 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "한 해의 흐름을 차근차근",
+    "after": "절기 구간별로 읽는 한 해",
+    "reason": "모호한 흐름 대신 연간 구간 구조를 알림.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "이번 달을 준비하는 작은 힌트",
+    "after": "이번 달의 일정과 생활 제안",
+    "reason": "가벼운 힌트라는 표현을 실제 제안의 내용으로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "오늘을 조금 더 가볍게",
+    "after": "오늘의 계획에 참고할 이야기",
+    "reason": "감정 변화 보장 없이 오늘 메뉴의 용도를 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "내 띠로 가볍게 보는 오늘",
+    "after": "띠를 소재로 읽는 오늘 이야기",
+    "reason": "띠가 미래를 보여준다는 표현보다 창작 읽을거리의 성격을 알림.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "별자리로 가볍게 보는 오늘",
+    "after": "별자리로 읽는 가벼운 이야기",
+    "reason": "별자리 메뉴의 범위를 쉬운 말로 유지.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "재미로 살펴보는 성향 이야기",
+    "after": "성격 검사가 아닌 대화 소재",
+    "reason": "혈액형의 성격 판정과 대화 소재를 구별.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "타고난 기질부터 일과 관계까지, 내 사주의 기본을 편안하게 살펴보세요.",
+    "after": "입력한 날짜와 시각으로 사주표를 계산하고, 일과 관계에 관한 생활 제안을 읽어요.",
+    "reason": "계산과 생활 제안의 차이를 소개부터 분명히 함.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "익숙한 나의 모습과 아직 몰랐던 강점을 돌아보는 시간이에요.",
+    "after": "전통적인 상징에 빗댄 글을 내 경험과 비교해 봐요. 실제 성격을 판정하는 검사는 아니에요.",
+    "reason": "알지 못한 강점을 계산했다는 인상을 없앰.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "관계를 맺고 마음을 표현하는 방식을 가볍게 돌아보세요.",
+    "after": "바라는 것을 말하고 상대가 원하는 방식도 듣는 대화를 생각해 봐요.",
+    "reason": "관계·표현이라는 추상어를 실제 쌍방 대화로 풀어씀.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "잘 해내고 싶은 일과 돈을 관리하는 습관을 함께 살펴보세요.",
+    "after": "맡은 일을 나누고, 일정과 실제 비용을 살피는 방법을 읽어요.",
+    "reason": "작업 분담·일정·비용이라는 실제 내용을 알림.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "서로 다른 사람들과 편안하게 지내기 위한 작은 힌트를 만나보세요.",
+    "after": "서로 다른 말투와 의견을 듣고, 함께하는 역할을 나누는 방법을 읽어요.",
+    "reason": "작은 힌트라는 상투적인 소개를 실제 대인관계 내용으로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "나만의 속도를 지키면서 새로운 만남을 준비하는 이야기예요.",
+    "after": "새로 사람을 알아갈 때 취향과 원하는 만남의 방식을 이야기해 봐요.",
+    "reason": "속도를 지킨다는 비유를 서로 원하는 만남의 방식으로 풀어씀.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "잠시 숨을 고르고, 오늘의 나를 다정하게 돌보는 시간을 가져보세요.",
+    "after": "일상에서 쉬는 방법과 도움을 구하는 일을 생각해 봐요. 진단이나 치료를 대신하지 않아요.",
+    "reason": "다정하게 돌본다는 감성적인 권유를 실제 휴식·도움과 범위로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "양력 한 해를 절기 구간으로 나누어, 일과 관계의 방향을 돌아봐요.",
+    "after": "양력 한 해를 입춘 전후로 나누어 각 구간의 생활 제안을 읽어요.",
+    "reason": "방향·흐름 대신 실제 연간 구간을 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "이달의 절입 전후 흐름을 살펴보고 일상 계획에 참고해 보세요.",
+    "after": "양력 이번 달을 절입 전후로 나누어 일정과 생활 계획에 참고해요.",
+    "reason": "흐름이라는 포괄어를 월간 구간과 실제 사용 목적으로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/config/site.ts",
+    "before": "한국시간 오늘의 간지와 내 일간의 관계에서 하루의 주제를 찾아봐요.",
+    "after": "한국시간 오늘의 간지와 내 일간의 관계에 빗댄 생활 제안을 읽어요.",
+    "reason": "관계에서 사건의 주제를 찾는다는 표현보다 상징을 빌린 제안임을 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/Header.tsx",
+    "before": "나를 알아가는 작은 시간",
+    "after": "사주와 생활 이야기",
+    "reason": "브랜드 보조 문구를 제공 내용이 보이는 말로 변경.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "매일, 나를 조금 더 이해하는 시간",
+    "after": "한국 출생 기준 · 무료 사주와 운세",
+    "reason": "감성적인 표어 대신 기능과 지원 기준을 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "오늘의 작은 시작",
+    "after": "오늘 운세",
+    "reason": "주변 장식을 줄이고 메뉴명을 직접 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "오늘은 어떤<br/>하루가 펼쳐질까요?",
+    "after": "오늘의 계획에<br/>참고할 이야기",
+    "reason": "미래 사건이 펼쳐질 것 같은 소개를 참고용 이야기로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "하루의 흐름을 살펴보고<br/>나만의 속도로 시작해 보세요.",
+    "after": "오늘의 일과 약속에<br/>참고할 생활 제안을 읽어요.",
+    "reason": "흐름·속도의 비유를 실제 계획과 약속으로 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "나의 정보는 나에게만.",
+    "after": "입력정보는 브라우저 안에만 보관해요.",
+    "reason": "개인정보 안내를 실제 보관 방식으로 직접 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/app/page.tsx",
+    "before": "날짜를 살핀 뒤 양력으로 바꾸어요.",
+    "after": "날짜를 확인한 뒤 양력으로 바꿔요.",
+    "reason": "음력 검증·변환의 순서는 유지하고 어색한 풀어쓰기를 정리.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/BirthForm.tsx",
+    "before": "아는 정보만 정확하게 입력해 주세요. 이름은 없어도 괜찮아요.",
+    "after": "생년월일을 입력해 주세요. 태어난 시각은 모름을 선택할 수 있고, 이름은 비워두어도 돼요.",
+    "reason": "필수 날짜와 선택 시각·이름을 실제 입력 조건으로 구별.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/BirthForm.tsx",
+    "before": "종류를 바꾸면 입력한 숫자를 선택한 달력의 날짜로 읽어요. 숫자를 자동 변환하지 않아요.",
+    "after": "달력 종류를 바꿔도 입력한 숫자는 그대로예요. 그 숫자를 선택한 달력의 날짜로 읽으며 자동 변환하지 않아요.",
+    "reason": "달력 선택과 날짜 변환의 차이를 숫자가 그대로라는 사실부터 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/BirthForm.tsx",
+    "before": "입력정보를 서버로 제출하지 않아요.",
+    "after": "입력정보는 서버로 보내지 않아요.",
+    "reason": "개인정보 설명의 보내다라는 용어와 통일.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/ShareActions.tsx",
+    "before": "일반 메뉴 링크를 복사했어요.",
+    "after": "이 운세의 시작 화면 링크를 복사했어요.",
+    "reason": "개인 결과가 아닌 시작 화면이 공유됨을 상태 메시지에서도 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/FortuneResult.tsx",
+    "before": "관계·일·공부의 균형",
+    "after": "다른 사람과 이야기할 일",
+    "reason": "추상적인 균형 대신 해당 문단의 공동 결정 내용을 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/FortuneResult.tsx",
+    "before": "작게 실행하는 계획",
+    "after": "이 구간에 해볼 일",
+    "reason": "실행 계획이라는 업무체를 실제 구간의 행동으로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/FortuneResult.tsx",
+    "before": "오늘의 가벼운 조언 · 날짜별 편집 문구",
+    "after": "날짜에 따라 바뀌는 생활 제안",
+    "reason": "편집 문구라는 제작 설명 대신 독자가 볼 기능을 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/FortuneResult.tsx",
+    "before": "이 문구의 순환은 사주·천문 계산 결과가 아니에요.",
+    "after": "날짜에 따라 글을 돌아가며 보여줘요. 사주나 천문 계산으로 오늘의 사건을 예측한 내용은 아니에요.",
+    "reason": "순환의 의미와 계산이 아닌 범위를 일상적인 문장으로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/components/FortuneResult.tsx",
+    "before": "생활에서 해볼 작은 실천",
+    "after": "생활에서 참고할 제안",
+    "reason": "모든 제안을 추가 숙제로 읽지 않도록 참고 범위를 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "대화에 질문 하나를 더해요",
+    "after": "내 이야기 뒤 상대의 생각도 물어볼 때",
+    "reason": "제안의 실제 대화 상황을 제목에 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "짧은 질문이 대화의 여백을 만들어 줄 수 있어요.",
+    "after": "질문한 뒤 답을 기다리면 상대의 생각도 들을 수 있어요.",
+    "reason": "여백이라는 비유 대신 듣는 행동을 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "미뤄둔 작은 정리를 해봐요",
+    "after": "미뤄둔 정리를 잠깐 해볼 때",
+    "reason": "상황형 제목으로 정리할 내용 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "익숙한 하루에 다른 길을",
+    "after": "늘 하던 일의 순서를 바꿔보고 싶다면",
+    "reason": "길이라는 비유 대신 실제 바꾸는 일의 순서로 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "가능한 만큼의 약속을",
+    "after": "약속을 잡기 전에 남은 시간부터",
+    "reason": "약속의 분량이 뜻하는 시간 조건을 명시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "무리 없이 지킬 수 있는 약속이 마음을 가볍게 할 수 있어요.",
+    "after": "지금 쓸 수 있는 시간을 알면 지키기 어려운 약속을 줄이는 데 도움이 돼요.",
+    "reason": "감정 효과보다 실제로 지킬 수 있는 일정으로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "좋았던 장면을 남겨요",
+    "after": "오늘 편했던 순간을 떠올려봐요",
+    "reason": "장면이라는 포괄어를 실제 편했던 경험으로 구체화.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "특별한 성과가 없어도 하루에 남길 장면은 있을 수 있어요.",
+    "after": "특별한 성과가 없어도 편하게 지냈던 경험을 적을 수 있어요.",
+    "reason": "하루에 장면을 남긴다는 표현을 실제 기록으로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "잠시 쉬어 갈 자리를",
+    "after": "일과 일 사이에 잠깐 쉴 때",
+    "reason": "쉼의 자리를 실제 일정 간격으로 바꿈.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "고마움을 구체적으로",
+    "after": "도움이 됐던 일을 말로 전할 때",
+    "reason": "추상적인 구체성 지시 대신 실제 고마운 행동과 대화를 제목에 표시.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/editorial.ts",
+    "before": "어떤 점이 좋았는지 덧붙이면 마음을 알아듣기 쉬워요.",
+    "after": "어떤 점이 도움이 됐는지 덧붙이면 고마운 이유도 전할 수 있어요.",
+    "reason": "마음을 알아듣는다는 결합을 도움과 감사의 이유로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "양력으로 바꾸어요.",
+    "after": "양력으로 바꿔요.",
+    "reason": "변환 순서를 보존하고 자연스러운 준말 사용.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "오늘은 Asia/Seoul의 날짜예요. 기간 운세는 2050년까지 지원하며, 열어 둔 탭도 날짜 변경과 다시 활성화 시 갱신해요.",
+    "after": "오늘은 한국시간(Asia/Seoul)의 날짜를 뜻해요. 기간 운세는 2050년까지 지원해요. 날짜가 바뀌거나 열어 둔 탭으로 돌아오면 오늘 날짜를 다시 확인해요.",
+    "reason": "다시 활성화·갱신이라는 기술 용어를 실제 탭으로 돌아오는 동작으로 풀어씀.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "시간 미상은 가능한 하루 전체 구간을 살펴 공통으로 확정되는 기둥만 표시해요.",
+    "after": "태어난 시간을 모르면 그날 가능한 모든 시각을 살펴, 어느 시각이든 같은 기둥만 확정해 표시해요.",
+    "reason": "미확정 원칙을 가능한 시각과 같은 기둥으로 직접 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "별자리는 널리 쓰는 양력 월·일 구간표이며 분 단위 태양 진입이나 상승궁을 계산하지 않아요.",
+    "after": "별자리는 널리 쓰는 양력 월·일 날짜표로 나누어요. 분 단위 태양 진입 시각이나 상승궁은 계산하지 않아요.",
+    "reason": "구간표라는 용어를 날짜표와 제외하는 정밀 계산으로 나누어 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "혈액형은 과학적인 성격 분류가 아닌 대화 소재예요. 띠·별자리의 오늘 조언은 유형과 날짜에 따른 편집 순환으로, 사주나 천문 계산에 의한 미래 예측이 아니에요.",
+    "after": "혈액형은 과학적인 성격 분류가 아닌 대화 소재예요. 띠·별자리의 오늘 조언은 유형과 날짜에 맞춰 글을 돌아가며 보여주는 방식이에요. 사주나 천문 계산으로 미래를 예측한 내용은 아니에요.",
+    "reason": "편집 순환이라는 제작 용어를 돌아가며 표시하는 실제 방식으로 풀어씀.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "입력 지우기는 이 앱 메모리의 출생정보와 가벼운 메뉴 선택을 지워요. 다른 사람 보기도 이전 값을 먼저 지운 뒤 새 입력으로 이동해요.",
+    "after": "입력 지우기를 누르면 앱 안에 보관하던 출생정보와 가벼운 메뉴 선택이 지워져요. 다른 사람 보기도 이전 입력을 먼저 지운 뒤 새로 입력하는 화면으로 이동해요.",
+    "reason": "버튼을 누른 뒤의 실제 동작을 주어·서술어가 맞는 해요체로 설명.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  },
+  {
+    "path": "src/content/pages.ts",
+    "before": "의료·투자·법률 등 중요한 결정은 실제 정보와 필요한 도움을 바탕으로 해주세요.",
+    "after": "의료·투자·법률 등 중요한 결정은 실제 정보를 확인하고 필요한 도움을 받아 판단해 주세요.",
+    "reason": "결정을 바탕으로 한다는 긴 명사 연결을 실제 확인·판단으로 풀어씀.",
+    "stage": "humanizer",
+    "status": "implemented-pending-independent-review",
+    "contentVersion": "1.4.0",
+    "date": "2026-10-22"
+  }
+]

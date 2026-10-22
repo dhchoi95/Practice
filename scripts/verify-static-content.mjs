@@ -13,7 +13,7 @@ for(const file of files){
 }
 const rootIndex=files.includes('out/index.html');
 const report={passed:rootIndex&&!leaks.length,method:'Scan actual static export text for every unique draft ID and title',rootIndex,files:files.length,draftIds:drafts.map(d=>d.id),leaks};
-await fs.mkdir('reports/content-improvement-1.3.0',{recursive:true});
-await fs.writeFile('reports/content-improvement-1.3.0/build-policy.json',JSON.stringify(report,null,2)+'\n');
+await fs.mkdir('reports/content-improvement-1.4.0',{recursive:true});
+await fs.writeFile('reports/content-improvement-1.4.0/build-policy.json',JSON.stringify(report,null,2)+'\n');
 console.log(`${report.passed?'PASS':'FAIL'} · out/ ${files.length} files · draft leaks ${leaks.length}`);
 if(!report.passed)process.exitCode=1;

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "src/domain/calendar/korean.ts",
+    "sha256": "1f44d80ea3ff9e62f3fe8ea44a23be7a2d0e06d55147e398ad803886b80d0a7c"
+  },
+  {
+    "path": "src/domain/calendar/terms.ts",
+    "sha256": "5cd289c1605b85cf468744d31e40c28cd981aec483d57ba458994c628bceff7a"
+  },
+  {
+    "path": "src/domain/calendar/timezone.ts",
+    "sha256": "e9345e363ae95b3b5ea551366f6a8ab173b23f5708c75c04a69722debdbadd5e"
+  },
+  {
+    "path": "src/domain/saju/calculate.ts",
+    "sha256": "97d3227ca574c5583543c2bdedfba33d359cae0bfb84b20941db4a63aadcd88b"
+  },
+  {
+    "path": "src/domain/saju/tables.ts",
+    "sha256": "487c2ec3d2401ad2025dcdffe287fed60e6d1c29db4aa83e30f519b73094a0b5"
+  },
+  {
+    "path": "src/domain/fortune/period.ts",
+    "sha256": "2d1b5573757d468f788f3ba1b96729b27c53946fc20456b571ec9b4aa81a573f"
+  },
+  {
+    "path": "src/domain/interpretation/engine.ts",
+    "sha256": "1297bf98afe8ee1e158d28f9a9618eeab3a792756a163914aebbbf721c2ea6e5"
+  },
+  {
+    "path": "src/domain/interpretation/period-reading.ts",
+    "sha256": "613c0466574dbc9f6e9abbb3d02386156e01ec4002de28eebda221a14a937b4c"
+  },
+  {
+    "path": "src/lib/sharing.ts",
+    "sha256": "42c15b8a1673c38fc2d2f3cd0f3a112cb5cb8d84382c59941cc9ea3b0b1c61d7"
+  },
+  {
+    "path": "src/lib/validation.ts",
+    "sha256": "d892eddef889fbb3311f2f2d0174edc1a2522dc200cd9ce9b05a127697ea7e53"
+  },
+  {
+    "path": "src/components/SessionProvider.tsx",
+    "sha256": "91b77a2d56e6de94f3b78f96d0b8c63c672fd07527aeb75626e41491084a4cd5"
+  },
+  {
+    "path": "src/lib/korean.ts",
+    "sha256": "1e4ff280429bd64c45361ae8f6cd7da1eb4711c2c451b5b1a6f10426021efd7e"
+  },
+  {
+    "path": "src/lib/print.ts",
+    "sha256": "2afb4ba184e734336903915dfa21889984f2bdb13d884efba41044d3328d52c6"
+  }
+]

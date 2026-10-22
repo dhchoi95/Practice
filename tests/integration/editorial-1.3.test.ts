@@ -11,12 +11,12 @@ describe('KR-01/02/03/05/06 authored output regressions',()=>{
   it('keeps the specific love scene conditional and out of implementation jargon',()=>{
     const r=interpret('saju','love',natal.features),body=r.sections.flatMap(s=>s.paragraphs).join('');
     expect(body).toContain('만나는 사람이 있다면');
-    expect(body).toContain('내게 당연한 일도 상대는 모를 수 있어요');
+    expect(body).toContain('내게는 당연해도 상대는 모를 수 있어요');
     expect(body).not.toContain('기대의 세밀함');expect(body).not.toContain('천간 집계 조합');
   });
   it('general sections have distinct authored roles and tips refer to visible suggestions',()=>{
     const r=interpret('saju','general',natal.features),find=(id:string)=>r.sections.find(s=>s.id===id)!.paragraphs.join('');
-    expect(find('core-general-7')).toContain('쉬려던 시간');expect(find('core-personality-7')).toContain('작은 실수');
+    expect(find('core-general-7')).toContain('쉴 시간이 줄어든다면');expect(find('core-personality-7')).toContain('작은 실수');
     expect(find('core-careermoney-7')).toContain('수정 부탁');expect(find('core-love-7')).toContain('바라는 걸');
     expect(r.practicalTips.join('')).not.toMatch(/완료 조건 세 개|반드시 확인할 두 가지/);
     expect(r.sections.flatMap(s=>s.paragraphs).join('').length).toBeLessThanOrEqual(1800);
@@ -26,7 +26,7 @@ describe('KR-01/02/03/05/06 authored output regressions',()=>{
     const r=interpret('saju','careerMoney',natal.features);
     const context=r.sections.find(s=>s.id==='relation-careermoney-output')!.paragraphs.join(' ');
     expect(context).toMatch(/꼭 필요한 오류를 고친 뒤 작은 초안/);
-    expect(r.sections.find(s=>s.id==='core-careermoney-7')!.paragraphs.join(' ')).toContain('일정도 보수도 달라질 수 있어요');
+    expect(r.sections.find(s=>s.id==='core-careermoney-7')!.paragraphs.join(' ')).toContain('일정과 보수가 달라질 수 있어요');
   });
   it('all year/month manuscripts fit either short boundary segment without fixed quarter or full-month plans',()=>{
     for(const kind of ['year','month'] as const){

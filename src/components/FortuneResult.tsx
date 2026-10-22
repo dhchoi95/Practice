@@ -46,7 +46,7 @@ export function FortuneResult({category}:{category:Category}){
   const limitations=[...(isSaju?birth!.calculation.limitations:[]),...new Set(reading.limitations)];
   const hasDayMaster=birth?.calculation.dayMaster!=null;
   const visibleSections=isPeriod&&hasDayMaster?Array.from({length:Math.max(...reading.sections.map(s=>s.paragraphs.length))},(_,i)=>({
-    ...reading.sections[0],id:`period-section-${i}`,title:['이 기간의 주제','관계·일·공부의 균형','작게 실행하는 계획','돈 관리에서 확인할 점'][i],
+    ...reading.sections[0],id:`period-section-${i}`,title:['이 기간의 주제','다른 사람과 이야기할 일','이 구간에 해볼 일','돈 관리에서 확인할 점'][i],
     paragraphs:reading.sections.flatMap((s,index)=>s.paragraphs[i]?[`${reading.sections.length>1?(index===0?'앞 구간 · ':'뒤 구간 · '):''}${s.paragraphs[i]}`]:[]),
   })):reading.sections;
   return <>
@@ -54,8 +54,8 @@ export function FortuneResult({category}:{category:Category}){
     {period&&<aside className="period-range-note" aria-label="풀이가 적용되는 구간">{period.segments.map((segment,i)=><p key={segment.start}><strong>{period.segments.length===1?'대상 구간':i===0?'앞 구간':'뒤 구간'}</strong> · {segmentDateRange(segment)}</p>)}{period.segments.length>1&&<p className="helper">경계 날짜에는 절입 시각에 구간이 바뀌어요. 정확한 시각은 아래 기간 상세에서 볼 수 있어요.</p>}</aside>}
     {limitations.length>0&&<aside className="result-limitation" aria-label="입력과 풀이의 한계">{limitations.map((text,i)=><p key={i}>{text}</p>)}</aside>}
     <div className="result-content">{visibleSections.map(section=><section className="reading-section" key={section.id}><h3>{section.title}</h3>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}</div>
-    {editorial&&<section className="practical-panel"><span className="pill-label">오늘의 가벼운 조언 · 날짜별 편집 문구</span><h2>{editorial.title}</h2><p>{editorial.text}</p><p className="helper">이 문구의 순환은 사주·천문 계산 결과가 아니에요.</p></section>}
-    <section className="practical-panel"><h2>생활에서 해볼 작은 실천</h2><ul>{reading.practicalTips.slice(0,4).map(t=><li key={t}>{t}</li>)}</ul></section>
+    {editorial&&<section className="practical-panel"><span className="pill-label">날짜에 따라 바뀌는 생활 제안</span><h2>{editorial.title}</h2><p>{editorial.text}</p><p className="helper">날짜에 따라 글을 돌아가며 보여줘요. 사주나 천문 계산으로 오늘의 사건을 예측한 내용은 아니에요.</p></section>}
+    <section className="practical-panel"><h2>생활에서 참고할 제안</h2><ul>{reading.practicalTips.slice(0,4).map(t=><li key={t}>{t}</li>)}</ul></section>
     {period&&<details className="disclosure"><summary>대상 기간과 절기 구간 보기</summary><div className="disclosure-body">
       <p>화면의 {period.kind==='year'?'연도는 양력 한 해':'기간은 한국시간 양력 기준'}예요. {hasDayMaster?
         <>{period.kind==='year'?'입춘 전후의 연주를 나누어':period.kind==='month'?'이달의 절입 전후 월주를 나누어':'오늘의 일주를 기준으로'} 내 일간과의 관계를 살폈어요. {period.kind!=='day'?'구간별 내용을 요약해서 함께 보여드려요.':''}</>:

@@ -28,8 +28,8 @@ const groups=Object.fromEntries(['core-','period-','relation-','element-','light
   return [prefix,{records:r.length,minBody:Math.min(...lengths),meanBody:Math.round(lengths.reduce((a,b)=>a+b,0)/r.length*10)/10,maxBody:Math.max(...lengths),withEvidence:r.filter(r=>r.evidence).length}];
 }));
 const report={label:arg('--label')??'working-copy',rulesSha256:createHash('sha256').update(JSON.stringify(data)).digest('hex'),fixtureSha256:createHash('sha256').update(JSON.stringify(cases)).digest('hex'),passed:errors.length===0,conditionalRecords:rules.length,basisDefinitionsAvailable:interpretationBases.length,basisDefinitionsReferenced:new Set(rules.flatMap(r=>r.evidence?[r.evidence.basisKey]:[])).size,groups,repeatedSentences:repeated,cases:results,errors,meaning:'자동 평가는 조건·근거 연결·선정 문장·재현성을 확인합니다. 전통 해석의 진실성이나 개인에게 맞는 정도의 점수가 아닙니다.'};
-await fs.mkdir('reports/content-improvement-1.3.0',{recursive:true});
-const output=arg('--output')??'reports/content-improvement-1.3.0/evaluation.json';
+await fs.mkdir('reports/content-improvement-1.4.0',{recursive:true});
+const output=arg('--output')??'reports/content-improvement-1.4.0/evaluation.json';
 await fs.writeFile(output,JSON.stringify(report,null,2)+'\n');
 console.log(`${report.passed?'PASS':'FAIL'} · 원고 ${rules.length} · 근거 ${interpretationBases.length} 별도 · 평가 사례 ${results.filter(r=>r.passed).length}/${results.length} · 오류 ${errors.length} · ${output}`);
 if(errors.length){console.log(errors.slice(0,12).join('\n'));process.exitCode=1;}

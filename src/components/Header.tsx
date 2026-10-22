@@ -23,7 +23,7 @@ export function Header(){
   return <>
     <a className="skip-link" href="#main">본문 바로가기</a>
     <header className="site-header"><div className="header-inner wrap">
-      <Link prefetch={false} className="brand" href="/" aria-label={`${siteConfig.name} 나를 알아가는 작은 시간 홈`}><svg className="brand-seal" aria-hidden="true" viewBox="0 0 32 37"><path d="M10 9h13v20H10Zm0 10h13" fill="none" stroke="currentColor" strokeWidth="1.5"/></svg><span>{siteConfig.name}</span><span className="brand-caption">나를 알아가는 작은 시간</span></Link>
+      <Link prefetch={false} className="brand" href="/" aria-label={`${siteConfig.name} 사주와 생활 이야기 홈`}><svg className="brand-seal" aria-hidden="true" viewBox="0 0 32 37"><path d="M10 9h13v20H10Zm0 10h13" fill="none" stroke="currentColor" strokeWidth="1.5"/></svg><span>{siteConfig.name}</span><span className="brand-caption">사주와 생활 이야기</span></Link>
       <div className="header-right"><span className="header-date"><LiveDate /> <span>한국시간</span></span><button className="menu-button" ref={button} aria-expanded={open} aria-controls="all-menu" onClick={()=>setOpen(true)}><span className="hamburger" aria-hidden="true">☰</span> 메뉴</button></div>
     </div></header>
     <nav className="primary-nav" aria-label="상단 분류"><div className="wrap">{[['/fortune/saju/','사주풀이'],['/fortune/day/','오늘 운세'],['/fortune/year/','올해 운세'],['/fortune/zodiac/','가벼운 운세']].map(([href,label])=><Link prefetch={false} key={href} href={href} className={path===href||path===href.slice(0,-1)?'active':''} aria-current={path===href||path===href.slice(0,-1)?'page':undefined}>{label}</Link>)}</div></nav>
