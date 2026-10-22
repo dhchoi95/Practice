@@ -16,13 +16,14 @@
     "content:preview": "tsx scripts/content-tools.ts preview",
     "content:lint": "tsx scripts/content-tools.ts lint",
     "content:evaluate": "node --import tsx scripts/evaluate-content.ts",
-    "verify": "npm run lint && npm run typecheck && npm test && npm run content:lint && npm run content:coverage && npm run content:evaluate && npm run content:review && npm run content:assembled && npm run content:compound && npm run content:editorial",
+    "verify": "npm run lint && npm run typecheck && npm test && npm run content:lint && npm run content:coverage && npm run content:evaluate && npm run content:review && npm run content:assembled && npm run content:compound && npm run content:editorial && npm run content:integrated",
     "content:review": "node --import tsx scripts/review-content.ts",
     "content:assembled": "node --import tsx scripts/evaluate-assembled.ts",
     "content:compound": "node --import tsx scripts/preview-compound.ts",
     "content:build-policy": "node scripts/verify-static-content.mjs",
     "content:editorial": "node --import tsx scripts/audit-editorial.ts",
-    "content:record": "node --import tsx scripts/record-editorial-review.ts"
+    "content:record": "node --import tsx scripts/record-editorial-review.ts",
+    "content:integrated": "node --import tsx scripts/check-integrated.ts"
   },
   "engines": {
     "node": "^22.12.0 || ^24.0.0 || >=26.0.0"

@@ -1,5 +1,9 @@
 'use client';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { ZodiacContext } from './ZodiacContext';
+import { MBTIResult } from './MBTI';
+const AdvancedExperience=dynamic(()=>import('./AdvancedExperience'),{ssr:false,loading:()=> <p aria-live="polite">상세 분석을 준비하고 있어요.</p>});
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { categories,type Category } from '@/config/site';
@@ -18,7 +22,7 @@ import { pillarText } from '@/domain/saju/tables';
 import { usePrintDetails } from '@/lib/print';
 export function FortuneResult({category}:{category:Category}){
   usePrintDetails();
-  const {birth,light,clear}=useSession(),router=useRouter(),today=useSeoulDate();
+  const {birth,light,clear,setBirth}=useSession(),router=useRouter(),today=useSeoulDate();
   const sign=light[category.slug],isSaju=category.system==='saju',isPeriod=['year','month','day'].includes(category.slug)&&isSaju;
   const hasInput=isSaju?!!birth:sign!==undefined;
   useEffect(()=>{
@@ -29,8 +33,17 @@ export function FortuneResult({category}:{category:Category}){
     });
     return ()=>cancelAnimationFrame(frame);
   },[category.slug,hasInput]);
+  if(category.system==='mbti')return <MBTIResult/>;
   if(!hasInput)return <section className="empty-state"><Illustration name={category.icon} size={90}/><h2>입력정보가 없어 결과를 불러올 수 없어요</h2><p>새로고침하면 개인정보가 사라져요. 다시 입력하면 바로 확인할 수 있어요.</p><Link prefetch={false} className="button primary" href={`/fortune/${category.slug}/`}>다시 입력하고 {category.name} 보기</Link></section>;
   if(!today)return <p className="view-pending" role="status">한국시간 기준 날짜를 확인하고 있어요.</p>;
+  if(isSaju&&birth?.input.advanced?.enabled)return <>
+    <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>입력 수정</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
+    <AdvancedExperience input={birth.input} category={category.slug} today={today}/>
+    <details className="disclosure"><summary>기존 표준시 간단 사주표 참고</summary><div className="disclosure-body"><p>이 표는 기존 한국 표준시 호환 계산이에요. 위에서 태양시를 선택했다면 위 상세 결과의 원국과 해석을 함께 읽어 주세요.</p><CalculationDetails result={birth.calculation}/></div></details>
+    <ShareActions slug={category.slug}/>
+    <section className="other-readings no-print"><h2>같은 정보로 다른 풀이 보기</h2><div className="other-links">{categories.filter(c=>c.system==='saju').map(c=><Link prefetch={false} href={`/result/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>
+    <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">상세 콘텐츠 2.0.0 · 전통 해석 후보와 생활 제안이에요. 새로고침하면 입력·도시·결과가 사라져요.</p>
+  </>;
   let reading:InterpretationResult,period:TargetPeriod|undefined;
   try{
     if(isPeriod&&birth){
@@ -54,7 +67,8 @@ export function FortuneResult({category}:{category:Category}){
     {period&&<aside className="period-range-note" aria-label="풀이가 적용되는 구간">{period.segments.map((segment,i)=><p key={segment.start}><strong>{period.segments.length===1?'대상 구간':i===0?'앞 구간':'뒤 구간'}</strong> · {segmentDateRange(segment)}</p>)}{period.segments.length>1&&<p className="helper">경계 날짜에는 절입 시각에 구간이 바뀌어요. 정확한 시각은 아래 기간 상세에서 볼 수 있어요.</p>}</aside>}
     {limitations.length>0&&<aside className="result-limitation" aria-label="입력과 풀이의 한계">{limitations.map((text,i)=><p key={i}>{text}</p>)}</aside>}
     <div className="result-content">{visibleSections.map(section=><section className="reading-section" key={section.id}><h3>{section.title}</h3>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}</div>
-    {editorial&&<section className="practical-panel"><span className="pill-label">날짜에 따라 바뀌는 생활 제안</span><h2>{editorial.title}</h2><p>{editorial.text}</p><p className="helper">날짜에 따라 글을 돌아가며 보여줘요. 사주나 천문 계산으로 오늘의 사건을 예측한 내용은 아니에요.</p></section>}
+    {editorial&&<section className="practical-panel"><span className="pill-label">날짜에 따라 바뀌는 생활 제안</span><h2>{editorial.title}</h2><p>{editorial.text}</p><p className="helper">31개 생활 원고를 공개한 날짜 순서로 보여줘요. 사주나 천문 계산으로 오늘의 사건을 예측한 내용은 아니에요.</p></section>}
+    {category.system==='zodiac'&&<ZodiacContext sign={sign} date={today}/>}
     <section className="practical-panel"><h2>생활에서 참고할 제안</h2><ul>{reading.practicalTips.slice(0,4).map(t=><li key={t}>{t}</li>)}</ul></section>
     {period&&<details className="disclosure"><summary>대상 기간과 절기 구간 보기</summary><div className="disclosure-body">
       <p>화면의 {period.kind==='year'?'연도는 양력 한 해':'기간은 한국시간 양력 기준'}예요. {hasDayMaster?
@@ -66,6 +80,7 @@ export function FortuneResult({category}:{category:Category}){
     {isSaju&&birth&&<CalculationDetails result={birth.calculation}/>}
     <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body">{reading.basisGroups?reading.basisGroups.map(group=><section key={group.label}><h3>{group.label}</h3><ul>{group.basis.map(b=><li key={b}>{b}</li>)}</ul></section>):<ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul>}<p>전통적인 상징에 빗대어 일상을 돌아보는 글이에요. 원고의 형식과 적용 조건은 자동으로 검사했지만, 독립적인 명리 검토를 마친 것은 아니에요. 개인의 성격이나 미래를 확인한 결과도 아니에요. 의료·투자·법률 판단에는 실제 정보와 적절한 도움을 받아 주세요.</p></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>{isSaju?'입력 수정':'선택 바꾸기'}</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
+    {isSaju&&birth&&<section className="advanced-entry-panel no-print"><h2>원국·대운·기간 상세 분석</h2><p>선택한 도시와 시각 기준으로 지장간·십신·대운·5년 세운을 함께 볼 수 있어요.</p><button className="button" onClick={()=>{setBirth({...birth,input:{...birth.input,advanced:{...(birth.input.advanced??{timePolicy:'standard'}),enabled:true}}});requestAnimationFrame(()=>{document.getElementById('result-title')?.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});});}}>상세 분석 보기</button></section>}
     <ShareActions slug={category.slug}/>
     <section className="other-readings no-print"><h2>{isSaju?'같은 정보로 다른 풀이 보기':'다른 운세도 가볍게'}</h2><div className="other-links">{categories.filter(c=>isSaju?c.system==='saju':true).map(c=><Link prefetch={false} href={isSaju?`/result/${c.slug}/`:`/fortune/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>
     <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">운세는 나를 돌아보는 참고 이야기예요. 성향을 확정하거나 앞으로의 사건을 예언하지 않아요. 새로고침하면 입력과 결과가 사라져요.</p>

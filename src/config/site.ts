@@ -5,6 +5,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || '',
   instagram: '',
   contentVersion: '1.4.0',
+  advancedContentVersion: '2.0.0',
 };
 export const categories = [
   {slug:'saju', name:'정통사주', short:'사주표와 기본 풀이', description:'입력한 날짜와 시각으로 사주표를 계산하고, 일과 관계에 관한 생활 제안을 읽어요.', system:'saju', content:'general', icon:'book', color:'sand'},
@@ -20,6 +21,7 @@ export const categories = [
   {slug:'zodiac', name:'띠별운세', short:'띠를 소재로 읽는 오늘 이야기', description:'한국 음력 설 기준의 열두 띠 이야기와 오늘의 작은 조언이에요.', system:'zodiac', content:'day', icon:'rabbit', color:'green'},
   {slug:'constellation', name:'별자리운세', short:'별자리로 읽는 가벼운 이야기', description:'익숙한 열두 별자리의 성향 이야기예요. 정밀한 출생점성술과는 달라요.', system:'constellation', content:'day', icon:'stars', color:'navy'},
   {slug:'blood-type', name:'혈액형풀이', short:'성격 검사가 아닌 대화 소재', description:'혈액형을 대화 소재로 삼은 가벼운 읽을거리예요. 과학적인 성격 검사는 아니에요.', system:'bloodType', content:'personality', icon:'drop', color:'peach'},
+  {slug:'mbti', name:'MBTI 읽을거리', short:'직접 고른 유형과 생활 상황', description:'16유형 중 직접 선택해 여섯 가지 생활 주제의 제안을 읽어요. 검사나 사건 예측은 아니에요.', system:'mbti', content:'personality', icon:'book', color:'blue'},
 ] as const;
 export type Category = (typeof categories)[number];
 export type Slug = Category['slug'];

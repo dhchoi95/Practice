@@ -1,6 +1,7 @@
 import type { CivilDate, LunarDate } from '../calendar/korean';
+import type { AdvancedOptions } from '../advanced/types';
 import type { CivilTime } from '../calendar/timezone';
-export interface BirthInput extends CivilDate {calendar:'solar'|'lunar';leap:boolean;unknownTime:boolean;hour?:number;minute?:number;nickname:string}
+export interface BirthInput extends CivilDate {calendar:'solar'|'lunar';leap:boolean;unknownTime:boolean;hour?:number;minute?:number;nickname:string;advanced?:AdvancedOptions}
 export interface NormalizedBirthInput {solar:CivilDate;lunar:LunarDate;instant:number|null;standardTime:CivilTime|null;unknownTime:boolean;dstAdjusted:boolean}
 export interface Pillar {stem:number;branch:number}
 export type UnknownValue=null;

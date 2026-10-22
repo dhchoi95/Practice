@@ -31,6 +31,7 @@ jobs:
           name: content-evaluation
           path: |
             reports/content-improvement-1.4.0/
+            reports/integrated-2.0.0/
             reports/content-inventory.json
             reports/content-coverage.json
             reports/content-preview.json

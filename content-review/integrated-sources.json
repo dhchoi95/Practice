@@ -1,0 +1,90 @@
+[
+  {
+    "id": "service-season-root-1.0",
+    "title": "하루사주 본기·계절·통근 후보 정책",
+    "author": "서비스 구현자",
+    "url": null,
+    "location": "docs/integrated-policy-2.0.0.md; src/domain/advanced/chart.ts",
+    "checkedAt": "2026-10-22",
+    "usage": "강약·격국·억부·조후의 공개된 서비스 판단식, 전통적 대응 후보",
+    "status": "internal-policy-pending-independent-domain-review"
+  },
+  {
+    "id": "noaa-short-equation",
+    "title": "General Solar Position Calculations",
+    "author": "NOAA Global Monitoring Laboratory",
+    "url": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF",
+    "location": null,
+    "checkedAt": null,
+    "attemptedAt": "2026-10-22",
+    "usage": "균시차 짧은 근사식 형태의 참고 출발점. 원문 직접 대조는 미완료",
+    "status": "pending-external-check",
+    "failure": "proxy tunnel 403"
+  },
+  {
+    "id": "lunar-installed-1.8.6",
+    "title": "lunar-typescript 1.8.6 소스와 README",
+    "author": "6tail",
+    "url": "https://github.com/6tail/lunar-typescript",
+    "location": "node_modules/lunar-typescript/dist/lib/LunarUtil.mjs: ZHI_HIDE_GAN; Yun.mjs; README.md",
+    "checkedAt": "2026-10-22",
+    "usage": "지장간 표의 소프트웨어 간 비교, 절입 원자료·순역·환산 구현 확인. 전통 해석의 독립 검증은 아님",
+    "status": "software-source-read"
+  },
+  {
+    "id": "korean-encyclopedia-saju",
+    "title": "한국민족문화대백과사전 사주",
+    "author": null,
+    "url": "https://encykorea.aks.ac.kr/Article/E0025957",
+    "location": null,
+    "checkedAt": null,
+    "attemptedAt": "2026-10-22",
+    "usage": "전통 해석 확인 후보",
+    "status": "pending-external-check",
+    "failure": "proxy tunnel 403"
+  },
+  {
+    "id": "ziping-candidate",
+    "title": "子平真詮",
+    "author": null,
+    "url": "https://zh.wikisource.org/wiki/子平真詮",
+    "location": null,
+    "checkedAt": null,
+    "attemptedAt": "2026-10-22",
+    "usage": "월령·격국 판단의 원전 검토 후보. 원문을 읽지 못해 쪽수·합의·검토자를 부여하지 않음",
+    "status": "pending-external-check",
+    "failure": "proxy tunnel 403"
+  },
+  {
+    "id": "ditian-candidate",
+    "title": "滴天髓",
+    "author": null,
+    "url": "https://zh.wikisource.org/wiki/滴天髓",
+    "location": null,
+    "checkedAt": null,
+    "attemptedAt": "2026-10-22",
+    "usage": "강약·조후의 원전 검토 후보. 직접 원문 미확인",
+    "status": "pending-external-check",
+    "failure": "proxy tunnel 403"
+  },
+  {
+    "id": "original-mbti-editorial",
+    "title": "선택 유형별 생활 상황 원고",
+    "author": "서비스 구현자",
+    "url": null,
+    "location": "src/content/advanced/mbti.ts",
+    "checkedAt": "2026-10-22",
+    "usage": "한국어 독립 창작. 공식 검사·행동 예측·심리학 검증이 아님",
+    "status": "internal-editorial-pending-independent-review"
+  },
+  {
+    "id": "editorial-city-centres-1.0",
+    "title": "국내 도시 중심 편집 좌표 12개",
+    "author": "서비스 구현자",
+    "url": null,
+    "location": "src/content/advanced/cities.ts",
+    "checkedAt": null,
+    "usage": "0.01도 반올림 중심 좌표. 실제 출생 좌표·공인 지리 자료 인증 아님",
+    "status": "pending-independent-geographic-check"
+  }
+]

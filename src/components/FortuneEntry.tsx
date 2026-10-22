@@ -1,4 +1,5 @@
 'use client';
+import { MBTIEntry } from './MBTI';
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -10,6 +11,7 @@ export function FortuneEntry({category}:{category:Category}){
   const {birth,clear,light,setLight}=useSession(),router=useRouter();
   const [selection,setSelection]=useState(light[category.slug]??'');
   const [unknown,setUnknown]=useState(false);
+  if(category.system==='mbti')return <MBTIEntry/>;
   if(category.system==='saju')return <>
     {birth&&<section className="reuse-panel"><h2>입력한 정보로 바로 볼 수 있어요</h2><p>{birth.input.nickname?`${birth.input.nickname} · `:''}양력 {isoDate(birth.calculation.normalizedInput.solar)} · {birth.input.unknownTime?'시간 미상':'시각 입력됨'}</p><div className="action-row"><Link prefetch={false} className="button primary" href={`/result/${category.slug}/`}>같은 정보로 {category.name} 보기</Link><button className="button quiet" onClick={clear}>다른 사람 보기</button></div></section>}
     <BirthForm key={birth?'existing':'empty'} category={category}/>
