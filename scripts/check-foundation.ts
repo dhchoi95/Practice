@@ -13,7 +13,12 @@ const hash=(v:unknown)=>createHash('sha256').update(canonicalContent(v)).digest(
 const errors:string[]=[],warnings:string[]=[],all=[...sectorRecords,...scheduleRecords];
 if(new Set(all.map(r=>r.id)).size!==all.length)errors.push('중복 ID');
 const knownPaths=new Set(['known.day','strength.class','focus','group.peer','group.output','group.resource','group.order','group.wealth','target.dayClash','target.monthClash','target.anyClash','target.harmony','same.day','same.month','same.luck','different.yearMonth']);
+const sourceRefs=new Set(['service-adopted-symbolic-interpretation','lunar-typescript@1.8.6']);
+const policyRefs=new Set(['SIX-SECTOR-CONTEXT-1.0','KR-SOLAR-MIDNIGHT-1.0','SEASON-ROOT-CANDIDATES-1.0']);
 for(const r of all){
+ for(const ref of r.sourceRefs)if(!sourceRefs.has(ref))errors.push(`정의되지 않은 출처 참조 ${r.id}/${ref}`);
+ for(const ref of r.policyRefs)if(!policyRefs.has(ref))errors.push(`정의되지 않은 정책 참조 ${r.id}/${ref}`);
+ if('evidenceRefs'in r)for(const ref of r.evidenceRefs)if(!knownPaths.has(ref))errors.push(`정의되지 않은 근거 경로 ${r.id}/${ref}`);
  for(const t of [...r.requires.all,...r.requires.any??[]])if(!knownPaths.has(t.path))errors.push(`전제 경로 없음 ${r.id}/${t.path}`);
  const text='paragraphs'in r?[r.title,...r.paragraphs,r.proposal].join(' '):r.text;
  for(const issue of particleErrors(text))errors.push(`${r.id}: ${issue}`);
@@ -61,7 +66,7 @@ for(const example of examples as {id:string;chart:ReturnType<typeof calculateAdv
  await fs.writeFile(`${dir}/examples/${example.id}.md`,md);
 }
 const inventory={version:'2.1.0',old:{advancedRetained:62,periodRetained:136,legacyRetained:210,oldRecordsEdited:0},new:{coreRecords:216,supplementRecords:108,scheduleRecords:36,distinctCoreMeanings:72,distinctSupplementMeanings:36,distinctScheduleMeanings:36,periodGuidanceParagraphs:18},meaning:'360개는 기간별 적용 레코드 수. 독립된 의미 360개라고 세지 않음. 중심·보완은 각 의미의 일·월·연 변형을 명시. 보완 108개는 실제 본문이 같은 36개를 세 기간에 적용하는 정책 레코드이며 새 원고 108개가 아님.',coverage:[...coverage].map(([id,selected])=>({id,selected})),warnings};
-await fs.writeFile(`${dir}/inventory.json`,JSON.stringify(inventory,null,2)+'\n');await fs.writeFile(`${dir}/longitudinal.json`,JSON.stringify({profiles:12,daysEach:365,monthsEach:12,yearsEach:5,normalization:'actual default visible body from shared presentation plan; excludes date/title/ganji; additionally selected records remain in per-example segment traces',profilesData:longitudinal,warnings},null,2)+'\n');await fs.writeFile(`${dir}/tables.json`,JSON.stringify({foundationTables,foundationPolicies},null,2)+'\n');
+await fs.writeFile(`${dir}/inventory.json`,JSON.stringify(inventory,null,2)+'\n');await fs.writeFile(`${dir}/longitudinal.json`,JSON.stringify({profiles:12,daysEach:365,monthsEach:12,yearsEach:5,normalization:'actual default visible body from shared presentation plan; excludes date/title/ganji; additionally selected records remain in per-example segment traces',profilesData:longitudinal,warnings},null,2)+'\n');await fs.writeFile(`${dir}/tables.json`,JSON.stringify({foundationTables,foundationPolicies,referenceDefinitions:{sourceRefs:[...sourceRefs],policyRefs:[...policyRefs],evidencePaths:[...knownPaths]}},null,2)+'\n');
 if(process.argv.includes('--record')&&!errors.length){await fs.writeFile(reviewPath,JSON.stringify(ledger,null,2)+'\n');await fs.writeFile(snapPath,JSON.stringify(snapshots,null,2)+'\n');}
 await fs.writeFile(`${dir}/audit.json`,JSON.stringify({passed:errors.length===0,errors,warnings,records:all.length,reviewRecords:ledger.length,independentApproval:false},null,2)+'\n');
 console.log(`${errors.length?'FAIL':'PASS'}: ${all.length} application records / 144 semantic families; 12 profiles × 365 days, 12 months, 5 years; ${errors.length} errors, ${warnings.length} unhit warnings`);if(errors.length){console.error(errors);process.exitCode=1;}
