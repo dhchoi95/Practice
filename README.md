@@ -1,5 +1,14 @@
 # 하루사주
 
+이 브랜치는 **하루사주 사이트 전용**입니다. `Practice` 저장소의 식당 관리 앱은 아래의 별도 브랜치에서 관리합니다.
+
+| 앱 | GitHub 브랜치 | 실행·배포 구조 |
+| --- | --- | --- |
+| 하루사주 | [codex/saju-korean-editing-1.4.0](https://github.com/dhchoi95/Practice/tree/codex/saju-korean-editing-1.4.0) | 정적 사이트, 빌드 결과 `out/`, DB 불필요 |
+| 식당 관리 · restaurant-ops | [codex/burger-manager-pc](https://github.com/dhchoi95/Practice/tree/codex/burger-manager-pc) | Next.js 서버, Prisma·PostgreSQL |
+
+두 앱은 같은 저장소 안의 **서로 다른 브랜치와 Git 이력**에 있습니다. 사주 브랜치에 식당 앱의 폴더가 들어 있는 구조가 아닙니다. 각 호스팅 프로젝트의 배포 브랜치도 위 표에 맞게 따로 지정해야 합니다. 서로 다른 앱의 브랜치를 병합하지 마세요. GitHub 저장소 자체까지 분리한 상태는 아닙니다.
+
 가입·결제·실행 중 AI 호출 없이 사용하는 한국어 무료 사주·운세 사이트입니다. Next.js 정적 HTML과 브라우저 계산으로 동작합니다. 출생정보는 브라우저 메모리에만 두며 새로고침하면 사라집니다.
 
 현재 차수 **2.2.0**은 새 해석 질문72개와 실제 선택 조건·본문 조립을 보강했습니다. [이번 차수 결과·남은 반복](docs/iteration-2.2.0.md)을 확인하세요. 공개 배포·원격 push는 하지 않았습니다.
