@@ -24,9 +24,9 @@ for name in ['day','date','month','year','saju','manse','unknown-hour','unknown-
   else: required+=['산출 보류','일간이 미확정'];assert '일간·나' not in n
  if name=='date':required+=['2026년 10월 24일','면접','준비 상태와 회사 안내']
  if name=='year':required+=['2027-01-01 00:00','실제 구간 길이']
- if name=='month':required+=['2026년 10월','절입']
+ if name=='month':required+=['2026년 10월','절기가 바뀌면']
  if name=='unknown-hour':required+=['시간 모름','시주는 제외하고']
- if name=='saju':required+=['강약·격국·용신','대운 개시 계산','선택 연도부터 5년','전체 흐름을 연결해 읽기']
+ if name=='saju':required+=['강약·격국·용신','대운 개시 계산','선택 연도부터 5년','종합 풀이']
  if name=='manse':required+=['원국 관계와 오행 확인','대운 개시와 10년 구간'];assert '구성에서이어지는주제풀이' not in n
  for s in required:assert norm(s) in n,(name,s)
  for s in ['섬세한기준을나에게도다정하게','이운세메뉴공유하기','출생정보를서버로전송']:assert s not in n,(name,s)

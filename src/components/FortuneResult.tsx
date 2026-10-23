@@ -2,14 +2,14 @@
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { NatalChart } from './NatalChart';
-import { calculateAdvanced } from '@/domain/advanced/chart';
+import { topicBasis } from '@/domain/fortune/topic-basis';
 const SectorExperience=dynamic(()=>import('./SectorExperience'),{ssr:false,loading:()=> <p role="status">여섯 분야 풀이를 준비하고 있어요.</p>});
 import { ZodiacContext } from './ZodiacContext';
 import { MBTIResult } from './MBTI';
 const AdvancedExperience=dynamic(()=>import('./AdvancedExperience'),{ssr:false,loading:()=> <p aria-live="polite">상세 분석을 준비하고 있어요.</p>});
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { categories,type Category } from '@/config/site';
+import { type Category } from '@/config/site';
 import { useSession } from './SessionProvider';
 import { useSeoulDate } from './LiveDate';
 import { segmentDateRange } from '@/domain/fortune/period-label';
@@ -25,7 +25,7 @@ import { pillarText } from '@/domain/saju/tables';
 import { usePrintDetails } from '@/lib/print';
 export function FortuneResult({category}:{category:Category}){
   usePrintDetails();
-  const {birth,light,clear,setBirth}=useSession(),router=useRouter(),today=useSeoulDate();
+  const {birth,light,clear}=useSession(),router=useRouter(),today=useSeoulDate();
   const sign=light[category.slug],isSaju=category.system==='saju',isPeriod=['year','month','day'].includes(category.slug)&&isSaju;
   const hasInput=isSaju?!!birth:sign!==undefined;
   useEffect(()=>{
@@ -42,36 +42,41 @@ export function FortuneResult({category}:{category:Category}){
   if(isSaju&&birth&&['day','tomorrow','date','month','year'].includes(category.slug))return <>
     <SectorExperience input={birth.input} category={category.slug} today={today}/>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>입력 수정</Link><button className="button" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
-    <ShareActions slug={category.slug}/><section className="other-readings no-print"><h2>같은 정보로 다른 풀이 보기</h2><div className="other-links">{categories.filter(c=>c.system==='saju').map(c=><Link prefetch={false} href={`/result/${c.slug}/`} key={c.slug}>{c.name}</Link>)}</div></section>
+    <ShareActions slug={category.slug}/>
     <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">출생정보는 브라우저 메모리에서만 사용해요. 새로고침하면 입력과 결과가 사라져요.</p>
   </>;
-  if(isSaju&&birth&&(birth.input.advanced?.enabled||category.slug==='saju'||category.slug==='manse'))return <>
+  if(isSaju&&birth&&(category.slug==='saju'||category.slug==='manse'))return <>
     <AdvancedExperience input={birth.input} category={category.slug} today={today}/>
     <details className="disclosure"><summary>기존 표준시 간단 사주표 참고</summary><div className="disclosure-body"><p>이 표는 기존 한국 표준시 호환 계산이에요. 위에서 태양시를 선택했다면 위 상세 결과의 원국과 해석을 함께 읽어 주세요.</p><CalculationDetails result={birth.calculation}/></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>입력 수정</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div><ShareActions slug={category.slug}/>
-    <section className="other-readings no-print"><h2>같은 정보로 다른 풀이 보기</h2><div className="other-links">{categories.filter(c=>c.system==='saju').map(c=><Link prefetch={false} href={`/result/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>
+
     <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">상세 콘텐츠 2.0.0 · 전통 해석 후보와 생활 제안이에요. 새로고침하면 입력·도시·결과가 사라져요.</p>
   </>;
   let reading:InterpretationResult,period:TargetPeriod|undefined;
+  let topic:ReturnType<typeof topicBasis>|undefined;
   try{
     if(isPeriod&&birth){
       period=targetPeriod(category.slug as PeriodKind,birth.calculation.dayMaster,{now:()=>new Date(`${today}T12:00:00+09:00`)});
       reading=composePeriodReading(period,birth.calculation.features);
-    }else reading=interpret(category.system,category.content,isSaju?birth!.calculation.features:{'light.sign':sign});
+    }else {
+      if(isSaju&&birth)topic=topicBasis(birth.input,birth.calculation);
+      reading=interpret(category.system,category.content,topic?.features??{'light.sign':sign});
+      if(topic&&!topic.chart.pillars.day)reading={...reading,sections:reading.sections.map(section=>section.id==='unknown-day'?{...section,paragraphs:['선택한 계산 기준에서는 출생 시각에 따라 일주가 달라질 수 있어요. 나를 풀이하는 기준인 일간을 정할 수 없어, 이를 전제로 한 성격이나 관계 해석은 덧붙이지 않았어요. 확인된 글자에 관한 설명만 보여드려요.']}:section)};
+    }
   }catch{
     return <section className="empty-state"><h2>이 기간의 계산을 마치지 못했어요</h2><p>기간 운세는 한국시간 1962~2050년을 지원해요. 기기 날짜를 확인하거나 기본 사주풀이를 이용해 주세요.</p><Link prefetch={false} href="/fortune/saju/" className="button primary">기본 사주풀이로 이동</Link></section>;
   }
   const nickname=isSaju?birth?.input.nickname:'';
   const lightName=category.system==='zodiac'?zodiacNames[Number(sign)]:category.system==='constellation'?constellationNames[Number(sign)]:`${sign}형`;
   const editorial=!isSaju&&category.system!=='bloodType'?editorialForDate(today,`${category.system}:${sign}`):null;
-  const limitations=[...(isSaju?birth!.calculation.limitations:[]),...new Set(reading.limitations)];
+  const limitations=[...(isSaju?(topic?.chart.limitations??birth!.calculation.limitations):[]),...new Set(reading.limitations)];
   const hasDayMaster=birth?.calculation.dayMaster!=null;
   const visibleSections=isPeriod&&hasDayMaster?Array.from({length:Math.max(...reading.sections.map(s=>s.paragraphs.length))},(_,i)=>({
     ...reading.sections[0],id:`period-section-${i}`,title:['이 기간의 주제','다른 사람과 이야기할 일','이 구간에 해볼 일','돈 관리에서 확인할 점'][i],
     paragraphs:reading.sections.flatMap((s,index)=>s.paragraphs[i]?[`${reading.sections.length>1?(index===0?'앞 구간 · ':'뒤 구간 · '):''}${s.paragraphs[i]}`]:[]),
   })):reading.sections;
   return <>
-    {isSaju&&birth&&<NatalChart chart={calculateAdvanced(birth.input,{...(birth.input.advanced??{timePolicy:'standard'}),enabled:true})}/>}
+    {topic&&<NatalChart chart={topic.chart}/>}
     <div className="result-hero"><p className="eyebrow">{isSaju?nickname?`${nickname} 님의 ${category.name}`:`나의 ${category.name}`:`${lightName} · 가벼운 이야기`}</p><span className="result-period">{period?.label??(!isSaju&&category.system!=='bloodType'?`${today.replaceAll('-','. ')} · 한국시간`:'타고난 기질을 돌아보는 기본 풀이')}</span><h2>{reading.headline}</h2><div className="keywords">{reading.keywords.map((k,i)=><span key={i}>{k}</span>)}</div></div>
     {period&&<aside className="period-range-note" aria-label="풀이가 적용되는 구간">{period.segments.map((segment,i)=><p key={segment.start}><strong>{period.segments.length===1?'대상 구간':i===0?'앞 구간':'뒤 구간'}</strong> · {segmentDateRange(segment)}</p>)}{period.segments.length>1&&<p className="helper">경계 날짜에는 절입 시각에 구간이 바뀌어요. 정확한 시각은 아래 기간 상세에서 볼 수 있어요.</p>}</aside>}
     {limitations.length>0&&<aside className="result-limitation" aria-label="입력과 풀이의 한계">{limitations.map((text,i)=><p key={i}>{text}</p>)}</aside>}
@@ -86,12 +91,12 @@ export function FortuneResult({category}:{category:Category}){
       </p>
       {period.segments.map(s=><section className="period-segment" key={s.start}><h3>{s.label}</h3><p>{pillarText(s.pillar)} · 일간과의 관계 {s.features['period.relation']??'미확정'}</p></section>)}
     </div></details>}
-    {isSaju&&birth&&<CalculationDetails result={birth.calculation}/>}
+    {topic&&<details className="disclosure"><summary>시간 보정·계산 기준</summary><div className="disclosure-body"><p>표준시 {topic.chart.time.standard??'미확정'} / 적용 시각 {topic.chart.time.final??'미확정'}</p>{topic.chart.limitations.map(text=><p key={text}>{text}</p>)}</div></details>}
     <details className="disclosure"><summary>왜 이런 풀이인가요?</summary><div className="disclosure-body">{reading.basisGroups?reading.basisGroups.map(group=><section key={group.label}><h3>{group.label}</h3><ul>{group.basis.map(b=><li key={b}>{b}</li>)}</ul></section>):<ul>{[...new Set(reading.sections.flatMap(s=>s.basis))].map(b=><li key={b}>{b}</li>)}</ul>}<p>전통적인 상징에 빗대어 일상을 돌아보는 글이에요. 원고의 형식과 적용 조건은 자동으로 검사했지만, 독립적인 명리 검토를 마친 것은 아니에요. 개인의 성격이나 미래를 확인한 결과도 아니에요. 의료·투자·법률 판단에는 실제 정보와 적절한 도움을 받아 주세요.</p></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>{isSaju?'입력 수정':'선택 바꾸기'}</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div>
-    {isSaju&&birth&&<section className="advanced-entry-panel no-print"><h2>원국·대운·기간 상세 분석</h2><p>선택한 도시와 시각 기준으로 지장간·십신·대운·5년 세운을 함께 볼 수 있어요.</p><button className="button" onClick={()=>{setBirth({...birth,input:{...birth.input,advanced:{...(birth.input.advanced??{timePolicy:'standard'}),enabled:true}}});requestAnimationFrame(()=>{document.getElementById('result-title')?.focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});});}}>상세 분석 보기</button></section>}
+
     <ShareActions slug={category.slug}/>
-    <section className="other-readings no-print"><h2>{isSaju?'같은 정보로 다른 풀이 보기':'다른 운세도 가볍게'}</h2><div className="other-links">{categories.filter(c=>isSaju?c.system==='saju':true).map(c=><Link prefetch={false} href={isSaju?`/result/${c.slug}/`:`/fortune/${c.slug}/`} key={c.slug} aria-current={c.slug===category.slug?'page':undefined}>{c.name}</Link>)}</div></section>
+
     <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">운세는 나를 돌아보는 참고 이야기예요. 성향을 확정하거나 앞으로의 사건을 예언하지 않아요. 새로고침하면 입력과 결과가 사라져요.</p>
   </>;
 }

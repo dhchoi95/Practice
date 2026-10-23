@@ -1,6 +1,6 @@
 import type { PeriodKind } from '../fortune/period';
 import type { Facts } from '../advanced/types';
-export const FOUNDATION_VERSION='2.2.0';
+export const FOUNDATION_VERSION='2.2.1';
 export const SECTOR_POLICY='SIX-SECTOR-CONTEXT-2.0';
 export const domains=['overall','study','money','health','love','business'] as const;
 export type Domain=typeof domains[number];

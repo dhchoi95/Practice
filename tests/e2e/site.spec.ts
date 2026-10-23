@@ -1,3 +1,4 @@
+import { switchReading } from './helpers/reading';
 import { test,expect,type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs/promises';
@@ -62,7 +63,7 @@ test('same day stem receives different contextual love content from actual natal
 });
 test('all core and period categories reuse the same birth state',async({page})=>{
   await birthResult(page);for(const [slug,title] of [['personality','성격풀이'],['love','연애사주'],['career-money','직업·재물'],['relationships','대인관계'],['single','솔로사주'],['mind','마음돌봄'],['day','오늘 운세'],['month','이번 달 운세'],['year','올해 운세']]){
-    await page.locator('.other-links').getByRole('link',{name:title,exact:true}).click();await expect(page).toHaveURL(`/result/${slug}/`);await expect(page.locator('.reading-section').first()).toBeVisible();await expect(page.locator('.empty-state')).toHaveCount(0);
+    await switchReading(page,title);await expect(page).toHaveURL(`/result/${slug}/`);await expect(page.locator('.reading-section').first()).toBeVisible();await expect(page.locator('.empty-state')).toHaveCount(0);
   }
 });
 test('Korean date updates at midnight and on tab focus',async({page})=>{
@@ -123,7 +124,7 @@ for(const initiallyOpen of [false,true])test(`native PDF includes disclosures an
 });
 test('unknown day body stays neutral across affected topics',async({page})=>{
  await page.setViewportSize({width:390,height:900});await page.goto('/fortune/personality/');await fillBirth(page,{year:'1987',month:'6',day:'1'});await submit(page);
- for(const label of ['성격풀이','솔로사주','정통사주','올해 운세']){await page.locator('.other-links').getByRole('link',{name:label,exact:true}).click();await expect(page.locator('.natal-table [data-pillar="day"][data-row="stem"]')).toContainText('미확정');await expect(page.locator('main')).not.toContainText('확정한 일간');}
+ for(const label of ['성격풀이','솔로사주','정통사주','올해 운세']){await switchReading(page,label);await expect(page.locator('.natal-table [data-pillar="day"][data-row="stem"]')).toContainText('미확정');await expect(page.locator('main')).not.toContainText('확정한 일간');}
  await expect(page.locator('.sector-bodies')).toContainText('일간이 미확정');await expect(page.locator('[data-testid="radar-shape"]')).toHaveCount(0);await fs.mkdir('reports/screenshots',{recursive:true});await page.screenshot({path:'reports/screenshots/unknown-day-390.png',fullPage:true});
 });
 for(const dayMasterKnown of [false,true])for(const kind of ['year','month','day'] as const)test(`period details and native PDF respect ${dayMasterKnown?'known':'unknown'} day master: ${kind}`,async({page})=>{
@@ -154,7 +155,7 @@ for(const width of [195,320,390])test(`constellation date labels remain readable
 test('birth information never enters requests, URLs, console, or storage',async({page})=>{
   const requests:{url:string;body:string}[]=[],logs:string[]=[];
   page.on('request',r=>requests.push({url:decodeURIComponent(r.url()),body:r.postData()||''}));page.on('console',m=>logs.push(m.text()));
-  await page.goto('/fortune/saju/');await fillBirth(page,{knownTime:true,nickname:'개인정보테스트별명'});await submit(page);await page.locator('.other-links').getByRole('link',{name:'연애사주',exact:true}).click();
+  await page.goto('/fortune/saju/');await fillBirth(page,{knownTime:true,nickname:'개인정보테스트별명'});await submit(page);await switchReading(page,'연애사주');
   const serialized=JSON.stringify(requests);for(const forbidden of ['개인정보테스트별명','1992-05-15','1992%2D05%2D15','10:30'])expect(serialized).not.toContain(forbidden);
   expect(requests.every(r=>!r.body)).toBe(true);expect(logs.join(' ')).not.toContain('개인정보테스트별명');expect(page.url()).not.toContain('?');expect(page.url()).not.toContain('#');
   expect(await page.evaluate(()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage)}))).toEqual({local:[],session:[]});
@@ -254,7 +255,7 @@ test('period trace stays in memory and expanded result reflows at 320px and enla
 });
 
 test('KR-02 natal analysis remains substantial and survives native print',async({page})=>{
- await page.setViewportSize({width:390,height:900});await birthResult(page,true);await expect(page.locator('#advanced-topics')).toContainText('구성에서 이어지는 주제 풀이');expect((await page.locator('#advanced-topics').innerText()).length).toBeGreaterThan(800);await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
+ await page.setViewportSize({width:390,height:900});await birthResult(page,true);await expect(page.locator('#advanced-topics')).toContainText('성격·일·돈·연애 풀이');expect((await page.locator('#advanced-topics').innerText()).length).toBeGreaterThan(800);await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
  for(const width of [390,320]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  const states=()=>page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));const before=await states();await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/editorial-general.pdf',format:'A4',printBackground:true});expect(await states()).toEqual(before);
 });
@@ -264,7 +265,7 @@ test('KR-03 and KR-06 dates sit beside the reading and love does not presume a p
   await page.goto('/fortune/love/');await fillBirth(page,{knownTime:true});await submit(page);
   await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies)')).toContainText('지금 만나는 사람이 없다면');await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies)')).toContainText('내게는 당연해도 상대는 모를 수 있어요');
   await page.pdf({path:'reports/print/editorial-love.pdf',format:'A4',printBackground:true});
-  await page.locator('.other-links').getByRole('link',{name:'올해 운세',exact:true}).click();
+  await switchReading(page,'올해 운세');
   await expect(page.locator('.sector-heading')).toContainText('2026년');await expect(page.locator('.sector-bodies')).not.toContainText('분기마다');await page.locator('.sector-segments summary').click();expect(await page.locator('.sector-segments section').count()).toBeGreaterThanOrEqual(13);await expect(page.locator('.sector-segments')).toContainText('2027-01-01');
   await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
   await page.screenshot({path:'reports/content-improvement-1.4.0/screenshots/editorial-year-range-390.png',fullPage:true});
@@ -272,7 +273,7 @@ test('KR-03 and KR-06 dates sit beside the reading and love does not presume a p
 test('all 13 edited menu flows render their own actual content at mobile width',async({page})=>{
   await page.setViewportSize({width:390,height:900});await birthResult(page,true);
   for(const label of ['정통사주','성격풀이','연애사주','직업·재물','대인관계','솔로사주','마음돌봄','올해 운세','이번 달 운세','오늘 운세']){
-    await page.locator('.other-links').getByRole('link',{name:label,exact:true}).click();
+    await switchReading(page,label);
     await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies)')).not.toBeEmpty();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   }
   for(const [slug,label] of [['zodiac','쥐띠'],['constellation','염소자리'],['blood-type','A형']]){

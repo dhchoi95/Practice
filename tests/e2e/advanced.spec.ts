@@ -1,3 +1,4 @@
+import { switchReading } from './helpers/reading';
 import { test,expect,type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs/promises';
@@ -21,16 +22,17 @@ test('advanced example propagates time profile to chart, roots, interpretations,
  const before=await page.locator('details.disclosure').evaluateAll(ds=>ds.map(d=>(d as HTMLDetailsElement).open));await page.pdf({path:`${dir}/print/advanced-solar.pdf`,format:'A4',printBackground:true});expect(await page.locator('details.disclosure').evaluateAll(ds=>ds.map(d=>(d as HTMLDetailsElement).open))).toEqual(before);
  for(const width of [320,390]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.evaluate(()=>{document.documentElement.style.fontSize='200%';});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`${dir}/screenshots/advanced-enlarged-390.png`,fullPage:true});
- await panel.getByLabel('조회 날짜',{exact:true}).fill('2051-01-01');await expect(panel.getByRole('alert')).toContainText('1962~2050');await expect(panel.locator('.natal-table')).toBeVisible();await expect(panel.locator('[data-pillar="hour"][data-row="stem"]')).toContainText('己');await panel.getByLabel('조회 날짜',{exact:true}).fill('2026-10-22');await expect(panel.locator('.advanced-summary')).toBeVisible();
+ await expect(panel.locator('input[type="date"]')).toHaveCount(0);
+
 });
 test('unknown time keeps dependent advanced interpretations unresolved in screen and actual PDF',async({page})=>{
  await fs.mkdir(`${dir}/print`,{recursive:true});await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page,true);const panel=page.locator('.advanced-experience');await expect(panel.locator('#advanced-luck')).toContainText('대운 개시일을 정하지 않았어요');
  await expect(panel.locator('.advanced-summary')).toContainText('강약 미확정');await expect(panel.locator('.luck-cards')).toHaveCount(0);await expect(panel.locator('#advanced-topics')).toContainText('적용하지 않았어요');await page.pdf({path:`${dir}/print/advanced-unknown.pdf`,format:'A4'});
 });
 test('period selection changes actual context and retains selected solar profile in other menus',async({page})=>{
- await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page);await page.locator('.other-links').getByRole('link',{name:'오늘 운세',exact:true}).click();const panel=page.locator('.sector-experience');await expect(panel.locator('.natal-explanation')).toContainText('진태양시');
- await panel.getByRole('button',{name:'오늘',exact:true}).click();const a=await panel.locator('.sector-bodies').innerText();await panel.getByRole('button',{name:'내일',exact:true}).click();expect(await panel.locator('.sector-bodies').innerText()).not.toBe(a);
- await panel.getByLabel('조회 날짜',{exact:true}).fill('2051-01-01');await expect(panel.getByRole('alert')).toContainText('1962~2050');await panel.getByLabel('조회 날짜',{exact:true}).fill('2026-02-04');await expect(panel.locator('.sector-segments > .disclosure-body > section').filter({has:page.locator('h3').filter({hasText:/^\d+구간/})})).toHaveCount(2);
+ await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page);await switchReading(page,'지정일 운세');const panel=page.locator('.sector-experience');await expect(panel.locator('.natal-explanation')).toContainText('진태양시');
+ await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-10-22');const a=await panel.locator('.sector-bodies').innerText();await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-10-23');expect(await panel.locator('.sector-bodies').innerText()).not.toBe(a);
+ await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2051-01-01');await expect(panel.getByRole('alert')).toContainText('1962~2050');await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-02-04');await expect(panel.locator('.sector-segments > .disclosure-body > section').filter({has:page.locator('h3').filter({hasText:/^\d+구간/})})).toHaveCount(2);
  const axe=await new AxeBuilder({page}).include('.sector-experience').withTags(['wcag2a','wcag2aa']).analyze();expect(axe.violations).toEqual([]);
 });
 test('advanced inputs do not leak in request/URL/console/storage/cookies and refresh clears them',async({page})=>{
@@ -45,7 +47,7 @@ test('all sixteen MBTI labels lead to six genuine selectable topics without infe
 });
 
 test('advanced today follows Korean midnight while an explicitly selected date stays fixed',async({page})=>{
- await page.clock.install({time:new Date('2026-10-22T14:59:30Z')});await advanced(page);await page.locator('.other-links').getByRole('link',{name:'오늘 운세',exact:true}).click();const panel=page.locator('.sector-experience'),date=panel.getByLabel('조회 날짜',{exact:true});await expect(date).toHaveValue('2026-10-22');const before=await panel.locator('.sector-bodies').innerText();
- await page.clock.fastForward(60000);await expect(date).toHaveValue('2026-10-23');expect(await panel.locator('.sector-bodies').innerText()).not.toBe(before);
- await date.fill('2026-10-20');await page.clock.fastForward(86400000);await expect(date).toHaveValue('2026-10-20');
+ await page.clock.install({time:new Date('2026-10-22T14:59:30Z')});await advanced(page);await switchReading(page,'오늘 운세');const panel=page.locator('.sector-experience');await expect(panel.locator('.sector-heading h2')).toContainText('22일');const before=await panel.locator('.sector-bodies').innerText();
+ await page.clock.fastForward(60000);await expect(panel.locator('.sector-heading h2')).toContainText('23일');expect(await panel.locator('.sector-bodies').innerText()).not.toBe(before);
+ await switchReading(page,'지정일 운세');const date=page.getByLabel('운세를 볼 날짜',{exact:true});await date.fill('2026-10-20');await page.clock.fastForward(86400000);await expect(date).toHaveValue('2026-10-20');
 });

@@ -15,7 +15,7 @@ for kind in ['standard','solar','unknown']:
     for span in line['spans']:
      if span['text'].strip():
       x0,y0,x1,y1=span['bbox'];assert x0>=-1 and y0>=-1 and x1<=p.rect.width+1 and y1<=p.rect.height+1,(kind,p.number,span)
- required=['서비스 해석 후보','요청한 시각 기준','원국과 지장간·십신','십신별 역할과 실제 위치','대운 개시 계산','선택 연도부터 5년','2026년','2030년','전체 흐름을 연결해 읽기','출처와 판단의 범위','2.0.0']
+ required=['내 사주 자세히 보기','요청한 시각 기준','원국과 지장간·십신','십신별 역할과 실제 위치','대운 개시 계산','선택 연도부터 5년','2026년','2030년','종합 풀이','출처와 판단의 범위','2.0.0']
  if kind=='unknown':
   required+=['일주 미확정','강약 미확정','격국 미확정','대운 개시일을 정하지 않았어요']
   assert '1995-12-20' not in text and '신강 경향' not in text
@@ -27,7 +27,7 @@ for kind in ['standard','solar','unknown']:
   else:required+=['1995-11-08 15:03','신강 경향','정인'];assert re.findall(r'(?m)^[甲乙丙丁戊己庚辛壬癸]$',chart)[:4]==['庚','癸','丁','乙'];assert re.findall(r'(?m)^[子丑寅卯辰巳午未申酉戌亥]$',chart)[:4]==['申','卯','亥','亥']
   data=json.loads((root/f'example-suwon-{"true-solar" if kind=="solar" else "standard"}.json').read_text())
   # Same period paragraph is printed once; later segments/years use explicit references.
-  bodies={r['id']:r['text'] for period in [data['selectedPeriod'],*data['years']] for segment in period['segments'] for r in segment['selection']['applied']}
+  bodies={r['id']:r['text'] for period in data['years'] for segment in period['segments'] for r in segment['selection']['applied']}
   for rid,body in bodies.items():assert norm(before_comparison).count(norm(body))==1,(kind,rid,'missing or repeated narrative')
  for s in required:assert norm(s) in n,(kind,s)
  assert '섬세한기준을나에게도다정하게' not in n
