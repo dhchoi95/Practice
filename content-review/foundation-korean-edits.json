@@ -1,0 +1,133 @@
+{
+  "baselineCommit": "287364976778081c8b68a867633159558c5b45bb",
+  "version": "2.1.0",
+  "date": "2026-10-23",
+  "edits": [
+    {
+      "path": "src/config/site.ts",
+      "before": "사주표와 기본 풀이",
+      "after": "원국·강약·격국·용신·대운",
+      "reason": "기본 풀이보다 상세해진 실제 범위를 메뉴에서 알림",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "입력한 날짜와 시각으로 사주표를 계산하고, 일과 관계에 관한 생활 제안을 읽어요.",
+      "after": "출생 원국을 바탕으로 강약·격국·용신 후보와 대운·세운을 상세하게 읽어요.",
+      "reason": "원국과 후보 해석, 기간 해석의 범위를 구체화",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "오늘의 계획에 참고할 이야기",
+      "after": "오늘의 여섯 분야 풀이",
+      "reason": "막연한 이야기 대신 실제 분야별 결과를 예고",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "한국시간 오늘의 간지와 내 일간의 관계에 빗댄 생활 제안을 읽어요.",
+      "after": "오늘의 간지와 출생 원국을 함께 보고 여섯 분야의 풀이를 읽어요.",
+      "reason": "일간 하나만 보는 옛 안내를 복합 조건으로 변경",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "이번 달의 일정과 생활 제안",
+      "after": "이달의 여섯 분야와 구간별 흐름",
+      "reason": "메뉴 내용과 기간 구분을 구체화",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "양력 이번 달을 절입 전후로 나누어 일정과 생활 계획에 참고해요.",
+      "after": "이번 달을 절입·대운 전환 구간으로 나누어 여섯 분야를 살펴요.",
+      "reason": "실제 사용하는 대운 경계와 여섯 분야 안내",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "절기 구간별로 읽는 한 해",
+      "after": "한 해의 여섯 분야와 구간별 흐름",
+      "reason": "결과 형식과 범위를 직접 표시",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/config/site.ts",
+      "before": "양력 한 해를 입춘 전후로 나누어 각 구간의 생활 제안을 읽어요.",
+      "after": "한 해의 월별 절입·입춘·대운 전환을 반영해 여섯 분야를 읽어요.",
+      "reason": "한 해를 두 구간만으로 읽는다는 옛 설명 수정",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "before": "하루사주는 한국 표준시와 날짜 변경 0시 기준을 사용해요.",
+      "after": "하루사주는 날짜 변경 0시 기준을 쓰며 표준시·평균태양시·진태양시를 선택할 수 있어요. 도시 미선택 때는 표준시를 적용해요.",
+      "reason": "태양시 선택과 도시 미상 처리 보존",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/components/AdvancedExperience.tsx",
+      "before": "간단 보기는 기존 표준시를 쓰고, 상세 분석은 아래에서 선택한 기준의 원국으로 계산해요. 서로 다른 기준의 원국과 판단을 섞지 않아요.",
+      "after": "선택한 시각 기준을 원국과 모든 해석에 함께 적용해요.",
+      "reason": "기술적 비교를 줄이고 동시 갱신 사실을 분명하게 설명",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/components/AdvancedExperience.tsx",
+      "before": "연주 → 월주 → 일주 → 시주 순서예요. 지장간은 본기·중기·여기 순이며 강약 가중치는 별도 정책이에요.",
+      "after": "상단 원국은 시주 → 일주 → 월주 → 년주 순서예요. 지장간은 본기·중기·여기 순이며 강약 가중치는 별도 정책이에요.",
+      "reason": "표시 순서만 바꾸었고 지장간 정책은 유지",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/components/AdvancedControls.tsx",
+      "before": "상세 분석 계산 기준",
+      "after": "출생 사주 계산 기준",
+      "reason": "원국을 보기 위한 상세 모드로 오해하지 않게 변경",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/content/pages.ts",
+      "before": "올해는 양력 한 해를 입춘 전후로, 이번 달은 양력 월을 절입 전후로 나누어요. 구간별 천간과 일간의 십성 관계에 연결된 별도 원고를 함께 요약해요. 오늘은 해당 한국 날짜의 일주를 사용해요.",
+      "after": "오늘·내일·지정일·이번 달·올해 운세는 총운·학업·재물·건강·연애·사업의 여섯 분야로 읽어요. 월·연은 실제 절입·입춘·대운 전환 구간을 반영해 집계해요. 지정일의 면접·시험 등 일정 선택은 준비 설명만 덧붙이고 기본 지수와 본문은 바꾸지 않아요.",
+      "reason": "새 운세 구조와 일정 맥락 불변 조건을 이용안내에 반영",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    },
+    {
+      "path": "src/content/pages.ts",
+      "before": "일주는 한국 표준시 0시에 바뀌어요. 자시는 23:00~00:59, 이후 두 시간씩이며 시주의 천간은 해당 표준시 날짜의 일간에서 구해요. 23시에도 다음 날 일간을 미리 사용하지 않아요.",
+      "after": "표준시를 선택하면 일주는 한국 표준시 0시에 바뀌어요. 태양시는 보정한 시각의 0시를 기준으로 일주·시주를 함께 구해요. 자시는 23:00~00:59이며 23시에도 다음 날 일간을 미리 쓰지 않아요. 연·월 절입과 대운 시간차는 실제 순간으로 비교해요.",
+      "reason": "표준시 전용이라는 인상을 없애면서 날짜 경계 정책을 보존",
+      "meaningCheck": "계산 사실·해석 한계 보존; 기능 안내 변경은 새 동작과 대조",
+      "naturalnessCheck": "구체적 내용과 해요체; 탐지 점수 미사용",
+      "status": "implementation-author-reviewed-pending-independent"
+    }
+  ]
+}

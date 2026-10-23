@@ -1,0 +1,39 @@
+'use client';
+import Link from 'next/link';
+import { useMemo,useState } from 'react';
+import type { BirthInput } from '@/domain/saju/types';
+import type { AdvancedOptions } from '@/domain/advanced/types';
+import { calculateAdvanced } from '@/domain/advanced/chart';
+import { presentSector } from '@/domain/foundation/presentation';
+import { buildSectorReading,scheduleFor,shiftDate } from '@/domain/foundation/engine';
+import { domains,domainNames,contexts,contextNames,type ScheduleContext } from '@/domain/foundation/types';
+import { segmentLabel } from '@/domain/advanced/period';
+import { pillarLabel } from '@/domain/advanced/mappings';
+import { NatalChart } from './NatalChart';
+import { SectorRadar } from './SectorRadar';
+import { AdvancedControls } from './AdvancedControls';
+import { useSession } from './SessionProvider';
+export default function SectorExperience({input,category,today}:{input:BirthInput;category:string;today:string}){
+ const session=useSession();const [picked,setPicked]=useState<string|null>(null),[context,setContext]=useState<ScheduleContext>('general');
+ const kind=category==='year'?'year':category==='month'?'month':'day';
+ const defaultDate=category==='tomorrow'?shiftDate(today,1):today,target=picked??defaultDate;
+ const options:AdvancedOptions={...(input.advanced??{timePolicy:'standard'}),enabled:true};
+ const chartResult=useMemo(()=>{try{return {chart:calculateAdvanced(input,{...(input.advanced??{timePolicy:'standard'}),enabled:true}),error:null};}catch(e){return {chart:null,error:e instanceof Error?e.message:'출생정보를 확인해 주세요.'};}},[input]);
+ const result=useMemo(()=>{if(!chartResult.chart)return null;try{return {reading:buildSectorReading(chartResult.chart,kind,target),error:null};}catch(e){return {reading:null,error:e instanceof Error?e.message:'조회 날짜를 확인해 주세요.'};}},[chartResult,kind,target]);
+ const reading=result?.reading,note=reading&&kind==='day'?scheduleFor(reading,context):null;
+ return <section className="sector-experience" aria-label="사주 기반 여섯 분야 운세"><header className="sector-heading"><p className="eyebrow">내 사주로 살펴보는 {kind==='year'?'한 해':kind==='month'?'한 달':'하루'}</p><h2>{reading?.label??target}</h2>{input.nickname&&<p>{input.nickname} 님의 운세</p>}<p>{kind==='year'?'양력 한 해의 모든 구간':kind==='month'?'양력 한 달의 모든 구간':'한국시간 0시부터 다음 날 0시 전까지'}</p></header>
+ {chartResult.chart&&<NatalChart chart={chartResult.chart}/>}
+ {chartResult.error&&<p role="alert">{chartResult.error}</p>}
+ <div className="sector-date-controls no-print"><label>조회 날짜<input type="date" aria-label="조회 날짜" min="1962-01-01" max="2050-12-31" value={target} onChange={e=>setPicked(e.target.value)}/></label><div className="action-row"><button className="button" onClick={()=>setPicked(null)}>{category==='tomorrow'?'기본 내일':kind==='month'?'이번 달':kind==='year'?'올해':'오늘'}</button>{kind==='day'&&<button className="button" onClick={()=>setPicked(shiftDate(today,1))}>내일</button>}<Link className="button" prefetch={false} href="/result/date/">지정일 운세</Link></div></div>
+ {result?.error&&<p className="error-summary" role="alert">{result.error}</p>}
+ {reading&&<><SectorRadar reading={reading}/>{reading.segments.length>1&&<p className="helper">이 기간은 {reading.segments.length}개 구간으로 나뉘어요. 분야마다 가장 오래 적용되는 풀이를 먼저 싣고, 다른 구간의 풀이를 이어서 보여줘요.</p>}<nav className="sector-anchor-links no-print" aria-label="분야별 본문 이동">{domains.map(d=><a href={`#sector-${d}`} key={d}>{domainNames[d]}</a>)}</nav>
+ <div className="sector-bodies">{domains.map(domain=>{
+ const sector=reading.sectors[domain];const {primary:core,supplement:supp,secondary:other}=presentSector(reading,domain);
+ return <section className="reading-section sector-body" key={domain} id={`sector-${domain}`} data-domain={domain} data-score={sector.score??'null'}><h2>{domainNames[domain]} <span className="sector-score">{sector.score===null?'산출 보류':`${sector.score} / 100`}</span></h2>{domain==='business'&&<p className="helper">직장·취업·일·사업을 함께 다뤄요.</p>}{core?<><h3>{core.title}</h3>{core.paragraphs.map((p,i)=><p key={i} data-source-id={core.id}>{p}</p>)}{supp&&<p data-source-id={supp.id}>{supp.paragraphs[0]}</p>}{other&&<p data-source-id={other.id}><strong>다른 구간에서는 · </strong>{other.paragraphs[0]}</p>}<p className="sector-proposal" data-source-id={core.id}>{core.proposal}</p></>:<p>일간이 미확정이라 원국과 대상 기간의 개인 관계를 정하지 않았어요. 출생 시각과 계산 기준을 확인하면 더 좁은 범위로 살펴볼 수 있어요.</p>}{sector.uncertainty.map(p=><p className="helper" key={p}>{p}</p>)}</section>;
+ })}</div>
+ {kind==='day'&&<section className="schedule-notes"><h2>이날의 일정 참고</h2><label className="no-print">일정 선택<select aria-label="일정 선택" value={context} onChange={e=>setContext(e.target.value as ScheduleContext)}>{contexts.map(c=><option key={c} value={c}>{contextNames[c]}</option>)}</select></label><h3>{contextNames[context]}</h3>{note?<><p data-source-id={note.id}>{note.text}</p><ul>{note.checks.map(c=><li key={c}>{c}</li>)}</ul></>:<p>일간이 미확정이라 일정에 대한 사주 해석은 덧붙이지 않았어요. 실제 안내와 준비할 항목을 먼저 확인해 주세요.</p>}<p className="helper">일정 선택은 기본 지수와 본문을 바꾸지 않아요. {context==='interview'?'면접 일정은 준비 상태와 회사 안내를 우선해 정해 주세요.':'일정 변경이나 취소는 실제 안내와 준비 상태를 기준으로 정해 주세요.'}</p></section>}
+ <details className="disclosure sector-segments"><summary>기간 구간별 지수와 풀이 근거</summary><div className="disclosure-body"><p>전체 본문은 가장 오래 적용되는 중심 풀이와 보완 풀이를 먼저 보여줘요. 다른 중심 풀이도 있으면 함께 실었어요. 아래에서 모든 구간의 판단과 원고를 확인할 수 있어요.</p>{reading.segments.map((s,i)=><section key={s.start}><h3>{i+1}구간 · {segmentLabel(s)}</h3><p>선택한 날짜의 간지 · {pillarLabel(s.context.pillars[kind])} / 세운 {pillarLabel(s.context.pillars.year)} · 월운 {pillarLabel(s.context.pillars.month)} · 천간 관계 {s.context.facts['period.god']??'미확정'} · 지지 본기 {s.context.facts['period.branchGod']??'미확정'}</p>{domains.map(d=><div key={d}><h4>{domainNames[d]} · {s.sectors[d].score??'보류'}</h4><p>{s.sectors[d].records.map(r=>r.title).join(' / ')||'개인 해석 유보'}</p></div>)}</section>)}<section><h3>다른 구간의 추가 풀이</h3>{domains.map(d=><div key={d}>{presentSector(reading,d).additional.map(r=><section key={r.id}><h4>{domainNames[d]} · {r.title}</h4><p data-source-id={r.id}>{r.paragraphs[0]}</p>{r.proposal&&<p data-source-id={r.id}>{r.proposal}</p>}</section>)}</div>)}</section></div></details>
+ <details className="disclosure no-print"><summary>판단·지수·원고 연결 기록</summary><div className="disclosure-body"><p>개발·검토용 기록이에요. 정책 {reading.policy} · 원고 {reading.contentVersion}. 기본 50, 근거군별 ±10 이하, 전체 기여 ±25 이하, 5 단위 반올림이에요. 총운은 다른 다섯 지수에서 계산하므로 총운 원고의 0 기여를 점수 근거로 보지 않아요.</p>{reading.segments.map(s=><section key={s.start}><h3>{segmentLabel(s)}</h3>{domains.map(d=><details key={d}><summary>{domainNames[d]} 원고·전제·기여</summary><pre>{JSON.stringify({records:s.sectors[d].records.map(r=>({id:r.id,version:r.version,requires:r.requires,evidenceRefs:r.evidenceRefs})),facts:s.sectors[d].facts,contributions:d==='overall'?{method:'equal mean of five segment scores'}:s.sectors[d].contributions},null,2)}</pre></details>)}</section>)}</div></details></>}
+ <details className="disclosure"><summary>시간 보정·계산 기준</summary><div className="disclosure-body"><div className="no-print"><AdvancedControls value={options} alwaysEnabled onChange={advanced=>{if(session.birth)session.setBirth({...session.birth,input:{...session.birth.input,advanced:{...advanced,enabled:true}}});}}/></div>{chartResult.chart&&<><p>표준시 {chartResult.chart.time.standard??'미확정'} / 적용 시각 {chartResult.chart.time.final??'미확정'}</p>{chartResult.chart.limitations.map(p=><p key={p}>{p}</p>)}</>}</div></details>
+ <p className="helper">전통 상징을 바탕으로 생활에서 살필 점을 정리했어요. 사건 예측이나 독립 명리 검증을 마친 결과는 아니에요.</p></section>;
+}

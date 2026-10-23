@@ -2,7 +2,7 @@
 
 가입·결제·실행 중 AI 호출 없이 사용하는 한국어 무료 사주·운세 사이트입니다. Next.js 정적 HTML과 브라우저 계산으로 동작합니다. 출생정보는 브라우저 메모리에만 두며 새로고침하면 사라집니다.
 
-현재 작업본은 콘텐츠 1.4.0 한국어 교정본입니다. korean-skills의 실제 지침을 순서대로 적용하고, 정상 원고210개 중196개에서 필요한 필드를 고쳤으며14개는 유지했습니다. 제목뿐 아니라 본문·생활 제안·근거와 입력·공유·홈 안내도 검토했습니다. [교정 결과](docs/content-improvement-1.4.0.md), [현재 문체 기준](docs/korean-style-guide-1.4.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
+현재 작업본은 1.4.0 한국어 교정·2.0.0 상세 계산을 유지하고, 2.1.0의 상단 원국·여섯 분야·지정일·독립 만세력을 추가했습니다. [2.1.0 결과와 정책](docs/foundation-2.1.0.md)을 확인하세요. 기존 1.4.0 작업에서는 korean-skills의 실제 지침을 순서대로 적용하고, 정상 원고210개 중196개에서 필요한 필드를 고쳤으며14개는 유지했습니다. 제목뿐 아니라 본문·생활 제안·근거와 입력·공유·홈 안내도 검토했습니다. [교정 결과](docs/content-improvement-1.4.0.md), [현재 문체 기준](docs/korean-style-guide-1.4.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
 
 ## 처음 실행하기
 
@@ -20,7 +20,7 @@ npm run dev
 
 ## 실제 제공 범위
 
-- 정통사주·성격·연애·직업재물·대인관계·솔로·마음돌봄, 오늘·이번 달·올해 운세.
+- 정통사주·독립 만세력·성격·연애·직업재물·대인관계·솔로·마음돌봄, 오늘·내일·지정일·이번 달·올해의 여섯 분야 운세.
 - 한국 음력·윤달 검증과 변환, 입춘 연주·절입 월주·자정 일주·표준시 시주, 기본 십성·오행 단순 개수.
 - 띠 12종·별자리 12종·혈액형 4종 직접 선택과 별도 읽을거리.
 - 조건·문장·버전이 함께 있는 **210개 조건별 원고**, 별도 공통 오행 설명 5개·근거 정의 25개와 교체 가능한 저장소 인터페이스.
@@ -79,3 +79,5 @@ npm start
 고급 원고 62개, 새 기간 원고 136개, MBTI 기본 16개·주제 96개를 기존 원고와 따로 관리합니다. 기존 한국어 교정·계산·검토 기록은 보존합니다. [구현과 제한](docs/integrated-upgrade-2.0.0.md), [정책](docs/integrated-policy-2.0.0.md), [원래 요구](docs/integrated-upgrade-request-2.0.0.md)를 먼저 읽어 주세요. 원전·독립 명리 검토는 대기 상태입니다.
 
 `npm run verify`는 통합 검사까지 실행합니다. 별도 천문 비교는 `node --import tsx scripts/verify-advanced-astronomy.ts`, 전체 검토 예시 출력은 verify 후 `node --import tsx scripts/export-integrated-evidence.ts`, 상세 PDF 검사는 E2E 후 `python3 scripts/verify-advanced-pdfs.py`입니다. 이번 작업은 원격 push·공개 배포를 하지 않습니다.
+
+2.1.0 추가 검사: `npm run content:foundation`. 12개 합성 원국의 365일·12개월·5년과 원고 전제·해시를 검사합니다. 새 PDF 검사는 `python3 scripts/verify-foundation-pdfs.py`입니다. 재검토는 검토 ZIP의 START_HERE를 따릅니다.

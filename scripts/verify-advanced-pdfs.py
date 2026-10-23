@@ -22,9 +22,9 @@ for kind in ['standard','solar','unknown']:
  else:
   required+=['1995-12-20 21:53','2035-12-20 21:53','10대운','억부','조후','이미 표시한 같은 설명']
   before_comparison=text.split('표준시와 진태양시에서 달라지는 점')[0]
-  chart=text.split('원국과 지장간·십신')[1].split('십신별 역할')[0]
-  if kind=='solar':required+=['1995-11-08 14:47','중화·경계','지지 음 · 토 · 본기 편관'];assert '기미(己未)' in chart and '경신(庚申)' not in chart
-  else:required+=['1995-11-08 15:03','신강 경향','지지 양 · 금 · 본기 정인'];assert '경신(庚申)' in chart and '기미(己未)' not in chart
+  chart=text.split('내 사주 원국')[1].split('만세력 풀이 보기')[0]
+  if kind=='solar':required+=['1995-11-08 14:47','중화·경계','편관'];assert re.findall(r'(?m)^[甲乙丙丁戊己庚辛壬癸]$',chart)[:4]==['己','癸','丁','乙'];assert re.findall(r'(?m)^[子丑寅卯辰巳午未申酉戌亥]$',chart)[:4]==['未','卯','亥','亥']
+  else:required+=['1995-11-08 15:03','신강 경향','정인'];assert re.findall(r'(?m)^[甲乙丙丁戊己庚辛壬癸]$',chart)[:4]==['庚','癸','丁','乙'];assert re.findall(r'(?m)^[子丑寅卯辰巳午未申酉戌亥]$',chart)[:4]==['申','卯','亥','亥']
   data=json.loads((root/f'example-suwon-{"true-solar" if kind=="solar" else "standard"}.json').read_text())
   # Same period paragraph is printed once; later segments/years use explicit references.
   bodies={r['id']:r['text'] for period in [data['selectedPeriod'],*data['years']] for segment in period['segments'] for r in segment['selection']['applied']}

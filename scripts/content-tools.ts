@@ -40,8 +40,8 @@ if(command==='validate'){
   for(const [i,input] of syntheticProfiles.entries()){
     const result=calculateSaju(input,clock);if(result.dayMaster!==null)stems.add(result.dayMaster);
     for(const c of categories.filter(c=>c.system==='saju')){
-      const f=['year','month','day'].includes(c.slug)?{...result.features,...targetPeriod(c.slug as 'year'|'month'|'day',result.dayMaster,clock).segments[0].features}:result.features;
-      const reading=['year','month','day'].includes(c.slug)?composePeriodReading(targetPeriod(c.slug as 'year'|'month'|'day',result.dayMaster,clock),result.features):interpret('saju',c.content,f,contentRepository);
+      const f=['year','month','day'].includes(c.content)?{...result.features,...targetPeriod(c.content as 'year'|'month'|'day',result.dayMaster,clock).segments[0].features}:result.features;
+      const reading=['year','month','day'].includes(c.content)?composePeriodReading(targetPeriod(c.content as 'year'|'month'|'day',result.dayMaster,clock),result.features):interpret('saju',c.content,f,contentRepository);
       const limited=result.dayMaster===null;
       const passed=limited?reading.limitations.length>0:reading.sections.length>0&&reading.limitations.length===0;
       if(!passed)failures++;

@@ -100,7 +100,7 @@ describe('real content and synthetic profile coverage',()=>{
     const result=calculateSaju({...input,year:1987,month:6,day:1,unknownTime:true},clock);
     expect(result.dayMaster).toBeNull();
     for(const c of categories.filter(c=>c.system==='saju')){
-      const features=['year','month','day'].includes(c.slug)?{...result.features,...targetPeriod(c.slug as 'year'|'month'|'day',null,clock).segments[0].features}:result.features;
+      const features=['year','month','day'].includes(c.content)?{...result.features,...targetPeriod(c.content as 'year'|'month'|'day',null,clock).segments[0].features}:result.features;
       const reading=interpret('saju',c.content,features);
       expect(reading.sections.flatMap(s=>s.paragraphs).join(' ')).not.toMatch(/확정한 (일간|기둥과 일간)|알려진 일간/);
       expect(reading.sections.some(s=>s.id==='unknown-day')).toBe(true);
@@ -129,7 +129,7 @@ describe('real content and synthetic profile coverage',()=>{
     for(const year of [1972,1992,2002])for(const unknownTime of [true,false])for(let day=1;day<=10;day++){
       const r=calculateSaju({...input,year,day,unknownTime},clock);
       for(const c of categories.filter(c=>c.system==='saju')){
-        const features=['day','month','year'].includes(c.slug)?{...r.features,...targetPeriod(c.slug as 'year'|'month'|'day',r.dayMaster,clock).segments[0].features}:r.features;
+        const features=['day','month','year'].includes(c.content)?{...r.features,...targetPeriod(c.content as 'year'|'month'|'day',r.dayMaster,clock).segments[0].features}:r.features;
         expect(interpret('saju',c.content,features).limitations).toHaveLength(0);
       }
     }
