@@ -1,0 +1,7950 @@
+[
+  {
+    "semanticId": "study:detail-01",
+    "domain": "study",
+    "question": "정인과 표현 주제가 함께 있을 때 무엇을 먼저 연습할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "group.output",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "답을 만들 재료가 부족한 부분은 개념 설명부터 보충해야 해요.",
+    "refines": "study:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:study:detail-01",
+        "question": "정인과 표현 주제가 함께 있을 때 무엇을 먼저 연습할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "group.output",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:study:detail-01",
+        "question": "정인과 표현 주제가 함께 있을 때 무엇을 먼저 연습할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "group.output",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:study:detail-01",
+        "question": "정인과 표현 주제가 함께 있을 때 무엇을 먼저 연습할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "group.output",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-02",
+    "domain": "study",
+    "question": "편인의 새로운 관점과 원국의 정인이 함께 있으면 자료를 어떻게 비교할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "natal.visible.정인",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "출처가 불분명한 새 설명을 공식 범위와 같은 무게로 다루지는 않아요.",
+    "refines": "study:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-02",
+        "question": "편인의 새로운 관점과 원국의 정인이 함께 있으면 자료를 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-02",
+        "question": "편인의 새로운 관점과 원국의 정인이 함께 있으면 자료를 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-02",
+        "question": "편인의 새로운 관점과 원국의 정인이 함께 있으면 자료를 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-03",
+    "domain": "study",
+    "question": "식신과 월지의 인성 관계가 만날 때 복습의 단위를 어떻게 잡을까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "natal.monthMainGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "매끄럽게 말하는 것과 틀린 조건 없이 설명하는 것은 구분해야 해요.",
+    "refines": "study:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-03",
+        "question": "식신과 월지의 인성 관계가 만날 때 복습의 단위를 어떻게 잡을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-03",
+        "question": "식신과 월지의 인성 관계가 만날 때 복습의 단위를 어떻게 잡을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-03",
+        "question": "식신과 월지의 인성 관계가 만날 때 복습의 단위를 어떻게 잡을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-04",
+    "domain": "study",
+    "question": "상관과 관성이 함께 있을 때 답안이 질문 밖으로 벗어나는 문제는 어떻게 살필까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "group.order",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "새로운 설명 자체를 줄이라는 뜻은 아니며 필수 답을 마친 뒤 덧붙일 자리를 정하는 방식이에요.",
+    "refines": "study:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:study:detail-04",
+        "question": "상관과 관성이 함께 있을 때 답안이 질문 밖으로 벗어나는 문제는 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "group.order",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:study:detail-04",
+        "question": "상관과 관성이 함께 있을 때 답안이 질문 밖으로 벗어나는 문제는 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "group.order",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:study:detail-04",
+        "question": "상관과 관성이 함께 있을 때 답안이 질문 밖으로 벗어나는 문제는 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "group.order",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-05",
+    "domain": "study",
+    "question": "정관과 원국의 정인이 함께 있을 때 평가 준비에서 놓친 범위는 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "natal.visible.정인",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "평가 기준을 지키는 일이 개념을 외우기만 하라는 뜻은 아니에요.",
+    "refines": "study:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-05",
+        "question": "정관과 원국의 정인이 함께 있을 때 평가 준비에서 놓친 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-05",
+        "question": "정관과 원국의 정인이 함께 있을 때 평가 준비에서 놓친 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-05",
+        "question": "정관과 원국의 정인이 함께 있을 때 평가 준비에서 놓친 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-06",
+    "domain": "study",
+    "question": "편관과 확인된 뿌리가 있을 때 제한 시간 연습을 어떻게 적용할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "roots.count",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "뿌리가 있다고 실제 실력이나 시험 준비가 충분하다고 판정하지는 않아요.",
+    "refines": "study:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-06",
+        "question": "편관과 확인된 뿌리가 있을 때 제한 시간 연습을 어떻게 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-06",
+        "question": "편관과 확인된 뿌리가 있을 때 제한 시간 연습을 어떻게 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-06",
+        "question": "편관과 확인된 뿌리가 있을 때 제한 시간 연습을 어떻게 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-07",
+    "domain": "study",
+    "question": "비견과 일지 충이 겹칠 때 고집과 유용한 익숙함은 어떻게 구분할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "다른 사람의 방식이 항상 더 낫다는 뜻은 아니에요.",
+    "refines": "study:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:study:detail-07",
+        "question": "비견과 일지 충이 겹칠 때 고집과 유용한 익숙함은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:study:detail-07",
+        "question": "비견과 일지 충이 겹칠 때 고집과 유용한 익숙함은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:study:detail-07",
+        "question": "비견과 일지 충이 겹칠 때 고집과 유용한 익숙함은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-08",
+    "domain": "study",
+    "question": "겁재와 원국 식신의 노출이 함께 있을 때 공동 학습에서 빠지는 과정은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "natal.visible.식신",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "분담을 잘했다는 사실이 개인의 이해까지 보장하지는 않아요.",
+    "refines": "study:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-08",
+        "question": "겁재와 원국 식신의 노출이 함께 있을 때 공동 학습에서 빠지는 과정은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-08",
+        "question": "겁재와 원국 식신의 노출이 함께 있을 때 공동 학습에서 빠지는 과정은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-08",
+        "question": "겁재와 원국 식신의 노출이 함께 있을 때 공동 학습에서 빠지는 과정은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-09",
+    "domain": "study",
+    "question": "정재와 세운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "context.yearGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "비용이 낮다는 이유만으로 목적에 맞지 않는 과정을 고를 필요는 없어요.",
+    "refines": "study:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-09",
+        "question": "정재와 세운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-09",
+        "question": "정재와 세운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-09",
+        "question": "정재와 월운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-10",
+    "domain": "study",
+    "question": "편재와 지지 본기의 인성이 함께 있으면 새 과정의 범위를 어떻게 고를까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "폭넓게 살피는 일과 여러 과정을 동시에 끝내야 하는 일은 달라요.",
+    "refines": "study:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:study:detail-10",
+        "question": "편재와 지지 본기의 인성이 함께 있으면 새 과정의 범위를 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:study:detail-10",
+        "question": "편재와 지지 본기의 인성이 함께 있으면 새 과정의 범위를 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:study:detail-10",
+        "question": "편재와 지지 본기의 인성이 함께 있으면 새 과정의 범위를 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-11",
+    "domain": "study",
+    "question": "대운의 인성과 기간 식상이 함께 있을 때 장기 준비를 어떤 과제로 확인할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "luck.god",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "대운은 확인된 순역과 실제 구간만 반영하며 준비 수준 자체를 판정하지 않아요.",
+    "refines": "study:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-11",
+        "question": "대운의 인성과 기간 식상이 함께 있을 때 장기 준비를 어떤 과제로 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-11",
+        "question": "대운의 인성과 기간 식상이 함께 있을 때 장기 준비를 어떤 과제로 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-11",
+        "question": "대운의 인성과 기간 식상이 함께 있을 때 장기 준비를 어떤 과제로 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "study:detail-12",
+    "domain": "study",
+    "question": "월지 정인과 기간 편인이 다를 때 설명이 충돌하는 이유는 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "natal.monthMainGod",
+          "op": "eq",
+          "value": "정인"
+        }
+      ]
+    },
+    "counter": "새로운 해석을 접했다는 이유만으로 이미 확인한 기본 지식을 버리지는 않아요.",
+    "refines": "study:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:study:detail-12",
+        "question": "월지 정인과 기간 편인이 다를 때 설명이 충돌하는 이유는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "정인"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:study:detail-12",
+        "question": "월지 정인과 기간 편인이 다를 때 설명이 충돌하는 이유는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "정인"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:study:detail-12",
+        "question": "월지 정인과 기간 편인이 다를 때 설명이 충돌하는 이유는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "정인"
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-01",
+    "domain": "money",
+    "question": "정재와 드러난 비견이 함께 있을 때 공동 비용의 소유와 부담을 어떻게 나눌까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "natal.visible.비견",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "공동 비용이 없다면 자신의 비용 항목을 구분하는 범위로만 참고해요.",
+    "refines": "money:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-01",
+        "question": "정재와 드러난 비견이 함께 있을 때 공동 비용의 소유와 부담을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-01",
+        "question": "정재와 드러난 비견이 함께 있을 때 공동 비용의 소유와 부담을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-01",
+        "question": "정재와 드러난 비견이 함께 있을 때 공동 비용의 소유와 부담을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-02",
+    "domain": "money",
+    "question": "편재와 약한 쪽 후보가 함께 있을 때 한 번의 기회를 유지 비용과 어떻게 비교할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "strength.class",
+          "op": "eq",
+          "value": "weak"
+        }
+      ]
+    },
+    "counter": "강약 후보는 자산이나 소득 수준이 아니며 예상 수입도 실제 입금과 구분해야 해요.",
+    "refines": "money:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-02",
+        "question": "편재와 약한 쪽 후보가 함께 있을 때 한 번의 기회를 유지 비용과 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-02",
+        "question": "편재와 약한 쪽 후보가 함께 있을 때 한 번의 기회를 유지 비용과 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-02",
+        "question": "편재와 약한 쪽 후보가 함께 있을 때 한 번의 기회를 유지 비용과 어떻게 비교할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-03",
+    "domain": "money",
+    "question": "식신과 지지 본기의 재성이 만날 때 결과 한 단위에 드는 비용은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "정재",
+            "편재"
+          ]
+        }
+      ]
+    },
+    "counter": "실제 거래나 수입 활동이 없다면 생활 속 제작·준비 비용을 살피는 범위예요.",
+    "refines": "money:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:money:detail-03",
+        "question": "식신과 지지 본기의 재성이 만날 때 결과 한 단위에 드는 비용은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:money:detail-03",
+        "question": "식신과 지지 본기의 재성이 만날 때 결과 한 단위에 드는 비용은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:money:detail-03",
+        "question": "식신과 지지 본기의 재성이 만날 때 결과 한 단위에 드는 비용은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-04",
+    "domain": "money",
+    "question": "상관과 드러난 정관이 있을 때 변경 요청의 금액 범위를 어떻게 확인할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "natal.visible.정관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "추가 비용이 생긴다고 단정하기보다 실제 계약과 합의한 범위를 확인해야 해요.",
+    "refines": "money:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-04",
+        "question": "상관과 드러난 정관이 있을 때 변경 요청의 금액 범위를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-04",
+        "question": "상관과 드러난 정관이 있을 때 변경 요청의 금액 범위를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-04",
+        "question": "상관과 드러난 정관이 있을 때 변경 요청의 금액 범위를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-05",
+    "domain": "money",
+    "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "natal.monthMainGod",
+          "op": "in",
+          "value": [
+            "정재",
+            "편재"
+          ]
+        }
+      ]
+    },
+    "counter": "이 관계가 금전 손실이나 타인의 의도를 뜻하지는 않아요.",
+    "refines": "money:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-05",
+        "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-05",
+        "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-05",
+        "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-06",
+    "domain": "money",
+    "question": "비견과 지지 정재가 만날 때 임시 지출과 최종 비용을 어떻게 분리할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "eq",
+          "value": "정재"
+        }
+      ]
+    },
+    "counter": "대신 결제한 사실만으로 돌려받을 금액이나 시점을 추정하지는 않아요.",
+    "refines": "money:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:money:detail-06",
+        "question": "비견과 지지 정재가 만날 때 임시 지출과 최종 비용을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "eq",
+              "value": "정재"
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:money:detail-06",
+        "question": "비견과 지지 정재가 만날 때 임시 지출과 최종 비용을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "eq",
+              "value": "정재"
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:money:detail-06",
+        "question": "비견과 지지 정재가 만날 때 임시 지출과 최종 비용을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "eq",
+              "value": "정재"
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-07",
+    "domain": "money",
+    "question": "정인과 드러난 정재가 함께 있을 때 가격 설명에서 확인할 항목은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "natal.visible.정재",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "설명을 읽었다는 사실만으로 계약 위험을 모두 판단했다고 볼 수는 없어요.",
+    "refines": "money:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-07",
+        "question": "정인과 드러난 정재가 함께 있을 때 가격 설명에서 확인할 항목은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-07",
+        "question": "정인과 드러난 정재가 함께 있을 때 가격 설명에서 확인할 항목은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-07",
+        "question": "정인과 드러난 정재가 함께 있을 때 가격 설명에서 확인할 항목은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-08",
+    "domain": "money",
+    "question": "편인과 재성이 함께 있을 때 낮은 가격의 이유를 어떻게 살필까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "group.wealth",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "복잡한 조건을 곧바로 불리하거나 속임수라고 판단하지는 않아요.",
+    "refines": "money:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:money:detail-08",
+        "question": "편인과 재성이 함께 있을 때 낮은 가격의 이유를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "group.wealth",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:money:detail-08",
+        "question": "편인과 재성이 함께 있을 때 낮은 가격의 이유를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "group.wealth",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:money:detail-08",
+        "question": "편인과 재성이 함께 있을 때 낮은 가격의 이유를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "group.wealth",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-09",
+    "domain": "money",
+    "question": "정관과 월지 충이 함께 있을 때 정해진 지출의 시기는 어떻게 조정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "충을 연체나 손실의 예고로 읽지 않으며 실제 납부 안내가 기준이에요.",
+    "refines": "money:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:money:detail-09",
+        "question": "정관과 월지 충이 함께 있을 때 정해진 지출의 시기는 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:money:detail-09",
+        "question": "정관과 월지 충이 함께 있을 때 정해진 지출의 시기는 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:money:detail-09",
+        "question": "정관과 월지 충이 함께 있을 때 정해진 지출의 시기는 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-10",
+    "domain": "money",
+    "question": "편관과 드러난 재성이 함께 있을 때 재촉받는 비용을 어떻게 나눌까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        }
+      ],
+      "any": [
+        {
+          "path": "natal.visible.정재",
+          "op": "gte",
+          "value": 1
+        },
+        {
+          "path": "natal.visible.편재",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "현재 빚이나 재정 곤란이 있다고 가정하지 않아요.",
+    "refines": "money:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-10",
+        "question": "편관과 드러난 재성이 함께 있을 때 재촉받는 비용을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            }
+          ],
+          "any": [
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            },
+            {
+              "path": "natal.visible.편재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-10",
+        "question": "편관과 드러난 재성이 함께 있을 때 재촉받는 비용을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            }
+          ],
+          "any": [
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            },
+            {
+              "path": "natal.visible.편재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-10",
+        "question": "편관과 드러난 재성이 함께 있을 때 재촉받는 비용을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            }
+          ],
+          "any": [
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            },
+            {
+              "path": "natal.visible.편재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-11",
+    "domain": "money",
+    "question": "대운과 기간의 같은 십신에 일지 합이 더해지면 비용 합의에서 무엇을 남길까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "same.luck",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "육합은 신뢰나 지급 능력의 증명이 아니에요.",
+    "refines": "money:repeat-luck",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:money:detail-11",
+        "question": "대운과 기간의 같은 십신에 일지 합이 더해지면 비용 합의에서 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:money:detail-11",
+        "question": "대운과 기간의 같은 십신에 일지 합이 더해지면 비용 합의에서 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:money:detail-11",
+        "question": "대운과 기간의 같은 십신에 일지 합이 더해지면 비용 합의에서 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "money:detail-12",
+    "domain": "money",
+    "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "context.yearGod",
+          "op": "in",
+          "value": [
+            "정재",
+            "편재"
+          ]
+        },
+        {
+          "path": "context.monthGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+    "refines": "money:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:money:detail-12",
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:money:detail-12",
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:money:detail-12",
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-01",
+    "domain": "business",
+    "question": "정관과 원국 상관이 만날 때 개선안을 어느 단계에서 제안할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "natal.visible.상관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "새 방법이 기존 요구를 대신 충족한다고 가정하지는 않아요.",
+    "refines": "business:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-01",
+        "question": "정관과 원국 상관이 만날 때 개선안을 어느 단계에서 제안할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.상관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-01",
+        "question": "정관과 원국 상관이 만날 때 개선안을 어느 단계에서 제안할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.상관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-01",
+        "question": "정관과 원국 상관이 만날 때 개선안을 어느 단계에서 제안할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "natal.visible.상관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-02",
+    "domain": "business",
+    "question": "편관과 뿌리가 있을 때 무엇부터 맡고 무엇은 확인을 받아야 할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "roots.count",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "뿌리는 실제 직책이나 업무 능력을 확인한 값이 아니에요.",
+    "refines": "business:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-02",
+        "question": "편관과 뿌리가 있을 때 무엇부터 맡고 무엇은 확인을 받아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-02",
+        "question": "편관과 뿌리가 있을 때 무엇부터 맡고 무엇은 확인을 받아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-02",
+        "question": "편관과 뿌리가 있을 때 무엇부터 맡고 무엇은 확인을 받아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-03",
+    "domain": "business",
+    "question": "식신과 원국 정재가 함께 있으면 산출물을 어떻게 마무리할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "natal.visible.정재",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "완성한 결과가 곧 매출이나 채용 결과로 이어진다고 말하지는 않아요.",
+    "refines": "business:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-03",
+        "question": "식신과 원국 정재가 함께 있으면 산출물을 어떻게 마무리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-03",
+        "question": "식신과 원국 정재가 함께 있으면 산출물을 어떻게 마무리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-03",
+        "question": "식신과 원국 정재가 함께 있으면 산출물을 어떻게 마무리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-04",
+    "domain": "business",
+    "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "natal.visible.정인",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "새 제안이 항상 더 낫다고 판정하는 구성은 아니에요.",
+    "refines": "business:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-04",
+        "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-04",
+        "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-04",
+        "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-05",
+    "domain": "business",
+    "question": "정재와 지지 관성이 함께 있을 때 완료 기준은 어디까지일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        }
+      ]
+    },
+    "counter": "직업이나 거래가 실제로 있는지는 입력받지 않았으므로 해당 상황이 있을 때만 참고해요.",
+    "refines": "business:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:business:detail-05",
+        "question": "정재와 지지 관성이 함께 있을 때 완료 기준은 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:business:detail-05",
+        "question": "정재와 지지 관성이 함께 있을 때 완료 기준은 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:business:detail-05",
+        "question": "정재와 지지 관성이 함께 있을 때 완료 기준은 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-06",
+    "domain": "business",
+    "question": "편재와 원국 비견이 함께 있을 때 다음 단계는 누구에게 넘어갈까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "natal.visible.비견",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "협업 관계나 조직 규모를 이미 알고 있다는 뜻은 아니에요.",
+    "refines": "business:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-06",
+        "question": "편재와 원국 비견이 함께 있을 때 다음 단계는 누구에게 넘어갈까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-06",
+        "question": "편재와 원국 비견이 함께 있을 때 다음 단계는 누구에게 넘어갈까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-06",
+        "question": "편재와 원국 비견이 함께 있을 때 다음 단계는 누구에게 넘어갈까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.비견",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-07",
+    "domain": "business",
+    "question": "비견과 월지 충이 겹칠 때 갑자기 바뀐 일을 어떻게 조정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "충이 있다고 실제 일정이 반드시 바뀐다고 말하지는 않아요.",
+    "refines": "business:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:business:detail-07",
+        "question": "비견과 월지 충이 겹칠 때 갑자기 바뀐 일을 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:business:detail-07",
+        "question": "비견과 월지 충이 겹칠 때 갑자기 바뀐 일을 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:business:detail-07",
+        "question": "비견과 월지 충이 겹칠 때 갑자기 바뀐 일을 어떻게 조정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-08",
+    "domain": "business",
+    "question": "겁재와 원국 정관이 함께 있을 때 의견 조율 뒤 무엇을 남길까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "natal.visible.정관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "의견이 다르다고 경쟁자나 방해자가 있다고 추정하지 않아요.",
+    "refines": "business:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-08",
+        "question": "겁재와 원국 정관이 함께 있을 때 의견 조율 뒤 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-08",
+        "question": "겁재와 원국 정관이 함께 있을 때 의견 조율 뒤 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-08",
+        "question": "겁재와 원국 정관이 함께 있을 때 의견 조율 뒤 무엇을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-09",
+    "domain": "business",
+    "question": "정인과 월지 충이 함께 있을 때 기존 준비의 어느 부분을 다시 읽을까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "기존 준비가 쓸모없어졌다는 판정은 아니에요.",
+    "refines": "business:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:business:detail-09",
+        "question": "정인과 월지 충이 함께 있을 때 기존 준비의 어느 부분을 다시 읽을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:business:detail-09",
+        "question": "정인과 월지 충이 함께 있을 때 기존 준비의 어느 부분을 다시 읽을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:business:detail-09",
+        "question": "정인과 월지 충이 함께 있을 때 기존 준비의 어느 부분을 다시 읽을까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-10",
+    "domain": "business",
+    "question": "편인과 월지 식신이 함께 있을 때 새 방법은 어디서 시험할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "natal.monthMainGod",
+          "op": "eq",
+          "value": "식신"
+        }
+      ]
+    },
+    "counter": "낯선 방법이라는 이유만으로 더 효율적이라고 정하지 않아요.",
+    "refines": "business:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-10",
+        "question": "편인과 월지 식신이 함께 있을 때 새 방법은 어디서 시험할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "식신"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-10",
+        "question": "편인과 월지 식신이 함께 있을 때 새 방법은 어디서 시험할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "식신"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-10",
+        "question": "편인과 월지 식신이 함께 있을 때 새 방법은 어디서 시험할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "eq",
+              "value": "식신"
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-11",
+    "domain": "business",
+    "question": "대운의 관성과 기간 식상이 만날 때 어떤 결과로 역할을 설명할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "luck.god",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "대운의 관성이 현재 직장이나 직급을 확인한 것은 아니에요.",
+    "refines": "business:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:business:detail-11",
+        "question": "대운의 관성과 기간 식상이 만날 때 어떤 결과로 역할을 설명할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:business:detail-11",
+        "question": "대운의 관성과 기간 식상이 만날 때 어떤 결과로 역할을 설명할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:business:detail-11",
+        "question": "대운의 관성과 기간 식상이 만날 때 어떤 결과로 역할을 설명할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "business:detail-12",
+    "domain": "business",
+    "question": "관성과 일지 합이 함께 있을 때 협의 뒤 무엇이 남아야 할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "육합을 계약 성사나 평가 결과로 바꾸어 읽지는 않아요.",
+    "refines": "business:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:business:detail-12",
+        "question": "관성과 일지 합이 함께 있을 때 협의 뒤 무엇이 남아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:business:detail-12",
+        "question": "관성과 일지 합이 함께 있을 때 협의 뒤 무엇이 남아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:business:detail-12",
+        "question": "관성과 일지 합이 함께 있을 때 협의 뒤 무엇이 남아야 할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-01",
+    "domain": "love",
+    "question": "식신과 월지 합이 만날 때 다정한 표현 뒤 어떤 약속을 남길까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetMonth.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "육합으로 상대 마음이나 관계의 결론을 확인한 것은 아니에요.",
+    "refines": "love:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-01",
+        "question": "식신과 월지 합이 만날 때 다정한 표현 뒤 어떤 약속을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "link.targetMonth.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-01",
+        "question": "식신과 월지 합이 만날 때 다정한 표현 뒤 어떤 약속을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "link.targetMonth.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-01",
+        "question": "식신과 월지 합이 만날 때 다정한 표현 뒤 어떤 약속을 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "link.targetMonth.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-02",
+    "domain": "love",
+    "question": "상관과 월지 충이 함께 있을 때 말의 의도를 어떻게 확인할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "충을 다툼이나 이별의 예고로 해석하지 않아요.",
+    "refines": "love:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-02",
+        "question": "상관과 월지 충이 함께 있을 때 말의 의도를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-02",
+        "question": "상관과 월지 충이 함께 있을 때 말의 의도를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-02",
+        "question": "상관과 월지 충이 함께 있을 때 말의 의도를 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-03",
+    "domain": "love",
+    "question": "정인과 일지의 비겁이 함께 있을 때 이해하려는 마음을 어떻게 전할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "natal.dayMainGod",
+          "op": "in",
+          "value": [
+            "비견",
+            "겁재"
+          ]
+        }
+      ]
+    },
+    "counter": "상대가 도움을 원하거나 원하지 않는다고 미리 정하지 않아요.",
+    "refines": "love:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-03",
+        "question": "정인과 일지의 비겁이 함께 있을 때 이해하려는 마음을 어떻게 전할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "비견",
+                "겁재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-03",
+        "question": "정인과 일지의 비겁이 함께 있을 때 이해하려는 마음을 어떻게 전할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "비견",
+                "겁재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-03",
+        "question": "정인과 일지의 비겁이 함께 있을 때 이해하려는 마음을 어떻게 전할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "비견",
+                "겁재"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-04",
+    "domain": "love",
+    "question": "편인과 원국 식신이 함께 있을 때 생각한 뜻을 어떻게 물어볼까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "natal.visible.식신",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "연락 길이나 답장 속도로 관심의 크기를 판단하지는 않아요.",
+    "refines": "love:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-04",
+        "question": "편인과 원국 식신이 함께 있을 때 생각한 뜻을 어떻게 물어볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-04",
+        "question": "편인과 원국 식신이 함께 있을 때 생각한 뜻을 어떻게 물어볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-04",
+        "question": "편인과 원국 식신이 함께 있을 때 생각한 뜻을 어떻게 물어볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-05",
+    "domain": "love",
+    "question": "겁재과 일지 합이 만날 때 각자의 선택은 어떻게 남길까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "비슷한 취향을 특별한 인연의 증명으로 쓰지는 않아요.",
+    "refines": "love:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-05",
+        "question": "겁재과 일지 합이 만날 때 각자의 선택은 어떻게 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-05",
+        "question": "겁재과 일지 합이 만날 때 각자의 선택은 어떻게 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-05",
+        "question": "겁재과 일지 합이 만날 때 각자의 선택은 어떻게 남길까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-06",
+    "domain": "love",
+    "question": "겁재와 월지 충이 겹칠 때 다른 일정이 만남에 미치는 영향은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "주변 사람이 관계를 방해한다고 추정하지 않아요.",
+    "refines": "love:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-06",
+        "question": "겁재와 월지 충이 겹칠 때 다른 일정이 만남에 미치는 영향은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-06",
+        "question": "겁재와 월지 충이 겹칠 때 다른 일정이 만남에 미치는 영향은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-06",
+        "question": "겁재와 월지 충이 겹칠 때 다른 일정이 만남에 미치는 영향은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-07",
+    "domain": "love",
+    "question": "정재와 지지 식상이 함께 있을 때 해준 일과 원하는 배려는 어떻게 다를까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "비용을 들이거나 일을 해준 양으로 마음의 크기를 재지는 않아요.",
+    "refines": "love:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-07",
+        "question": "정재와 지지 식상이 함께 있을 때 해준 일과 원하는 배려는 어떻게 다를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-07",
+        "question": "정재와 지지 식상이 함께 있을 때 해준 일과 원하는 배려는 어떻게 다를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-07",
+        "question": "정재와 지지 식상이 함께 있을 때 해준 일과 원하는 배려는 어떻게 다를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-08",
+    "domain": "love",
+    "question": "편재와 원국 정관이 만날 때 만남의 제안을 어떻게 고를까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "natal.visible.정관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "현재 연애·혼인 상태나 관계 형태를 가정하지 않아요.",
+    "refines": "love:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-08",
+        "question": "편재와 원국 정관이 만날 때 만남의 제안을 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-08",
+        "question": "편재와 원국 정관이 만날 때 만남의 제안을 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-08",
+        "question": "편재와 원국 정관이 만날 때 만남의 제안을 어떻게 고를까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-09",
+    "domain": "love",
+    "question": "편관과 일지 충이 함께 있을 때 관계의 규칙을 어떻게 다시 이야기할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "약속을 다시 이야기한다고 관계가 나빠졌다는 결론은 아니에요.",
+    "refines": "love:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:love:detail-09",
+        "question": "편관과 일지 충이 함께 있을 때 관계의 규칙을 어떻게 다시 이야기할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:love:detail-09",
+        "question": "편관과 일지 충이 함께 있을 때 관계의 규칙을 어떻게 다시 이야기할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:love:detail-09",
+        "question": "편관과 일지 충이 함께 있을 때 관계의 규칙을 어떻게 다시 이야기할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-10",
+    "domain": "love",
+    "question": "편관과 뿌리가 함께 있을 때 관계의 결정을 어떻게 나눌까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "roots.count",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "뿌리가 있다고 상대의 요구를 모두 감당할 수 있다고 판정하지 않아요.",
+    "refines": "love:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-10",
+        "question": "편관과 뿌리가 함께 있을 때 관계의 결정을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-10",
+        "question": "편관과 뿌리가 함께 있을 때 관계의 결정을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-10",
+        "question": "편관과 뿌리가 함께 있을 때 관계의 결정을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-11",
+    "domain": "love",
+    "question": "대운 정인과 기간 상관이 함께 있을 때 익숙한 반응을 어떻게 바꾸어 볼까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "luck.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        }
+      ]
+    },
+    "counter": "오래된 대화 문제가 실제로 있다고 가정하지는 않아요.",
+    "refines": "love:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-11",
+        "question": "대운 정인과 기간 상관이 함께 있을 때 익숙한 반응을 어떻게 바꾸어 볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-11",
+        "question": "대운 정인과 기간 상관이 함께 있을 때 익숙한 반응을 어떻게 바꾸어 볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-11",
+        "question": "대운 정인과 기간 상관이 함께 있을 때 익숙한 반응을 어떻게 바꾸어 볼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "love:detail-12",
+    "domain": "love",
+    "question": "기간 인성과 월운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        },
+        {
+          "path": "context.monthGod",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "생각을 모두 정리한 뒤에만 말해야 한다는 뜻은 아니에요.",
+    "refines": "love:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:love:detail-12",
+        "question": "기간 인성과 월운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:love:detail-12",
+        "question": "기간 인성과 세운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:love:detail-12",
+        "question": "기간 인성과 월운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-01",
+    "domain": "health",
+    "question": "정관과 월운 관성이 겹칠 때 활동 사이의 여유를 어디에 둘까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "context.monthGod",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        }
+      ]
+    },
+    "counter": "이 조건으로 몸 상태나 피로의 정도를 계산하지는 않아요.",
+    "refines": "health:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-01",
+        "question": "정관과 월운 관성이 겹칠 때 활동 사이의 여유를 어디에 둘까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-01",
+        "question": "정관과 월운 관성이 겹칠 때 활동 사이의 여유를 어디에 둘까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-01",
+        "question": "정관과 월운 관성이 겹칠 때 활동 사이의 여유를 어디에 둘까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-02",
+    "domain": "health",
+    "question": "편관과 원국 식신이 만날 때 준비를 계속 늘리는 일을 어떻게 멈출까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "natal.visible.식신",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "연습을 많이 해야 할 실제 일정이 있다고 전제하지 않아요.",
+    "refines": "health:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-02",
+        "question": "편관과 원국 식신이 만날 때 준비를 계속 늘리는 일을 어떻게 멈출까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-02",
+        "question": "편관과 원국 식신이 만날 때 준비를 계속 늘리는 일을 어떻게 멈출까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-02",
+        "question": "편관과 원국 식신이 만날 때 준비를 계속 늘리는 일을 어떻게 멈출까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "natal.visible.식신",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-03",
+    "domain": "health",
+    "question": "식신과 월지 충이 함께 있으면 활동 계획에서 빠진 시간은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "충은 사고나 신체 이상을 예측하는 근거가 아니에요.",
+    "refines": "health:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:health:detail-03",
+        "question": "식신과 월지 충이 함께 있으면 활동 계획에서 빠진 시간은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:health:detail-03",
+        "question": "식신과 월지 충이 함께 있으면 활동 계획에서 빠진 시간은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:health:detail-03",
+        "question": "식신과 월지 충이 함께 있으면 활동 계획에서 빠진 시간은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-04",
+    "domain": "health",
+    "question": "상관과 원국 정인이 함께 있을 때 화면 앞 활동을 어떻게 나눌까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "natal.visible.정인",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "특정 신체 부위의 상태나 사용 시간을 추정한 것은 아니에요.",
+    "refines": "health:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-04",
+        "question": "상관과 원국 정인이 함께 있을 때 화면 앞 활동을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-04",
+        "question": "상관과 원국 정인이 함께 있을 때 화면 앞 활동을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-04",
+        "question": "상관과 원국 정인이 함께 있을 때 화면 앞 활동을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-05",
+    "domain": "health",
+    "question": "정재와 원국 정관이 만날 때 생활 관리의 종료 기준은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "natal.visible.정관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "집안일이나 돌봄을 실제로 맡고 있다고 가정하지 않아요.",
+    "refines": "health:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-05",
+        "question": "정재와 원국 정관이 만날 때 생활 관리의 종료 기준은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-05",
+        "question": "정재와 원국 정관이 만날 때 생활 관리의 종료 기준은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-05",
+        "question": "정재와 원국 정관이 만날 때 생활 관리의 종료 기준은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-06",
+    "domain": "health",
+    "question": "편재와 일지 충이 함께 있을 때 이동 계획의 순서를 어떻게 살필까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "이동이나 사고가 일어날 것이라고 예측하지 않아요.",
+    "refines": "health:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:health:detail-06",
+        "question": "편재와 일지 충이 함께 있을 때 이동 계획의 순서를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:health:detail-06",
+        "question": "편재와 일지 충이 함께 있을 때 이동 계획의 순서를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:health:detail-06",
+        "question": "편재와 일지 충이 함께 있을 때 이동 계획의 순서를 어떻게 살필까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-07",
+    "domain": "health",
+    "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "natal.visible.겁재",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "사람들과의 경쟁이나 실제 체력 차이를 판정하지 않아요.",
+    "refines": "health:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-07",
+        "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.visible.겁재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-07",
+        "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.visible.겁재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-07",
+        "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.visible.겁재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-08",
+    "domain": "health",
+    "question": "겁재와 지지 재성이 함께 있으면 지출과 활동량을 어떻게 분리할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "period.branchGod",
+          "op": "in",
+          "value": [
+            "정재",
+            "편재"
+          ]
+        }
+      ]
+    },
+    "counter": "금전 손실이나 신체 상태를 예측하는 규칙은 아니에요.",
+    "refines": "health:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:health:detail-08",
+        "question": "겁재와 지지 재성이 함께 있으면 지출과 활동량을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:health:detail-08",
+        "question": "겁재와 지지 재성이 함께 있으면 지출과 활동량을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:health:detail-08",
+        "question": "겁재와 지지 재성이 함께 있으면 지출과 활동량을 어떻게 분리할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "period.branchGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-09",
+    "domain": "health",
+    "question": "정인과 월지 본기의 반복이 함께 있으면 확인은 어디서 끝낼까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "same.month",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "실제 습관이나 심리 상태를 진단한 것은 아니에요.",
+    "refines": "health:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-09",
+        "question": "정인과 월지 본기의 반복이 함께 있으면 확인은 어디서 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "same.month",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-09",
+        "question": "정인과 월지 본기의 반복이 함께 있으면 확인은 어디서 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "same.month",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-09",
+        "question": "정인과 월지 본기의 반복이 함께 있으면 확인은 어디서 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "same.month",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-10",
+    "domain": "health",
+    "question": "편인과 월운 인성이 함께 있을 때 자료 탐색을 어떻게 끝낼까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "context.monthGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "실제 집중력이나 수면 상태를 추측하지 않아요.",
+    "refines": "health:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-10",
+        "question": "편인과 월운 인성이 함께 있을 때 자료 탐색을 어떻게 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-10",
+        "question": "편인과 월운 인성이 함께 있을 때 자료 탐색을 어떻게 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-10",
+        "question": "편인과 월운 인성이 함께 있을 때 자료 탐색을 어떻게 끝낼까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-11",
+    "domain": "health",
+    "question": "대운 관성과 기간 식상이 함께 있으면 맡은 일과 개인 시간을 어떻게 나눌까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "luck.god",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "실제 직업·돌봄 역할이나 활동량을 알고 있다는 뜻은 아니에요.",
+    "refines": "health:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-11",
+        "question": "대운 관성과 기간 식상이 함께 있으면 맡은 일과 개인 시간을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-11",
+        "question": "대운 관성과 기간 식상이 함께 있으면 맡은 일과 개인 시간을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-11",
+        "question": "대운 관성과 기간 식상이 함께 있으면 맡은 일과 개인 시간을 어떻게 나눌까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "health:detail-12",
+    "domain": "health",
+    "question": "식상과 시주 관성이 함께 있을 때 활동 전후의 책임은 어떻게 구분할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        },
+        {
+          "path": "natal.hourStemGod",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        }
+      ]
+    },
+    "counter": "시주를 실제 하루의 특정 시간이나 신체 상태로 환산하지 않아요.",
+    "refines": "health:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:health:detail-12",
+        "question": "식상과 시주 관성이 함께 있을 때 활동 전후의 책임은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "natal.hourStemGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:health:detail-12",
+        "question": "식상과 시주 관성이 함께 있을 때 활동 전후의 책임은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "natal.hourStemGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:health:detail-12",
+        "question": "식상과 시주 관성이 함께 있을 때 활동 전후의 책임은 어떻게 구분할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "natal.hourStemGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-01",
+    "domain": "overall",
+    "question": "정인과 대운 식상이 만날 때 새 자료보다 먼저 할 일은 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "luck.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "대운이 실제 성과나 준비 수준을 확인해 준 것은 아니에요.",
+    "refines": "overall:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-01",
+        "question": "정인과 대운 식상이 만날 때 새 자료보다 먼저 할 일은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-01",
+        "question": "정인과 대운 식상이 만날 때 새 자료보다 먼저 할 일은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-01",
+        "question": "정인과 대운 식상이 만날 때 새 자료보다 먼저 할 일은 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정인"
+            },
+            {
+              "path": "luck.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-02",
+    "domain": "overall",
+    "question": "편인과 월운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "path": "context.monthGod",
+          "op": "in",
+          "value": [
+            "정관",
+            "편관"
+          ]
+        }
+      ]
+    },
+    "counter": "새 생각이 기존 계획보다 항상 낫다고 말하지는 않아요.",
+    "refines": "overall:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-02",
+        "question": "편인과 월운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-02",
+        "question": "편인과 세운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.yearGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-02",
+        "question": "편인과 월운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편인"
+            },
+            {
+              "path": "context.monthGod",
+              "op": "in",
+              "value": [
+                "정관",
+                "편관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-03",
+    "domain": "overall",
+    "question": "식신과 여러 뿌리가 확인될 때 범위를 넓히는 대신 무엇을 마칠까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "roots.count",
+          "op": "gte",
+          "value": 2
+        }
+      ]
+    },
+    "counter": "뿌리 수는 실제 능력이나 남은 시간의 양이 아니에요.",
+    "refines": "overall:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-03",
+        "question": "식신과 여러 뿌리가 확인될 때 범위를 넓히는 대신 무엇을 마칠까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 2
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-03",
+        "question": "식신과 여러 뿌리가 확인될 때 범위를 넓히는 대신 무엇을 마칠까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 2
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-03",
+        "question": "식신과 여러 뿌리가 확인될 때 범위를 넓히는 대신 무엇을 마칠까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "식신"
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 2
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-04",
+    "domain": "overall",
+    "question": "상관과 원국 정관이 만날 때 개선과 기존 약속의 순서는 어떻게 정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "natal.visible.정관",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "구성의 출현을 상관견관의 성패나 실제 갈등으로 확정하지 않아요.",
+    "refines": "overall:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-04",
+        "question": "상관과 원국 정관이 만날 때 개선과 기존 약속의 순서는 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-04",
+        "question": "상관과 원국 정관이 만날 때 개선과 기존 약속의 순서는 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-04",
+        "question": "상관과 원국 정관이 만날 때 개선과 기존 약속의 순서는 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정관",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-05",
+    "domain": "overall",
+    "question": "정재와 월지 인성이 함께 있을 때 모아둔 것을 언제 어떻게 쓸까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "path": "natal.monthMainGod",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "실제 자산이나 준비물이 충분하다는 판정은 아니에요.",
+    "refines": "overall:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-05",
+        "question": "정재와 월지 인성이 함께 있을 때 모아둔 것을 언제 어떻게 쓸까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-05",
+        "question": "정재와 월지 인성이 함께 있을 때 모아둔 것을 언제 어떻게 쓸까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-05",
+        "question": "정재와 월지 인성이 함께 있을 때 모아둔 것을 언제 어떻게 쓸까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-06",
+    "domain": "overall",
+    "question": "편재와 월지 충이 함께 있을 때 새 선택보다 먼저 정할 범위는 무엇일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "충을 손실로, 편재를 실제 기회의 발생으로 예측하지 않아요.",
+    "refines": "overall:wealth",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-06",
+        "question": "편재와 월지 충이 함께 있을 때 새 선택보다 먼저 정할 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:overall:detail-06",
+        "question": "편재와 월지 충이 함께 있을 때 새 선택보다 먼저 정할 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:overall:detail-06",
+        "question": "편재와 월지 충이 함께 있을 때 새 선택보다 먼저 정할 범위는 무엇일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편재"
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-07",
+    "domain": "overall",
+    "question": "비견과 일지 식상이 만날 때 자신의 방식은 어떻게 확인할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "natal.dayMainGod",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        }
+      ]
+    },
+    "counter": "반응이 다르다는 이유만으로 자신의 선택이 틀렸다고 결론짓지는 않아요.",
+    "refines": "overall:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-07",
+        "question": "비견과 일지 식상이 만날 때 자신의 방식은 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-07",
+        "question": "비견과 일지 식상이 만날 때 자신의 방식은 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-07",
+        "question": "비견과 일지 식상이 만날 때 자신의 방식은 어떻게 확인할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.dayMainGod",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-08",
+    "domain": "overall",
+    "question": "겁재와 원국 정재가 함께 있으면 맡을 몫을 어떻게 정할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "natal.visible.정재",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "현재 협업이나 공동 지출이 있다고 가정하지 않아요.",
+    "refines": "overall:peer",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-08",
+        "question": "겁재와 원국 정재가 함께 있으면 맡을 몫을 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-08",
+        "question": "겁재와 원국 정재가 함께 있으면 맡을 몫을 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-08",
+        "question": "겁재와 원국 정재가 함께 있으면 맡을 몫을 어떻게 정할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.visible.정재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-09",
+    "domain": "overall",
+    "question": "정관과 일지 합이 함께 있으면 동의한 일의 범위는 어디까지일까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "counter": "육합이 좋은 결말을 보장한다는 뜻은 아니에요.",
+    "refines": "overall:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-09",
+        "question": "정관과 일지 합이 함께 있으면 동의한 일의 범위는 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:overall:detail-09",
+        "question": "정관과 일지 합이 함께 있으면 동의한 일의 범위는 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:overall:detail-09",
+        "question": "정관과 일지 합이 함께 있으면 동의한 일의 범위는 어디까지일까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "정관"
+            },
+            {
+              "path": "link.targetDay.harmony",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-10",
+    "domain": "overall",
+    "question": "편관과 약한 쪽 후보가 함께 있으면 무엇을 먼저 요청할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "strength.class",
+          "op": "eq",
+          "value": "weak"
+        }
+      ]
+    },
+    "counter": "약한 쪽 후보는 실제 능력 부족이나 생활 형편의 판정이 아니에요.",
+    "refines": "overall:order",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-10",
+        "question": "편관과 약한 쪽 후보가 함께 있으면 무엇을 먼저 요청할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-10",
+        "question": "편관과 약한 쪽 후보가 함께 있으면 무엇을 먼저 요청할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-10",
+        "question": "편관과 약한 쪽 후보가 함께 있으면 무엇을 먼저 요청할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "편관"
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-11",
+    "domain": "overall",
+    "question": "대운과 기간의 같은 식상에 뿌리가 있으면 반복 속에서 무엇을 바꿀까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "same.luck",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "식신",
+            "상관"
+          ]
+        },
+        {
+          "path": "roots.count",
+          "op": "gte",
+          "value": 1
+        }
+      ]
+    },
+    "counter": "뿌리나 대운으로 실제 성과를 확인한 것은 아니에요.",
+    "refines": "overall:output",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "supplement",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-11",
+        "question": "대운과 기간의 같은 식상에 뿌리가 있으면 반복 속에서 무엇을 바꿀까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:month:overall:detail-11",
+        "question": "대운과 기간의 같은 식상에 뿌리가 있으면 반복 속에서 무엇을 바꿀까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      },
+      {
+        "id": "sector:year:overall:detail-11",
+        "question": "대운과 기간의 같은 식상에 뿌리가 있으면 반복 속에서 무엇을 바꿀까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.luck",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "식신",
+                "상관"
+              ]
+            },
+            {
+              "path": "roots.count",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "role": "supplement"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  },
+  {
+    "semanticId": "overall:detail-12",
+    "domain": "overall",
+    "question": "일지 충과 월지 충의 부재에 인성이 겹치면 무엇을 유지할까?",
+    "premises": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "path": "period.god",
+          "op": "in",
+          "value": [
+            "정인",
+            "편인"
+          ]
+        }
+      ]
+    },
+    "counter": "월지의 충이 없다는 사실이 다른 관계나 현실의 어려움도 없다는 뜻은 아니에요.",
+    "refines": "overall:resource",
+    "status": "author-reviewed-actual-selection-witnessed-independent-pending",
+    "independentApproval": false,
+    "role": "core",
+    "units": [
+      {
+        "id": "sector:day:overall:detail-12",
+        "question": "일지 충과 월지 충의 부재에 인성이 겹치면 무엇을 유지할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": false
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:month:overall:detail-12",
+        "question": "일지 충과 월지 충의 부재에 인성이 겹치면 무엇을 유지할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": false
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      },
+      {
+        "id": "sector:year:overall:detail-12",
+        "question": "일지 충과 월지 충의 부재에 인성이 겹치면 무엇을 유지할까?",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.dayClash",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": false
+            },
+            {
+              "path": "period.god",
+              "op": "in",
+              "value": [
+                "정인",
+                "편인"
+              ]
+            }
+          ]
+        },
+        "role": "core"
+      }
+    ],
+    "witnessFile": "reports/iteration-2.2.0/after/new-meaning-witnesses.json"
+  }
+]

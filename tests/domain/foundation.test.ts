@@ -17,7 +17,7 @@ describe('normalized foundation',()=>{
   for(const r of foundationTables.tenGods)expect(r.god).toBe(tenGod(r.dayStem,r.otherStem));
   expect(foundationTables.hidden[0].stems.map(h=>h.weight)).toEqual([.6]);expect(foundationTables.hidden[11].stems.map(h=>h.weight)).toEqual([.6,.3]);expect(foundationTables.hidden[5].stems.map(h=>h.weight)).toEqual([.6,.3,.1]);
  });
- it('tracks 216 cores, 108 period variants of supplements, 36 notes, and honest semantic families',()=>{expect(sectorRecords.filter(r=>r.role==='core')).toHaveLength(216);expect(sectorRecords.filter(r=>r.role==='supplement')).toHaveLength(108);expect(scheduleRecords).toHaveLength(36);expect(new Set(sectorRecords.map(r=>r.semanticId)).size).toBe(108);expect(new Set(sectorRecords.map(r=>r.id)).size).toBe(324);});
+ it('tracks 291 cores, 249 period variants of supplements, 36 notes, and honest semantic families',()=>{expect(sectorRecords.filter(r=>r.role==='core')).toHaveLength(291);expect(sectorRecords.filter(r=>r.role==='supplement')).toHaveLength(249);expect(scheduleRecords).toHaveLength(36);expect(new Set(sectorRecords.map(r=>r.semanticId)).size).toBe(180);expect(new Set(sectorRecords.map(r=>r.id)).size).toBe(540);});
  it('treats missing inputs as unknown rather than satisfying negated conditions',()=>{expect(matches({all:[{path:'missing',op:'eq',value:false}]},{})).toBe(false);expect(judgeSector('health','day',{'known.day':false}).score).toBeNull();});
 });
 for(const kind of ['day','month','year'] as const)for(const domain of domains)it(`${kind}/${domain}: applicable source premises and score share one decision`,()=>{
@@ -48,9 +48,9 @@ it('solar profile changes table and all conditional facts together without inven
 it('never calls a period↔period clash a target↔natal clash',()=>{
  const s=calculatePeriod(chart,'day','2026-10-23').segments[0];s.relations=[{id:'test',kind:'충',layer:'기간',positions:['세운','월운'],branches:[0,6],level:'presence',reasons:[],counter:[],transformation:false}];expect(sectorFacts(chart,s)['target.anyClash']).toBe(false);
 });
-it('all twelve core scenarios are reachable by explicit valid fact sets',()=>{
+it('uses domain priorities for compound scenarios instead of forcing identical twelve-way selections',()=>{
  const cases:Facts[]=[{focus:'resource','group.resource':true,'group.output':true},{focus:'output','group.output':true,'group.wealth':true},{focus:'order','group.output':true,'group.order':true},{focus:'peer','group.peer':true,'group.wealth':true},{focus:'peer','target.dayClash':true},{focus:'peer','target.monthClash':true},{focus:'peer','target.harmony':true,'target.anyClash':false},...['resource','output','order','peer','wealth'].map(focus=>({focus}))];
- for(const d of domains)expect(new Set(cases.map(f=>judgeSector(d,'day',{'known.day':true,...f}).records[0].scenario)).size).toBe(12);
+ for(const d of domains){const actual=cases.map(f=>judgeSector(d,'day',{'known.day':true,...f}).records[0].scenario);expect(actual).toEqual(['learn-express','produce-trade',d==='money'||d==='overall'?'order':'express-standard','share-resource','day-clash','month-clash','agreement','resource','output','order','peer','wealth']);}
 });
 
 it('annual target facts identify the year pillar and preserve every actual Jie boundary after coalescing',()=>{

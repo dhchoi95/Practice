@@ -6,7 +6,7 @@ export const siteConfig = {
   instagram: '',
   contentVersion: '1.4.0',
   advancedContentVersion: '2.0.0',
-  sectorContentVersion: '2.1.0',
+  sectorContentVersion: '2.2.0',
 };
 export const categories = [
   {slug:'saju', name:'정통사주', short:'원국·강약·격국·용신·대운', description:'출생 원국을 바탕으로 강약·격국·용신 후보와 대운·세운을 상세하게 읽어요.', system:'saju', content:'general', icon:'book', color:'sand'},

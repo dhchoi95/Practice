@@ -38,3 +38,5 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 @media print{.natal-overview,.sector-radar{break-inside:avoid}.natal-table{font-size:12pt!important}.natal-table .element-cell{min-height:76px;print-color-adjust:exact}.natal-table strong{font-size:26pt}.sector-radar svg{width:280px}.sector-body p{font-size:11pt;line-height:1.65}.sector-body h2{font-size:17pt}.sector-body h3{font-size:14pt}.sector-index-list{grid-template-columns:repeat(3,1fr)}.sector-proposal{print-color-adjust:exact}.sector-score{font-size:11pt}.sector-segments section{break-inside:auto}.sector-radar svg text{font-size:16px}}
 
 .five-sector-indices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;font-size:14px}.five-sector-indices>div{border-top:1px solid #c9cdbf;padding-top:5px}.five-sector-indices dd{margin:0;font-weight:600}@media print{.sector-body{break-inside:auto}}
+/* A trailing screen margin can create a content-free final sheet in native PDF. */
+@media print{.result-page>.editorial-note:last-child{margin-bottom:0}}

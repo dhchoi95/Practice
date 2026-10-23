@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "sector:year:study:detail-09",
+    "before": {
+      "id": "sector:year:study:detail-09",
+      "version": "2.2.0",
+      "domain": "study",
+      "unit": "year",
+      "role": "supplement",
+      "scenario": "detail-09",
+      "semanticId": "study:detail-09",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "정재"
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "정재와 세운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.yearGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "study:detail-09",
+      "conflictGroup": "study:detailed-expansion",
+      "duplicateGroup": "study:detail-09",
+      "priority": 203,
+      "title": "배움에 계속 들일 비용",
+      "paragraphs": [
+        "기간의 정재와 세운의 인성 주제가 겹쳐요. 배우는 방향을 유지하면서 반복해 들어갈 비용과 시간을 관리하는 쪽으로 읽었어요. 처음 결제한 금액보다 끝까지 참여할 시간과 추가 비용이 학습을 이어가는 조건이 될 수 있어요. 비용이 낮다는 이유만으로 목적에 맞지 않는 과정을 고를 필요는 없어요.",
+        "연간 자격 계획에서는 과정별 총비용과 참여 가능한 시기를 함께 볼 수 있어요. 세운의 배움 주제는 지출을 늘릴 신호가 아니라 유지할 범위를 정할 참고예요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:study:detail-09",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "정재와 세운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "refines": "study:wealth",
+        "counter": "비용이 낮다는 이유만으로 목적에 맞지 않는 과정을 고를 필요는 없어요."
+      }
+    },
+    "after": {
+      "id": "sector:year:study:detail-09",
+      "version": "2.2.0",
+      "domain": "study",
+      "unit": "year",
+      "role": "supplement",
+      "scenario": "detail-09",
+      "semanticId": "study:detail-09",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "정재"
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "정재와 월운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.monthGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "study:detail-09",
+      "conflictGroup": "study:detailed-expansion",
+      "duplicateGroup": "study:detail-09",
+      "priority": 203,
+      "title": "배움에 계속 들일 비용",
+      "paragraphs": [
+        "기간의 정재와 월운의 인성 주제가 겹쳐요. 배우는 방향을 유지하면서 반복해 들어갈 비용과 시간을 관리하는 쪽으로 읽었어요. 처음 결제한 금액보다 끝까지 참여할 시간과 추가 비용이 학습을 이어가는 조건이 될 수 있어요. 비용이 낮다는 이유만으로 목적에 맞지 않는 과정을 고를 필요는 없어요.",
+        "연간 자격 계획에서는 과정별 총비용과 참여 가능한 시기를 함께 볼 수 있어요. 월운의 배움 주제는 지출을 늘릴 신호가 아니라 유지할 범위를 정할 참고예요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:study:detail-09",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "정재와 월운의 인성 주제가 겹칠 때 학습을 유지할 자원은 어떻게 정할까?",
+        "refines": "study:wealth",
+        "counter": "비용이 낮다는 이유만으로 목적에 맞지 않는 과정을 고를 필요는 없어요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  },
+  {
+    "id": "sector:day:money:detail-12",
+    "before": {
+      "id": "sector:day:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.god",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.god"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "오늘 이미 가진 자료나 도구로 해볼 수 있는 작은 과제를 골라볼 수 있어요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "after": {
+      "id": "sector:day:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.branchGod",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.branchGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간 지지의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "오늘 이미 가진 자료나 도구로 해볼 수 있는 작은 과제를 골라볼 수 있어요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  },
+  {
+    "id": "sector:month:money:detail-12",
+    "before": {
+      "id": "sector:month:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.god",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.god"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "이달에는 새 결제보다 이미 시작한 학습의 활용 과제를 먼저 둘 수 있어요. 절입 뒤 평가할 때에는 쓴 금액보다 실제로 사용할 수 있게 된 부분을 확인해요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:money:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "after": {
+      "id": "sector:month:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.branchGod",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.branchGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간 지지의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "이달에는 새 결제보다 이미 시작한 학습의 활용 과제를 먼저 둘 수 있어요. 절입 뒤 평가할 때에는 쓴 금액보다 실제로 사용할 수 있게 된 부분을 확인해요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:money:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  },
+  {
+    "id": "sector:year:money:detail-12",
+    "before": {
+      "id": "sector:year:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "year",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.god",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.god"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "연간 학습·자원 계획은 준비 비용과 활용 단계를 분리할 수 있어요. 세운과 월운의 다른 주제는 투입한 비용을 회수해야 할 기한이 아니라 계획을 조정할 참고예요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:money:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "after": {
+      "id": "sector:year:money:detail-12",
+      "version": "2.2.0",
+      "domain": "money",
+      "unit": "year",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "money:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "period.branchGod",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "context.yearGod",
+        "context.monthGod",
+        "period.branchGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-12",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-12",
+      "priority": 204,
+      "title": "배움에 쓴 비용과 실제 활용",
+      "paragraphs": [
+        "세운의 재성, 월운의 인성, 기간 지지의 식상 주제가 함께 확인돼요. 자원을 관리하면서 배운 것을 실제로 써보는 순서를 연결했어요. 준비에 쓴 금액을 되찾으려고 무리하게 일을 벌이기보다 배운 것으로 작은 결과를 만들 수 있는지 살펴볼 수 있어요. 교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요.",
+        "연간 학습·자원 계획은 준비 비용과 활용 단계를 분리할 수 있어요. 세운과 월운의 다른 주제는 투입한 비용을 회수해야 할 기한이 아니라 계획을 조정할 참고예요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:money:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "재성 세운·인성 월운·식상이 겹치면 준비 비용을 어떻게 활용과 연결할까?",
+        "refines": "money:output",
+        "counter": "교육비를 썼다고 수입이 생긴다는 연결은 하지 않아요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  },
+  {
+    "id": "sector:month:love:detail-12",
+    "before": {
+      "id": "sector:month:love:detail-12",
+      "version": "2.2.0",
+      "domain": "love",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "love:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "기간 인성과 월운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.monthGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "love:detail-12",
+      "conflictGroup": "love:detailed-expansion",
+      "duplicateGroup": "love:detail-12",
+      "priority": 203,
+      "title": "혼자 정리한 마음을 나눌 자리",
+      "paragraphs": [
+        "기간의 인성과 월운의 식상 주제가 함께 있어요. 마음을 혼자 살피는 일과 대화로 꺼내는 일을 연결하는 풀이예요. 아직 전하지 않은 생각은 상대가 알 수 없으니 지금 나눌 만큼의 내용을 고르는 것이 필요해요. 생각을 모두 정리한 뒤에만 말해야 한다는 뜻은 아니에요.",
+        "이달에는 혼자 생각할 시간과 실제 대화할 시간을 따로 남길 수 있어요. 절입 뒤 표현의 주제가 달라져도 확인하지 않은 상대 마음을 채워 넣지 않아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:love:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "기간 인성과 월운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "refines": "love:resource",
+        "counter": "생각을 모두 정리한 뒤에만 말해야 한다는 뜻은 아니에요."
+      }
+    },
+    "after": {
+      "id": "sector:month:love:detail-12",
+      "version": "2.2.0",
+      "domain": "love",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-12",
+      "semanticId": "love:detail-12",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "in",
+            "value": [
+              "정인",
+              "편인"
+            ]
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "식신",
+              "상관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "기간 인성과 세운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.yearGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "love:detail-12",
+      "conflictGroup": "love:detailed-expansion",
+      "duplicateGroup": "love:detail-12",
+      "priority": 203,
+      "title": "혼자 정리한 마음을 나눌 자리",
+      "paragraphs": [
+        "기간의 인성과 세운의 식상 주제가 함께 있어요. 마음을 혼자 살피는 일과 대화로 꺼내는 일을 연결하는 풀이예요. 아직 전하지 않은 생각은 상대가 알 수 없으니 지금 나눌 만큼의 내용을 고르는 것이 필요해요. 생각을 모두 정리한 뒤에만 말해야 한다는 뜻은 아니에요.",
+        "이달에는 혼자 생각할 시간과 실제 대화할 시간을 따로 남길 수 있어요. 절입 뒤 표현의 주제가 달라져도 확인하지 않은 상대 마음을 채워 넣지 않아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:love:detail-12",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "기간 인성과 세운 식상이 함께 있으면 생각과 표현을 어떻게 연결할까?",
+        "refines": "love:resource",
+        "counter": "생각을 모두 정리한 뒤에만 말해야 한다는 뜻은 아니에요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  },
+  {
+    "id": "sector:month:overall:detail-02",
+    "before": {
+      "id": "sector:month:overall:detail-02",
+      "version": "2.2.0",
+      "domain": "overall",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-02",
+      "semanticId": "overall:detail-02",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "편인"
+          },
+          {
+            "path": "context.monthGod",
+            "op": "in",
+            "value": [
+              "정관",
+              "편관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "편인과 월운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.monthGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "overall:detail-02",
+      "conflictGroup": "overall:detailed-expansion",
+      "duplicateGroup": "overall:detail-02",
+      "priority": 203,
+      "title": "새 관점과 정해진 일정",
+      "paragraphs": [
+        "기간의 편인과 월운의 관성을 함께 보았어요. 다른 방식을 찾는 일과 이미 정한 순서나 약속을 맞추는 주제로 읽었어요. 새로운 생각이 생겨도 무엇을 바꾸면 되는지와 무엇은 유지해야 하는지 나눌 필요가 있어요. 새 생각이 기존 계획보다 항상 낫다고 말하지는 않아요.",
+        "이달에는 새 방법을 시험할 범위를 작게 두고 기존 약속과 충돌하지 않는지 중간에 살펴볼 수 있어요. 절입 뒤에도 필요한 기준은 유지해요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:overall:detail-02",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "편인과 월운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "refines": "overall:resource",
+        "counter": "새 생각이 기존 계획보다 항상 낫다고 말하지는 않아요."
+      }
+    },
+    "after": {
+      "id": "sector:month:overall:detail-02",
+      "version": "2.2.0",
+      "domain": "overall",
+      "unit": "month",
+      "role": "supplement",
+      "scenario": "detail-02",
+      "semanticId": "overall:detail-02",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "편인"
+          },
+          {
+            "path": "context.yearGod",
+            "op": "in",
+            "value": [
+              "정관",
+              "편관"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "편인과 세운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "context.yearGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "overall:detail-02",
+      "conflictGroup": "overall:detailed-expansion",
+      "duplicateGroup": "overall:detail-02",
+      "priority": 203,
+      "title": "새 관점과 정해진 일정",
+      "paragraphs": [
+        "기간의 편인과 세운의 관성을 함께 보았어요. 다른 방식을 찾는 일과 이미 정한 순서나 약속을 맞추는 주제로 읽었어요. 새로운 생각이 생겨도 무엇을 바꾸면 되는지와 무엇은 유지해야 하는지 나눌 필요가 있어요. 새 생각이 기존 계획보다 항상 낫다고 말하지는 않아요.",
+        "이달에는 새 방법을 시험할 범위를 작게 두고 기존 약속과 충돌하지 않는지 중간에 살펴볼 수 있어요. 절입 뒤에도 필요한 기준은 유지해요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:overall:detail-02",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      },
+      "editorial": {
+        "question": "편인과 세운 관성이 함께 있을 때 다른 방법을 어디까지 적용할까?",
+        "refines": "overall:resource",
+        "counter": "새 생각이 기존 계획보다 항상 낫다고 말하지는 않아요."
+      }
+    },
+    "reason": "월·연 단위에서 같은 천간에 서로 다른 십신을 요구하지 않도록 실제 다른 기간 층 또는 지지 근거를 명시"
+  }
+]

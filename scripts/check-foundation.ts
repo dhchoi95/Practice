@@ -3,19 +3,22 @@ import { createHash } from 'node:crypto';
 import { calculateAdvanced } from '../src/domain/advanced/chart';
 import { buildSectorReading,sectorRecords,scheduleRecords,matches,scheduleFor } from '../src/domain/foundation/engine';
 import { presentSector } from '../src/domain/foundation/presentation';
+import { feasibilityErrors } from '../src/domain/foundation/feasibility';
+import { detailFactPaths } from '../src/domain/foundation/detail-facts';
 import { domains,domainNames } from '../src/domain/foundation/types';
 import { foundationTables,foundationPolicies } from '../src/domain/foundation/tables';
 import { canonicalContent } from '../src/domain/interpretation/review';
 import { particleErrors } from '../src/domain/interpretation/quality';
 import type { BirthInput } from '../src/domain/saju/types';
-const dir='reports/foundation-2.1.0';await fs.mkdir(`${dir}/examples`,{recursive:true});
+const dir='reports/iteration-2.2.0/current';await fs.mkdir(`${dir}/examples`,{recursive:true});
 const hash=(v:unknown)=>createHash('sha256').update(canonicalContent(v)).digest('hex');
 const errors:string[]=[],warnings:string[]=[],all=[...sectorRecords,...scheduleRecords];
 if(new Set(all.map(r=>r.id)).size!==all.length)errors.push('중복 ID');
-const knownPaths=new Set(['known.day','strength.class','focus','group.peer','group.output','group.resource','group.order','group.wealth','target.dayClash','target.monthClash','target.anyClash','target.harmony','same.day','same.month','same.luck','different.yearMonth']);
+const knownPaths=new Set(['known.day','strength.class','focus','group.peer','group.output','group.resource','group.order','group.wealth','target.dayClash','target.monthClash','target.anyClash','target.harmony','same.day','same.month','same.luck','different.yearMonth','period.god','period.branchGod','roots.count','luck.god','context.yearGod','context.monthGod',...detailFactPaths]);
 const sourceRefs=new Set(['service-adopted-symbolic-interpretation','lunar-typescript@1.8.6']);
-const policyRefs=new Set(['SIX-SECTOR-CONTEXT-1.0','KR-SOLAR-MIDNIGHT-1.0','SEASON-ROOT-CANDIDATES-1.0']);
+const policyRefs=new Set(['SIX-SECTOR-CONTEXT-1.0','SIX-SECTOR-CONTEXT-2.0','KR-SOLAR-MIDNIGHT-1.0','SEASON-ROOT-CANDIDATES-1.0']);
 for(const r of all){
+ if('unit' in r)for(const issue of feasibilityErrors(r))errors.push(`${r.id}: ${issue}`);
  for(const ref of r.sourceRefs)if(!sourceRefs.has(ref))errors.push(`정의되지 않은 출처 참조 ${r.id}/${ref}`);
  for(const ref of r.policyRefs)if(!policyRefs.has(ref))errors.push(`정의되지 않은 정책 참조 ${r.id}/${ref}`);
  if('evidenceRefs'in r)for(const ref of r.evidenceRefs)if(!knownPaths.has(ref))errors.push(`정의되지 않은 근거 경로 ${r.id}/${ref}`);
@@ -65,8 +68,8 @@ for(const example of examples as {id:string;chart:ReturnType<typeof calculateAdv
  if(example.schedule)md+=`## 면접 참고\n\n${example.schedule.text}\n\n${example.schedule.checks.join(' / ')}\n`;
  await fs.writeFile(`${dir}/examples/${example.id}.md`,md);
 }
-const inventory={version:'2.1.0',old:{advancedRetained:62,periodRetained:136,legacyRetained:210,oldRecordsEdited:0},new:{coreRecords:216,supplementRecords:108,scheduleRecords:36,distinctCoreMeanings:72,distinctSupplementMeanings:36,distinctScheduleMeanings:36,periodGuidanceParagraphs:18},meaning:'360개는 기간별 적용 레코드 수. 독립된 의미 360개라고 세지 않음. 중심·보완은 각 의미의 일·월·연 변형을 명시. 보완 108개는 실제 본문이 같은 36개를 세 기간에 적용하는 정책 레코드이며 새 원고 108개가 아님.',coverage:[...coverage].map(([id,selected])=>({id,selected})),warnings};
+const inventory={version:'2.2.0',old:{advancedRetained:62,periodRetained:136,legacyRetained:210,oldRecordsEdited:0},new:{coreRecords:sectorRecords.filter(r=>r.role==='core').length,supplementRecords:sectorRecords.filter(r=>r.role==='supplement').length,scheduleRecords:scheduleRecords.length,distinctCoreMeanings:new Set(sectorRecords.filter(r=>r.role==='core').map(r=>r.semanticId)).size,distinctSupplementMeanings:new Set(sectorRecords.filter(r=>r.role==='supplement').map(r=>r.semanticId)).size,distinctScheduleMeanings:new Set(scheduleRecords.map(r=>r.semanticId)).size,periodGuidanceParagraphs:3},meaning:'원고 적용 레코드와 의미 묶음을 구분. 새 의미 72개는 분야별 질문과 실제 선택 증거로 별도 확인하며 독립 편집 승인은 대기.',coverage:[...coverage].map(([id,selected])=>({id,selected})),warnings};
 await fs.writeFile(`${dir}/inventory.json`,JSON.stringify(inventory,null,2)+'\n');await fs.writeFile(`${dir}/longitudinal.json`,JSON.stringify({profiles:12,daysEach:365,monthsEach:12,yearsEach:5,normalization:'actual default visible body from shared presentation plan; excludes date/title/ganji; additionally selected records remain in per-example segment traces',profilesData:longitudinal,warnings},null,2)+'\n');await fs.writeFile(`${dir}/tables.json`,JSON.stringify({foundationTables,foundationPolicies,referenceDefinitions:{sourceRefs:[...sourceRefs],policyRefs:[...policyRefs],evidencePaths:[...knownPaths]}},null,2)+'\n');
 if(process.argv.includes('--record')&&!errors.length){await fs.writeFile(reviewPath,JSON.stringify(ledger,null,2)+'\n');await fs.writeFile(snapPath,JSON.stringify(snapshots,null,2)+'\n');}
 await fs.writeFile(`${dir}/audit.json`,JSON.stringify({passed:errors.length===0,errors,warnings,records:all.length,reviewRecords:ledger.length,independentApproval:false},null,2)+'\n');
-console.log(`${errors.length?'FAIL':'PASS'}: ${all.length} application records / 144 semantic families; 12 profiles × 365 days, 12 months, 5 years; ${errors.length} errors, ${warnings.length} unhit warnings`);if(errors.length){console.error(errors);process.exitCode=1;}
+console.log(`${errors.length?'FAIL':'PASS'}: ${all.length} application records / ${new Set(sectorRecords.map(r=>r.semanticId)).size+new Set(scheduleRecords.map(r=>r.semanticId)).size} semantic families; 12 profiles × 365 days, 12 months, 5 years; ${errors.length} errors, ${warnings.length} unhit warnings`);if(errors.length){console.error(errors);process.exitCode=1;}

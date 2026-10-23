@@ -1,0 +1,185 @@
+{
+  "version": "2.2.0",
+  "baseline": "631da84458b62857a7002914de32e4fa4151e557",
+  "independentApproval": false,
+  "items": [
+    {
+      "id": "IT22-01",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "여섯 분야의 중심 조건·우선순위가 동일",
+      "evidence": "2.1.0 sectors.json 12개 scenario의 requires/priority",
+      "priority": "P1",
+      "status": "closed-author-verified",
+      "doneWhen": "분야의 질문과 우선 이유를 명시하고 같은 원국에서 다른 우선순위의 실제 사례 확인",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "resolvedIn": "2.2.0",
+      "validation": [
+        "reports/iteration-2.2.0/comparison.json",
+        "reports/iteration-2.2.0/after/new-meaning-witnesses.json",
+        "tests/domain/iteration.test.ts",
+        "reports/iteration-2.2.0/browser-reasons.log"
+      ],
+      "independentApproval": false
+    },
+    {
+      "id": "IT22-02",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "분야·기간별 공통 계획 문단이 12상황에서 반복",
+      "evidence": "core paragraphs[1]의 18개 공통 문단",
+      "priority": "P1",
+      "status": "closed-author-verified",
+      "doneWhen": "공통 안내를 분리하고 상황·기간별 본문의 새 정보를 전체 결과에서 확인",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "resolvedIn": "2.2.0",
+      "validation": [
+        "reports/iteration-2.2.0/comparison.json",
+        "reports/iteration-2.2.0/after/new-meaning-witnesses.json",
+        "tests/domain/iteration.test.ts",
+        "reports/iteration-2.2.0/browser-reasons.log"
+      ],
+      "independentApproval": false
+    },
+    {
+      "id": "IT22-03",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "정·편·자리·대운 등 세부 조건 활용 부족",
+      "evidence": "2.1.0 선택 경로 16종",
+      "priority": "P1",
+      "status": "closed-author-verified",
+      "doneWhen": "72개 신규 질문의 조건·반대 요인·불확실성·실제 선택 증거와 기존 원고 관계를 기록",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "resolvedIn": "2.2.0",
+      "validation": [
+        "reports/iteration-2.2.0/comparison.json",
+        "reports/iteration-2.2.0/after/new-meaning-witnesses.json",
+        "tests/domain/iteration.test.ts",
+        "reports/iteration-2.2.0/browser-reasons.log"
+      ],
+      "independentApproval": false
+    },
+    {
+      "id": "IT22-04",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "meaningAxis/conflictGroup/duplicateGroup이 실제 선택을 제어하지 않음",
+      "evidence": "2.1.0 judgeSector의 단순 slice",
+      "priority": "P1",
+      "status": "closed-author-verified",
+      "doneWhen": "상충·중복·구체성·제외·문장 중복을 선택 trace와 회귀 테스트로 검증",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "resolvedIn": "2.2.0",
+      "validation": [
+        "reports/iteration-2.2.0/comparison.json",
+        "reports/iteration-2.2.0/after/new-meaning-witnesses.json",
+        "tests/domain/iteration.test.ts",
+        "reports/iteration-2.2.0/browser-reasons.log"
+      ],
+      "independentApproval": false
+    },
+    {
+      "id": "IT22-05",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "대표 본문에 다른 구간 보완이 섞이거나 지수 보완이 안 보일 수 있음",
+      "evidence": "2.1.0 presentation의 전체 보완 중 하나 선택",
+      "priority": "P1",
+      "status": "closed-author-verified",
+      "doneWhen": "실제 대표 구간의 보완을 표시하고 지수 반영 원고의 사용자용 근거를 확인",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "resolvedIn": "2.2.0",
+      "validation": [
+        "reports/iteration-2.2.0/comparison.json",
+        "reports/iteration-2.2.0/after/new-meaning-witnesses.json",
+        "tests/domain/iteration.test.ts",
+        "reports/iteration-2.2.0/browser-reasons.log"
+      ],
+      "independentApproval": false
+    },
+    {
+      "id": "IT22-06",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "일운 반복과 알려진 조건 폭의 제한",
+      "evidence": "reports/iteration-2.2.0/comparison.md / collisions-and-dominance.json",
+      "priority": "P1",
+      "status": "open",
+      "doneWhen": "고정·추가 집단의 의미·실제 기본 본문·점유·연속/10일 반복을 분리 비교하고 남은 집중 조건을 다음 차수로 이관",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력",
+      "currentFinding": "고유 일운 본문 범위는 확대. 고정 4031→4562, 추가 3749→4464 / 각23430회로 10일 반복은 증가. 같은 일간의 서로 다른 원국 비교는12265→9048 /39420회로 감소.",
+      "nextAction": "재물·총운의 높은 10일 반복과 우선순위·고정 원국 보완의 점유를 먼저 분석. 조건 없는 말바꾸기·난수 금지. 독립 의미 편집과 실제 날짜 관계를 함께 검토."
+    },
+    {
+      "id": "SOURCE-01",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "巳 보조 지장간 순서·도시 좌표·강약·용신 독립 검토 대기",
+      "evidence": "기존 계산 정책·출처 기록",
+      "priority": "P1",
+      "status": "pending-independent-review",
+      "doneWhen": "동일 정책의 신뢰할 수 있는 독립 자료와 대조하고 근거·불일치·영향 범위를 기록",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력"
+    },
+    {
+      "id": "EDITOR-01",
+      "domains": [
+        "overall",
+        "study",
+        "money",
+        "health",
+        "love",
+        "business"
+      ],
+      "problem": "새 질문이 충분히 독립적인지 한국어·명리 편집 승인 필요",
+      "evidence": "iteration-meanings-2.2.0.json은 구현자 질문 분류",
+      "priority": "P1",
+      "status": "pending-independent-review",
+      "doneWhen": "원고ID와 무관하게 의미 중복·기간의 깊이·현실 상태 전제를 독립 검토",
+      "conditions": "분야별 전체 일·월·연 및 확정·시각 미상·일간 미확정 입력"
+    }
+  ]
+}

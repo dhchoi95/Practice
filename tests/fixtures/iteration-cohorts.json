@@ -1,0 +1,490 @@
+{
+  "version": "2.2.0-comparison-1",
+  "fixedSource": "check-foundation.ts at 631da84458b62857a7002914de32e4fa4151e557; identical inputs/options",
+  "dailyYear": 2026,
+  "monthsYear": 2026,
+  "years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "fixed": [
+    {
+      "id": "fixed-00",
+      "input": {
+        "year": 1972,
+        "month": 1,
+        "day": 1,
+        "hour": 0,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "fixed-01",
+      "input": {
+        "year": 1987,
+        "month": 3,
+        "day": 3,
+        "hour": 10,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-02",
+      "input": {
+        "year": 1992,
+        "month": 5,
+        "day": 5,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-03",
+      "input": {
+        "year": 1995,
+        "month": 8,
+        "day": 7,
+        "hour": 23,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "fixed-04",
+      "input": {
+        "year": 2000,
+        "month": 11,
+        "day": 9,
+        "hour": 0,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-05",
+      "input": {
+        "year": 2002,
+        "month": 12,
+        "day": 11,
+        "hour": 10,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-06",
+      "input": {
+        "year": 1972,
+        "month": 1,
+        "day": 13,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "fixed-07",
+      "input": {
+        "year": 1987,
+        "month": 3,
+        "day": 15,
+        "hour": 23,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-08",
+      "input": {
+        "year": 1992,
+        "month": 5,
+        "day": 17,
+        "hour": 0,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-09",
+      "input": {
+        "year": 1995,
+        "month": 8,
+        "day": 19,
+        "hour": 10,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "fixed-10",
+      "input": {
+        "year": 2000,
+        "month": 11,
+        "day": 21,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": true,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "luckClass": "male",
+        "cityId": "suwon"
+      }
+    },
+    {
+      "id": "fixed-11",
+      "input": {
+        "year": 2002,
+        "month": 12,
+        "day": 23,
+        "hour": 23,
+        "minute": 3,
+        "unknownTime": true,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "luckClass": "female",
+        "cityId": "suwon"
+      }
+    }
+  ],
+  "additional": [
+    {
+      "id": "extra-00",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 1,
+        "hour": 0,
+        "minute": 59,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "cityId": "suwon",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "extra-01",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 2,
+        "hour": 9,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "mean-solar",
+        "cityId": "suwon",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "extra-02",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 3,
+        "hour": 12,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "cityId": "suwon",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "extra-03",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 4,
+        "hour": 15,
+        "minute": 59,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "cityId": "suwon",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "extra-04",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 5,
+        "hour": 23,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "mean-solar",
+        "cityId": "suwon",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "extra-05",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 6,
+        "hour": 0,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "cityId": "suwon",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "extra-06",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 7,
+        "hour": 9,
+        "minute": 59,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "cityId": "suwon",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "extra-07",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 8,
+        "hour": 12,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "mean-solar",
+        "cityId": "suwon",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "extra-08",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 9,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "cityId": "suwon",
+        "luckClass": "female"
+      }
+    },
+    {
+      "id": "extra-09",
+      "input": {
+        "year": 2000,
+        "month": 1,
+        "day": 10,
+        "hour": 23,
+        "minute": 59,
+        "unknownTime": false,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard",
+        "cityId": "suwon",
+        "luckClass": "male"
+      }
+    },
+    {
+      "id": "extra-10",
+      "input": {
+        "year": 2024,
+        "month": 2,
+        "day": 4,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": true,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "standard"
+      }
+    },
+    {
+      "id": "extra-11",
+      "input": {
+        "year": 1987,
+        "month": 6,
+        "day": 1,
+        "hour": 15,
+        "minute": 3,
+        "unknownTime": true,
+        "calendar": "solar",
+        "leap": false,
+        "nickname": ""
+      },
+      "options": {
+        "enabled": true,
+        "timePolicy": "true-solar",
+        "cityId": "suwon"
+      }
+    }
+  ]
+}

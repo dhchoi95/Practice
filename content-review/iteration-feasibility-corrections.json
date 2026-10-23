@@ -1,0 +1,632 @@
+[
+  {
+    "id": "sector:day:business:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:month:business:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:year:business:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:day:love:detail-01",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetMonth.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:month:love:detail-01",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetMonth.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:year:love:detail-01",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "path": "link.targetMonth.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:day:love:detail-02",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:month:love:detail-02",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:year:love:detail-02",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "path": "target.monthClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:day:love:detail-05",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:month:love:detail-05",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:year:love:detail-05",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "path": "link.targetDay.harmony",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:day:love:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:month:love:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  },
+  {
+    "id": "sector:year:love:detail-09",
+    "before": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "after": {
+      "all": [
+        {
+          "path": "known.day",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "path": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "path": "target.dayClash",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    "reason": "육십갑자의 음양과 일지 충/육합의 패리티를 대조해 성립할 수 없는 전제를 수정. 실제 계산 정책을 변경하지 않음."
+  }
+]

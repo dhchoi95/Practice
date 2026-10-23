@@ -46,3 +46,14 @@ test('Korean default midnight follows today while specified date stays pinned an
  await page.clock.install({time:new Date('2026-10-23T14:59:30Z')});await enter(page,'date');await expect(page.getByLabel('조회 날짜',{exact:true})).toHaveValue('2026-10-23');await page.clock.fastForward(60000);await expect(page.getByLabel('조회 날짜',{exact:true})).toHaveValue('2026-10-24');await page.getByLabel('조회 날짜',{exact:true}).fill('2026-10-20');await page.clock.fastForward(86400000);await expect(page.getByLabel('조회 날짜',{exact:true})).toHaveValue('2026-10-20');
  const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(axe.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);await page.getByLabel('조회 날짜',{exact:true}).focus();await expect(page.getByLabel('조회 날짜',{exact:true})).toBeFocused();for(let i=0;i<4;i++)await page.keyboard.press('Tab');expect(await page.evaluate(()=>document.activeElement?.tagName)).toBe('BUTTON');
 });
+test('all score-driving records are readable in public segment reasons for day month and year',async({page})=>{
+ await page.clock.install({time:new Date('2026-10-23T03:00:00Z')});await enter(page);
+ for(const [slug,label] of [['day','오늘 운세'],['month','이번 달 운세'],['year','올해 운세']]){
+  if(slug!=='day')await page.locator('.other-links').getByRole('link',{name:label,exact:true}).click();
+  await page.locator('.sector-segments > summary').click();
+  const traces=await page.locator('.no-print pre').allTextContents();let expected=0;
+  for(const text of traces){const trace=JSON.parse(text);if(Array.isArray(trace.contributions))expected+=trace.contributions.length;}
+  const reasons=page.locator('.sector-score-reasons li');expect(await reasons.count()).toBe(expected);expect(expected).toBeGreaterThan(0);
+  for(const item of await reasons.all()){await expect(item).toBeVisible();expect((await item.innerText()).length).toBeGreaterThan(25);}
+ }
+});
