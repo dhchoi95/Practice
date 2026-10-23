@@ -23,10 +23,10 @@ with zipfile.ZipFile(large,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
  add(z,out/'START_HERE.md','START_HERE.md')
  for path in root.rglob('*'):
   if path.is_file():add(z,path,str(path.relative_to(repo)))
- for directory in ['foundation-2.1.0','print','integrated-2.0.0/print','integrated-2.0.0/screenshots','integrated-2.0.0/skill-reference']:
+ for directory in ['foundation-2.1.0/print','foundation-2.1.0/screenshots','print','integrated-2.0.0/print','integrated-2.0.0/screenshots','integrated-2.0.0/skill-reference']:
   for path in (repo/'reports'/directory).rglob('*'):
    if path.is_file():add(z,path,str(path.relative_to(repo)))
- for name in ['print-verification.json']:
+ for name in ['print-verification.json','foundation-2.1.0/pdf-verification.json']:
   p=repo/'reports'/name
   if p.exists():add(z,p,str(p.relative_to(repo)))
  add(z,repo.parent/'saju-baseline-2.1.0.zip','baseline-2.1.0.zip')
