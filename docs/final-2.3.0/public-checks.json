@@ -1,0 +1,22 @@
+{
+  "url": "https://spring-voice-4bdc.eogjs9595.workers.dev",
+  "version": "2.3.0",
+  "passed": true,
+  "network": "TLS-verified API relay to Chromium for execution proxy CA",
+  "checks": [
+    {
+      "width": 320,
+      "passed": true,
+      "requests": 73,
+      "pageErrors": [],
+      "cancelledRelays": 0
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "requests": 73,
+      "pageErrors": [],
+      "cancelledRelays": 0
+    }
+  ]
+}

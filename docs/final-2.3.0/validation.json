@@ -25,7 +25,15 @@
     "고정 집단 미선정 원고62개는 전수 교정 목록과 별도로 기록"
   ],
   "deployment": {
-    "target": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
-    "state": "pending-live-check"
+    "url": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+    "state": "deployed-and-live-verified",
+    "cloudflareVersionId": "af15f55a-d1e7-4a8c-ad6a-8db75fc7e4bc",
+    "applicationCommit": "dbd3133",
+    "verifiedAt": "2026-10-24T16:49:40.339903+00:00",
+    "mobileBrowserWidths": [
+      320,
+      390
+    ],
+    "timeSettingsSynchronization": "verified-on-public-site"
   }
 }
