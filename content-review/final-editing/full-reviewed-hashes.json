@@ -8923,5 +8923,12 @@
     "reviewer": "implementation-author",
     "status": "author-edited-pending-independent",
     "date": "2026-10-24"
+  },
+  {
+    "key": "src/components/AdvancedExperience.tsx",
+    "hash": "fc28667b758b8abbc96475514a4e85f917a7213da1b263755dbbfc215eda2428",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-10-24"
   }
 ]

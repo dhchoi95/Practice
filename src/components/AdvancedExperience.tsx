@@ -37,7 +37,8 @@ function PeriodView({period,anchor='#advanced-period'}:{period:AdvancedPeriod;an
 }
 export default function AdvancedExperience({input,category,today,embedded=false,startYear}:{input:BirthInput;category:string;today:string;embedded?:boolean;startYear?:number}){
  const session=useSession();
- const [options,setOptions]=useState<AdvancedOptions>({...input.advanced??{timePolicy:'standard'},enabled:true}),[chosenYear,setYear]=useState<number|null>(null);
+ const options=useMemo<AdvancedOptions>(()=>({...input.advanced??{timePolicy:'standard'},enabled:true}),[input.advanced]);
+ const [chosenYear,setYear]=useState<number|null>(null);
  const target=today,year=chosenYear??startYear??Math.min(2046,Math.max(1962,Number(today.slice(0,4))));
  const result=useMemo(()=>{
   if(!options.enabled)return null;
@@ -47,13 +48,13 @@ export default function AdvancedExperience({input,category,today,embedded=false,
  },[input,options,year,category]);
  const isFull=category==='saju',city=cities.find(c=>c.id===options.cityId);
  if(category==='manse'&&result?.chart){const chart=result.chart;return <section className="advanced-experience manse-experience" aria-label="출생 만세력"><BirthSummary input={input} chart={chart} category={category}/><NatalChart chart={chart}/>
- <details className="disclosure"><summary>시간 보정·계산 기준</summary><div className="disclosure-body"><div className="no-print"><AdvancedControls alwaysEnabled value={options} onChange={v=>{setOptions(v);if(session.birth)session.setBirth({...session.birth,input:{...session.birth.input,advanced:v}});}}/></div><p>요청 {timePolicyNames[chart.time.requested]} / 적용 {timePolicyNames[chart.time.effective]} · {city?.name??'도시 미선택'}</p><p>표준시 {chart.time.standard??'미확정'} / 최종 {chart.time.final??'미확정'} · 날짜 변경 0시</p>{chart.limitations.map(p=><p key={p}>{p}</p>)}</div></details>
+ <details className="disclosure"><summary>시간 보정·계산 기준</summary><div className="disclosure-body"><div className="no-print"><AdvancedControls alwaysEnabled value={options} onChange={v=>{if(session.birth)session.setBirth({...session.birth,input:{...session.birth.input,advanced:v}});}}/></div><p>요청 {timePolicyNames[chart.time.requested]} / 적용 {timePolicyNames[chart.time.effective]} · {city?.name??'도시 미선택'}</p><p>표준시 {chart.time.standard??'미확정'} / 최종 {chart.time.final??'미확정'} · 날짜 변경 0시</p>{chart.limitations.map(p=><p key={p}>{p}</p>)}</div></details>
  <details className="disclosure"><summary>원국 관계와 오행 확인</summary><div className="disclosure-body">{chart.evidence.map(e=><p key={e.id}>{e.text}</p>)}{chart.relations.map(r=><p key={r.id}>{r.kind} · {r.positions.join(' ↔ ')} · {r.level==='presence'?'대응 출현':'후보'}. 합화와 실제 사건은 확정하지 않아요.</p>)}<p>표준시 호환 표의 단순 오행 개수는 아래에서 따로 확인할 수 있어요. 태양시 원국과 섞어 강약을 판단하지 않아요.</p></div></details>
  <details className="disclosure"><summary>대운 개시와 10년 구간</summary><div className="disclosure-body">{chart.luck.length?chart.luck.map(l=><section key={l.direction}><h3>{l.direction==='forward'?'순행':'역행'}{options.luckClass?'':' 후보'}</h3><p>개시 {timeText(l.start)} · {l.term.name}과 실제 출생 순간의 차이를 삼일일세로 환산했어요.</p>{l.cycles.map(c=><p key={c.index}>{c.index}대운 · {pillarLabel(c.pillar)} · {timeText(c.start)}부터 {timeText(c.end)} 전까지</p>)}</section>):<p>출생 순간이 미확정이라 대운 개시와 구간을 정하지 않았어요.</p>}</div></details>
  <p className="helper">계산 {chart.policyVersion} · 지장간·합충은 서비스 채택 표이며 세부 관례와 원전의 독립 검토는 대기 중이에요.</p><Link prefetch={false} className="button no-print" href="/result/saju/">이 원국으로 신년운세 읽기</Link></section>;}
  return <section className="advanced-experience" aria-label="원국과 기간 상세 분석">
  {!embedded&&result?.chart&&<NatalChart chart={result.chart}/>}
- <details className="disclosure no-print"><summary>시간 보정·계산 기준 설정</summary><div className="advanced-intro"><p>선택한 시각 기준을 원국과 모든 해석에 함께 적용해요.</p><AdvancedControls alwaysEnabled value={options} onChange={v=>{setOptions(v);if(session.birth)session.setBirth({...session.birth,input:{...session.birth.input,advanced:v}});}}/></div></details>
+ <details className="disclosure no-print"><summary>시간 보정·계산 기준 설정</summary><div className="advanced-intro"><p>선택한 시각 기준을 원국과 모든 해석에 함께 적용해요.</p><AdvancedControls alwaysEnabled value={options} onChange={v=>{if(session.birth)session.setBirth({...session.birth,input:{...session.birth.input,advanced:v}});}}/></div></details>
  {!options.enabled?null:result?.error?<p role="alert" className="error-summary">{result.error}</p>:result?.chart&&result.report&&<>
  <header className="advanced-summary"><p className="eyebrow">내 사주 자세히 보기</p><h2>{result.report.summary}</h2>{input.nickname&&<p>{input.nickname} 님의 출생 사주</p>}<p>{timePolicyNames[result.chart.time.effective]} · {city?.name??'도시 미선택'} · 날짜 변경 0시</p><p className="helper">요청한 시각 기준: {timePolicyNames[result.chart.time.requested]} / 적용 기준: {timePolicyNames[result.chart.time.effective]}</p><p className="helper">강약·격국·용신은 공개한 서비스 판단법의 후보예요. 독립 명리 검토를 마친 결과는 아니에요.</p></header>
  <nav className="advanced-toc no-print" aria-label="상세 분석 목차">{[['time','시각 기준'],['chart','원국·지장간'],['strength','강약·격국·용신'],['luck','대운'],['topics','주제 풀이'],['years','5년 세운'],['compare','시각 비교']].map(([id,label])=><a key={id} href={`#advanced-${id}`}>{label}</a>)}</nav>

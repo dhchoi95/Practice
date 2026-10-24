@@ -5,7 +5,7 @@
     "verify": "passed",
     "unitIntegrationTests": 402,
     "browserSuite": {
-      "passed": 87,
+      "passed": 88,
       "failed": 0
     },
     "actualNativePDFs": 26,
@@ -14,7 +14,8 @@
     "manuscriptAndExplanationRecords": 1195,
     "publicSourceFiles": 74,
     "build": "passed",
-    "staticDraftLeakCheck": "passed"
+    "staticDraftLeakCheck": "passed",
+    "solarSettingSynchronization": "visible natal chart and preserved detail tested in both directions"
   },
   "finalCopyOnlyAdjustment": "연간 공통 안내 제목을 올해 대신 한 해로 정리. 계산·본문·선택·레이아웃 변경 없음. 현재 해시 재검토·빌드에 반영.",
   "scopeLimits": [
