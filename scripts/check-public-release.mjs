@@ -1,0 +1,23 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs/promises';
+const base=process.env.PUBLIC_SITE_URL||'https://spring-voice-4bdc.eogjs9595.workers.dev',dir='reports/final-2.3.0';
+await fs.mkdir(dir+'/public',{recursive:true});
+const u=process.env.HTTPS_PROXY?new URL(process.env.HTTPS_PROXY):null,proxy=u?{server:u.origin,...(u.username?{username:decodeURIComponent(u.username),password:decodeURIComponent(u.password)}:{})}:undefined;
+const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE||'/usr/bin/chromium',args:['--no-sandbox'],proxy});const checks=[];
+try{for(const width of [320,390]){
+ const context=await browser.newContext({viewport:{width,height:950}}),requests=[],errors=[];
+ // The execution proxy CA is trusted by the Node request client, not Chromium.
+ // Relay verified responses without disabling certificate verification.
+ await context.route(base+'/**',async route=>{const response=await context.request.fetch(route.request());requests.push({url:response.url(),status:response.status()});await route.fulfill({response});});
+ try{const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(base+'/');await expect(page.locator('.primary-nav a')).toHaveCount(5);await expect(page.locator('.quick-nav a')).toHaveCount(8);await expect(page.locator('.category-grid strong')).toHaveText(['신년운세','오늘의 운세','지정일 운세','별자리운세','띠별운세','MBTI 운세','대인관계','연애사주','짝궁합']);await page.screenshot({path:`${dir}/public/home-${width}.png`,fullPage:true});
+ await page.goto(base+'/fortune/day/');await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill('8');await page.getByRole('button',{name:'무료로 오늘의 운세 보기'}).click();await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('main input[type=date]')).toHaveCount(0);
+ const switchTo=async name=>{await page.getByRole('button',{name:'메뉴',exact:true}).click();await page.getByRole('dialog').getByRole('link',{name,exact:true}).click();await page.getByRole('link',{name:`같은 정보로 ${name} 보기`,exact:true}).click();await expect(page.locator('.natal-table')).toBeVisible();};
+ await switchTo('신년운세');const next=Number(new Date(Date.now()+9*3600000).toISOString().slice(0,4))+1;await expect(page.getByLabel('운세를 볼 연도',{exact:true})).toHaveValue(String(Math.min(next,2050)));await page.getByLabel('운세를 볼 연도',{exact:true}).selectOption('2026');const result=await page.locator('.sector-bodies').innerText();await expect(page.locator('.birth-summary')).toContainText('한국 음력');await expect(page.locator('.natal-table')).toContainText('12운성');await page.screenshot({path:`${dir}/public/new-year-${width}.png`,fullPage:true});
+ await switchTo('올해 운세');if(next===2027)expect(await page.locator('.sector-bodies').innerText()).toBe(result);await expect(page.locator('main input[type=date]')).toHaveCount(0);
+ await switchTo('만세력');await expect(page.locator('.sector-body')).toHaveCount(0);await expect(page.locator('.natal-table')).toContainText('12운성');
+ await switchTo('지정일 운세');await expect(page.locator('.sector-body')).toHaveCount(0);await page.getByLabel('운세를 볼 날짜',{exact:true}).fill('2030-04-12');await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.getByLabel('일정 선택',{exact:true})).toBeVisible();
+ await page.goto(base+'/fortune/compatibility/');await expect(page.getByRole('heading',{name:'두 사람의 출생정보를 따로 입력해 주세요'})).toBeVisible();await page.goto(base+'/fortune/blood-type/');await expect(page.getByRole('heading',{name:'혈액형풀이는 제공을 종료했어요'})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await context.unrouteAll({behavior:'wait'});expect(errors).toEqual([]);expect(requests.some(r=>r.status>=400)).toBe(false);expect(requests.some(r=>r.url.includes('1995')||r.url.includes('2030-04-12'))).toBe(false);checks.push({width,passed:true,requests:requests.length,pageErrors:errors});
+ }finally{await context.unrouteAll({behavior:'wait'});await context.close();}
+}}finally{await browser.close();}
+await fs.writeFile(dir+'/public-checks.json',JSON.stringify({url:base,version:'2.3.0',passed:true,network:'TLS-verified API relay to Chromium for execution proxy CA',checks},null,2)+'\n');console.log('PASS live 2.3.0 at 320/390px: menus, new year, fixed current year, manse, independent specified date, compatibility entry, retired URL, private input exclusion.');

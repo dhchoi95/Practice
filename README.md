@@ -1,3 +1,16 @@
+# 하루사주2.3.0
+
+2026-10-24 전수 문장 교정과 요청한 메뉴·신년운세·만세력 배치를 반영합니다. 기존 일간 부분 편집2.2.2 기록도 보존합니다.
+
+- [현재 집필 규칙과 추가 생성 절차](docs/final-2.3.0/writing-and-generation.md)
+- [계산 기준·사진 대조·메뉴별 기능](docs/final-2.3.0/calculation-and-product.md)
+- [전체 원고·안내 목록과 현재 해시](content-review/final-editing/full-inventory.json)
+- [검증·반영 보고](docs/final-2.3.0/completion.md)
+
+실행: `npm ci` → `npm run build` → `npm start`. 검증: `npm run verify`, `npx playwright test`. 브라우저 입력은 메모리에서만 사용합니다. 배포는 Cloudflare Workers 정적 자산을 사용하며 API 토큰은 저장소에 넣지 않습니다.
+
+---
+
 # 하루사주
 
 이 브랜치는 **하루사주 사이트 전용**입니다. `Practice` 저장소의 식당 관리 앱은 아래의 별도 브랜치에서 관리합니다.
@@ -14,6 +27,8 @@
 현재 차수 **2.2.1**은 기존 메인 카드·배너 구조를 복원하고 오늘·내일·이달·올해와 지정일 운세를 분리했습니다. [카테고리·쉬운 문구 수정 결과](docs/category-clarity-fix/verification.md)를 확인하세요. 2.2.0에서 추가한 조건·원고·점수 체계는 유지합니다. [이번 차수 결과·남은 반복](docs/iteration-2.2.0.md)을 확인하세요. 운영 반영 여부는 배포 결과와 공개 주소에서 별도로 확인합니다.
 
 기존 작업본은 1.4.0 한국어 교정·2.0.0 상세 계산을 유지하고, 2.1.0의 상단 원국·여섯 분야·지정일·독립 만세력을 추가했습니다. [2.1.0 결과와 정책](docs/foundation-2.1.0.md)을 확인하세요. 기존 1.4.0 작업에서는 korean-skills의 실제 지침을 순서대로 적용하고, 정상 원고210개 중196개에서 필요한 필드를 고쳤으며14개는 유지했습니다. 제목뿐 아니라 본문·생활 제안·근거와 입력·공유·홈 안내도 검토했습니다. [교정 결과](docs/content-improvement-1.4.0.md), [현재 문체 기준](docs/korean-style-guide-1.4.0.md), [검토 이력](docs/review-history-1.3.0.md), [반복 개선 방법](docs/content-improvement-method.md)을 확인하세요. 독립 의미 검토는 대기이며 복합 초안4개는 일반 빌드에서 제외합니다.
+
+로컬 문체 교정 **2.2.2 / VIDEO-KO-1**은 [현재 기준과 범위](docs/writing-reset/active-style.md)를 따릅니다. 이 차수는 검토용 로컬 변경이며 운영 배포와 원격 push를 하지 않습니다.
 
 ## 처음 실행하기
 

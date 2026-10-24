@@ -10,19 +10,22 @@ import { fortuneView } from '@/domain/fortune/view-policy';
 import { domains,domainNames,contexts,contextNames,type ScheduleContext } from '@/domain/foundation/types';
 import { segmentLabel } from '@/domain/advanced/period';
 import { pillarLabel } from '@/domain/advanced/mappings';
+import { BirthSummary } from './BirthSummary';
 import { NatalChart } from './NatalChart';
 import { SectorRadar } from './SectorRadar';
 import { AdvancedControls } from './AdvancedControls';
 import { useSession } from './SessionProvider';
-export default function SectorExperience({input,category,today}:{input:BirthInput;category:string;today:string}){
+export default function SectorExperience({input,category,today,selectedYear}:{input:BirthInput;category:string;today:string;selectedYear?:number}){
  const session=useSession();const [picked,setPicked]=useState<string|null>(null),[context,setContext]=useState<ScheduleContext>('general');
- const view=fortuneView(category,today,picked),{kind,target}=view;
+ const view=fortuneView(category==='saju'?'year':category,today,picked),kind=view.kind,target=category==='saju'?`${selectedYear}-01-01`:view.target;
  const options:AdvancedOptions={...(input.advanced??{timePolicy:'standard'}),enabled:true};
  const chartResult=useMemo(()=>{try{return {chart:calculateAdvanced(input,{...(input.advanced??{timePolicy:'standard'}),enabled:true}),error:null};}catch(e){return {chart:null,error:e instanceof Error?e.message:'출생정보를 확인해 주세요.'};}},[input]);
  const result=useMemo(()=>{if(!chartResult.chart||!target)return null;try{return {reading:buildSectorReading(chartResult.chart,kind,target),error:null};}catch(e){return {reading:null,error:e instanceof Error?e.message:'조회 날짜를 확인해 주세요.'};}},[chartResult,kind,target]);
  const reading=result?.reading,note=reading&&view.showSchedule?scheduleFor(reading,context):null;
- return <section className="sector-experience" aria-label="사주 기반 여섯 분야 운세"><header className="sector-heading"><p className="eyebrow">내 사주로 살펴보는 {kind==='year'?'한 해':kind==='month'?'한 달':'하루'}</p><h2>{reading?.label??(view.customDate?'날짜를 선택해 주세요':target)}</h2>{input.nickname&&<p>{input.nickname} 님의 운세</p>}<p>{kind==='year'?'올해 1월부터 12월까지의 운세예요.':kind==='month'?'이번 달의 운세예요.':category==='tomorrow'?'한국시간 기준 내일의 운세예요.':view.customDate?'선택한 날짜의 운세를 확인하세요.':'한국시간 기준 오늘의 운세예요.'}</p></header>
- {chartResult.chart&&<NatalChart chart={chartResult.chart}/>}
+ const heading=<header className="sector-heading"><p className="eyebrow">내 사주로 살펴보는 {kind==='year'?'한 해':kind==='month'?'한 달':'하루'}</p><h2>{reading?.label??(view.customDate?'날짜를 선택해 주세요':target)}</h2>{input.nickname&&<p>{input.nickname} 님의 운세</p>}<p>{kind==='year'?`${target?.slice(0,4)}년 1월부터 12월까지의 운세예요.`:kind==='month'?'이번 달의 운세예요.':category==='tomorrow'?'한국시간 기준 내일의 운세예요.':view.customDate?'선택한 날짜의 운세를 확인하세요.':'한국시간 기준 오늘의 운세예요.'}</p></header>;
+ return <section className="sector-experience" aria-label="사주 기반 여섯 분야 운세">{category!=='saju'&&heading}
+ {chartResult.chart&&<><BirthSummary input={input} chart={chartResult.chart} category={category}/><NatalChart chart={chartResult.chart}/></>}
+ {category==='saju'&&heading}
  {chartResult.error&&<p role="alert">{chartResult.error}</p>}
  {view.customDate&&<div className="sector-date-controls no-print"><label>운세를 볼 날짜<input type="date" aria-label="운세를 볼 날짜" min="1962-01-01" max="2050-12-31" value={picked??''} onChange={e=>setPicked(e.target.value||null)}/></label><p className="helper">면접이나 시험 등 중요한 일정이 있는 날을 골라보세요.</p></div>}
  {view.customDate&&!picked&&<p role="status">위에서 날짜를 고르면 해당 날짜의 운세가 나와요.</p>}

@@ -1,6 +1,8 @@
 'use client';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { NewYearExperience } from './NewYearExperience';
+import { CompatibilityResult } from './Compatibility';
 import { NatalChart } from './NatalChart';
 import { topicBasis } from '@/domain/fortune/topic-basis';
 const SectorExperience=dynamic(()=>import('./SectorExperience'),{ssr:false,loading:()=> <p role="status">여섯 분야 풀이를 준비하고 있어요.</p>});
@@ -36,6 +38,8 @@ export function FortuneResult({category}:{category:Category}){
     });
     return ()=>cancelAnimationFrame(frame);
   },[category.slug,hasInput]);
+  if(category.slug==='blood-type')return <p>혈액형풀이는 제공을 종료했어요. <Link href="/">다른 운세 보기</Link></p>;
+  if(category.slug==='compatibility')return <CompatibilityResult/>;
   if(category.system==='mbti')return <MBTIResult/>;
   if(!hasInput)return <section className="empty-state"><Illustration name={category.icon} size={90}/><h2>입력정보가 없어 결과를 불러올 수 없어요</h2><p>새로고침하면 개인정보가 사라져요. 다시 입력하면 바로 확인할 수 있어요.</p><Link prefetch={false} className="button primary" href={`/fortune/${category.slug}/`}>다시 입력하고 {category.name} 보기</Link></section>;
   if(!today)return <p className="view-pending" role="status">한국시간 기준 날짜를 확인하고 있어요.</p>;
@@ -45,12 +49,13 @@ export function FortuneResult({category}:{category:Category}){
     <ShareActions slug={category.slug}/>
     <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">출생정보는 브라우저 메모리에서만 사용해요. 새로고침하면 입력과 결과가 사라져요.</p>
   </>;
-  if(isSaju&&birth&&(category.slug==='saju'||category.slug==='manse'))return <>
+  if(isSaju&&birth&&category.slug==='saju')return <><NewYearExperience input={birth.input} today={today}/><ShareActions slug="saju"/></>;
+  if(isSaju&&birth&&category.slug==='manse')return <>
     <AdvancedExperience input={birth.input} category={category.slug} today={today}/>
     <details className="disclosure"><summary>기존 표준시 간단 사주표 참고</summary><div className="disclosure-body"><p>이 표는 기존 한국 표준시 호환 계산이에요. 위에서 태양시를 선택했다면 위 상세 결과의 원국과 해석을 함께 읽어 주세요.</p><CalculationDetails result={birth.calculation}/></div></details>
     <div className="action-row no-print"><Link prefetch={false} className="button" href={`/fortune/${category.slug}/`}>입력 수정</Link><button className="button quiet" onClick={()=>{clear();router.push(`/fortune/${category.slug}/`);}}>다른 사람 보기</button></div><ShareActions slug={category.slug}/>
 
-    <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">상세 콘텐츠 2.0.0 · 전통 해석 후보와 생활 제안이에요. 새로고침하면 입력·도시·결과가 사라져요.</p>
+    <button className="clear-link no-print" onClick={()=>{clear();router.push('/');}}>입력 지우기</button><p className="editorial-note">상세 콘텐츠 2.3.0 · 전통 해석 후보와 생활 제안이에요. 새로고침하면 입력·도시·결과가 사라져요.</p>
   </>;
   let reading:InterpretationResult,period:TargetPeriod|undefined;
   let topic:ReturnType<typeof topicBasis>|undefined;
@@ -68,7 +73,7 @@ export function FortuneResult({category}:{category:Category}){
   }
   const nickname=isSaju?birth?.input.nickname:'';
   const lightName=category.system==='zodiac'?zodiacNames[Number(sign)]:category.system==='constellation'?constellationNames[Number(sign)]:`${sign}형`;
-  const editorial=!isSaju&&category.system!=='bloodType'?editorialForDate(today,`${category.system}:${sign}`):null;
+  const editorial=!isSaju?editorialForDate(today,`${category.system}:${sign}`):null;
   const limitations=[...(isSaju?(topic?.chart.limitations??birth!.calculation.limitations):[]),...new Set(reading.limitations)];
   const hasDayMaster=birth?.calculation.dayMaster!=null;
   const visibleSections=isPeriod&&hasDayMaster?Array.from({length:Math.max(...reading.sections.map(s=>s.paragraphs.length))},(_,i)=>({
@@ -77,7 +82,7 @@ export function FortuneResult({category}:{category:Category}){
   })):reading.sections;
   return <>
     {topic&&<NatalChart chart={topic.chart}/>}
-    <div className="result-hero"><p className="eyebrow">{isSaju?nickname?`${nickname} 님의 ${category.name}`:`나의 ${category.name}`:`${lightName} · 가벼운 이야기`}</p><span className="result-period">{period?.label??(!isSaju&&category.system!=='bloodType'?`${today.replaceAll('-','. ')} · 한국시간`:'타고난 기질을 돌아보는 기본 풀이')}</span><h2>{reading.headline}</h2><div className="keywords">{reading.keywords.map((k,i)=><span key={i}>{k}</span>)}</div></div>
+    <div className="result-hero"><p className="eyebrow">{isSaju?nickname?`${nickname} 님의 ${category.name}`:`나의 ${category.name}`:`${lightName} · 가벼운 이야기`}</p><span className="result-period">{period?.label??(!isSaju?`${today.replaceAll('-','. ')} · 한국시간`:'타고난 기질을 돌아보는 기본 풀이')}</span><h2>{reading.headline}</h2><div className="keywords">{reading.keywords.map((k,i)=><span key={i}>{k}</span>)}</div></div>
     {period&&<aside className="period-range-note" aria-label="풀이가 적용되는 구간">{period.segments.map((segment,i)=><p key={segment.start}><strong>{period.segments.length===1?'대상 구간':i===0?'앞 구간':'뒤 구간'}</strong> · {segmentDateRange(segment)}</p>)}{period.segments.length>1&&<p className="helper">경계 날짜에는 절입 시각에 구간이 바뀌어요. 정확한 시각은 아래 기간 상세에서 볼 수 있어요.</p>}</aside>}
     {limitations.length>0&&<aside className="result-limitation" aria-label="입력과 풀이의 한계">{limitations.map((text,i)=><p key={i}>{text}</p>)}</aside>}
     <div className="result-content">{visibleSections.map(section=><section className="reading-section" key={section.id}><h3>{section.title}</h3>{section.paragraphs.map((p,i)=><p key={i}>{p}</p>)}</section>)}</div>

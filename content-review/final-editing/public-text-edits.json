@@ -1,0 +1,212 @@
+[
+  {
+    "id": "element-symbol-0",
+    "beforeHash": "3f83190eb887faa48dc1857665c0a59050ec67ba9851d817b0b72bbcdb3c06bd",
+    "afterHash": "60ba537fc744ae9bb71942adebaf6252d322e982ef953041a727a276ff263a76",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "element-symbol-1",
+    "beforeHash": "a5ba790d36e20c916ef555884b7bf622d67a88480d5dd497b8cd4fd65b368874",
+    "afterHash": "e01703e9e09c856e51d1bac62a4ae7a844504e7d839ab49ebc8fea382ef394ad",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "element-symbol-2",
+    "beforeHash": "4f461254d9d5885663d0de116380bcfaa72a3e5608dccc13e9dca5545273522b",
+    "afterHash": "86a990fa7cd87e5d8a368aa05e4d2bdb747a5f3d03bd099de850ef7511b0a380",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "element-symbol-3",
+    "beforeHash": "13904cdf2ce3130ac295d91dd6b456c8cc3bdec1727abb8f9440f2f8af99317b",
+    "afterHash": "27dd4ab8830fa683fd2656d9abecd85e3359f61c53ac8660aff802a037ecffe5",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "element-symbol-4",
+    "beforeHash": "24877337aef8212cea2c906c2ef2289e801bc9c7adab9061c13860114cfab3f2",
+    "afterHash": "bed466db3ab581a8d008d6bd68cdb1453d784c7dbb482ddd91beb03de07d3578",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-0",
+    "beforeHash": "0b46e9e8d3770763bb2f8dca7b9d3a9c6ec913513954981686dc9ce32e45b970",
+    "afterHash": "02b25f75c1fd9efc62fe71f75204f9d70506f88c482d164635383f80d822e417",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-1",
+    "beforeHash": "ad7cea3b1f48e7b6661496776a87e1f396a0c3fc9eb174c591fc6d99a74df6b3",
+    "afterHash": "0b0b51f10a10c00ae91f21a5ab483ffb4a009e0824227d0bc20d1fbd78200471",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-2",
+    "beforeHash": "51a87fc3e842a9a935a050af1aa28139049e20ced41d393e5b07c53235474a86",
+    "afterHash": "92267c3bd0a0039db58aaf60bde5d2759691984bbc1686523e0bf3aa68050236",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-3",
+    "beforeHash": "bf5eebf0e9afe35a165324e3bf6a8e29928023f7c30bdfe9df6863b5bb01904e",
+    "afterHash": "537d0e3d10515f384c4af424155a3275ee5f5c49c7f1653176b63ceb019ef347",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-4",
+    "beforeHash": "15025f296a78897f62ab39052a79acd4c8b2787dcc3785596c79ec30a5659b51",
+    "afterHash": "47960a2a41b17e0d24a896bf35005aea4d922866ea17950992a54c0886bfdfda",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-5",
+    "beforeHash": "c00de12411184ba2e9d3834735603d8e0ebafabcf103e8a43619fa7cbf57d10d",
+    "afterHash": "c2c1caad29d1972140a5a405a5f73da8484ab5025c5ef64545a7875a9e6d7305",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-6",
+    "beforeHash": "c3455984a7d8d996e8e326f6c8caf3ed61039b6f3233f54dc9626aae732b57ff",
+    "afterHash": "a9f04c9e45be0eb190021b9989ea685f0ba474bbd908d84a05d387f5a71c2a18",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-7",
+    "beforeHash": "c7472c95b9127a85cb89afc381dc7930d675e0c27299b336cc5ebb5f9d23cd6c",
+    "afterHash": "020e6c56bd726e301b62b60649ef2328c6b932fb429f91e6431f5a8df52f73f9",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-8",
+    "beforeHash": "4e7ca924f1bd04845f9d2ee9b3b69f25fc4dab7c18d30776a119e0d9d6eeb6d5",
+    "afterHash": "38ad4c610356b4cc3033c0abff470af61af1caeb4dc1de1fa15a6e8611d0f031",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "stem-9",
+    "beforeHash": "756f4cb3ca65607c85f62d534d8752898b3536a84824113c7ff2c27db6e48a09",
+    "afterHash": "59b1d7b7bf89b9834e1587aace2589ff6d797a132cc25119e818292ab953da0f",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-0",
+    "beforeHash": "e43257eae725f83a55d03004234f4d5bd07e2f3c0368724d5189b04e45fcd4cf",
+    "afterHash": "d3a56dce85a795efdf546c7627d6856b28bce1a82b3bbf79389bfd5a68fa6ebf",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-1",
+    "beforeHash": "4ca2a6354cd0aaea5068033a1732f0493cef7940a090592557051c9a35b249ba",
+    "afterHash": "07692e66172cab25fd2971f05c0dcb31c8540629dc63f39cf7a26b065fcf9451",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-2",
+    "beforeHash": "f16d4b435730ac0893a30e04d73aefac8ed2c77041ccca981b0d5d8e0ef5c17e",
+    "afterHash": "efd4a0cf9f5e69efcf5fe925092589f43568bde04c958f79b3c27e1a178df5ca",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-3",
+    "beforeHash": "b6012b8c6f6adb726d2bbd39ed6f947d2911b0cfd2e33343c1f30e026f9720b2",
+    "afterHash": "5f6615177f246ec5a734e9d99a0c2ebbe831e6c407527fd694a9dbc10822b504",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-4",
+    "beforeHash": "bc85fbeaa4b63d262b807dc14f2cefec54b70968d6a14c984045c98a610e40a5",
+    "afterHash": "d69a67439ca5fba19d3e9c1e1094a3934d6d184b810afe3ecee7eed835d13756",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-5",
+    "beforeHash": "616af15588f324f41af591c36e35cc8435e77a687cd05328651596aa95d5d82d",
+    "afterHash": "00bfd47132cf4d7710bed5fd2ff5817c9fe299bc5f9eb3142a42ec0de1abfbb6",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-6",
+    "beforeHash": "9237009d00a173ef34260e681811bddef92032f8bc7de8f967dfd7da9fbbd5ca",
+    "afterHash": "59d2f1f1bf725073d687b2c374b6b1e71a160040e289ce96f774f5826ee7f453",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-7",
+    "beforeHash": "1b0bc0bd87abc16a0d0b45f3cee4b6f52d611daf683267b7c15597b4e97abdcf",
+    "afterHash": "fc8c8ce9e56a36481d5c65d37e1b4aacba16b9c0748fa5bcf5df728d8ba2f05f",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-8",
+    "beforeHash": "d92f6bede55866588c4f2b73d9c672bbb5e26f6482ecdfb0afec4de5c4159f37",
+    "afterHash": "d2d934478b90a099a8b392537eac04857661dc24e5333332551ccc860e0ed7df",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "god-9",
+    "beforeHash": "e1c69b582719aa2e0b0bb326ca1735149ee5d8a22de56b279fa2f4591e35fc3e",
+    "afterHash": "1e0bd32ede58e46426b938d2a6653fc7be22ffdfc50a272ea28b0c3ad3dfe97c",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "group-peer",
+    "beforeHash": "061032bf2ac5bb51880ddddae4333c652bc530b892daf9fe9987a839606ce57f",
+    "afterHash": "4954e83fbac051bcd0b338f64edd3c4b674c9343acaa3863f5d57f753c718b81",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "group-output",
+    "beforeHash": "6ee7aad59eb02b35cfcb5d009953ef276587eead19b36e496245522b694265ef",
+    "afterHash": "60dee2c464922fa93281bd9eede9ccc74fef1233b7af5f5541048c8badc0adf1",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "group-wealth",
+    "beforeHash": "7e51c5953c9a771d1ac99d0cb801902d5fa60ccdccf0c1291abbbf07bf936200",
+    "afterHash": "a3126444346da1309b90e552a7de89eb8d893d68138d3f5d26588a7c1b7a1cd1",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "group-order",
+    "beforeHash": "5431d31d832f627a37671a2ccea539f4e87f98bf7431ca3e303c326dffb440b5",
+    "afterHash": "d92e22c521ea6c24c8ecf8bc82846464fdad9bd6b7994b099885453f219f8601",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  },
+  {
+    "id": "group-resource",
+    "beforeHash": "ac3a0ffdd9ab883b0c6eca834c2fc5af6096a9fdffca439548d55eb531efc5c1",
+    "afterHash": "e71c20bc1a705627572ee65d6214a59fe07eb2207d65fb225b7e7feed5938187",
+    "status": "implemented-pending-independent-review",
+    "reason": "오행·천간의 사실 관계를 보존하고 본문 설명의 말투·버전을 정리"
+  }
+]

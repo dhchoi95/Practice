@@ -14,4 +14,4 @@ export const cities=[
  {id:'gangneung',name:'강릉',latitude:37.75,longitude:128.88},
  {id:'jeonju',name:'전주',latitude:35.82,longitude:127.15},
 ] as const;
-export const citySource={id:'editorial-city-centres-1.0',precisionDegrees:0.01,status:'pending-independent-geographic-check',scope:'국내 도시 중심의 편집 좌표. 실제 출생지 좌표와 다를 수 있어요.',sourceURL:null};
+export const citySource={id:'editorial-city-centres-1.0',precisionDegrees:0.01,status:'pending-independent-geographic-check',scope:"국내 도시 중심의 편집 좌표. 실제 출생지 좌표와 다를 수 있습니다.",sourceURL:null};

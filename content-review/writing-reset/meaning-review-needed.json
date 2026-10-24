@@ -1,0 +1,140 @@
+{
+  "implementedNewRules": 0,
+  "syntheticProseIsNotEvidence": true,
+  "items": [
+    {
+      "domain": "overall",
+      "question": "더 준비할 때와 이미 준비한 것을 보여줄 때를 얼마나 구분할 수 있는가",
+      "existing": [
+        "overall:resource",
+        "overall:learn-express",
+        "overall:detail-01",
+        "overall:detail-05"
+      ],
+      "evidence": "현재 준비·실행 전환이라는 가까운 뜻이 여러 조건에 걸쳐 선택됨. 단어만 달리해 별개 사건으로 셀 수 없음.",
+      "status": "meaning-review-needed",
+      "proposedRule": null,
+      "reason": "원국 정보만으로 실제 준비 정도나 새 기회의 발생을 알 수 없으므로 새로운 길흉 조건을 만들지 않음."
+    },
+    {
+      "domain": "study",
+      "question": "읽기·기억·설명의 차이를 독립된 상황으로 더 다룰 근거가 있는가",
+      "existing": [
+        "study:output",
+        "study:learn-express",
+        "study:detail-01",
+        "study:detail-03"
+      ],
+      "candidateRequires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "정인"
+          },
+          {
+            "path": "group.output",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "natal.visible.식신",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "candidateExclusions": [
+        "현재 학습 수준·시험 응시·합격을 추정하는 문장 제외"
+      ],
+      "candidateConflictGroup": "study:explain-recall-expansion",
+      "candidateDuplicateGroup": "study:learn-express-refinement",
+      "status": "not-added-duplicates-existing-meaning",
+      "reason": "조건을 더 붙여도 기존 설명·복습 원고와 다른 해석임을 아직 입증하지 못함. 전문 검토 전 새 의미로 추가하지 않음."
+    },
+    {
+      "domain": "money",
+      "question": "가격·정산 시점·분배에 관한 상황을 어디까지 나눌 수 있는가",
+      "existing": [
+        "money:detail-03",
+        "money:detail-06",
+        "money:detail-07",
+        "money:detail-09"
+      ],
+      "status": "meaning-review-needed",
+      "proposedRule": null,
+      "reason": "이미 실제 남는 금액·선결제·포함 범위·입출금 시점을 구분. 들어올 돈의 발생이나 손실을 새로 예측할 근거는 없음."
+    },
+    {
+      "domain": "health",
+      "question": "쉬는 간격과 활동 범위를 넘어서는 새 상황이 필요한가",
+      "existing": [
+        "health:month-clash",
+        "health:detail-01",
+        "health:detail-02",
+        "health:detail-08"
+      ],
+      "status": "no-new-medical-rule",
+      "proposedRule": null,
+      "reason": "실제 몸 상태·질병을 모르므로 활동·휴식·생활 리듬의 편집 범위를 유지. 새로운 질환·진단 데이터로 확대하지 않음."
+    },
+    {
+      "domain": "love",
+      "question": "약속의 원만함과 표현의 차이를 함께 설명할 수 있는가",
+      "existing": [
+        "love:agreement",
+        "love:detail-02",
+        "love:detail-09"
+      ],
+      "candidateRequires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "정관"
+          },
+          {
+            "path": "link.targetDay.harmony",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "natal.visible.상관",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "candidateExclusions": [
+        "실제 상대의 존재·속마음·혼인·갈등 발생을 단정하는 문장 제외"
+      ],
+      "candidateConflictGroup": "love:agreement-expression-expansion",
+      "candidateDuplicateGroup": "love:agreement-refinement",
+      "status": "not-added-needs-source-and-distinctness-review",
+      "reason": "유효한 계산 사실의 후보 조합이지만 그것만으로 화해·만남의 성사를 새로 해석하지 않음. 원고 의미가 기존 합의·표현 원고와 다른지 별도 검토 필요."
+    },
+    {
+      "domain": "business",
+      "question": "협력·제안·실행과 권한의 차이를 새로운 사건으로 나눌 수 있는가",
+      "existing": [
+        "business:share-resource",
+        "business:detail-01",
+        "business:detail-08",
+        "business:detail-12"
+      ],
+      "status": "meaning-review-needed",
+      "proposedRule": null,
+      "reason": "현재 승인 권한·직장·진행 상태가 없으므로 승진·채용·일감 발생을 추가하지 않음. 역할·제안의 다른 상황은 실제 근거 검토 후 확장."
+    }
+  ]
+}

@@ -23,7 +23,7 @@ for filename in filenames:
         if filename in ['result-closed.pdf','result-open.pdf','editorial-general.pdf']:
             required += ['계산표준시:1992-05-1510:30','8글자기준','실제기운의강약이나용신을뜻하지않아요','대운개시계산','원국과지장간·십신']
         if filename=='grammar-copula.pdf':required += ['계산된일간은병화예요','표준시2000-01-0910:30','적용시각2000-01-0910:30','왜이런풀이인가요']
-        if filename=='editorial-love.pdf':required += ['지금만나는사람이없다면','내게는당연해도상대는모를수있어요','왜이런풀이인가요']
+        if filename=='editorial-love.pdf':required += ['지금만나는사람이없다면','내게는당연해도상대는모를수있습니다','왜이런풀이인가요']
         if filename.startswith('period-') or filename in ['year-boundary.pdf','grammar-year-trace.pdf']:
             required += ['총운','학업운','재물운','건강운','연애운','사업운','시기별운세와풀이이유']
             if filename.endswith('-unknown.pdf'):required += ['일간이미확정','산출보류'];forbidden += ['일간·나']

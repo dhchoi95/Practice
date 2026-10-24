@@ -1,0 +1,2515 @@
+[
+  {
+    "file": "src/content/advanced/cities.ts",
+    "before": "국내 도시 중심의 편집 좌표. 실제 출생지 좌표와 다를 수 있어요.",
+    "after": "국내 도시 중심의 편집 좌표. 실제 출생지 좌표와 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "정해둔 일정이 바뀌면 그대로 지킬 부분부터 골라봐요. 전체 계획을 다시 만들기 전에 바뀐 약속이 다른 일에 미치는 범위를 살필 수 있어요.",
+    "after": "정해둔 일정이 바뀌면 그대로 지킬 부분부터 골라보십시오. 전체 계획을 다시 만들기 전에 바뀐 약속이 다른 일에 미치는 범위를 살필 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "익숙한 절차를 따라 배우는 게 편하다면 실제 예제를 처음부터 끝까지 해봐요. 순서를 이해한 뒤에는 생략해도 되는 단계가 있는지 시험해 볼 수 있어요.",
+    "after": "익숙한 절차를 따라 배우는 게 편하다면 실제 예제를 처음부터 끝까지 해보십시오. 순서를 이해한 뒤에는 생략해도 되는 단계가 있는지 시험해 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "기억하는 사실이 서로 다를 때는 누가 더 정확한 사람인지 겨루기보다 확인할 수 있는 기록을 함께 봐요. 그 뒤에 각자가 불편했던 이유를 들을 수 있어요.",
+    "after": "기억하는 사실이 서로 다를 때는 누가 더 정확한 사람인지 겨루기보다 확인할 수 있는 기록을 함께 보십시오. 그 뒤에 각자가 불편했던 이유를 들을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "꾸준히 내는 비용을 정리하는 방식이 맞는다면 계약 기간과 사용 빈도를 함께 적어봐요. 계획에 없는 즐거운 소비도 예산 안에서 고를 수 있어요.",
+    "after": "꾸준히 내는 비용을 정리하는 방식이 맞는다면 계약 기간과 사용 빈도를 함께 적어보십시오. 계획에 없는 즐거운 소비도 예산 안에서 고를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "할 일을 마쳐야 쉬기 편하다면 오늘 끝낼 범위를 먼저 정해봐요. 내일로 넘겨도 되는 일까지 마치느라 잠을 미룰 필요는 없어요.",
+    "after": "할 일을 마쳐야 쉬기 편하다면 오늘 끝낼 범위를 먼저 정해보십시오. 내일로 넘겨도 되는 일까지 마치느라 잠을 미룰 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "누가 무엇을 맡았는지 기록하면 편하다면 그 방식을 제안해 봐요. 기록에 없는 부탁이 생겼을 때도 담당자를 함께 정할 수 있어요.",
+    "after": "누가 무엇을 맡았는지 기록하면 편하다면 그 방식을 제안해 보십시오. 기록에 없는 부탁이 생겼을 때도 담당자를 함께 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "약속 변경으로 다른 사람이 불편할까 걱정된다면 내가 가능한 시간도 함께 말해봐요. 모두에게 맞추기 위해 내 일정을 전부 비워둘 필요는 없어요.",
+    "after": "약속 변경으로 다른 사람이 불편할까 걱정된다면 내가 가능한 시간도 함께 말해보십시오. 모두에게 맞추기 위해 내 일정을 전부 비워둘 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새 일을 배울 때 실제로 도움이 된 사례를 곁에 두어봐요. 배운 내용을 다른 사람을 도울 때만 쓰지 않고 내 일을 편하게 하는 데도 사용할 수 있어요.",
+    "after": "새 일을 배울 때 실제로 도움이 된 사례를 곁에 두어보십시오. 배운 내용을 다른 사람을 도울 때만 쓰지 않고 내 일을 편하게 하는 데도 사용할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "서운함을 바로 말하기 어렵다면 어떤 행동이 부담이었는지 먼저 정리해 봐요. 상대를 배려하는 마음과 내 불편을 말하는 일은 함께 할 수 있어요.",
+    "after": "서운함을 바로 말하기 어렵다면 어떤 행동이 부담이었는지 먼저 정리해 보십시오. 상대를 배려하는 마음과 내 불편을 말하는 일은 함께할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "가까운 사람을 위해 결제하기 전에 내가 감당할 금액을 정해봐요. 마음을 전하는 방법이 꼭 선물이나 비용일 필요는 없어요.",
+    "after": "가까운 사람을 위해 결제하기 전에 내가 감당할 금액을 정해보십시오. 마음을 전하는 방법이 꼭 선물이나 비용일 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "다른 사람의 부탁이 계속 떠오르면 언제 다시 답할지 정해놓고 쉬어봐요. 지금 쉬는 시간이 있어야 다음 부탁을 받을지 스스로 고를 수 있어요.",
+    "after": "다른 사람의 부탁이 계속 떠오르면 언제 다시 답할지 정해놓고 쉬어보십시오. 지금 쉬는 시간이 있어야 다음 부탁을 받을지 스스로 고를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "늘 챙기던 일을 다른 사람에게 나눌 때는 필요한 정보를 같이 전해봐요. 한 번 맡았다는 이유로 계속 같은 역할을 해야 하는 것은 아니에요.",
+    "after": "늘 챙기던 일을 다른 사람에게 나눌 때는 필요한 정보를 같이 전해보십시오. 한 번 맡았다는 이유로 계속 같은 역할을 해야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "기대했던 일정의 의미가 컸다면 꼭 남기고 싶은 부분을 말해봐요. 날짜나 방법이 바뀌어도 지킬 수 있는 목적이 무엇인지 상대와 찾아볼 수 있어요.",
+    "after": "기대했던 일정의 의미가 컸다면 꼭 남기고 싶은 부분을 말해보십시오. 날짜나 방법이 바뀌어도 지킬 수 있는 목적이 무엇인지 상대와 찾아볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새로운 내용을 전체 흐름으로 이해하는 게 편하다면 먼저 질문을 적어봐요. 큰 의미를 찾은 뒤에는 설명을 뒷받침하는 실제 사례도 살펴볼 수 있어요.",
+    "after": "새로운 내용을 전체 흐름으로 이해하는 게 편하다면 먼저 질문을 적어보십시오. 큰 의미를 찾은 뒤에는 설명을 뒷받침하는 실제 사례도 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "상대 마음을 여러 방향으로 해석하게 된다면 확인할 수 있는 말을 골라 물어봐요. 내가 짐작한 이유와 상대가 직접 말한 이유를 구별할 수 있어요.",
+    "after": "상대 마음을 여러 방향으로 해석하게 된다면 확인할 수 있는 말을 골라 물어보십시오. 내가 짐작한 이유와 상대가 직접 말한 이유를 구별할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "가치 있다고 느끼는 일에 돈을 쓸 때도 실제 제공 내용을 읽어봐요. 좋은 취지에 공감하는 마음과 지금 내 예산에서 가능한 선택은 따로 살필 수 있어요.",
+    "after": "가치 있다고 느끼는 일에 돈을 쓸 때도 실제 제공 내용을 읽어보십시오. 좋은 취지에 공감하는 마음과 지금 내 예산에서 가능한 선택은 따로 살필 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "생각을 정리하는 휴식이 필요하다면 대화와 소식을 잠시 줄여봐요. 쉬는 동안에도 의미 있는 결론을 꼭 내야 하는 것은 아니에요.",
+    "after": "생각을 정리하는 휴식이 필요하다면 대화와 소식을 잠시 줄여보십시오. 쉬는 동안에도 의미 있는 결론을 꼭 내야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "공동 작업의 목적이 중요하게 느껴진다면 왜 이 일을 하는지 먼저 이야기해 봐요. 목적에 동의하더라도 세부 방법은 서로 다를 수 있어요.",
+    "after": "공동 작업의 목적이 중요하게 느껴진다면 왜 이 일을 하는지 먼저 이야기해 보십시오. 목적에 동의하더라도 세부 방법은 서로 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "더 나은 계획이 떠오르면 이미 공유한 일정에 어떤 영향이 있는지도 살펴봐요. 혼자 바꾸기보다 변경 이유와 대안을 함께 전하면 조정하기 쉬워요.",
+    "after": "더 나은 계획이 떠오르면 이미 공유한 일정에 어떤 영향이 있는지도 살펴보십시오. 혼자 바꾸기보다 변경 이유와 대안을 함께 전하면 조정하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "원리를 먼저 알고 싶다면 배우는 내용이 어떤 문제를 해결하는지 찾아봐요. 이해한 방법이 실제로 통하는지는 작은 사례에서 따로 확인할 수 있어요.",
+    "after": "원리를 먼저 알고 싶다면 배우는 내용이 어떤 문제를 해결하는지 찾아보십시오. 이해한 방법이 실제로 통하는지는 작은 사례에서 따로 확인할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "해결책이 바로 보이더라도 상대가 지금 원하는 게 제안인지 들어주는 일인지 물어봐요. 효율적인 답과 대화에서 필요한 답은 다를 수 있어요.",
+    "after": "해결책이 바로 보이더라도 상대가 지금 원하는 게 제안인지 들어주는 일인지 물어보십시오. 효율적인 답과 대화에서 필요한 답은 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "오래 쓸 물건이라면 예상 수명뿐 아니라 관리와 수리 비용도 살펴봐요. 미래의 쓰임을 생각하되 아직 생기지 않은 필요까지 모두 구매로 해결하지는 않아도 돼요.",
+    "after": "오래 쓸 물건이라면 예상 수명뿐 아니라 관리와 수리 비용도 살펴보십시오. 미래의 쓰임을 생각하되 아직 생기지 않은 필요까지 모두 구매로 해결하지는 않아도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "쉬는 시간에도 개선할 점을 찾게 된다면 기록만 남기고 나중에 다뤄봐요. 휴식의 효율까지 평가하지 않는 시간이 맞을 수도 있어요.",
+    "after": "쉬는 시간에도 개선할 점을 찾게 된다면 기록만 남기고 나중에 다루어 보십시오. 휴식의 효율까지 평가하지 않는 시간이 맞을 수도 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "작업의 전체 방향을 설계하는 것이 편하다면 다른 사람이 바꿀 수 있는 부분도 밝혀봐요. 계획이 명확해도 현장에서 생기는 정보는 새로 반영할 수 있어요.",
+    "after": "작업의 전체 방향을 설계하는 것이 편하다면 다른 사람이 바꿀 수 있는 부분도 밝혀보십시오. 계획이 명확해도 현장에서 생기는 정보는 새로 반영할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "갑자기 일정이 비면 지금 할 수 있는 선택부터 살펴봐요. 즉시 대응하는 방식이 편하더라도 함께 약속한 사람에게 변경을 알려줄 수 있어요.",
+    "after": "갑자기 일정이 비면 지금 할 수 있는 선택부터 살펴보십시오. 즉시 대응하는 방식이 편하더라도 함께 약속한 사람에게 변경을 알려줄 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "직접 만지며 배우는 것이 편하다면 안전하게 시험할 수 있는 환경을 골라봐요. 해본 결과를 짧게 남기면 다음에도 같은 문제를 해결하기 쉬워요.",
+    "after": "직접 만지며 배우는 것이 편하다면 안전하게 시험할 수 있는 환경을 골라보십시오. 해본 결과를 짧게 남기면 다음에도 같은 문제를 해결하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "문제를 바로 고쳐주고 싶어도 상대가 원하는 도움이 무엇인지 물어봐요. 고치는 방법을 아는 것과 대신 결정하는 권한은 다른 일이에요.",
+    "after": "문제를 바로 고쳐주고 싶어도 상대가 원하는 도움이 무엇인지 물어보십시오. 고치는 방법을 아는 것과 대신 결정하는 권한은 다른 일입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "도구를 고를 때 실제 사용 장소와 필요한 기능을 떠올려봐요. 성능 비교가 재미있어도 쓰지 않을 기능 때문에 지출을 늘릴 필요는 없어요.",
+    "after": "도구를 고를 때 실제 사용 장소와 필요한 기능을 떠올려보십시오. 성능 비교가 재미있어도 쓰지 않을 기능 때문에 지출을 늘릴 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "혼자 무언가 해보는 시간이 휴식이라면 결과를 공개할 의무 없이 즐겨봐요. 잘 못해도 되고 도중에 다른 일로 바꿔도 돼요.",
+    "after": "혼자 무언가 해보는 시간이 휴식이라면 결과를 공개할 의무 없이 즐겨보십시오. 잘 못해도 되고 도중에 다른 일로 바꿔도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "필요할 때 유연하게 돕는 방식이 편하다면 사람들이 언제 연락하면 되는지 알려줘요. 역할을 고정하지 않아도 기본 연락 방법은 정할 수 있어요.",
+    "after": "필요할 때 유연하게 돕는 방식이 편하다면 사람들이 언제 연락하면 되는지 알려주십시오. 역할을 고정하지 않아도 기본 연락 방법은 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "그날 마음에 맞게 고르고 싶다면 꼭 지켜야 하는 약속만 먼저 남겨봐요. 나머지는 열어두되 함께하는 사람에게 가능한 범위를 알려줄 수 있어요.",
+    "after": "그날 마음에 맞게 고르고 싶다면 꼭 지켜야 하는 약속만 먼저 남겨보십시오. 나머지는 열어두되 함께하는 사람에게 가능한 범위를 알려줄 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "내가 좋아하는 예제로 배우면 집중하기 쉽다면 작은 작품이나 사례를 골라봐요. 취향에 맞는 출발점이 있어도 다른 방식의 장점을 살펴볼 수 있어요.",
+    "after": "내가 좋아하는 예제로 배우면 집중하기 쉽다면 작은 작품이나 사례를 골라보십시오. 취향에 맞는 출발점이 있어도 다른 방식의 장점을 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "말로 설명하기 어려운 불편이 있다면 실제 장면부터 이야기해 봐요. 표현이 서툴러도 내가 원하지 않는 것을 말할 수 있어요.",
+    "after": "말로 설명하기 어려운 불편이 있다면 실제 장면부터 이야기해 보십시오. 표현이 서툴러도 내가 원하지 않는 것을 말할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "마음에 드는 물건을 발견했다면 놓을 곳과 사용할 때를 생각해 봐요. 취향을 존중하면서도 생활에 필요한 예산은 따로 남겨둘 수 있어요.",
+    "after": "마음에 드는 물건을 발견했다면 놓을 곳과 사용할 때를 생각해 보십시오. 취향을 존중하면서도 생활에 필요한 예산은 따로 남겨둘 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "편한 감각을 찾는 휴식이 맞는다면 조명이나 소리를 조금 바꿔봐요. 휴식을 위해 새 물건을 꼭 사야 하는 것은 아니에요.",
+    "after": "편한 감각을 찾는 휴식이 맞는다면 조명이나 소리를 조금 바꿔보십시오. 휴식을 위해 새 물건을 꼭 사야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "각자의 표현을 살리는 작업이 좋다면 꼭 맞춰야 하는 부분만 합의해 봐요. 나머지를 다르게 하는 것이 작업의 목적에도 맞는지 함께 볼 수 있어요.",
+    "after": "각자의 표현을 살리는 작업이 좋다면 꼭 맞춰야 하는 부분만 합의해 보십시오. 나머지를 다르게 하는 것이 작업의 목적에도 맞는지 함께 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "내가 바라던 모습과 일정이 달라졌다면 가장 아쉬운 부분을 먼저 찾아봐요. 모든 것을 포기하거나 처음 계획을 전부 지키는 선택만 있는 것은 아니에요.",
+    "after": "내가 바라던 모습과 일정이 달라졌다면 가장 아쉬운 부분을 먼저 찾아보십시오. 모든 것을 포기하거나 처음 계획을 전부 지키는 선택만 있는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "배움의 이유에 공감해야 시작하기 쉽다면 지금 궁금한 질문과 연결해 봐요. 관심이 생긴 뒤에도 실제 자료가 말하는 범위를 따로 살펴볼 수 있어요.",
+    "after": "배움의 이유에 공감해야 시작하기 쉽다면 지금 궁금한 질문과 연결해 보십시오. 관심이 생긴 뒤에도 실제 자료가 말하는 범위를 따로 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "마음이 상했을 때 상대가 내 가치를 전부 부정했다고 느껴진다면 실제로 한 말을 나누어 봐요. 내게 중요한 점을 설명하되 상대의 뜻도 직접 들을 수 있어요.",
+    "after": "마음이 상했을 때 상대가 내 가치를 전부 부정했다고 느껴진다면 실제로 한 말을 나누어 보십시오. 내게 중요한 점을 설명하되 상대의 뜻도 직접 들을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "취지에 공감해 후원하거나 구매한다면 실제 사용처와 지속할 금액을 살펴봐요. 마음을 전하는 크기를 지출의 크기로 증명할 필요는 없어요.",
+    "after": "취지에 공감해 후원하거나 구매한다면 실제 사용처와 지속할 금액을 살펴보십시오. 마음을 전하는 크기를 지출의 크기로 증명할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "하고 싶은 것을 찾는 시간이 휴식이라면 당장 완성할 계획으로 만들지 않아도 돼요. 읽다가 멈추거나 생각만 해보는 시간도 고를 수 있어요.",
+    "after": "하고 싶은 것을 찾는 시간이 휴식이라면 당장 완성할 계획으로 만들지 않아도 됩니다. 읽다가 멈추거나 생각만 해보는 시간도 고를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "작업에 담고 싶은 의미가 있다면 다른 사람이 이해할 수 있는 사례로 전해봐요. 좋은 의도만으로 역할과 일정까지 정해지는 것은 아니니 그 부분은 함께 맞춰요.",
+    "after": "작업에 담고 싶은 의미가 있다면 다른 사람이 이해할 수 있는 사례로 전해보십시오. 좋은 의도만으로 역할과 일정까지 정해지는 것은 아니니 그 부분은 함께 맞춥니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "계획을 계속 개선하다 결정이 늦어진다면 지금 정해야 하는 부분만 골라봐요. 나중에 바꿀 수 있는 선택까지 한 번에 해결할 필요는 없어요.",
+    "after": "계획을 계속 개선하다 결정이 늦어진다면 지금 정해야 하는 부분만 골라보십시오. 나중에 바꿀 수 있는 선택까지 한 번에 해결할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새 개념을 비교하는 게 즐겁다면 무엇이 같고 다른지 내 말로 적어봐요. 설명이 흥미로운 것과 증거가 충분한 것은 구별할 수 있어요.",
+    "after": "새 개념을 비교하는 게 즐겁다면 무엇이 같고 다른지 내 말로 적어보십시오. 설명이 흥미로운 것과 증거가 충분한 것은 구별할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "논리의 빈틈이 보여도 대화의 목적부터 확인해 봐요. 상대가 감정을 설명하는 중이라면 반례보다 어떤 점이 어려웠는지 듣는 것이 필요한 때도 있어요.",
+    "after": "논리의 빈틈이 보여도 대화의 목적부터 확인해 보십시오. 상대가 감정을 설명하는 중이라면 반례보다 어떤 점이 어려웠는지 듣는 것이 필요한 때도 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "비교할 제품이 많아 선택이 어려우면 꼭 필요한 기능을 먼저 정해봐요. 정보를 더 모으면 바뀔 결정인지, 이미 충분히 알았는지도 살펴볼 수 있어요.",
+    "after": "비교할 제품이 많아 선택이 어려우면 꼭 필요한 기능을 먼저 정해보십시오. 정보를 더 모으면 바뀔 결정인지, 이미 충분히 알았는지도 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "관심 있는 문제를 생각하는 시간이 편하다면 일의 해결과 취미 탐색을 나누어봐요. 쉬는 시간의 질문에는 마감이 없어도 돼요.",
+    "after": "관심 있는 문제를 생각하는 시간이 편하다면 일의 해결과 취미 탐색을 나누어 보십시오. 쉬는 시간의 질문에는 마감이 없어도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "자유롭게 방법을 찾고 싶다면 다른 사람이 기다리는 결과의 형태는 먼저 맞춰봐요. 과정은 열어두면서도 서로 이어갈 지점은 정할 수 있어요.",
+    "after": "자유롭게 방법을 찾고 싶다면 다른 사람이 기다리는 결과의 형태는 먼저 맞춰보십시오. 과정은 열어두면서도 서로 이어갈 지점은 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "즉석에서 대안을 찾는 방식이 편하다면 함께하는 사람의 이동 시간도 살펴봐요. 바로 가능한 선택이라도 상대에게는 준비가 필요할 수 있어요.",
+    "after": "즉석에서 대안을 찾는 방식이 편하다면 함께하는 사람의 이동 시간도 살펴보십시오. 바로 가능한 선택이라도 상대에게는 준비가 필요할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "직접 해보며 배우고 싶다면 실패해도 부담이 작은 범위부터 시작해 봐요. 경험한 결과와 우연히 잘된 부분을 구별해 두면 다음 판단에 도움이 돼요.",
+    "after": "직접 해보며 배우고 싶다면 실패해도 부담이 작은 범위부터 시작해 보십시오. 경험한 결과와 우연히 잘된 부분을 구별해 두면 다음 판단에 도움이 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "바로 말하는 방식이 편하다면 상대가 답할 시간을 남겨봐요. 빠르게 결론을 내는 것과 서로 동의한 결론에 도착하는 것은 다를 수 있어요.",
+    "after": "바로 말하는 방식이 편하다면 상대가 답할 시간을 남겨보십시오. 빠르게 결론을 내는 것과 서로 동의한 결론에 도착하는 것은 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "즉시 쓸 물건을 고를 때는 결제 전에 교환과 환불 조건도 읽어봐요. 지금의 필요를 충족하는 선택이라도 지출의 한도는 정할 수 있어요.",
+    "after": "즉시 쓸 물건을 고를 때는 결제 전에 교환과 환불 조건도 읽어보십시오. 지금의 필요를 충족하는 선택이라도 지출의 한도는 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "몸을 움직이는 휴식이 맞는다면 지금의 피로와 주변 환경에 맞게 골라봐요. 휴식까지 기록이나 순위로 경쟁할 필요는 없어요.",
+    "after": "몸을 움직이는 휴식이 맞는다면 지금의 피로와 주변 환경에 맞게 골라보십시오. 휴식까지 기록이나 순위로 경쟁할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "급한 문제를 처리하는 역할이 편하다면 처리한 내용을 다음 사람에게 알려줘요. 현장에서 빠르게 정한 결정도 함께 알아야 이어가기 쉬워요.",
+    "after": "급한 문제를 처리하는 역할이 편하다면 처리한 내용을 다음 사람에게 알려주십시오. 현장에서 빠르게 정한 결정도 함께 알아야 이어가기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "함께 즐길 대안을 찾고 싶다면 참석하는 사람에게 원하는 방식도 물어봐요. 즐거워 보이는 일정이 모두에게 같은 부담인 것은 아니에요.",
+    "after": "함께 즐길 대안을 찾고 싶다면 참석하는 사람에게 원하는 방식도 물어보십시오. 즐거워 보이는 일정이 모두에게 같은 부담인 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "다른 사람과 해보며 배우는 게 맞는다면 서로 익힌 부분을 보여주는 시간을 가져봐요. 비교하는 자리가 아니라 질문할 수 있는 기회로 쓸 수 있어요.",
+    "after": "다른 사람과 해보며 배우는 게 맞는다면 서로 익힌 부분을 보여주는 시간을 가져보십시오. 비교하는 자리가 아니라 질문할 수 있는 기회로 쓸 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "분위기를 풀고 싶어 농담을 할 때 상대가 불편해하지 않는지도 살펴봐요. 즐겁게 하려던 의도와 다르게 들렸다면 그 반응을 먼저 들을 수 있어요.",
+    "after": "분위기를 풀고 싶어 농담을 할 때 상대가 불편해하지 않는지도 살펴보십시오. 즐겁게 하려던 의도와 다르게 들렸다면 그 반응을 먼저 들을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "함께 즐기는 비용이 늘었다면 이번에 쓸 범위를 먼저 정해봐요. 좋은 시간을 보내는 데 늘 같은 규모의 지출이 필요한 것은 아니에요.",
+    "after": "함께 즐기는 비용이 늘었다면 이번에 쓸 범위를 먼저 정해보십시오. 좋은 시간을 보내는 데 늘 같은 규모의 지출이 필요한 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "사람을 만나면 힘이 난다고 느껴도 쉬고 싶은 모임은 골라봐요. 즐거운 약속도 지금 피곤하다면 다른 날로 옮길 수 있어요.",
+    "after": "사람을 만나면 힘이 난다고 느껴도 쉬고 싶은 모임은 골라보십시오. 즐거운 약속도 지금 피곤하다면 다른 날로 옮길 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "작업의 분위기를 살리는 역할을 즐긴다면 실제 진행 상황도 함께 나눠봐요. 즐겁게 참여하는 것과 마무리 책임을 지는 일을 나누어 맡을 수 있어요.",
+    "after": "작업의 분위기를 살리는 역할을 즐긴다면 실제 진행 상황도 함께 나누어 보십시오. 즐겁게 참여하는 것과 마무리 책임을 지는 일을 나누어 맡을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새로운 대안이 여러 개 떠오르면 함께하는 사람이 고르기 쉬운 만큼만 제안해 봐요. 가능성을 열어두면서도 언제 결정할지는 정할 수 있어요.",
+    "after": "새로운 대안이 여러 개 떠오르면 함께하는 사람이 고르기 쉬운 만큼만 제안해 보십시오. 가능성을 열어두면서도 언제 결정할지는 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "여러 주제를 연결하는 게 즐겁다면 지금 배우려는 질문을 눈에 보이는 곳에 남겨봐요. 흥미로운 곁가지를 따라가도 돌아올 지점을 만들 수 있어요.",
+    "after": "여러 주제를 연결하는 게 즐겁다면 지금 배우려는 질문을 눈에 보이는 곳에 남겨보십시오. 흥미로운 곁가지를 따라가도 돌아올 지점을 만들 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "서로의 가능성을 말해주고 싶을 때 상대가 지금 원하는 지원인지 물어봐요. 격려가 바로 새로운 과제를 맡으라는 뜻으로 들리지 않게 할 수 있어요.",
+    "after": "서로의 가능성을 말해주고 싶을 때 상대가 지금 원하는 지원인지 물어보십시오. 격려가 바로 새로운 과제를 맡으라는 뜻으로 들리지 않게 할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새 취미에 필요한 물건을 사기 전에 빌리거나 체험할 방법도 살펴봐요. 관심을 진지하게 여기는 것과 처음부터 모두 갖추는 것은 다른 일이에요.",
+    "after": "새 취미에 필요한 물건을 사기 전에 빌리거나 체험할 방법도 살펴보십시오. 관심을 진지하게 여기는 것과 처음부터 모두 갖추는 것은 다른 일입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새로운 자극이 휴식이 된다면 부담 없이 둘러볼 시간을 남겨봐요. 발견한 것을 전부 새 계획으로 이어야 하는 것은 아니에요.",
+    "after": "새로운 자극이 휴식이 된다면 부담 없이 둘러볼 시간을 남겨보십시오. 발견한 것을 전부 새 계획으로 이어야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "아이디어를 여럿 제안했다면 이번에 실행할 것과 나중에 볼 것을 나눠봐요. 흥미를 꺼뜨리지 않으면서도 동료가 무엇부터 할지 알 수 있어요.",
+    "after": "아이디어를 여럿 제안했다면 이번에 실행할 것과 나중에 볼 것을 나누어 보십시오. 흥미를 꺼뜨리지 않으면서도 동료가 무엇부터 할지 알 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "계획을 더 낫게 바꾸고 싶다면 변경에 드는 준비도 함께 계산해 봐요. 다른 대안을 떠올리는 일과 이미 동의한 약속을 지키는 일은 같이 다룰 수 있어요.",
+    "after": "계획을 더 낫게 바꾸고 싶다면 변경에 드는 준비도 함께 계산해 보십시오. 다른 대안을 떠올리는 일과 이미 동의한 약속을 지키는 일은 같이 다룰 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "반례를 찾으며 배우는 게 맞는다면 먼저 원래 주장이 적용되는 범위를 정확히 읽어봐요. 예외를 찾았을 때도 모든 설명이 틀렸다고 넓히지 않을 수 있어요.",
+    "after": "반례를 찾으며 배우는 게 맞는다면 먼저 원래 주장이 적용되는 범위를 정확히 읽어보십시오. 예외를 찾았을 때도 모든 설명이 틀렸다고 넓히지 않을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "토론이 재미있더라도 상대가 자신의 경험을 반박받는다고 느끼는지 살펴봐요. 아이디어를 시험하는 대화인지 지지를 구하는 대화인지 먼저 물을 수 있어요.",
+    "after": "토론이 재미있더라도 상대가 자신의 경험을 반박받는다고 느끼는지 살펴보십시오. 아이디어를 시험하는 대화인지 지지를 구하는 대화인지 먼저 물을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새 서비스의 가능성이 커 보여도 지금 쓸 기능과 종료할 조건을 정해봐요. 흥미로운 전망과 현재 지불할 가치는 다른 기준으로 볼 수 있어요.",
+    "after": "새 서비스의 가능성이 커 보여도 지금 쓸 기능과 종료할 조건을 정해보십시오. 흥미로운 전망과 현재 지불할 가치는 다른 기준으로 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "생각을 주고받는 시간이 편하다면 결론 없는 대화도 즐겨봐요. 모든 말을 논쟁이나 설득으로 끝낼 필요는 없어요.",
+    "after": "생각을 주고받는 시간이 편하다면 결론 없는 대화도 즐겨보십시오. 모든 말을 논쟁이나 설득으로 끝낼 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "새 방법을 제안할 때 기존 작업을 이어갈 사람의 의견도 들어봐요. 시험에 성공했을 때뿐 아니라 잘 안 됐을 때 돌아갈 방법도 함께 정할 수 있어요.",
+    "after": "새 방법을 제안할 때 기존 작업을 이어갈 사람의 의견도 들어보십시오. 시험에 성공했을 때뿐 아니라 잘 안 됐을 때 돌아갈 방법도 함께 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "계획이 바뀌었을 때 다시 나눌 역할부터 확인해 봐요. 빠르게 정리하더라도 새 일을 맡을 사람의 가능한 시간을 먼저 물을 수 있어요.",
+    "after": "계획이 바뀌었을 때 다시 나눌 역할부터 확인해 보십시오. 빠르게 정리하더라도 새 일을 맡을 사람의 가능한 시간을 먼저 물을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "목적이 분명한 학습이 맞는다면 배운 뒤 무엇을 해볼지 정해봐요. 결과가 바로 나오지 않는 기초 과정도 필요한 이유를 알면 선택하기 쉬워요.",
+    "after": "목적이 분명한 학습이 맞는다면 배운 뒤 무엇을 해볼지 정해보십시오. 결과가 바로 나오지 않는 기초 과정도 필요한 이유를 알면 선택하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "해결할 절차가 보여도 상대가 동의할 수 있는지 먼저 들어봐요. 결정이 빠르다는 이유만으로 다른 사람의 선택까지 대신할 필요는 없어요.",
+    "after": "해결할 절차가 보여도 상대가 동의할 수 있는지 먼저 들어보십시오. 결정이 빠르다는 이유만으로 다른 사람의 선택까지 대신할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "예산을 정하는 방식이 편하다면 예상하지 못한 비용을 둘 여지도 남겨봐요. 계획이 바뀌었다고 관리에 실패한 것은 아니에요.",
+    "after": "예산을 정하는 방식이 편하다면 예상하지 못한 비용을 둘 여지도 남겨보십시오. 계획이 바뀌었다고 관리에 실패한 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "쉬기 전에 할 일을 배분하고 싶다면 쉬는 사람에게 새 부탁이 돌아가지 않게 해봐요. 휴식도 일정의 빈칸이 아니라 필요한 시간으로 둘 수 있어요.",
+    "after": "쉬기 전에 할 일을 배분하고 싶다면 쉬는 사람에게 새 부탁이 돌아가지 않게 해보십시오. 휴식도 일정의 빈칸이 아니라 필요한 시간으로 둘 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "역할을 정리하는 데 익숙하다면 담당자뿐 아니라 결정권과 지원도 함께 나눠봐요. 책임을 적는 것만으로 실행에 필요한 조건이 갖춰지지는 않아요.",
+    "after": "역할을 정리하는 데 익숙하다면 담당자뿐 아니라 결정권과 지원도 함께 나누어 보십시오. 책임을 적는 것만으로 실행에 필요한 조건이 갖춰지지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "여러 사람의 일정을 맞출 때 내게 가능한 시간도 후보에 넣어봐요. 모두를 편하게 하려는 마음 때문에 내 조건을 숨길 필요는 없어요.",
+    "after": "여러 사람의 일정을 맞출 때 내게 가능한 시간도 후보에 넣어보십시오. 모두를 편하게 하려는 마음 때문에 내 조건을 숨길 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "누군가에게 설명하며 배우는 게 맞는다면 틀린 부분을 편하게 고칠 수 있는 상대와 해봐요. 잘 설명해야 한다는 부담보다 질문을 모으는 데 쓸 수 있어요.",
+    "after": "누군가에게 설명하며 배우는 게 맞는다면 틀린 부분을 편하게 고칠 수 있는 상대와 해보십시오. 잘 설명해야 한다는 부담보다 질문을 모으는 데 쓸 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "관계를 편하게 유지하고 싶어도 불편한 약속은 구체적으로 말해봐요. 분위기를 지키는 일과 계속 참는 일은 같은 선택이 아니에요.",
+    "after": "관계를 편하게 유지하고 싶어도 불편한 약속은 구체적으로 말해보십시오. 분위기를 지키는 일과 계속 참는 일은 같은 선택이 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "모임의 비용을 챙기게 된다면 정산 기준을 미리 함께 정해봐요. 다른 사람의 참여를 위해 내 돈으로 빈 부분을 모두 메울 필요는 없어요.",
+    "after": "모임의 비용을 챙기게 된다면 정산 기준을 미리 함께 정해보십시오. 다른 사람의 참여를 위해 내 돈으로 빈 부분을 모두 메울 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "다른 사람과 쉬는 시간이 좋다면 준비를 혼자 맡지 않는 약속을 골라봐요. 쉬러 모인 자리에서도 모두를 챙기는 역할을 해야 하는 것은 아니에요.",
+    "after": "다른 사람과 쉬는 시간이 좋다면 준비를 혼자 맡지 않는 약속을 골라보십시오. 쉬러 모인 자리에서도 모두를 챙기는 역할을 해야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "사람마다 필요한 지원을 살피는 역할이 맞는다면 내가 맡을 범위도 말해봐요. 서로 돕는 팀에서는 도움을 주는 사람도 요청할 수 있어요.",
+    "after": "사람마다 필요한 지원을 살피는 역할이 맞는다면 내가 맡을 범위도 말해보십시오. 서로 돕는 팀에서는 도움을 주는 사람도 요청할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "함께 바라던 계획이 바뀌면 사람들이 무엇을 아쉬워하는지 들어봐요. 모두의 마음을 해결해야 한다기보다 새로 동의할 수 있는 방향을 찾는 데 집중할 수 있어요.",
+    "after": "함께 바라던 계획이 바뀌면 사람들이 무엇을 아쉬워하는지 들어보십시오. 모두의 마음을 해결해야 한다기보다 새로 동의할 수 있는 방향을 찾는 데 집중할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "배운 내용을 사람들에게 연결하고 싶다면 먼저 실제 적용 범위를 살펴봐요. 좋은 의도로 전해도 모든 사람에게 같은 방식이 맞는 것은 아니에요.",
+    "after": "배운 내용을 사람들에게 연결하고 싶다면 먼저 실제 적용 범위를 살펴보십시오. 좋은 의도로 전해도 모든 사람에게 같은 방식이 맞는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "상대가 더 나아질 방법이 보이더라도 조언을 원하는지 물어봐요. 가능성을 믿는 마음과 지금의 선택을 존중하는 일은 함께 할 수 있어요.",
+    "after": "상대가 더 나아질 방법이 보이더라도 조언을 원하는지 물어보십시오. 가능성을 믿는 마음과 지금의 선택을 존중하는 일은 함께할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "공동 목적에 비용을 쓰고 싶다면 참여하지 않는 선택도 가능한지 살펴봐요. 좋은 일이라는 이유만으로 모두가 같은 부담에 동의하는 것은 아니에요.",
+    "after": "공동 목적에 비용을 쓰고 싶다면 참여하지 않는 선택도 가능한지 살펴보십시오. 좋은 일이라는 이유만으로 모두가 같은 부담에 동의하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "누군가를 돕지 않는 시간도 남겨봐요. 다른 사람의 상태를 살피는 일이 익숙하더라도 휴식에서까지 역할을 이어갈 필요는 없어요.",
+    "after": "누군가를 돕지 않는 시간도 남겨보십시오. 다른 사람의 상태를 살피는 일이 익숙하더라도 휴식에서까지 역할을 이어갈 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "팀의 방향을 이야기할 때 조용한 사람의 의견도 들을 기회를 만들어봐요. 공감하는 표정만으로 모든 사람이 동의했다고 판단하지 않을 수 있어요.",
+    "after": "팀의 방향을 이야기할 때 조용한 사람의 의견도 들을 기회를 만들어보십시오. 공감하는 표정만으로 모든 사람이 동의했다고 판단하지 않을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "목표를 유지하며 방법을 바꾸고 싶다면 변경에 필요한 사람과 자원을 같이 살펴봐요. 더 빠른 길이라도 준비할 시간을 새로 정해야 할 수 있어요.",
+    "after": "목표를 유지하며 방법을 바꾸고 싶다면 변경에 필요한 사람과 자원을 같이 살펴보십시오. 더 빠른 길이라도 준비할 시간을 새로 정해야 할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "전체 전략으로 배우는 게 편하다면 기초 단계에서 직접 확인할 부분도 남겨봐요. 큰 그림이 맞아도 세부 실행에서 다른 문제가 드러날 수 있어요.",
+    "after": "전체 전략으로 배우는 게 편하다면 기초 단계에서 직접 확인할 부분도 남겨보십시오. 큰 그림이 맞아도 세부 실행에서 다른 문제가 드러날 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "결론을 내리기 전에 상대가 문제를 어떻게 보고 있는지 물어봐요. 판단이 빠른 것과 대화에서 필요한 정보가 충분한 것은 다를 수 있어요.",
+    "after": "결론을 내리기 전에 상대가 문제를 어떻게 보고 있는지 물어보십시오. 판단이 빠른 것과 대화에서 필요한 정보가 충분한 것은 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "큰 계획에 자원을 배분할 때는 중간에 멈출 기준도 정해봐요. 목표에 투자하는 마음과 실제로 감당할 위험을 따로 볼 수 있어요.",
+    "after": "큰 계획에 자원을 배분할 때는 중간에 멈출 기준도 정해보십시오. 목표에 투자하는 마음과 실제로 감당할 위험을 따로 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "휴식을 다음 성과를 위한 준비로만 생각한다면 목적 없는 시간도 조금 남겨봐요. 쉬는 동안 반드시 더 나은 계획을 만들어야 하는 것은 아니에요.",
+    "after": "휴식을 다음 성과를 위한 준비로만 생각한다면 목적 없는 시간도 조금 남겨보십시오. 쉬는 동안 반드시 더 나은 계획을 만들어야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "진행을 이끄는 역할이 맞는다면 결정권을 나눌 부분도 정해봐요. 모든 보고가 나를 거쳐야 한다면 다른 사람도 나도 기다리는 시간이 길어질 수 있어요.",
+    "after": "진행을 이끄는 역할이 맞는다면 결정권을 나눌 부분도 정해보십시오. 모든 보고가 나를 거쳐야 한다면 다른 사람도 나도 기다리는 시간이 길어질 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "혼자 생각할 여지를 남기는 제안을 참고했어요.",
+    "after": "혼자 생각할 여지를 남기는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "대화와 공동 활동에서 의사를 나누는 제안을 참고했어요.",
+    "after": "대화와 공동 활동에서 의사를 나누는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "실제 사례와 사용 순서를 살피는 제안을 참고했어요.",
+    "after": "실제 사례와 사용 순서를 살피는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "질문과 전체 목적을 연결하는 제안을 참고했어요.",
+    "after": "질문과 전체 목적을 연결하는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "해결의 근거와 대화의 목적을 나누는 제안을 참고했어요.",
+    "after": "해결의 근거와 대화의 목적을 나누는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "상대의 경험과 내가 중요하게 여기는 점을 설명하는 제안을 참고했어요.",
+    "after": "상대의 경험과 내가 중요하게 여기는 점을 설명하는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "결정된 부분과 변경할 범위를 정하는 제안을 참고했어요.",
+    "after": "결정된 부분과 변경할 범위를 정하는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "선택을 열어두되 결정할 시점을 남기는 제안을 참고했어요.",
+    "after": "선택을 열어두되 결정할 시점을 남기는 제안을 참고했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "선택한 유형과 달리 느끼거나 행동할 수 있어요. 상황에 맞지 않으면 적용하지 않아도 돼요.",
+    "after": "선택한 유형과 달리 느끼거나 행동할 수 있습니다. 상황에 맞지 않으면 적용하지 않아도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "MBTI 유형과 읽을 주제를 선택해 주세요.",
+    "after": "MBTI 유형과 읽을 주제를 선택해 주십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "익숙한 사실과 정해진 절차를 바탕으로 결정하는 선호를 출발점으로 읽어요. 약속을 정리하는 편이 편할 수 있지만 계획을 바꾸지 못하는 사람이라는 뜻은 아니에요.",
+    "after": "익숙한 사실과 정해진 절차를 바탕으로 결정하는 선호를 출발점으로 읽습니다. 약속을 정리하는 편이 편할 수 있지만 계획을 바꾸지 못하는 사람이라는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "직접 겪은 경험과 가까운 사람의 필요를 함께 살피는 선호를 출발점으로 읽어요. 익숙하게 챙겨온 일이라도 내가 계속 맡을지는 새로 고를 수 있어요.",
+    "after": "직접 겪은 경험과 가까운 사람의 필요를 함께 살피는 선호를 출발점으로 읽습니다. 익숙하게 챙겨온 일이라도 내가 계속 맡을지는 새로 고를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "일의 전체 의미와 사람에게 미치는 영향을 연결하는 선호를 참고해요. 상대의 뜻을 깊이 생각하더라도 직접 듣기 전에는 짐작과 사실을 구별할 수 있어요.",
+    "after": "일의 전체 의미와 사람에게 미치는 영향을 연결하는 선호를 참고합니다. 상대의 뜻을 깊이 생각하더라도 직접 듣기 전에는 짐작과 사실을 구별할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "큰 목적과 방법의 구조를 먼저 생각하는 선호를 참고해요. 장기 계획을 좋아하더라도 현장의 새로운 정보에 따라 세부 방법을 바꿀 수 있어요.",
+    "after": "큰 목적과 방법의 구조를 먼저 생각하는 선호를 참고합니다. 장기 계획을 좋아하더라도 현장의 새로운 정보에 따라 세부 방법을 바꿀 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "실제로 어떻게 움직이는지 확인하며 방법을 찾는 선호를 참고해요. 직접 해결하는 방식이 편해도 도움이 필요한 일에는 다른 사람의 설명을 구할 수 있어요.",
+    "after": "실제로 어떻게 움직이는지 확인하며 방법을 찾는 선호를 참고합니다. 직접 해결하는 방식이 편해도 도움이 필요한 일에는 다른 사람의 설명을 구할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "직접 느끼는 경험과 내가 중요하게 여기는 것을 살피는 선호를 참고해요. 그때의 감각을 따르면서도 함께하는 사람에게 필요한 약속은 정할 수 있어요.",
+    "after": "직접 느끼는 경험과 내가 중요하게 여기는 것을 살피는 선호를 참고합니다. 그때의 감각을 따르면서도 함께하는 사람에게 필요한 약속은 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "개인적으로 중요하게 여기는 가치와 여러 가능성을 살피는 선호를 참고해요. 의미를 찾는 일과 지금 가능한 행동을 작게 고르는 일은 함께 할 수 있어요.",
+    "after": "개인적으로 중요하게 여기는 가치와 여러 가능성을 살피는 선호를 참고합니다. 의미를 찾는 일과 지금 가능한 행동을 작게 고르는 일은 함께할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "설명의 원리와 다른 가능성을 비교하는 선호를 참고해요. 질문을 계속할 수 있듯 실제 선택이 필요한 시점에는 지금 아는 정보로 결정할 수도 있어요.",
+    "after": "설명의 원리와 다른 가능성을 비교하는 선호를 참고합니다. 질문을 계속할 수 있듯 실제 선택이 필요한 시점에는 지금 아는 정보로 결정할 수도 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "주변의 실제 상황에 반응하며 방법을 시험하는 선호를 참고해요. 빠르게 대응하는 방식이 편하더라도 다른 사람의 준비 시간을 함께 살필 수 있어요.",
+    "after": "주변의 실제 상황에 반응하며 방법을 시험하는 선호를 참고합니다. 빠르게 대응하는 방식이 편하더라도 다른 사람의 준비 시간을 함께 살필 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "함께 경험하는 일과 사람의 반응을 살피는 선호를 참고해요. 즐거운 자리를 좋아한다고 언제나 활기차거나 모든 모임에 참여해야 하는 것은 아니에요.",
+    "after": "함께 경험하는 일과 사람의 반응을 살피는 선호를 참고합니다. 즐거운 자리를 좋아한다고 언제나 활기차거나 모든 모임에 참여해야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "대화를 통해 새로운 가능성과 의미를 연결하는 선호를 참고해요. 관심이 여러 곳으로 향해도 이번에 실행할 부분과 나중에 볼 부분을 나눌 수 있어요.",
+    "after": "대화를 통해 새로운 가능성과 의미를 연결하는 선호를 참고합니다. 관심이 여러 곳으로 향해도 이번에 실행할 부분과 나중에 볼 부분을 나눌 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "서로 다른 생각을 비교하며 새 방법을 찾는 선호를 참고해요. 토론이 즐거울 수 있지만 상대가 지지나 휴식을 원하는 대화도 함께 고를 수 있어요.",
+    "after": "서로 다른 생각을 비교하며 새 방법을 찾는 선호를 참고합니다. 토론이 즐거울 수 있지만 상대가 지지나 휴식을 원하는 대화도 함께 고를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "실제 목표를 향해 일과 역할을 정리하는 선호를 참고해요. 진행을 분명히 하는 일과 사람마다 필요한 준비 시간을 듣는 일은 함께 할 수 있어요.",
+    "after": "실제 목표를 향해 일과 역할을 정리하는 선호를 참고합니다. 진행을 분명히 하는 일과 사람마다 필요한 준비 시간을 듣는 일은 함께할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "함께 지낼 사람의 필요와 익숙한 약속을 살피는 선호를 참고해요. 모임이나 일을 챙기는 역할이 편해도 내 시간과 부담을 말할 수 있어요.",
+    "after": "함께 지낼 사람의 필요와 익숙한 약속을 살피는 선호를 참고합니다. 모임이나 일을 챙기는 역할이 편해도 내 시간과 부담을 말할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "공동의 방향과 사람들의 기대를 함께 살피는 선호를 참고해요. 좋은 방향을 제안하더라도 다른 사람의 선택을 대신 정하지 않고 동의를 들을 수 있어요.",
+    "after": "공동의 방향과 사람들의 기대를 함께 살피는 선호를 참고합니다. 좋은 방향을 제안하더라도 다른 사람의 선택을 대신 정하지 않고 동의를 들을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/mbti.ts",
+    "before": "목표에 필요한 자원과 실행 순서를 정리하는 선호를 참고해요. 빠르게 결정하는 방식이 편해도 판단에 필요한 정보와 다른 사람의 권한을 함께 살필 수 있어요.",
+    "after": "목표에 필요한 자원과 실행 순서를 정리하는 선호를 참고합니다. 빠르게 결정하는 방식이 편해도 판단에 필요한 정보와 다른 사람의 권한을 함께 살필 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간과 같은 오행·음양의 천간이나 지장간이 있어요. 일에서는 내 방식으로 판단하는 부분과 동료의 판단을 받아들일 부분을 나누는 주제로 읽어요. 동료의 존재를 계산한 것은 아니며, 실제 역할과 권한은 지금의 일에서 확인해야 해요.",
+    "after": "일간과 같은 오행·음양의 천간이나 지장간이 있습니다. 일에서는 내 방식으로 판단하는 부분과 동료의 판단을 받아들일 부분을 나누는 주제로 읽습니다. 동료의 존재를 계산한 것은 아니며, 실제 역할과 권한은 지금의 일에서 확인해야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "비견의 자원 주제는 내 몫과 공동 몫을 구별하는 일이에요. 자원을 나누어 쓴다면 같은 금액보다 동의한 범위가 중요할 수 있어요. 공동 지출이 실제로 있을 때 참고하는 내용이며, 경쟁이나 손실을 예측한 것은 아니에요.",
+    "after": "비견의 자원 주제는 내 몫과 공동 몫을 구별하는 일입니다. 자원을 나누어 쓴다면 같은 금액보다 동의한 범위가 중요할 수 있습니다. 공동 지출이 실제로 있을 때 참고하는 내용이며, 경쟁이나 손실을 예측한 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "관계에서는 서로의 독립적인 선택을 남기는 쪽으로 읽어요. 같은 취향을 가져야 가까운 사이가 되는 것은 아니에요. 내 방식을 말할 수 있듯 상대도 다르게 고를 수 있다는 점을 생각해 봐요.",
+    "after": "관계에서는 서로의 독립적인 선택을 남기는 쪽으로 읽습니다. 같은 취향을 가져야 가까운 사이가 되는 것은 아닙니다. 내 방식을 말할 수 있듯 상대도 다르게 고를 수 있다는 점을 생각해 보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "비견의 글자가 여러 자리에 있으면 각 자리를 따로 세지만 한 사람의 고집을 횟수로 측정하지는 않아요. 같은 기운이 있다는 사실과 관계에서 주도권을 다투는 사건은 구별해요.",
+    "after": "비견의 글자가 여러 자리에 있으면 각 자리를 따로 세지만 한 사람의 고집을 횟수로 측정하지는 않습니다. 같은 기운이 있다는 사실과 관계에서 주도권을 다투는 사건은 구별합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "같은 오행이면서 음양이 다른 관계가 보여요. 함께 하는 일에서 주도권과 기여의 범위를 나누는 주제로 읽어요. 친분 때문에 책임의 경계가 흐려지는 상황이 있다면 실제 작업의 분담을 다시 말해볼 수 있어요.",
+    "after": "같은 오행이면서 음양이 다른 관계가 보입니다. 함께하는 일에서 주도권과 기여의 범위를 나누는 주제로 읽습니다. 친분 때문에 책임의 경계가 흐려지는 상황이 있다면 실제 작업의 분담을 다시 말해볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "겁재를 도둑이나 손해로 번역하지 않아요. 이 해석에서는 공동 비용·대여·정산에 필요한 합의를 살펴요. 실제로 돈을 주고받는 일이 없다면 누군가에게 피해를 당할 징조로 읽지 않아도 돼요.",
+    "after": "겁재를 도둑이나 손해로 번역하지 않습니다. 이 해석에서는 공동 비용·대여·정산에 필요한 합의를 살핍니다. 실제로 돈을 주고받는 일이 없다면 누군가에게 피해를 당할 징조로 읽지 않아도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "상대와 함께 하려는 마음 때문에 원하지 않는 부탁까지 맡는지 돌아볼 수 있어요. 내 선택을 남겨두는 일은 관계를 포기하는 뜻이 아니에요. 상대가 있는지나 지금 갈등 중인지는 출생정보로 알 수 없어요.",
+    "after": "상대와 함께 하려는 마음 때문에 원하지 않는 부탁까지 맡는지 돌아볼 수 있습니다. 내 선택을 남겨두는 일은 관계를 포기하는 뜻이 아닙니다. 상대가 있는지나 지금 갈등 중인지는 출생정보로 알 수 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "다른 사람이 정한 속도를 그대로 따르기보다 함께 할 범위를 조정하는 주제예요. 혼자 하는 것과 여럿이 하는 것 중 어느 쪽이 무조건 맞다고 판단하지 않아요. 실제로 필요한 협력을 찾는 데 참고해요.",
+    "after": "다른 사람이 정한 속도를 그대로 따르기보다 함께할 범위를 조정하는 주제입니다. 혼자 하는 것과 여럿이 하는 것 중 어느 쪽이 무조건 맞다고 판단하지 않습니다. 실제로 필요한 협력을 찾는 데 참고합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간이 생하는 오행 중 음양이 같은 관계가 있어요. 익힌 것을 꾸준히 결과물로 내는 과정에 빗대요. 실제 능력을 판정한 것은 아니며, 원국의 뿌리와 인성이 이 표현을 받쳐주는지도 함께 살펴야 해요.",
+    "after": "일간이 생하는 오행 중 음양이 같은 관계가 있습니다. 익힌 것을 꾸준히 결과물로 내는 과정에 빗댑니다. 실제 능력을 판정한 것은 아니며, 원국의 뿌리와 인성이 이 표현을 받쳐주는지도 함께 살펴야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "식신이 재성과 연결되는 후보는 만든 것을 자원과 연결하는 흐름이에요. 만든 것이 있다는 것과 돈을 벌 수 있다는 판단은 달라요. 실제 수요·비용·계약을 알아야 대가를 이야기할 수 있어요.",
+    "after": "식신이 재성과 연결되는 후보는 만든 것을 자원과 연결하는 흐름입니다. 만든 것이 있다는 것과 돈을 벌 수 있다는 판단은 다릅니다. 실제 수요·비용·계약을 알아야 대가를 이야기할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "관계에서는 말보다 행동으로 챙기는 상황을 생각해 볼 수 있어요. 다만 내가 하고 싶은 돌봄과 상대가 원하는 도움은 같지 않을 수 있어요. 상대의 동의를 묻는 것이 행동의 양보다 먼저예요.",
+    "after": "관계에서는 말보다 행동으로 챙기는 상황을 생각해 볼 수 있습니다. 다만 내가 하고 싶은 돌봄과 상대가 원하는 도움은 같지 않을 수 있습니다. 상대의 동의를 묻는 것이 행동의 양보다 먼저입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "식신이 드러나는 자리와 지장간에만 있는 자리를 구별해요. 지장간에 있다는 이유만으로 겉으로 표현되는 성격이라고 말하지 않아요. 실행의 바탕이 되는 조건이 갖추어졌는지 살피는 자료예요.",
+    "after": "식신이 드러나는 자리와 지장간에만 있는 자리를 구별합니다. 지장간에 있다는 이유만으로 겉으로 표현되는 성격이라고 말하지 않습니다. 실행의 바탕이 되는 조건이 갖추어졌는지 살피는 자료입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간이 생하는 오행 중 음양이 다른 관계가 있어요. 정해진 방식의 문제를 발견하고 다른 방법을 제안하는 주제로 읽어요. 반항적인 성격이나 특정 직무의 적성을 단정하지 않으며, 표현의 대상과 실제 책임을 함께 살펴요.",
+    "after": "일간이 생하는 오행 중 음양이 다른 관계가 있습니다. 정해진 방식의 문제를 발견하고 다른 방법을 제안하는 주제로 읽습니다. 반항적인 성격이나 특정 직무의 적성을 단정하지 않으며, 표현의 대상과 실제 책임을 함께 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "새 방법을 시도할 때 아이디어의 가치와 시험 비용은 다른 문제예요. 상관을 혁신이나 수익으로 바로 연결하지 않고, 실제로 써볼 범위와 감당할 비용을 나누는 설명으로 읽어요.",
+    "after": "새 방법을 시도할 때 아이디어의 가치와 시험 비용은 다른 문제입니다. 상관을 혁신이나 수익으로 바로 연결하지 않고, 실제로 써볼 범위와 감당할 비용을 나누는 설명으로 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "상대에게 필요한 말인지와 내가 하고 싶은 말인지가 다를 수 있어요. 관계에서는 지적할 내용을 실제 장면으로 좁히고 의견을 구하는 때인지 살피는 주제로 읽어요. 다툼이나 이별이 발생한다는 뜻은 아니에요.",
+    "after": "상대에게 필요한 말인지와 내가 하고 싶은 말인지가 다를 수 있습니다. 관계에서는 지적할 내용을 실제 장면으로 좁히고 의견을 구하는 때인지 살피는 주제로 읽습니다. 다툼이나 이별이 발생한다는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "상관과 관성이 함께 있어도 곧바로 상관견관의 흉한 구조라고 정하지 않아요. 자리·뿌리·생조가 어떻게 연결되는지 추가 판단이 필요해요. 이 서비스에서는 공존 사실을 남기고 성패는 유보해요.",
+    "after": "상관과 관성이 함께 있어도 곧바로 상관견관의 흉한 구조라고 정하지 않습니다. 자리·뿌리·생조가 어떻게 연결되는지 추가 판단이 필요합니다. 이 서비스에서는 공존 사실을 남기고 성패는 유보합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간이 극하는 오행 중 음양이 같은 관계가 있어요. 여러 자원과 사람을 연결하는 일을 주제로 읽어요. 영업직이나 사업을 하고 있다고 추정하지 않아요. 넓게 연결할수록 일정과 책임도 함께 늘 수 있다는 점을 살펴요.",
+    "after": "일간이 극하는 오행 중 음양이 같은 관계가 있습니다. 여러 자원과 사람을 연결하는 일을 주제로 읽습니다. 영업직이나 사업을 하고 있다고 추정하지 않습니다. 넓게 연결할수록 일정과 책임도 함께 늘 수 있다는 점을 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "편재의 존재는 큰돈이나 뜻밖의 수입을 뜻하지 않아요. 원국의 뿌리·계절과 자원을 감당할 힘을 따로 읽어요. 거래를 검토한다면 실제 비용과 계약의 의무가 이 글보다 우선해요.",
+    "after": "편재의 존재는 큰돈이나 뜻밖의 수입을 뜻하지 않습니다. 원국의 뿌리·계절과 자원을 감당할 힘을 따로 읽습니다. 거래를 검토한다면 실제 비용과 계약의 의무가 이 글보다 우선합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "넓은 교류와 가까운 약속을 어떻게 함께 지킬지 생각해 볼 수 있어요. 편재를 연애 상대의 수나 성적 지향으로 바꾸어 추정하지 않아요. 실제 만남이 있다면 당사자의 기대와 동의를 기준으로 읽어요.",
+    "after": "넓은 교류와 가까운 약속을 어떻게 함께 지킬지 생각해 볼 수 있습니다. 편재를 연애 상대의 수나 성적 지향으로 바꾸어 추정하지 않습니다. 실제 만남이 있다면 당사자의 기대와 동의를 기준으로 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "겉에 드러난 재성과 지장간의 재성은 위치가 달라요. 지장간의 존재만으로 지금 쓰거나 받을 수 있는 자원이 있다고 말하지 않아요. 실제 자산이나 수입은 이 계산에 입력되지 않았어요.",
+    "after": "겉에 드러난 재성과 지장간의 재성은 위치가 다릅니다. 지장간의 존재만으로 지금 쓰거나 받을 수 있는 자원이 있다고 말하지 않습니다. 실제 자산이나 수입은 이 계산에 입력되지 않았습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간이 극하는 오행 중 음양이 다른 관계가 있어요. 정해진 일을 계속할 수 있는 방법과 대가를 맞추는 주제로 읽어요. 성실함이나 안정된 직장을 이미 가졌다고 판단하지 않아요. 실제 역할의 변화가 있다면 조건도 다시 이야기할 수 있어요.",
+    "after": "일간이 극하는 오행 중 음양이 다른 관계가 있습니다. 정해진 일을 계속할 수 있는 방법과 대가를 맞추는 주제로 읽습니다. 성실함이나 안정된 직장을 이미 가졌다고 판단하지 않습니다. 실제 역할의 변화가 있다면 조건도 다시 이야기할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "정재는 반복되는 자원을 관리하는 주제로 읽되 저축이나 수익을 확정하지 않아요. 수입·지출의 실제 자료가 있어야 관리할 범위를 알 수 있어요. 재성의 개수가 많다는 이유로 재산의 크기를 비교하지 않아요.",
+    "after": "정재는 반복되는 자원을 관리하는 주제로 읽되 저축이나 수익을 확정하지 않습니다. 수입·지출의 실제 자료가 있어야 관리할 범위를 알 수 있습니다. 재성의 개수가 많다는 이유로 재산의 크기를 비교하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "함께 유지하는 약속과 생활의 역할을 살펴볼 수 있어요. 전통 배우자성의 성별 규칙을 현재 상대나 혼인 상태의 추정으로 쓰지 않아요. 내가 감당할 수 있는 일과 서로 동의한 분담을 구별해 봐요.",
+    "after": "함께 유지하는 약속과 생활의 역할을 살펴볼 수 있습니다. 전통 배우자성의 성별 규칙을 현재 상대나 혼인 상태의 추정으로 쓰지 않습니다. 내가 감당할 수 있는 일과 서로 동의한 분담을 구별해 보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "원국에서 재성이 일간과 어떤 자리에서 연결되는지 살펴요. 재성을 극한다는 전통 용어는 사람을 통제해도 된다는 뜻이 아니에요. 현실의 관계와 재물 판단은 당사자의 권리와 실제 정보가 우선해요.",
+    "after": "원국에서 재성이 일간과 어떤 자리에서 연결되는지 살핍니다. 재성을 극한다는 전통 용어는 사람을 통제해도 된다는 뜻이 아닙니다. 현실의 관계와 재물 판단은 당사자의 권리와 실제 정보가 우선합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간을 극하는 오행 중 음양이 같은 관계가 있어요. 어려운 과제와 압박을 감당하는 주제로 읽어요. 책임만 있고 권한은 없는 상황이라면 실제 권한과 지원을 확인할 수 있어요. 위험한 일을 견뎌야 하는 운명으로 읽지 않아요.",
+    "after": "일간을 극하는 오행 중 음양이 같은 관계가 있습니다. 어려운 과제와 압박을 감당하는 주제로 읽습니다. 책임만 있고 권한은 없는 상황이라면 실제 권한과 지원을 확인할 수 있습니다. 위험한 일을 견뎌야 하는 운명으로 읽지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "재물에서는 의무와 부담을 살펴볼 수 있어요. 편관의 존재로 손실·벌금·법적 분쟁을 예측하지 않아요. 책임이 큰 계약을 다룬다면 실제 조항과 적절한 도움을 기준으로 결정해야 해요.",
+    "after": "재물에서는 의무와 부담을 살펴볼 수 있습니다. 편관의 존재로 손실·벌금·법적 분쟁을 예측하지 않습니다. 책임이 큰 계약을 다룬다면 실제 조항과 적절한 도움을 기준으로 결정해야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "서로의 한계를 분명히 말하는 주제로 읽어요. 두려움을 주거나 선택을 막는 행동을 강한 관계라고 미화하지 않아요. 현재 상대가 있다는 전제도 없으며, 관계가 있다면 안전과 동의가 먼저예요.",
+    "after": "서로의 한계를 분명히 말하는 주제로 읽습니다. 두려움을 주거나 선택을 막는 행동을 강한 관계라고 미화하지 않습니다. 현재 상대가 있다는 전제도 없으며, 관계가 있다면 안전과 동의가 먼저입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "식신과 편관이 같이 있다고 식신제살격을 완성했다고 판단하지 않아요. 식신의 투출과 뿌리, 편인 등 방해 후보를 따로 살펴요. 조건 일부가 보이면 제어 흐름의 후보로만 남겨요.",
+    "after": "식신과 편관이 같이 있다고 식신제살격을 완성했다고 판단하지 않습니다. 식신의 투출과 뿌리, 편인 등 방해 후보를 따로 살핍니다. 조건 일부가 보이면 제어 흐름의 후보로만 남깁니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간을 극하는 오행 중 음양이 다른 관계가 있어요. 공통 규칙과 맡은 역할을 살피는 주제로 읽어요. 승진·합격·평판을 예측하지 않아요. 역할을 맡을 때는 평가 기준과 필요한 지원을 함께 확인할 수 있어요.",
+    "after": "일간을 극하는 오행 중 음양이 다른 관계가 있습니다. 공통 규칙과 맡은 역할을 살피는 주제로 읽습니다. 승진·합격·평판을 예측하지 않습니다. 역할을 맡을 때는 평가 기준과 필요한 지원을 함께 확인할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "정해진 의무와 반복되는 정산을 주제로 읽을 수 있어요. 납부 문제가 생긴다는 뜻은 아니에요. 해당되는 일이 있다면 기한과 증빙을 실제 자료로 확인하는 편이 좋고, 이 글로 법률·투자 판단을 대신하지 않아요.",
+    "after": "정해진 의무와 반복되는 정산을 주제로 읽을 수 있습니다. 납부 문제가 생긴다는 뜻은 아닙니다. 해당되는 일이 있다면 기한과 증빙을 실제 자료로 확인하는 편이 좋고, 이 글로 법률·투자 판단을 대신하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "관계에서 정관은 서로 지킬 약속을 이야기하는 주제예요. 한쪽에게만 규칙을 요구하거나 전통 용어로 상대의 의무를 정하지 않아요. 실제 관계가 있다면 당사자가 동의한 약속인지 살펴봐요.",
+    "after": "관계에서 정관은 서로 지킬 약속을 이야기하는 주제입니다. 한쪽에게만 규칙을 요구하거나 전통 용어로 상대의 의무를 정하지 않습니다. 실제 관계가 있다면 당사자가 동의한 약속인지 살펴보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "관성이 지장간에만 있는지 천간에 드러나는지도 구별해요. 드러나지 않는다고 책임감이 없는 사람이라는 뜻은 아니에요. 이 표는 글자 사이의 관계를 분류하며 실제 인품을 평가하지 않아요.",
+    "after": "관성이 지장간에만 있는지 천간에 드러나는지도 구별합니다. 드러나지 않는다고 책임감이 없는 사람이라는 뜻은 아닙니다. 이 표는 글자 사이의 관계를 분류하며 실제 인품을 평가하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간을 생하는 오행 중 음양이 같은 관계가 있어요. 다른 관점에서 자료를 해석하고 방법을 배우는 주제로 읽어요. 특별한 재능이나 직관을 단정하지 않아요. 흥미로운 설명이 지금 문제에도 맞는지 시험해 볼 수 있어요.",
+    "after": "일간을 생하는 오행 중 음양이 같은 관계가 있습니다. 다른 관점에서 자료를 해석하고 방법을 배우는 주제로 읽습니다. 특별한 재능이나 직관을 단정하지 않습니다. 흥미로운 설명이 지금 문제에도 맞는지 시험해 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "배움과 도구에 쓰는 자원을 살펴볼 수 있어요. 새 자료를 사는 것이 수입이나 실력을 보장하지는 않아요. 이미 가진 자료로 해결할 부분과 실제로 부족한 부분을 구별하는 데 참고해요.",
+    "after": "배움과 도구에 쓰는 자원을 살펴볼 수 있습니다. 새 자료를 사는 것이 수입이나 실력을 보장하지는 않습니다. 이미 가진 자료로 해결할 부분과 실제로 부족한 부분을 구별하는 데 참고합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "같은 말을 다르게 이해할 수 있다는 점을 돌아보는 주제예요. 상대의 말에 숨은 뜻을 추측하기보다 직접 확인할 수 있는 부분을 찾아봐요. 관계가 없다면 지나간 대화나 앞으로의 대화에 참고해도 돼요.",
+    "after": "같은 말을 다르게 이해할 수 있다는 점을 돌아보는 주제입니다. 상대의 말에 숨은 뜻을 추측하기보다 직접 확인할 수 있는 부분을 찾아보십시오. 관계가 없다면 지나간 대화나 앞으로의 대화에 참고해도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "편인과 식신의 공존만으로 도식이라고 확정하지 않아요. 배움이 표현을 돕는지 막는지는 자리와 힘의 조건을 더 살펴야 해요. 서비스는 이 관계를 반대 근거로 남기고 실제 실패를 예측하지 않아요.",
+    "after": "편인과 식신의 공존만으로 도식이라고 확정하지 않습니다. 배움이 표현을 돕는지 막는지는 자리와 힘의 조건을 더 살펴야 합니다. 서비스는 이 관계를 반대 근거로 남기고 실제 실패를 예측하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간을 생하는 오행 중 음양이 다른 관계가 있어요. 자료와 배움, 지원을 바탕으로 준비하는 주제로 읽어요. 학력이나 자격을 이미 갖추었다고 추정하지 않아요. 배운 내용을 실제로 쓸 기회와 이어보는 설명이에요.",
+    "after": "일간을 생하는 오행 중 음양이 다른 관계가 있습니다. 자료와 배움, 지원을 바탕으로 준비하는 주제로 읽습니다. 학력이나 자격을 이미 갖추었다고 추정하지 않습니다. 배운 내용을 실제로 쓸 기회와 이어보는 설명입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "지원과 준비에 필요한 자원을 살펴볼 수 있어요. 혜택이나 장학금이 생긴다는 뜻은 아니에요. 실제 제도가 있다면 신청 자격과 의무를 공식 자료로 확인하고, 원하지 않는 부담까지 받아들이지 않아요.",
+    "after": "지원과 준비에 필요한 자원을 살펴볼 수 있습니다. 혜택이나 장학금이 생긴다는 뜻은 아닙니다. 실제 제도가 있다면 신청 자격과 의무를 공식 자료로 확인하고, 원하지 않는 부담까지 받아들이지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "도움을 주고받을 때 받는 사람의 선택을 남기는 주제예요. 챙겨주고 싶은 마음과 상대에게 필요한 방식은 다를 수 있어요. 도움을 제안할 때는 거절하거나 다른 방법을 고를 여지도 함께 두어요.",
+    "after": "도움을 주고받을 때 받는 사람의 선택을 남기는 주제입니다. 챙겨주고 싶은 마음과 상대에게 필요한 방식은 다를 수 있습니다. 도움을 제안할 때는 거절하거나 다른 방법을 고를 여지도 함께 두십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "생해주는 관계도 무조건 더할수록 좋은 것은 아니에요. 이미 생조가 많다면 준비가 길어지고 실행이 뒤로 밀리는 주제를 살필 수 있어요. 실제 행동이 그렇다고 확정하지 않고 원국의 반대 조건과 함께 읽어요.",
+    "after": "생해주는 관계도 무조건 더할수록 좋은 것은 아닙니다. 이미 생조가 많다면 준비가 길어지고 실행이 뒤로 밀리는 주제를 살필 수 있습니다. 실제 행동이 그렇다고 확정하지 않고 원국의 반대 조건과 함께 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "월령·뿌리·다른 천간의 생조를 합친 서비스 판단식에서 신강 경향이 나왔어요. 힘을 더 보태는 것보다 어떤 표현과 책임으로 이어갈지 살피는 순서예요. 강하다는 말은 체력이나 우월함을 뜻하지 않고, 지지의 충과 아직 판단하지 않은 합화가 반대 근거로 남아요.",
+    "after": "월령·뿌리·다른 천간의 생조를 합친 서비스 판단식에서 신강 경향이 나왔습니다. 힘을 더 보태는 것보다 어떤 표현과 책임으로 이어갈지 살피는 순서입니다. 강하다는 말은 체력이나 우월함을 뜻하지 않고, 지지의 충과 아직 판단하지 않은 합화가 반대 근거로 남습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "월령·뿌리·생조와 설극을 함께 본 판단식에서 신약 경향이 나왔어요. 책임이나 표현을 늘리기 전에 받쳐주는 조건을 먼저 살피는 순서예요. 약하다는 말은 의지나 건강의 평가가 아니에요. 뿌리가 다른 위치에 있거나 기간의 생조가 더해지면 다른 주제를 읽을 수 있어요.",
+    "after": "월령·뿌리·생조와 설극을 함께 본 판단식에서 신약 경향이 나왔습니다. 책임이나 표현을 늘리기 전에 받쳐주는 조건을 먼저 살피는 순서입니다. 약하다는 말은 의지나 건강의 평가가 아닙니다. 뿌리가 다른 위치에 있거나 기간의 생조가 더해지면 다른 주제를 읽을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "서비스 판단식에서 생조와 설극 어느 쪽으로도 크게 기울지 않은 경계에 있어요. 부족한 오행 하나를 정답으로 채우기보다, 어떤 자리와 기간 관계가 실제로 달라지는지 비교하는 편이 이 방식에 맞아요. 점수가 경계에 가깝다는 사실도 함께 읽어 주세요.",
+    "after": "서비스 판단식에서 생조와 설극 어느 쪽으로도 크게 기울지 않은 경계에 있습니다. 부족한 오행 하나를 정답으로 채우기보다, 어떤 자리와 기간 관계가 실제로 달라지는지 비교하는 편이 이 방식에 맞습니다. 점수가 경계에 가깝다는 사실도 함께 읽어 주십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "해·자·축월을 큰 겨울 계절로 묶어 차고 습한 조건을 완화하는 후보를 살펴요. 화를 살피더라도 원국에 이미 있는 화의 자리와 뿌리를 보아야 해요. 겨울이라는 이유만으로 실제 건강이나 체온을 판단하지 않고, 억부에서 같은 오행을 반기는지도 따로 읽어요.",
+    "after": "해·자·축월을 큰 겨울 계절로 묶어 차고 습한 조건을 완화하는 후보를 살핍니다. 화를 살피더라도 원국에 이미 있는 화의 자리와 뿌리를 보아야 합니다. 겨울이라는 이유만으로 실제 건강이나 체온을 판단하지 않고, 억부에서 같은 오행을 반기는지도 따로 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "사·오·미월을 큰 여름 계절로 묶어 더운 조건을 완화하는 후보를 살펴요. 수가 보인다고 모두 충분한 것은 아니며 자리와 뿌리를 따로 보아야 해요. 실제 기온이나 건강을 측정한 내용은 아니고, 한난을 보는 목적과 일간을 돕는 억부 목적을 나누어 설명해요.",
+    "after": "사·오·미월을 큰 여름 계절로 묶어 더운 조건을 완화하는 후보를 살핍니다. 수가 보인다고 모두 충분한 것은 아니며 자리와 뿌리를 따로 보아야 합니다. 실제 기온이나 건강을 측정한 내용은 아니고, 한난을 보는 목적과 일간을 돕는 억부 목적을 나누어 설명합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "봄·가을과 전환기의 큰 계절 분류에서는 한난만으로 조후용신을 고르지 않았어요. 일간의 뿌리와 월지 본기, 생조·설극을 함께 읽는 편이 나아요. 이번 방식에서 상세한 사령 일수와 습조를 계산하지 않는다는 한계도 남아요.",
+    "after": "봄·가을과 전환기의 큰 계절 분류에서는 한난만으로 조후용신을 고르지 않았습니다. 일간의 뿌리와 월지 본기, 생조·설극을 함께 읽는 편이 낫습니다. 이번 방식에서 상세한 사령 일수와 습조를 계산하지 않는다는 한계도 남습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "월지 본기와 일간의 관계에서 격국 후보를 정했어요. 같은 지장간이 다른 천간에 드러나는지는 투출 항목에서 따로 보여드려요. 본기 우선 방식의 출발 후보이며 사령·특수격·성패를 정한 결과는 아니에요. 격국 이름만으로 실제 직업이나 관계를 확정하지 않아요.",
+    "after": "월지 본기와 일간의 관계에서 격국 후보를 정했습니다. 같은 지장간이 다른 천간에 드러나는지는 투출 항목에서 따로 보여드립니다. 본기 우선 방식의 출발 후보이며 사령·특수격·성패를 정한 결과는 아닙니다. 격국 이름만으로 실제 직업이나 관계를 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "식신과 재성이 천간에 함께 드러나고 일간과 같은 오행의 뿌리가 있어 식신생재의 흐름을 후보로 살폈어요. 글자의 공존에 더한 제한적 조건이며 완전한 격 성립은 아니에요. 만든 것을 어떤 방식으로 제공하고 대가를 정할지 생각하는 일 주제로 연결하되 실제 수익은 예측하지 않아요.",
+    "after": "식신과 재성이 천간에 함께 드러나고 일간과 같은 오행의 뿌리가 있어 식신생재의 흐름을 후보로 살폈습니다. 글자의 공존에 더한 제한적 조건이며 완전한 격 성립은 아닙니다. 만든 것을 어떤 방식으로 제공하고 대가를 정할지 생각하는 일 주제로 연결하되 실제 수익은 예측하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "식신과 편관이 천간에 드러나고 천간의 편인이 보이지 않아 제어 흐름을 후보로 살폈어요. 편인의 지장간과 뿌리의 강도, 자리의 직접 작용은 더 살펴야 하므로 식신제살격을 확정하지 않았어요. 현실에서는 압박의 내용을 설명하고 역할을 조정하는 주제로 읽을 수 있어요.",
+    "after": "식신과 편관이 천간에 드러나고 천간의 편인이 보이지 않아 제어 흐름을 후보로 살폈습니다. 편인의 지장간과 뿌리의 강도, 자리의 직접 작용은 더 살펴야 하므로 식신제살격을 확정하지 않았습니다. 현실에서는 압박의 내용을 설명하고 역할을 조정하는 주제로 읽을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "목 일간의 후보에서는 자라나는 방향이라는 상징을 쓸 수 있지만 성장해야 한다는 의무로 바꾸지 않아요. 실제 뿌리가 있는 자리와 월령이 무엇인지가 이 상징보다 먼저예요. 방향을 유지할지 바꿀지는 현실의 목적과 조건으로 정할 수 있어요.",
+    "after": "목 일간의 후보에서는 자라나는 방향이라는 상징을 쓸 수 있지만 성장해야 한다는 의무로 바꾸지 않습니다. 실제 뿌리가 있는 자리와 월령이 무엇인지가 이 상징보다 먼저입니다. 방향을 유지할지 바꿀지는 현실의 목적과 조건으로 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "화 일간을 빛의 상징에 연결하더라도 밝은 성격이라고 단정하지 않아요. 계절과 뿌리가 표현을 받쳐주는지 따로 살펴야 해요. 보여주는 역할과 혼자 준비할 시간을 나누는 주제로 참고할 수 있어요.",
+    "after": "화 일간을 빛의 상징에 연결하더라도 밝은 성격이라고 단정하지 않습니다. 계절과 뿌리가 표현을 받쳐주는지 따로 살펴야 합니다. 보여주는 역할과 혼자 준비할 시간을 나누는 주제로 참고할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "토 일간의 유지와 연결이라는 상징을 무조건 안정적인 성격으로 바꾸지 않아요. 월지와 지장간의 뿌리가 어떤 계절에 있는지 먼저 읽어요. 지켜야 할 약속과 바꿀 수 있는 방법을 나누는 주제로 살펴볼 수 있어요.",
+    "after": "토 일간의 유지와 연결이라는 상징을 무조건 안정적인 성격으로 바꾸지 않습니다. 월지와 지장간의 뿌리가 어떤 계절에 있는지 먼저 읽습니다. 지켜야 할 약속과 바꿀 수 있는 방법을 나누는 주제로 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "금 일간을 구분하고 정리하는 상징에 연결하지만 엄격함이나 완벽주의를 사실로 판단하지 않아요. 실제 계절과 뿌리가 어떻게 받치는지가 먼저예요. 필요한 기준을 정한 뒤 다른 사람에게 맡길 부분을 남기는 주제로 읽어봐요.",
+    "after": "금 일간을 구분하고 정리하는 상징에 연결하지만 엄격함이나 완벽주의를 사실로 판단하지 않습니다. 실제 계절과 뿌리가 어떻게 받치는지가 먼저입니다. 필요한 기준을 정한 뒤 다른 사람에게 맡길 부분을 남기는 주제로 읽어보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "수 일간의 흐름과 생각이라는 상징만으로 조용하거나 예민한 성격을 정하지 않아요. 월령과 다른 천간의 생조·설극을 함께 봐야 해요. 듣는 시간과 실제로 결정해야 할 시점을 나누는 주제로 살펴볼 수 있어요.",
+    "after": "수 일간의 흐름과 생각이라는 상징만으로 조용하거나 예민한 성격을 정하지 않습니다. 월령과 다른 천간의 생조·설극을 함께 봐야 합니다. 듣는 시간과 실제로 결정해야 할 시점을 나누는 주제로 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "인성이 천간에 드러나고 일간과 같은 오행의 뿌리도 있어, 배우고 준비한 것을 실제로 써보는 직업 주제를 우선했어요. 인성 하나만으로 학력이나 자격을 추정하지 않아요. 준비가 길어지고 있다면 더 알아야 할 부분과 이미 해볼 수 있는 부분을 나눌 수 있어요.",
+    "after": "인성이 천간에 드러나고 일간과 같은 오행의 뿌리도 있어, 배우고 준비한 것을 실제로 써보는 직업 주제를 우선했습니다. 인성 하나만으로 학력이나 자격을 추정하지 않습니다. 준비가 길어지고 있다면 더 알아야 할 부분과 이미 해볼 수 있는 부분을 나눌 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "편관이 천간에 드러나고 월지가 확정돼 있어, 실제 과제에 필요한 책임과 권한을 나누는 직업 주제를 먼저 읽어요. 편관을 위험한 직업이나 사고로 바꾸어 예측하지 않아요. 감당할 힘이 충분한지는 강약의 지지·반대 근거를 함께 보고 실제 지원과도 비교해야 해요.",
+    "after": "편관이 천간에 드러나고 월지가 확정돼 있어, 실제 과제에 필요한 책임과 권한을 나누는 직업 주제를 먼저 읽습니다. 편관을 위험한 직업이나 사고로 바꾸어 예측하지 않습니다. 감당할 힘이 충분한지는 강약의 지지·반대 근거를 함께 보고 실제 지원과도 비교해야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "해·묘·미 세 지지가 모두 있는 목 삼합 후보가 있어요. 목으로 합화했다고 확정하지 않고 일간이 생하는 관계인지 등 실제 일간에 대한 역할을 따로 살펴요. 관계에서는 함께 하려는 바람을 말로 전하고 상대의 선택도 듣는 주제로 읽을 수 있어요. 여러 자리의 해를 두 개의 삼합으로 중복 집계하지 않아요.",
+    "after": "해·묘·미 세 지지가 모두 있는 목 삼합 후보가 있습니다. 목으로 합화했다고 확정하지 않고 일간이 생하는 관계인지 등 실제 일간에 대한 역할을 따로 살핍니다. 관계에서는 함께 하려는 바람을 말로 전하고 상대의 선택도 듣는 주제로 읽을 수 있습니다. 여러 자리의 해를 두 개의 삼합으로 중복 집계하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "일간과 같은 오행의 뿌리가 있고 인성이 천간에 보여요. 이 구성에서는 넓게 거래를 늘리는 이야기보다 필요한 자료와 지원을 실제로 쓸 수 있는지 살피는 자원 주제를 우선해요. 자산이나 수입은 입력하지 않았으므로 지금 돈이 많다거나 적다고 판단하지 않아요.",
+    "after": "일간과 같은 오행의 뿌리가 있고 인성이 천간에 보입니다. 이 구성에서는 넓게 거래를 늘리는 이야기보다 필요한 자료와 지원을 실제로 쓸 수 있는지 살피는 자원 주제를 우선합니다. 자산이나 수입은 입력하지 않았으므로 지금 돈이 많다거나 적다고 판단하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "편관이 천간에 드러나 있어 자원을 갖는 일과 그에 따르는 책임을 구별하는 주제를 우선했어요. 실제 계약이 있다면 권한과 의무를 자료로 확인하는 데 참고해요. 돈을 잃는다는 뜻이 아니며 인성의 지원이나 식신의 제어 후보가 함께 보이면 부담을 다루는 다른 설명도 읽어야 해요.",
+    "after": "편관이 천간에 드러나 있어 자원을 갖는 일과 그에 따르는 책임을 구별하는 주제를 우선했습니다. 실제 계약이 있다면 권한과 의무를 자료로 확인하는 데 참고합니다. 돈을 잃는다는 뜻이 아니며 인성의 지원이나 식신의 제어 후보가 함께 보이면 부담을 다루는 다른 설명도 읽어야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "전체 기둥을 아는 상태에서 신약 경향 후보가 나왔어요. 관계를 더 넓히거나 부탁을 더 맡는 방향보다 도움을 구할 수 있는 범위를 먼저 살펴요. 실제로 지친 상태라는 진단은 아니에요. 지금 필요한 도움과 내가 고를 수 있는 부분을 함께 말하는 주제로 읽어봐요.",
+    "after": "전체 기둥을 아는 상태에서 신약 경향 후보가 나왔습니다. 관계를 더 넓히거나 부탁을 더 맡는 방향보다 도움을 구할 수 있는 범위를 먼저 살핍니다. 실제로 지친 상태라는 진단은 아닙니다. 지금 필요한 도움과 내가 고를 수 있는 부분을 함께 말하는 주제로 읽어보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "전체 기둥을 아는 상태에서 신강 경향 후보가 나왔어요. 관계에서는 내 판단을 전하는 일과 다른 사람에게 결정할 부분을 남기는 일을 함께 살펴요. 지배적인 성격이라는 뜻은 아니며, 실제로 함께 결정할 일이 있을 때 참고할 주제예요.",
+    "after": "전체 기둥을 아는 상태에서 신강 경향 후보가 나왔습니다. 관계에서는 내 판단을 전하는 일과 다른 사람에게 결정할 부분을 남기는 일을 함께 살핍니다. 지배적인 성격이라는 뜻은 아니며, 실제로 함께 결정할 일이 있을 때 참고할 주제입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/natal.ts",
+    "before": "전체 기둥이 있어도 강약이 경계인 구성에서는 한쪽의 방식을 더 밀어붙이는 결론을 유보해요. 관계에서도 어떤 부분을 함께 정하고 어떤 부분을 따로 고를지 듣는 주제로 읽어요. 원국을 안다고 상대의 뜻까지 알 수 있는 것은 아니에요.",
+    "after": "전체 기둥이 있어도 강약이 경계인 구성에서는 한쪽의 방식을 더 밀어붙이는 결론을 유보합니다. 관계에서도 어떤 부분을 함께 정하고 어떤 부분을 따로 고를지 듣는 주제로 읽습니다. 원국을 안다고 상대의 뜻까지 알 수 있는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 지지 자의 본기는 계수예요. 지지 본기의 일간 관계는 천간의 관계와 다를 수 있어요. 겉으로 읽은 기간 주제 아래 어떤 자원이나 부담을 더 살필지 비교하는 자료로 읽어요.",
+    "after": "대상 지지 자의 본기는 계수입니다. 지지 본기의 일간 관계는 천간의 관계와 다를 수 있습니다. 겉으로 읽은 기간 주제 아래 어떤 자원이나 부담을 더 살필지 비교하는 자료로 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "축에는 기토를 본기로 계수·신금이 함께 들어 있어요. 토라는 대표 오행만으로 모든 관계를 설명하지 않아요. 같은 기간 천간이 돌아와도 자원을 관리하거나 준비하는 바탕의 관계가 달라질 수 있어요.",
+    "after": "축에는 기토를 본기로 계수·신금이 함께 들어 있습니다. 토라는 대표 오행만으로 모든 관계를 설명하지 않습니다. 같은 기간 천간이 돌아와도 자원을 관리하거나 준비하는 바탕의 관계가 달라질 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "인의 본기는 갑목이며 병화·무토도 지장간으로 살펴요. 원국에 있는 같은 글자와 다른 글자를 나누어 봐야 해요. 새로 시작할 일이 생긴다는 예측보다 어떤 표현과 자원에 연결되는지 읽는 자료예요.",
+    "after": "인의 본기는 갑목이며 병화·무토도 지장간으로 살핍니다. 원국에 있는 같은 글자와 다른 글자를 나누어 봐야 합니다. 새로 시작할 일이 생긴다는 예측보다 어떤 표현과 자원에 연결되는지 읽는 자료입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "묘의 지장간은 을목으로 두어요. 단일 지장간이라고 해석이 단순해지는 것은 아니에요. 원국의 유와 충 후보가 있는지, 해·미와 함께 있는지에 따라 추가로 읽을 관계가 달라져요.",
+    "after": "묘의 지장간은 을목으로 두십시오. 단일 지장간이라고 해석이 단순해지는 것은 아닙니다. 원국의 유와 충 후보가 있는지, 해·미와 함께 있는지에 따라 추가로 읽을 관계가 달라집니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "진에는 무토를 본기로 을목·계수를 살펴요. 대표 토 오행과 지장간의 목·수 관계를 따로 읽어요. 원국의 술과 충 후보가 있는지, 신·자와 삼합 후보가 생기는지에 따라 기간의 연결이 달라져요.",
+    "after": "진에는 무토를 본기로 을목·계수를 살핍니다. 대표 토 오행과 지장간의 목·수 관계를 따로 읽습니다. 원국의 술과 충 후보가 있는지, 신·자와 삼합 후보가 생기는지에 따라 기간의 연결이 달라집니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "사의 본기는 병화이며 무토·경금도 있어요. 화라는 이유만으로 활동이 늘어난다고 단정하지 않아요. 원국과 대운의 지지 관계를 함께 보며 어떤 역할과 자원을 다루는 주제인지 읽어요.",
+    "after": "사의 본기는 병화이며 무토·경금도 있습니다. 화라는 이유만으로 활동이 늘어난다고 단정하지 않습니다. 원국과 대운의 지지 관계를 함께 보며 어떤 역할과 자원을 다루는 주제인지 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "오에는 정화를 본기로 기토도 살펴요. 기간 천간과 지지 본기의 십신이 다를 수 있으므로 하나의 관계로 합치지 않아요. 원국의 자와 충 후보가 있다면 변화의 주제를 추가로 읽되 실제 사건을 확정하지 않아요.",
+    "after": "오에는 정화를 본기로 기토도 살핍니다. 기간 천간과 지지 본기의 십신이 다를 수 있으므로 하나의 관계로 합치지 않습니다. 원국의 자와 충 후보가 있다면 변화의 주제를 추가로 읽되 실제 사건을 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "미의 지장간은 기토·정화·을목이에요. 무토를 넣어 다른 십신으로 읽지 않아요. 원국의 해·묘와 함께 있을 때 목 삼합 후보를 볼 수 있지만 모든 토가 목으로 바뀐다고 세지는 않아요.",
+    "after": "미의 지장간은 기토·정화·을목입니다. 무토를 넣어 다른 십신으로 읽지 않습니다. 원국의 해·묘와 함께 있을 때 목 삼합 후보를 볼 수 있지만 모든 토가 목으로 바뀐다고 세지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "신의 본기는 경금이며 임수·무토도 살펴요. 같은 천간이 반복되는 날이라도 원국의 인과 충하거나 자·진과 후보를 만드는지에 따라 설명할 내용이 달라져요. 관계의 출현을 현실의 길흉 점수로 더하지 않아요.",
+    "after": "신의 본기는 경금이며 임수·무토도 살핍니다. 같은 천간이 반복되는 날이라도 원국의 인과 충하거나 자·진과 후보를 만드는지에 따라 설명할 내용이 달라집니다. 관계의 출현을 현실의 길흉 점수로 더하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "유의 지장간은 신금으로 두어요. 원국의 묘와 충 후보가 있는지, 진과 육합 후보가 있는지 따로 확인해요. 정리나 변화가 실제로 일어난다고 예측하기보다 기존 약속을 어떻게 조정할지 생각하는 자료예요.",
+    "after": "유의 지장간은 신금으로 두십시오. 원국의 묘와 충 후보가 있는지, 진과 육합 후보가 있는지 따로 확인합니다. 정리나 변화가 실제로 일어난다고 예측하기보다 기존 약속을 어떻게 조정할지 생각하는 자료입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "술에는 무토를 본기로 신금·정화를 살펴요. 같은 토 지지라도 축·진·미와 지장간이 달라 관계가 같지 않아요. 원국의 진과 충하거나 인·오와 후보가 되는지에 따라 배경을 함께 읽어요.",
+    "after": "술에는 무토를 본기로 신금·정화를 살핍니다. 같은 토 지지라도 축·진·미와 지장간이 달라 관계가 같지 않습니다. 원국의 진과 충하거나 인·오와 후보가 되는지에 따라 배경을 함께 읽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "해의 지장간은 임수·갑목이에요. 기간의 수 기운을 단순히 일간의 같은 편으로만 읽지 않고 일간과의 십신을 계산해요. 원국의 사와 충하는지, 묘·미와 후보가 되는지에 따라 이어지는 설명도 달라져요.",
+    "after": "해의 지장간은 임수·갑목입니다. 기간의 수 기운을 단순히 일간의 같은 편으로만 읽지 않고 일간과의 십신을 계산합니다. 원국의 사와 충하는지, 묘·미와 후보가 되는지에 따라 이어지는 설명도 달라집니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국 지지와 대상 기간 지지에 충 대응이 있어요. 서로 다른 요구나 위치를 조정하는 주제로 읽지만 이별·이사·사고를 확정하지 않아요. 실제 변화가 있다면 무엇을 유지하고 무엇을 바꿀지 당사자의 사정으로 정해요.",
+    "after": "원국 지지와 대상 기간 지지에 충 대응이 있습니다. 서로 다른 요구나 위치를 조정하는 주제로 읽지만 이별·이사·사고를 확정하지 않습니다. 실제 변화가 있다면 무엇을 유지하고 무엇을 바꿀지 당사자의 사정으로 정합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "일정이 바뀐다면 영향받는 사람에게 알려요.",
+    "after": "일정이 바뀐다면 영향받는 사람에게 알립니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간 사이에 육합의 글자 대응이 있어요. 함께 묶이는 역할이나 약속의 주제로 읽되 협력이 반드시 이뤄진다는 뜻은 아니에요. 합화는 별도 조건이어서 글자의 오행을 바꾸지 않았어요.",
+    "after": "원국과 기간 사이에 육합의 글자 대응이 있습니다. 함께 묶이는 역할이나 약속의 주제로 읽되 협력이 반드시 이뤄진다는 뜻은 아닙니다. 합화는 별도 조건이어서 글자의 오행을 바꾸지 않았습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "새 약속은 각자가 동의한 범위를 말해요.",
+    "after": "새 약속은 각자가 동의한 범위를 말합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간 사이에 해의 대응이 있어요. 전통 해석의 불편한 연결을 기대 차이를 말하는 주제로 풀었어요. 누군가 몰래 해친다는 예측은 아니며 실제 사람의 의도를 이 표로 판단하지 않아요.",
+    "after": "원국과 기간 사이에 해의 대응이 있습니다. 전통 해석의 불편한 연결을 기대 차이를 말하는 주제로 풀이했습니다. 누군가 몰래 해친다는 예측은 아니며 실제 사람의 의도를 이 표로 판단하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "불편한 점이 있다면 상대의 의도보다 실제 행동을 말해요.",
+    "after": "불편한 점이 있다면 상대의 의도보다 실제 행동을 말합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간 지지에 파 대응이 있어요. 이어오던 방법을 부분적으로 조정하는 주제로 읽어요. 계약 파기나 손해가 생긴다고 확정하지 않고, 실제로 바뀐 조건이 있는지 살피는 설명이에요.",
+    "after": "원국과 기간 지지에 파 대응이 있습니다. 이어오던 방법을 부분적으로 조정하는 주제로 읽습니다. 계약 파기나 손해가 생긴다고 확정하지 않고, 실제로 바뀐 조건이 있는지 살피는 설명입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "바뀐 조건이 있다면 기존 약속과 다른 부분을 말해요.",
+    "after": "바뀐 조건이 있다면 기존 약속과 다른 부분을 말합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간 사이에 형 후보가 있어요. 채택한 표의 대응이며 세 글자 형의 완성이나 처벌을 뜻하지 않아요. 반복해서 맡는 책임이 부담이라면 누구와 어떻게 나눌 수 있는지 생각해 볼 수 있어요.",
+    "after": "원국과 기간 사이에 형 후보가 있습니다. 채택한 표의 대응이며 세 글자 형의 완성이나 처벌을 뜻하지 않습니다. 반복해서 맡는 책임이 부담이라면 누구와 어떻게 나눌 수 있는지 생각해 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "내가 맡아온 일 중 조정할 수 있는 부분을 이야기해요.",
+    "after": "내가 맡아온 일 중 조정할 수 있는 부분을 이야기합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "같은 자형 지지가 다른 자리에 함께 있어요. 자신의 기준을 되풀이하는 상황에 빗대지만 자책하는 성격이나 질병을 판단하지 않아요. 실제 상황에서 같은 확인을 반복하고 있다면 필요한 기준을 구별해 볼 수 있어요.",
+    "after": "같은 자형 지지가 다른 자리에 함께 있습니다. 자신의 기준을 되풀이하는 상황에 빗대지만 자책하는 성격이나 질병을 판단하지 않습니다. 실제 상황에서 같은 확인을 반복하고 있다면 필요한 기준을 구별해 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "끝난 일을 다시 볼 필요가 있는지 목적부터 살펴요.",
+    "after": "끝난 일을 다시 볼 필요가 있는지 목적부터 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간을 함께 놓았을 때 삼합의 세 지지가 보여요. 투출과 월지 본기, 충의 방해 후보를 따로 기록했어요. 구성의 존재만으로 합화하거나 원국의 모든 관계가 바뀌었다고 말하지 않아요.",
+    "after": "원국과 기간을 함께 놓았을 때 삼합의 세 지지가 보입니다. 투출과 월지 본기, 충의 방해 후보를 따로 기록했습니다. 구성의 존재만으로 합화하거나 원국의 모든 관계가 바뀌었다고 말하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "한꺼번에 늘어나는 역할이 있다면 실제로 감당할 범위를 정해요.",
+    "after": "한꺼번에 늘어나는 역할이 있다면 실제로 감당할 범위를 정합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국과 기간을 함께 놓았을 때 방합의 세 지지가 보여요. 같은 계절 방향을 함께 읽는 후보이며 각 자리가 모두 한 오행으로 바뀌었다고 세지는 않아요. 새 연결이 원래 구성을 지웠다고 읽지 않아요.",
+    "after": "원국과 기간을 함께 놓았을 때 방합의 세 지지가 보입니다. 같은 계절 방향을 함께 읽는 후보이며 각 자리가 모두 한 오행으로 바뀌었다고 세지는 않습니다. 새 연결이 원래 구성을 지웠다고 읽지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "여러 사람이 같은 일을 바라더라도 역할은 따로 정해요.",
+    "after": "여러 사람이 같은 일을 바라더라도 역할은 따로 정합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간과 원국 천간 사이에 오합 대응이 있어요. 서로 묶이는 의제나 약속을 떠올릴 수 있지만 실제 인연이나 합화를 확정하지 않아요. 지지의 뿌리와 계절 판단이 달라질 여지도 함께 남겨요.",
+    "after": "대상 천간과 원국 천간 사이에 오합 대응이 있습니다. 서로 묶이는 의제나 약속을 떠올릴 수 있지만 실제 인연이나 합화를 확정하지 않습니다. 지지의 뿌리와 계절 판단이 달라질 여지도 함께 남깁니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "함께 결정할 일이라면 각자의 조건도 들어봐요.",
+    "after": "함께 결정할 일이라면 각자의 조건도 들어보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국은 신약 경향 후보이고 기간 천간은 편관 관계예요. 압박을 더 견디라는 뜻보다 그것을 감당할 인성과 뿌리, 실제 지원을 먼저 살피는 순서로 읽어요. 원국의 식신이나 대운의 생조가 반대 조건이 될 수 있어요.",
+    "after": "원국은 신약 경향 후보이고 기간 천간은 편관 관계입니다. 압박을 더 견디라는 뜻보다 그것을 감당할 인성과 뿌리, 실제 지원을 먼저 살피는 순서로 읽습니다. 원국의 식신이나 대운의 생조가 반대 조건이 될 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "어려운 역할을 맡기 전에 쓸 수 있는 도움을 물어봐요.",
+    "after": "어려운 역할을 맡기 전에 쓸 수 있는 도움을 물어보십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국의 뿌리와 생조가 신강 경향 후보를 만들고 기간 천간은 식신 관계예요. 준비를 더 늘리기보다 익힌 것을 내놓는 방향으로 읽을 수 있어요. 실제 성과의 확정은 아니며 새 일을 시작할지는 현재 자원으로 판단해요.",
+    "after": "원국의 뿌리와 생조가 신강 경향 후보를 만들고 기간 천간은 식신 관계입니다. 준비를 더 늘리기보다 익힌 것을 내놓는 방향으로 읽을 수 있습니다. 실제 성과의 확정은 아니며 새 일을 시작할지는 현재 자원으로 판단합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "이미 익힌 것을 사용할 작은 기회가 있는지 살펴요.",
+    "after": "이미 익힌 것을 사용할 작은 기회가 있는지 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국이 신강 경향 후보이고 기간 천간도 비견 관계예요. 같은 힘을 더 보태는 것보다 각자의 역할을 나누는 방향을 먼저 살펴요. 경쟁이 발생한다고 예측하지 않고 책임과 자원의 경계가 필요한 상황에 참고해요.",
+    "after": "원국이 신강 경향 후보이고 기간 천간도 비견 관계입니다. 같은 힘을 더 보태는 것보다 각자의 역할을 나누는 방향을 먼저 살핍니다. 경쟁이 발생한다고 예측하지 않고 책임과 자원의 경계가 필요한 상황에 참고합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "공동 작업에서 각자의 결정 범위를 정해요.",
+    "after": "공동 작업에서 각자의 결정 범위를 정합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국은 신약 경향 후보이고 기간 천간은 정인 관계예요. 생조를 지원과 배움의 주제로 읽되 도움을 받을 사건을 예측하지 않아요. 실제로 쓸 수 있는 자료나 제도가 있다면 내가 결정해야 할 부분과 함께 살펴요.",
+    "after": "원국은 신약 경향 후보이고 기간 천간은 정인 관계입니다. 생조를 지원과 배움의 주제로 읽되 도움을 받을 사건을 예측하지 않습니다. 실제로 쓸 수 있는 자료나 제도가 있다면 내가 결정해야 할 부분과 함께 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "지원이 필요하다면 필요한 자료나 시간을 구체적으로 요청해요.",
+    "after": "지원이 필요하다면 필요한 자료나 시간을 구체적으로 요청합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국의 강약은 경계이고 기간 천간은 정재 관계예요. 한 오행을 더하는 결론보다 지금의 약속과 비용을 얼마나 유지할 수 있는지 살피는 주제로 읽어요. 실제 수입과 지출을 모르는 상태에서 규모를 정하지는 않아요.",
+    "after": "원국의 강약은 경계이고 기간 천간은 정재 관계입니다. 한 오행을 더하는 결론보다 지금의 약속과 비용을 얼마나 유지할 수 있는지 살피는 주제로 읽습니다. 실제 수입과 지출을 모르는 상태에서 규모를 정하지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "현재의 예산 안에서 지속할 수 있는 계획을 골라요.",
+    "after": "현재의 예산 안에서 지속할 수 있는 계획을 고릅니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "같은 방향의 힘을 읽는 배경에서는 독립적으로 정할 일과 공동으로 정할 일을 나누어요. 앞의 짧은 기간 제안을 내 몫을 전부 늘리라는 뜻으로 넓히지 않아요.",
+    "after": "같은 방향의 힘을 읽는 배경에서는 독립적으로 정할 일과 공동으로 정할 일을 나눕니다. 앞의 짧은 기간 제안을 내 몫을 전부 늘리라는 뜻으로 넓히지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "자원을 나누는 배경에서는 짧은 기간에 새로 정한 비용이나 역할이 기존 합의에도 맞는지 살펴요. 다른 사람의 손해나 배신을 예상하는 설명은 아니에요.",
+    "after": "자원을 나누는 배경에서는 짧은 기간에 새로 정한 비용이나 역할이 기존 합의에도 맞는지 살핍니다. 다른 사람의 손해나 배신을 예상하는 설명은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "표현과 지속을 읽는 배경에서는 짧은 기간에 고른 일을 다시 이어갈 수 있는지도 살펴요. 배경의 식신을 모든 날에 성과가 생긴다는 뜻으로 쓰지 않아요.",
+    "after": "표현과 지속을 읽는 배경에서는 짧은 기간에 고른 일을 다시 이어갈 수 있는지도 살핍니다. 배경의 식신을 모든 날에 성과가 생긴다는 뜻으로 쓰지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "방법을 바꾸고 설명하는 배경에서는 짧은 기간의 제안도 바꾸려는 목적과 함께 읽어요. 규칙에 질문할 수 있지만 이미 맡은 책임이 자동으로 없어지는 것은 아니에요.",
+    "after": "방법을 바꾸고 설명하는 배경에서는 짧은 기간의 제안도 바꾸려는 목적과 함께 읽습니다. 규칙에 질문할 수 있지만 이미 맡은 책임이 자동으로 없어지는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "여러 자원을 연결하는 배경에서는 짧은 기간의 새 약속이 감당할 범위 안인지 살펴요. 넓히는 주제와 오늘의 신중한 선택은 서로 다른 시간 범위를 다뤄요.",
+    "after": "여러 자원을 연결하는 배경에서는 짧은 기간의 새 약속이 감당할 범위 안인지 살핍니다. 넓히는 주제와 오늘의 신중한 선택은 서로 다른 시간 범위를 다룹니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "꾸준한 관리를 읽는 배경에서는 작은 선택이 반복될 때 드는 실제 비용을 살펴요. 짧은 구간의 지출 하나로 한 해의 재물을 평가하지 않아요.",
+    "after": "꾸준한 관리를 읽는 배경에서는 작은 선택이 반복될 때 드는 실제 비용을 살핍니다. 짧은 구간의 지출 하나로 한 해의 재물을 평가하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "과제와 압박을 읽는 배경에서는 짧은 기간의 일도 책임과 지원을 함께 살펴요. 어려움이 예정됐다는 뜻이 아니며 무리한 요구를 받아들이라는 제안도 아니에요.",
+    "after": "과제와 압박을 읽는 배경에서는 짧은 기간의 일도 책임과 지원을 함께 살핍니다. 어려움이 예정됐다는 뜻이 아니며 무리한 요구를 받아들이라는 제안도 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "역할과 약속을 읽는 배경에서는 짧은 기간에 새로 정한 방법이 공동 기준과 맞는지 살펴요. 변화를 막는 규칙으로 쓰기보다 조정할 상대를 찾는 데 참고해요.",
+    "after": "역할과 약속을 읽는 배경에서는 짧은 기간에 새로 정한 방법이 공동 기준과 맞는지 살핍니다. 변화를 막는 규칙으로 쓰기보다 조정할 상대를 찾는 데 참고합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "다른 해석과 배움을 읽는 배경에서는 짧은 기간의 제안도 근거를 직접 확인하며 써봐요. 생각을 더하는 일과 실제로 시험하는 일을 나누어 볼 수 있어요.",
+    "after": "다른 해석과 배움을 읽는 배경에서는 짧은 기간의 제안도 근거를 직접 확인하며 써보십시오. 생각을 더하는 일과 실제로 시험하는 일을 나누어 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "지원과 준비를 읽는 배경에서는 짧은 기간의 실행에 어떤 자료가 필요한지 살펴요. 준비가 끝나야만 움직일 수 있다는 뜻으로 넓히지는 않아요.",
+    "after": "지원과 준비를 읽는 배경에서는 짧은 기간의 실행에 어떤 자료가 필요한지 살핍니다. 준비가 끝나야만 움직일 수 있다는 뜻으로 넓히지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 각자의 역할을 나누는 비견 관계예요. 오늘의 짧은 선택과 한 달의 공동 책임을 같은 크기로 해석하지 않아요.",
+    "after": "월운은 각자의 역할을 나누는 비견 관계입니다. 오늘의 짧은 선택과 한 달의 공동 책임을 같은 크기로 해석하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 주도권과 자원을 나누는 겁재 관계예요. 오늘 새로 합의한 비용이 한 달의 약속에 어떤 영향을 주는지 함께 볼 수 있어요.",
+    "after": "월운은 주도권과 자원을 나누는 겁재 관계입니다. 오늘 새로 합의한 비용이 한 달의 약속에 어떤 영향을 주는지 함께 볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 익힌 것을 이어가는 식신 관계예요. 오늘의 실행을 한 달 내내 같은 강도로 반복해야 한다는 뜻은 아니에요.",
+    "after": "월운은 익힌 것을 이어가는 식신 관계입니다. 오늘의 실행을 한 달 내내 같은 강도로 반복해야 한다는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 표현과 방법을 바꾸는 상관 관계예요. 오늘의 의견도 무엇을 고치려는 것인지 목적을 남기면 한 달의 흐름과 연결하기 쉬워요.",
+    "after": "월운은 표현과 방법을 바꾸는 상관 관계입니다. 오늘의 의견도 무엇을 고치려는 것인지 목적을 남기면 한 달의 흐름과 연결하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 여러 자원을 연결하는 편재 관계예요. 오늘의 기회가 있어도 이미 정한 일정과 함께 살펴야 해요.",
+    "after": "월운은 여러 자원을 연결하는 편재 관계입니다. 오늘의 기회가 있어도 이미 정한 일정과 함께 살펴야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 정해진 자원을 관리하는 정재 관계예요. 오늘의 선택을 한 달의 실제 예산과 연결해 볼 수 있지만 지출이 정해졌다는 뜻은 아니에요.",
+    "after": "월운은 정해진 자원을 관리하는 정재 관계입니다. 오늘의 선택을 한 달의 실제 예산과 연결해 볼 수 있지만 지출이 정해졌다는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 과제를 감당하는 편관 관계예요. 오늘의 작은 압박을 한 달 전체의 불운으로 확대하지 않고 도움을 구할 범위를 살펴요.",
+    "after": "월운은 과제를 감당하는 편관 관계입니다. 오늘의 작은 압박을 한 달 전체의 불운으로 확대하지 않고 도움을 구할 범위를 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 공통 약속을 살피는 정관 관계예요. 오늘 바꿀 절차와 한 달 동안 지킬 책임을 구별할 수 있어요.",
+    "after": "월운은 공통 약속을 살피는 정관 관계입니다. 오늘 바꿀 절차와 한 달 동안 지킬 책임을 구별할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 다른 관점의 배움을 살피는 편인 관계예요. 오늘 떠오른 설명을 바로 결론으로 삼기보다 실제 사례에서 확인할 수 있어요.",
+    "after": "월운은 다른 관점의 배움을 살피는 편인 관계입니다. 오늘 떠오른 설명을 바로 결론으로 삼기보다 실제 사례에서 확인할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "월운은 준비와 지원의 정인 관계예요. 오늘 해볼 일에 필요한 자료가 무엇인지 살피되 준비만 계속하라는 뜻은 아니에요.",
+    "after": "월운은 준비와 지원의 정인 관계입니다. 오늘 해볼 일에 필요한 자료가 무엇인지 살피되 준비만 계속하라는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 비견 관계예요. 긴 구간의 독립성과 역할 분담을 배경으로 읽으며, 짧은 기간의 선택이 매번 같은 결과를 낸다고 보지 않아요.",
+    "after": "대운 천간은 비견 관계입니다. 긴 구간의 독립성과 역할 분담을 배경으로 읽으며, 짧은 기간의 선택이 매번 같은 결과를 낸다고 보지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 겁재 관계예요. 공동 자원을 다루는 긴 배경과 오늘의 실제 지출을 구별해요. 대운 하나로 손해를 확정하지 않아요.",
+    "after": "대운 천간은 겁재 관계입니다. 공동 자원을 다루는 긴 배경과 오늘의 실제 지출을 구별합니다. 대운 하나로 손해를 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 식신 관계예요. 익힌 것을 표현하는 긴 배경과 선택 기간의 관계를 함께 읽어요. 지속하는 흐름이 매일 성과를 내라는 요구는 아니에요.",
+    "after": "대운 천간은 식신 관계입니다. 익힌 것을 표현하는 긴 배경과 선택 기간의 관계를 함께 읽습니다. 지속하는 흐름이 매일 성과를 내라는 요구는 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 상관 관계예요. 표현과 방법의 변화라는 긴 주제가 있어도 기간의 관성·인성 등 다른 관계를 함께 살펴요.",
+    "after": "대운 천간은 상관 관계입니다. 표현과 방법의 변화라는 긴 주제가 있어도 기간의 관성·인성 등 다른 관계를 함께 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 편재 관계예요. 연결할 자원의 범위를 긴 배경으로 읽되 현재 재산이나 미래 수익을 추정하지 않아요.",
+    "after": "대운 천간은 편재 관계입니다. 연결할 자원의 범위를 긴 배경으로 읽되 현재 재산이나 미래 수익을 추정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 정재 관계예요. 유지할 자원과 실제 책임이라는 긴 주제를 읽어요. 선택 기간의 새로운 지지 관계가 이 배경을 자동으로 지우지는 않아요.",
+    "after": "대운 천간은 정재 관계입니다. 유지할 자원과 실제 책임이라는 긴 주제를 읽습니다. 선택 기간의 새로운 지지 관계가 이 배경을 자동으로 지우지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 편관 관계예요. 과제와 권한을 긴 배경으로 읽되 어려움이 계속된다는 뜻은 아니에요. 생조와 제어 후보를 구간별로 함께 살펴요.",
+    "after": "대운 천간은 편관 관계입니다. 과제와 권한을 긴 배경으로 읽되 어려움이 계속된다는 뜻은 아닙니다. 생조와 제어 후보를 구간별로 함께 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 정관 관계예요. 공통 약속과 역할이라는 긴 배경과 대상 기간의 실제 관계를 나누어 읽어요. 승진·혼인을 정한 표가 아니에요.",
+    "after": "대운 천간은 정관 관계입니다. 공통 약속과 역할이라는 긴 배경과 대상 기간의 실제 관계를 나누어 읽습니다. 승진·혼인을 정한 표가 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 편인 관계예요. 다른 관점에서 배우는 긴 배경으로 읽어요. 식신과 만나는 기간에도 공존만으로 도식이나 실패를 확정하지 않아요.",
+    "after": "대운 천간은 편인 관계입니다. 다른 관점에서 배우는 긴 배경으로 읽습니다. 식신과 만나는 기간에도 공존만으로 도식이나 실패를 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대운 천간은 정인 관계예요. 지원과 준비의 긴 배경으로 읽되 도움이 저절로 생긴다는 뜻은 아니에요. 실제로 쓸 수 있는 자료와 권한은 현실에서 확인해요.",
+    "after": "대운 천간은 정인 관계입니다. 지원과 준비의 긴 배경으로 읽되 도움이 저절로 생긴다는 뜻은 아닙니다. 실제로 쓸 수 있는 자료와 권한은 현실에서 확인합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 비견 관계가 원국의 다른 천간·지장간에서도 확인돼요. 원래의 자기 방식과 이번 기간의 역할 분담이 겹치는 주제로 읽어요. 같은 관계가 여러 자리에 있다는 사실을 성격이 강해진 확률로 바꾸지는 않아요.",
+    "after": "대상 천간의 비견 관계가 원국의 다른 천간·지장간에서도 확인됩니다. 원래의 자기 방식과 이번 기간의 역할 분담이 겹치는 주제로 읽습니다. 같은 관계가 여러 자리에 있다는 사실을 성격이 강해진 확률로 바꾸지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 겁재 관계가 원국에도 있어요. 이번 기간의 공동 자원 주제를 원래 어떤 자리에서 자원을 나누는지와 이어서 읽을 수 있어요. 원국에 있다는 사실이 실제 손해나 경쟁의 반복을 뜻하지는 않아요.",
+    "after": "대상 천간의 겁재 관계가 원국에도 있습니다. 이번 기간의 공동 자원 주제를 원래 어떤 자리에서 자원을 나누는지와 이어서 읽을 수 있습니다. 원국에 있다는 사실이 실제 손해나 경쟁의 반복을 뜻하지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간과 같은 식신 관계가 원국에도 있어요. 기간의 표현 주제를 본래의 익힌 것을 내놓는 흐름과 이어 읽을 수 있어요. 기존 관계의 재출현과 실제 성과가 생긴다는 판단은 달라요.",
+    "after": "대상 천간과 같은 식신 관계가 원국에도 있습니다. 기간의 표현 주제를 본래의 익힌 것을 내놓는 흐름과 이어 읽을 수 있습니다. 기존 관계의 재출현과 실제 성과가 생긴다는 판단은 다릅니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 상관 관계가 원국에서도 보여요. 이번 기간의 질문과 표현을 원국의 어느 자리에서 같은 관계가 나오는지와 함께 읽어요. 같은 관계가 다시 나온다고 다툼을 반복한다고 해석하지 않아요.",
+    "after": "대상 천간의 상관 관계가 원국에서도 보입니다. 이번 기간의 질문과 표현을 원국의 어느 자리에서 같은 관계가 나오는지와 함께 읽습니다. 같은 관계가 다시 나온다고 다툼을 반복한다고 해석하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 편재 관계가 원국에도 있어요. 넓게 자원을 연결하는 기간 주제가 본래의 자원 관계와 겹쳐요. 재성이 더 보인다는 사실만으로 거래 규모를 늘리거나 수입을 예상하지 않아요.",
+    "after": "대상 천간의 편재 관계가 원국에도 있습니다. 넓게 자원을 연결하는 기간 주제가 본래의 자원 관계와 겹칩니다. 재성이 더 보인다는 사실만으로 거래 규모를 늘리거나 수입을 예상하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 정재 관계가 원국에서도 확인돼요. 기간의 꾸준한 관리 주제를 원래 어떤 자리에서 자원을 다루는지와 이어 볼 수 있어요. 같은 관계가 더해진다는 사실과 저축이 늘어나는 사건은 달라요.",
+    "after": "대상 천간의 정재 관계가 원국에서도 확인됩니다. 기간의 꾸준한 관리 주제를 원래 어떤 자리에서 자원을 다루는지와 이어 볼 수 있습니다. 같은 관계가 더해진다는 사실과 저축이 늘어나는 사건은 다릅니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 편관 관계가 원국에도 있어요. 이번 기간의 과제 주제를 원래의 압박·지원 조건과 함께 읽어요. 부담이 두 배가 된다는 수치나 사고의 예측으로 바꾸지 않고 감당할 지원을 살펴요.",
+    "after": "대상 천간의 편관 관계가 원국에도 있습니다. 이번 기간의 과제 주제를 원래의 압박·지원 조건과 함께 읽습니다. 부담이 두 배가 된다는 수치나 사고의 예측으로 바꾸지 않고 감당할 지원을 살핍니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 정관 관계가 원국에도 있어요. 역할과 약속이라는 기간 주제를 원래 어떤 자리에 관성이 있는지와 이어 읽을 수 있어요. 인정이나 승진이 확정된다는 해석은 아니에요.",
+    "after": "대상 천간의 정관 관계가 원국에도 있습니다. 역할과 약속이라는 기간 주제를 원래 어떤 자리에 관성이 있는지와 이어 읽을 수 있습니다. 인정이나 승진이 확정된다는 해석은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 편인 관계가 원국에도 있어요. 다른 관점에서 배우는 기간 주제가 본래의 배움 관계와 겹쳐요. 식신이 있다면 공존 사실을 함께 보지만 도식 구조의 성패까지 확정하지 않아요.",
+    "after": "대상 천간의 편인 관계가 원국에도 있습니다. 다른 관점에서 배우는 기간 주제가 본래의 배움 관계와 겹칩니다. 식신이 있다면 공존 사실을 함께 보지만 도식 구조의 성패까지 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "대상 천간의 정인 관계가 원국에서도 보여요. 기간의 지원과 준비를 원래의 생조 조건과 함께 읽어요. 도움을 주는 사람이 생긴다고 추측하지 않고 실제 쓸 수 있는 자원을 확인해요.",
+    "after": "대상 천간의 정인 관계가 원국에서도 보입니다. 기간의 지원과 준비를 원래의 생조 조건과 함께 읽습니다. 도움을 주는 사람이 생긴다고 추측하지 않고 실제 쓸 수 있는 자원을 확인합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국의 다른 천간·지장간에는 비견 관계가 없고 대상 천간에서 새로 확인돼요. 원국의 일간 자체는 이 비교에서 제외해요. 기간에 더해진 관계를 원래부터 있던 다른 자리의 성향처럼 기록하지 않아요.",
+    "after": "전체 원국의 다른 천간·지장간에는 비견 관계가 없고 대상 천간에서 새로 확인됩니다. 원국의 일간 자체는 이 비교에서 제외합니다. 기간에 더해진 관계를 원래부터 있던 다른 자리의 성향처럼 기록하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 겁재 관계가 대상 천간에서 확인돼요. 공동 자원과 주도권의 주제를 기간의 추가 조건으로 읽어요. 다른 사람이 나타나거나 자원을 빼앗는 사건이 생긴다는 뜻은 아니에요.",
+    "after": "전체 원국에 없던 겁재 관계가 대상 천간에서 확인됩니다. 공동 자원과 주도권의 주제를 기간의 추가 조건으로 읽습니다. 다른 사람이 나타나거나 자원을 빼앗는 사건이 생긴다는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 식신 관계가 대상 천간에서 확인돼요. 익힌 것을 밖으로 내는 주제를 이 기간의 추가 조건으로 읽되 본래 능력이 부족했다고 판단하지 않아요. 없는 십신과 현실의 능력은 같은 말이 아니에요.",
+    "after": "전체 원국에 없던 식신 관계가 대상 천간에서 확인됩니다. 익힌 것을 밖으로 내는 주제를 이 기간의 추가 조건으로 읽되 본래 능력이 부족했다고 판단하지 않습니다. 없는 십신과 현실의 능력은 같은 말이 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "원국 전체의 천간·지장간에는 상관 관계가 없고 대상 천간에서 새로 보여요. 표현과 질문이라는 기간의 주제를 더해 읽어요. 원래 표현력이 없던 사람이라고 판단하거나 변화를 강요하는 뜻은 아니에요.",
+    "after": "원국 전체의 천간·지장간에는 상관 관계가 없고 대상 천간에서 새로 보입니다. 표현과 질문이라는 기간의 주제를 더해 읽습니다. 원래 표현력이 없던 사람이라고 판단하거나 변화를 강요하는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에는 없던 편재 관계가 대상 천간에서 확인돼요. 기간의 연결과 자원 주제로 읽되 새 돈이 생긴다는 뜻은 아니에요. 기간 조건을 원국의 고유 구성과 구별하는 설명이에요.",
+    "after": "전체 원국에는 없던 편재 관계가 대상 천간에서 확인됩니다. 기간의 연결과 자원 주제로 읽되 새 돈이 생긴다는 뜻은 아닙니다. 기간 조건을 원국의 고유 구성과 구별하는 설명입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 정재 관계가 대상 천간에서 보여요. 자원을 꾸준히 다루는 주제가 기간에 더해진 것으로 읽어요. 원래 관리 능력이 없었다거나 이번에 수입이 정해진다고 판단하지 않아요.",
+    "after": "전체 원국에 없던 정재 관계가 대상 천간에서 보입니다. 자원을 꾸준히 다루는 주제가 기간에 더해진 것으로 읽습니다. 원래 관리 능력이 없었다거나 이번에 수입이 정해진다고 판단하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 편관 관계가 대상 천간에서 확인돼요. 새로운 종류의 과제를 살피는 주제로 읽지만 실제 압박 사건을 예측하지 않아요. 원국의 뿌리·인성·식신과 연결해 감당할 조건을 비교할 수 있어요.",
+    "after": "전체 원국에 없던 편관 관계가 대상 천간에서 확인됩니다. 새로운 종류의 과제를 살피는 주제로 읽지만 실제 압박 사건을 예측하지 않습니다. 원국의 뿌리·인성·식신과 연결해 감당할 조건을 비교할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 정관 관계가 대상 천간에서 보여요. 역할과 공통 약속을 기간의 추가 주제로 읽어요. 원래 책임감이 없다는 평가도, 이번에 지위를 얻는다는 예측도 아니에요.",
+    "after": "전체 원국에 없던 정관 관계가 대상 천간에서 보입니다. 역할과 공통 약속을 기간의 추가 주제로 읽습니다. 원래 책임감이 없다는 평가도, 이번에 지위를 얻는다는 예측도 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에 없던 편인 관계가 대상 천간에서 확인돼요. 낯선 자료를 해석하는 주제를 이 기간의 추가 조건으로 읽어요. 기존 식신과 만날 때도 글자의 공존과 구조의 성패를 구별해요.",
+    "after": "전체 원국에 없던 편인 관계가 대상 천간에서 확인됩니다. 낯선 자료를 해석하는 주제를 이 기간의 추가 조건으로 읽습니다. 기존 식신과 만날 때도 글자의 공존과 구조의 성패를 구별합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/advanced/period.ts",
+    "before": "전체 원국에는 없던 정인 관계가 대상 천간에서 보여요. 지원과 준비의 주제가 기간에 더해진 것으로 읽어요. 그동안 보호받지 못했다거나 앞으로 도움이 보장된다고 사람의 과거와 미래를 추정하지 않아요.",
+    "after": "전체 원국에는 없던 정인 관계가 대상 천간에서 보입니다. 지원과 준비의 주제가 기간에 더해진 것으로 읽습니다. 그동안 보호받지 못했다거나 앞으로 도움이 보장된다고 사람의 과거와 미래를 추정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "내 이야기를 전한 뒤 상대가 어떻게 느꼈는지 물어보세요. 질문한 뒤 답을 기다리면 상대의 생각도 들을 수 있어요.",
+    "after": "내 이야기를 전한 뒤 상대가 어떻게 느꼈는지 물어보십시오. 질문한 뒤 답을 기다리면 상대의 생각도 들을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "눈에 들어오는 한 곳만 5분 정도 정리해 보세요. 모두 끝내려 하기보다 지금 편해지는 만큼이면 좋아요.",
+    "after": "눈에 들어오는 한 곳만 5분 정도 정리해 보십시오. 모두 끝내려 하기보다 지금 편해지는 만큼이면 좋습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "늘 하던 일의 순서를 조금 바꿔보세요. 편리해졌는지 확인하는 작은 실험으로도 충분해요.",
+    "after": "늘 하던 일의 순서를 조금 바꿔보십시오. 편리해졌는지 확인하는 작은 실험으로도 충분합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "일정을 정하기 전에 나의 여유를 한 번 확인해 보세요. 지금 쓸 수 있는 시간을 알면 지키기 어려운 약속을 줄이는 데 도움이 돼요.",
+    "after": "일정을 정하기 전에 나의 여유를 한 번 확인해 보십시오. 지금 쓸 수 있는 시간을 알면 지키기 어려운 약속을 줄이는 데 도움이 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "오늘 편안했던 순간 하나를 짧게 적어 보세요. 특별한 성과가 없어도 편하게 지냈던 경험을 적을 수 있어요.",
+    "after": "오늘 편안했던 순간 하나를 짧게 적어 보십시오. 특별한 성과가 없어도 편하게 지냈던 경험을 적을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "일과 일 사이에 짧은 여유를 넣어 보세요. 새로운 계획을 세우지 않고 물 한 잔을 천천히 마셔도 좋아요.",
+    "after": "일과 일 사이에 짧은 여유를 넣어 보십시오. 새로운 계획을 세우지 않고 물 한 잔을 천천히 마셔도 좋습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "도움이 된 행동 하나를 떠올려 짧게 고마움을 전해 보세요. 어떤 점이 도움이 됐는지 덧붙이면 고마운 이유도 전할 수 있어요.",
+    "after": "도움이 된 행동 하나를 떠올려 짧게 고마움을 전해 보십시오. 어떤 점이 도움이 됐는지 덧붙이면 고마운 이유도 전할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "약속이 겹쳤다면 바로 취소하기 전에 서로 가능한 다른 시간을 물어봐요. 바꿀 수 없는 일정과 조정할 수 있는 일을 나누면 선택하기 쉬워요.",
+    "after": "약속이 겹쳤다면 바로 취소하기 전에 서로 가능한 다른 시간을 물어보십시오. 바꿀 수 없는 일정과 조정할 수 있는 일을 나누면 선택하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "같은 자료를 찾는 데 시간이 든다면 실제로 쓰는 것만 한곳에 모아봐요. 모든 파일을 한꺼번에 정리할 필요는 없어요.",
+    "after": "같은 자료를 찾는 데 시간이 든다면 실제로 쓰는 것만 한곳에 모아보십시오. 모든 파일을 한꺼번에 정리할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "새 부탁을 받았다면 지금 맡은 일과 함께 할 수 있는지 말해봐요. 도울 마음이 있어도 완료 시점은 따로 정할 수 있어요.",
+    "after": "새 부탁을 받았다면 지금 맡은 일과 함께할 수 있는지 말해보십시오. 도울 마음이 있어도 완료 시점은 따로 정할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "답이 늦어 궁금하다면 언제까지 알려주면 되는지 전해봐요. 연락 속도만으로 상대의 마음을 판단하지 않을 수 있어요.",
+    "after": "답이 늦어 궁금하다면 언제까지 알려주면 되는지 전해보십시오. 연락 속도만으로 상대의 마음을 판단하지 않을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "반복해서 나가는 비용 중 지금 쓰지 않는 것이 있는지 봐요. 해지할 때 불이익이나 보관할 자료도 함께 살펴볼 수 있어요.",
+    "after": "반복해서 나가는 비용 중 지금 쓰지 않는 것이 있는지 보십시오. 해지할 때 불이익이나 보관할 자료도 함께 살펴볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "식사 약속이 있다면 먹기 어려운 음식이나 예산을 먼저 물어봐요. 취향을 맞히기보다 직접 듣는 편이 선택하기 쉬워요.",
+    "after": "식사 약속이 있다면 먹기 어려운 음식이나 예산을 먼저 물어보십시오. 취향을 맞히기보다 직접 듣는 편이 선택하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "불편한 일을 해결할 도구가 필요하다면 지금 가진 것으로 가능한 방법도 살펴봐요. 구매를 미루는 것과 필요를 무시하는 것은 다른 일이에요.",
+    "after": "불편한 일을 해결할 도구가 필요하다면 지금 가진 것으로 가능한 방법도 살펴보십시오. 구매를 미루는 것과 필요를 무시하는 것은 다른 일입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "중요한 내용을 전했다면 상대가 어떻게 이해했는지 들어봐요. 같은 단어를 써도 서로 생각한 범위가 다를 수 있어요.",
+    "after": "중요한 내용을 전했다면 상대가 어떻게 이해했는지 들어보십시오. 같은 단어를 써도 서로 생각한 범위가 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "하던 일을 멈춰야 한다면 다음에 시작할 곳만 적어둬요. 끝내지 못한 일을 계속 머릿속에 두지 않아도 이어갈 수 있어요.",
+    "after": "하던 일을 멈춰야 한다면 다음에 시작할 곳만 적어두십시오. 끝내지 못한 일을 계속 머릿속에 두지 않아도 이어갈 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "제안은 고맙지만 참여하기 어렵다면 그 두 가지를 함께 말해봐요. 이유를 모두 설명하지 않아도 가능한 범위는 전할 수 있어요.",
+    "after": "제안은 고맙지만 참여하기 어렵다면 그 두 가지를 함께 말해보십시오. 이유를 모두 설명하지 않아도 가능한 범위는 전할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "빌린 물건이 있다면 상태와 돌려줄 시간을 확인해 봐요. 작은 약속을 기억하기 어렵다면 개인정보가 없는 방식으로 할 일만 남겨둘 수 있어요.",
+    "after": "빌린 물건이 있다면 상태와 돌려줄 시간을 확인해 보십시오. 작은 약속을 기억하기 어렵다면 개인정보가 없는 방식으로 할 일만 남겨둘 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "이어받을 사람이 있다면 끝난 부분과 남은 부분을 나누어 알려줘요. 내가 알던 사정을 상대도 이미 안다고 넘기지 않을 수 있어요.",
+    "after": "이어받을 사람이 있다면 끝난 부분과 남은 부분을 나누어 알려주십시오. 내가 알던 사정을 상대도 이미 안다고 넘기지 않을 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "작업을 보여줄 일이 있다면 어떤 점이 궁금한지 같이 말해봐요. 전체를 평가받기보다 지금 고를 수 있는 부분을 논의할 수 있어요.",
+    "after": "작업을 보여줄 일이 있다면 어떤 점이 궁금한지 같이 말해보십시오. 전체를 평가받기보다 지금 고를 수 있는 부분을 논의할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "자주 함께 쓰는 물건이 있다면 쓰고 둘 곳을 같이 정해봐요. 한 사람만 편한 위치가 아닌지도 물어볼 수 있어요.",
+    "after": "자주 함께 쓰는 물건이 있다면 쓰고 둘 곳을 같이 정해보십시오. 한 사람만 편한 위치가 아닌지도 물어볼 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "결정할 것이 많다면 지금 답해야 하는 것부터 골라봐요. 나중에 바꿀 수 있는 선택까지 한 번에 정할 필요는 없어요.",
+    "after": "결정할 것이 많다면 지금 답해야 하는 것부터 골라보십시오. 나중에 바꿀 수 있는 선택까지 한 번에 정할 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "불편했던 일을 말할 때 늘 그렇다는 표현 대신 실제 장면을 떠올려봐요. 고칠 수 있는 행동이 무엇인지 서로 이해하기 쉬워요.",
+    "after": "불편했던 일을 말할 때 늘 그렇다는 표현 대신 실제 장면을 떠올려보십시오. 고칠 수 있는 행동이 무엇인지 서로 이해하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "새로 배운 것이 있다면 부담이 작은 사례에 사용해 봐요. 설명을 읽을 때와 직접 할 때 궁금한 점이 다를 수 있어요.",
+    "after": "새로 배운 것이 있다면 부담이 작은 사례에 사용해 보십시오. 설명을 읽을 때와 직접 할 때 궁금한 점이 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "아직 약속이 없더라도 필요한 휴식이나 이동 시간이 있다면 남겨두어요. 빈칸이 있다는 이유로 새 부탁을 모두 맡을 필요는 없어요.",
+    "after": "아직 약속이 없더라도 필요한 휴식이나 이동 시간이 있다면 남겨두십시오. 빈칸이 있다는 이유로 새 부탁을 모두 맡을 필요는 없습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "모임을 계획한다면 금액과 정산 방법을 미리 말해봐요. 참석하기 어려운 사람에게도 편하게 고를 여지를 남길 수 있어요.",
+    "after": "모임을 계획한다면 금액과 정산 방법을 미리 말해보십시오. 참석하기 어려운 사람에게도 편하게 고를 여지를 남길 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "다른 사람이 함께 나온 사진을 올리려면 괜찮은지 물어봐요. 좋은 기억을 남기고 싶은 마음과 공개에 대한 동의는 따로 확인할 수 있어요.",
+    "after": "다른 사람이 함께 나온 사진을 올리려면 괜찮은지 물어보십시오. 좋은 기억을 남기고 싶은 마음과 공개에 대한 동의는 따로 확인할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "자꾸 주의가 옮겨간다면 지금 바꿀 수 있는 소리나 알림부터 살펴봐요. 집중이 안 되는 이유를 내 의지 하나로만 설명하지 않아도 돼요.",
+    "after": "자꾸 주의가 옮겨간다면 지금 바꿀 수 있는 소리나 알림부터 살펴보십시오. 집중이 안 되는 이유를 내 의지 하나로만 설명하지 않아도 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "끝까지 읽지 못한 글이 있다면 다시 읽고 싶은 이유가 있는지 생각해 봐요. 시작한 것을 모두 끝내야 하는 것은 아니에요.",
+    "after": "끝까지 읽지 못한 글이 있다면 다시 읽고 싶은 이유가 있는지 생각해 보십시오. 시작한 것을 모두 끝내야 하는 것은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "계획을 바꿨다면 영향을 받는 사람이 있는지 살펴봐요. 결론뿐 아니라 언제부터 바뀌는지도 알려주면 서로 준비하기 쉬워요.",
+    "after": "계획을 바꿨다면 영향을 받는 사람이 있는지 살펴보십시오. 결론뿐 아니라 언제부터 바뀌는지도 알려주면 서로 준비하기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/editorial.ts",
+    "before": "도움이 필요하다면 같이 해주길 원하는지 설명을 원하는지 말해봐요. 부탁의 크기보다 필요한 방식이 분명하면 서로 부담을 나누기 쉬워요.",
+    "after": "도움이 필요하다면 같이 해주길 원하는지 설명을 원하는지 말해보십시오. 부탁의 크기보다 필요한 방식이 분명하면 서로 부담을 나누기 쉽습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "일주의 천간이에요. 이 서비스에서는 나의 기질을 해석하는 출발점으로 사용해요. 사람 전체를 하나의 글자로 정하지는 않아요.",
+    "after": "일주의 천간입니다. 이 서비스에서는 나의 기질을 해석하는 출발점으로 사용합니다. 사람 전체를 하나의 글자로 정하지는 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "연·월·일·시에 각각 천간과 지지를 배치한 표예요. 시간 미상에서는 시주를 만들지 않고, 경계 날짜의 미확정 기둥도 제외해요.",
+    "after": "연·월·일·시에 각각 천간과 지지를 배치한 표입니다. 시간 미상에서는 시주를 만들지 않고, 경계 날짜의 미확정 기둥도 제외합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "목·화·토·금·수의 다섯 분류예요. 여기서는 알려진 천간과 지지 대표 오행의 개수만 세요. 기운의 세기, 용신이나 직업 적합성 점수가 아니에요.",
+    "after": "목·화·토·금·수의 다섯 분류입니다. 여기서는 알려진 천간과 지지 대표 오행의 개수만 세요. 기운의 세기, 용신이나 직업 적합성 점수가 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "일간과 다른 천간 사이의 오행·음양 관계를 열 가지 이름으로 나타내요. 비견·겁재, 식신·상관, 편재·정재, 편관·정관, 편인·정인이 있어요. 특정 사건이나 재산을 뜻하지 않아요.",
+    "after": "일간과 다른 천간 사이의 오행·음양 관계를 열 가지 이름으로 나타냅니다. 비견·겁재, 식신·상관, 편재·정재, 편관·정관, 편인·정인이 있습니다. 특정 사건이나 재산을 뜻하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "태양의 황경에 따른 계절 경계예요. 사주의 연주는 입춘, 월주는 소한·입춘·경칩 등 열두 절입 순간에 바뀌어요. 음력 초하루와는 달라요.",
+    "after": "태양의 황경에 따른 계절 경계입니다. 사주의 연주는 입춘, 월주는 소한·입춘·경칩 등 열두 절입 순간에 바뀝니다. 음력 초하루와는 다릅니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "한국 출생 당시의 시계 시간을 IANA Asia/Seoul로 해석한 뒤 UTC+9 표준시로 환산해요. 이 사이트의 날짜 경계는 표준시 0시예요. 지역 경도·진태양시 보정은 하지 않아요.",
+    "after": "한국 출생 당시의 시계 시간을 IANA Asia/Seoul로 해석한 뒤 UTC+9 표준시로 환산합니다. 이 사이트의 날짜 경계는 표준시 0시입니다. 지역 경도·진태양시 보정은 하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "모르는 값은 임의로 채우지 않아요. 시주, 절입일의 연·월주, 서머타임 환산 시 날짜가 달라지는 경우의 일주가 제외될 수 있어요.",
+    "after": "모르는 값은 임의로 채우지 않습니다. 시주, 절입일의 연·월주, 서머타임 환산 시 날짜가 달라지는 경우의 일주가 제외될 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/glossary.ts",
+    "before": "띠·별자리·혈액형은 사주와 별도의 읽을거리예요. 오늘의 작은 조언은 날짜별 편집 순환이며 개인의 미래를 계산한 결과가 아니에요.",
+    "after": "띠·별자리·혈액형은 사주와 별도의 읽을거리입니다. 오늘의 작은 조언은 날짜별 편집 순환이며 개인의 미래를 계산한 결과가 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "처음 이용하는 방법과 하루사주의 계산 기준을 알려드려요.",
+    "after": "처음 이용하는 방법과 하루사주의 계산 기준을 알려드립니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "홈에서 궁금한 운세를 고르고 출생정보를 입력해 주세요. 같은 정보로 성격·연애·일·대인관계 등 다른 풀이도 볼 수 있어요. 이름은 선택이며 계산에는 사용하지 않아요. 전화번호·이메일은 받지 않아요. 상세 분석에서는 대운 순역에만 쓰는 전통 분류를 선택할 수 있어요.",
+    "after": "홈에서 궁금한 운세를 고르고 출생정보를 입력해 주십시오. 같은 정보로 성격·연애·일·대인관계 등 다른 풀이도 볼 수 있습니다. 이름은 선택이며 계산에는 사용하지 않습니다. 전화번호·이메일은 받지 않습니다. 상세 분석에서는 대운 순역에만 쓰는 전통 분류를 선택할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "시간 모름을 선택하면 시주를 만들지 않아요. 띠·별자리·혈액형은 생년월일 없이 직접 고를 수도 있어요. 혈액형을 모르면 추측하지 않아요.",
+    "after": "시간 모름을 선택하면 시주를 만들지 않습니다. 띠·별자리·혈액형은 생년월일 없이 직접 고를 수도 있습니다. 혈액형을 모르면 추측하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "한국 출생, 변환한 양력 기준 1962년 1월 1일부터 한국시간 오늘까지 지원해요. 한국 음력은 윤달과 월별 일수를 검사한 뒤 양력으로 바꿔요. 입력 중 달력 종류를 바꾸면 같은 숫자를 새 달력의 날짜로 해석하며 자동 변환하지 않아요.",
+    "after": "한국 출생, 변환한 양력 기준 1962년 1월 1일부터 한국시간 오늘까지 지원합니다. 한국 음력은 윤달과 월별 일수를 검사한 뒤 양력으로 바꿉니다. 입력 중 달력 종류를 바꾸면 같은 숫자를 새 달력의 날짜로 해석하며 자동 변환하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "오늘은 한국시간(Asia/Seoul)의 날짜를 뜻해요. 기간 운세는 2050년까지 지원해요. 날짜가 바뀌거나 열어 둔 탭으로 돌아오면 오늘 날짜를 다시 확인해요. 해외 출생은 지원하지 않아요. 상세 분석에서 국내 도시를 직접 골라 지방평균태양시·진태양시를 비교할 수 있어요. 도시가 없으면 표준시만 확정해요.",
+    "after": "오늘은 한국시간(Asia/Seoul)의 날짜를 뜻합니다. 기간 운세는 2050년까지 지원합니다. 날짜가 바뀌거나 열어 둔 탭으로 돌아오면 오늘 날짜를 다시 확인합니다. 해외 출생은 지원하지 않습니다. 상세 분석에서 국내 도시를 직접 골라 지방평균태양시·진태양시를 비교할 수 있습니다. 도시가 없으면 표준시만 확정합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "연주는 입춘의 절입 시각, 월주는 소한·입춘·경칩·청명·입하·망종·소서·입추·백로·한로·입동·대설의 열두 경계 시각에 바뀌어요. 음력 초하루를 연·월주 경계로 사용하지 않아요. 절기 원자료의 UTC+8 시각은 실제 순간으로 변환해 한국 표준시와 비교해요.",
+    "after": "연주는 입춘의 절입 시각, 월주는 소한·입춘·경칩·청명·입하·망종·소서·입추·백로·한로·입동·대설의 열두 경계 시각에 바뀝니다. 음력 초하루를 연·월주 경계로 사용하지 않습니다. 절기 원자료의 UTC+8 시각은 실제 순간으로 변환해 한국 표준시와 비교합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "표준시를 선택하면 일주는 한국 표준시 0시에 바뀌어요. 태양시는 보정한 시각의 0시를 기준으로 일주·시주를 함께 구해요. 자시는 23:00~00:59이며 23시에도 다음 날 일간을 미리 쓰지 않아요. 연·월 절입과 대운 시간차는 실제 순간으로 비교해요.",
+    "after": "표준시를 선택하면 일주는 한국 표준시 0시에 바뀝니다. 태양시는 보정한 시각의 0시를 기준으로 일주·시주를 함께 구합니다. 자시는 23:00~00:59이며 23시에도 다음 날 일간을 미리 쓰지 않습니다. 연·월 절입과 대운 시간차는 실제 순간으로 비교합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "출생 당시 시계 시각은 IANA Asia/Seoul 규칙으로 실제 순간을 찾은 뒤 UTC+9 표준시로 환산해요. 1987·1988년 서머타임 기간에는 1시간을 빼며 표준시 날짜도 전날로 바뀔 수 있어요. 전환으로 존재하지 않거나 두 번 존재하는 시각은 임의로 고르지 않고 제한해요.",
+    "after": "출생 당시 시계 시각은 IANA Asia/Seoul 규칙으로 실제 순간을 찾은 뒤 UTC+9 표준시로 환산합니다. 1987·1988년 서머타임 기간에는 1시간을 빼며 표준시 날짜도 전날로 바뀔 수 있습니다. 전환으로 존재하지 않거나 두 번 존재하는 시각은 임의로 고르지 않고 제한합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "태어난 시간을 모르면 그날 가능한 모든 시각을 살펴, 어느 시각이든 같은 기둥만 확정해 표시해요. 절입일의 연·월주나 서머타임 환산에 따른 일주가 달라지면 미확정으로 남겨요. 그 값에 의존하는 문장도 제외해요.",
+    "after": "태어난 시간을 모르면 그날 가능한 모든 시각을 살펴, 어느 시각이든 같은 기둥만 확정해 표시합니다. 절입일의 연·월주나 서머타임 환산에 따른 일주가 달라지면 미확정으로 남깁니다. 그 값에 의존하는 문장도 제외합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "오행 그림은 알려진 천간과 지지 대표 오행의 단순 개수예요. 시간 미상이면 보통 6글자, 다른 기둥도 미확정이면 더 적은 실제 글자 수를 표시해요. 이 단순 개수로 강약·용신을 판단하지 않아요. 별도 상세 분석에서는 월령·뿌리·생조·설극을 공개한 판단식으로 살핀 후보와 대운을 보여드려요. 간단 표의 십성은 다른 천간 기준이에요. 상세 표는 지장간·본기 십신·합충 후보를 별도로 표시해요.",
+    "after": "오행 그림은 알려진 천간과 지지 대표 오행의 단순 개수입니다. 시간 미상이면 보통 6글자, 다른 기둥도 미확정이면 더 적은 실제 글자 수를 표시합니다. 이 단순 개수로 강약·용신을 판단하지 않습니다. 별도 상세 분석에서는 월령·뿌리·생조·설극을 공개한 판단식으로 살핀 후보와 대운을 보여드립니다. 간단 표의 십성은 다른 천간 기준입니다. 상세 표는 지장간·본기 십신·합충 후보를 별도로 표시합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "일상적인 띠는 한국 음력 설 기준이에요. 사주 연주의 입춘 기준과 달라 설·입춘 사이 출생자는 표시가 다를 수 있어요. 별자리는 널리 쓰는 양력 월·일 날짜표로 나누어요. 분 단위 태양 진입 시각이나 상승궁은 계산하지 않아요.",
+    "after": "일상적인 띠는 한국 음력 설 기준입니다. 사주 연주의 입춘 기준과 달라 설·입춘 사이 출생자는 표시가 다를 수 있습니다. 별자리는 널리 쓰는 양력 월·일 날짜표로 나눕니다. 분 단위 태양 진입 시각이나 상승궁은 계산하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "혈액형은 과학적인 성격 분류가 아닌 대화 소재예요. 가벼운 생활 제안은 31개 편집 원고를 날짜에 맞춰 보여줘요. MBTI는 직접 고른 유형의 여섯 주제를 읽으며 날짜는 첫 주제의 편집 배정에만 써요. 띠의 별도 관계 표는 선택 띠와 대상 일지의 대응만 계산해요. 사주나 천문 계산으로 미래를 예측한 내용은 아니에요.",
+    "after": "혈액형은 과학적인 성격 분류가 아닌 대화 소재입니다. 가벼운 생활 제안은 31개 편집 원고를 날짜에 맞춰 보여주십시오. MBTI는 직접 고른 유형의 여섯 주제를 읽으며 날짜는 첫 주제의 편집 배정에만 씁니다. 띠의 별도 관계 표는 선택 띠와 대상 일지의 대응만 계산합니다. 사주나 천문 계산으로 미래를 예측한 내용은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "오늘·내일·지정일·이번 달·올해 운세는 총운·학업·재물·건강·연애·사업의 여섯 분야로 읽어요. 월·연은 실제 절입·입춘·대운 전환 구간을 반영해 집계해요. 지정일의 면접·시험 등 일정 선택은 준비 설명만 덧붙이고 기본 지수와 본문은 바꾸지 않아요.",
+    "after": "오늘·내일·지정일·이번 달·올해 운세는 총운·학업·재물·건강·연애·사업의 여섯 분야로 읽습니다. 월·연은 실제 절입·입춘·대운 전환 구간을 반영해 집계합니다. 지정일의 면접·시험 등 일정 선택은 준비 설명만 덧붙이고 기본 지수와 본문은 바꾸지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "출생 도시와 시각 기준을 선택하면 표준시·지방평균태양시·진태양시 원국을 비교할 수 있어요. 상세 분석은 지장간과 십신, 합충 후보, 강약·격국·용신 후보, 대운·5년 세운을 연결해요. 도시 중심 좌표와 짧은 균시차 근사식을 사용하며, 도시 미상이나 시간 미상의 값은 임의 확정하지 않아요.",
+    "after": "출생 도시와 시각 기준을 선택하면 표준시·지방평균태양시·진태양시 원국을 비교할 수 있습니다. 상세 분석은 지장간과 십신, 합충 후보, 강약·격국·용신 후보, 대운·5년 세운을 연결합니다. 도시 중심 좌표와 짧은 균시차 근사식을 사용하며, 도시 미상이나 시간 미상의 값은 임의 확정하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "대운 분류를 고르지 않으면 순·역 두 후보를 나누어 보여줘요. 기간 조회는 한국 표준시 기준이며 출생 도시를 현재 위치로 추정하지 않아요. 고급 해석은 서비스 채택 판단법의 후보로, 고전 원문과 독립 명리 검토가 대기 중이에요.",
+    "after": "대운 분류를 고르지 않으면 순·역 두 후보를 나누어 보여주십시오. 기간 조회는 한국 표준시 기준이며 출생 도시를 현재 위치로 추정하지 않습니다. 고급 해석은 서비스 채택 판단법의 후보로, 고전 원문과 독립 명리 검토가 대기 중입니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "하루사주는 전통적인 상징에 빗대어 일상을 돌아보는 글을 제공해요. 계산 규칙을 검증하는 일과 미래 예측 능력을 입증하는 일은 다르며, 미래를 정확하게 예측한다고 주장하지 않아요.",
+    "after": "하루사주는 전통적인 상징에 빗대어 일상을 돌아보는 글을 제공합니다. 계산 규칙을 검증하는 일과 미래 예측 능력을 입증하는 일은 다르며, 미래를 정확하게 예측한다고 주장하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "원고의 형식과 적용 조건은 자동으로 검사했지만, 독립적인 명리 전문가의 검토를 마친 것은 아니에요. 의료·투자·법률 판단을 대신하지 않으며 질병·수명·사고·수익 등을 예언하지 않아요. 다른 사이트와는 날짜 경계, 절입 시각, 서머타임·보정 정책에 따라 결과가 다를 수 있어요.",
+    "after": "원고의 형식과 적용 조건은 자동으로 검사했지만, 독립적인 명리 전문가의 검토를 마친 것은 아닙니다. 의료·투자·법률 판단을 대신하지 않으며 질병·수명·사고·수익 등을 예언하지 않습니다. 다른 사이트와는 날짜 경계, 절입 시각, 서머타임·보정 정책에 따라 결과가 다를 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "무엇을 입력하고 어디에 보관하는지 실제 동작을 기준으로 안내해요.",
+    "after": "무엇을 입력하고 어디에 보관하는지 실제 동작을 기준으로 안내합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "생년월일, 달력 종류, 윤달 여부, 선택한 시각, 선택적인 별명과 출생 도시·시각 정책·대운 순역 분류를 현재 문서의 브라우저 메모리에만 보관해요. 혈액형 등 가벼운 메뉴의 직접 선택도 메모리에만 두어요. 위치 권한을 요청하지 않고 이름·별명은 계산에 사용하지 않아요.",
+    "after": "생년월일, 달력 종류, 윤달 여부, 선택한 시각, 선택적인 별명과 출생 도시·시각 정책·대운 순역 분류를 현재 문서의 브라우저 메모리에만 보관합니다. 혈액형 등 가벼운 메뉴의 직접 선택도 메모리에만 두십시오. 위치 권한을 요청하지 않고 이름·별명은 계산에 사용하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "사주 입력과 개인 결과를 서버로 보내지 않아요. API 요청, 서버 DB, 회원 계정, 이메일 발송, 분석 이벤트, 광고 픽셀을 사용하지 않아요. 출생정보를 URL·메타 태그·콘솔에 기록하지 않아요.",
+    "after": "사주 입력과 개인 결과를 서버로 보내지 않습니다. API 요청, 서버 DB, 회원 계정, 이메일 발송, 분석 이벤트, 광고 픽셀을 사용하지 않습니다. 출생정보를 URL·메타 태그·콘솔에 기록하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "localStorage·sessionStorage·쿠키에 개인 입력을 저장하지 않아요. 앱 안에서 다른 풀이로 이동할 때만 입력을 재사용하며, 새로고침하거나 새 문서로 열면 다시 입력해야 해요. 결과 페이지는 입력이 없다는 안내를 보여줘요.",
+    "after": "localStorage·sessionStorage·쿠키에 개인 입력을 저장하지 않습니다. 앱 안에서 다른 풀이로 이동할 때만 입력을 재사용하며, 새로고침하거나 새 문서로 열면 다시 입력해야 합니다. 결과 페이지는 입력이 없다는 안내를 보여주십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "입력 지우기를 누르면 앱 안에 보관하던 출생정보와 가벼운 메뉴 선택이 지워져요. 다른 사람 보기도 이전 입력을 먼저 지운 뒤 새로 입력하는 화면으로 이동해요. 브라우저가 일시 보관하는 문서 상태까지 영구 삭제한다고 보장하는 의미는 아니에요.",
+    "after": "입력 지우기를 누르면 앱 안에 보관하던 출생정보와 가벼운 메뉴 선택이 지워집니다. 다른 사람 보기도 이전 입력을 먼저 지운 뒤 새로 입력하는 화면으로 이동합니다. 브라우저가 일시 보관하는 문서 상태까지 영구 삭제한다고 보장하는 의미는 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "공유에는 해당 메뉴의 일반 링크만 포함돼요. 이름·생년월일·팔자·개인 결과·식별 해시는 넣지 않아요. 받는 사람은 같은 개인 결과가 아니라 시작 화면을 보게 돼요.",
+    "after": "공유에는 해당 메뉴의 일반 링크만 포함됩니다. 이름·생년월일·팔자·개인 결과·식별 해시는 넣지 않습니다. 받는 사람은 같은 개인 결과가 아니라 시작 화면을 보게 됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "브라우저 인쇄를 선택하면 화면의 결과와 입력 날짜가 개인 기기의 인쇄·PDF 기능으로 전달될 수 있어요. 저장하거나 공유할 인쇄물을 직접 확인해 주세요. 외부 PDF 생성 서비스는 이용하지 않아요.",
+    "after": "브라우저 인쇄를 선택하면 화면의 결과와 입력 날짜가 개인 기기의 인쇄·PDF 기능으로 전달될 수 있습니다. 저장하거나 공유할 인쇄물을 직접 확인해 주십시오. 외부 PDF 생성 서비스는 이용하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "정적 파일을 불러오는 과정에서 호스팅 사업자가 IP·브라우저 정보·요청 경로 같은 일반 접속 로그를 남길 수 있어요. 이는 앱이 출생정보를 전송하는 것과 구분돼요.",
+    "after": "정적 파일을 불러오는 과정에서 호스팅 사업자가 IP·브라우저 정보·요청 경로 같은 일반 접속 로그를 남길 수 있습니다. 이는 앱이 출생정보를 전송하는 것과 구분됩니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "실제 운영자 연락처와 호스팅·도메인은 아직 정해지지 않았어요. 운영 전 실제 값을 확인해 이 안내를 갱신해야 해요. 이 문서는 현재 동작 설명이며 법률 검토 완료 문서가 아니에요.",
+    "after": "실제 운영자 연락처와 호스팅·도메인은 아직 정해지지 않았습니다. 운영 전 실제 값을 확인해 이 안내를 갱신해야 합니다. 이 문서는 현재 동작 설명이며 법률 검토 완료 문서가 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "무료로 이용하는 범위와 서비스의 한계를 알려드려요.",
+    "after": "무료로 이용하는 범위와 서비스의 한계를 알려드립니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "하루사주의 현재 메뉴는 가입과 결제 없이 이용할 수 있어요. 유료 상담·예약·광고 잠금·자동 구독은 제공하지 않아요. 임시 서비스명은 운영 전 사용 가능 여부를 확인해야 해요.",
+    "after": "하루사주의 현재 메뉴는 가입과 결제 없이 이용할 수 있습니다. 유료 상담·예약·광고 잠금·자동 구독은 제공하지 않습니다. 임시 서비스명은 운영 전 사용 가능 여부를 확인해야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "결과는 선택한 계산 기준과 해석 규칙을 따르는 창작 읽을거리예요. 미래의 사건이나 확률·재산·건강·인연을 보장하지 않아요. 실제 사람을 판단하거나 차별하는 근거로 사용하지 말아 주세요.",
+    "after": "결과는 선택한 계산 기준과 해석 규칙을 따르는 창작 읽을거리입니다. 미래의 사건이나 확률·재산·건강·인연을 보장하지 않습니다. 실제 사람을 판단하거나 차별하는 근거로 사용하지 말아 주십시오.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "의료·투자·법률 등 중요한 결정은 실제 정보를 확인하고 필요한 도움을 받아 판단해 주세요. 마음돌봄은 일상 제안이며 진단·치료를 제공하지 않아요.",
+    "after": "의료·투자·법률 등 중요한 결정은 실제 정보를 확인하고 필요한 도움을 받아 판단해 주십시오. 마음돌봄은 일상 제안이며 진단·치료를 제공하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "지원 범위 안의 정확한 정보를 입력해 주세요. 알 수 없는 시각을 임의로 채우지 않아도 돼요. 개인정보는 브라우저 메모리에만 있어 새로고침 뒤에는 복원하지 못해요.",
+    "after": "지원 범위 안의 정확한 정보를 입력해 주십시오. 알 수 없는 시각을 임의로 채우지 않아도 됩니다. 개인정보는 브라우저 메모리에만 있어 새로고침 뒤에는 복원하지 못합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "계산 오류를 수정하거나 원고를 바꾸면 버전과 함께 결과가 달라질 수 있어요. 서비스 변경 시 안내와 계산 기준을 실제 동작에 맞게 갱신해요. 이 안내는 별도의 법률 검토를 마친 약관이라는 뜻은 아니에요.",
+    "after": "계산 오류를 수정하거나 원고를 바꾸면 버전과 함께 결과가 달라질 수 있습니다. 서비스 변경 시 안내와 계산 기준을 실제 동작에 맞게 갱신합니다. 이 안내는 별도의 법률 검토를 마친 약관이라는 뜻은 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "사용한 오픈소스와 직접 제작한 콘텐츠의 범위를 안내해요.",
+    "after": "사용한 오픈소스와 직접 제작한 콘텐츠의 범위를 안내합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "korean-lunar-calendar 0.4.0 · Jinil Lee(usingsky) · MIT. 한국 음양력 날짜 변환에 사용해요. 이 패키지의 달력 간지를 사주 간지로 사용하지 않아요. https://github.com/usingsky/korean_lunar_calendar_js",
+    "after": "korean-lunar-calendar 0.4.0 · Jinil Lee(usingsky) · MIT. 한국 음양력 날짜 변환에 사용합니다. 이 패키지의 달력 간지를 사주 간지로 사용하지 않습니다. https://github.com/usingsky/korean_lunar_calendar_js",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "lunar-typescript 1.8.6 · 6tail · MIT. 절기 시각 자료에 사용해요. 중국 음력은 한국 음력 입력 변환에 사용하지 않아요. 연·월주 경계 판정과 자정 일주·시주 정책은 별도 모듈로 구현했어요. https://github.com/6tail/lunar-typescript",
+    "after": "lunar-typescript 1.8.6 · 6tail · MIT. 절기 시각 자료에 사용합니다. 중국 음력은 한국 음력 입력 변환에 사용하지 않습니다. 연·월주 경계 판정과 자정 일주·시주 정책은 별도 모듈로 구현했습니다. https://github.com/6tail/lunar-typescript",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "IANA Time Zone Database · Asia/Seoul. 출생 당시 한국 시계 시각과 1987·1988년 서머타임을 해석해요. 실행 환경의 Intl에 포함된 시간대 자료를 사용해요. https://www.iana.org/time-zones",
+    "after": "IANA Time Zone Database · Asia/Seoul. 출생 당시 한국 시계 시각과 1987·1988년 서머타임을 해석합니다. 실행 환경의 Intl에 포함된 시간대 자료를 사용합니다. https://www.iana.org/time-zones",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "Next.js 16.4.2, React·React DOM 19.3.1, Zod 4.6.7 · MIT. 설치한 패키지의 라이선스 파일을 확인하고 lockfile에 버전을 고정했어요. 각 패키지와 번들된 의존성의 고지는 소스 저장소의 THIRD_PARTY_NOTICES.md에 정리했어요.",
+    "after": "Next.js 16.4.2, React·React DOM 19.3.1, Zod 4.6.7 · MIT. 설치한 패키지의 라이선스 파일을 확인하고 lockfile에 버전을 고정했습니다. 각 패키지와 번들된 의존성의 고지는 소스 저장소의 THIRD_PARTY_NOTICES.md에 정리했습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "독립 비교에는 Unicode ICU Dangi 달력과 Astronomy Engine 2.1.19(MIT)의 태양 황경 계산을 사용해요. 한국천문연구원 자료와 사주 전체를 공인한 것으로 표현하지 않아요. 세부 비교 범위와 검증 기록은 프로젝트 문서에서 확인할 수 있어요.",
+    "after": "독립 비교에는 Unicode ICU Dangi 달력과 Astronomy Engine 2.1.19(MIT)의 태양 황경 계산을 사용합니다. 한국천문연구원 자료와 사주 전체를 공인한 것으로 표현하지 않습니다. 세부 비교 범위와 검증 기록은 프로젝트 문서에서 확인할 수 있습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "풀이 문장과 SVG 그림은 이 프로젝트를 위해 독립 작성·제작했어요. 다른 운세 사이트의 결과나 캐릭터·이미지를 복제하지 않았어요. 외부 이미지·폰트 요청은 없고 운영체제의 한국어 글꼴을 사용해요.",
+    "after": "풀이 문장과 SVG 그림은 이 프로젝트를 위해 독립 작성·제작했습니다. 다른 운세 사이트의 결과나 캐릭터·이미지를 복제하지 않았습니다. 외부 이미지·폰트 요청은 없고 운영체제의 한국어 글꼴을 사용합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/pages.ts",
+    "before": "전통적 상징의 대응표와 창작 해설을 구분해 저장해요. 문장 조건은 자동 검사했으며, 사람 또는 전문가의 독립 검토가 완료되었다고 표시하지 않아요. 서비스명·도메인·운영 연락처는 공개 전 운영자가 확인해야 해요.",
+    "after": "전통적 상징의 대응표와 창작 해설을 구분해 저장합니다. 문장 조건은 자동 검사했으며, 사람 또는 전문가의 독립 검토가 완료되었다고 표시하지 않습니다. 서비스명·도메인·운영 연락처는 공개 전 운영자가 확인해야 합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/sources.ts",
+    "before": "관찰과 생활 제안을 독립 작성했어요. 외부 고전·전문가의 검토 완료를 주장하지 않아요.",
+    "after": "관찰과 생활 제안을 독립 작성했습니다. 외부 고전·전문가의 검토 완료를 주장하지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/sources.ts",
+    "before": "전통적 상징에 기반한 이 서비스의 해석 출발점이에요. 계산 정책과 실제 테이블을 확인할 수 있으며 개인 성격의 과학적 판정이 아니에요.",
+    "after": "전통적 상징에 기반한 이 서비스의 해석 출발점입니다. 계산 정책과 실제 테이블을 확인할 수 있으며 개인 성격의 과학적 판정이 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/sources.ts",
+    "before": "날짜 변환에만 사용하며 사주 전체의 공인 근거가 아니에요.",
+    "after": "날짜 변환에만 사용하며 사주 전체의 공인 근거가 아닙니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/sources.ts",
+    "before": "UTC+8 절기 시각을 순간으로 환산해 사용해요. 사주 원고의 검토 근거로 쓰지 않아요.",
+    "after": "UTC+8 절기 시각을 순간으로 환산해 사용합니다. 사주 원고의 검토 근거로 쓰지 않습니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  },
+  {
+    "file": "src/content/sources.ts",
+    "before": "한국 출생 시계의 서머타임·표준시 처리에만 사용해요.",
+    "after": "한국 출생 시계의 서머타임·표준시 처리에만 사용합니다.",
+    "reason": "본문의 뜻을 유지하면서 합니다체·띄어쓰기를 정리",
+    "status": "author-reviewed-pending-independent"
+  }
+]

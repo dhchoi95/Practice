@@ -5,12 +5,13 @@ import { useRef,useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import type { Category } from '@/config/site';
+import type {BirthSession} from './SessionProvider';
 import { useSession } from './SessionProvider';
 import { InputError } from '@/lib/validation';
 import { useSeoulDate } from './LiveDate';
 import { useHydrated } from '@/lib/hydration';
-export function BirthForm({category}:{category:Category}) {
-  const {birth,setBirth}=useSession(),router=useRouter(),form=useRef<HTMLFormElement>(null);
+export function BirthForm({category,onComplete,initialBirth,personLabel}:{category:Category;onComplete?:(v:BirthSession)=>void;initialBirth?:BirthSession|null;personLabel?:string}) {
+  const session=useSession(),birth=onComplete?initialBirth:session.birth,setBirth=session.setBirth,router=useRouter(),form=useRef<HTMLFormElement>(null);
   const [calendar,setCalendar]=useState<'solar'|'lunar'>(birth?.input.calendar??'solar');
   const [unknown,setUnknown]=useState(birth?.input.unknownTime??true);
   const [error,setError]=useState<{message:string;field:string}|null>(null),[pending,setPending]=useState(false);
@@ -32,14 +33,15 @@ export function BirthForm({category}:{category:Category}) {
         hour:unknown?undefined:number('hour'),minute:unknown?undefined:number('minute'),
         nickname:String(data.get('nickname')||'')});
       const calculation=calculateSaju(input);
-      setBirth({input:{...input,advanced},calculation});router.push(`/result/${category.slug}/`);
+      const completed={input:{...input,advanced},calculation};
+      if(onComplete)onComplete(completed);else{setBirth(completed);router.push(`/result/${category.slug}/`);}
     }catch(e){
       const field=e instanceof InputError?e.field:(e instanceof Error&&e.message.includes('시각')?'hour':'day');
       setError({message:e instanceof Error?e.message:'계산을 마치지 못했어요. 날짜를 확인하고 다시 시도해 주세요.',field});
       requestAnimationFrame(()=>form.current?.querySelector<HTMLInputElement|HTMLSelectElement>(`[name="${field}"]`)?.focus());
     }finally{setPending(false);}
   }
-  return <div className="form-panel"><h2>나의 출생정보</h2><p className="form-intro">생년월일을 입력해 주세요. 태어난 시각은 모름을 선택할 수 있고, 이름은 비워두어도 돼요.</p>
+  return <div className="form-panel"><h2>{personLabel??'나의 출생정보'}</h2><p className="form-intro">생년월일을 입력해 주세요. 태어난 시각은 모름을 선택할 수 있고, 이름은 비워두어도 돼요.</p>
     <form className="birth-form" ref={form} onSubmit={submit} noValidate>
       <label className="field-label" htmlFor="nickname">이름 또는 별명 <span className="optional">선택 · 계산에 사용하지 않아요</span></label><input id="nickname" name="nickname" maxLength={20} placeholder="비워두어도 괜찮아요" autoComplete="off" defaultValue={initial?.nickname??''} {...errorAttrs('nickname')}/>{inlineError(['nickname'],'nickname-error')}
       <fieldset><legend>달력 종류</legend><div className="choice-row">{[['solar','양력'],['lunar','음력']].map(([v,label])=><label className="radio-choice" key={v}><input type="radio" name="calendar" value={v} checked={calendar===v} onChange={()=>{setCalendar(v as 'solar'|'lunar');setError(null);}}/>{label}</label>)}</div><p className="helper" id="calendar-help">달력 종류를 바꿔도 입력한 숫자는 그대로예요. 그 숫자를 선택한 달력의 날짜로 읽으며 자동 변환하지 않아요.</p>{calendar==='lunar'&&<label className="check-label"><input type="checkbox" name="leap" defaultChecked={initial?.leap??false}/>윤달 생일이에요</label>}</fieldset>
@@ -48,7 +50,7 @@ export function BirthForm({category}:{category:Category}) {
       <div className="form-divider"/><AdvancedControls value={advanced} onChange={setAdvanced}/>
       {error&&<p className="error-summary" id="birth-error" role="alert">{error.message}</p>}
       <p className="form-privacy"><span aria-hidden="true">◇</span>입력정보는 서버에 보내지 않아요. 새로고침하면 사라져요.</p>
-      <button className="button primary wide form-submit" type="submit" disabled={pending||!hydrated}>{pending?'계산하고 있어요…':`무료로 ${category.name} 보기`}<span aria-hidden="true">→</span></button>
+      <button className="button primary wide form-submit" type="submit" disabled={pending||!hydrated}>{pending?'계산하고 있어요…':onComplete?`${personLabel??'출생정보'} 적용`:`무료로 ${category.name} 보기`}<span aria-hidden="true">→</span></button>
       <noscript><p className="error-summary">브라우저 안에서 계산하려면 자바스크립트가 필요해요. 브라우저 설정에서 허용한 뒤 다시 열어 주세요. 입력정보는 서버로 보내지 않아요.</p></noscript>
       <p className="policy-note">한국 출생·표준시 기준 / 날짜 변경 0시 기준<br/><Link prefetch={false} href="/guide/">계산 기준과 서비스 한계 알아보기</Link></p>
     </form></div>;

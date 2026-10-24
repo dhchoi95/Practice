@@ -11,7 +11,7 @@ describe('KR-01/02/03/05/06 authored output regressions',()=>{
   it('keeps the specific love scene conditional and out of implementation jargon',()=>{
     const r=interpret('saju','love',natal.features),body=r.sections.flatMap(s=>s.paragraphs).join('');
     expect(body).toContain('만나는 사람이 있다면');
-    expect(body).toContain('내게는 당연해도 상대는 모를 수 있어요');
+    expect(body).toContain('내게는 당연해도 상대는 모를 수 있습니다');
     expect(body).not.toContain('기대의 세밀함');expect(body).not.toContain('천간 집계 조합');
   });
   it('general sections have distinct authored roles and tips refer to visible suggestions',()=>{
@@ -26,7 +26,7 @@ describe('KR-01/02/03/05/06 authored output regressions',()=>{
     const r=interpret('saju','careerMoney',natal.features);
     const context=r.sections.find(s=>s.id==='relation-careermoney-output')!.paragraphs.join(' ');
     expect(context).toMatch(/꼭 필요한 오류를 고친 뒤 작은 초안/);
-    expect(r.sections.find(s=>s.id==='core-careermoney-7')!.paragraphs.join(' ')).toContain('일정과 보수가 달라질 수 있어요');
+    expect(r.sections.find(s=>s.id==='core-careermoney-7')!.paragraphs.join(' ')).toContain('일정과 보수가 달라질 수 있습니다');
   });
   it('all year/month manuscripts fit either short boundary segment without fixed quarter or full-month plans',()=>{
     for(const kind of ['year','month'] as const){

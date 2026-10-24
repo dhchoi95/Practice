@@ -5,8 +5,8 @@ for(const width of [320,390])test(`restored home and independent period menus at
  await page.setViewportSize({width,height:900});await page.clock.install({time:new Date('2026-10-23T03:00:00Z')});await page.goto('/');
  await expect(page.locator('.home-core-menus')).toHaveCount(0);await expect(page.locator('.category-grid .category-tile')).toHaveCount(9);await expect(page.locator('.year-banner')).toBeVisible();await expect(page.locator('.today-panel')).toBeVisible();
  await fs.mkdir('reports/category-clarity-fix/screenshots',{recursive:true});await page.screenshot({path:`reports/category-clarity-fix/screenshots/home-${width}.png`,fullPage:true});
- await page.goto('/fortune/day/');await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill('8');await page.getByRole('button',{name:'무료로 오늘 운세 보기'}).click();
- for(const [slug,label] of [['day','오늘 운세'],['tomorrow','내일 운세'],['month','이번 달 운세'],['year','올해 운세']]){
+ await page.goto('/fortune/day/');await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill('8');await page.getByRole('button',{name:'무료로 오늘의 운세 보기'}).click();
+ for(const [slug,label] of [['day','오늘의 운세'],['tomorrow','내일 운세'],['month','이번달 운세'],['year','올해 운세']]){
   if(slug!=='day')await switchReading(page,label);await expect(page).toHaveURL(`/result/${slug}/`);await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('main input[type="date"]')).toHaveCount(0);await expect(page.locator('main .schedule-notes')).toHaveCount(0);await expect(page.locator('main .other-readings')).toHaveCount(0);await expect(page.locator('.sector-experience')).not.toContainText('지정일 운세');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:`reports/category-clarity-fix/screenshots/${slug}-${width}.png`,fullPage:true});
  }

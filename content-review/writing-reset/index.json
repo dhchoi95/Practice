@@ -1,0 +1,353 @@
+{
+  "version": "2.2.2",
+  "policy": "VIDEO-KO-1",
+  "baseline": "407f6e9",
+  "records": 192,
+  "recordIds": [
+    "sector:day:overall:learn-express",
+    "sector:day:overall:produce-trade",
+    "sector:day:overall:express-standard",
+    "sector:day:overall:share-resource",
+    "sector:day:overall:day-clash",
+    "sector:day:overall:month-clash",
+    "sector:day:overall:agreement",
+    "sector:day:overall:resource",
+    "sector:day:overall:output",
+    "sector:day:overall:order",
+    "sector:day:overall:peer",
+    "sector:day:overall:wealth",
+    "supplement:day:overall:supported-preparation",
+    "supplement:day:overall:express-strong",
+    "supplement:day:overall:repeat-month",
+    "supplement:day:overall:repeat-day",
+    "supplement:day:overall:repeat-luck",
+    "supplement:day:overall:mixed-year-month",
+    "sector:day:overall:detail-01",
+    "sector:day:overall:detail-02",
+    "sector:day:overall:detail-03",
+    "sector:day:overall:detail-04",
+    "sector:day:overall:detail-05",
+    "sector:day:overall:detail-06",
+    "sector:day:overall:detail-07",
+    "sector:day:overall:detail-08",
+    "sector:day:overall:detail-09",
+    "sector:day:overall:detail-10",
+    "sector:day:overall:detail-11",
+    "sector:day:overall:detail-12",
+    "sector:day:study:learn-express",
+    "sector:day:study:produce-trade",
+    "sector:day:study:express-standard",
+    "sector:day:study:share-resource",
+    "sector:day:study:day-clash",
+    "sector:day:study:month-clash",
+    "sector:day:study:agreement",
+    "sector:day:study:resource",
+    "sector:day:study:output",
+    "sector:day:study:order",
+    "sector:day:study:peer",
+    "sector:day:study:wealth",
+    "supplement:day:study:supported-preparation",
+    "supplement:day:study:express-strong",
+    "supplement:day:study:repeat-month",
+    "supplement:day:study:repeat-day",
+    "supplement:day:study:repeat-luck",
+    "supplement:day:study:mixed-year-month",
+    "sector:day:study:detail-01",
+    "sector:day:study:detail-02",
+    "sector:day:study:detail-03",
+    "sector:day:study:detail-04",
+    "sector:day:study:detail-05",
+    "sector:day:study:detail-06",
+    "sector:day:study:detail-07",
+    "sector:day:study:detail-08",
+    "sector:day:study:detail-09",
+    "sector:day:study:detail-10",
+    "sector:day:study:detail-11",
+    "sector:day:study:detail-12",
+    "sector:day:money:learn-express",
+    "sector:day:money:produce-trade",
+    "sector:day:money:express-standard",
+    "sector:day:money:share-resource",
+    "sector:day:money:day-clash",
+    "sector:day:money:month-clash",
+    "sector:day:money:agreement",
+    "sector:day:money:resource",
+    "sector:day:money:output",
+    "sector:day:money:order",
+    "sector:day:money:peer",
+    "sector:day:money:wealth",
+    "supplement:day:money:supported-preparation",
+    "supplement:day:money:express-strong",
+    "supplement:day:money:repeat-month",
+    "supplement:day:money:repeat-day",
+    "supplement:day:money:repeat-luck",
+    "supplement:day:money:mixed-year-month",
+    "sector:day:money:detail-01",
+    "sector:day:money:detail-02",
+    "sector:day:money:detail-03",
+    "sector:day:money:detail-04",
+    "sector:day:money:detail-05",
+    "sector:day:money:detail-06",
+    "sector:day:money:detail-07",
+    "sector:day:money:detail-08",
+    "sector:day:money:detail-09",
+    "sector:day:money:detail-10",
+    "sector:day:money:detail-11",
+    "sector:day:money:detail-12",
+    "sector:day:health:learn-express",
+    "sector:day:health:produce-trade",
+    "sector:day:health:express-standard",
+    "sector:day:health:share-resource",
+    "sector:day:health:day-clash",
+    "sector:day:health:month-clash",
+    "sector:day:health:agreement",
+    "sector:day:health:resource",
+    "sector:day:health:output",
+    "sector:day:health:order",
+    "sector:day:health:peer",
+    "sector:day:health:wealth",
+    "supplement:day:health:supported-preparation",
+    "supplement:day:health:express-strong",
+    "supplement:day:health:repeat-month",
+    "supplement:day:health:repeat-day",
+    "supplement:day:health:repeat-luck",
+    "supplement:day:health:mixed-year-month",
+    "sector:day:health:detail-01",
+    "sector:day:health:detail-02",
+    "sector:day:health:detail-03",
+    "sector:day:health:detail-04",
+    "sector:day:health:detail-05",
+    "sector:day:health:detail-06",
+    "sector:day:health:detail-07",
+    "sector:day:health:detail-08",
+    "sector:day:health:detail-09",
+    "sector:day:health:detail-10",
+    "sector:day:health:detail-11",
+    "sector:day:health:detail-12",
+    "sector:day:love:learn-express",
+    "sector:day:love:produce-trade",
+    "sector:day:love:express-standard",
+    "sector:day:love:share-resource",
+    "sector:day:love:day-clash",
+    "sector:day:love:month-clash",
+    "sector:day:love:agreement",
+    "sector:day:love:resource",
+    "sector:day:love:output",
+    "sector:day:love:order",
+    "sector:day:love:peer",
+    "sector:day:love:wealth",
+    "supplement:day:love:supported-preparation",
+    "supplement:day:love:express-strong",
+    "supplement:day:love:repeat-month",
+    "supplement:day:love:repeat-day",
+    "supplement:day:love:repeat-luck",
+    "supplement:day:love:mixed-year-month",
+    "sector:day:love:detail-01",
+    "sector:day:love:detail-02",
+    "sector:day:love:detail-03",
+    "sector:day:love:detail-04",
+    "sector:day:love:detail-05",
+    "sector:day:love:detail-06",
+    "sector:day:love:detail-07",
+    "sector:day:love:detail-08",
+    "sector:day:love:detail-09",
+    "sector:day:love:detail-10",
+    "sector:day:love:detail-11",
+    "sector:day:love:detail-12",
+    "sector:day:business:learn-express",
+    "sector:day:business:produce-trade",
+    "sector:day:business:express-standard",
+    "sector:day:business:share-resource",
+    "sector:day:business:day-clash",
+    "sector:day:business:month-clash",
+    "sector:day:business:agreement",
+    "sector:day:business:resource",
+    "sector:day:business:output",
+    "sector:day:business:order",
+    "sector:day:business:peer",
+    "sector:day:business:wealth",
+    "supplement:day:business:supported-preparation",
+    "supplement:day:business:express-strong",
+    "supplement:day:business:repeat-month",
+    "supplement:day:business:repeat-day",
+    "supplement:day:business:repeat-luck",
+    "supplement:day:business:mixed-year-month",
+    "sector:day:business:detail-01",
+    "sector:day:business:detail-02",
+    "sector:day:business:detail-03",
+    "sector:day:business:detail-04",
+    "sector:day:business:detail-05",
+    "sector:day:business:detail-06",
+    "sector:day:business:detail-07",
+    "sector:day:business:detail-08",
+    "sector:day:business:detail-09",
+    "sector:day:business:detail-10",
+    "sector:day:business:detail-11",
+    "sector:day:business:detail-12",
+    "sector:month:overall:learn-express",
+    "sector:month:study:learn-express",
+    "sector:month:money:produce-trade",
+    "sector:month:health:month-clash",
+    "sector:month:love:agreement",
+    "sector:month:business:learn-express",
+    "sector:year:overall:learn-express",
+    "sector:year:study:learn-express",
+    "sector:year:money:produce-trade",
+    "sector:year:health:month-clash",
+    "sector:year:love:agreement",
+    "sector:year:business:learn-express"
+  ],
+  "existingSemanticIds": 180,
+  "newMeaningIds": 0,
+  "sourceKinds": {
+    "user-supplied-editorial-draft": 39,
+    "synthetic-editorial-draft": 150,
+    "synthetic-editorial-draft-after-supplied-comparison": 2,
+    "user-supplied-editorial-draft-adapted": 1
+  },
+  "candidateRecords": 384,
+  "selectedDrafts": {
+    "A": 181,
+    "B": 11
+  },
+  "perPeriod": {
+    "day": 180,
+    "month": 6,
+    "year": 6
+  },
+  "sourceSnapshots": "foundation-snapshots.json",
+  "reviewLedger": "foundation-reviews.json",
+  "meaningApproval": "pending independent review",
+  "remainingMonthYear": 348,
+  "unchangedCorpora": [
+    "schedules36",
+    "advanced natal62",
+    "advanced period136",
+    "legacy rules210",
+    "MBTI topic96 plus16 introductions"
+  ],
+  "publicDeployment": false,
+  "remotePush": false,
+  "reviewBatches": [
+    {
+      "id": "day-business-01",
+      "records": 12
+    },
+    {
+      "id": "day-business-02",
+      "records": 12
+    },
+    {
+      "id": "day-business-03",
+      "records": 6
+    },
+    {
+      "id": "day-health-01",
+      "records": 12
+    },
+    {
+      "id": "day-health-02",
+      "records": 12
+    },
+    {
+      "id": "day-health-03",
+      "records": 6
+    },
+    {
+      "id": "day-love-01",
+      "records": 12
+    },
+    {
+      "id": "day-love-02",
+      "records": 12
+    },
+    {
+      "id": "day-love-03",
+      "records": 6
+    },
+    {
+      "id": "day-money-01",
+      "records": 12
+    },
+    {
+      "id": "day-money-02",
+      "records": 12
+    },
+    {
+      "id": "day-money-03",
+      "records": 6
+    },
+    {
+      "id": "day-overall-01",
+      "records": 12
+    },
+    {
+      "id": "day-overall-02",
+      "records": 12
+    },
+    {
+      "id": "day-overall-03",
+      "records": 6
+    },
+    {
+      "id": "day-study-01",
+      "records": 12
+    },
+    {
+      "id": "day-study-02",
+      "records": 12
+    },
+    {
+      "id": "day-study-03",
+      "records": 6
+    },
+    {
+      "id": "month-business-sample",
+      "records": 1
+    },
+    {
+      "id": "month-health-sample",
+      "records": 1
+    },
+    {
+      "id": "month-love-sample",
+      "records": 1
+    },
+    {
+      "id": "month-money-sample",
+      "records": 1
+    },
+    {
+      "id": "month-overall-sample",
+      "records": 1
+    },
+    {
+      "id": "month-study-sample",
+      "records": 1
+    },
+    {
+      "id": "year-business-sample",
+      "records": 1
+    },
+    {
+      "id": "year-health-sample",
+      "records": 1
+    },
+    {
+      "id": "year-love-sample",
+      "records": 1
+    },
+    {
+      "id": "year-money-sample",
+      "records": 1
+    },
+    {
+      "id": "year-overall-sample",
+      "records": 1
+    },
+    {
+      "id": "year-study-sample",
+      "records": 1
+    }
+  ]
+}

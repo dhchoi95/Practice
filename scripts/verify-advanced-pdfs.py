@@ -15,7 +15,7 @@ for kind in ['standard','solar','unknown']:
     for span in line['spans']:
      if span['text'].strip():
       x0,y0,x1,y1=span['bbox'];assert x0>=-1 and y0>=-1 and x1<=p.rect.width+1 and y1<=p.rect.height+1,(kind,p.number,span)
- required=['내 사주 자세히 보기','요청한 시각 기준','원국과 지장간·십신','십신별 역할과 실제 위치','대운 개시 계산','선택 연도부터 5년','2026년','2030년','종합 풀이','출처와 판단의 범위','2.0.0']
+ required=['내 사주 자세히 보기','요청한 시각 기준','원국과 지장간·십신','십신별 역할과 실제 위치','대운 개시 계산','선택 연도부터 최대 5년','2026년','2030년','종합 풀이','출처와 판단의 범위','2.3.0']
  if kind=='unknown':
   required+=['일주 미확정','강약 미확정','격국 미확정','대운 개시일을 정하지 않았어요']
   assert '1995-12-20' not in text and '신강 경향' not in text

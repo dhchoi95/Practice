@@ -1,0 +1,296 @@
+[
+  {
+    "id": "sector:day:overall:learn-express",
+    "supplied_sha256": "539778cd925d58b374ab1aae119068b932aa0bb55007a8b41b31e61fe549d875",
+    "current_sha256": "539778cd925d58b374ab1aae119068b932aa0bb55007a8b41b31e61fe549d875",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:overall:produce-trade",
+    "supplied_sha256": "38ae91391184c679f2c05d1dbb0d5def956b59915d14c3c6fb6c2cb3d39aaa41",
+    "current_sha256": "38ae91391184c679f2c05d1dbb0d5def956b59915d14c3c6fb6c2cb3d39aaa41",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:overall:month-clash",
+    "supplied_sha256": "aedbd25f37f21d82b6bcb30da46898440324c2e17401a525dc3bf7797c5766ab",
+    "current_sha256": "aedbd25f37f21d82b6bcb30da46898440324c2e17401a525dc3bf7797c5766ab",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:overall:agreement",
+    "supplied_sha256": "064f2b696797eda8d6a379c911415d76e76cc1533524821ddcf6bcca2c0376a6",
+    "current_sha256": "064f2b696797eda8d6a379c911415d76e76cc1533524821ddcf6bcca2c0376a6",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:overall:peer",
+    "supplied_sha256": "9cbd4186ed1ac3c822ca080750054d18c38eb67b1401e2d4e613ff99a90c5f07",
+    "current_sha256": "9cbd4186ed1ac3c822ca080750054d18c38eb67b1401e2d4e613ff99a90c5f07",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:study:learn-express",
+    "supplied_sha256": "440009035bdb829644721d925d85e8cbc5df9e5dcdb4e097c59499111a8aba15",
+    "current_sha256": "440009035bdb829644721d925d85e8cbc5df9e5dcdb4e097c59499111a8aba15",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:study:produce-trade",
+    "supplied_sha256": "780f0f8850db3e0a57213bb05d0b7d9db209aaba6152110b83aaca1eb2c20573",
+    "current_sha256": "780f0f8850db3e0a57213bb05d0b7d9db209aaba6152110b83aaca1eb2c20573",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:study:month-clash",
+    "supplied_sha256": "cceb4ade100fbc7f1e439ec6120566471e29bf6507f0453b9c3a56ac85fce7f7",
+    "current_sha256": "cceb4ade100fbc7f1e439ec6120566471e29bf6507f0453b9c3a56ac85fce7f7",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:study:agreement",
+    "supplied_sha256": "7f8f0e54c3ff5ba218b65b9b54d323bb041a294b66a62ba229ce5106fdfde669",
+    "current_sha256": "7f8f0e54c3ff5ba218b65b9b54d323bb041a294b66a62ba229ce5106fdfde669",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:study:peer",
+    "supplied_sha256": "d1f3b6839d061164aba008f8b168b7b562d8572802430395b3b93f8b2692cf76",
+    "current_sha256": "d1f3b6839d061164aba008f8b168b7b562d8572802430395b3b93f8b2692cf76",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:money:learn-express",
+    "supplied_sha256": "4bd9cd82807e5a861990d065197bebc57eb8c34e23fb3897713bedfce5057591",
+    "current_sha256": "4bd9cd82807e5a861990d065197bebc57eb8c34e23fb3897713bedfce5057591",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:money:produce-trade",
+    "supplied_sha256": "a9c5663f1efba6558947ceceac4fb08d1ee4915640b38f5b9826c92dc47c83af",
+    "current_sha256": "a9c5663f1efba6558947ceceac4fb08d1ee4915640b38f5b9826c92dc47c83af",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:money:month-clash",
+    "supplied_sha256": "dd8817a2cae8a07a3e251e810bc3dd5e07e74ccd70f16a70999806884ed35f5d",
+    "current_sha256": "dd8817a2cae8a07a3e251e810bc3dd5e07e74ccd70f16a70999806884ed35f5d",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:money:agreement",
+    "supplied_sha256": "929cbfee8a3ef945a88a3d7024d3ba690fe9844a65310a1d7781e19176259b0d",
+    "current_sha256": "929cbfee8a3ef945a88a3d7024d3ba690fe9844a65310a1d7781e19176259b0d",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:money:peer",
+    "supplied_sha256": "ae07726ee31279c4e8b63ae16d866465b1cdf1f04c8beb9248607c1fbe1c0347",
+    "current_sha256": "ae07726ee31279c4e8b63ae16d866465b1cdf1f04c8beb9248607c1fbe1c0347",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:health:learn-express",
+    "supplied_sha256": "34be8b3359fb361585191ebd52fff3741a99a08252feacc37ee85c75b9636f66",
+    "current_sha256": "34be8b3359fb361585191ebd52fff3741a99a08252feacc37ee85c75b9636f66",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:health:produce-trade",
+    "supplied_sha256": "284a31385f41f4323631a6b3969c91b8b3a5f502fc2a416e035995e968106d2d",
+    "current_sha256": "284a31385f41f4323631a6b3969c91b8b3a5f502fc2a416e035995e968106d2d",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:health:month-clash",
+    "supplied_sha256": "36d5dbb754b6933b591910e7879ad3ec46047b31aae6640cc7851edd0659014f",
+    "current_sha256": "36d5dbb754b6933b591910e7879ad3ec46047b31aae6640cc7851edd0659014f",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:health:agreement",
+    "supplied_sha256": "8ae81f6a6d329638dcdccefc552e564d33cee0a640f8f3b01b0ca2f1a7ea1d12",
+    "current_sha256": "8ae81f6a6d329638dcdccefc552e564d33cee0a640f8f3b01b0ca2f1a7ea1d12",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:health:peer",
+    "supplied_sha256": "82f20e8f3948cdfc04c389f7d9305bc4bdc9134131f5d4be7e86070bf6ba21e7",
+    "current_sha256": "82f20e8f3948cdfc04c389f7d9305bc4bdc9134131f5d4be7e86070bf6ba21e7",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:love:learn-express",
+    "supplied_sha256": "2c80b521076dde1c6d0b6a9ff1e702249e7838bd170a58bdf60e596fd8f2404f",
+    "current_sha256": "2c80b521076dde1c6d0b6a9ff1e702249e7838bd170a58bdf60e596fd8f2404f",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:love:produce-trade",
+    "supplied_sha256": "1f8c940b6efc999b656e1ec5ea925ad68a4cd70bd1b6cf7ac3b03b8eee8124db",
+    "current_sha256": "1f8c940b6efc999b656e1ec5ea925ad68a4cd70bd1b6cf7ac3b03b8eee8124db",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:love:month-clash",
+    "supplied_sha256": "50e6921c6ff8a6fe2587ad4e4162011910d9979c933a3c44010d4ca2a5da4abd",
+    "current_sha256": "50e6921c6ff8a6fe2587ad4e4162011910d9979c933a3c44010d4ca2a5da4abd",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:love:agreement",
+    "supplied_sha256": "2ce7a62fee3fa6150acfc6640c173a224e39b5d5b2fdc7d6ed74cfad76213677",
+    "current_sha256": "2ce7a62fee3fa6150acfc6640c173a224e39b5d5b2fdc7d6ed74cfad76213677",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:love:peer",
+    "supplied_sha256": "4517d4db4c9dd6596421c0b0c649e4aea009d5268a66080b93415ebd10499de7",
+    "current_sha256": "4517d4db4c9dd6596421c0b0c649e4aea009d5268a66080b93415ebd10499de7",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:business:learn-express",
+    "supplied_sha256": "9530320d2bdeaa7cd3814f1a907244fec82f2b70b2c04507a6d54bb8b864bfc0",
+    "current_sha256": "9530320d2bdeaa7cd3814f1a907244fec82f2b70b2c04507a6d54bb8b864bfc0",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:business:produce-trade",
+    "supplied_sha256": "32b5e1332d19dcd573f4a188ad234a45dfa034785e0342df25d2a5cf625407ca",
+    "current_sha256": "32b5e1332d19dcd573f4a188ad234a45dfa034785e0342df25d2a5cf625407ca",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:business:month-clash",
+    "supplied_sha256": "3d65317fdfe1db43379ba326813f923b6aa324c107a7b4311179eaa8be095aef",
+    "current_sha256": "3d65317fdfe1db43379ba326813f923b6aa324c107a7b4311179eaa8be095aef",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:business:agreement",
+    "supplied_sha256": "d612d4908f4169d51528b4befb51ce422bd9c663a15febf35a5cd902fbf60f7e",
+    "current_sha256": "d612d4908f4169d51528b4befb51ce422bd9c663a15febf35a5cd902fbf60f7e",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:day:business:peer",
+    "supplied_sha256": "ceef44c31fce772680bd89b2ff80cd1255ec1e27a314b8206e31f96572f0ba75",
+    "current_sha256": "ceef44c31fce772680bd89b2ff80cd1255ec1e27a314b8206e31f96572f0ba75",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:month:overall:learn-express",
+    "supplied_sha256": "de4eef7f743238e33ce6fb6a7a2be06e63840d9b6949f19eed67ba32484ada9a",
+    "current_sha256": "b1f2641a5245d231296a5ff7389c03b031b91816aaf0ac2129d1840b33112d49",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:month:study:learn-express",
+    "supplied_sha256": "b7e5a0e044529ac8458db5eb40182994bedc77852dc1e3370444239af751506f",
+    "current_sha256": "4b5872e271c97e3b7a4c6d2e5f040fd75955b964baff5a99f0c4e4162b33125c",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:month:money:produce-trade",
+    "supplied_sha256": "a3d2d702975f0a8295563ee873344db1416853d3cdae7c102be332348009add0",
+    "current_sha256": "e07586bd6db8c26ba6d08827ad167ef820cccb50fb1f683edc496dbcae96d03e",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:month:health:month-clash",
+    "supplied_sha256": "63b2bfd628811f313144761429791ba8c1fe311afbcce3b9067f03c0c41afaef",
+    "current_sha256": "2aaf59ea83d4af552cce536e942d35229052234708cbb16b7a93055733a73c50",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:month:love:agreement",
+    "supplied_sha256": "eca50ce316ae66690f4dc57fcab61962c78ea56fb969f97dd05e03380bdfa4e9",
+    "current_sha256": "df5d08eb3fe95ff14140c8831a051b4ad737a6b61a25d41c09a8b13a1912c42d",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:month:business:learn-express",
+    "supplied_sha256": "4dfbabbb0235ea6963a23cc99fd0a642a578de654203fddcdacbc1050bc9a93a",
+    "current_sha256": "22b9ec6b996266e591bb8e8838d463efca3ecba8058becc9bd7064f34cacbe85",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:year:overall:learn-express",
+    "supplied_sha256": "2ea48329b99f93432660c192f5c4aabd52edc995ac553e1e8e406531aa2b524a",
+    "current_sha256": "61aab0d8ccb6c2f4854bcf16d87e5bdc7118000d989677f774a7c45e478abab0",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:year:study:learn-express",
+    "supplied_sha256": "6e8735366bb7c4a06b878396aea7eff9bcd8be07c9861cdc7e3f0a854e85e4fd",
+    "current_sha256": "dec92df0c88adcfd315eaa39099338e5ac60343235267d2c1ba365844106ca45",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:year:money:produce-trade",
+    "supplied_sha256": "52460116420367068aaa2fd78d83dc91f65e5c13f0d46f8cded6ffa21f8cdfa7",
+    "current_sha256": "997c6c4e7ae1a2c44695ba568e7c90ee2722e58070ba21ba2338b50dea40ffed",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:year:health:month-clash",
+    "supplied_sha256": "6abacd79ea219216dfe402e0d91cd3d3e9b9140ba0e8a6191dc48cbfad67d6f0",
+    "current_sha256": "5f0aada5fdf8a6b9d4c49dec151f2683f9448215db35f5744fb65ec901f3e1b1",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  },
+  {
+    "id": "sector:year:love:agreement",
+    "supplied_sha256": "a0f17b7c677ae135b5cfb3e92429506f0df6c944cf6b8a726e40c7497e079bf4",
+    "current_sha256": "a0f17b7c677ae135b5cfb3e92429506f0df6c944cf6b8a726e40c7497e079bf4",
+    "exact_source_match": true,
+    "resolution": "동일 원문 확인"
+  },
+  {
+    "id": "sector:year:business:learn-express",
+    "supplied_sha256": "e1e84ab822b3cb80b4619659b73e507e5d067c7bc475fb2cfafcc3b2f2828d4c",
+    "current_sha256": "b3264ab6d50b43b0b9e3485b3f9198b8401bd31499804c22ec9b994a1f789325",
+    "exact_source_match": false,
+    "resolution": "현재 원문 전체와 이전 교정 전후를 읽고 대조. 바뀐 뒷문단의 쉬운 표현은 원래 해석 범위와 같음. 제안은 새 기간 사건을 추가하지 않아 현재 해시를 기준으로 별도 교정안 작성. 기존 해시 검사 우회·비문장 필드 덮어쓰기 없음."
+  }
+]

@@ -1,3 +1,4 @@
+import {recordedMigration} from './source-continuity';
 import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { calculateAdvanced } from '../src/domain/advanced/chart';
@@ -19,7 +20,7 @@ const records=validateManuscripts([...natalModules,...periodModules]);
 const errors:string[]=[], warnings:string[]=[];
 for(const r of records){const issues=particleErrors([r.title,r.text,r.proposal].join(' '));if(issues.length)errors.push(`${r.id}: ${issues.join('/')}`);}
 const baseline:{path:string;hash:string}[]=JSON.parse(await fs.readFile('content-review/compatibility-baseline-1.4.0.json','utf8')).sources;
-for(const b of baseline)if(createHash('sha256').update(await fs.readFile(b.path)).digest('hex')!==b.hash)errors.push(`호환 소스 변경 ${b.path}`);
+for(const b of baseline)if(createHash('sha256').update(await fs.readFile(b.path)).digest('hex')!==b.hash&&!recordedMigration(b.path,b.hash))errors.push(`호환 소스 변경 ${b.path}`);
 await fs.writeFile(`${dir}/baseline/manifest.json`,JSON.stringify({commit:'eee3ef1c9d6d3a1bf65085d0a989fb94499135e7',sources:baseline,compatibilityPolicy:'KST-MIDNIGHT-1.0',compatibilityContent:'1.4.0'},null,2)+'\n');
 // Cross-table agreement with the installed software, not an independent classical-source verification.
 const hiddenComparison=hiddenStems.map((stems,b)=>{const app=stems.map(s=>stemHanja[s]),software=LunarUtil.ZHI_HIDE_GAN[LunarUtil.ZHI[b+1]];return {branch:branchNames[b],app:stems.map(s=>stemNames[s]),appHanja:app,software,mainMatches:app[0]===software[0],membersMatch:JSON.stringify([...app].sort())===JSON.stringify([...software].sort()),orderMatches:JSON.stringify(app)===JSON.stringify(software)};});
@@ -65,7 +66,7 @@ for(const r of [...records,...mbtiContent,...mbtiBasicContent]){
  if(head[0]?.hash!==h&&process.argv.includes('--record')){
   if(!snapshots.some(s=>s.hash===h))snapshots.push({hash:h,record:r});
   const claims='claim'in r?[{id:r.claim.id,hash:hash(r.claim)}]:[{id:r.id+':editorial',hash:hash(r.text)}];
-  ledger.push({id:`author-2-0-${r.id}-${h.slice(0,12)}-${history.length+1}`,ruleId:r.id,hash:h,...(head[0]?{supersedes:head[0].id}:{}),claimHashes:claims,reviewer:'implementation-author',status:'implemented-pending-independent-review',date:'2026-10-22',corrections:['authoringIntent'in r?r.authoringIntent:`${r.type}의 ${r.title} 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요.`]});
+  ledger.push({id:`author-2-0-${r.id}-${h.slice(0,12)}-${history.length+1}`,ruleId:r.id,hash:h,...(head[0]?{supersedes:head[0].id}:{}),claimHashes:claims,reviewer:'implementation-author',status:'implemented-pending-independent-review',date:new Date().toISOString().slice(0,10),corrections:['authoringIntent'in r?r.authoringIntent:`${r.type}의 ${r.title} 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요.`]});
  }
  const current=ledger.find(l=>l.ruleId===r.id&&l.hash===h&&!ledger.some(n=>n.supersedes===l.id));if(!current)errors.push(`현재 해시 검토 누락 ${r.id}`);
 }
@@ -78,5 +79,5 @@ const activeIds=new Set([...records,...mbtiContent,...mbtiBasicContent].map(r=>r
 await fs.writeFile(`${dir}/historical-only-rules.json`,JSON.stringify({meaning:'과거 집필 기록을 남기되 현재 활성 원고로 세지 않음',ids:historicalOnlyRuleIds},null,2)+'\n');
 if(process.argv.includes('--record')&&!errors.length){await fs.writeFile(ledgerPath,JSON.stringify(ledger,null,2)+'\n');await fs.writeFile(snapshotPath,JSON.stringify(snapshots,null,2)+'\n');}
 await fs.writeFile(`${dir}/audit.json`,JSON.stringify({passed:!errors.length,errors,warnings,inventory,reviewRecords:ledger.length},null,2)+'\n');
-console.log(`${errors.length?'FAIL':'PASS'} · 호환 소스 ${baseline.length}개 동일 · 고급 ${natalModules.length} / 기간 ${periodModules.length} / MBTI ${mbtiContent.length} · ${profiles.length}명 × 365일·12개월·6년 · 독립 검토 대기`);
+console.log(`${errors.length?'FAIL':'PASS'} · 호환 기준 ${baseline.length}개 대조(명시한 편집·입력 분리 이행 포함) · 고급 ${natalModules.length} / 기간 ${periodModules.length} / MBTI ${mbtiContent.length} · ${profiles.length}명 × 365일·12개월·6년 · 독립 검토 대기`);
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}

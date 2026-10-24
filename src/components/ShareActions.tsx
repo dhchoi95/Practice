@@ -1,13 +1,13 @@
 'use client';
 import { useState } from 'react';
 import { shareCategory } from '@/lib/sharing';
-import { siteConfig,type Slug } from '@/config/site';
+import { siteConfig,getCategory,type Slug } from '@/config/site';
 export function ShareActions({slug}:{slug:Slug}) {
   const [message,setMessage]=useState(''),[url,setUrl]=useState(''),[pending,setPending]=useState(false);
   async function share(){
     setPending(true);
     const link=new URL(`/fortune/${slug}/`,siteConfig.url||window.location.origin).href;
-    const result=await shareCategory(link,`${siteConfig.name} 운세 메뉴`);
+    const result=await shareCategory(link,`${siteConfig.name} ${getCategory(slug)?.name??'운세'}`);
     setMessage({shared:'운세 메뉴를 공유했어요.',copied:'이 운세의 시작 화면 링크를 복사했어요.',cancelled:'공유를 취소했어요.',manual:'링크를 선택해 직접 복사하거나 길게 눌러 복사해 주세요.'}[result]);
     setUrl(result==='manual'?link:'');setPending(false);
   }

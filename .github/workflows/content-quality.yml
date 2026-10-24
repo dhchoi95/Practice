@@ -33,6 +33,7 @@ jobs:
             reports/content-improvement-1.4.0/
             reports/integrated-2.0.0/
             reports/foundation-2.1.0/
+            reports/final-2.3.0/
             reports/content-inventory.json
             reports/content-coverage.json
             reports/content-preview.json

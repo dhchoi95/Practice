@@ -1,0 +1,30 @@
+{
+  "release": "2.3.0",
+  "date": "2026-10-24",
+  "localChecks": {
+    "verify": "passed",
+    "unitIntegrationTests": 402,
+    "browserSuite": {
+      "passed": 87,
+      "failed": 0
+    },
+    "actualNativePDFs": 26,
+    "mergeContractTests": 5,
+    "fixedSegmentDomainSelectionsUnchanged": 33564,
+    "manuscriptAndExplanationRecords": 1195,
+    "publicSourceFiles": 74,
+    "build": "passed",
+    "staticDraftLeakCheck": "passed"
+  },
+  "finalCopyOnlyAdjustment": "연간 공통 안내 제목을 올해 대신 한 해로 정리. 계산·본문·선택·레이아웃 변경 없음. 현재 해시 재검토·빌드에 반영.",
+  "scopeLimits": [
+    "독립 편집·명리 검토 대기",
+    "실제 Instagram 인앱·휴대전화 미검증",
+    "Lighthouse 재측정 안 함",
+    "고정 집단 미선정 원고62개는 전수 교정 목록과 별도로 기록"
+  ],
+  "deployment": {
+    "target": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+    "state": "pending-live-check"
+  }
+}

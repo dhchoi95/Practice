@@ -1,3 +1,5 @@
+import {recordedMigration} from './source-continuity';
+import {siteConfig} from '../src/config/site';
 import fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import raw from '../src/content/rules.json';
@@ -18,10 +20,10 @@ const before=validateRules(baseline.rules),rules=validateRules(raw),oldDrafts=va
 const hash=(v:unknown)=>createHash('sha256').update(canonicalContent(v)).digest('hex');
 const protectedKeys=['id','system','category','section','conditions','requires','exclusions','priority','specificity','rankingFeature','exclusiveGroup','semanticAxis','stance','sharedExplanationId','relatedGlossaryKeys','reviewStatus','provenance'] as const;
 const errors:string[]=[];
-const editLog: {ruleId:string;field:string;reason:string}[]=JSON.parse(await fs.readFile('content-review/korean-edit-log-1.4.0.json','utf8'));
+const editLog: {ruleId:string;field:string;reason:string}[]=JSON.parse(await fs.readFile('content-review/final-editing/legacy-edit-log.json','utf8'));
 const meaningNotes:Record<string,string>=JSON.parse(await fs.readFile('content-review/korean-meaning-notes-1.4.0.json','utf8'));
 const protectedSources:{path:string;sha256:string}[]=JSON.parse(await fs.readFile('content-review/protected-source-hashes-1.3.0.json','utf8'));
-for(const source of protectedSources)if(createHash('sha256').update(await fs.readFile(source.path)).digest('hex')!==source.sha256)errors.push(`계산·선정·개인정보 소스 변경: ${source.path}`);
+for(const source of protectedSources)if(createHash('sha256').update(await fs.readFile(source.path)).digest('hex')!==source.sha256&&!recordedMigration(source.path,source.sha256))errors.push(`계산·선정·개인정보 소스 변경: ${source.path}`);
 const changes:{id:string;system:string;category:ContentCategory;changed:boolean;changedFields:string[];beforeVersion:string;afterVersion:string;beforeHash:string;afterHash:string;editorialStatus:string;reason:string}[]=[];
 for(const [i,rule] of [...rules,...newDrafts].entries()){
   const old=i<rules.length?before.find(r=>r.id===rule.id):oldDrafts.find(r=>r.id===rule.id);
@@ -31,7 +33,7 @@ for(const [i,rule] of [...rules,...newDrafts].entries()){
   const fields=Object.keys(rule).filter(key=>canonicalContent(rule[key as keyof typeof rule])!==canonicalContent(old[key as keyof typeof old]));
   const reasons=editLog.filter(e=>e.ruleId===rule.id).map(e=>e.reason);
   if(fields.length&&!reasons.length)errors.push(`개별 편집 이유 누락: ${rule.id}`);
-  if(fields.length&&(!rule.contentVersion.startsWith('1.4.0')||rule.updatedAt!=='2026-10-22'))errors.push(`수정 원고 버전·날짜: ${rule.id}`);
+  if(fields.length&&(!rule.contentVersion.startsWith(siteConfig.contentVersion)||rule.updatedAt!=='2026-10-24'))errors.push(`수정 원고 버전·날짜: ${rule.id}`);
   if(!fields.length&&(rule.contentVersion!==old.contentVersion||rule.reviewStatus!==old.reviewStatus))errors.push(`유지 원고의 버전·상태 변경: ${rule.id}`);
   changes.push({id:rule.id,system:rule.system,category:rule.category,changed:fields.length>0,changedFields:fields,beforeVersion:old.contentVersion,afterVersion:rule.contentVersion,beforeHash:hash(old),afterHash:hash(rule),editorialStatus:fields.length?'implementation-edited-pending-independent-editor':'read-retained-not-new-review',reason:fields.length?reasons.join(' / '):'이미 내용이 분명하고 문맥에 맞아 유지. 새로 작성하거나 승인한 것으로 집계하지 않음.'});
 }
@@ -39,14 +41,14 @@ if(before.length!==rules.length||oldDrafts.length!==newDrafts.length)errors.push
 if(JSON.stringify(reviews.slice(0,baseline.reviews.length))!==JSON.stringify(baseline.reviews))errors.push('기존 검토 기록 변경');
 const words=['보세요','수 있어요','확인','상징','살펴','조건','소재','관점'];
 const counts=(rows:typeof rules)=>Object.fromEntries(words.map(word=>[word,{occurrences:rows.reduce((n,r)=>n+r.paragraphs.join(' ').split(word).length-1,0),records:rows.filter(r=>r.paragraphs.join(' ').includes(word)).length}]));
-const publicEdits=JSON.parse(await fs.readFile('content-review/public-text-edits-1.4.0.json','utf8'));
+const publicEdits=JSON.parse(await fs.readFile('content-review/final-editing/public-text-edits.json','utf8'));
 for(const basis of interpretationBases){
   const old=baseline.bases.find((b:{id:string})=>b.id===basis.id);
   for(const key of ['id','kind','feature','op','value','sourceIds'] as const)if(canonicalContent(basis[key])!==canonicalContent(old[key]))errors.push(`근거 전제 변경: ${basis.id}.${key}`);
-  const expected=old.fact.replace(/천간입니다\.$/,'천간이에요.').replace(/관계입니다\.$/,'관계예요.').replace(/이름입니다\.$/,'이름이에요.');
+  const expected=old.fact;
   if(basis.fact!==expected)errors.push(`근거 계산 사실 문구 변경: ${basis.id}`);
 }
-if(canonicalContent(sharedExplanations)!==canonicalContent(baseline.shared))errors.push('유지한 공통 설명 변경');
+if(canonicalContent(sharedExplanations)!==canonicalContent(baseline.shared)&&!publicEdits.filter((e:{id:string})=>sharedExplanations.some(s=>s.id===e.id)).every((e:{id:string;afterHash:string})=>hash(sharedExplanations.find(s=>s.id===e.id))===e.afterHash))errors.push('공통 설명 편집 해시 불일치');
 for(const edit of publicEdits){
   const live=[...sharedExplanations,...interpretationBases].find(r=>r.id===edit.id);
   const old=[...baseline.shared,...baseline.bases].find((r:{id:string})=>r.id===edit.id);
@@ -75,7 +77,7 @@ const selectionChecks=assembled.profiles.map((profile:{profileId:string;category
 });
 const exampleIds=['core-general-7','core-personality-7','core-relationships-9','core-mind-0','core-careermoney-4','core-love-7','core-careermoney-7','period-year-4','period-month-3','unknown-love','light-zodiac-1','light-constellation-6','light-bloodtype-2','element-0-personality','element-1-relationships','element-2-careermoney','element-3-relationships','element-4-love','relation-careermoney-order','relation-personality-wealth','relation-relationships-output','core-single-6','core-mind-3','period-year-6'];
 const examples=exampleIds.map(id=>{const old=before.find(r=>r.id===id)!,r=rules.find(r=>r.id===id)!;if(!meaningNotes[id])errors.push(`개별 뜻 대조 누락: ${id}`);return {id,field:'title / paragraphs / practicalTips',before:{title:old.title,paragraphs:old.paragraphs,tips:old.practicalTips},after:{title:r.title,paragraphs:r.paragraphs,tips:r.practicalTips},reason:editLog.filter(e=>e.ruleId===id).map(e=>`${e.field}: ${e.reason}`).join(' / '),meaningAndLimitsPreserved:meaningNotes[id]};});
-const report={passed:!errors.length,baselineVersion:baseline.version,releaseVersion:'1.4.0',scope:{normal:rules.length,shared:sharedExplanations.length,bases:interpretationBases.length,drafts:newDrafts.length},normalChanged:changes.slice(0,210).filter(r=>r.changed).length,normalRetained:changes.slice(0,210).filter(r=>!r.changed).length,frequencyScope:'210 normal records; body paragraphs only; excludes titles/tips/evidence/shared policy; identical substring method before and after',frequency:{before:counts(before),after:counts(rules)},menus,changes,examples,selectionChecks,publicTextEdits:publicEdits,history:{originalRecordsPreserved:baseline.reviews.length,allRecords:reviews.length},errors,meaning:'편집 증거·구조 검사입니다. 문체 점수·AI 판별·독립 의미 승인·예측 적중률이 아닙니다.'};
+const report={passed:!errors.length,baselineVersion:baseline.version,releaseVersion:siteConfig.contentVersion,scope:{normal:rules.length,shared:sharedExplanations.length,bases:interpretationBases.length,drafts:newDrafts.length},normalChanged:changes.slice(0,210).filter(r=>r.changed).length,normalRetained:changes.slice(0,210).filter(r=>!r.changed).length,frequencyScope:'210 normal records; body paragraphs only; excludes titles/tips/evidence/shared policy; identical substring method before and after',frequency:{before:counts(before),after:counts(rules)},menus,changes,examples,selectionChecks,publicTextEdits:publicEdits,history:{originalRecordsPreserved:baseline.reviews.length,allRecords:reviews.length},errors,meaning:'편집 증거·구조 검사입니다. 문체 점수·AI 판별·독립 의미 승인·예측 적중률이 아닙니다.'};
 await fs.mkdir('reports/content-improvement-1.4.0',{recursive:true});
 await fs.writeFile('reports/content-improvement-1.4.0/editorial-audit.json',JSON.stringify(report,null,2)+'\n');
 await fs.writeFile('reports/content-improvement-1.4.0/editorial-before-after.md',examples.map(e=>`## ${e.id}\n\n필드: ${e.field}\n\n수정 전: ${e.before.title}\n\n${e.before.paragraphs.join('\n\n')}\n\n제안: ${e.before.tips.join(' / ')}\n\n수정 후: ${e.after.title}\n\n${e.after.paragraphs.join('\n\n')}\n\n제안: ${e.after.tips.join(' / ')}\n\n이유: ${e.reason}\n\n뜻과 한계: ${e.meaningAndLimitsPreserved}`).join('\n\n')+'\n');

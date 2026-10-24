@@ -40,3 +40,8 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 .five-sector-indices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;font-size:14px}.five-sector-indices>div{border-top:1px solid #c9cdbf;padding-top:5px}.five-sector-indices dd{margin:0;font-weight:600}@media print{.sector-body{break-inside:auto}}
 /* A trailing screen margin can create a content-free final sheet in native PDF. */
 @media print{.result-page>.editorial-note:last-child{margin-bottom:0}}
+
+/* Keep the existing visual style and requested menu grids. */
+.primary-nav>.wrap{gap:28px;overflow-x:auto;scrollbar-width:thin}.primary-nav a{white-space:nowrap;flex-shrink:0;min-height:48px}.quick-nav{grid-template-columns:repeat(4,minmax(0,1fr))}.birth-summary{border:1px solid var(--line);border-radius:10px;background:white;padding:20px;margin:16px 0}.birth-summary p{margin-top:8px}.birth-summary .button{margin-top:14px}.new-year-selector{display:block;margin:16px 0}.new-year-selector select{margin-left:12px;padding:10px}.compatibility-inputs>section{margin:20px 0}.natal-stage{white-space:nowrap}
+@media(max-width:700px){.primary-nav>.wrap{justify-content:flex-start;gap:25px}.quick-nav a{font-size:14px;min-height:52px;padding:8px 4px;overflow-wrap:normal}.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tile-text strong{font-size:15px;letter-spacing:-.6px}.birth-summary{padding:16px}.natal-stage{font-size:14px}}
+@media print{.result-page [aria-label="신년운세"]>.disclosure:last-of-type,.result-page details:last-child{margin-bottom:0}.result-page{padding-bottom:0;margin-bottom:0}}

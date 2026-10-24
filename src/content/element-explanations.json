@@ -2,10 +2,10 @@
   {
     "id": "element-symbol-0",
     "element": "목",
-    "text": "목은 전통적으로 시작과 성장에 연결해 읽어요. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했어요. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않아요. 실제 경험과 다른 대목은 받아들이지 않아도 돼요.",
+    "text": "목은 전통적으로 시작과 성장에 연결해 읽습니다. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했습니다. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않습니다. 실제 경험과 다른 대목은 받아들이지 않아도 됩니다.",
     "reviewStatus": "automated-checked",
-    "contentVersion": "1.3.0",
-    "updatedAt": "2026-10-21",
+    "contentVersion": "2.3.0",
+    "updatedAt": "2026-10-24",
     "sourceIds": [
       "traditional-mapping",
       "original-editorial"
@@ -14,10 +14,10 @@
   {
     "id": "element-symbol-1",
     "element": "화",
-    "text": "화는 전통적으로 드러내고 나누는 일에 연결해 읽어요. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했어요. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않아요. 실제 경험과 다른 대목은 받아들이지 않아도 돼요.",
+    "text": "화는 전통적으로 드러내고 나누는 일에 연결해 읽습니다. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했습니다. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않습니다. 실제 경험과 다른 대목은 받아들이지 않아도 됩니다.",
     "reviewStatus": "automated-checked",
-    "contentVersion": "1.3.0",
-    "updatedAt": "2026-10-21",
+    "contentVersion": "2.3.0",
+    "updatedAt": "2026-10-24",
     "sourceIds": [
       "traditional-mapping",
       "original-editorial"
@@ -26,10 +26,10 @@
   {
     "id": "element-symbol-2",
     "element": "토",
-    "text": "토는 전통적으로 생활을 돌보는 일에 연결해 읽어요. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했어요. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않아요. 실제 경험과 다른 대목은 받아들이지 않아도 돼요.",
+    "text": "토는 전통적으로 생활을 돌보는 일에 연결해 읽습니다. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했습니다. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않습니다. 실제 경험과 다른 대목은 받아들이지 않아도 됩니다.",
     "reviewStatus": "automated-checked",
-    "contentVersion": "1.3.0",
-    "updatedAt": "2026-10-21",
+    "contentVersion": "2.3.0",
+    "updatedAt": "2026-10-24",
     "sourceIds": [
       "traditional-mapping",
       "original-editorial"
@@ -38,10 +38,10 @@
   {
     "id": "element-symbol-3",
     "element": "금",
-    "text": "금은 전통적으로 가르고 정돈하는 일에 연결해 읽어요. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했어요. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않아요. 실제 경험과 다른 대목은 받아들이지 않아도 돼요.",
+    "text": "금은 전통적으로 가르고 정돈하는 일에 연결해 읽습니다. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했습니다. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않습니다. 실제 경험과 다른 대목은 받아들이지 않아도 됩니다.",
     "reviewStatus": "automated-checked",
-    "contentVersion": "1.3.0",
-    "updatedAt": "2026-10-21",
+    "contentVersion": "2.3.0",
+    "updatedAt": "2026-10-24",
     "sourceIds": [
       "traditional-mapping",
       "original-editorial"
@@ -50,10 +50,10 @@
   {
     "id": "element-symbol-4",
     "element": "수",
-    "text": "수는 전통적으로 흐름을 살피고 알아가는 일에 연결해 읽어요. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했어요. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않아요. 실제 경험과 다른 대목은 받아들이지 않아도 돼요.",
+    "text": "수는 전통적으로 흐름을 살피고 알아가는 일에 연결해 읽습니다. 알 수 있는 글자에서 이 오행이 두 개 이상 나와 이야기를 더했습니다. 단순 개수로 기운의 강약·능력·용신을 판단하지는 않습니다. 실제 경험과 다른 대목은 받아들이지 않아도 됩니다.",
     "reviewStatus": "automated-checked",
-    "contentVersion": "1.3.0",
-    "updatedAt": "2026-10-21",
+    "contentVersion": "2.3.0",
+    "updatedAt": "2026-10-24",
     "sourceIds": [
       "traditional-mapping",
       "original-editorial"

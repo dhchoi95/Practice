@@ -1,0 +1,43 @@
+{
+  "reference_material": {
+    "videos": 7,
+    "retained_ocr_frames": 250,
+    "method": "4fps 추출 → 유사 화면 제외 → 한국어 OCR → 중복 본문 대조 → 주요 부분 화면 확인",
+    "limitation": "모든 글자의 제3자 교열은 아님. 판독 보류 부분은 표시함."
+  },
+  "proposed_changes": {
+    "daily": 30,
+    "monthly": 6,
+    "yearly": 6,
+    "total": 42,
+    "status": "editorial-draft",
+    "applied_to_project": false
+  },
+  "source_inventory": {
+    "records": 540,
+    "semantic_ids": 180,
+    "scenarios": 30
+  },
+  "executed": {
+    "merge_dry_run": "passed",
+    "only_prose_fields_change": true,
+    "negative_validation": {
+      "stale_hash": "rejected",
+      "forbidden_field": "rejected",
+      "duplicate_id": "rejected",
+      "empty_paragraph": "rejected"
+    },
+    "export_unique_coverage": 540,
+    "export_batches": 54,
+    "source_bytes_unchanged": true
+  },
+  "not_executed": [
+    "운영 사이트 최신 원고와 동일성 확인",
+    "42개 교정안을 엔진에 병합한 후의 실제 조합·모바일 화면 검증",
+    "전체 540개 원고의 새 문체 재집필",
+    "명리 전문가 또는 독립 한국어 편집자의 검수",
+    "정통사주 계산·과학적 예측 정확도 검증"
+  ],
+  "runtime_api_or_paid_generation_used": false,
+  "deployment_or_push": false
+}

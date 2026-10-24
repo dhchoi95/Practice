@@ -1,0 +1,62 @@
+{
+  "version": "2.3.0",
+  "historicalBaselinesRetained": true,
+  "sources": [
+    {
+      "path": "src/content/rules.json",
+      "beforeHashes": [
+        "bbf9dc0892f158e494336cce175732a9f9fdaf2479e375cc8df901bcec0745b0"
+      ],
+      "afterHash": "373bd75d54dd75b5c79fd1f2e9fffa5dd08e0461e7296a1349dcdcc45496feac",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "src/content/element-explanations.json",
+      "beforeHashes": [
+        "e0fd4cea066cff28120ea524bdac8eee6f6b091cd9c79b7b010a9cf3231da0ff"
+      ],
+      "afterHash": "15677ba221636b550d54c91d91210455b3327c564090d2c1d26c3e215c0a6167",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "src/content/interpretation-bases.json",
+      "beforeHashes": [
+        "c682e7fe2ff059f7e409a5f93c28affacc0b5b2932cc74afba7e9e885ee44c4f"
+      ],
+      "afterHash": "8d8489829332308ec5bf9966433241c9ae539eac60ff19e0d3edaa2f446d458a",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "content-review/compound-drafts.json",
+      "beforeHashes": [
+        "a3c9324c4f75c5cfe8de0d4bcf6698b525fe38b0ebf72911d036f1a364096193"
+      ],
+      "afterHash": "339b8e465c9167ccd3277f6f15de5c259ce205cd5414aa2065c4bb3173b5ca57",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "content-review/reviews.json",
+      "beforeHashes": [
+        "70685de92311df39f37fdc57c0652c92f81cd300de98a30541212ecb308a2edb"
+      ],
+      "afterHash": "7730e915ef9209a58cc4e4174239932a52869c37bb58b1e7e4b7941c18a1e7ce",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "content-review/review-snapshots.json",
+      "beforeHashes": [
+        "328bfbed1fcd4b51cfb7085facc284ed8ed9ee8947000b157a059bcd151753ed"
+      ],
+      "afterHash": "b6b31deb8f71659732600e5d2ad3334a4d54a4de84de37ab71b3a61bb2034d2d",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    {
+      "path": "src/components/SessionProvider.tsx",
+      "beforeHashes": [
+        "91b77a2d56e6de94f3b78f96d0b8c63c672fd07527aeb75626e41491084a4cd5"
+      ],
+      "afterHash": "e6677eee7f6baab71d523c7bb9bd20d7b5265ca36cc418a7001eb9f1dee4362e",
+      "reason": "승인된 두 사람 궁합과 선택 연도를 별도 브라우저 메모리에 보관. 기존 출생정보·삭제 정책 유지."
+    }
+  ]
+}
