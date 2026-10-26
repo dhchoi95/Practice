@@ -17210,5 +17210,1193 @@
     "corrections": [
       "ENTJ의 ENTJ를 읽는 출발점 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요."
     ]
+  },
+  {
+    "id": "author-2-0-natal-god-비견-0-4811d5f06363-5",
+    "ruleId": "natal-god-비견-0",
+    "hash": "4811d5f06363a835359895ea91860de1fa31a22316c1d73af85c85c44ec58eb4",
+    "supersedes": "author-2-0-natal-god-비견-0-37a0da8527ed-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-비견-0:interpretation",
+        "hash": "c5d1cf386362f1a5d93dc6de0f6e43f902daeb66aa4797ecf70a3fc1fdbcb037"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.비견 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-비견-1-a334f273c51b-5",
+    "ruleId": "natal-god-비견-1",
+    "hash": "a334f273c51b94c64cd46c13d93a4bc8b6dc71d8e2f6d187ab3b80f5f1019725",
+    "supersedes": "author-2-0-natal-god-비견-1-d8292643d5b2-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-비견-1:interpretation",
+        "hash": "74679ae03b33d9553095fc5426b0b4a00fa9c9e71fb08514ba1003d14298446f"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.비견 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-비견-2-b0c1ad257b2c-5",
+    "ruleId": "natal-god-비견-2",
+    "hash": "b0c1ad257b2ccc7987632b158e7a4f97c7c78b0cd8eab798a8b9d2e566ec6334",
+    "supersedes": "author-2-0-natal-god-비견-2-f9fab3c263b9-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-비견-2:interpretation",
+        "hash": "5a05510dbbe293c537b7e6c4c59b206e8d06c833e042dc0ac42cf6f563e4edf0"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.비견 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-비견-3-af04b679e2a8-6",
+    "ruleId": "natal-god-비견-3",
+    "hash": "af04b679e2a8ecb6f97e774dd7550c669b2185236ccb7914c83f4e2b46e49f79",
+    "supersedes": "author-2-0-natal-god-비견-3-432580332893-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-비견-3:interpretation",
+        "hash": "80a361e2564a15d6ccd1752d62c904916b514ddf1e316af24a4e17ca95c6dbae"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.비견 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-겁재-0-14eaa34810b3-5",
+    "ruleId": "natal-god-겁재-0",
+    "hash": "14eaa34810b3e54c7c2eda8d71516fbdd79e7d8cceca468be5a208fb6cc74cc7",
+    "supersedes": "author-2-0-natal-god-겁재-0-fb2ef730c03f-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-겁재-0:interpretation",
+        "hash": "e2d4cc481807480e8b80d8ed4775eebe414c8682b6d72c3b7505ff87fd24f820"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.겁재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-겁재-1-5d5715ebabf7-5",
+    "ruleId": "natal-god-겁재-1",
+    "hash": "5d5715ebabf79792a2d1c76ba9f335adc550b38f95fe33da8465cca612097b23",
+    "supersedes": "author-2-0-natal-god-겁재-1-0d089883e6d6-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-겁재-1:interpretation",
+        "hash": "36775eb3b738bbaaf9635d1ff46d86295f03651f08b9528089515adb991f0e53"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.겁재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-겁재-2-82ed82c62da8-5",
+    "ruleId": "natal-god-겁재-2",
+    "hash": "82ed82c62da8c51ed901d71efb10a74706c369a95de039618cf3c3595a04ee5e",
+    "supersedes": "author-2-0-natal-god-겁재-2-3e1253686639-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-겁재-2:interpretation",
+        "hash": "61329fb681b539bd0d793498f327feeb170607e911d84e7283fde351a0b751f7"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.겁재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-겁재-3-5080b7d14efd-6",
+    "ruleId": "natal-god-겁재-3",
+    "hash": "5080b7d14efd8b3e4bc1dd70a6f6584468d63cee9aff007af7f42edd61cd5881",
+    "supersedes": "author-2-0-natal-god-겁재-3-07346cf74709-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-겁재-3:interpretation",
+        "hash": "095ada0402c811fe3a820f15cc105053c08ffaaf3b1caf100fea7801079f0984"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.겁재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-식신-0-c06c23b261e0-5",
+    "ruleId": "natal-god-식신-0",
+    "hash": "c06c23b261e0898be78a0071c29ebce4be055c2c32dc581278e5403d93e0b00f",
+    "supersedes": "author-2-0-natal-god-식신-0-38189ed2b0f6-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-식신-0:interpretation",
+        "hash": "79ab9731313650d6914b0eac47de32f8af1d786866463cc30425300296a9a348"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.식신 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-식신-1-c73907acee5c-5",
+    "ruleId": "natal-god-식신-1",
+    "hash": "c73907acee5c0b29d4f8eeb95eb2615fd49f50eef25ba1c8673083d36791551a",
+    "supersedes": "author-2-0-natal-god-식신-1-e289e480a3fe-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-식신-1:interpretation",
+        "hash": "90d07408a5b6b245311262d6d567e957e2253ba85c79db2f169705a9ba5dd9f3"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.식신 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-식신-2-2070cb150432-5",
+    "ruleId": "natal-god-식신-2",
+    "hash": "2070cb150432834c453f4fdd505785eb58609820d5c2bde2aad50c64d85a7749",
+    "supersedes": "author-2-0-natal-god-식신-2-28c924ca9008-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-식신-2:interpretation",
+        "hash": "09ba8d309c1667ff9e88a60c4cb8d207aeeec194ab14120bca8176a6e4dc8a0c"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.식신 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-식신-3-e5c7a7b2f1d6-6",
+    "ruleId": "natal-god-식신-3",
+    "hash": "e5c7a7b2f1d6ad767e92548af981f7e47efcd04c93a420c5b2969f52c1cd74b4",
+    "supersedes": "author-2-0-natal-god-식신-3-f2fd2b4d71fa-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-식신-3:interpretation",
+        "hash": "141f35fd165495b3e34a9d07d0cb2ae9dfbd23699500ec513f4b1831d6bff9db"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.식신 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-상관-0-700581739c97-5",
+    "ruleId": "natal-god-상관-0",
+    "hash": "700581739c97470a0bd0b81b01c1e3f560fb1663530a12898f4896bbafe38089",
+    "supersedes": "author-2-0-natal-god-상관-0-539e023414a0-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-상관-0:interpretation",
+        "hash": "7ca6325c91a8d412cb812698c25df37e8467ecf3368feea4f822cd82d9a66e4a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.상관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-상관-1-6f735736f9d0-5",
+    "ruleId": "natal-god-상관-1",
+    "hash": "6f735736f9d09142ae77ec3ce8495f76cca318afe12317ab6fddf7e02adf6c3c",
+    "supersedes": "author-2-0-natal-god-상관-1-16093e0efbc1-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-상관-1:interpretation",
+        "hash": "4e2bbaddd17fe24c12dee54ce6a67fc6440ce865b187f6b72c5612a19e795452"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.상관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-상관-2-53a419885c9e-5",
+    "ruleId": "natal-god-상관-2",
+    "hash": "53a419885c9ee758160fa8e58d031f97c17fd5c2d1fb6c6c2cffe70f1fc0125e",
+    "supersedes": "author-2-0-natal-god-상관-2-f1307dbc43d8-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-상관-2:interpretation",
+        "hash": "0552a626317617d9019c48070e30464bd2c315c01a8b464af83ba2bde5780303"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.상관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-상관-3-3adec9320f35-6",
+    "ruleId": "natal-god-상관-3",
+    "hash": "3adec9320f3583dffede26afc2740cab9f6ae6172105175e531066aa1d232a02",
+    "supersedes": "author-2-0-natal-god-상관-3-b67655cda889-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-상관-3:interpretation",
+        "hash": "c4a6c18adb99e3e762ccc0e480dc6f9a0650be2571eaddd106f574adbd3d0fbd"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.상관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편재-0-8c72aac907ed-5",
+    "ruleId": "natal-god-편재-0",
+    "hash": "8c72aac907ed74a0670041f50c31e6cc1c0313911348fc4902414dd5ad10de7d",
+    "supersedes": "author-2-0-natal-god-편재-0-1c4a7f67bced-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편재-0:interpretation",
+        "hash": "aab9c3bca87764b896d982fb6c72f580b17c750cb09ca68305127bab2d683ead"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.편재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편재-1-1897c98b1819-5",
+    "ruleId": "natal-god-편재-1",
+    "hash": "1897c98b181945253e9c06265a7634f26bf977b58aabc4438eb79de289b60331",
+    "supersedes": "author-2-0-natal-god-편재-1-70662a65d015-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편재-1:interpretation",
+        "hash": "9b2f719606425e06c6e66d98a661a3966000604f5fb6e76afa238cf46b70a6e9"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.편재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편재-2-7374b1a7db0e-5",
+    "ruleId": "natal-god-편재-2",
+    "hash": "7374b1a7db0efd127c58fd0e00005b69828a28103aaef166d468e378820b6f01",
+    "supersedes": "author-2-0-natal-god-편재-2-30d08205b0fe-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편재-2:interpretation",
+        "hash": "b057853bdbce042d9e1761dd2d038d173a481fe3600adb36f9549501b6a6b353"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.편재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편재-3-a93142c23029-6",
+    "ruleId": "natal-god-편재-3",
+    "hash": "a93142c23029594f54b465ae0dd045ae950a6fb8cefbfee82975e8ed2bf93589",
+    "supersedes": "author-2-0-natal-god-편재-3-da0c9ec44d2e-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-편재-3:interpretation",
+        "hash": "cb991559b70bfc4e47ab4acb551fea467ee7f6511c186f3057af80898602c7ea"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.편재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정재-0-76bb7f4ab8b3-5",
+    "ruleId": "natal-god-정재-0",
+    "hash": "76bb7f4ab8b35a485b3208667fc58f240f380669256ff83adac000045fe76a97",
+    "supersedes": "author-2-0-natal-god-정재-0-14e46b0f258e-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정재-0:interpretation",
+        "hash": "8cee51d92c037238a10bdfd21fb4ea9e94e66c71888ce737e4d8337b46c61d11"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.정재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정재-1-76b9cb563a59-5",
+    "ruleId": "natal-god-정재-1",
+    "hash": "76b9cb563a59d959a47cbf0958e3edd834a60c5b01ce0bd06a8dbe64436b4539",
+    "supersedes": "author-2-0-natal-god-정재-1-c8a77d6c59ab-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정재-1:interpretation",
+        "hash": "2e3bce090ff2ba7c698acbb21e66169986e43fe2aea6ef7621984878266cbe3d"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.정재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정재-2-6ebfde48362e-5",
+    "ruleId": "natal-god-정재-2",
+    "hash": "6ebfde48362e86beeedca06f7e7b5eaebf4262b24137ad9d5232c7a372d234ee",
+    "supersedes": "author-2-0-natal-god-정재-2-063b79416354-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정재-2:interpretation",
+        "hash": "525933fa04a86f6c09edde1ffb64be48680d3ff5efda10e900c1319b1d785bc2"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.정재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정재-3-b2da4eab4c7c-6",
+    "ruleId": "natal-god-정재-3",
+    "hash": "b2da4eab4c7c323e42ed6ad946c9e8027330f22ad6c25f4d2f3ba01691ddce68",
+    "supersedes": "author-2-0-natal-god-정재-3-08da1be1ecc8-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-정재-3:interpretation",
+        "hash": "b55dae6239decf8d3724c13f6be0bb3ed0b68a87228b141035ae82290e7a2f83"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.정재 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편관-0-d59b1b3c3be2-5",
+    "ruleId": "natal-god-편관-0",
+    "hash": "d59b1b3c3be24d761db45c064eac1812021698152450647061ae7b085782ca2f",
+    "supersedes": "author-2-0-natal-god-편관-0-f3385c80a510-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편관-0:interpretation",
+        "hash": "9ff2c33c90b4160fbfc6c115b998797f1d156da896bc89739ff750059bd9e759"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편관-1-2cefc0ce23b5-5",
+    "ruleId": "natal-god-편관-1",
+    "hash": "2cefc0ce23b51b027f8f7b19a1e4eb5fe8b0b4a4620b6c4281e4037c2768379f",
+    "supersedes": "author-2-0-natal-god-편관-1-43cd9289ed4a-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편관-1:interpretation",
+        "hash": "a2247915fc3d2b1e1628e972548a4bf92cdfba9df4df0905d674e40a98f8b589"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편관-2-49961a6ada02-5",
+    "ruleId": "natal-god-편관-2",
+    "hash": "49961a6ada02819acbf3f69a748b6877fd656cf4e28c90016b5a486be68a1ede",
+    "supersedes": "author-2-0-natal-god-편관-2-6e47c0f1679e-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편관-2:interpretation",
+        "hash": "3b396166cd006be0abce947b4ea569496cc8f2b67d71fe9357dc9cb0797f86fd"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편관-3-92510ebf553e-6",
+    "ruleId": "natal-god-편관-3",
+    "hash": "92510ebf553e2e5f1389e9f33c395f50c61876d0bb7959b6687275af3211a9a0",
+    "supersedes": "author-2-0-natal-god-편관-3-53c79704e45c-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-편관-3:interpretation",
+        "hash": "2cb0cf1fc3c7be9221e5e6a0381b01dbf09d65035cd3ba83e5343e982c66f2ac"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정관-0-6198b6ef9e02-5",
+    "ruleId": "natal-god-정관-0",
+    "hash": "6198b6ef9e027e2bb8c27cd8bd7b73a187321eca66046e7d8f2faa430676485d",
+    "supersedes": "author-2-0-natal-god-정관-0-a892a56308a3-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정관-0:interpretation",
+        "hash": "10c38658b688a07975ff77c5f1dedfcdb37fd9e6ec0a62642d1918b2100cc06b"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.정관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정관-1-3e291fe5f1cb-5",
+    "ruleId": "natal-god-정관-1",
+    "hash": "3e291fe5f1cb684beb600daf9a2ae33eaaf80350ff375185ff3f095dee654cec",
+    "supersedes": "author-2-0-natal-god-정관-1-560fb3391004-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정관-1:interpretation",
+        "hash": "0d6184d24cab999ad7d653506c37e75ba45546fd73a7cc3ef082bdd15018bda2"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.정관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정관-2-26c842009f11-5",
+    "ruleId": "natal-god-정관-2",
+    "hash": "26c842009f1150ebbf0c526108a7df0839cef93654a8d851db2013feb0aaa779",
+    "supersedes": "author-2-0-natal-god-정관-2-6810b96c09e6-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정관-2:interpretation",
+        "hash": "08282bac45a83c5476dcd5e71d67c289d713cfebc07d7b9a5e95e6294fe71a80"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.정관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정관-3-f5e690bd81e6-6",
+    "ruleId": "natal-god-정관-3",
+    "hash": "f5e690bd81e67f578b99133e473147ddeacfc3fab2a074226cd40b3cf0779e42",
+    "supersedes": "author-2-0-natal-god-정관-3-b68892595ee7-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-정관-3:interpretation",
+        "hash": "002c126008d290505938e8bd00a77543570a796e7c68297eb75c310220469a60"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.정관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편인-0-af49fb57457d-5",
+    "ruleId": "natal-god-편인-0",
+    "hash": "af49fb57457daeacafcaddfb83bcf3a1f3c5f0a08fb65646ccff51d020e26c40",
+    "supersedes": "author-2-0-natal-god-편인-0-2a63516b00ea-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편인-0:interpretation",
+        "hash": "28a0a9faaa758dbc894884e39576a98e01ffa8d65cfde807969815395b74d781"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.편인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편인-1-d8af78449e40-5",
+    "ruleId": "natal-god-편인-1",
+    "hash": "d8af78449e40c1aca2bc752521af48963e68016782ac959ae592ee16e3a13e14",
+    "supersedes": "author-2-0-natal-god-편인-1-7bd4a07a8d0f-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편인-1:interpretation",
+        "hash": "0f73707870a5d6e2495e291e2282b6bfca1aeb89cb37ce7ad7b71cd07320ed81"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.편인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편인-2-7c2393e1c374-5",
+    "ruleId": "natal-god-편인-2",
+    "hash": "7c2393e1c3747adcfbcf2f81fdbc4177a0bf583067d84f75f8897240fd6d9fe9",
+    "supersedes": "author-2-0-natal-god-편인-2-54e41e35620b-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-편인-2:interpretation",
+        "hash": "3e50a4cbbcd8afcaade441f8271d3ac37c404e73f841fd4060afeaec72d5ffbc"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.편인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편인-3-884db40512aa-6",
+    "ruleId": "natal-god-편인-3",
+    "hash": "884db40512aa32f80656a4cc2b29e63f53978a1ed8f005bc5e1e65a1b7c3e352",
+    "supersedes": "author-2-0-natal-god-편인-3-275bac5abfc7-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-편인-3:interpretation",
+        "hash": "dd4608c663f4f7cb188ec018c262617ae591565dcfb5cc8011ec56861d01de23"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.편인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정인-0-72d2ea83e2f8-5",
+    "ruleId": "natal-god-정인-0",
+    "hash": "72d2ea83e2f80b90d9fb34733c33b95149379cfaf1748c3a5e98f3e590c6763c",
+    "supersedes": "author-2-0-natal-god-정인-0-a668eb844d33-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정인-0:interpretation",
+        "hash": "488587fab7a93cb77417307851126f73df1eca31d2aeab296a9d36f98a4a4db1"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 god.정인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정인-1-7b350171726a-5",
+    "ruleId": "natal-god-정인-1",
+    "hash": "7b350171726a2548d7f465bdf02085d39c605c0b148699560e415c4321042c1c",
+    "supersedes": "author-2-0-natal-god-정인-1-58e1084672cc-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정인-1:interpretation",
+        "hash": "aa8062b62aa5851944b7b7097b453473f4766ab93df713998abfa477c5905de1"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 god.정인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정인-2-04ab9157eabe-5",
+    "ruleId": "natal-god-정인-2",
+    "hash": "04ab9157eabeb7f4b458dde21b32190104bb6fa21bbaeb4fe9c1258c3d64b72d",
+    "supersedes": "author-2-0-natal-god-정인-2-6c34a669932b-4",
+    "claimHashes": [
+      {
+        "id": "natal-god-정인-2:interpretation",
+        "hash": "d84a1615eed3380f9574f5911651a22091bcd8141e4197b6fa65d757e27beb93"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 god.정인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-정인-3-676885a1d816-6",
+    "ruleId": "natal-god-정인-3",
+    "hash": "676885a1d816a26ac9527cc9ac26f064b670f96099d65e8a3b8817cf342be7ca",
+    "supersedes": "author-2-0-natal-god-정인-3-e428586380c8-5",
+    "claimHashes": [
+      {
+        "id": "natal-god-정인-3:interpretation",
+        "hash": "c075e94f7ec238f8c6e0cc7ae660b1ec5d114ca4c925ff0e31a630ccb51b3060"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.정인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-strength-strong-18c4d7aa7dc0-4",
+    "ruleId": "natal-strength-strong",
+    "hash": "18c4d7aa7dc01fb1939798418e61c0f482b9684eb44e3faa9097fa5f7ec24f95",
+    "supersedes": "author-2-0-natal-strength-strong-7d58338c0235-3",
+    "claimHashes": [
+      {
+        "id": "natal-strength-strong:interpretation",
+        "hash": "cd0d66179d9816c38459f9c3e9e60cbc70158b0d41916132f524ed1001d3cade"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 strength 원고예요. 적용 전제는 strength eq strong이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-strength-weak-adb51e20b54f-4",
+    "ruleId": "natal-strength-weak",
+    "hash": "adb51e20b54fa1bfdd42936986d775a66334adf331d2559c0420517b88c3af08",
+    "supersedes": "author-2-0-natal-strength-weak-00848a3d54ad-3",
+    "claimHashes": [
+      {
+        "id": "natal-strength-weak:interpretation",
+        "hash": "a064b7f3ae2314db8c092783aa02d857b9c23e0fa5422e0124494a420cbabd25"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 strength 원고예요. 적용 전제는 strength eq weak이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-strength-balanced-abf867278104-4",
+    "ruleId": "natal-strength-balanced",
+    "hash": "abf867278104bbae1c033ef6d91bb2bce50e4fb7ba850edd98689eadb75e5d77",
+    "supersedes": "author-2-0-natal-strength-balanced-76f062a26777-3",
+    "claimHashes": [
+      {
+        "id": "natal-strength-balanced:interpretation",
+        "hash": "f7791bdb41b5317995bf3cf3e3a8ba50625f1e0d0b75ae34493c518d83c4ee1a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 strength 원고예요. 적용 전제는 strength eq balanced이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-climate-cold-80903c792552-4",
+    "ruleId": "natal-climate-cold",
+    "hash": "80903c792552e9ac7b062916d152f0737dd3c5f73ff89aa7f748b1b21d2e8aa3",
+    "supersedes": "author-2-0-natal-climate-cold-684ef4d1289e-3",
+    "claimHashes": [
+      {
+        "id": "natal-climate-cold:interpretation",
+        "hash": "a12df8768c1317a75af32b576a0fc72d0a38a3a649b9eca774dd34117cefcdbe"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 climate 원고예요. 적용 전제는 climate eq cold / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-climate-hot-2df85006fb65-4",
+    "ruleId": "natal-climate-hot",
+    "hash": "2df85006fb654e3501e38201891b0dc614e7f4436d318b67b16e39b719422465",
+    "supersedes": "author-2-0-natal-climate-hot-a67340ab87e5-3",
+    "claimHashes": [
+      {
+        "id": "natal-climate-hot:interpretation",
+        "hash": "387b31bd254a3fb1e2bcc32bb3a9ce39cd7dbb5ecf18294bf4c924e5297e391a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 climate 원고예요. 적용 전제는 climate eq hot / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-climate-mild-196759a9bd95-4",
+    "ruleId": "natal-climate-mild",
+    "hash": "196759a9bd95ffcb3129a6c5c80fa11ff0af320eb684f7714e98449998c70e79",
+    "supersedes": "author-2-0-natal-climate-mild-55fab0642ef4-3",
+    "claimHashes": [
+      {
+        "id": "natal-climate-mild:interpretation",
+        "hash": "f2be0c6525628e789143c9731559270ded8715d763cdf24ccbc178dd2b182d78"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 climate 원고예요. 적용 전제는 climate eq mild / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-pattern-method-855e9c7d53d8-4",
+    "ruleId": "natal-pattern-method",
+    "hash": "855e9c7d53d88685c687cc30eeb41c42e52ee60fa6550172a5b933f839846b14",
+    "supersedes": "author-2-0-natal-pattern-method-e279dd198c93-3",
+    "claimHashes": [
+      {
+        "id": "natal-pattern-method:interpretation",
+        "hash": "22fa5ee4a80cd25fd46d5179874d56a3058a806e823f63502f22f98e287b3bc3"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 pattern 원고예요. 적용 전제는 known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-food-wealth-be98d23de331-4",
+    "ruleId": "natal-food-wealth",
+    "hash": "be98d23de3319eb2c7f895a6d23c9cf217141afa6789cd71f1ae6bda7021b3b7",
+    "supersedes": "author-2-0-natal-food-wealth-2c585269ff6d-3",
+    "claimHashes": [
+      {
+        "id": "natal-food-wealth:interpretation",
+        "hash": "0de5594ecd914de1407cded6ac6793c0d873b44364b4128d1cfe2ad5f6d16f8c"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 structure.foodWealth eq candidate이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-food-kill-a05ff4b18596-4",
+    "ruleId": "natal-food-kill",
+    "hash": "a05ff4b18596e12e4390ead6a5472b280ffe4f157fc22e9f1bf0aa4b0b521490",
+    "supersedes": "author-2-0-natal-food-kill-3ce2e0d19b34-3",
+    "claimHashes": [
+      {
+        "id": "natal-food-kill:interpretation",
+        "hash": "edec53fb9fa93537512bbfd598023cad9cdd610405faa86ff3ea99bc389cb1b7"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 relationships 원고예요. 적용 전제는 structure.foodKill eq candidate이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-element-목-d2feae404343-4",
+    "ruleId": "natal-element-목",
+    "hash": "d2feae40434357a7fe845102fe5538d2b48d586f81a9d315d9bcaafb0db39d23",
+    "supersedes": "author-2-0-natal-element-목-71febd9513bd-3",
+    "claimHashes": [
+      {
+        "id": "natal-element-목:interpretation",
+        "hash": "b214e83a111d67512dfb6aef1f077d4963383ef484b6428bb3c0e73ce15fe1b3"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 overview 원고예요. 적용 전제는 natal.element eq 목이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-element-화-17700107aca1-4",
+    "ruleId": "natal-element-화",
+    "hash": "17700107aca14f2bada4db488861a1478d4f076a6f0f171a125d8aefdcadae91",
+    "supersedes": "author-2-0-natal-element-화-9f21df699eb0-3",
+    "claimHashes": [
+      {
+        "id": "natal-element-화:interpretation",
+        "hash": "871aedb596106f95b36770cb8334f969e9060eacb45ed0754ae0b81e44fe3fac"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 overview 원고예요. 적용 전제는 natal.element eq 화이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-element-토-dc3ed162e7ad-4",
+    "ruleId": "natal-element-토",
+    "hash": "dc3ed162e7ad50dbc256392fc4c77dd2b2fe89dcbfb304dd9039e65fc5f7fb70",
+    "supersedes": "author-2-0-natal-element-토-99397974e109-3",
+    "claimHashes": [
+      {
+        "id": "natal-element-토:interpretation",
+        "hash": "d60add734088b19024663adad77f1a754aa0da84fc595722e1f147ace5d47f92"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 overview 원고예요. 적용 전제는 natal.element eq 토이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-element-금-27c6c9012960-4",
+    "ruleId": "natal-element-금",
+    "hash": "27c6c9012960a7e9a74132078acedba539bd579a613888c39975a767653b48a9",
+    "supersedes": "author-2-0-natal-element-금-6f2bea1a5608-3",
+    "claimHashes": [
+      {
+        "id": "natal-element-금:interpretation",
+        "hash": "878b3068a829ee433cea0247e6c5e72e3d20a7efdef65fd7d42756825735dc80"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 overview 원고예요. 적용 전제는 natal.element eq 금이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-element-수-901e58098ebd-4",
+    "ruleId": "natal-element-수",
+    "hash": "901e58098ebd0e53e7f082e83da8a816b489e310b49995c639feb84cbcb7c677",
+    "supersedes": "author-2-0-natal-element-수-75488bdf2077-3",
+    "claimHashes": [
+      {
+        "id": "natal-element-수:interpretation",
+        "hash": "51c118c9ccae72d7b1dfc55463aceb8173220c35d376b196213545ae1d89b477"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 overview 원고예요. 적용 전제는 natal.element eq 수이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-resource-visible-5c95c1f2bb28-4",
+    "ruleId": "natal-resource-visible",
+    "hash": "5c95c1f2bb28b50a675f5ae2758b6d2b17570caea855bc6fe4b7d42f50773e95",
+    "supersedes": "author-2-0-natal-resource-visible-c5d1cb9c1f09-3",
+    "claimHashes": [
+      {
+        "id": "natal-resource-visible:interpretation",
+        "hash": "65af13e953e2438c299f694bf79f528ff2490029e59c52e69ce860ee667a9790"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 visible.편인 gte 1 / roots.count gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-order-visible-504f000aee7a-4",
+    "ruleId": "natal-order-visible",
+    "hash": "504f000aee7ae2e12a203f60833365bb4894c594e8cf2b007859ca4bf6dab455",
+    "supersedes": "author-2-0-natal-order-visible-afa5d4d623f7-3",
+    "claimHashes": [
+      {
+        "id": "natal-order-visible:interpretation",
+        "hash": "9fe10a36073e3448ec0c4b5503b4f51f1e1543abb6a4b511bf314fb6eec0a161"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 career 원고예요. 적용 전제는 visible.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-triple-wood-7918c8693a9b-4",
+    "ruleId": "natal-triple-wood",
+    "hash": "7918c8693a9b40d223d0bf47b43c6ebace6d958766672025c661789adeeab33f",
+    "supersedes": "author-2-0-natal-triple-wood-e3edf06a75f3-3",
+    "claimHashes": [
+      {
+        "id": "natal-triple-wood:interpretation",
+        "hash": "c3b51b6fcf5bc8757e94555892a6347a2785a4db5fc8fad270a2a444d6b7185e"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 relation.삼합 gte 1 / natal.element eq 수 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-resource-roots-7909024021d9-4",
+    "ruleId": "natal-resource-roots",
+    "hash": "7909024021d9dd974feac2913a3a2321039c3cc97a4b494935e61e81c0e8e431",
+    "supersedes": "author-2-0-natal-resource-roots-6d0bee84ff20-3",
+    "claimHashes": [
+      {
+        "id": "natal-resource-roots:interpretation",
+        "hash": "a60dfe9e52624d9ff73ee0427da4446b2032535437c2a9183f61f1693d8099b1"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 visible.편인 gte 1 / roots.count gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-order-duty-76b5ebf39f22-4",
+    "ruleId": "natal-order-duty",
+    "hash": "76b5ebf39f223811eac82be9f3dabaf13cfe48dec9131d27c31f44ed5fc3d759",
+    "supersedes": "author-2-0-natal-order-duty-0364dcf3788d-3",
+    "claimHashes": [
+      {
+        "id": "natal-order-duty:interpretation",
+        "hash": "dc8c32f47bd0561f5f10d5df8d25e9a57bd3e115852d6b60ad3f000dd8326d3a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 money 원고예요. 적용 전제는 visible.편관 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-weak-support-e44f43c4114f-4",
+    "ruleId": "natal-weak-support",
+    "hash": "e44f43c4114fa262d221d0fb7deccd1265728219d3a4e075cf0ca1835d4ad392",
+    "supersedes": "author-2-0-natal-weak-support-2bc8acc54bad-3",
+    "claimHashes": [
+      {
+        "id": "natal-weak-support:interpretation",
+        "hash": "ef1af6670d5273f4d5997d6d6d0dc8da6787c2f344ebb23b63fd0372abb787c6"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 relationships 원고예요. 적용 전제는 strength eq weak / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-strong-space-d16cd658399f-4",
+    "ruleId": "natal-strong-space",
+    "hash": "d16cd658399fd75a9ddafb72302ed520e2dd6e66727670e5a3af39f80e5c2f35",
+    "supersedes": "author-2-0-natal-strong-space-30c61de225d9-3",
+    "claimHashes": [
+      {
+        "id": "natal-strong-space:interpretation",
+        "hash": "bb2a246cda7c342a2305892b8314f1e3dbf1609479e0b28ffb7edfe5cd622e0c"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 relationships 원고예요. 적용 전제는 strength eq strong / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-balanced-listen-4feaccd8ad08-4",
+    "ruleId": "natal-balanced-listen",
+    "hash": "4feaccd8ad080c4bd5beaa580f9e4b318a18cbb870f942e17c85a8111fdc717f",
+    "supersedes": "author-2-0-natal-balanced-listen-c6a97ba742d4-3",
+    "claimHashes": [
+      {
+        "id": "natal-balanced-listen:interpretation",
+        "hash": "0c95e0ef7ca8398b5bea88dd3de99032b872c6e75b8696b99b9c6228e3115a6b"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 relationships 원고예요. 적용 전제는 strength eq balanced / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-natal-god-편인-3-418117978ca2-7",
+    "ruleId": "natal-god-편인-3",
+    "hash": "418117978ca2bc8828b6e2665f61f71376daac7a4100ae920cb8fb22fee6dbc7",
+    "supersedes": "author-2-0-natal-god-편인-3-884db40512aa-6",
+    "claimHashes": [
+      {
+        "id": "natal-god-편인-3:interpretation",
+        "hash": "264180cb33a83f16291d19ac527c0fad8e68f0700ead65e1f540828252e5dd3d"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-25",
+    "corrections": [
+      "새로 집필한 god-caution 원고예요. 적용 전제는 god.편인 gte 1 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-mbti-entj-0-0d323f29ea30-4",
+    "ruleId": "mbti-entj-0",
+    "hash": "0d323f29ea30f0d9adb3a0966cf8ca30b0feba576c4689ede77dd6e532d4eca4",
+    "supersedes": "author-2-0-mbti-entj-0-aa8c3e73a44a-3",
+    "claimHashes": [
+      {
+        "id": "mbti-entj-0:editorial",
+        "hash": "3f2c331f466b394594cc39ead7f34b5b890383fe456865bec6a31474396eef76"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-26",
+    "corrections": [
+      "ENTJ의 일정 변경 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요."
+    ]
+  },
+  {
+    "id": "author-2-0-mbti-entj-3-b73d783fc9ef-4",
+    "ruleId": "mbti-entj-3",
+    "hash": "b73d783fc9ef23811b0aa43ee77aa1656ef8df27be36174c5bf34aec93cedb6b",
+    "supersedes": "author-2-0-mbti-entj-3-431d8f979cbf-3",
+    "claimHashes": [
+      {
+        "id": "mbti-entj-3:editorial",
+        "hash": "5f96f2ca858a54718ef9785dd7984e759f9c438bbb89f21c1f7c1518216a09a8"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-26",
+    "corrections": [
+      "ENTJ의 돈과 소비 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요."
+    ]
+  },
+  {
+    "id": "author-2-0-mbti-basic-entj-f4de9ba19791-3",
+    "ruleId": "mbti-basic-entj",
+    "hash": "f4de9ba19791bf2375a79b66c46912f2787ba6c5dae6ad554279eaa5af420d67",
+    "supersedes": "author-2-0-mbti-basic-entj-b2c8da7f80f7-2",
+    "claimHashes": [
+      {
+        "id": "mbti-basic-entj:editorial",
+        "hash": "4012e5c762fd761862ca0798dca2aaf56528c9b0ef338df5d3399625d19ef514"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-26",
+    "corrections": [
+      "ENTJ의 ENTJ를 읽는 출발점 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요."
+    ]
   }
 ]

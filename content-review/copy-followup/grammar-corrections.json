@@ -1,0 +1,14 @@
+{
+  "rules": [
+    "core-general-3",
+    "core-general-7",
+    "core-personality-0",
+    "core-personality-1",
+    "core-personality-4",
+    "core-relationships-7",
+    "core-single-7",
+    "element-2-personality"
+  ],
+  "manuscripts": 8,
+  "reason": "있을 거입니다 → 있을 것입니다. paragraphs와 evidence.counterExample을 함께 교정. 이전 스냅샷은 보존."
+}

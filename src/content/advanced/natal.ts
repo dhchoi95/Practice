@@ -1,3 +1,4 @@
+import editedCopy from './natal-copy.json';
 import { manuscript,type Premise,type Manuscript } from '@/domain/advanced/modules';
 const p=(feature:string,value:Premise['value'],op:Premise['op']='eq'):Premise=>({feature,op,value});
 // Each topic is a separate authored interpretation, not a whole-chart type.
@@ -105,3 +106,6 @@ add('natal-order-duty','money','자원의 소유와 책임을 구별하기',"편
 add('natal-weak-support','relationships','도움을 구하는 관계의 범위',"전체 기둥을 아는 상태에서 신약 경향 후보가 나왔습니다. 관계를 더 넓히거나 부탁을 더 맡는 방향보다 도움을 구할 수 있는 범위를 먼저 살핍니다. 실제로 지친 상태라는 진단은 아닙니다. 지금 필요한 도움과 내가 고를 수 있는 부분을 함께 말하는 주제로 읽어보십시오.",[p('strength','weak'),p('known.complete',true)],30);
 add('natal-strong-space','relationships','각자의 역할을 남기는 관계',"전체 기둥을 아는 상태에서 신강 경향 후보가 나왔습니다. 관계에서는 내 판단을 전하는 일과 다른 사람에게 결정할 부분을 남기는 일을 함께 살핍니다. 지배적인 성격이라는 뜻은 아니며, 실제로 함께 결정할 일이 있을 때 참고할 주제입니다.",[p('strength','strong'),p('known.complete',true)],30);
 add('natal-balanced-listen','relationships','한쪽 방식으로 정하지 않기',"전체 기둥이 있어도 강약이 경계인 구성에서는 한쪽의 방식을 더 밀어붙이는 결론을 유보합니다. 관계에서도 어떤 부분을 함께 정하고 어떤 부분을 따로 고를지 듣는 주제로 읽습니다. 원국을 안다고 상대의 뜻까지 알 수 있는 것은 아닙니다.",[p('strength','balanced'),p('known.complete',true)],30);
+
+// Editorial overlay replaces actual manuscript/claim text while preserving every selection premise.
+for(const r of natalModules){const copy=editedCopy[r.id as keyof typeof editedCopy];if(!copy)throw new Error(`원국 원고 교정 누락 ${r.id}`);r.title=copy.title;r.text=copy.text;r.claim={...r.claim,text:copy.text};r.version='2.4.0';r.updatedAt='2026-10-25';}

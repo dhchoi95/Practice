@@ -7,7 +7,7 @@
       "beforeHashes": [
         "bbf9dc0892f158e494336cce175732a9f9fdaf2479e375cc8df901bcec0745b0"
       ],
-      "afterHash": "373bd75d54dd75b5c79fd1f2e9fffa5dd08e0461e7296a1349dcdcc45496feac",
+      "afterHash": "aa13f8d7fa17a7feac18f0a2819a8ab3e374d0e05f4ae3475c3551754dee2344",
       "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
     },
     {
@@ -39,7 +39,7 @@
       "beforeHashes": [
         "70685de92311df39f37fdc57c0652c92f81cd300de98a30541212ecb308a2edb"
       ],
-      "afterHash": "7730e915ef9209a58cc4e4174239932a52869c37bb58b1e7e4b7941c18a1e7ce",
+      "afterHash": "ad9dd5ce2047d2bcaa1208357acb7d29995c2063f28da8a1ec1b429f99394135",
       "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
     },
     {
@@ -47,7 +47,7 @@
       "beforeHashes": [
         "328bfbed1fcd4b51cfb7085facc284ed8ed9ee8947000b157a059bcd151753ed"
       ],
-      "afterHash": "b6b31deb8f71659732600e5d2ad3334a4d54a4de84de37ab71b3a61bb2034d2d",
+      "afterHash": "d5fc85e514832dc60907bea2a7692e1b7958fbaf45e8be6774da6b886ba85eb1",
       "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
     },
     {
@@ -55,8 +55,8 @@
       "beforeHashes": [
         "91b77a2d56e6de94f3b78f96d0b8c63c672fd07527aeb75626e41491084a4cd5"
       ],
-      "afterHash": "e6677eee7f6baab71d523c7bb9bd20d7b5265ca36cc418a7001eb9f1dee4362e",
-      "reason": "승인된 두 사람 궁합과 선택 연도를 별도 브라우저 메모리에 보관. 기존 출생정보·삭제 정책 유지."
+      "afterHash": "0c5840123a6cfc1a90411ea775e7b057b0c488fc957a53ccd882a1d598822b20",
+      "reason": "두 사람 입력과 조회 연도는 메모리에만 보관. 공개 입력을 한국 표준시로 통일하며 남은 보정 상태는 원국·본문을 함께 재계산하고 한 번 안내. 저장·삭제 정책 유지."
     }
   ]
 }

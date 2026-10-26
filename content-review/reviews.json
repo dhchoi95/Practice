@@ -28303,5 +28303,257 @@
     ],
     "status": "implemented-pending-independent-review",
     "supersedes": "editorial-2-3-0-pilot-careermoney-output-resource-79cd02cf2088"
+  },
+  {
+    "id": "editorial-2-4-1-core-general-3-76def63842e7",
+    "ruleId": "core-general-3",
+    "contentVersion": "2.4.1",
+    "contentHash": "76def63842e7ff34618505a4ee3707aadce2f07fdf1c368136a3dd00762bc3d2",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-general-3-interpretation",
+        "hash": "c43c1c93b01d80d864f4f1ce78bf5f9d250eb3188750acfc45f306b726936492"
+      },
+      {
+        "id": "core-general-3-proposal",
+        "hash": "f0b55139c27e67047f642a10e7b6c2305933428f9d8866a5a78d3fd512db4ea9"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-general-3-a09979c48772"
+  },
+  {
+    "id": "editorial-2-4-1-core-general-7-ce76efbffc67",
+    "ruleId": "core-general-7",
+    "contentVersion": "2.4.1",
+    "contentHash": "ce76efbffc67b8d57467ee0bc7dbe489a34c7fd1ad161bf2593f34732286fb07",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-general-7-interpretation",
+        "hash": "a29cde81f180a647cdc184329ad45aa3f59df7f2adfe6715cfe5498be18a93c6"
+      },
+      {
+        "id": "core-general-7-proposal",
+        "hash": "8cf03f1e2b7f6f3477d2b9d89454fbeb2dfa66bb77cbd316eb9f113ff7c0f671"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-general-7-efadf8b5db5d"
+  },
+  {
+    "id": "editorial-2-4-1-core-personality-0-c978fa61bff1",
+    "ruleId": "core-personality-0",
+    "contentVersion": "2.4.1",
+    "contentHash": "c978fa61bff151c28b76292f3cc6b8a7282ad18f30117ff8cf77d786f426ba14",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-personality-0-interpretation",
+        "hash": "1c5ad6745549b75ec40f1f410d539ba9b97200f113734ebe52b57e904ecb9b22"
+      },
+      {
+        "id": "core-personality-0-proposal",
+        "hash": "b6f1a5557975c50409428378178e2ec5922bca9a8c6ca18766611d7e9fb8a369"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-personality-0-a9c5404bf938"
+  },
+  {
+    "id": "editorial-2-4-1-core-personality-1-0b4b977df7bc",
+    "ruleId": "core-personality-1",
+    "contentVersion": "2.4.1",
+    "contentHash": "0b4b977df7bc4535412159732533472b34c72f0bd33dde58f809a71820854398",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-personality-1-interpretation",
+        "hash": "2c5dae762dd4a2be8ffce43949ec9111e09c7be82635d60018a40b6e721c0aaf"
+      },
+      {
+        "id": "core-personality-1-proposal",
+        "hash": "5c0cb8d2cf9001ec17e0371f1397d508a1fae2364ef2b89d0585d3cd15273faf"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-personality-1-93573ee0f431"
+  },
+  {
+    "id": "editorial-2-4-1-core-personality-4-1228481a63ed",
+    "ruleId": "core-personality-4",
+    "contentVersion": "2.4.1",
+    "contentHash": "1228481a63ed260958fdb43ac942aa79fd9c729be6c2608b567c3247951e2144",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-personality-4-interpretation",
+        "hash": "334ae5afa97b36ff83cb280c9c8d2e54aacdf0213ba16f8eb2e0b6230bd4ce65"
+      },
+      {
+        "id": "core-personality-4-proposal",
+        "hash": "8ca6ec2158c713c8f96361ab94ae39a0a3b40a618201c4d8853fb55eebabd5ce"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-personality-4-7122531a3eb4"
+  },
+  {
+    "id": "editorial-2-4-1-core-relationships-7-1f5a29ab3707",
+    "ruleId": "core-relationships-7",
+    "contentVersion": "2.4.1",
+    "contentHash": "1f5a29ab37077d4e1dd79aecf17ca240c54a647e8e4e91d33c6a97933257f691",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-relationships-7-interpretation",
+        "hash": "0ae5bd58117907342a526f39f596196cee69593c63581fe33979bda304a31eeb"
+      },
+      {
+        "id": "core-relationships-7-proposal",
+        "hash": "88f7bb3b63c3435ea5217b8eee417f41e1b2ba757f16ac1d6a5d414a709bf035"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-relationships-7-6bf2638ae3d2"
+  },
+  {
+    "id": "editorial-2-4-1-core-single-7-726bdbefedfe",
+    "ruleId": "core-single-7",
+    "contentVersion": "2.4.1",
+    "contentHash": "726bdbefedfe5c23cb07d2a34d71339dab68345a8f02f61cef51e17816e1b726",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "core-single-7-interpretation",
+        "hash": "14328713121468e329912919c76fc36413b697ff1b1e91df74a559b2619c88c8"
+      },
+      {
+        "id": "core-single-7-proposal",
+        "hash": "de0aeceae2d2f82ded5a08be13498b9d4381b6b45fee42d221cc95ce519ebabe"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-core-single-7-1652cf8f318f"
+  },
+  {
+    "id": "editorial-2-4-1-element-2-personality-a6b96a90d17d",
+    "ruleId": "element-2-personality",
+    "contentVersion": "2.4.1",
+    "contentHash": "a6b96a90d17de248fec9994de2f41c77364a44a6cbd77d2b7c8d78fe42a9a788",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-26",
+    "claims": [
+      {
+        "id": "element-2-personality-proposal",
+        "hash": "3363add5375abfc2efcd7121acd6c6265379c18e83290fddd4ced3140c0f7aa2"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-element-2-personality-87558a999874"
   }
 ]

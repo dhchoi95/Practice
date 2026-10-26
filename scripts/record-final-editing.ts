@@ -19,7 +19,7 @@ const historical=JSON.parse(await fs.readFile('content-review/compatibility-base
 const protectedRows=JSON.parse(await fs.readFile('content-review/protected-source-hashes-1.3.0.json','utf8'));
 const paths=[...new Set([...historical,...protectedRows].map(r=>r.path))] as string[];
 const sources=[];
-for(const path of paths){const bytes=await fs.readFile(path),afterHash=createHash('sha256').update(bytes).digest('hex'),beforeHashes=[...new Set([...historical,...protectedRows].filter(r=>r.path===path).map(r=>r.hash??r.sha256))];if(beforeHashes.some(h=>h!==afterHash))sources.push({path,beforeHashes,afterHash,reason:path.includes('SessionProvider')?'승인된 두 사람 궁합과 선택 연도를 별도 브라우저 메모리에 보관. 기존 출생정보·삭제 정책 유지.':'전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음.'});}
+for(const path of paths){const bytes=await fs.readFile(path),afterHash=createHash('sha256').update(bytes).digest('hex'),beforeHashes=[...new Set([...historical,...protectedRows].filter(r=>r.path===path).map(r=>r.hash??r.sha256))];if(beforeHashes.some(h=>h!==afterHash))sources.push({path,beforeHashes,afterHash,reason:path.includes('quality.ts')?'전수 문장 검사에 독립된 오류 형태 거입니다를 추가. 계산·선정 조건은 보존하고 정상 단어 근거입니다는 제외.':path.includes('SessionProvider')?'두 사람 입력과 조회 연도는 메모리에만 보관. 공개 입력을 한국 표준시로 통일하며 남은 보정 상태는 원국·본문을 함께 재계산하고 한 번 안내. 저장·삭제 정책 유지.':'전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음.'});}
 await fs.writeFile(`${dir}/source-migrations.json`,JSON.stringify({version:'2.3.0',historicalBaselinesRetained:true,sources},null,2)+'\n');
 // Fixed engine/copy boundary: all non-prose keys of legacy and foundation remain identical.
 const oldRules=JSON.parse(execFileSync('git',['show','407f6e9:src/content/rules.json'],{encoding:'utf8',maxBuffer:16*1024*1024}));

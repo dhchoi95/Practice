@@ -6,33 +6,19 @@ const dir='reports/integrated-2.0.0';
 async function advanced(page:Page,unknown=false){
  await page.goto('/fortune/saju/');await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill('8');
  if(!unknown){await page.getByLabel('시간 모름',{exact:true}).uncheck();await page.getByLabel('시 (0~23)',{exact:true}).fill('15');await page.getByLabel('분 (0~59)',{exact:true}).fill('3');}
- await page.getByLabel('지장간·대운·5년 세운까지 보기').check();await page.getByRole('combobox',{name:'출생 도시',exact:true}).selectOption('suwon');await page.getByRole('combobox',{name:'시각 기준',exact:true}).selectOption('true-solar');await page.getByRole('combobox',{name:'전통 대운 순역 분류',exact:true}).selectOption('male');await page.getByRole('button',{name:'무료로 신년운세 보기'}).click();await page.getByLabel('운세를 볼 연도',{exact:true}).selectOption('2026');await page.getByText('타고난 사주와 자세한 대운·세운 해설',{exact:true}).click();await expect(page.locator('.advanced-summary')).toBeVisible();
+ await page.getByRole('combobox',{name:'대운 계산에 쓸 성별',exact:true}).selectOption('male');await page.getByRole('button',{name:'무료로 신년운세 보기'}).click();await page.getByLabel('운세를 볼 연도',{exact:true}).selectOption('2026');await page.getByText('타고난 성향과 대운',{exact:true}).click();await expect(page.locator('#advanced-topics')).toBeVisible();
 }
-test('advanced example propagates time profile to chart, roots, interpretations, five years and print state',async({page})=>{
- await fs.mkdir(`${dir}/screenshots`,{recursive:true});await fs.mkdir(`${dir}/print`,{recursive:true});
- await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await page.setViewportSize({width:390,height:900});await advanced(page);
- const panel=page.locator('.advanced-experience');await expect(panel.locator('.advanced-summary')).toContainText('진태양시');await expect(page.locator('.natal-table')).toContainText('己');await expect(page.locator('.natal-table')).toContainText('편관');await expect(panel.locator('#advanced-time')).toContainText('14:47');await expect(panel.locator('#advanced-chart')).toContainText('삼합');
- await expect(panel.locator('.year-comparison')).toContainText('2026년');await expect(panel.locator('.year-comparison')).toContainText('2030년');await expect(panel.locator('.luck-cards article')).toHaveCount(10);
- await panel.getByText('시간 보정·계산 기준 설정',{exact:true}).click();
- const same=await panel.innerText();await page.clock.fastForward(600000);expect(await panel.innerText()).toBe(same);
- await page.screenshot({path:`${dir}/screenshots/advanced-solar-390.png`,fullPage:true});
- await panel.getByRole('combobox',{name:'시각 기준',exact:true}).selectOption('standard');await expect(page.locator('.natal-table')).toContainText('庚');await expect(panel.locator('.advanced-summary')).toContainText('신강 경향');await page.screenshot({path:`${dir}/screenshots/advanced-standard-390.png`,fullPage:true});
- await page.pdf({path:`${dir}/print/advanced-standard.pdf`,format:'A4',printBackground:true});
- await panel.getByRole('combobox',{name:'시각 기준',exact:true}).selectOption('true-solar');await expect(panel.locator('.advanced-summary')).toContainText('중화·경계');
- const before=await page.locator('details.disclosure').evaluateAll(ds=>ds.map(d=>(d as HTMLDetailsElement).open));await page.pdf({path:`${dir}/print/advanced-solar.pdf`,format:'A4',printBackground:true});expect(await page.locator('details.disclosure').evaluateAll(ds=>ds.map(d=>(d as HTMLDetailsElement).open))).toEqual(before);
+test('standard natal analysis retains personalized content and explicitly classified decade luck without technical panels',async({page})=>{
+ await fs.mkdir(`${dir}/print`,{recursive:true});await page.setViewportSize({width:390,height:900});await advanced(page);const panel=page.locator('.advanced-experience');await expect(page.locator('[data-pillar="hour"][data-row="stem"]')).toContainText('庚');await expect(panel.locator('.luck-cards article')).toHaveCount(10);await expect(panel).not.toContainText('구간');await expect(panel).not.toContainText('후보');await expect(panel.getByRole('combobox')).toHaveCount(0);await page.pdf({path:`${dir}/print/advanced-standard.pdf`,format:'A4',printBackground:true});
  for(const width of [320,390]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
- await page.evaluate(()=>{document.documentElement.style.fontSize='200%';});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`${dir}/screenshots/advanced-enlarged-390.png`,fullPage:true});
- await expect(panel.locator('input[type="date"]')).toHaveCount(0);
-
 });
-test('unknown time keeps dependent advanced interpretations unresolved in screen and actual PDF',async({page})=>{
- await fs.mkdir(`${dir}/print`,{recursive:true});await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page,true);const panel=page.locator('.advanced-experience');await expect(panel.locator('#advanced-luck')).toContainText('대운 개시일을 정하지 않았어요');
- await expect(panel.locator('.advanced-summary')).toContainText('강약 미확정');await expect(panel.locator('.luck-cards')).toHaveCount(0);await expect(panel.locator('#advanced-topics')).toContainText('적용하지 않았어요');await page.pdf({path:`${dir}/print/advanced-unknown.pdf`,format:'A4'});
+test('unknown time omits complete-natal interpretations and decade start in actual print',async({page})=>{
+ await fs.mkdir(`${dir}/print`,{recursive:true});await page.goto('/fortune/saju/');await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill('8');await page.getByRole('button',{name:'무료로 신년운세 보기'}).click();await page.getByText('타고난 성향과 대운',{exact:true}).click();await expect(page.locator('.luck-cards')).toHaveCount(0);await expect(page.locator('.advanced-experience')).toContainText('태어난 시간을 몰라');await page.pdf({path:`${dir}/print/advanced-unknown.pdf`,format:'A4'});
 });
-test('period selection changes actual context and retains selected solar profile in other menus',async({page})=>{
- await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page);await switchReading(page,'지정일 운세');const panel=page.locator('.sector-experience');await expect(panel.locator('.natal-explanation')).toContainText('진태양시');
+test('period selection changes context while all menus keep the standard natal chart',async({page})=>{
+ await page.clock.install({time:new Date('2026-10-22T03:00:00Z')});await advanced(page);await switchReading(page,'지정일 운세');const panel=page.locator('.sector-experience');await expect(page.locator('.birth-summary')).toContainText('한국 표준시 기준');
  await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-10-22');const a=await panel.locator('.sector-bodies').innerText();await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-10-23');expect(await panel.locator('.sector-bodies').innerText()).not.toBe(a);
- await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2051-01-01');await expect(panel.getByRole('alert')).toContainText('1962~2050');await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-02-04');await expect(panel.locator('.sector-segments > .disclosure-body > section').filter({has:page.locator('h3').filter({hasText:/^\d+구간/})})).toHaveCount(2);
+ await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2051-01-01');await expect(panel.getByRole('alert')).toContainText('1962~2050');await panel.getByLabel('운세를 볼 날짜',{exact:true}).fill('2026-02-04');await expect(panel.locator('.sector-segments')).toHaveCount(0);await expect(panel.locator('.sector-body')).toHaveCount(6);
  const axe=await new AxeBuilder({page}).include('.sector-experience').withTags(['wcag2a','wcag2aa']).analyze();expect(axe.violations).toEqual([]);
 });
 test('advanced inputs do not leak in request/URL/console/storage/cookies and refresh clears them',async({page})=>{

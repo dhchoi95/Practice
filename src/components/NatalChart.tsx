@@ -1,10 +1,13 @@
-import { lifeStage,lifeStagePolicy } from '@/domain/advanced/life-stage';
+import {selectManuscripts} from '@/domain/advanced/modules';
+import {natalModules} from '@/content/advanced/natal';
+import { lifeStage } from '@/domain/advanced/life-stage';
 import type { AdvancedChart,Position } from '@/domain/advanced/types';
-import { hiddenFor,hiddenPolicy } from '@/domain/advanced/mappings';
+import { hiddenFor } from '@/domain/advanced/mappings';
 import { stemNames,stemHanja,stemElements,branchNames,branchHanja,branchElements,tenGod } from '@/domain/saju/tables';
 const columns:{key:Position;name:string}[]=[{key:'hour',name:'시주'},{key:'day',name:'일주'},{key:'month',name:'월주'},{key:'year',name:'년주'}];
 export function NatalChart({chart}:{chart:AdvancedChart}){
  const dm=chart.pillars.day?.stem??null;
+ const reading=selectManuscripts(natalModules,chart.facts,'natal').applied.filter(r=>['overview','strength'].includes(r.role));
  return <section className="natal-overview" aria-label="출생 사주 원국"><h2>내 사주 원국</h2><table className="natal-table"><caption className="sr-only">출생 사주. 왼쪽부터 시주, 일주, 월주, 년주. 선택한 조회 날짜와는 별개예요.</caption>
  <thead><tr><th scope="col"><span className="sr-only">항목</span></th>{columns.map(c=><th scope="col" key={c.key} className={c.key==='day'?'natal-self':''}>{c.name}{c.key==='day'&&<small>나</small>}</th>)}</tr></thead>
  <tbody>
@@ -14,6 +17,6 @@ export function NatalChart({chart}:{chart:AdvancedChart}){
  <tr><th scope="row">지지<br/>십신</th>{columns.map(c=>{const p=chart.pillars[c.key];return <td key={c.key}>{p?hiddenFor(p.branch,dm)[0].god??'미확정':'미확정'}</td>;})}</tr>
  <tr><th scope="row">지장간</th>{columns.map(c=>{const p=chart.pillars[c.key];return <td key={c.key} data-pillar={c.key} data-row="hidden">{p?hiddenFor(p.branch,dm).map(h=><span className="hidden-stem" key={h.stem}>{stemHanja[h.stem]}<small>{stemNames[h.stem]}</small></span>):'미확정'}</td>;})}</tr>
  <tr><th scope="row">12<br/>운성</th>{columns.map(c=><td className="natal-stage" key={c.key}>{lifeStage(dm,chart.pillars[c.key]?.branch??null)??'미확정'}</td>)}</tr>
- </tbody></table><p className="helper">지지 십신은 본기 기준이에요. 날짜를 바꿔도 출생 원국은 그대로예요.</p>
- <details className="disclosure natal-explanation"><summary>만세력 풀이 보기</summary><div className="disclosure-body"><p>천간과 지지는 출생 시각을 네 기둥으로 나타낸 글자예요. 일주의 천간이 일간이며 다른 글자와의 관계를 십신으로 표시해요. 지장간은 각 지지에 배정한 천간이에요.</p><p>지장간은 본기·중기·여기 순으로 표시해요. {hiddenPolicy}의 채택 표를 사용하며, 巳의 보조 순서는 다른 소프트웨어와 차이가 있어 원전 검토를 기다리고 있어요. 12운성은 양간 순행·음간 역행이며 토는 화의 장생을 따르는 {lifeStagePolicy} 표를 사용해요. 건록은 임관과 같은 명칭이에요. 병·사·묘 등의 이름으로 질병이나 수명을 예측하지 않아요. 12신살·공망은 검증한 표가 없어 지원하지 않아요.</p><p>{chart.time.effective==='standard'?'한국 표준시':chart.time.effective==='mean-solar'?'평균태양시':'진태양시'} 원국이에요. 시각 미상이나 경계에서 확정하지 못한 기둥은 채우지 않았어요.</p></div></details></section>;
+ </tbody></table>
+ {reading.length>0&&<details className="disclosure natal-explanation"><summary>만세력 풀이 보기</summary><div className="disclosure-body">{reading.map(r=><section key={r.id}><h3>{r.title}</h3><p data-source-id={r.id}>{r.text}</p></section>)}</div></details>}</section>;
 }

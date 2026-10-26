@@ -7,6 +7,8 @@ import { sharedExplanations } from './shared';
 const terms=['갑','을','병','정','무','기','경','신','임','계','갑목','을목','병화','정화','무토','기토','경금','신금','임수','계수','목','화','토','금','수','비견','겁재','식신','상관','편재','정재','편관','정관','편인','정인','관리','사이','돌봄','표현','관계','직업','재물'];
 export function particleErrors(text:string):string[]{
   const errors:string[]=[];
+  // Standalone 거입니다 is malformed; 근거입니다 is a valid, different word.
+  if(/(?:^|\s)거입니다(?=[\s.,!?…’”)]|$)/u.test(text))errors.push('거입니다 → 것입니다');
   for(const term of terms){
     const wrong=hasBatchim(term)?['가','는','를','예요']:['이','은','을','이에요'];
     for(const particle of wrong){

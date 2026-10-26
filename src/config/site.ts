@@ -4,9 +4,9 @@ export const siteConfig = {
   // 운영 도메인 확정 후 NEXT_PUBLIC_SITE_URL에 https://실제도메인을 설정하세요.
   url: process.env.NEXT_PUBLIC_SITE_URL || '',
   instagram: '',
-  contentVersion: '2.3.0',
-  advancedContentVersion: '2.3.0',
-  sectorContentVersion: '2.3.0',
+  contentVersion: '2.4.1',
+  advancedContentVersion: '2.4.1',
+  sectorContentVersion: '2.4.1',
 };
 export const categories = [
   {slug:'saju', name:'신년운세', short:'선택한 해의 운세와 상세 사주', description:'다가오는 새해를 기본으로, 선택한 연도의 여섯 분야 운세와 출생 사주를 살펴봐요.', system:'saju', content:'general', icon:'book', color:'sand'},

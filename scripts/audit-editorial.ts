@@ -33,7 +33,8 @@ for(const [i,rule] of [...rules,...newDrafts].entries()){
   const fields=Object.keys(rule).filter(key=>canonicalContent(rule[key as keyof typeof rule])!==canonicalContent(old[key as keyof typeof old]));
   const reasons=editLog.filter(e=>e.ruleId===rule.id).map(e=>e.reason);
   if(fields.length&&!reasons.length)errors.push(`개별 편집 이유 누락: ${rule.id}`);
-  if(fields.length&&(!rule.contentVersion.startsWith(siteConfig.contentVersion)||rule.updatedAt!=='2026-10-24'))errors.push(`수정 원고 버전·날짜: ${rule.id}`);
+  const currentReview=reviews.find(r=>r.ruleId===rule.id&&r.contentHash===hash(rule)&&!reviews.some(n=>n.supersedes===r.id));
+  if(fields.length&&(!currentReview||currentReview.contentVersion!==rule.contentVersion||currentReview.date!==rule.updatedAt))errors.push(`수정 원고 버전·날짜·현재 검토 해시: ${rule.id}`);
   if(!fields.length&&(rule.contentVersion!==old.contentVersion||rule.reviewStatus!==old.reviewStatus))errors.push(`유지 원고의 버전·상태 변경: ${rule.id}`);
   changes.push({id:rule.id,system:rule.system,category:rule.category,changed:fields.length>0,changedFields:fields,beforeVersion:old.contentVersion,afterVersion:rule.contentVersion,beforeHash:hash(old),afterHash:hash(rule),editorialStatus:fields.length?'implementation-edited-pending-independent-editor':'read-retained-not-new-review',reason:fields.length?reasons.join(' / '):'이미 내용이 분명하고 문맥에 맞아 유지. 새로 작성하거나 승인한 것으로 집계하지 않음.'});
 }

@@ -1,0 +1,169 @@
+{
+  "baseline": "b90a452f954e3bcd00e6ac4c0c925cea50a3bbf5",
+  "passed": true,
+  "engineChecks": [
+    {
+      "path": "src/content/advanced/period.ts",
+      "passed": true
+    },
+    {
+      "path": "src/content/foundation/period-notes.json",
+      "passed": true
+    },
+    {
+      "path": "src/content/foundation/schedules.json",
+      "passed": true
+    },
+    {
+      "path": "src/content/rules.json",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/chart.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/compatibility.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/life-stage.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/luck.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/mappings.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/modules.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/period.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/relations.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/report.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/time.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/types.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/korean.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/terms.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/timezone.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/period-label.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/period.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/topic-basis.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/view-policy.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/detail-facts.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/engine.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/feasibility.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/tables.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/engine.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/evaluation.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/experimental.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/knowledge.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/period-reading.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/quality.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/reasoning.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/repository.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/review.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/schema.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/shared.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/calculate.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/tables.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/types.ts",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "unchangedSectorSelectorsAndScores": 540,
+  "unchangedNatalSelectors": 62
+}

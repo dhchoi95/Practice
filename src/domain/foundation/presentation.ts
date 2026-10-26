@@ -8,7 +8,7 @@ export function presentSector(reading:SectorReading,domain:Domain){
  const owner=primary?[...reading.segments].filter(s=>s.sectors[domain].records.some(r=>r.id===primary.id)).sort((a,b)=>(b.end-b.start)-(a.end-a.start)||a.start-b.start)[0]:undefined;
  const supplements=owner?.sectors[domain].records.filter(r=>r.role==='supplement')??[];
  const secondary=sorted.find(r=>r.role==='core'&&r.id!==primary?.id);
- const candidates=primary?[...primary.paragraphs.map(text=>({recordId:primary.id,text,role:'core'})),...supplements.flatMap(r=>r.paragraphs.map(text=>({recordId:r.id,text,role:'supplement'}))),...(secondary?[{recordId:secondary.id,text:'다른 구간에서는 · '+secondary.paragraphs[0],role:'other-segment'}]:[]),...(primary.proposal?[{recordId:primary.id,text:primary.proposal,role:'proposal'}]:[])]:[];
+ const candidates=primary?[...primary.paragraphs.map(text=>({recordId:primary.id,text,role:'core'})),...supplements.flatMap(r=>r.paragraphs.map(text=>({recordId:r.id,text,role:'supplement'}))),...(secondary?[{recordId:secondary.id,text:secondary.paragraphs[0],role:'other-segment'}]:[]),...(primary.proposal?[{recordId:primary.id,text:primary.proposal,role:'proposal'}]:[])]:[];
  const seen=new Set<string>(),suppressed:{recordId:string;reason:string}[]=[];
  const paragraphs=candidates.filter(p=>{const key=p.text.replace(/\s+/g,'');if(seen.has(key)){suppressed.push({recordId:p.recordId,reason:'같은 기본 본문의 동일 문장 생략'});return false;}seen.add(key);return true;});
  const visibleIds=new Set(paragraphs.map(p=>p.recordId));

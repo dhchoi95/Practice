@@ -11,15 +11,15 @@ async function fillBirth(page:Page,options:{year?:string;month?:string;day?:stri
   if(options.knownTime){await page.getByLabel('시간 모름',{exact:true}).uncheck();await page.getByLabel('시 (0~23)',{exact:true}).fill('10');await page.getByLabel('분 (0~59)',{exact:true}).fill('30');}
 }
 async function submit(page:Page){await page.getByRole('button',{name:/무료로 .* 보기/}).click();await expect(page).toHaveURL(/\/result\//);await expect(page.locator('.reading-section')).not.toHaveCount(0);await expect(page.locator('#result-title')).toBeFocused();await expect(page.locator('.natal-overview')).toBeVisible();}
-async function openCalculation(page:Page){const outer=page.getByText('기존 표준시 간단 사주표 참고',{exact:true});if(await outer.count())await outer.click();await page.getByText('내 사주표와 오행 살펴보기',{exact:true}).click();}
+async function openCalculation(page:Page){const details=page.locator('.natal-explanation');if(await details.count()&&!(await details.getAttribute('open')!==null))await details.locator('summary').click();}
 async function birthResult(page:Page,knownTime=false){await page.goto('/fortune/saju/');await fillBirth(page,{knownTime});await submit(page);}
 test('home → saju → actual known-time calculation and meaningful content',async({page})=>{
   await page.goto('/');await expect(page.locator('.category-tile')).toHaveCount(9);
   await page.locator('.category-tile').filter({hasText:'신년운세'}).click();await fillBirth(page,{knownTime:true});await submit(page);
   await expect(page.getByRole('heading',{level:1})).toHaveText('신년운세 풀이');
-  await page.getByText('타고난 사주와 자세한 대운·세운 해설',{exact:true}).click();await openCalculation(page);
-  await expect(page.locator('.pillars-table')).toContainText('신');await expect(page.locator('.pillars-table').locator('..')).toContainText('8글자 기준');
-  await expect(page.locator('.natal-table')).toBeVisible();await expect(page.locator('#advanced-strength')).toContainText('강약');await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
+  await page.getByText('타고난 성향과 대운',{exact:true}).click();await openCalculation(page);
+  expect(await page.locator('.natal-table .element-cell').count()).toBe(8);
+  await expect(page.locator('.natal-table')).toBeVisible();await expect(page.locator('.natal-explanation')).toContainText('일간은 금');await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
 });
 test('invalid date → focused error → correction → result',async({page})=>{
   await page.goto('/fortune/saju/');await fillBirth(page,{year:'2023',month:'2',day:'29'});
@@ -28,12 +28,12 @@ test('invalid date → focused error → correction → result',async({page})=>{
 });
 test('unknown time excludes hour and counts exactly six characters',async({page})=>{
   await birthResult(page);await expect(page.locator('.natal-table')).toContainText('시간 모름');
-  await openCalculation(page);await expect(page.locator('.pillars-table')).toContainText('시간 미상');await expect(page.locator('.pillars-table').locator('..')).toContainText('6글자 기준');
+  await openCalculation(page);await expect(page.locator('.natal-table')).toContainText('시간 모름');expect(await page.locator('.natal-table .element-cell').count()).toBe(6);
 });
 test('lunar leap date roundtrip and invalid leap rejection',async({page})=>{
   await page.goto('/fortune/saju/');await page.getByRole('radio',{name:'음력',exact:true}).check();await page.getByLabel('윤달 생일이에요').check();await fillBirth(page,{year:'2024',month:'2',day:'1'});
   await page.getByRole('button',{name:/무료로 .* 보기/}).click();await expect(page.locator('main').getByRole('alert')).toContainText('윤달');
-  await fillBirth(page,{year:'2017',month:'5',day:'1'});await submit(page);await openCalculation(page);await expect(page.locator('.pillars-table').locator('..')).toContainText('양력 2017-06-24');
+  await fillBirth(page,{year:'2017',month:'5',day:'1'});await submit(page);await openCalculation(page);await expect(page.locator('.birth-summary')).toContainText('양력 2017.06.24');
 });
 test('calendar switch does not silently change the numbers',async({page})=>{
   await page.goto('/fortune/saju/');await fillBirth(page);await page.getByRole('radio',{name:'음력',exact:true}).check();await expect(page.getByLabel('태어난 연도',{exact:true})).toHaveValue('1992');await expect(page.getByLabel('일',{exact:true})).toHaveValue('15');
@@ -49,10 +49,7 @@ test('same day stem receives different contextual love content from actual natal
   await page.goto('/fortune/love/');await fillBirth(page,{knownTime:true});await submit(page);
   const headline=await page.locator(':is(.result-hero,.sector-heading) h2').first().textContent();
   await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies):visible')).toContainText('장난이 다르게 들렸을 때');
-  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
-  await why.locator('summary').click();await expect(why).toContainText('식상 관계가 2개');
-  await expect(why).toContainText('개수는 강약이 아니에요');
-  await why.locator('summary').click();
+  await expect(page.getByText('왜 이런 풀이인가요?',{exact:true})).toHaveCount(0);
   await fs.mkdir('reports/content-improvement-1.1.0/screenshots',{recursive:true});
   await page.screenshot({path:'reports/content-improvement-1.1.0/screenshots/love-output-390.png',fullPage:true});
   await page.getByRole('link',{name:'입력 수정',exact:true}).click();await fillBirth(page,{year:'2000',month:'1',day:'4',knownTime:true});await submit(page);
@@ -115,8 +112,8 @@ for(const initiallyOpen of [false,true])test(`native PDF includes disclosures an
   await page.evaluate(()=>{window.dispatchEvent(new Event('beforeprint'));window.dispatchEvent(new Event('beforeprint'));});
   expect((await states()).every(Boolean)).toBe(true);
   await page.emulateMedia({media:'print'});
-  await expect(page.locator('.pillars-table')).toBeVisible();
-  await expect(page.getByText('계산 표준시:',{exact:false})).toBeVisible();
+  await expect(page.locator('.natal-table')).toBeVisible();
+  await expect(page.locator('.birth-summary').getByText('한국 표준시 기준',{exact:true})).toBeVisible();
   await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
   expect(await states()).toEqual(before);
 });
@@ -128,12 +125,12 @@ test('unknown day body stays neutral across affected topics',async({page})=>{
 for(const dayMasterKnown of [false,true])for(const kind of ['year','month','day'] as const)test(`period details and native PDF respect ${dayMasterKnown?'known':'unknown'} day master: ${kind}`,async({page})=>{
  const state=dayMasterKnown?'known':'unknown';await page.setViewportSize({width:390,height:900});await page.clock.install({time:new Date('2026-12-31T03:00:00Z')});await page.goto(`/fortune/${kind}/`);await fillBirth(page,dayMasterKnown?{knownTime:true}:{year:'1987',month:'6',day:'1'});await submit(page);
  const details=page.locator('.sector-segments');const states=()=>page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));const before=await states();expect(before.every(open=>!open)).toBe(true);await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:`reports/print/period-${kind}-${state}.pdf`,format:'A4',printBackground:true});expect(await states()).toEqual(before);
- await details.locator('summary').click();expect(await details.locator('section').count()).toBeGreaterThan(0);
- if(dayMasterKnown){await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('[data-testid="radar-shape"]')).toBeVisible();await expect(page.locator('.sector-bodies')).not.toContainText('일간이 미확정');}else{await expect(page.locator('.sector-bodies')).toContainText('일간이 미확정');await expect(page.locator('[data-testid="radar-shape"]')).toHaveCount(0);await expect(details).toContainText('개인 해석 유보');}
+ await expect(details).toHaveCount(0);
+ if(dayMasterKnown){await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('[data-testid="radar-shape"]')).toBeVisible();await expect(page.locator('.sector-bodies')).not.toContainText('일간이 미확정');}else{await expect(page.locator('.sector-bodies')).toContainText('일간이 미확정');await expect(page.locator('[data-testid="radar-shape"]')).toHaveCount(0);await expect(page.locator('.sector-experience')).toContainText('출생 시각에 따라');}
 });
 
-test('year period visibly ends in the following year',async({page})=>{
- await page.clock.install({time:new Date('2026-12-31T03:00:00Z')});await page.goto('/fortune/year/');await fillBirth(page);await submit(page);await page.locator('.sector-segments summary').click();await expect(page.locator('.sector-segments > .disclosure-body > section').filter({has:page.locator('h3').filter({hasText:/^\d+구간/})}).last()).toContainText('2027-01-01 00:00');await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/year-boundary.pdf',format:'A4',printBackground:true});
+test('year result labels the selected calendar year without exposing internal boundary timestamps',async({page})=>{
+ await page.clock.install({time:new Date('2026-12-31T03:00:00Z')});await page.goto('/fortune/year/');await fillBirth(page);await submit(page);await expect(page.locator('.sector-heading')).toContainText('2026년 1월부터 12월까지');await expect(page.locator('.sector-segments')).toHaveCount(0);await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/year-boundary.pdf',format:'A4',printBackground:true});
 });
 
 for(const width of [195,320,390])test(`constellation date labels remain readable at ${width}px`,async({page})=>{
@@ -207,7 +204,7 @@ test('DST gaps and folds are explicit errors; unknown DST day stays limited',asy
   await page.getByLabel('시간 모름',{exact:true}).check();await submit(page);await expect(page.locator('.natal-table')).toContainText('미확정');await expect(page.locator('main')).toContainText('일주도 미확정');
 });
 test('unknown lichun date never invents year or month',async({page})=>{
-  await page.goto('/fortune/saju/');await fillBirth(page,{year:'2024',month:'2',day:'4'});await submit(page);await expect(page.locator('main')).toContainText('연주·월주');await openCalculation(page);await expect(page.locator('.pillars-table')).toContainText('미확정');await expect(page.locator('.pillars-table').locator('..')).toContainText('2글자 기준');
+  await page.goto('/fortune/saju/');await fillBirth(page,{year:'2024',month:'2',day:'4'});await submit(page);await expect(page.locator('.natal-table')).toContainText('미확정');expect(await page.locator('.natal-table .element-cell').count()).toBe(2);
 });
 test('mobile touch emulation and landscape keep inputs and results usable',async({browser})=>{
   const context=await browser.newContext({baseURL:'http://127.0.0.1:3000',viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:2});
@@ -224,8 +221,7 @@ test('disabled JavaScript cannot submit birth data to a server',async({browser})
 test('CR-01 vowel-ending explanation is correct on screen and in native PDF',async({page})=>{
   await page.setViewportSize({width:390,height:900});
   await page.goto('/fortune/love/');await fillBirth(page,{year:'2000',month:'1',day:'9',knownTime:true});await submit(page);
-  const why=page.locator('details.disclosure').filter({has:page.getByText('왜 이런 풀이인가요?',{exact:true})});
-  await why.locator('summary').click();await expect(why).toContainText('계산된 일간은 병화예요');await expect(why).not.toContainText('병화이에요');
+  await expect(page.locator('.natal-table')).toContainText('병');await expect(page.locator('main')).not.toContainText('병화이에요');
   const before=await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));
   await fs.mkdir('reports/content-improvement-1.4.0/screenshots',{recursive:true});
   // Capture from document origin so offscreen fixed skip links stay outside the full-page image.
@@ -234,15 +230,15 @@ test('CR-01 vowel-ending explanation is correct on screen and in native PDF',asy
   await page.pdf({path:'reports/print/grammar-copula.pdf',format:'A4',printBackground:true});
   expect(await page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open))).toEqual(before);
 });
-test('CR-01 and CR-02 annual basis identifies actual interval facts and retains review IDs inside disclosure',async({page})=>{
- await page.setViewportSize({width:390,height:900});await page.clock.install({time:new Date('2026-10-20T03:00:00Z')});await page.goto('/fortune/year/');await fillBirth(page,{knownTime:true});await submit(page);const why=page.locator('.sector-segments');await why.locator('summary').click();await expect(why).toContainText('2026-02-04');await expect(why).toContainText('편재');await expect(why).toContainText('정관');await expect(why).not.toContainText('편재을');await expect(why).not.toContainText('편재이에요');await expect(page.locator('.sector-bodies')).not.toContainText('sector:');await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/grammar-year-trace.pdf',format:'A4',printBackground:true});await expect(why).toHaveAttribute('open','');
+test('annual explanations keep correct Korean without exposing provenance or interval details',async({page})=>{
+ await page.goto('/fortune/year/');await fillBirth(page,{knownTime:true});await submit(page);await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('main')).not.toContainText('편재을');await expect(page.locator('main')).not.toContainText('편재이에요');await expect(page.locator('.sector-segments')).toHaveCount(0);await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/grammar-year-trace.pdf',format:'A4',printBackground:true});
 });
 
 test('period trace stays in memory and expanded result reflows at 320px and enlarged 390px',async({page,context})=>{
   const requests:{url:string;body:string}[]=[],logs:string[]=[];
   page.on('request',r=>requests.push({url:decodeURIComponent(r.url()),body:r.postData()??''}));page.on('console',m=>logs.push(m.text()));
   await page.clock.install({time:new Date('2026-10-20T03:00:00Z')});await page.goto('/fortune/year/');await fillBirth(page,{knownTime:true,nickname:'기간진단개인정보검사'});await submit(page);
-  await page.locator('.sector-segments summary').click();
+  await expect(page.locator('.sector-segments')).toHaveCount(0);
   for(const width of [320,390]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
   await page.locator('main p, main li, main h3').evaluateAll(es=>es.forEach(e=>{(e as HTMLElement).style.fontSize=`${parseFloat(getComputedStyle(e).fontSize)*2}px`;}));
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
@@ -253,7 +249,7 @@ test('period trace stays in memory and expanded result reflows at 320px and enla
 });
 
 test('KR-02 natal analysis remains substantial and survives native print',async({page})=>{
- await page.setViewportSize({width:390,height:900});await birthResult(page,true);await page.getByText('타고난 사주와 자세한 대운·세운 해설',{exact:true}).click();await expect(page.locator('#advanced-topics')).toContainText('성격·일·돈·연애 풀이');expect((await page.locator('#advanced-topics').innerText()).length).toBeGreaterThan(800);await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
+ await page.setViewportSize({width:390,height:900});await birthResult(page,true);await page.getByText('타고난 성향과 대운',{exact:true}).click();await expect(page.locator('#advanced-topics')).toContainText('타고난 성향과 생활');await expect(page.locator('#advanced-topics section')).not.toHaveCount(0);await expect(page.locator('main')).not.toContainText('섬세한 기준을 나에게도 다정하게');
  for(const width of [390,320]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  const states=()=>page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));const before=await states();await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:'reports/print/editorial-general.pdf',format:'A4',printBackground:true});expect(await states()).toEqual(before);
 });
@@ -264,7 +260,7 @@ test('KR-03 and KR-06 dates sit beside the reading and love does not presume a p
   await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies):visible')).toContainText('지금 만나는 사람이 없다면');await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies):visible')).toContainText('내게는 당연해도 상대는 모를 수 있습니다');
   await page.pdf({path:'reports/print/editorial-love.pdf',format:'A4',printBackground:true});
   await switchReading(page,'올해 운세');
-  await expect(page.locator('.sector-heading')).toContainText('2026년');await expect(page.locator('.sector-bodies')).not.toContainText('분기마다');await page.locator('.sector-segments summary').click();expect(await page.locator('.sector-segments section').count()).toBeGreaterThanOrEqual(13);await expect(page.locator('.sector-segments')).toContainText('2027-01-01');
+  await expect(page.locator('.sector-heading')).toContainText('2026년');await expect(page.locator('.sector-bodies')).not.toContainText('분기마다');await expect(page.locator('.sector-segments')).toHaveCount(0);
   await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
   await page.screenshot({path:'reports/content-improvement-1.4.0/screenshots/editorial-year-range-390.png',fullPage:true});
 });
@@ -276,7 +272,7 @@ test('all 13 edited menu flows render their own actual content at mobile width',
   }
   for(const [slug,label] of [['zodiac','쥐띠'],['constellation','염소자리']]){
     await page.goto(`/fortune/${slug}/`);await page.getByRole('radio',{name:label,exact:slug!=='constellation'}).check();await page.getByRole('button',{name:/.*(운세|풀이) 보기/}).click();
-    await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies):visible')).not.toBeEmpty();await page.getByText('왜 이런 풀이인가요?',{exact:true}).click();
+    await expect(page.locator(':is(.result-content,#advanced-topics,.sector-bodies):visible')).not.toBeEmpty();await expect(page.getByText('왜 이런 풀이인가요?',{exact:true})).toHaveCount(0);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   }
 });

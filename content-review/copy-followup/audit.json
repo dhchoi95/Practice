@@ -1,0 +1,177 @@
+{
+  "version": "2.4.1",
+  "passed": true,
+  "records": 1195,
+  "corpusCounts": {
+    "sectors": 540,
+    "schedules": 36,
+    "natal": 62,
+    "advancedPeriods": 136,
+    "legacy": 210,
+    "experimentalDrafts": 4,
+    "mbti": 96,
+    "mbtiBasics": 16,
+    "dailyEditorial": 31,
+    "interpretationBases": 25,
+    "elementExplanations": 5,
+    "glossary": 9,
+    "infoSections": 17,
+    "sourceNotes": 5,
+    "periodNotes": 3
+  },
+  "publicCodeFiles": 35,
+  "checkedStrings": 32015,
+  "protectedEngineFiles": 35,
+  "engineChecks": [
+    {
+      "path": "src/domain/advanced/chart.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/compatibility.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/life-stage.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/luck.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/mappings.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/modules.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/period.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/relations.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/report.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/time.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/advanced/types.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/korean.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/terms.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/calendar/timezone.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/period-label.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/period.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/topic-basis.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/fortune/view-policy.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/detail-facts.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/engine.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/feasibility.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/foundation/tables.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/engine.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/evaluation.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/experimental.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/knowledge.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/period-reading.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/reasoning.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/repository.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/review.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/schema.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/interpretation/shared.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/calculate.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/tables.ts",
+      "passed": true
+    },
+    {
+      "path": "src/domain/saju/types.ts",
+      "passed": true
+    }
+  ],
+  "fieldsPreserved": {
+    "legacy": 210,
+    "sector": 540,
+    "mbti": 112
+  },
+  "crossDomainCopies": [],
+  "assembledReadings": 15,
+  "independentApproval": false,
+  "errors": [],
+  "limits": "Known grammar/particle forms, exact duplicated sentences and source ownership checks do not certify all Korean or semantic quality. Read field-specific narratives separately. Immutable historical snapshots/quoted errors are excluded from active prose."
+}
