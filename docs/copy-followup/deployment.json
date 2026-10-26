@@ -1,0 +1,42 @@
+{
+  "version": "2.4.1",
+  "deployed": true,
+  "url": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+  "worker": "spring-voice-4bdc",
+  "cloudflareVersionId": "92f7ac21-ea3e-4885-8211-8dc6de7364fa",
+  "sourceCommit": "3944cf017d4e6b817ba4386c1966abbf92766659",
+  "buildManifestSHA256": "f723d073466de34a8603575b2e0d4ae84b6e4852b9fa153ae223839f41cf5bbf",
+  "publicChecks": {
+    "url": "https://spring-voice-4bdc.eogjs9595.workers.dev",
+    "version": "2.4.1",
+    "passed": true,
+    "clockFixture": "2026-10-26 KST",
+    "network": "TLS-verified public-response relay for workspace proxy CA",
+    "checks": [
+      {
+        "width": 320,
+        "passed": true,
+        "requests": 80,
+        "exactSourceParagraphs": true,
+        "pageErrors": []
+      },
+      {
+        "width": 390,
+        "passed": true,
+        "requests": 80,
+        "exactSourceParagraphs": true,
+        "pageErrors": []
+      }
+    ]
+  },
+  "checks": {
+    "unitIntegration": 413,
+    "browser": 94,
+    "nativePDFs": 39,
+    "inventoryRecords": 1195,
+    "sourceCodeFiles": 35,
+    "completeAssembledExamples": 15
+  },
+  "independentEditorialApproval": false,
+  "realInAppBrowserTested": false
+}
