@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/content/rules.json",
+    "previous": {
+      "path": "src/content/rules.json",
+      "beforeHashes": [
+        "bbf9dc0892f158e494336cce175732a9f9fdaf2479e375cc8df901bcec0745b0"
+      ],
+      "afterHash": "aa13f8d7fa17a7feac18f0a2819a8ab3e374d0e05f4ae3475c3551754dee2344",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    "currentHash": "e3ec0cd946dcb3e43de75e929db6ad78ae4dc25ecead0876ff3923930b98200c"
+  },
+  {
+    "path": "content-review/reviews.json",
+    "previous": {
+      "path": "content-review/reviews.json",
+      "beforeHashes": [
+        "70685de92311df39f37fdc57c0652c92f81cd300de98a30541212ecb308a2edb"
+      ],
+      "afterHash": "ad9dd5ce2047d2bcaa1208357acb7d29995c2063f28da8a1ec1b429f99394135",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    "currentHash": "e2719a9164e510738304ba4c25463f88e87ce7216208eb808f9f82e634b9e9e9"
+  },
+  {
+    "path": "content-review/review-snapshots.json",
+    "previous": {
+      "path": "content-review/review-snapshots.json",
+      "beforeHashes": [
+        "328bfbed1fcd4b51cfb7085facc284ed8ed9ee8947000b157a059bcd151753ed"
+      ],
+      "afterHash": "d5fc85e514832dc60907bea2a7692e1b7958fbaf45e8be6774da6b886ba85eb1",
+      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+    },
+    "currentHash": "5e1cb437128eb90acb9e7716c28ff32db815136e766839a0b4e386779ce35502"
+  }
+]

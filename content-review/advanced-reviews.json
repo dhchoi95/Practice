@@ -18398,5 +18398,293 @@
     "corrections": [
       "ENTJ의 ENTJ를 읽는 출발점 상황을 다른 95개 글과 구분해 직접 쓰고 고정관념을 확정하지 않도록 조건부 제안으로 편집했어요."
     ]
+  },
+  {
+    "id": "author-2-0-natal-triple-wood-600d2085ce9c-5",
+    "ruleId": "natal-triple-wood",
+    "hash": "600d2085ce9c2372ef1a4a5d9f598fa44d6f90baf7e77e5ddc658cf756d98cfa",
+    "supersedes": "author-2-0-natal-triple-wood-7918c8693a9b-4",
+    "claimHashes": [
+      {
+        "id": "natal-triple-wood:interpretation",
+        "hash": "74ce34d76203506748d8bde4ef8bc5cd3c30b9ced3af9bdfd6c314bfcb5c27a9"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 love 원고예요. 적용 전제는 relation.삼합 gte 1 / natal.element eq 수 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-16-814eb0ca2a84-4",
+    "ruleId": "period-god-16",
+    "hash": "814eb0ca2a84f376ae9cf7fcf18d262b3721a991213c0d551ddc7bc1565be048",
+    "supersedes": "author-2-0-period-god-16-865d02fac14a-3",
+    "claimHashes": [
+      {
+        "id": "period-god-16:interpretation",
+        "hash": "0deb30eff1cb8f5dfbba264562b2d27cd575e3f4b5a2184f8c3e0b0d9c2ac11a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 resource 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-17-beeebb614a02-4",
+    "ruleId": "period-god-17",
+    "hash": "beeebb614a0224a1f6b90c4fc051fef8a9cfd326f834d80879671599ad5cf4c3",
+    "supersedes": "author-2-0-period-god-17-5783d6bb7b6b-3",
+    "claimHashes": [
+      {
+        "id": "period-god-17:interpretation",
+        "hash": "5753991361eb80c5890783455fabdfc0b680a94aef91fec1fa38bb254aa291f7"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 practice 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-37-e5a5d2d4b8c2-4",
+    "ruleId": "period-god-37",
+    "hash": "e5a5d2d4b8c275dbe7f4df17f1384fca100b0071cb82afae8a51603be81c314a",
+    "supersedes": "author-2-0-period-god-37-4d45a7de26d7-3",
+    "claimHashes": [
+      {
+        "id": "period-god-37:interpretation",
+        "hash": "1eb50dcbefc807a08a0a1379d4233e79eb473aa1df747a47917e78a9790a0720"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 편관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-year-background-편재-45dc7777a400-4",
+    "ruleId": "period-year-background-편재",
+    "hash": "45dc7777a40042fb21f524053c712dbf86b8eda5ab5d79083dd135a20ad22945",
+    "supersedes": "author-2-0-period-year-background-편재-315b3c9f294c-3",
+    "claimHashes": [
+      {
+        "id": "period-year-background-편재:interpretation",
+        "hash": "915a24ad7fb4d1f822657c9fec520e74146db400f6d98ea0bdf8b52b8bd545ae"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 year-background 원고예요. 적용 전제는 context.yearGod eq 편재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-비견-58c898fb01d3-4",
+    "ruleId": "period-month-background-비견",
+    "hash": "58c898fb01d37bbdf49109b95729ae1e7fb1eb272220684643e4210843203dda",
+    "supersedes": "author-2-0-period-month-background-비견-1b293a02d5ac-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-비견:interpretation",
+        "hash": "3f4fb38a6a9c6bc3a46e49aceadd41922d81a794ce23cc80403254c847dfedee"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 비견 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-겁재-6ee55bec5a71-4",
+    "ruleId": "period-month-background-겁재",
+    "hash": "6ee55bec5a716cada943176de6fa08128ac1193a848f67d93c8cc1e9195b30e6",
+    "supersedes": "author-2-0-period-month-background-겁재-b820fa70a7e9-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-겁재:interpretation",
+        "hash": "4086ce948585528f51642c9882bb488f3ae6b7e28c29c988467b035712616437"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-식신-7d423adbc9ab-4",
+    "ruleId": "period-month-background-식신",
+    "hash": "7d423adbc9abf52a5272114dbcfd9800d4dcd884a92fe4ee36aa2129ac1822ba",
+    "supersedes": "author-2-0-period-month-background-식신-96055241cd84-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-식신:interpretation",
+        "hash": "6b23b81328594652f536ecde9c3862df55edab69bdb6cfcf051377035993aad4"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-상관-dd7b1b47a8e5-4",
+    "ruleId": "period-month-background-상관",
+    "hash": "dd7b1b47a8e50b6391a9d17e85692a5223054952174c4177b1db59fec836d25c",
+    "supersedes": "author-2-0-period-month-background-상관-98b9efcec83a-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-상관:interpretation",
+        "hash": "03d09489917a139f83b28188b68e77080d37b4d25206e1067b8bf39b7252d633"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 상관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-편재-39e37c98cdd6-4",
+    "ruleId": "period-month-background-편재",
+    "hash": "39e37c98cdd6ebecbd074ef0c96d2a275e31dd0312b1af85256b70db52f5073f",
+    "supersedes": "author-2-0-period-month-background-편재-a200b0661914-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-편재:interpretation",
+        "hash": "24228919086fe4f6578a885d625a938adc2dc376056a338a3b13959d6c4b970d"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-정재-12c84a9d313f-4",
+    "ruleId": "period-month-background-정재",
+    "hash": "12c84a9d313f05fd653b85700c00370244331ba85ac1b580b510001772a10d89",
+    "supersedes": "author-2-0-period-month-background-정재-af478177065f-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-정재:interpretation",
+        "hash": "2e4e268eaf299b10de72719f71115a5c0379417164c6915405cf224bccb3e8e0"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-편관-238d2f71eb2e-4",
+    "ruleId": "period-month-background-편관",
+    "hash": "238d2f71eb2e9ba9b99e6be8e0b52d77f77cdf0a26f4b81509edd35c3a660357",
+    "supersedes": "author-2-0-period-month-background-편관-0252b90ae2ca-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-편관:interpretation",
+        "hash": "4489434bb6a26988d5b81bf0e6ef579627f116bbf74845113f88291efd72618a"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-정관-f449705b5fd6-4",
+    "ruleId": "period-month-background-정관",
+    "hash": "f449705b5fd6318ba2e556c6be4d996ddc3b6d699bd53bffa3b336f242a97776",
+    "supersedes": "author-2-0-period-month-background-정관-8159a9c01770-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-정관:interpretation",
+        "hash": "99fe940e64a61e06d5b7247a1c1a62cf78de82361065777e2960c18cc427ecb8"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-편인-3b7daaeb7de4-4",
+    "ruleId": "period-month-background-편인",
+    "hash": "3b7daaeb7de4ec51d5c6e30228f0e731d85c6a283e87fbfdd81eafb7ac8f8b1b",
+    "supersedes": "author-2-0-period-month-background-편인-c73256bdf809-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-편인:interpretation",
+        "hash": "22c72c6e0ca8aee994c9ade227bd49afb867233083eebc5118016fab6fcb4e2f"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편인 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-month-background-정인-f334fb9ef29b-4",
+    "ruleId": "period-month-background-정인",
+    "hash": "f334fb9ef29bab8bcf3a2259292a8add1b70053b16eb95b634366c41e488035d",
+    "supersedes": "author-2-0-period-month-background-정인-0a44a1c4ae4f-3",
+    "claimHashes": [
+      {
+        "id": "period-month-background-정인:interpretation",
+        "hash": "6c5b71342163bce11835a0eaa1ebe96453b91f7bb307f03225062f92851180a4"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정인 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-luck-background-겁재-e723cac6b2e3-4",
+    "ruleId": "period-luck-background-겁재",
+    "hash": "e723cac6b2e34c1007efcb6d02c1b088107e4b606bcb443948e8896e04dd20a2",
+    "supersedes": "author-2-0-period-luck-background-겁재-1fa819168fd9-3",
+    "claimHashes": [
+      {
+        "id": "period-luck-background-겁재:interpretation",
+        "hash": "888c2cf5d120ea3b5ab17404030f05bd1a5b9e87ffa556d25a52479065e606f8"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-10-31",
+    "corrections": [
+      "새로 집필한 luck-background 원고예요. 적용 전제는 luck.god eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
   }
 ]

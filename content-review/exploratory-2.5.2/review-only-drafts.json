@@ -1,0 +1,257 @@
+{
+  "status": "review-only-not-loaded-by-app",
+  "source": "Terra high post-comparison author drafts; not blinded, not ground truth",
+  "promotion": "requires actual reusable conditions and exclusions plus source/selection/meaning review",
+  "drafts": {
+    "created_at_utc": "2026-10-31T10:30:27.921037+00:00",
+    "status": "post-comparison author draft; not blind, not ground truth, not production data",
+    "limits": "상징적 생활 제안이며 사건 예측이 아니다. R02 시주는 미상이다. 선택 조건은 미검토다.",
+    "items": [
+      {
+        "id": "R01",
+        "natal_confirmed": "甲寅 丁卯 己未 戊辰",
+        "target": "2028년",
+        "passages": [
+          {
+            "domain": "총운",
+            "text": "여러 사람이 함께할 계획을 세운다면, 혼자 정해도 되는 일과 함께 골라야 할 일을 나눠보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "학업",
+            "text": "배우는 내용이 많아 막막하다면, 이해가 어려웠던 부분 하나를 골라 다시 질문해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "재물",
+            "text": "구독을 새로 결제하려 한다면, 첫 금액과 이후에 나갈 금액을 함께 확인해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "건강",
+            "text": "일정이 길어 식사를 자꾸 미룬다면, 중간에 먹고 쉴 시간을 남겨보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "연애",
+            "text": "가까워지고 싶은 사람이 있다면, 함께 보낼 시간과 각자 쉴 시간을 어떻게 원하는지 물어보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "사업",
+            "text": "함께 일할 일이 있다면, 맡을 범위와 언제 다시 이야기할지를 먼저 정해보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 己; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "R02",
+        "natal_confirmed": "丙寅 甲午 辛卯, 시주 미상",
+        "target": "2027-02-14",
+        "passages": [
+          {
+            "domain": "총운",
+            "text": "할 일이 겹친다면, 정해진 기한이 있는 일부터 살펴보고 나머지는 순서를 다시 정해보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "학업",
+            "text": "배운 방법을 기억하고 싶다면, 예제를 본 뒤 비슷한 문제를 혼자 풀어보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "재물",
+            "text": "물건을 결제할 일이 있다면, 실제 낼 돈과 취소 조건을 확인해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "건강",
+            "text": "일정이 바쁘다면, 식사나 휴식을 미루지 않도록 비워둘 시간을 살펴보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "연애",
+            "text": "만나는 사람의 답이 짧아 마음이 쓰인다면, 뜻을 짐작하기 전에 대화할 여유가 있는지 물어보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "사업",
+            "text": "새로운 부탁을 받았다면, 지금 할 수 있는 부분과 확인이 필요한 부분을 나누어 답해보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 辛; 대상 2027-02-14",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "R03",
+        "natal_confirmed": "辛巳 丁酉 乙酉 丙子",
+        "target": "2026-10-30",
+        "passages": [
+          {
+            "domain": "총운",
+            "text": "새 일을 더 맡기 전에 이미 약속한 일을 살피고, 필요한 시간과 도움을 확인해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "학업",
+            "text": "공부한 내용을 이해했는지 궁금하다면, 자료를 덮고 내 말로 한 번 설명해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "재물",
+            "text": "필요해 보이는 물건이 있다면, 당장 쓸 일과 실제 가격을 확인한 뒤 살지 정해보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "건강",
+            "text": "오래 앉아 있었다면, 몸을 편하게 움직이거나 잠깐 쉬는 시간을 가져보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "연애",
+            "text": "함께할 계획이 있다면, 원하는 시간과 활동을 말하고 상대가 편한지도 물어보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "사업",
+            "text": "일을 부탁받았다면, 맡을 범위와 쓸 수 있는 시간을 확인한 뒤 답해도 괜찮습니다.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 乙; 대상 2026-10-30",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          }
+        ]
+      },
+      {
+        "id": "R04",
+        "natal_confirmed": "丙申 庚子 戊辰 壬子",
+        "target": "2028년",
+        "passages": [
+          {
+            "domain": "총운",
+            "text": "새로운 활동을 해보고 싶다면, 지금 하던 일과 쉴 시간도 남는지 함께 살펴보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "학업",
+            "text": "문제를 풀다 막혔다면, 어디까지 이해했는지 말하고 선생님이나 믿을 만한 사람에게 물어보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "재물",
+            "text": "사고 싶은 물건이 생겼다면, 필요한지 생각해 보고 믿을 만한 어른과 가격을 살펴보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "건강",
+            "text": "놀이나 공부가 길어 피곤하다면, 잠깐 쉬고 물을 마실 시간을 가져보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "연애",
+            "text": "가까운 사람과 하고 싶은 일이 다르다면, 서로 원하는 것을 말하고 함께 고를 수 있습니다.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          },
+          {
+            "domain": "사업",
+            "text": "친구와 함께 무언가를 만들 때는, 각자 하고 싶은 역할을 이야기해 보십시오.",
+            "applicability": {
+              "status": "needs-condition-review",
+              "known_context": "일간 戊; 대상 2028년",
+              "note": "독립 초안 작성 후 화면 비교를 거친 문장. 선정 근거와 다른 입력에 대한 적용 범위는 검토 전이다."
+            }
+          }
+        ]
+      }
+    ],
+    "site_better_example": "R02 화면 학업의 “예제를 따라 한 뒤 조금 다른 문제에도 같은 방법이 통하는지 시험해 보십시오”는 독립 초안의 일반적인 계획 조정보다 직접 실행할 수 있는 학습 장면이 분명하다."
+  }
+}

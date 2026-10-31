@@ -28555,5 +28555,428 @@
     ],
     "status": "implemented-pending-independent-review",
     "supersedes": "editorial-2-3-0-element-2-personality-87558a999874"
+  },
+  {
+    "id": "editorial-2-4-2-element-0-relationships-8dc5d7555c2f",
+    "ruleId": "element-0-relationships",
+    "contentVersion": "2.4.2",
+    "contentHash": "8dc5d7555c2f02ed8ef2e044a264cb51d586e59e5230af9adb7f5805474242bf",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "element-0-relationships-proposal",
+        "hash": "c44c9ce9f6f2f2d7928d86bd3e9f8f72c56fb5381c582d22ca87db9780d23dbc"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-element-0-relationships-0349deb95b91"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-0-8d4168dff07c",
+    "ruleId": "period-day-0",
+    "contentVersion": "2.4.2",
+    "contentHash": "8d4168dff07cc55f18d06505387e926233e9603ad6bdf067b04f4a85a5c70635",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-0-interpretation",
+        "hash": "8f069fbc3e28d541dfee2e90ca6a705c16ee8e81eb54cc0c19bed8bf3201d76b"
+      },
+      {
+        "id": "period-day-0-proposal",
+        "hash": "050388eb7488b0c61942b13daf6f7610ed602ecc7fc2074e74b4d9eb4d2d3c85"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-0-beff2aa44d1b"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-1-6a4afc92c322",
+    "ruleId": "period-day-1",
+    "contentVersion": "2.4.2",
+    "contentHash": "6a4afc92c322a06e8541203174f0d46984a1edd3fe0a7129e0c7823297dafd18",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-1-interpretation",
+        "hash": "cf39e23eef821788d4c39d5c1592a06107087817d72b481702d8a2a931388118"
+      },
+      {
+        "id": "period-day-1-proposal",
+        "hash": "54752ac66b3e90249ad580c1797122f52987b821361198e6bfacb78a0ee74032"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-1-e37759d182af"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-2-17e2179ea039",
+    "ruleId": "period-day-2",
+    "contentVersion": "2.4.2",
+    "contentHash": "17e2179ea039ab522beaca66ac0b3b3335dbe05940e78df0e0b1160bef0c9e88",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-2-interpretation",
+        "hash": "d1366956d0bfbb364d861cf19362ae6aed318f5ff9d6453ed74a45eca191da47"
+      },
+      {
+        "id": "period-day-2-proposal",
+        "hash": "82fe981ccd82af0f8945bce7eb410d2443027a290b314e77c84f9ef7b3de6fc1"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-2-cca282a19fd2"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-3-0f468efda654",
+    "ruleId": "period-day-3",
+    "contentVersion": "2.4.2",
+    "contentHash": "0f468efda6543b30d22a398bf54707d1f0e080c37e2d384fa10c4cc87100e75f",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-3-interpretation",
+        "hash": "b30eca5b6495c08b8cece953871fd8a24bf5a31c400fd72db06652a5cac45418"
+      },
+      {
+        "id": "period-day-3-proposal",
+        "hash": "975e40c7f5f711fc446c1a535e73a8745a44d109dd7beeade5507be06ab6264f"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-3-30c452f2e0ac"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-4-34dbdd6a4ed2",
+    "ruleId": "period-day-4",
+    "contentVersion": "2.4.2",
+    "contentHash": "34dbdd6a4ed2f637d1f54226b5bd400851c7b35840899c2ddac9454e5e97a06d",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-4-interpretation",
+        "hash": "b1d79b948e98cb474977b3629b088a730c956275eb2c81a1702c84569876667d"
+      },
+      {
+        "id": "period-day-4-proposal",
+        "hash": "05a74a461d267b8aa685e4a90cf68866805bb5e100274795f451e1d52012b7b2"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-4-6db285d895f4"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-5-f3daaf9d4644",
+    "ruleId": "period-day-5",
+    "contentVersion": "2.4.2",
+    "contentHash": "f3daaf9d4644b354c7ef61d6b44bc4e2bdcb2e2dbebf8de5c62f14e52dc51299",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-5-interpretation",
+        "hash": "bc46eb2c7e4ec8240a1e643dd23bafa94be319153e7456a611bcdb1798a6ff40"
+      },
+      {
+        "id": "period-day-5-proposal",
+        "hash": "c528dba247324adb305848b2140154b58b3a73a17c389b8425015fa459c27626"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-5-390c5ac6fd41"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-6-c2b00a92e542",
+    "ruleId": "period-day-6",
+    "contentVersion": "2.4.2",
+    "contentHash": "c2b00a92e5428e7d6eee1e04bd4d7f697032fdf0a144d99c3999a1322079c3c9",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-6-interpretation",
+        "hash": "43d692a2fb94c9474f2390d9a86282a4e56890be7a2d3d98cf43abb4202f4ff6"
+      },
+      {
+        "id": "period-day-6-proposal",
+        "hash": "4b17a1182fe7ac945d204c0a6efcab29252f81dfe167893acba3d6e9e95321b3"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-6-7defa97e4387"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-7-b8fa1ed12f7a",
+    "ruleId": "period-day-7",
+    "contentVersion": "2.4.2",
+    "contentHash": "b8fa1ed12f7a270830319c5dc2f706c46e5f0724ca03020fc053d9508ae3b693",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-7-interpretation",
+        "hash": "d543a2f6bfc78900b1315822eb3c39b70d2b4e4da693a2a823f95c2aa17d8fa4"
+      },
+      {
+        "id": "period-day-7-proposal",
+        "hash": "04fecd603c65dc147b8a6d17f2b1373b3f2acc50885256be7172dc4dc31786f5"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-7-168cf1228abf"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-8-ee9027083fd7",
+    "ruleId": "period-day-8",
+    "contentVersion": "2.4.2",
+    "contentHash": "ee9027083fd72cccfd92c351b493cce9c2af601c5293742f19bc65b9aea11d48",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-8-interpretation",
+        "hash": "2fe329a94bd38b1a078d7ba8c0486a04b7f336facdfad1ddd9d0f23151f08163"
+      },
+      {
+        "id": "period-day-8-proposal",
+        "hash": "863b9a3bb6dd2c9efb4bd5c28122d0b214210ff54581c95ccfb73640b5d36728"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-8-288ae16b9d64"
+  },
+  {
+    "id": "editorial-2-4-2-period-day-9-0a5966d169b4",
+    "ruleId": "period-day-9",
+    "contentVersion": "2.4.2",
+    "contentHash": "0a5966d169b47895a6d46d5717cebdaf293b6415427724969b8fdba42da79a04",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-day-9-interpretation",
+        "hash": "9a4b5415058903e1d548fb4aa6d90b795c22fb762b0e7a664f2884fc8251f729"
+      },
+      {
+        "id": "period-day-9-proposal",
+        "hash": "98b208e343ebc89e5be6a36538ab9923590a4cb14f95c6ea8aed9bc739559f43"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-day-9-fddeb9874575"
+  },
+  {
+    "id": "editorial-2-4-2-period-month-3-fb3603430b5d",
+    "ruleId": "period-month-3",
+    "contentVersion": "2.4.2",
+    "contentHash": "fb3603430b5d7376b61158eb28040b323d27a2c712e76cebd46bd0b65d8435b7",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "period-month-3-interpretation",
+        "hash": "ce443c99a97dbc67ecbba28b1cb53d5a112dceb350f137074adf1f7ddcf9e3cc"
+      },
+      {
+        "id": "period-month-3-proposal",
+        "hash": "0248d88dfdcd9170848045ffef165c88556bce571e7f4622a06332c9279cf70a"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05",
+      "KR-03"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-period-month-3-7ffe895118a9"
+  },
+  {
+    "id": "editorial-2-4-2-relation-careermoney-wealth-fd60b54edf62",
+    "ruleId": "relation-careermoney-wealth",
+    "contentVersion": "2.4.2",
+    "contentHash": "fd60b54edf62ac7c629d1552e276996d9676d6d93bd176a299327f601b721191",
+    "reviewer": {
+      "role": "implementation-author",
+      "name": null
+    },
+    "date": "2026-10-31",
+    "claims": [
+      {
+        "id": "relation-careermoney-wealth-interpretation",
+        "hash": "409b09c6059d91056c42f69618cefd8aa52a0d48a50c4a2b95f5ab0d7c855649"
+      },
+      {
+        "id": "relation-careermoney-wealth-proposal",
+        "hash": "815d3f3f4b52ed8dfd82cc1b45de9ed1cdcac431fb16431c55eb9b0cdc693c5d"
+      }
+    ],
+    "corrections": [
+      "한국어 본문·제목·생활 제안·근거 중 필요한 문장을 교정. 계산과 선택 조건 보존. 독립 편집·명리 검토는 대기."
+    ],
+    "counterexamples": [],
+    "issueIds": [
+      "KR-01",
+      "KR-02",
+      "KR-05"
+    ],
+    "status": "implemented-pending-independent-review",
+    "supersedes": "editorial-2-3-0-relation-careermoney-wealth-d72cb8fac3fc"
   }
 ]

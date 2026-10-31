@@ -42001,5 +42001,804 @@
       "updatedAt": "2026-10-26",
       "status": "implementation-edited-pending-independent-review"
     }
+  },
+  {
+    "hash": "600d2085ce9c2372ef1a4a5d9f598fa44d6f90baf7e77e5ddc658cf756d98cfa",
+    "record": {
+      "id": "natal-triple-wood",
+      "topic": "love",
+      "units": [
+        "natal"
+      ],
+      "role": "love",
+      "requires": [
+        "relation.삼합",
+        "natal.element",
+        "known.complete"
+      ],
+      "premises": [
+        {
+          "feature": "relation.삼합",
+          "op": "gte",
+          "value": 1
+        },
+        {
+          "feature": "natal.element",
+          "op": "eq",
+          "value": "수"
+        },
+        {
+          "feature": "known.complete",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 35,
+      "specificity": 3,
+      "exclusiveGroup": "love",
+      "semanticAxis": "love",
+      "stance": "context-dependent",
+      "title": "함께하고 싶은 마음을 전하기",
+      "text": "이 사주에는 세 지지가 한 조합을 이루는 삼합이 있습니다. 삼합은 지지 세 글자의 관계를 살피는 전통적인 분류이며, 글자가 모두 한 오행으로 바뀌었다고 보지는 않습니다. 함께하고 싶은 일이 있다면 바라는 점을 말로 전하고 상대의 생각도 들어보십시오.",
+      "proposal": "",
+      "claim": {
+        "id": "natal-triple-wood:interpretation",
+        "strength": "candidate",
+        "text": "이 사주에는 세 지지가 한 조합을 이루는 삼합이 있습니다. 삼합은 지지 세 글자의 관계를 살피는 전통적인 분류이며, 글자가 모두 한 오행으로 바뀌었다고 보지는 않습니다. 함께하고 싶은 일이 있다면 바라는 점을 말로 전하고 상대의 생각도 들어보십시오.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 love 원고예요. 적용 전제는 relation.삼합 gte 1 / natal.element eq 수 / known.complete eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "814eb0ca2a84f376ae9cf7fcf18d262b3721a991213c0d551ddc7bc1565be048",
+    "record": {
+      "id": "period-god-16",
+      "topic": "resource",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "resource",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "resource",
+      "semanticAxis": "resource",
+      "stance": "context-dependent",
+      "title": "만든 것과 실제 비용",
+      "text": "식신을 만든 것을 제공하는 주제에 빗대어 볼 수 있습니다. 재성과의 연결은 별도로 살펴야 합니다. 식신 하나로 수입을 예측하지 않습니다. 제작 시간과 재료비가 드는 일이 있다면 그 비용을 먼저 파악해야 대가를 이야기할 수 있습니다.",
+      "proposal": "작업에 든 시간과 직접 비용을 나누어 살핍니다.",
+      "claim": {
+        "id": "period-god-16:interpretation",
+        "strength": "candidate",
+        "text": "식신을 만든 것을 제공하는 주제에 빗대어 볼 수 있습니다. 재성과의 연결은 별도로 살펴야 합니다. 식신 하나로 수입을 예측하지 않습니다. 제작 시간과 재료비가 드는 일이 있다면 그 비용을 먼저 파악해야 대가를 이야기할 수 있습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 resource 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "beeebb614a0224a1f6b90c4fc051fef8a9cfd326f834d80879671599ad5cf4c3",
+    "record": {
+      "id": "period-god-17",
+      "topic": "practice",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "practice",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "practice",
+      "semanticAxis": "practice",
+      "stance": "context-dependent",
+      "title": "작게라도 끝까지 해보기",
+      "text": "익숙한 기술을 사용할 기회가 있다면 처음부터 큰 결과를 약속하지 않아도 됩니다. 직접 해볼 수 있는 부분을 끝낸 뒤 어떤 어려움이 있었는지 살펴보십시오. 이 제안은 곧바로 성과를 내야 한다는 뜻이 아닙니다.",
+      "proposal": "다시 이어갈 수 있도록 한 작업을 남겨두십시오.",
+      "claim": {
+        "id": "period-god-17:interpretation",
+        "strength": "candidate",
+        "text": "익숙한 기술을 사용할 기회가 있다면 처음부터 큰 결과를 약속하지 않아도 됩니다. 직접 해볼 수 있는 부분을 끝낸 뒤 어떤 어려움이 있었는지 살펴보십시오. 이 제안은 곧바로 성과를 내야 한다는 뜻이 아닙니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 practice 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "e5a5d2d4b8c275dbe7f4df17f1384fca100b0071cb82afae8a51603be81c314a",
+    "record": {
+      "id": "period-god-37",
+      "topic": "natal-link",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "natal-link",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "natal-link",
+      "semanticAxis": "natal-link",
+      "stance": "context-dependent",
+      "title": "압박을 받쳐주는 조건",
+      "text": "편관이 있어도 일간의 뿌리·인성·식신이 어떤 자리에 있는지에 따라 함께 살필 해석이 달라집니다. 식신이 함께 있다는 사실만으로 제살 구조가 완성되는 것은 아닙니다. 버틸 힘과 압박을 조절할 방법을 구별합니다.",
+      "proposal": "부담이 커졌다면 쓸 수 있는 지원부터 살핍니다.",
+      "claim": {
+        "id": "period-god-37:interpretation",
+        "strength": "candidate",
+        "text": "편관이 있어도 일간의 뿌리·인성·식신이 어떤 자리에 있는지에 따라 함께 살필 해석이 달라집니다. 식신이 함께 있다는 사실만으로 제살 구조가 완성되는 것은 아닙니다. 버틸 힘과 압박을 조절할 방법을 구별합니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 편관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "45dc7777a40042fb21f524053c712dbf86b8eda5ab5d79083dd135a20ad22945",
+    "record": {
+      "id": "period-year-background-편재",
+      "topic": "year-background",
+      "units": [
+        "month",
+        "day"
+      ],
+      "role": "year-background",
+      "requires": [
+        "context.yearGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.yearGod",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "year-background",
+      "semanticAxis": "year-background",
+      "stance": "context-dependent",
+      "title": "세운의 편재 배경",
+      "text": "여러 자원을 연결하는 배경에서는 짧은 기간의 새 약속이 감당할 범위 안인지 살핍니다. 넓히는 주제와 선택한 기간의 신중한 선택은 서로 다른 시간 범위를 다룹니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-year-background-편재:interpretation",
+        "strength": "candidate",
+        "text": "여러 자원을 연결하는 배경에서는 짧은 기간의 새 약속이 감당할 범위 안인지 살핍니다. 넓히는 주제와 선택한 기간의 신중한 선택은 서로 다른 시간 범위를 다룹니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 year-background 원고예요. 적용 전제는 context.yearGod eq 편재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "58c898fb01d37bbdf49109b95729ae1e7fb1eb272220684643e4210843203dda",
+    "record": {
+      "id": "period-month-background-비견",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 비견 배경",
+      "text": "월운은 각자의 역할을 나누는 비견 관계입니다. 하루 동안의 선택과 한 달의 공동 책임을 같은 크기로 해석하지 않습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-비견:interpretation",
+        "strength": "candidate",
+        "text": "월운은 각자의 역할을 나누는 비견 관계입니다. 하루 동안의 선택과 한 달의 공동 책임을 같은 크기로 해석하지 않습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 비견 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "6ee55bec5a716cada943176de6fa08128ac1193a848f67d93c8cc1e9195b30e6",
+    "record": {
+      "id": "period-month-background-겁재",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 겁재 배경",
+      "text": "월운은 주도권과 자원을 나누는 겁재 관계입니다. 그날 새로 합의한 비용이 한 달의 약속에 어떤 영향을 주는지 함께 볼 수 있습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-겁재:interpretation",
+        "strength": "candidate",
+        "text": "월운은 주도권과 자원을 나누는 겁재 관계입니다. 그날 새로 합의한 비용이 한 달의 약속에 어떤 영향을 주는지 함께 볼 수 있습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "7d423adbc9abf52a5272114dbcfd9800d4dcd884a92fe4ee36aa2129ac1822ba",
+    "record": {
+      "id": "period-month-background-식신",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 식신 배경",
+      "text": "월운은 익힌 것을 이어가는 식신 관계입니다. 그날의 실행을 한 달 내내 같은 강도로 반복해야 한다는 뜻은 아닙니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-식신:interpretation",
+        "strength": "candidate",
+        "text": "월운은 익힌 것을 이어가는 식신 관계입니다. 그날의 실행을 한 달 내내 같은 강도로 반복해야 한다는 뜻은 아닙니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "dd7b1b47a8e50b6391a9d17e85692a5223054952174c4177b1db59fec836d25c",
+    "record": {
+      "id": "period-month-background-상관",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "상관"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 상관 배경",
+      "text": "월운은 표현과 방법을 바꾸는 상관 관계입니다. 그날의 의견도 무엇을 고치려는 것인지 목적을 남기면 한 달의 흐름과 연결하기 쉽습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-상관:interpretation",
+        "strength": "candidate",
+        "text": "월운은 표현과 방법을 바꾸는 상관 관계입니다. 그날의 의견도 무엇을 고치려는 것인지 목적을 남기면 한 달의 흐름과 연결하기 쉽습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 상관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "39e37c98cdd6ebecbd074ef0c96d2a275e31dd0312b1af85256b70db52f5073f",
+    "record": {
+      "id": "period-month-background-편재",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "편재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 편재 배경",
+      "text": "월운은 여러 자원을 연결하는 편재 관계입니다. 그날의 기회가 있어도 이미 정한 일정과 함께 살펴야 합니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-편재:interpretation",
+        "strength": "candidate",
+        "text": "월운은 여러 자원을 연결하는 편재 관계입니다. 그날의 기회가 있어도 이미 정한 일정과 함께 살펴야 합니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "12c84a9d313f05fd653b85700c00370244331ba85ac1b580b510001772a10d89",
+    "record": {
+      "id": "period-month-background-정재",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 정재 배경",
+      "text": "월운은 정해진 자원을 관리하는 정재 관계입니다. 그날 내린 결정을 한 달의 실제 예산과 연결해 볼 수 있지만 지출이 정해졌다는 뜻은 아닙니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-정재:interpretation",
+        "strength": "candidate",
+        "text": "월운은 정해진 자원을 관리하는 정재 관계입니다. 그날 내린 결정을 한 달의 실제 예산과 연결해 볼 수 있지만 지출이 정해졌다는 뜻은 아닙니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "238d2f71eb2e9ba9b99e6be8e0b52d77f77cdf0a26f4b81509edd35c3a660357",
+    "record": {
+      "id": "period-month-background-편관",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "편관"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 편관 배경",
+      "text": "월운은 과제를 감당하는 편관 관계입니다. 그날의 작은 압박을 한 달 전체의 불운으로 확대하지 않고 도움을 구할 범위를 살핍니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-편관:interpretation",
+        "strength": "candidate",
+        "text": "월운은 과제를 감당하는 편관 관계입니다. 그날의 작은 압박을 한 달 전체의 불운으로 확대하지 않고 도움을 구할 범위를 살핍니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "f449705b5fd6318ba2e556c6be4d996ddc3b6d699bd53bffa3b336f242a97776",
+    "record": {
+      "id": "period-month-background-정관",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "정관"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 정관 배경",
+      "text": "월운은 공통 약속을 살피는 정관 관계입니다. 그날 바꿀 절차와 한 달 동안 지킬 책임을 구별할 수 있습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-정관:interpretation",
+        "strength": "candidate",
+        "text": "월운은 공통 약속을 살피는 정관 관계입니다. 그날 바꿀 절차와 한 달 동안 지킬 책임을 구별할 수 있습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정관 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "3b7daaeb7de4ec51d5c6e30228f0e731d85c6a283e87fbfdd81eafb7ac8f8b1b",
+    "record": {
+      "id": "period-month-background-편인",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "편인"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 편인 배경",
+      "text": "월운은 다른 관점의 배움을 살피는 편인 관계입니다. 그날 떠오른 설명을 바로 결론으로 삼기보다 실제 사례에서 확인할 수 있습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-편인:interpretation",
+        "strength": "candidate",
+        "text": "월운은 다른 관점의 배움을 살피는 편인 관계입니다. 그날 떠오른 설명을 바로 결론으로 삼기보다 실제 사례에서 확인할 수 있습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 편인 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "f334fb9ef29bab8bcf3a2259292a8add1b70053b16eb95b634366c41e488035d",
+    "record": {
+      "id": "period-month-background-정인",
+      "topic": "month-background",
+      "units": [
+        "day"
+      ],
+      "role": "month-background",
+      "requires": [
+        "context.monthGod",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "context.monthGod",
+          "op": "eq",
+          "value": "정인"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "month-background",
+      "semanticAxis": "month-background",
+      "stance": "context-dependent",
+      "title": "월운의 정인 배경",
+      "text": "월운은 준비와 지원의 정인 관계입니다. 그날 해볼 일에 필요한 자료가 무엇인지 살피되 준비만 계속하라는 뜻은 아닙니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-month-background-정인:interpretation",
+        "strength": "candidate",
+        "text": "월운은 준비와 지원의 정인 관계입니다. 그날 해볼 일에 필요한 자료가 무엇인지 살피되 준비만 계속하라는 뜻은 아닙니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 month-background 원고예요. 적용 전제는 context.monthGod eq 정인 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "e723cac6b2e34c1007efcb6d02c1b088107e4b606bcb443948e8896e04dd20a2",
+    "record": {
+      "id": "period-luck-background-겁재",
+      "topic": "luck-background",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "luck-background",
+      "requires": [
+        "luck.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "luck.god",
+          "op": "eq",
+          "value": "겁재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 12,
+      "specificity": 2,
+      "exclusiveGroup": "luck-background",
+      "semanticAxis": "luck-background",
+      "stance": "context-dependent",
+      "title": "대운의 겁재 배경",
+      "text": "대운 천간은 겁재 관계입니다. 공동 자원을 다루는 긴 배경과 선택한 기간의 실제 지출을 구별합니다. 대운 하나로 손해를 확정하지 않습니다.",
+      "proposal": "",
+      "claim": {
+        "id": "period-luck-background-겁재:interpretation",
+        "strength": "candidate",
+        "text": "대운 천간은 겁재 관계입니다. 공동 자원을 다루는 긴 배경과 선택한 기간의 실제 지출을 구별합니다. 대운 하나로 손해를 확정하지 않습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.4.2",
+      "updatedAt": "2026-10-31",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 luck-background 원고예요. 적용 전제는 luck.god eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
   }
 ]

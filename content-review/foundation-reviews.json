@@ -29632,5 +29632,1625 @@
     "reviewer": "implementation-author",
     "supersedes": "author-2-1-sector:year:health:detail-12-7a3884cf9ee3",
     "claimHash": "c81040d89a26c0a83644872042dbda86707d5f05383bb5f06012205967e91789"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:learn-express-9d3899d39ab3",
+    "recordId": "sector:year:overall:learn-express",
+    "hash": "9d3899d39ab32c5aed63d6070af03571c76b3947ca4eea0295d1e9a7f31b6498",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:learn-express-f331deee024e",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:produce-trade-03736995c567",
+    "recordId": "sector:year:overall:produce-trade",
+    "hash": "03736995c567177bcea8277cca0ee485cbba3e892e9d40738479857e6d02c68c",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:produce-trade-bac8f64f521a",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:express-standard-640cc4d2c50f",
+    "recordId": "sector:year:overall:express-standard",
+    "hash": "640cc4d2c50f65c646515710c091a07a31e73cbd79bc6b7d30224cf8607e8683",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:express-standard-80e0f612fcae",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:share-resource-45c4cb3d9ff6",
+    "recordId": "sector:year:overall:share-resource",
+    "hash": "45c4cb3d9ff6efc977f7bc1625ad12d5567422ea2b014d0bd00da43383e40f77",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:share-resource-58cb19ff19e2",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:day-clash-a1013dc9c917",
+    "recordId": "sector:year:overall:day-clash",
+    "hash": "a1013dc9c917ef179aeea9fc7283b76ad50a84aee3cc040729d75f0a698b64d9",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:day-clash-1d0b70044632",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:month-clash-d05fd101c9c9",
+    "recordId": "sector:year:overall:month-clash",
+    "hash": "d05fd101c9c917f2076f2136751bc0025128d38d1e3df59a8f445bb84f7fecec",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:month-clash-b306c8e7b4b4",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:agreement-7a548fd3a5cd",
+    "recordId": "sector:year:overall:agreement",
+    "hash": "7a548fd3a5cd7c2c10da1ef1ff587dbaddbaf0124611471bc5a36f78088b5233",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:agreement-6a4da0c22f3d",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:resource-c441c10db7fb",
+    "recordId": "sector:year:overall:resource",
+    "hash": "c441c10db7fb143f0cfd46f926d0beef82b1f1af72d69f946ab2a5efc551fb6d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:resource-744d4360a615",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:output-102bd35dcd00",
+    "recordId": "sector:year:overall:output",
+    "hash": "102bd35dcd0035e4f24b7667ed883e52f17f90786341341db6e766f6aa61f4a2",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:output-1caecaa1f947",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:order-e115094388b6",
+    "recordId": "sector:year:overall:order",
+    "hash": "e115094388b6b1f7cc85d5940394e0a5c8588d2ec8fc32a77546ebc5e2420b05",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:order-62c2ddf320a5",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:peer-85ca2375fde7",
+    "recordId": "sector:year:overall:peer",
+    "hash": "85ca2375fde74d70c3b1b4007a1e7335c9ff94e38d906887c094bc3afcb83870",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:peer-0af132f8d268",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:wealth-1e0d25b97889",
+    "recordId": "sector:year:overall:wealth",
+    "hash": "1e0d25b97889dc1ffb63aa026406f991c2d4c8f56200fb4491305baf52941501",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:wealth-cf9499cafa7c",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:year:study:learn-express-db15283f7656",
+    "recordId": "sector:year:study:learn-express",
+    "hash": "db15283f765638f0838166684d0b6e53a10f748d51ad26c2e38909df8bde2ccb",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:learn-express-6140acdb840c",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:year:study:produce-trade-d6b94e2655a6",
+    "recordId": "sector:year:study:produce-trade",
+    "hash": "d6b94e2655a613f92b1d6ac2789dd837486ddf7a5771b4df929437dfe8a28b1d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:produce-trade-d40f0b74201a",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:study:express-standard-e1e8f4241d2f",
+    "recordId": "sector:year:study:express-standard",
+    "hash": "e1e8f4241d2f085ad3c672e4d5e3985567a874ecfc73fed23fd9c150f3493ae1",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:express-standard-b319ebb37c14",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:day:study:share-resource-601535ba3f68",
+    "recordId": "sector:day:study:share-resource",
+    "hash": "601535ba3f683b09b4a62dfbef19a7fa9e72f3b046f4f746881c75c3b494d010",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:study:share-resource-90017d323b7a",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:study:share-resource-62c9303fa78f",
+    "recordId": "sector:year:study:share-resource",
+    "hash": "62c9303fa78f6e11c0dd2cbfc58e7bd2a5afe8dbc5519f979d2704815408f31a",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:share-resource-b222f6183375",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:study:day-clash-352f536ba234",
+    "recordId": "sector:year:study:day-clash",
+    "hash": "352f536ba234a561b75d7d3a535c5b39c4502c8a4eec9636495e8c0f356fff92",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:day-clash-123725e58900",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:day:study:month-clash-2ae3b4e789d3",
+    "recordId": "sector:day:study:month-clash",
+    "hash": "2ae3b4e789d3bfa79dd498cd0c40d4819970bfc0281f66b06fbb15e1eb58142d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:study:month-clash-5c94b9d79436",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:study:month-clash-6edaa8b11fac",
+    "recordId": "sector:year:study:month-clash",
+    "hash": "6edaa8b11facece10b5df7771b9accbef3b54d8eb27a68d750b5007731b4bde8",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:month-clash-b8b04857ee04",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:study:agreement-f7e1937c605d",
+    "recordId": "sector:year:study:agreement",
+    "hash": "f7e1937c605d3e912e10104e9ca111698bf83fa4abdfad4a3b3c40b7d182b2d5",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:agreement-0ec9efb7a74c",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:year:study:resource-b7a025d7aad8",
+    "recordId": "sector:year:study:resource",
+    "hash": "b7a025d7aad8a0c225e05194afbcbfa7d007186edd060de0865ee3b30b8b31d7",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:resource-1b724b5d2628",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:study:output-aa8e6ed257e6",
+    "recordId": "sector:year:study:output",
+    "hash": "aa8e6ed257e6a3161ef027fb011d12ddcd71ed3f6a402fc6a3d7ba68e9d7d868",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:output-439d39575c36",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:month:study:order-583267454751",
+    "recordId": "sector:month:study:order",
+    "hash": "583267454751d02551fe98742f3be63b27142cb539483a87a5001bd766601787",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:study:order-764ae91eba57",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:study:order-981eec597c83",
+    "recordId": "sector:year:study:order",
+    "hash": "981eec597c83a96b680dd7f622b4401ba6d092f70c45893629eaf9b6f72140da",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:order-ae017f2cc25c",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:study:peer-1c0f08bf91ae",
+    "recordId": "sector:year:study:peer",
+    "hash": "1c0f08bf91ae31485d020aa30e8e8cfb2e4818373ebee23bd7057f06f6b3b42b",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:peer-9f7a5e1f034f",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:year:study:wealth-3eee015acacb",
+    "recordId": "sector:year:study:wealth",
+    "hash": "3eee015acacbaa7b0f1cd1df1e523ea350a6eddef0032c9588e299cc54ee6988",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:study:wealth-f500c89ebe17",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:month:money:learn-express-b99e4b556ee6",
+    "recordId": "sector:month:money:learn-express",
+    "hash": "b99e4b556ee63b2db7aa689a7f3bad373cdc186f3e6dd50aaf4cbf0ed82b7c45",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:money:learn-express-6b92359fa536",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:year:money:learn-express-42e4f365a362",
+    "recordId": "sector:year:money:learn-express",
+    "hash": "42e4f365a362aa388a54fc0231e1adc17ae1364101f24f9a882e0e6238c78033",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:learn-express-09263f550c47",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:day:money:produce-trade-fd48762f9ae5",
+    "recordId": "sector:day:money:produce-trade",
+    "hash": "fd48762f9ae56d7213834a104c2601ffc86b990c4230a039753a8d537ee47888",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:money:produce-trade-62bb699205c7",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:money:produce-trade-0b68e76130af",
+    "recordId": "sector:year:money:produce-trade",
+    "hash": "0b68e76130af3cee92b55697cb7621da57f3cca475b8cbf8e859460bee855ce6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:produce-trade-2bc8de45886c",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:money:express-standard-0ad3801064b2",
+    "recordId": "sector:year:money:express-standard",
+    "hash": "0ad3801064b22ffdd460984582be5d25f2a0d8559e4cdf2e14eb67fb17a49b9d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:express-standard-975dd21ebdd6",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:year:money:share-resource-ecfb541cccfe",
+    "recordId": "sector:year:money:share-resource",
+    "hash": "ecfb541cccfe5676a33beb4fb17500639443edc0f0014dd2f1723a764f39231d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:share-resource-5fd94edf5066",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:money:day-clash-8f6e6f7fe3e0",
+    "recordId": "sector:year:money:day-clash",
+    "hash": "8f6e6f7fe3e0616f69c5d530603cc472606dfecb7a65d3d7ad95813d43a49724",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:day-clash-513194d8c499",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:year:money:month-clash-d315be9f6d02",
+    "recordId": "sector:year:money:month-clash",
+    "hash": "d315be9f6d02ebcb23d665c16fe8ff28f7e0659127433c11cdce34c1be1bac8e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:month-clash-b937c5e76dc5",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:money:agreement-401a18cbe0d6",
+    "recordId": "sector:year:money:agreement",
+    "hash": "401a18cbe0d6af70191cb3b95f0a01479d2efa021be587e521ef8c68b6870464",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:agreement-374716630177",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:year:money:resource-331a3c419d14",
+    "recordId": "sector:year:money:resource",
+    "hash": "331a3c419d14de8e08e58ecf3078ba08f1423579555c7490d8356b5bb99f1a20",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:resource-f350d7123211",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:money:output-fd2276871722",
+    "recordId": "sector:year:money:output",
+    "hash": "fd2276871722b930332a386b3f756ac949e29057336eb09b6ec613853132ce4f",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:output-66b26ea34fd0",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:year:money:order-3683e6a26b0c",
+    "recordId": "sector:year:money:order",
+    "hash": "3683e6a26b0cf255a98658c8eeb4d5b6906c20dbf5a53bfdddbc2df6f8cb9436",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:order-5983bb458820",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:money:peer-2e71b67403de",
+    "recordId": "sector:year:money:peer",
+    "hash": "2e71b67403def13109c5e02bcca1664c0d1c7e13ae8f67384d4d4001dc509a7e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:peer-2b668d22a59f",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:year:money:wealth-a47dc3255ea8",
+    "recordId": "sector:year:money:wealth",
+    "hash": "a47dc3255ea8908b37c10ea5efe458a09cc6b3f0174df989e675de65c7507a9b",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:wealth-f3d84382c625",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:year:health:learn-express-0e3f4d2e73d3",
+    "recordId": "sector:year:health:learn-express",
+    "hash": "0e3f4d2e73d389b885f8953cade86fbe05c4fa95fdf76a0ff5623acdd6625295",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:learn-express-0a9d2cec4b95",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:day:health:produce-trade-cccdc7ef6403",
+    "recordId": "sector:day:health:produce-trade",
+    "hash": "cccdc7ef640309569e5db4198cecbc15455dfd4339bd9a8dff360021e9c2b496",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:produce-trade-eb2afdf9e156",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:health:produce-trade-f2aa87765977",
+    "recordId": "sector:year:health:produce-trade",
+    "hash": "f2aa8776597783405362be7082f96bb800edafb853c6f9bf256a53a59ec1f61a",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:produce-trade-681294dddf3f",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:day:health:express-standard-a0e352a8ec66",
+    "recordId": "sector:day:health:express-standard",
+    "hash": "a0e352a8ec66e898ddea70b16cf325b9ad7176af3a399cd3d23fd96562a10332",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:express-standard-59e38dc1d2d2",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:month:health:express-standard-f5d787d6865a",
+    "recordId": "sector:month:health:express-standard",
+    "hash": "f5d787d6865a42776b7c5033e5e0beac6ba0741d48ffe0b485c7ca22a6a0cd77",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:express-standard-27beebb00e0e",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:year:health:express-standard-7639e6bf958c",
+    "recordId": "sector:year:health:express-standard",
+    "hash": "7639e6bf958c4702763f5c0ee53a71d85c4012dca528757ecd5106ddd09faf99",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:express-standard-1389087449b0",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:year:health:share-resource-e909ca029b52",
+    "recordId": "sector:year:health:share-resource",
+    "hash": "e909ca029b525223455aa77d9b42dfe7595a230b65691c78334f71ef95f44a46",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:share-resource-cd6d2fcbf351",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:health:day-clash-f0983392c05b",
+    "recordId": "sector:year:health:day-clash",
+    "hash": "f0983392c05b6be356dacb8ac314f7f3776f1f7d289e75ffd35897fa32765ccc",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:day-clash-8b0abb64cee0",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:day:health:month-clash-68669b521915",
+    "recordId": "sector:day:health:month-clash",
+    "hash": "68669b5219158872b1f5897ef0ab83c9a49d76bfc5ec6a22650eead6f3eb2b3e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:month-clash-7cdb85330cca",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:health:month-clash-f6ae547c5470",
+    "recordId": "sector:year:health:month-clash",
+    "hash": "f6ae547c5470c589517562785b0f11c530ed7b09f4ab1f13eac1b9893a051c3d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:month-clash-30337c9849e3",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:month:health:agreement-d5ecc9d6d7e5",
+    "recordId": "sector:month:health:agreement",
+    "hash": "d5ecc9d6d7e5dff407e11da75fe7d6f665acfe0364c3fe0d938128722a43427d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:agreement-5a7eed7f0526",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:year:health:agreement-43965af10e4f",
+    "recordId": "sector:year:health:agreement",
+    "hash": "43965af10e4fac88f40b1cddb8024612c8640ee6e4178942a80894db4f58ad31",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:agreement-80202224ed9b",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:day:health:resource-dc9289691ec9",
+    "recordId": "sector:day:health:resource",
+    "hash": "dc9289691ec99666ed3aa8d636f6009496ba760ee76112fb391311910993a908",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:resource-f52b49639747",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:health:resource-bfabd6e00a38",
+    "recordId": "sector:year:health:resource",
+    "hash": "bfabd6e00a381a64c763cc4469bc017aa5549a220b98d757894aa35bfc45aaf2",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:resource-cf180d2f8527",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:health:output-4c577d9b9d6f",
+    "recordId": "sector:year:health:output",
+    "hash": "4c577d9b9d6fff3cf08b87489e20ceb3583c4fb388e8cb36bb80ef9e14f6fce8",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:output-cc370315b798",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:year:health:order-1c47a1cc95ec",
+    "recordId": "sector:year:health:order",
+    "hash": "1c47a1cc95ecff0d0460d3231608812e2c332dc4c73b437a2c47dba1d57e8bae",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:order-635cfbc23e0c",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:health:peer-12c3206302ef",
+    "recordId": "sector:year:health:peer",
+    "hash": "12c3206302ef2c5d4864d7cbead165d9d75ee75869d8e46fc88027d44efde498",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:peer-be366b13ad82",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:day:health:wealth-4c3e5e9ebb9b",
+    "recordId": "sector:day:health:wealth",
+    "hash": "4c3e5e9ebb9b8e84aa74eb0f57822575240bf057a16b182a8676438c2523b2fb",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:wealth-09f3e1ddd5e5",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:year:health:wealth-400aa925ed22",
+    "recordId": "sector:year:health:wealth",
+    "hash": "400aa925ed222f1de573405724ed880ec1e64d9d48419ed47d8769ecedcdcdb4",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:wealth-7d19f92d406f",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:year:love:learn-express-5ecdb755c055",
+    "recordId": "sector:year:love:learn-express",
+    "hash": "5ecdb755c055b5e12830cd1c21ba30c60b6be0294f0e7be8e9e640becc750954",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:learn-express-bccaad1e228a",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:month:love:produce-trade-98c1be30a918",
+    "recordId": "sector:month:love:produce-trade",
+    "hash": "98c1be30a91816c31a40c35c55c4d13bcf1a8c0d69b862d29324ad512daa1f64",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:love:produce-trade-b3135ec1a43c",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:love:produce-trade-c7eac8458bbf",
+    "recordId": "sector:year:love:produce-trade",
+    "hash": "c7eac8458bbf018653adc52b5fa54db5781aa665c2960cdda6a2ea943a4f02f8",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:produce-trade-cd1bcacb951c",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:love:express-standard-986dc8a1995d",
+    "recordId": "sector:year:love:express-standard",
+    "hash": "986dc8a1995d048518a00461836878c43a9afaab50388768494a12aa58622b23",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:express-standard-b556c07cb7c8",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:month:love:share-resource-f0b678bf6927",
+    "recordId": "sector:month:love:share-resource",
+    "hash": "f0b678bf692759c47e58fb0b701ba6f2039984e2957e6096df5dc15911b410ca",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:love:share-resource-18fe6adb6635",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:love:share-resource-1ce73fd8220d",
+    "recordId": "sector:year:love:share-resource",
+    "hash": "1ce73fd8220dec8dc72e7482cf9f6a7a9ec5214c0d7617d19c1544b1b002d589",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:share-resource-06ab14aa7d81",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:love:day-clash-7af7227df37b",
+    "recordId": "sector:year:love:day-clash",
+    "hash": "7af7227df37b8d9dae67a88824e6a75b9f54c3e5b7b6785f2ac662a783957621",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:day-clash-15d63d278d58",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:year:love:month-clash-aab52a47094f",
+    "recordId": "sector:year:love:month-clash",
+    "hash": "aab52a47094fa07774f7d379a1162d48524f55f51ffeb6a800382d44800fd448",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:month-clash-3f8c44bd4ac3",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:love:agreement-6738eb45aa64",
+    "recordId": "sector:year:love:agreement",
+    "hash": "6738eb45aa64527770512798e1287d02f0df19d9876941c9b5002c4259c2cc87",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:agreement-47afceba4562",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:day:love:resource-6598d348193d",
+    "recordId": "sector:day:love:resource",
+    "hash": "6598d348193d639e8ffd070471acfcc24774a7b91a4b6a9946ddf784b42febf5",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:love:resource-ecd4a329cffb",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:love:resource-31e9ed265b6d",
+    "recordId": "sector:year:love:resource",
+    "hash": "31e9ed265b6dd335faadf9c63d9f3415ea17ded8ae4183a90e3ecd5fd6afb9a3",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:resource-ea496c7c0f74",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:love:output-c34248809f42",
+    "recordId": "sector:year:love:output",
+    "hash": "c34248809f42701716d5df4f2fbc4f0d71817ac355f09ae837518918933840e8",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:output-6fcc2fe0be5c",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:year:love:order-817845520b23",
+    "recordId": "sector:year:love:order",
+    "hash": "817845520b23fcc41073299629b0be2e84441a174c792982dd5ba01531a28ad6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:order-a59b64642a31",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:love:peer-1355f35d7875",
+    "recordId": "sector:year:love:peer",
+    "hash": "1355f35d78750723223ac23b3ab38ed0b074014c80212aa511f7aa680e85392e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:peer-dd19b78fce61",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:year:love:wealth-9153aea4c2ab",
+    "recordId": "sector:year:love:wealth",
+    "hash": "9153aea4c2ab9cd1724d5bcc99278526c6556a4014b8ea8f14534ace0ab3f2e3",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:love:wealth-2e26f1029e3d",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-sector:month:business:learn-express-c553b1b3a221",
+    "recordId": "sector:month:business:learn-express",
+    "hash": "c553b1b3a221ed3553a35e91070c4a8adf67075a130e8bf11071b30f35a87ff0",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:business:learn-express-048f34614a9a",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:year:business:learn-express-8841f819ea2f",
+    "recordId": "sector:year:business:learn-express",
+    "hash": "8841f819ea2fc890b0a462ce4f1d4b4258bc7cd6c24e3649ed2fa205c1d890ca",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:learn-express-528e9861f074",
+    "claimHash": "90389a7c0ff37e26cf25a12cbacfaae57c48757a3edfd602a77e127ca3e7b11f"
+  },
+  {
+    "id": "author-2-1-sector:month:business:produce-trade-b5b5b4f009d9",
+    "recordId": "sector:month:business:produce-trade",
+    "hash": "b5b5b4f009d99c1ec6d44718779c94723179477768034b7234213e4607a03494",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:business:produce-trade-e3f132e05177",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:business:produce-trade-2d879ce0412e",
+    "recordId": "sector:year:business:produce-trade",
+    "hash": "2d879ce0412e4d7715cfe943ec7f22ceada18636cdfae7e1b3adb014d82da496",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:produce-trade-899d3de07173",
+    "claimHash": "2798ed663a92fa9fec29f63378628a6d44a2dcd4b2be41bba28a6fda2f004dde"
+  },
+  {
+    "id": "author-2-1-sector:year:business:express-standard-e09c44c7d16d",
+    "recordId": "sector:year:business:express-standard",
+    "hash": "e09c44c7d16d4a59fbf6fab53f8f853af7413bba854e3f67081c799d90f3b5ae",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:express-standard-7228deb80cd5",
+    "claimHash": "d83407e9ee017df542bd9f46dd6e48a9fefb774f5ba3512753f33d2db1c2fd49"
+  },
+  {
+    "id": "author-2-1-sector:year:business:share-resource-3ecff7663e6e",
+    "recordId": "sector:year:business:share-resource",
+    "hash": "3ecff7663e6edec930428b144d9fbaae45ccebab7ed3e0b0ec21554d4e27bb1c",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:share-resource-5b74cfb1a12c",
+    "claimHash": "39312619ac03808850cf711fa698c5bb1b435d6decbaf74f6d9b09b746a0b0cb"
+  },
+  {
+    "id": "author-2-1-sector:year:business:day-clash-08d6babdf96e",
+    "recordId": "sector:year:business:day-clash",
+    "hash": "08d6babdf96e88679477a5f4a4a8f16eb191c35b72c7a3c801bf942054a20404",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:day-clash-441e6684421c",
+    "claimHash": "d7027493dfd3263f573d533c358dc8b43706ab48ab154df699cb0c17651ca0e9"
+  },
+  {
+    "id": "author-2-1-sector:year:business:month-clash-39dedec131d8",
+    "recordId": "sector:year:business:month-clash",
+    "hash": "39dedec131d80928ea57242a9c8ab79c3e31485f4db9a251d432d3656bd4d463",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:month-clash-16e34d347bcf",
+    "claimHash": "7e75e1d15c1de0771d2de1809749c921f4f35a4f45690a2d02829bb4201d23ab"
+  },
+  {
+    "id": "author-2-1-sector:year:business:agreement-1e84c87fa579",
+    "recordId": "sector:year:business:agreement",
+    "hash": "1e84c87fa5795fb0421d825d969d3ea6b3ce6e952a12bdf85aaf320a4256c7e2",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:agreement-c03e41a1e9ca",
+    "claimHash": "882c1ee62789b1cfacdfba40c73f70a38919601f8144a95d977195d0aad74dbf"
+  },
+  {
+    "id": "author-2-1-sector:year:business:resource-b2215a4ed188",
+    "recordId": "sector:year:business:resource",
+    "hash": "b2215a4ed188a9cb61c8f1eb600fc5b42d93d34c072a20bb8ab9405139b5af9a",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:resource-829c7797c834",
+    "claimHash": "6b3a88719032392689a4233d1bd52ca45ad327e1d97894a821405e60ce64b4c1"
+  },
+  {
+    "id": "author-2-1-sector:year:business:output-a4cc36855999",
+    "recordId": "sector:year:business:output",
+    "hash": "a4cc368559990bd71ea479d5583c06a298d0dd55e4309e1c3cf565f12e6e3508",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:output-0cdcd1bb3ebb",
+    "claimHash": "afbdbce4d0e0faec36ac3ac444a9b84408548b1494de92fb78226a709eb67180"
+  },
+  {
+    "id": "author-2-1-sector:year:business:order-21422a1b91b5",
+    "recordId": "sector:year:business:order",
+    "hash": "21422a1b91b5cc8cc8cfaaa90804bda9b5cbd3c1e56d1724651b9caf7705013d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:order-1edb39218b57",
+    "claimHash": "8c49f56429c017f00d3a2f8fda1e28b9d766a6f325c95cd0c74e4373533b4ed5"
+  },
+  {
+    "id": "author-2-1-sector:year:business:peer-1ed6b759e11b",
+    "recordId": "sector:year:business:peer",
+    "hash": "1ed6b759e11ba0ff0c613b074fd02ef9a480c81127a3948db0e7e90c0d6c8961",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:peer-3c65f2bf0b74",
+    "claimHash": "62f2acc0b5aa7cb11e8861bd3dfe7a5190f94ea5f8b918cdaf0744989a833c36"
+  },
+  {
+    "id": "author-2-1-sector:year:business:wealth-742a0a6d553d",
+    "recordId": "sector:year:business:wealth",
+    "hash": "742a0a6d553d09f6142221e416249a3da79eb4b296b56fbf250d8e26a28dcba0",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:wealth-ded806c8aab9",
+    "claimHash": "5d69a8edd16391ae03913501b668c699cdcedb3c045ddf7fff24ffdbf1931eb4"
+  },
+  {
+    "id": "author-2-1-supplement:day:overall:supported-preparation-d2b68e94bd45",
+    "recordId": "supplement:day:overall:supported-preparation",
+    "hash": "d2b68e94bd457741ce54dfaa7a7cd3800885f1f35e35990ca0d490a98dbf6660",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:overall:supported-preparation-645579a39e3d",
+    "claimHash": "eccc78b98e6062c6ddd9f721650e6eb98cbcc4c9490db00c5f5b40e7f1365b5a"
+  },
+  {
+    "id": "author-2-1-supplement:year:overall:express-strong-eedcc4983a6f",
+    "recordId": "supplement:year:overall:express-strong",
+    "hash": "eedcc4983a6f562e365f8972cfbe68afaf78408202bbfb4cd1621e9929e28cdd",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:overall:express-strong-3de4b145e1fd",
+    "claimHash": "432affb0069b6ce3a19a6092a31435beeedd847e779a9412e10c7a55fbc6b2a7"
+  },
+  {
+    "id": "author-2-1-supplement:day:overall:repeat-luck-8e9078c21755",
+    "recordId": "supplement:day:overall:repeat-luck",
+    "hash": "8e9078c217557a7c5704f37c2c4c9b428060b1d7180b82148ea498b9acaee6fc",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:overall:repeat-luck-184b17bf904d",
+    "claimHash": "29767a18bb8dea9358e017705ada5388b8b750c475116c441566cd26f2fb2366"
+  },
+  {
+    "id": "author-2-1-supplement:day:overall:mixed-year-month-ebee169dcdac",
+    "recordId": "supplement:day:overall:mixed-year-month",
+    "hash": "ebee169dcdac8d39e7830af16c8af6c54aaa8673f60e3cd0e358a99adedbb8d7",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:overall:mixed-year-month-1a83b5d36034",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:month:overall:mixed-year-month-ed44451ee15c",
+    "recordId": "supplement:month:overall:mixed-year-month",
+    "hash": "ed44451ee15c8395c17a89c356d1be06489446df45a74b4ae6e041df271e8c95",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:month:overall:mixed-year-month-eda469e15758",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:day:study:mixed-year-month-a0b14a088934",
+    "recordId": "supplement:day:study:mixed-year-month",
+    "hash": "a0b14a08893480309f997b6fda621c0d8037aec8f8a16a797f8a6846db6daebc",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:study:mixed-year-month-7b3547d883b0",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:day:money:express-strong-fab747a86923",
+    "recordId": "supplement:day:money:express-strong",
+    "hash": "fab747a869237c923e97308c056b1af1741c5cf05bcca886aed65627d8ad22ed",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:money:express-strong-8b9a582cd4a7",
+    "claimHash": "432affb0069b6ce3a19a6092a31435beeedd847e779a9412e10c7a55fbc6b2a7"
+  },
+  {
+    "id": "author-2-1-supplement:day:money:mixed-year-month-59ebc7353863",
+    "recordId": "supplement:day:money:mixed-year-month",
+    "hash": "59ebc73538633c5776e6f8926b0c94b13b00b6f45e5e438d11573ff15f887188",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:money:mixed-year-month-f684115a216c",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:day:health:supported-preparation-6a1f308d80b4",
+    "recordId": "supplement:day:health:supported-preparation",
+    "hash": "6a1f308d80b4b5b72c671ac1ae90e1305ef03abaebbf1952c0e738e3ab515ad0",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:health:supported-preparation-329f94cb42d8",
+    "claimHash": "19a761ed7bac36b99c34f10038221aa4b378e58aa67be4529888689c4d272cb4"
+  },
+  {
+    "id": "author-2-1-supplement:day:health:repeat-day-60af91a6b0b7",
+    "recordId": "supplement:day:health:repeat-day",
+    "hash": "60af91a6b0b79fb95c0b747e26f2b69dcfb11b9c483b0d5ced249a19a9700b8e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:health:repeat-day-45d3e7830a16",
+    "claimHash": "9897ce484803e81e4d0ff6a9a9e51c495a47f0fb122b6a098acdb08f706fc356"
+  },
+  {
+    "id": "author-2-1-supplement:day:health:repeat-luck-356df042b343",
+    "recordId": "supplement:day:health:repeat-luck",
+    "hash": "356df042b34388885c8bbe62a052334d44a3c171d98320493b71055a90536d52",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:health:repeat-luck-41bdb3d56f06",
+    "claimHash": "29767a18bb8dea9358e017705ada5388b8b750c475116c441566cd26f2fb2366"
+  },
+  {
+    "id": "author-2-1-supplement:day:health:mixed-year-month-11298041bc31",
+    "recordId": "supplement:day:health:mixed-year-month",
+    "hash": "11298041bc31f3d9fa21bfd1ef7e76f878e628307fd858dd51aef59e16bbc7d7",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:health:mixed-year-month-76602542ddcf",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:year:health:mixed-year-month-6112ddbc2676",
+    "recordId": "supplement:year:health:mixed-year-month",
+    "hash": "6112ddbc267651c49b6c316f1f886ef7fb38c23bb847b2bfcd7a0d46e6aee503",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:health:mixed-year-month-114b7834af0a",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:day:love:express-strong-48bbc6fb5e3e",
+    "recordId": "supplement:day:love:express-strong",
+    "hash": "48bbc6fb5e3e6ea99de4992af4c2aec7c51dbbc443b9fbc12d3ec1296a33c779",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:love:express-strong-4df532b64fe3",
+    "claimHash": "432affb0069b6ce3a19a6092a31435beeedd847e779a9412e10c7a55fbc6b2a7"
+  },
+  {
+    "id": "author-2-1-supplement:day:love:repeat-luck-5f5820f12e58",
+    "recordId": "supplement:day:love:repeat-luck",
+    "hash": "5f5820f12e58adda95f80061cba4b8c2c73a8fbe453e0907e6bde0385e4d6576",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:love:repeat-luck-11e6e5769e79",
+    "claimHash": "29767a18bb8dea9358e017705ada5388b8b750c475116c441566cd26f2fb2366"
+  },
+  {
+    "id": "author-2-1-supplement:day:love:mixed-year-month-89d02eb61cfa",
+    "recordId": "supplement:day:love:mixed-year-month",
+    "hash": "89d02eb61cfa0f4d0f33c08b0675e0cd79a4ba59bf8a512a03004cbdea5edf8a",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:love:mixed-year-month-4e546c0b0ca5",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:year:business:supported-preparation-861ab601fa46",
+    "recordId": "supplement:year:business:supported-preparation",
+    "hash": "861ab601fa46149ef1a04a12e88f7a3d8585ee3ffb7696b5deb9074c47d450b5",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:business:supported-preparation-e49d8c43bcf9",
+    "claimHash": "4422e132d0f83ed51b6407b671096fa51afa6afc5adbc83e84b576f67af16f63"
+  },
+  {
+    "id": "author-2-1-supplement:year:business:express-strong-ddf7d8b47498",
+    "recordId": "supplement:year:business:express-strong",
+    "hash": "ddf7d8b47498adcc149d9a203685527d5d9a7c2026b61d67bbe7617a88189571",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:business:express-strong-8a6b930c01e2",
+    "claimHash": "432affb0069b6ce3a19a6092a31435beeedd847e779a9412e10c7a55fbc6b2a7"
+  },
+  {
+    "id": "author-2-1-supplement:day:business:repeat-luck-8732aba62461",
+    "recordId": "supplement:day:business:repeat-luck",
+    "hash": "8732aba62461b50046948b44cb76d5ba740f9fb528bddb0e79f4dfa4fcbc00b0",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:business:repeat-luck-dbed5118bc63",
+    "claimHash": "29767a18bb8dea9358e017705ada5388b8b750c475116c441566cd26f2fb2366"
+  },
+  {
+    "id": "author-2-1-supplement:month:business:mixed-year-month-6ff8fbb0e3a8",
+    "recordId": "supplement:month:business:mixed-year-month",
+    "hash": "6ff8fbb0e3a8150e7177132d912152da8223d8cdb02874d3a1cdb7210d17e60f",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:month:business:mixed-year-month-419844a4a558",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-sector:day:study:detail-09-a16329cf8bec",
+    "recordId": "sector:day:study:detail-09",
+    "hash": "a16329cf8bec74004d1d07503c6e437e91d657b91b13e26074c25aaf5334b80d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:study:detail-09-b33d0dd6bb3c",
+    "claimHash": "06b566ed23cc88c30ae9b2868d517568dadf9ee315e3e879d8b5d4bbb0236770"
+  },
+  {
+    "id": "author-2-1-sector:day:study:detail-12-94d9f5f8ef76",
+    "recordId": "sector:day:study:detail-12",
+    "hash": "94d9f5f8ef76765a6cc8a57623bf676c65d6ca2382e5a63b48178ddabd8da33f",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:study:detail-12-d782593b5340",
+    "claimHash": "af3c43e02877fe52f15f71403861b4955514e855f6418a0f6e724bb590990633"
+  },
+  {
+    "id": "author-2-1-sector:day:money:detail-03-7da8ac279331",
+    "recordId": "sector:day:money:detail-03",
+    "hash": "7da8ac279331a14d407ec8076d046f4ff6f7d74bc6bc434138eca6c7e9419885",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:money:detail-03-962ffe91311d",
+    "claimHash": "0fc66c10bb1314b3d7f0528e25e27549027eb8c11c050b967f1ced61651091f2"
+  },
+  {
+    "id": "author-2-1-sector:day:money:detail-04-81451c447dcf",
+    "recordId": "sector:day:money:detail-04",
+    "hash": "81451c447dcf4aecc7cffa18708ddfa81ce7858b4d2f29be81003bb8ab9d95b5",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:money:detail-04-18a29f716b46",
+    "claimHash": "fe707490d34d73ef57edc2cd1fb4fdfbebe6efb6246b729bf94a5530957c853d"
+  },
+  {
+    "id": "author-2-1-sector:year:money:detail-04-74c3bbb34015",
+    "recordId": "sector:year:money:detail-04",
+    "hash": "74c3bbb34015cece426d457c0380560caee4bf58fe69256f64ade70b3d4f8a36",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:money:detail-04-e6ded50851d5",
+    "claimHash": "fe707490d34d73ef57edc2cd1fb4fdfbebe6efb6246b729bf94a5530957c853d"
+  },
+  {
+    "id": "author-2-1-sector:month:money:detail-12-be0979b14de9",
+    "recordId": "sector:month:money:detail-12",
+    "hash": "be0979b14de9a18e0065cd2775d162c7cd4cce421e36f0d584725ab3e1743908",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:money:detail-12-aeea77832be3",
+    "claimHash": "0157e4f29bf35a572dcaeaa650b24306cf486025e58efadb0f9ad1ba62bfaa36"
+  },
+  {
+    "id": "author-2-1-sector:day:business:detail-03-758450ce738b",
+    "recordId": "sector:day:business:detail-03",
+    "hash": "758450ce738b2187036511c7c9f5e6fd3acf82460578a7d5d484daace28d9dd6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:business:detail-03-b2342bacdf35",
+    "claimHash": "8d23e82a7b3d5b867c75147f9a046fb39e246e883e5d2252c700f50b576863ae"
+  },
+  {
+    "id": "author-2-1-sector:year:business:detail-03-ef50c2267256",
+    "recordId": "sector:year:business:detail-03",
+    "hash": "ef50c2267256be9dffc8151c0ec9481ef6fee44d7a7019fffdd6a942945b9f86",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:detail-03-fdd9c2e42189",
+    "claimHash": "8d23e82a7b3d5b867c75147f9a046fb39e246e883e5d2252c700f50b576863ae"
+  },
+  {
+    "id": "author-2-1-sector:day:business:detail-06-78b80e6dba70",
+    "recordId": "sector:day:business:detail-06",
+    "hash": "78b80e6dba70221b5a78509c24723fc9a0845372db94386eff6660faa6d037df",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:business:detail-06-40824d2b2352",
+    "claimHash": "69fab987313d952679e020447e73b0ffbd7c1fb45238a81ac31c4e2e5347e416"
+  },
+  {
+    "id": "author-2-1-sector:year:business:detail-10-d0b418390222",
+    "recordId": "sector:year:business:detail-10",
+    "hash": "d0b418390222589bbd8bcf23475947bf52cb0e1ac19d78a37b3a76520a1407c9",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:business:detail-10-3aab569e7930",
+    "claimHash": "81abcee350a461ad86871a5ac639253ce74d6c13fb1ff80ee002318dc137d06a"
+  },
+  {
+    "id": "author-2-1-sector:day:business:detail-12-0a31a3ee3b05",
+    "recordId": "sector:day:business:detail-12",
+    "hash": "0a31a3ee3b05440f1c9cab0487b34057cbc2d0bcd9b30ab6fd45e421cd5190cd",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:business:detail-12-1d7039f2e35f",
+    "claimHash": "61b88731c10f0abb7e65276a3bbd49a50ed7b99ba6eff574824c479cf1943fd0"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-01-fb2f6287cbfd",
+    "recordId": "sector:year:health:detail-01",
+    "hash": "fb2f6287cbfd5764465fd2bd00d93b9e37d94b0712b4e1156eaf4f20485c1206",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-01-1f1ce330e280",
+    "claimHash": "12f1690e0c002063d4b9be983398de2a35d5ee0ca53d170bbeb7b43c09d0a0a8"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-02-123a8b84a45a",
+    "recordId": "sector:day:health:detail-02",
+    "hash": "123a8b84a45a31263ae91155d3c04dd36c9c6d46d54bcd199f966a45d6cc5987",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-02-a8242c061904",
+    "claimHash": "eee3491cc6442c7e48f1be26258b95c90d8c909ac793885d638b0959afc974cd"
+  },
+  {
+    "id": "author-2-1-sector:month:health:detail-02-f56e72fa8cd4",
+    "recordId": "sector:month:health:detail-02",
+    "hash": "f56e72fa8cd4cc37625d251d9cc88caefbf087f4854e2c5867f8653fb96e3df6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:detail-02-3db639a01ea3",
+    "claimHash": "eee3491cc6442c7e48f1be26258b95c90d8c909ac793885d638b0959afc974cd"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-02-3a1d45e0f0bd",
+    "recordId": "sector:year:health:detail-02",
+    "hash": "3a1d45e0f0bd58f31d6c2e973f3d6d474cb8d700e98b5570d9ce0f101e598fb5",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-02-6cbe52aa7fe9",
+    "claimHash": "eee3491cc6442c7e48f1be26258b95c90d8c909ac793885d638b0959afc974cd"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-03-4177845f6fe7",
+    "recordId": "sector:year:health:detail-03",
+    "hash": "4177845f6fe7e4ba2afb7f7948836ea103e2578ecd5cb330b54481ada5092e10",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-03-4cdac5ca5bd6",
+    "claimHash": "c9e1fcd4e06c3c641ff97e7ceaabb5a22b4a613ee5df3782f40f65410c62b256"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-04-22b55ab0c6a4",
+    "recordId": "sector:year:health:detail-04",
+    "hash": "22b55ab0c6a4ede4b7e03ffd401198ff6b41a61863e9b400c6f191ea33c5cd17",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-04-7b41143ddd9b",
+    "claimHash": "caa13a75b5b80b300d1a716d109bcd1012a96186033ce6d25bdda68ad6225f58"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-05-6d918fbd90d5",
+    "recordId": "sector:day:health:detail-05",
+    "hash": "6d918fbd90d57ac22d988fb886eebc161850f12ba1500fe46a310183a38d4a88",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-05-73d41d8d0ff6",
+    "claimHash": "260e33e9d2264432c77635db57397a529b8433c8215352d5dd1f975b4e40b58b"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-05-20044496027c",
+    "recordId": "sector:year:health:detail-05",
+    "hash": "20044496027c87022b2925972fdd2d94f46325d8859f326ed910a9a3fcac6be7",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-05-af21b6c2d861",
+    "claimHash": "260e33e9d2264432c77635db57397a529b8433c8215352d5dd1f975b4e40b58b"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-06-a47530d5b8bd",
+    "recordId": "sector:day:health:detail-06",
+    "hash": "a47530d5b8bd403397c12e0be9865d6eede9595822394a017b5ae768b5fd4dba",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-06-0c98dfd5bfaf",
+    "claimHash": "4f40298c38c8ea10ed8803f258421a311131e0ab638286adfd6d8ef007198dbb"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-06-090d8d7d8c27",
+    "recordId": "sector:year:health:detail-06",
+    "hash": "090d8d7d8c2785ccbcad522de14f2916ff69d884429f43465e6fc548b832e5f4",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-06-d7d2cd6e5e39",
+    "claimHash": "4f40298c38c8ea10ed8803f258421a311131e0ab638286adfd6d8ef007198dbb"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-07-2c4373119f1c",
+    "recordId": "sector:year:health:detail-07",
+    "hash": "2c4373119f1c83171e1866ebc9ccc7d6627231d81dc5bc43ffda94d02917aeb0",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-07-44b8cf67650c",
+    "claimHash": "82d62a2df0a5e23ccb1a02d7ce4a1c5e85d39d01d35a8e496d65ce70a838bb7b"
+  },
+  {
+    "id": "author-2-1-sector:month:health:detail-08-ad1303689a08",
+    "recordId": "sector:month:health:detail-08",
+    "hash": "ad1303689a08449265ac9935be463484a828447ac7be10f7e52edb0f7f146b51",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:detail-08-623c853dd7fa",
+    "claimHash": "54800bd6fe40dabfe0390f239f836de53ace57c023f285386d667114cb663668"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-08-84720847ac6e",
+    "recordId": "sector:year:health:detail-08",
+    "hash": "84720847ac6e5d54f38dacb0feb3482941fd249757fb9873a64adfddc30a58c9",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-08-eb9ce85502ab",
+    "claimHash": "54800bd6fe40dabfe0390f239f836de53ace57c023f285386d667114cb663668"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-09-e301a808823e",
+    "recordId": "sector:day:health:detail-09",
+    "hash": "e301a808823e50415d5a971d8673da3865cdcce9e43fbf433a79f87a9d313bd6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-09-0122e533be15",
+    "claimHash": "bafb6f8ff59769d05d3cecfbaed22dba2831e4d5959f381daae081e462ce97aa"
+  },
+  {
+    "id": "author-2-1-sector:month:health:detail-09-5f8660b1e52d",
+    "recordId": "sector:month:health:detail-09",
+    "hash": "5f8660b1e52d403e29bd39dd53c7b68bee91bec2b4906560d3b4156842ae0cbf",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:detail-09-930fe8d94e49",
+    "claimHash": "bafb6f8ff59769d05d3cecfbaed22dba2831e4d5959f381daae081e462ce97aa"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-09-565a0c23ce5f",
+    "recordId": "sector:year:health:detail-09",
+    "hash": "565a0c23ce5f7c04af8034b3f18b54005f10751095e7716f7b83b2c6bfbb3d06",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-09-af9990bc4a29",
+    "claimHash": "bafb6f8ff59769d05d3cecfbaed22dba2831e4d5959f381daae081e462ce97aa"
+  },
+  {
+    "id": "author-2-1-sector:month:health:detail-10-898b83472e61",
+    "recordId": "sector:month:health:detail-10",
+    "hash": "898b83472e614ca2799e6a702185d8d7f754bb36eed19f1738729cac0f0f7787",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:health:detail-10-77f17f68799f",
+    "claimHash": "6fcc5300fd9c7c0c8cb9981f21b2d33182a247c6f48272f9e31dd30d55b0e212"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-10-006541f67a37",
+    "recordId": "sector:year:health:detail-10",
+    "hash": "006541f67a37bbb6f36dabd8089720dfba0bfca14259afc66192c95cf884172e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-10-cface0ca0469",
+    "claimHash": "6fcc5300fd9c7c0c8cb9981f21b2d33182a247c6f48272f9e31dd30d55b0e212"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-11-18f6c36afd15",
+    "recordId": "sector:day:health:detail-11",
+    "hash": "18f6c36afd15095b0323fca348691f7b0c97011e99440827f103c73b12385f63",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-11-d74139942fc7",
+    "claimHash": "bb48cf18d785445baca86054f8181c7a32d3b1ec17599b4529e28e4b08320838"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-11-00de6d246714",
+    "recordId": "sector:year:health:detail-11",
+    "hash": "00de6d246714609731d8128a5a4020110e933523e9789464b77de541a7373120",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-11-2a3b1b7c8b1b",
+    "claimHash": "bb48cf18d785445baca86054f8181c7a32d3b1ec17599b4529e28e4b08320838"
+  },
+  {
+    "id": "author-2-1-sector:year:health:detail-12-d1e52614400f",
+    "recordId": "sector:year:health:detail-12",
+    "hash": "d1e52614400fcb179721da252760a238e4eaa04f20d37aaeb988660d8568bee8",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:health:detail-12-61188cdd0d3f",
+    "claimHash": "c81040d89a26c0a83644872042dbda86707d5f05383bb5f06012205967e91789"
+  },
+  {
+    "id": "author-2-1-sector:month:overall:detail-02-f3fca15eadf8",
+    "recordId": "sector:month:overall:detail-02",
+    "hash": "f3fca15eadf8f620042476959ea288ecba1c7f059beecab86c05f4067349db4a",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:month:overall:detail-02-4b713468e527",
+    "claimHash": "ed6f0fb30b543c7e61e4b8ea302555830c066218c51755c9d48665294cda59ba"
+  },
+  {
+    "id": "author-2-1-sector:day:overall:detail-03-f3d2279a5b11",
+    "recordId": "sector:day:overall:detail-03",
+    "hash": "f3d2279a5b111f04c3b7764df6fb2febedf2e3796fcf72defa14c8afeeee457f",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:overall:detail-03-cf94beb7d1b7",
+    "claimHash": "413ab0c19ab8a45b6087ff94c5e051ee9487e397b5261ef511ede4b295c31863"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:detail-03-f9d44860df26",
+    "recordId": "sector:year:overall:detail-03",
+    "hash": "f9d44860df269ae35d4603540b13ca39527e39dd23aa3b5a6aef9975764f1449",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:detail-03-63dfa0991cdb",
+    "claimHash": "413ab0c19ab8a45b6087ff94c5e051ee9487e397b5261ef511ede4b295c31863"
+  },
+  {
+    "id": "author-2-1-sector:day:overall:detail-06-2a9c87a6fe42",
+    "recordId": "sector:day:overall:detail-06",
+    "hash": "2a9c87a6fe4232de64e66abb61b1dc8754392d1631262968901b19a832b10d75",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:overall:detail-06-188fa8bd115e",
+    "claimHash": "f91aee102327f0efc1d016d9880246a4f64b3c255762edc61c3b3de971d9bd16"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:detail-11-013cb419d33c",
+    "recordId": "sector:year:overall:detail-11",
+    "hash": "013cb419d33c73e39ff678656a2b4826fb4d4e9f344f976c01fbbe9e66e141a7",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:detail-11-97ebf49050f1",
+    "claimHash": "9f69a5cd2e03222c4012d0094db59ac4aebab6a8bb41434c64dc24762177a82a"
+  },
+  {
+    "id": "author-2-1-sector:year:overall:detail-12-cbd13220f1ba",
+    "recordId": "sector:year:overall:detail-12",
+    "hash": "cbd13220f1ba1a8851ce89db6cd0946f9e8710d0207ae19bce17a540014e999b",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:year:overall:detail-12-c8ce200e386f",
+    "claimHash": "1346c4e966b2f7dc6086a1b4c503def71f651c16d17e3d0f57a25b836e5bcb25"
+  },
+  {
+    "id": "author-2-1-schedule:general:0-f1c1fda0a5e2",
+    "recordId": "schedule:general:0",
+    "hash": "f1c1fda0a5e273d5a7b2abc8f2abd7d9ef4b5f03edd1fe80efc737f237b7705d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:general:0-4e6e4a342803",
+    "claimHash": "94429c4e589890bcb3b91b66d0ad8d60308b5fdfa7bf1ed427b4e86cf3f2e591"
+  },
+  {
+    "id": "author-2-1-schedule:general:1-98a727955cba",
+    "recordId": "schedule:general:1",
+    "hash": "98a727955cba224ecd141aeea0ff186aa2caa4e90165743aa5684d29735633d1",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:general:1-3976b4b3ae27",
+    "claimHash": "04c39757fcaa143e30fe5c2bdeb86f8fa6398fcbfc6a96e03f15e79184309f72"
+  },
+  {
+    "id": "author-2-1-schedule:general:3-10fbb76e8994",
+    "recordId": "schedule:general:3",
+    "hash": "10fbb76e89940470644de1b1101e74796c8bcf0135231ce3137806d3643b7357",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:general:3-ff3fb597aae6",
+    "claimHash": "5a7f99c976e84b5d3450bf3e66e04949d7bdbba68b20238dad674704968ad08c"
+  },
+  {
+    "id": "author-2-1-schedule:general:5-1d02135381ac",
+    "recordId": "schedule:general:5",
+    "hash": "1d02135381ac128da52ea5860ae1f3bdb3c0bb79eb94b73262d0032a3a83194c",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:general:5-32618b90c830",
+    "claimHash": "9568e4a1d26362cc6f6bf5d539d4d4bdbf9dcbca7bf1830e6e1ae982441a6582"
+  },
+  {
+    "id": "author-2-1-schedule:interview:0-605791c2ea5b",
+    "recordId": "schedule:interview:0",
+    "hash": "605791c2ea5b53461ef55b9a828419d7a5cc0641b2613cccbae568303d84f8b1",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:interview:0-1b3d22e15349",
+    "claimHash": "94429c4e589890bcb3b91b66d0ad8d60308b5fdfa7bf1ed427b4e86cf3f2e591"
+  },
+  {
+    "id": "author-2-1-schedule:interview:2-811d023f08e4",
+    "recordId": "schedule:interview:2",
+    "hash": "811d023f08e478b338cfc64017bb8e364874cb216fcfa85a873efa0658fc9f5d",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:interview:2-e25001cb07b1",
+    "claimHash": "b6f0e16354e10347f7de9e2c296c2d6b8e481f3079ebc4ca15e1b510eb4f3b59"
+  },
+  {
+    "id": "author-2-1-schedule:interview:4-aa99ce29fad8",
+    "recordId": "schedule:interview:4",
+    "hash": "aa99ce29fad8ef0aeb4abd7f3a7d496dabe0637f09671e391576ed3c4beed701",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:interview:4-aca41529b117",
+    "claimHash": "3fa40ee2650673ae8b55d1286c8c1487dabac6f4a80a711cd7ce2bc5616e96be"
+  },
+  {
+    "id": "author-2-1-schedule:exam:0-cc43291402a3",
+    "recordId": "schedule:exam:0",
+    "hash": "cc43291402a30db20e3b831f3b67642b147ebc4b1bcc2d5486af7a7078b48a5e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:exam:0-ca5a397f419c",
+    "claimHash": "94429c4e589890bcb3b91b66d0ad8d60308b5fdfa7bf1ed427b4e86cf3f2e591"
+  },
+  {
+    "id": "author-2-1-schedule:presentation:0-a5d18e80e0fd",
+    "recordId": "schedule:presentation:0",
+    "hash": "a5d18e80e0fd55df381176d2cf59c70157145f01e0a64c5c5bb06502b5445c93",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:presentation:0-8bb4cd826dd2",
+    "claimHash": "94429c4e589890bcb3b91b66d0ad8d60308b5fdfa7bf1ed427b4e86cf3f2e591"
+  },
+  {
+    "id": "author-2-1-schedule:presentation:1-3ba430ac05ba",
+    "recordId": "schedule:presentation:1",
+    "hash": "3ba430ac05bad8882331bfb40dea8ea141ef249b6873bca479d57c7383b5e2c6",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:presentation:1-4ef88e3cf480",
+    "claimHash": "04c39757fcaa143e30fe5c2bdeb86f8fa6398fcbfc6a96e03f15e79184309f72"
+  },
+  {
+    "id": "author-2-1-schedule:contract:0-a7bc58ad0a23",
+    "recordId": "schedule:contract:0",
+    "hash": "a7bc58ad0a23f8501c07c17ca4a6172139097f9687beb8b56278d111b622331f",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-schedule:contract:0-acf375e23a96",
+    "claimHash": "94429c4e589890bcb3b91b66d0ad8d60308b5fdfa7bf1ed427b4e86cf3f2e591"
+  },
+  {
+    "id": "author-2-1-supplement:day:overall:mixed-year-month-8752b79a6aa4",
+    "recordId": "supplement:day:overall:mixed-year-month",
+    "hash": "8752b79a6aa48a152dec51c852bc5d02fb1073949990b361ef01b3005f7050cd",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:day:overall:mixed-year-month-ebee169dcdac",
+    "claimHash": "5bb76aeaec228bc1d0a4db5bb660357865104cc82c15c96804ca8b6ebdafed93"
+  },
+  {
+    "id": "author-2-1-supplement:year:health:repeat-day-09da5e81ac3e",
+    "recordId": "supplement:year:health:repeat-day",
+    "hash": "09da5e81ac3e721c8090bd2f0a80d2e288b54ad6c83246568880e6e89536ffcb",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:health:repeat-day-acea3f5fd686",
+    "claimHash": "9897ce484803e81e4d0ff6a9a9e51c495a47f0fb122b6a098acdb08f706fc356"
+  },
+  {
+    "id": "author-2-1-supplement:year:business:repeat-day-0875bf75546f",
+    "recordId": "supplement:year:business:repeat-day",
+    "hash": "0875bf75546f66ef09d9bdba9f27423501395b06ed69175efa13b4bb8eb3e54e",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-supplement:year:business:repeat-day-fc71665bef58",
+    "claimHash": "9897ce484803e81e4d0ff6a9a9e51c495a47f0fb122b6a098acdb08f706fc356"
+  },
+  {
+    "id": "author-2-1-sector:day:health:detail-05-9b56d7fcb6a9",
+    "recordId": "sector:day:health:detail-05",
+    "hash": "9b56d7fcb6a9df3e0d0a28bc1725f1f21ff61d496d179766c3e55fa91b2d82f2",
+    "date": "2026-10-31",
+    "status": "author-reviewed-pending-independent",
+    "reviewer": "implementation-author",
+    "supersedes": "author-2-1-sector:day:health:detail-05-6d918fbd90d5",
+    "claimHash": "260e33e9d2264432c77635db57397a529b8433c8215352d5dd1f975b4e40b58b"
   }
 ]

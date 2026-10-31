@@ -126,7 +126,7 @@ for(const dayMasterKnown of [false,true])for(const kind of ['year','month','day'
  const state=dayMasterKnown?'known':'unknown';await page.setViewportSize({width:390,height:900});await page.clock.install({time:new Date('2026-12-31T03:00:00Z')});await page.goto(`/fortune/${kind}/`);await fillBirth(page,dayMasterKnown?{knownTime:true}:{year:'1987',month:'6',day:'1'});await submit(page);
  const details=page.locator('.sector-segments');const states=()=>page.locator('details.disclosure').evaluateAll(es=>es.map(e=>(e as HTMLDetailsElement).open));const before=await states();expect(before.every(open=>!open)).toBe(true);await fs.mkdir('reports/print',{recursive:true});await page.pdf({path:`reports/print/period-${kind}-${state}.pdf`,format:'A4',printBackground:true});expect(await states()).toEqual(before);
  await expect(details).toHaveCount(0);
- if(dayMasterKnown){await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('[data-testid="radar-shape"]')).toBeVisible();await expect(page.locator('.sector-bodies')).not.toContainText('일간이 미확정');}else{await expect(page.locator('.sector-bodies')).toContainText('일간이 미확정');await expect(page.locator('[data-testid="radar-shape"]')).toHaveCount(0);await expect(page.locator('.sector-experience')).toContainText('출생 시각에 따라');}
+ if(dayMasterKnown){await expect(page.locator('.sector-body')).toHaveCount(6);await expect(page.locator('[data-testid="radar-shape"]')).toBeVisible();await expect(page.locator('.sector-bodies')).not.toContainText('일간이 미확정');}else{await expect(page.locator('.sector-bodies')).toContainText('일간이 미확정');await expect(page.locator('[data-testid="radar-shape"]')).toHaveCount(0);await expect(page.locator('.sector-experience')).toContainText('한국 표준시로 바꾸면 날짜가 달라질 수 있어요.');}
 });
 
 test('year result labels the selected calendar year without exposing internal boundary timestamps',async({page})=>{
@@ -201,7 +201,7 @@ test('200% zoom equivalent CSS viewport reflows to two columns',async({page})=>{
 test('DST gaps and folds are explicit errors; unknown DST day stays limited',async({page})=>{
   await page.goto('/fortune/saju/');await fillBirth(page,{year:'1987',month:'5',day:'10',knownTime:true});await page.getByLabel('시 (0~23)',{exact:true}).fill('2');await page.getByRole('button',{name:/무료로 .* 보기/}).click();await expect(page.locator('main').getByRole('alert')).toContainText('존재하지 않는 시각');
   await page.getByLabel('태어난 연도',{exact:true}).fill('1988');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('10');await page.getByLabel('일',{exact:true}).fill('9');await page.getByRole('button',{name:/무료로 .* 보기/}).click();await expect(page.locator('main').getByRole('alert')).toContainText('두 번 존재');
-  await page.getByLabel('시간 모름',{exact:true}).check();await submit(page);await expect(page.locator('.natal-table')).toContainText('미확정');await expect(page.locator('main')).toContainText('일주도 미확정');
+  await page.getByLabel('시간 모름',{exact:true}).check();await submit(page);await expect(page.locator('.natal-table')).toContainText('미확정');await expect(page.locator('main')).toContainText('태어난 날의 기둥(일주)을 하나로 정할 수 없어');
 });
 test('unknown lichun date never invents year or month',async({page})=>{
   await page.goto('/fortune/saju/');await fillBirth(page,{year:'2024',month:'2',day:'4'});await submit(page);await expect(page.locator('.natal-table')).toContainText('미확정');expect(await page.locator('.natal-table .element-cell').count()).toBe(2);

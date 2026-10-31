@@ -10,7 +10,7 @@ const schema=z.object({
 }).strict();
 export function validateBirth(value:unknown,clock?:Clock):BirthInput {
   const parsed=schema.safeParse(value);
-  if(!parsed.success){const first=parsed.error.issues[0];throw new InputError('입력 범위를 확인해 주세요. 날짜는 숫자로, 시각은 00:00~23:59로 입력해 주세요.',String(first.path[0]||'year'));}
+  if(!parsed.success){const first=parsed.error.issues[0];throw new InputError(first.path[0]==='nickname'?'이름은 20자 이하의 문자로 입력해 주세요.':'입력 범위를 확인해 주세요. 날짜는 숫자로, 시각은 00:00~23:59로 입력해 주세요.',String(first.path[0]||'year'));}
   const input=parsed.data;
   if(!input.unknownTime && (input.hour===undefined || input.minute===undefined)) throw new InputError('태어난 시와 분을 입력하거나 시간 모름을 선택해 주세요.','hour');
   if(input.calendar==='solar' && input.leap) throw new InputError('윤달은 음력에서만 선택할 수 있어요.','day');

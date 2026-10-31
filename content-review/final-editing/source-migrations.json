@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0",
+  "version": "2.4.2",
   "historicalBaselinesRetained": true,
   "sources": [
     {
@@ -7,8 +7,8 @@
       "beforeHashes": [
         "bbf9dc0892f158e494336cce175732a9f9fdaf2479e375cc8df901bcec0745b0"
       ],
-      "afterHash": "aa13f8d7fa17a7feac18f0a2819a8ab3e374d0e05f4ae3475c3551754dee2344",
-      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+      "afterHash": "e3ec0cd946dcb3e43de75e929db6ad78ae4dc25ecead0876ff3923930b98200c",
+      "reason": "2.4.2 탐색 검토: 조건·점수·미확정 정책을 보존한 문장 교정 또는 현재 원고의 작성자 검토 이력 추가. 이전 원문·이력과 source-migrations-before.json을 보존."
     },
     {
       "path": "src/content/element-explanations.json",
@@ -39,16 +39,16 @@
       "beforeHashes": [
         "70685de92311df39f37fdc57c0652c92f81cd300de98a30541212ecb308a2edb"
       ],
-      "afterHash": "ad9dd5ce2047d2bcaa1208357acb7d29995c2063f28da8a1ec1b429f99394135",
-      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+      "afterHash": "e2719a9164e510738304ba4c25463f88e87ce7216208eb808f9f82e634b9e9e9",
+      "reason": "2.4.2 탐색 검토: 조건·점수·미확정 정책을 보존한 문장 교정 또는 현재 원고의 작성자 검토 이력 추가. 이전 원문·이력과 source-migrations-before.json을 보존."
     },
     {
       "path": "content-review/review-snapshots.json",
       "beforeHashes": [
         "328bfbed1fcd4b51cfb7085facc284ed8ed9ee8947000b157a059bcd151753ed"
       ],
-      "afterHash": "d5fc85e514832dc60907bea2a7692e1b7958fbaf45e8be6774da6b886ba85eb1",
-      "reason": "전수 문장 교정 및 현재 해시 재검토 이력. 과거 이력은 수정하지 않음."
+      "afterHash": "5e1cb437128eb90acb9e7716c28ff32db815136e766839a0b4e386779ce35502",
+      "reason": "2.4.2 탐색 검토: 조건·점수·미확정 정책을 보존한 문장 교정 또는 현재 원고의 작성자 검토 이력 추가. 이전 원문·이력과 source-migrations-before.json을 보존."
     },
     {
       "path": "src/components/SessionProvider.tsx",
@@ -57,6 +57,15 @@
       ],
       "afterHash": "0c5840123a6cfc1a90411ea775e7b057b0c488fc957a53ccd882a1d598822b20",
       "reason": "두 사람 입력과 조회 연도는 메모리에만 보관. 공개 입력을 한국 표준시로 통일하며 남은 보정 상태는 원국·본문을 함께 재계산하고 한 번 안내. 저장·삭제 정책 유지."
+    },
+    {
+      "path": "src/lib/validation.ts",
+      "beforeHashes": [
+        "d892eddef889fbb3311f2f2d0174edc1a2522dc200cd9ce9b05a127697ea7e53"
+      ],
+      "afterHash": "7c5c1514f4a4eeba533123b23bdcbe50a1b0a0932ea88a5a59035c0f4d207523",
+      "reason": "이름 길이 오류만 날짜·시각 안내 대신 이름 20자 제한으로 설명. 검증 스키마·허용 범위·날짜·시각 처리·개인정보 정책은 그대로 유지. 실제 21자 강제 입력 후 복구를 브라우저에서 확인."
     }
-  ]
+  ],
+  "previousManifest": "content-review/exploratory-2.5.2/source-migrations-before.json"
 }
