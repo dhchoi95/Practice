@@ -86,10 +86,10 @@ test('result reload and direct entry show memory-only recovery guidance',async({
 });
 test('generic sharing: Web Share success, cancellation, clipboard and manual fallback',async({page})=>{
   await birthResult(page);const button=page.getByRole('button',{name:/이 운세 메뉴 공유하기/});
-  await page.evaluate(()=>Object.defineProperty(navigator,'share',{configurable:true,value:async(data:{title:string;url:string})=>{window.__shared=data;}}));await button.click();await expect(page.getByRole('status')).toHaveText('운세 메뉴를 공유했어요.');expect((await page.evaluate(()=>window.__shared))?.url).toBe('http://127.0.0.1:3000/fortune/saju/');
+  await page.evaluate(()=>Object.defineProperty(navigator,'share',{configurable:true,value:async(data:{title:string;url:string})=>{window.__shared=data;}}));await button.click();await expect(page.getByRole('status')).toHaveText('운세 메뉴를 공유했어요.');expect((await page.evaluate(()=>window.__shared))?.url).toBe('https://spring-voice-4bdc.eogjs9595.workers.dev/fortune/saju/');
   await page.evaluate(()=>Object.defineProperty(navigator,'share',{configurable:true,value:async()=>{throw new DOMException('cancel','AbortError');}}));await button.click();await expect(page.getByRole('status')).toHaveText('공유를 취소했어요.');
-  await page.evaluate(()=>{Object.defineProperty(navigator,'share',{configurable:true,value:undefined});Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async(url:string)=>{window.__copied=url;}}});});await button.click();await expect(page.getByRole('status')).toHaveText('이 운세의 시작 화면 링크를 복사했어요.');expect(await page.evaluate(()=>window.__copied)).toBe('http://127.0.0.1:3000/fortune/saju/');
-  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:undefined}));await button.click();await expect(page.locator('.share-fallback')).toHaveValue('http://127.0.0.1:3000/fortune/saju/');
+  await page.evaluate(()=>{Object.defineProperty(navigator,'share',{configurable:true,value:undefined});Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async(url:string)=>{window.__copied=url;}}});});await button.click();await expect(page.getByRole('status')).toHaveText('이 운세의 시작 화면 링크를 복사했어요.');expect(await page.evaluate(()=>window.__copied)).toBe('https://spring-voice-4bdc.eogjs9595.workers.dev/fortune/saju/');
+  await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:undefined}));await button.click();await expect(page.locator('.share-fallback')).toHaveValue('https://spring-voice-4bdc.eogjs9595.workers.dev/fortune/saju/');
 });
 test('print action works and print stylesheet hides controls',async({page})=>{
   await birthResult(page);await page.evaluate(()=>{window.print=()=>{window.__printed=true;};});await page.getByRole('button',{name:'결과 인쇄하기',exact:true}).click();expect(await page.evaluate(()=>window.__printed)).toBe(true);await page.emulateMedia({media:'print'});await expect(page.locator('.site-header')).toBeHidden();await expect(page.locator('.share-panel')).toBeHidden();await expect(page.locator('.sector-bodies')).toBeVisible();await expect(page.locator('.sector-heading')).toBeVisible();
@@ -173,7 +173,7 @@ test('every static internal route can open and reload directly',async({page})=>{
 });
 test('static SEO excludes results and never fabricates canonical domain',async({page,request})=>{
   await page.goto('/result/saju/');expect(await page.locator('meta[name="robots"]').getAttribute('content')).toContain('noindex');
-  await page.goto('/');expect(await page.locator('link[rel="canonical"]').count()).toBe(0);expect(await (await request.get('/sitemap.xml')).text()).not.toContain('/result/');expect(await (await request.get('/sitemap.xml')).text()).not.toContain('example.com');
+  await page.goto('/');await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://spring-voice-4bdc.eogjs9595.workers.dev/');expect(await (await request.get('/sitemap.xml')).text()).not.toContain('/result/');expect(await (await request.get('/sitemap.xml')).text()).not.toContain('example.com');
 });
 for(const width of [320,360,375,390,430,768,1024,1440])test(`responsive home/input/result: ${width}px without horizontal overflow`,async({page})=>{
   await page.setViewportSize({width,height:900});

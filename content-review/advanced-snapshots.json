@@ -42800,5 +42800,209 @@
       "status": "implementation-edited-pending-independent-review",
       "authoringIntent": "새로 집필한 luck-background 원고예요. 적용 전제는 luck.god eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
     }
+  },
+  {
+    "hash": "d8c72c40186ffa80767bb599bc5366b311cd66c5fa5d6a7b46cbc1208a90be2f",
+    "record": {
+      "id": "period-god-1",
+      "topic": "natal-link",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "natal-link",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "비견"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "natal-link",
+      "semanticAxis": "natal-link",
+      "stance": "context-dependent",
+      "title": "혼자 정할 일과 도움받을 일",
+      "text": "원국에 같은 오행의 뿌리가 있으면 이 관계를 혼자 버티는 힘과 연결해 볼 수 있습니다. 뿌리가 없거나 강약이 미확정이면 같은 해석을 그대로 쓰지 않습니다. 도움을 거절하는 것까지 독립성으로 생각할 필요는 없습니다.",
+      "proposal": "지금 스스로 정할 일과 도움받을 일을 구별합니다.",
+      "claim": {
+        "id": "period-god-1:interpretation",
+        "strength": "candidate",
+        "text": "원국에 같은 오행의 뿌리가 있으면 이 관계를 혼자 버티는 힘과 연결해 볼 수 있습니다. 뿌리가 없거나 강약이 미확정이면 같은 해석을 그대로 쓰지 않습니다. 도움을 거절하는 것까지 독립성으로 생각할 필요는 없습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.3.0",
+      "updatedAt": "2026-10-24",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 비견 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "3a230e509fc9069e9e12f08ad738c7c22f7feb5d48aeb7060a6ff2194e9e539a",
+    "record": {
+      "id": "period-god-13",
+      "topic": "natal-link",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "natal-link",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "식신"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "natal-link",
+      "semanticAxis": "natal-link",
+      "stance": "context-dependent",
+      "title": "배우고 표현할 여유를 함께 살피기",
+      "text": "식신이 있다는 사실과 식신이 충분히 작동한다는 판단은 다릅니다. 일간의 뿌리와 생조가 약하면 계속 내놓는 일이 부담일 수도 있습니다. 원국의 지지와 인성을 함께 읽어 배움과 실행의 균형을 생각해 보십시오.",
+      "proposal": "시작할 힘이 부족하면 준비와 휴식을 먼저 챙깁니다.",
+      "claim": {
+        "id": "period-god-13:interpretation",
+        "strength": "candidate",
+        "text": "식신이 있다는 사실과 식신이 충분히 작동한다는 판단은 다릅니다. 일간의 뿌리와 생조가 약하면 계속 내놓는 일이 부담일 수도 있습니다. 원국의 지지와 인성을 함께 읽어 배움과 실행의 균형을 생각해 보십시오.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.3.0",
+      "updatedAt": "2026-10-24",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "82bdfbc3597e55fbeb2fc3fab2db6f2c99765b2045e6e81b853625b89d30a876",
+    "record": {
+      "id": "period-god-30",
+      "topic": "flow",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "flow",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "flow",
+      "semanticAxis": "flow",
+      "stance": "context-dependent",
+      "title": "시간과 비용을 얼마나 이어갈 수 있을지",
+      "text": "정해진 시간과 비용을 어떻게 이어갈지 생각하는 시기입니다. 정재는 일간이 극하는 오행 가운데 음양이 다른 관계입니다. 안정적인 수입이나 절약하는 성격이 정해졌다는 뜻은 아닙니다. 실제 생활에서 유지할 범위를 고르십시오.",
+      "proposal": "지금 유지해야 할 비용과 시간을 살핍니다.",
+      "claim": {
+        "id": "period-god-30:interpretation",
+        "strength": "candidate",
+        "text": "정해진 시간과 비용을 어떻게 이어갈지 생각하는 시기입니다. 정재는 일간이 극하는 오행 가운데 음양이 다른 관계입니다. 안정적인 수입이나 절약하는 성격이 정해졌다는 뜻은 아닙니다. 실제 생활에서 유지할 범위를 고르십시오.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.3.0",
+      "updatedAt": "2026-10-24",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 flow 원고예요. 적용 전제는 period.god eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
+  },
+  {
+    "hash": "da62fb7e5c5bca07621698d08f5cb53471959fd683a20ca5e35f0451b91cf715",
+    "record": {
+      "id": "period-god-31",
+      "topic": "natal-link",
+      "units": [
+        "year",
+        "month",
+        "day"
+      ],
+      "role": "natal-link",
+      "requires": [
+        "period.god",
+        "known.day"
+      ],
+      "premises": [
+        {
+          "feature": "period.god",
+          "op": "eq",
+          "value": "정재"
+        },
+        {
+          "feature": "known.day",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "exclusions": [],
+      "priority": 10,
+      "specificity": 2,
+      "exclusiveGroup": "natal-link",
+      "semanticAxis": "natal-link",
+      "stance": "context-dependent",
+      "title": "맡을 수 있는 책임의 범위 살피기",
+      "text": "재성이 있어도 그것을 감당할 뿌리와 생조는 따로 판단합니다. 원국에서 설기·극제가 겹치면 책임이 늘어나는 주제도 함께 살핍니다. 자원이 많아 보인다는 말만으로 좋은 구성이라고 정하지 않습니다.",
+      "proposal": "맡은 책임의 크기를 쓸 수 있는 시간과 비교합니다.",
+      "claim": {
+        "id": "period-god-31:interpretation",
+        "strength": "candidate",
+        "text": "재성이 있어도 그것을 감당할 뿌리와 생조는 따로 판단합니다. 원국에서 설기·극제가 겹치면 책임이 늘어나는 주제도 함께 살핍니다. 자원이 많아 보인다는 말만으로 좋은 구성이라고 정하지 않습니다.",
+        "sourceIds": [
+          "service-season-root-1.0"
+        ],
+        "forbiddenExtension": "실제 사건·수익·혼인·성격 확정으로 확대하지 않음"
+      },
+      "version": "2.3.0",
+      "updatedAt": "2026-10-24",
+      "status": "implementation-edited-pending-independent-review",
+      "authoringIntent": "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    }
   }
 ]

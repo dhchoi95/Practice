@@ -1,0 +1,2 @@
+import {siteConfig} from '@/config/site';
+export function SupportContact(){return <section id="contact"><h2>서비스 문의와 개인정보 요청</h2>{siteConfig.contactEmail?<><p>메뉴 이용·오류 문의와 개인정보 열람·삭제 요청은 아래 이메일로 보내 주세요. 오류 화면이나 메뉴 이름만으로 설명할 수 있다면 생년월일·사주·상담 내용은 보내지 않아도 됩니다.</p><a className="inline-link" href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a><p className="helper">이메일 앱이 열립니다. 직접 전송을 마쳐야 메일이 보내지며, 이 페이지에서는 접수 여부를 확인할 수 없어요.</p></>:<p>운영자 문의 이메일을 준비하고 있어요. 현재 사이트에는 문의를 접수하거나 메일을 보내는 기능이 없어요. 문의처와 필요한 안내를 갖춘 뒤 회원 기능을 열겠습니다.</p>}</section>;}

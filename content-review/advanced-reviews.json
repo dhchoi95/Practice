@@ -18686,5 +18686,77 @@
     "corrections": [
       "새로 집필한 luck-background 원고예요. 적용 전제는 luck.god eq 겁재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
     ]
+  },
+  {
+    "id": "author-2-0-period-god-1-d8c72c40186f-4",
+    "ruleId": "period-god-1",
+    "hash": "d8c72c40186ffa80767bb599bc5366b311cd66c5fa5d6a7b46cbc1208a90be2f",
+    "supersedes": "author-2-0-period-god-1-66ae032e3789-3",
+    "claimHashes": [
+      {
+        "id": "period-god-1:interpretation",
+        "hash": "bedaf7767114fe8799ab15479b32167928c8d05acccdb0ce913ce2b58e60f8f7"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-11-08",
+    "corrections": [
+      "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 비견 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-13-3a230e509fc9-4",
+    "ruleId": "period-god-13",
+    "hash": "3a230e509fc9069e9e12f08ad738c7c22f7feb5d48aeb7060a6ff2194e9e539a",
+    "supersedes": "author-2-0-period-god-13-1128a92c08af-3",
+    "claimHashes": [
+      {
+        "id": "period-god-13:interpretation",
+        "hash": "837b47010706da3196f6ca99aa7323d2ca873d739b8b59c44b25c37772bc17c7"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-11-08",
+    "corrections": [
+      "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 식신 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-30-82bdfbc3597e-4",
+    "ruleId": "period-god-30",
+    "hash": "82bdfbc3597e55fbeb2fc3fab2db6f2c99765b2045e6e81b853625b89d30a876",
+    "supersedes": "author-2-0-period-god-30-6a413ce4f8df-3",
+    "claimHashes": [
+      {
+        "id": "period-god-30:interpretation",
+        "hash": "33039c6495e6402d8e162b036d63ffc8d3ebd10ebe907a8b248f4350ccd90dfd"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-11-08",
+    "corrections": [
+      "새로 집필한 flow 원고예요. 적용 전제는 period.god eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
+  },
+  {
+    "id": "author-2-0-period-god-31-da62fb7e5c5b-4",
+    "ruleId": "period-god-31",
+    "hash": "da62fb7e5c5bca07621698d08f5cb53471959fd683a20ca5e35f0451b91cf715",
+    "supersedes": "author-2-0-period-god-31-c24e7e8ea4fa-3",
+    "claimHashes": [
+      {
+        "id": "period-god-31:interpretation",
+        "hash": "a1cf90fa323541134520f2c83a33dacbed4d757d8ffcdd014167e06b902dcfdd"
+      }
+    ],
+    "reviewer": "implementation-author",
+    "status": "implemented-pending-independent-review",
+    "date": "2026-11-08",
+    "corrections": [
+      "새로 집필한 natal-link 원고예요. 적용 전제는 period.god eq 정재 / known.day eq true이며, 독립 편집 승인이나 이전 원고의 교정 이력을 대신하지 않아요."
+    ]
   }
 ]

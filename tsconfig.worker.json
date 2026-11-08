@@ -1,0 +1,1 @@
+{"extends":"./tsconfig.json","compilerOptions":{"types":["@cloudflare/workers-types"],"lib":["ES2022","DOM"],"incremental":false},"include":["worker/**/*.ts","src/ai/**/*.ts"],"exclude":["node_modules"]}

@@ -1,0 +1,105 @@
+{
+  "candidateVersion": "2.5.1",
+  "contentVersion": "2.4.1",
+  "brand": "하루사주",
+  "deployment": {
+    "completed": false,
+    "url": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+    "attemptedAtUTC": "2026-10-29T23:23:16.064888+00:00",
+    "attemptedAtKST": "2026-10-30T08:23:16.064888+09:00",
+    "deployedAtKST": null,
+    "error": "Cloudflare read check failed: <urlopen error Tunnel connection failed: 403 Forbidden>",
+    "currentPublicVersion": "unverified; latest previously recorded release 2.4.1"
+  },
+  "checks": {
+    "unitIntegration": 415,
+    "aiServer": 38,
+    "browser": {
+      "basicIncludingLaunch": 96,
+      "aiLocal": 11,
+      "productionEntryLocal": 4,
+      "uniqueTotal": 111,
+      "focusedLaunchRerun": 2
+    },
+    "actualNativePDFs": 40,
+    "publicMetadataPages": 23,
+    "staticHTMLFiles": 46,
+    "staticAssets": 262,
+    "workerBundleFiles": 5,
+    "activeContentRecords": 1198,
+    "publicCodeFiles": 43,
+    "completeReadingExamples": 15,
+    "unchangedEngineFiles": 35,
+    "realOAuth": 0,
+    "realAI": 0,
+    "remoteMigrations": 0,
+    "remoteDeployments": 0
+  },
+  "featureGates": {
+    "signup": false,
+    "paidAI": false,
+    "tracking": false
+  },
+  "workerSHA256": "bd08b7f67067e6c84426f3292068e36fd2e9fcacb227e0cd258e7d2d507393f7",
+  "publicStaticAudit": {
+    "passed": true,
+    "scope": "actual local static export; public hosting not substituted",
+    "publicPages": 23,
+    "staticHTMLFiles": 46,
+    "uniqueTitles": 23,
+    "canonicalOrigin": "https://spring-voice-4bdc.eogjs9595.workers.dev",
+    "noExternalScripts": true,
+    "robotsNoindexReadable": true,
+    "allInternalStaticLinksAndAnchors": true,
+    "ogPNG": {
+      "width": 1200,
+      "height": 630
+    },
+    "brand": "하루사주",
+    "sensitiveDataAdded": false
+  },
+  "pdf": {
+    "passed": true,
+    "basicNativePDFs": 39,
+    "aiNativePDFs": 1,
+    "aiPages": 5,
+    "realAI": false,
+    "glyphsAndBounds": true,
+    "noBlankPages": true
+  },
+  "network": [
+    {
+      "url": "https://api.cloudflare.com/client/v4/",
+      "originStatus": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+      "originStatus": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://registry.npmjs.org/next",
+      "originStatus": 200,
+      "error": null
+    },
+    {
+      "url": "https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20885",
+      "originStatus": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "originStatus": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/block-indexing",
+      "originStatus": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "legalComplianceCertified": false,
+  "wcagComplianceCertified": false,
+  "realMobileDevicesTested": false
+}

@@ -1,7 +1,7 @@
 {
   "version": "2.4.1",
   "passed": true,
-  "records": 1195,
+  "records": 1198,
   "corpusCounts": {
     "sectors": 540,
     "schedules": 36,
@@ -15,12 +15,12 @@
     "interpretationBases": 25,
     "elementExplanations": 5,
     "glossary": 9,
-    "infoSections": 17,
+    "infoSections": 20,
     "sourceNotes": 5,
     "periodNotes": 3
   },
-  "publicCodeFiles": 35,
-  "checkedStrings": 32015,
+  "publicCodeFiles": 44,
+  "checkedStrings": 32302,
   "protectedEngineFiles": 35,
   "engineChecks": [
     {

@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/Leonxlnx/taste-skill",
+  "commit": "12af471f627f866411b4bd785b19646d3672784c",
+  "usage": "Project-local development skill; not a runtime dependency; hooks and telemetry not installed."
+}

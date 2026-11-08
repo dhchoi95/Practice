@@ -1,12 +1,18 @@
+const publicOrigin=process.env.NEXT_PUBLIC_SITE_URL||'https://spring-voice-4bdc.eogjs9595.workers.dev';
+const parsedOrigin=new URL(publicOrigin);
+if(parsedOrigin.protocol!=='https:'||parsedOrigin.username||parsedOrigin.password||parsedOrigin.pathname!=='/'||parsedOrigin.search||parsedOrigin.hash||/^(localhost|127\.)/.test(parsedOrigin.hostname))throw new Error('NEXT_PUBLIC_SITE_URL must be a public HTTPS origin.');
+const contactEmail=process.env.SITE_CONTACT_EMAIL||'';
+if(contactEmail&&!/^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+$/.test(contactEmail))throw new Error('SITE_CONTACT_EMAIL must contain only a valid contact email.');
 export const siteConfig = {
   name: '하루사주',
-  description: '브라우저에서 계산하는 무료 사주와 운세. 가입 없이 이용하고, 입력정보는 새로고침하면 사라져요.',
-  // 운영 도메인 확정 후 NEXT_PUBLIC_SITE_URL에 https://실제도메인을 설정하세요.
-  url: process.env.NEXT_PUBLIC_SITE_URL || '',
+  description: '기본 사주는 가입 없이 브라우저에서 계산해요. AI 사주는 회원 전용이며 전송과 저장을 따로 안내해요.',
+  // The existing authorized public Worker is the default; a future owned domain can override it.
+  url: parsedOrigin.origin,
+  contactEmail,
   instagram: '',
-  contentVersion: '2.4.2',
-  advancedContentVersion: '2.4.2',
-  sectorContentVersion: '2.4.2',
+  contentVersion: '2.4.3',
+  advancedContentVersion: '2.4.3',
+  sectorContentVersion: '2.4.3',
 };
 export const categories = [
   {slug:'saju', name:'신년운세', short:'선택한 해의 운세와 상세 사주', description:'다가오는 새해를 기본으로, 선택한 연도의 여섯 분야 운세와 출생 사주를 살펴봐요.', system:'saju', content:'general', icon:'book', color:'sand'},

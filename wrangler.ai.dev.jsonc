@@ -1,0 +1,70 @@
+{
+  "name": "saju-ai-local-only",
+  "main": "worker/dev.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*",
+      "/auth/*",
+      "/__local-idp/*"
+    ],
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.sql"
+      ],
+      "fallthrough": true
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STORE",
+        "class_name": "AiDatabase"
+      },
+      {
+        "name": "LOCAL_IDP",
+        "class_name": "LocalIdentity"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "local-schema-v1",
+      "new_sqlite_classes": [
+        "AiDatabase",
+        "LocalIdentity"
+      ]
+    }
+  ],
+  "vars": {
+    "APP_ENV": "development",
+    "APP_ORIGIN": "http://127.0.0.1:8787",
+    "AI_ENABLED": "false",
+    "STORAGE_ENABLED": "true",
+    "TERMS_VERSION": "draft-terms-v1",
+    "AI_POLICY_VERSION": "draft-ai-v1",
+    "DAILY_BUDGET_MICRO_USD": "1000000",
+    "MONTHLY_BUDGET_MICRO_USD": "30000000",
+    "GLOBAL_CONCURRENCY": "2",
+    "PRICE_INPUT_USD_PER_MILLION": "0.10",
+    "PRICE_OUTPUT_USD_PER_MILLION": "0.40",
+    "SAVED_RETENTION_DAYS": "90",
+    "KAKAO_APP_ID": "123",
+    "KAKAO_UNLINK_ADMIN_KEY": "local-unlink-test-key"
+  },
+  "observability": {
+    "enabled": false
+  }
+}

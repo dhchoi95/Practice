@@ -34,7 +34,7 @@ for(const [group,before,after,prose] of [
 // Calendar, astronomical, natal, segmentation and score algorithms are unchanged.
 const protectedPaths=execFileSync('git',['ls-tree','-r','--name-only',base,'src/domain'],{encoding:'utf8'}).trim().split('\n').filter(p=>!['src/domain/interpretation/quality.ts','src/domain/foundation/presentation.ts','src/domain/foundation/types.ts'].includes(p));
 const engineChecks=[];
-for(const path of protectedPaths){let current=await fs.readFile(path,'utf8');if(path==='src/domain/foundation/engine.ts')current=current.replaceAll(",'2.4.0'",'').replaceAll(",'2.4.1'",'').replaceAll(",'2.4.2'",'');const before=execFileSync('git',['show',`${base}:${path}`],{encoding:'utf8'}),passed=current===before;engineChecks.push({path,passed});if(!passed)errors.push(`engine ${path}`);}
+for(const path of protectedPaths){let current=await fs.readFile(path,'utf8');if(path==='src/domain/foundation/engine.ts')current=current.replaceAll(",'2.4.0'",'').replaceAll(",'2.4.1'",'').replaceAll(",'2.4.2'",'').replaceAll(",'2.4.3'",'');const before=execFileSync('git',['show',`${base}:${path}`],{encoding:'utf8'}),passed=current===before;engineChecks.push({path,passed});if(!passed)errors.push(`engine ${path}`);}
 const inventory=await read('content-review/final-editing/full-inventory.json');let checkedStrings=0;
 function check(value:unknown,context:string){if(typeof value==='string'){checkedStrings++;for(const error of particleErrors(value))errors.push(`${context}: ${error}`);}else if(Array.isArray(value))value.forEach((v,i)=>check(v,`${context}[${i}]`));else if(value&&typeof value==='object')Object.entries(value).forEach(([k,v])=>check(v,`${context}.${k}`));}
 for(const row of inventory.entries)check(row.record,`${row.group}:${row.id}`);

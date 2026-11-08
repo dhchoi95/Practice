@@ -9,7 +9,7 @@ import { useSession } from './SessionProvider';
 import { InputError } from '@/lib/validation';
 import { useSeoulDate } from './LiveDate';
 import { useHydrated } from '@/lib/hydration';
-export function BirthForm({category,onComplete,initialBirth,personLabel}:{category:Category;onComplete?:(v:BirthSession)=>void;initialBirth?:BirthSession|null;personLabel?:string}) {
+export function BirthForm({category,onComplete,initialBirth,personLabel,privacyNotice}:{category:Category;onComplete?:(v:BirthSession)=>void;initialBirth?:BirthSession|null;personLabel?:string;privacyNotice?:string}) {
   const session=useSession(),birth=onComplete?initialBirth:session.birth,setBirth=session.setBirth,router=useRouter(),form=useRef<HTMLFormElement>(null);
   const [calendar,setCalendar]=useState<'solar'|'lunar'>(birth?.input.calendar??'solar');
   const [unknown,setUnknown]=useState(birth?.input.unknownTime??true);
@@ -49,7 +49,7 @@ export function BirthForm({category,onComplete,initialBirth,personLabel}:{catego
       <fieldset aria-describedby="time-help"><legend>태어난 시각</legend><label className="check-label"><input name="unknownTime" type="checkbox" checked={unknown} onChange={e=>setUnknown(e.target.checked)}/>시간 모름</label><div className="time-fields"><label htmlFor="hour">시 (0~23)<input id="hour" name="hour" type="text" inputMode="numeric" maxLength={2} placeholder="시" disabled={unknown} defaultValue={initial?.hour??''} {...errorAttrs('hour')}/></label><span aria-hidden="true">:</span><label htmlFor="minute">분 (0~59)<input id="minute" name="minute" type="text" inputMode="numeric" maxLength={2} placeholder="분" disabled={unknown} defaultValue={initial?.minute??''} {...errorAttrs('minute')}/></label></div>{inlineError(['hour','minute'],'time-error')}<p className="helper" id="time-help">태어난 시간을 몰라도 볼 수 있어요.<br/>시간에 따라 달라지는 내용은 제외해요.</p></fieldset>
       <fieldset><legend>대운 계산에 쓸 성별 <span className="optional">선택</span></legend><label htmlFor="luck-class" className="sr-only">대운 계산에 쓸 성별</label><select id="luck-class" aria-label="대운 계산에 쓸 성별" value={luckClass??''} onChange={e=>setLuckClass(e.target.value as AdvancedOptions['luckClass']||undefined)}><option value="">선택 안 함</option><option value="male">남성</option><option value="female">여성</option></select><p className="helper">대운의 진행 방향을 계산할 때만 사용해요. 선택하지 않아도 나머지 풀이를 볼 수 있어요.</p></fieldset>
       {error&&<p className="error-summary" id="birth-error" role="alert">{error.message}</p>}
-      <p className="form-privacy"><span aria-hidden="true">◇</span>입력정보는 서버에 보내지 않아요. 새로고침하면 사라져요.</p>
+      <p className="form-privacy"><span aria-hidden="true">◇</span>{privacyNotice??'입력정보는 서버에 보내지 않아요. 새로고침하면 사라져요.'}</p>
       <button className="button primary wide form-submit" type="submit" disabled={pending||!hydrated}>{pending?'계산하고 있어요…':onComplete?`${personLabel??'출생정보'} 적용`:`무료로 ${category.name} 보기`}<span aria-hidden="true">→</span></button>
       <noscript><p className="error-summary">브라우저 안에서 계산하려면 자바스크립트가 필요해요. 브라우저 설정에서 허용한 뒤 다시 열어 주세요. 입력정보는 서버로 보내지 않아요.</p></noscript>
       <p className="policy-note">한국 출생·표준시 기준 / 날짜 변경 0시 기준<br/><Link prefetch={false} href="/guide/">계산 기준과 서비스 한계 알아보기</Link></p>

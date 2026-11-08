@@ -26,12 +26,31 @@
     "content:integrated": "node --import tsx scripts/check-integrated.ts",
     "content:foundation": "node --import tsx scripts/check-foundation.ts",
     "content:writing": "node --import tsx scripts/final-writing-inventory.ts && node --import tsx scripts/audit-final-selection.ts && python3 -m unittest discover -s tests/writing",
-    "content:copy-review": "node --import tsx scripts/audit-copy-followup.ts"
+    "content:copy-review": "node --import tsx scripts/audit-copy-followup.ts",
+    "ai:setup": "node scripts/setup-ai-local.mjs",
+    "ai:dev": "npm run ai:setup && node scripts/ai-wrangler.mjs dev --config wrangler.ai.dev.jsonc --ip 127.0.0.1 --port 8787 --local",
+    "ai:typecheck": "tsc --noEmit -p tsconfig.worker.json",
+    "ai:bundle": "node scripts/ai-wrangler.mjs deploy --config wrangler.ai.jsonc --dry-run --outdir worker-dist",
+    "ai:test": "vitest run --config vitest.ai.config.ts",
+    "ai:test:e2e": "playwright test --config playwright.ai.config.ts",
+    "ai:samples": "node --import tsx scripts/ai-local-samples.ts",
+    "ai:cost": "node scripts/ai-cost-report.mjs",
+    "ai:audit": "node scripts/ai-audit-bundle.mjs",
+    "ai:deploy:preflight": "python3 scripts/deploy-ai.py preflight",
+    "ai:deploy:staging": "python3 scripts/deploy-ai.py staging",
+    "ai:deploy:production": "python3 scripts/deploy-ai.py production",
+    "ai:deploy:static": "python3 scripts/deploy-ai.py static",
+    "ai:check:staging": "node scripts/check-ai-public.mjs --staging",
+    "ai:check:production": "node scripts/check-ai-public.mjs",
+    "ai:test:production": "playwright test --config playwright.ai-production.config.ts",
+    "ai:quality:prepare": "node --import tsx scripts/prepare-ai-quality.ts"
   },
   "engines": {
     "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
   },
   "dependencies": {
+    "arctic": "3.7.0",
+    "jose": "6.2.13",
     "korean-lunar-calendar": "0.4.0",
     "lunar-typescript": "1.8.6",
     "next": "16.4.2",
@@ -41,6 +60,7 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
+    "@cloudflare/workers-types": "5.20261028.1",
     "@playwright/test": "1.64.1",
     "@types/node": "26.6.5",
     "@types/react": "19.3.0",
@@ -51,6 +71,7 @@
     "lighthouse": "13.5.0",
     "tsx": "4.23.15",
     "typescript": "6.0.3",
-    "vitest": "5.0.5"
+    "vitest": "5.0.5",
+    "wrangler": "4.154.0"
   }
 }

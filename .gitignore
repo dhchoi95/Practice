@@ -12,3 +12,12 @@ __pycache__/
 *.py[cod]
 
 .wrangler/
+
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+!.dev.vars.ai.example
+.env
+.env.*
+!.env.example
+worker-dist/

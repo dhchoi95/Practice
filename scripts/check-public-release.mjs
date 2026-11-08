@@ -1,6 +1,7 @@
 import {chromium,expect} from '@playwright/test';
 import fs from 'node:fs/promises';
 const base=process.env.PUBLIC_SITE_URL||'https://spring-voice-4bdc.eogjs9595.workers.dev',dir='reports/copy-followup/public';
+const release=JSON.parse(await fs.readFile('public/release.json','utf8'));
 await fs.mkdir(dir,{recursive:true});
 const examples=JSON.parse(await fs.readFile('content-review/copy-followup/assembled-examples.json','utf8'));
 const expected=kind=>examples.find(r=>r.index===0&&r.kind===kind).fields;
@@ -11,8 +12,8 @@ try{for(const width of [320,390]){
  // Fetch real public responses with normal TLS verification. No local build response substitution.
  // The execution proxy CA is trusted by Node, not by the Chromium process in this workspace.
  await context.route(base+'/**',async route=>{try{const response=await context.request.fetch(route.request(),{timeout:25000});requests.push({url:response.url(),status:response.status(),body:route.request().postData()});await route.fulfill({response});}catch(e){if(/Route is already handled/.test(String(e))||(closing&&/Target page, context or browser has been closed|Request context disposed/.test(String(e))))return;errors.push(String(e));await route.abort().catch(()=>{});}});
- try{const page=await context.newPage();page.setDefaultTimeout(25000);page.on('pageerror',e=>errors.push(e.message));await page.clock.install({time:new Date('2026-10-26T03:00:00Z')});console.log(`Checking live 2.4.1 at ${width}px`);
- await page.goto(base+'/');await expect(page.locator('.primary-nav a')).toHaveCount(5);await expect(page.locator('.quick-nav a')).toHaveCount(8);await expect(page.locator('.category-grid strong')).toHaveText(['신년운세','오늘의 운세','지정일 운세','별자리운세','띠별운세','MBTI 운세','대인관계','연애사주','짝궁합']);await page.screenshot({path:`${dir}/home-${width}.png`,fullPage:true});
+ try{const page=await context.newPage();page.setDefaultTimeout(25000);page.on('pageerror',e=>errors.push(e.message));await page.clock.install({time:new Date('2026-10-26T03:00:00Z')});console.log(`Checking live ${release.version} at ${width}px`);
+ await page.goto(base+'/');await expect(page.locator('.primary-nav a')).toHaveCount(6);await expect(page.locator('.quick-nav a')).toHaveCount(8);await expect(page.locator('.category-grid strong')).toHaveText(['신년운세','오늘의 운세','지정일 운세','별자리운세','띠별운세','MBTI 운세','대인관계','연애사주','짝궁합']);await page.screenshot({path:`${dir}/home-${width}.png`,fullPage:true});
  const enter=async(slug,year,month,day,hour,minute)=>{await page.goto(`${base}/fortune/${slug}/`);await page.getByLabel('태어난 연도',{exact:true}).fill(year);await page.getByRole('combobox',{name:'월',exact:true}).selectOption(month);await page.getByLabel('일',{exact:true}).fill(day);await page.getByLabel('시간 모름',{exact:true}).uncheck();await page.getByLabel('시 (0~23)',{exact:true}).fill(hour);await page.getByLabel('분 (0~59)',{exact:true}).fill(minute);await expect(page.getByRole('combobox',{name:'출생 도시',exact:true})).toHaveCount(0);await page.getByRole('button',{name:/무료로 .* 보기/}).click();};
  await enter('personality','1990','1','9','12','0');await expect(page.locator('.result-content')).toContainText('해보았기에 알게 된 일도 있을 것입니다.');expect(await page.locator('main').innerText()).not.toMatch(/(?:^|\s)거입니다/);await page.locator('.result-content').screenshot({path:`${dir}/personality-${width}.png`});
  await enter('saju','1995','11','8','15','3');await page.getByLabel('운세를 볼 연도',{exact:true}).selectOption('2027');await expect(page.locator('.sector-body')).toHaveCount(6);const natal=await page.locator('.natal-table').innerText();
@@ -28,4 +29,4 @@ try{for(const width of [320,390]){
  }finally{closing=true;await context.unrouteAll({behavior:'ignoreErrors'});await context.close();}
 }}
 finally{await browser.close();}
-await fs.writeFile('reports/copy-followup/public-checks.json',JSON.stringify({url:base,version:'2.4.1',passed:true,clockFixture:'2026-10-26 KST',network:'TLS-verified public-response relay for workspace proxy CA',checks},null,2)+'\n');
+await fs.writeFile('reports/copy-followup/public-checks.json',JSON.stringify({url:base,version:release.version,passed:true,clockFixture:'2026-10-26 KST',network:'TLS-verified public-response relay for workspace proxy CA',checks},null,2)+'\n');

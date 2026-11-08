@@ -1,0 +1,57 @@
+{
+  "releaseCandidate": "2.5.0",
+  "contentVersion": "2.4.1",
+  "sourceBaseline": "4bae012",
+  "deployment": {
+    "status": "blocked",
+    "deployed": false,
+    "target": "https://spring-voice-4bdc.eogjs9595.workers.dev/",
+    "error": "Cloudflare read check failed: <urlopen error Tunnel connection failed: 403 Forbidden>",
+    "lastReadAttempt": "2026-10-29T04:34:00.075725+00:00",
+    "tokenValidity": "not established; proxy failed before authentication",
+    "currentPublicVersion": "not independently observed this run; last recorded release 2.4.1"
+  },
+  "checks": {
+    "existingUnitIntegration": 413,
+    "aiUnitIntegration": 37,
+    "existingBrowser": 94,
+    "aiBrowser": 11,
+    "productionEntryLocalBrowser": 4,
+    "nativePDFs": 40,
+    "staticFiles": 262,
+    "workerBundleFiles": 5,
+    "runtimeDependencyVulnerabilities": 0,
+    "realOAuthLogins": 0,
+    "realAICalls": 0,
+    "remoteSQLiteMigrations": 0,
+    "remoteStagingDeployments": 0,
+    "remoteProductionDeployments": 0
+  },
+  "environmentDraft": {
+    "saved": true,
+    "requiresPublish": true,
+    "runtimeNetworkVerified": false,
+    "customDomains": [
+      "*.workers.dev",
+      "api.cloudflare.com",
+      "developers.cloudflare.com",
+      "developers.kakao.com",
+      "developers.google.com",
+      "developers.naver.com",
+      "ai.google.dev",
+      "www.law.go.kr",
+      "www.privacy.go.kr"
+    ],
+    "installScript": "preserved",
+    "startSkill": "updated",
+    "secrets": "preserved; no values added"
+  },
+  "workerSHA256": "127d04cdccd580ed58397e4ee913d4c01ee6733b0a2877a91ba641acd3484a69",
+  "launch": {
+    "signup": false,
+    "paidAI": false,
+    "optionalStorage": false
+  },
+  "independentEditorialApproval": false,
+  "realDeviceTested": false
+}

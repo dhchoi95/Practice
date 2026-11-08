@@ -4024,7 +4024,7 @@
   },
   {
     "id": "sector:day:study:order",
-    "version": "2.3.0",
+    "version": "2.4.3",
     "domain": "study",
     "unit": "day",
     "role": "core",
@@ -4070,7 +4070,7 @@
     "conflictGroup": "study:core",
     "duplicateGroup": "study:order",
     "priority": 100,
-    "title": "다음 단계로 갈 기준",
+    "title": "공부를 시작하기 전 배울 범위 정하기",
     "paragraphs": [
       "목표를 크게 세우기보다 배워야 할 범위를 분명히 할 날입니다. 무엇을 할 수 있어야 다음 단계로 갈지 알면 공부의 끝도 보이겠습니다. 시험이나 업무 학습이 있다면 실제 요구한 내용을 기준으로 삼는 편이 좋습니다."
     ],
@@ -4085,7 +4085,7 @@
   },
   {
     "id": "sector:month:study:order",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "domain": "study",
     "unit": "month",
     "role": "core",
@@ -4131,7 +4131,7 @@
     "conflictGroup": "study:core",
     "duplicateGroup": "study:order",
     "priority": 100,
-    "title": "다음 단계로 갈 기준을 정하는 달",
+    "title": "이번 달에 배울 내용과 목표 정하기",
     "paragraphs": [
       "이번 달 공부를 시작할 때는 무엇을 할 수 있게 될지 정해보세요. 시험 준비라면 출제 범위의 문제를 풀어보고, 업무를 익힌다면 배운 내용을 실제로 써보는 식입니다."
     ],
@@ -4146,7 +4146,7 @@
   },
   {
     "id": "sector:year:study:order",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "domain": "study",
     "unit": "year",
     "role": "core",
@@ -4192,7 +4192,7 @@
     "conflictGroup": "study:core",
     "duplicateGroup": "study:order",
     "priority": 100,
-    "title": "목적에 맞는 학습 기준을 세우는 해",
+    "title": "공부한 내용을 실제로 써보는 해",
     "paragraphs": [
       "한 해 동안은 배우는 목적이 분명할수록 다음 공부를 고르기 쉽겠습니다. 과정을 마쳤다는 사실과 실제로 할 수 있는 일을 구별하십시오. 필요한 수준을 정한 뒤 부족한 부분을 보완하는 편이 좋습니다."
     ],
@@ -6676,7 +6676,7 @@
   },
   {
     "id": "sector:day:money:wealth",
-    "version": "2.4.1",
+    "version": "2.4.3",
     "domain": "money",
     "unit": "day",
     "role": "core",
@@ -6722,7 +6722,7 @@
     "conflictGroup": "money:core",
     "duplicateGroup": "money:wealth",
     "priority": 90,
-    "title": "남는 돈을 기준으로 보는 날",
+    "title": "수수료와 납부액을 빼고 남는 돈 살피기",
     "paragraphs": [
       "들어올 금액만큼 실제로 남는 돈도 살펴볼 날입니다. 결제 수수료나 이미 정해진 납부를 빼면 쓸 수 있는 돈은 생각과 다를 수 있습니다. 아직 받지 않은 돈을 먼저 쓰기보다 지금 확인되는 금액을 기준으로 정하는 편이 좋겠습니다."
     ],
@@ -10071,7 +10071,7 @@
   },
   {
     "id": "sector:year:love:day-clash",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "domain": "love",
     "unit": "year",
     "role": "core",
@@ -10117,7 +10117,7 @@
     "conflictGroup": "love:core",
     "duplicateGroup": "love:day-clash",
     "priority": 180,
-    "title": "다른 의견을 관계의 결론과 나누는 해",
+    "title": "의견 차이만으로 관계를 판단하지 않기",
     "paragraphs": [
       "선택한 해의 글자와 사주에서 관계를 보는 자리의 글자가 충이라는 부딪히는 관계를 이룹니다. 서로 생각이 다르게 드러날 수 있다는 풀이이지 다툼이나 이별을 정하는 것은 아닙니다. 말이 어긋난다면 마음을 짐작하기보다 어떤 뜻이었는지 다시 물어보세요."
     ],
@@ -10254,7 +10254,7 @@
   },
   {
     "id": "sector:year:love:month-clash",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "domain": "love",
     "unit": "year",
     "role": "core",
@@ -10300,7 +10300,7 @@
     "conflictGroup": "love:core",
     "duplicateGroup": "love:month-clash",
     "priority": 160,
-    "title": "관계의 속도를 생활과 맞추는 해",
+    "title": "서로 다른 일정에 맞춰 만날 시간 찾기",
     "paragraphs": [
       "한 해 동안은 마음이 있어도 각자의 일정 때문에 속도가 다를 수 있습니다. 이미 정한 약속을 존중하면서 바꿀 수 있는 시간을 찾아보십시오. 일정의 차이를 호감의 차이로 바로 해석하지 않는 편이 좋습니다."
     ],
@@ -13168,7 +13168,7 @@
   },
   {
     "id": "sector:day:business:order",
-    "version": "2.3.0",
+    "version": "2.4.3",
     "domain": "business",
     "unit": "day",
     "role": "core",
@@ -13214,7 +13214,7 @@
     "conflictGroup": "business:core",
     "duplicateGroup": "business:order",
     "priority": 150,
-    "title": "기대하는 역할의 기준",
+    "title": "맡은 일의 범위와 기대를 분명히 하기",
     "paragraphs": [
       "더 많이 맡기보다 기대한 일을 분명히 할 날입니다. 무엇을 끝내야 하는지 모호하면 책임만 넓어질 수 있습니다. 실제 요구와 자신의 경험을 연결해 말하는 편이 좋겠습니다."
     ],
@@ -14598,7 +14598,7 @@
   },
   {
     "id": "supplement:year:overall:repeat-luck",
-    "version": "2.3.0",
+    "version": "2.4.3",
     "domain": "overall",
     "unit": "year",
     "role": "supplement",
@@ -14641,7 +14641,7 @@
     "conflictGroup": "overall:supplement:4",
     "duplicateGroup": "overall:repeat-luck",
     "priority": 56,
-    "title": "지금의 선택을 긴 흐름과 맞추는 해",
+    "title": "오래 이어갈 일을 고를 때",
     "paragraphs": [
       "작은 선택이 앞으로 이어갈 일과 잘 맞는지 살펴볼 만합니다. 오래 유지할 뜻이 없는 일에는 처음부터 부담이 커지지 않도록 범위를 두십시오."
     ],

@@ -1,0 +1,64 @@
+{
+  "name": "spring-voice-4bdc",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*",
+      "/auth/*"
+    ],
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.sql"
+      ],
+      "fallthrough": true
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STORE",
+        "class_name": "AiDatabase"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "ai-schema-v1",
+      "new_sqlite_classes": [
+        "AiDatabase"
+      ]
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "AI_ENABLED": "false",
+    "POLICIES_CONFIRMED": "false",
+    "OAUTH_REVIEWED": "false",
+    "TRANSFER_CONFIRMED": "false",
+    "AGE_POLICY_CONFIRMED": "false",
+    "RETENTION_CONFIRMED": "false",
+    "STORAGE_ENABLED": "false",
+    "APP_ORIGIN": "https://spring-voice-4bdc.eogjs9595.workers.dev",
+    "RELEASE_VERSION": "2.5.4",
+    "KAKAO_LOGIN_ENABLED": "false",
+    "GOOGLE_LOGIN_ENABLED": "false",
+    "NAVER_LOGIN_ENABLED": "false",
+    "KAKAO_WEBHOOK_REVIEWED": "false"
+  },
+  "observability": {
+    "enabled": false
+  }
+}

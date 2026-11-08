@@ -1,0 +1,11 @@
+import {spawnSync} from 'node:child_process';
+import path from 'node:path';
+import fs from 'node:fs';
+const args=process.argv.slice(2);
+const local=args[0]==='dev'&&args.includes('--local'),dry=args[0]==='deploy'&&args.includes('--dry-run');
+if(!local&&!dry)throw new Error('Use npm run ai:deploy:staging or ai:deploy:production for verified remote deployment. This helper runs local dev/dry-run only.');
+if(args.includes('--remote'))throw new Error('Local development must not use remote bindings.');
+if(dry&&args[args.indexOf('--outdir')+1]==='worker-dist')fs.rmSync('worker-dist',{recursive:true,force:true});
+const config=path.resolve('.cache/ai-wrangler');fs.mkdirSync(path.join(config,'.wrangler'),{recursive:true});
+const env={...process.env,XDG_CONFIG_HOME:config,WRANGLER_SEND_METRICS:'false'};delete env.CLOUDFLARE_API_TOKEN;delete env.CLOUDFLARE_API_KEY;
+const result=spawnSync(process.execPath,[fs.realpathSync('node_modules/.bin/wrangler'),...args],{stdio:'inherit',env});if(result.error)throw result.error;process.exitCode=result.status??1;

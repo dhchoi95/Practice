@@ -5,7 +5,7 @@ const dir='reports/final-2.3.0';
 async function fill(page:Page,day='8',known=false){await page.getByLabel('태어난 연도',{exact:true}).fill('1995');await page.getByRole('combobox',{name:'월',exact:true}).selectOption('11');await page.getByLabel('일',{exact:true}).fill(day);if(known){await page.getByLabel('시간 모름',{exact:true}).uncheck();await page.getByLabel('시 (0~23)',{exact:true}).fill('15');await page.getByLabel('분 (0~59)',{exact:true}).fill('3');}}
 for(const width of [320,390,430])test(`requested home groups and readable manse at ${width}`,async({page})=>{
  await page.clock.install({time:new Date('2026-10-24T03:00:00Z')});await page.setViewportSize({width,height:900});await page.goto('/');
- await expect(page.locator('.primary-nav a')).toHaveText(['신년 운세','오늘의 운세','이번달 운세','지정일 운세','올해 운세']);
+ await expect(page.locator('.primary-nav a')).toHaveText(['AI 사주','신년 운세','오늘의 운세','이번달 운세','지정일 운세','올해 운세']);
  expect(await page.locator('.quick-nav a').allTextContents()).toEqual(['신년 운세↗','오늘의 운세↗','이번달 운세↗','지정일 운세↗','MBTI 운세↗','만세력↗','연애사주↗','짝궁합↗']);
  await expect(page.locator('.category-grid strong')).toHaveText(['신년운세','오늘의 운세','지정일 운세','별자리운세','띠별운세','MBTI 운세','대인관계','연애사주','짝궁합']);expect(await page.getByRole('link',{name:/혈액형/}).count()).toBe(0);
  const boxes=await page.locator('.quick-nav a').evaluateAll(es=>es.map(e=>({x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y,h:e.getBoundingClientRect().height})));expect(new Set(boxes.map(b=>Math.round(b.y))).size).toBe(2);expect(new Set(boxes.map(b=>Math.round(b.x))).size).toBe(4);expect(boxes.every(b=>b.h>=44)).toBe(true);

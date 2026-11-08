@@ -220408,5 +220408,514 @@
         "delta": 0
       }
     }
+  },
+  {
+    "hash": "b179070b976e53f6053f2d8f0555529cc5f7675208acf51b892194f85e0af3a0",
+    "record": {
+      "id": "sector:day:study:order",
+      "version": "2.4.3",
+      "domain": "study",
+      "unit": "day",
+      "role": "core",
+      "scenario": "order",
+      "semanticId": "study:order",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "order"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:order",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:order",
+      "priority": 100,
+      "title": "공부를 시작하기 전 배울 범위 정하기",
+      "paragraphs": [
+        "목표를 크게 세우기보다 배워야 할 범위를 분명히 할 날입니다. 무엇을 할 수 있어야 다음 단계로 갈지 알면 공부의 끝도 보이겠습니다. 시험이나 업무 학습이 있다면 실제 요구한 내용을 기준으로 삼는 편이 좋습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "0278241d1b5e9e4fedab174c5d863b56d45be5ea9e26c7d6b40f8304fbb97006",
+    "record": {
+      "id": "sector:month:study:order",
+      "version": "2.4.3",
+      "domain": "study",
+      "unit": "month",
+      "role": "core",
+      "scenario": "order",
+      "semanticId": "study:order",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "order"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:order",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:order",
+      "priority": 100,
+      "title": "이번 달에 배울 내용과 목표 정하기",
+      "paragraphs": [
+        "이번 달 공부를 시작할 때는 무엇을 할 수 있게 될지 정해보세요. 시험 준비라면 출제 범위의 문제를 풀어보고, 업무를 익힌다면 배운 내용을 실제로 써보는 식입니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:study:order",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "89238df1c6ae3c45f63eb671f020d2ccb4df7e251a41b384695560bf83e5d3fa",
+    "record": {
+      "id": "sector:year:study:order",
+      "version": "2.4.3",
+      "domain": "study",
+      "unit": "year",
+      "role": "core",
+      "scenario": "order",
+      "semanticId": "study:order",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "order"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:order",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:order",
+      "priority": 100,
+      "title": "공부한 내용을 실제로 써보는 해",
+      "paragraphs": [
+        "한 해 동안은 배우는 목적이 분명할수록 다음 공부를 고르기 쉽겠습니다. 과정을 마쳤다는 사실과 실제로 할 수 있는 일을 구별하십시오. 필요한 수준을 정한 뒤 부족한 부분을 보완하는 편이 좋습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:study:order",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "251342850f4260892e0a7583e59b31449092fa90372a5eab108a3916de4cc99f",
+    "record": {
+      "id": "sector:day:money:wealth",
+      "version": "2.4.3",
+      "domain": "money",
+      "unit": "day",
+      "role": "core",
+      "scenario": "wealth",
+      "semanticId": "money:wealth",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "wealth"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "money:wealth",
+      "conflictGroup": "money:core",
+      "duplicateGroup": "money:wealth",
+      "priority": 90,
+      "title": "수수료와 납부액을 빼고 남는 돈 살피기",
+      "paragraphs": [
+        "들어올 금액만큼 실제로 남는 돈도 살펴볼 날입니다. 결제 수수료나 이미 정해진 납부를 빼면 쓸 수 있는 돈은 생각과 다를 수 있습니다. 아직 받지 않은 돈을 먼저 쓰기보다 지금 확인되는 금액을 기준으로 정하는 편이 좋겠습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "91e2bcdc5eaabb700f78765e40537d3cea905b5974ddc042e591c811c06199e5",
+    "record": {
+      "id": "sector:year:love:day-clash",
+      "version": "2.4.3",
+      "domain": "love",
+      "unit": "year",
+      "role": "core",
+      "scenario": "day-clash",
+      "semanticId": "love:day-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.dayClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.dayClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "love:day-clash",
+      "conflictGroup": "love:core",
+      "duplicateGroup": "love:day-clash",
+      "priority": 180,
+      "title": "의견 차이만으로 관계를 판단하지 않기",
+      "paragraphs": [
+        "선택한 해의 글자와 사주에서 관계를 보는 자리의 글자가 충이라는 부딪히는 관계를 이룹니다. 서로 생각이 다르게 드러날 수 있다는 풀이이지 다툼이나 이별을 정하는 것은 아닙니다. 말이 어긋난다면 마음을 짐작하기보다 어떤 뜻이었는지 다시 물어보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:love:day-clash",
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "b3e616db580833ed0e2114b140ef736d41ac7c1d673ce08e89d135a76b2bb16e",
+    "record": {
+      "id": "sector:year:love:month-clash",
+      "version": "2.4.3",
+      "domain": "love",
+      "unit": "year",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "love:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "love:month-clash",
+      "conflictGroup": "love:core",
+      "duplicateGroup": "love:month-clash",
+      "priority": 160,
+      "title": "서로 다른 일정에 맞춰 만날 시간 찾기",
+      "paragraphs": [
+        "한 해 동안은 마음이 있어도 각자의 일정 때문에 속도가 다를 수 있습니다. 이미 정한 약속을 존중하면서 바꿀 수 있는 시간을 찾아보십시오. 일정의 차이를 호감의 차이로 바로 해석하지 않는 편이 좋습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "sector:day:love:month-clash",
+      "contribution": {
+        "group": "focus",
+        "delta": -5
+      }
+    }
+  },
+  {
+    "hash": "5b811a969a2fcb46c536cf91029c3f00b2a573c4bcfdadeedfa655f77fda51fb",
+    "record": {
+      "id": "sector:day:business:order",
+      "version": "2.4.3",
+      "domain": "business",
+      "unit": "day",
+      "role": "core",
+      "scenario": "order",
+      "semanticId": "business:order",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "order"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "business:order",
+      "conflictGroup": "business:core",
+      "duplicateGroup": "business:order",
+      "priority": 150,
+      "title": "맡은 일의 범위와 기대를 분명히 하기",
+      "paragraphs": [
+        "더 많이 맡기보다 기대한 일을 분명히 할 날입니다. 무엇을 끝내야 하는지 모호하면 책임만 넓어질 수 있습니다. 실제 요구와 자신의 경험을 연결해 말하는 편이 좋겠습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "6dc3c314fb14c9a39810961baac3444975ab289915379e9f83cf73c39092d18f",
+    "record": {
+      "id": "supplement:year:overall:repeat-luck",
+      "version": "2.4.3",
+      "domain": "overall",
+      "unit": "year",
+      "role": "supplement",
+      "scenario": "repeat-luck",
+      "semanticId": "overall:repeat-luck",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "same.luck",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 출생 일간",
+        "해당 원국·기간 조건"
+      ],
+      "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+      "evidenceRefs": [
+        "same.luck"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "SEASON-ROOT-CANDIDATES-1.0"
+      ],
+      "meaningAxis": "overall:repeat-luck",
+      "conflictGroup": "overall:supplement:4",
+      "duplicateGroup": "overall:repeat-luck",
+      "priority": 56,
+      "title": "오래 이어갈 일을 고를 때",
+      "paragraphs": [
+        "작은 선택이 앞으로 이어갈 일과 잘 맞는지 살펴볼 만합니다. 오래 유지할 뜻이 없는 일에는 처음부터 부담이 커지지 않도록 범위를 두십시오."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": "supplement:day:overall:repeat-luck",
+      "contribution": {
+        "group": "luck",
+        "delta": 0
+      }
+    }
   }
 ]

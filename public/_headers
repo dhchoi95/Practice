@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'
+/result/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store, private
+/ai-saju/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store, private
+/release.json
+  Cache-Control: no-cache

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-08",
+  "edits": [
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:day:study:order",
+      "before": "다음 단계로 갈 기준",
+      "after": "공부를 시작하기 전 배울 범위 정하기",
+      "before_hash": "d3e41c6d04caeb7e873b10c764ebf7b184ef56ceb88c47084b46ec6c67ef9476",
+      "after_hash": "b179070b976e53f6053f2d8f0555529cc5f7675208acf51b892194f85e0af3a0",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:month:study:order",
+      "before": "다음 단계로 갈 기준을 정하는 달",
+      "after": "이번 달에 배울 내용과 목표 정하기",
+      "before_hash": "583267454751d02551fe98742f3be63b27142cb539483a87a5001bd766601787",
+      "after_hash": "0278241d1b5e9e4fedab174c5d863b56d45be5ea9e26c7d6b40f8304fbb97006",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:year:study:order",
+      "before": "목적에 맞는 학습 기준을 세우는 해",
+      "after": "공부한 내용을 실제로 써보는 해",
+      "before_hash": "981eec597c83a96b680dd7f622b4401ba6d092f70c45893629eaf9b6f72140da",
+      "after_hash": "89238df1c6ae3c45f63eb671f020d2ccb4df7e251a41b384695560bf83e5d3fa",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:day:money:wealth",
+      "before": "남는 돈을 기준으로 보는 날",
+      "after": "수수료와 납부액을 빼고 남는 돈 살피기",
+      "before_hash": "5f52d3af2a4208dde5d48c1a0d4c9143916999640ebd5a91431aae7b64d5613a",
+      "after_hash": "251342850f4260892e0a7583e59b31449092fa90372a5eab108a3916de4cc99f",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:year:love:day-clash",
+      "before": "다른 의견을 관계의 결론과 나누는 해",
+      "after": "의견 차이만으로 관계를 판단하지 않기",
+      "before_hash": "7af7227df37b8d9dae67a88824e6a75b9f54c3e5b7b6785f2ac662a783957621",
+      "after_hash": "91e2bcdc5eaabb700f78765e40537d3cea905b5974ddc042e591c811c06199e5",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:year:love:month-clash",
+      "before": "관계의 속도를 생활과 맞추는 해",
+      "after": "서로 다른 일정에 맞춰 만날 시간 찾기",
+      "before_hash": "aab52a47094fa07774f7d379a1162d48524f55f51ffeb6a800382d44800fd448",
+      "after_hash": "b3e616db580833ed0e2114b140ef736d41ac7c1d673ce08e89d135a76b2bb16e",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "sector:day:business:order",
+      "before": "기대하는 역할의 기준",
+      "after": "맡은 일의 범위와 기대를 분명히 하기",
+      "before_hash": "f4d07089caacee2995f5988ef920fc540c61164f24ef0f81ee269ac394499f7e",
+      "after_hash": "5b811a969a2fcb46c536cf91029c3f00b2a573c4bcfdadeedfa655f77fda51fb",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/foundation/sectors.json",
+      "id": "supplement:year:overall:repeat-luck",
+      "before": "지금의 선택을 긴 흐름과 맞추는 해",
+      "after": "오래 이어갈 일을 고를 때",
+      "before_hash": "92f51be5735211fdec7bfd7b2c58c0c0f5a23e845e753e2d5ec96f10496f0f1c",
+      "after_hash": "6dc3c314fb14c9a39810961baac3444975ab289915379e9f83cf73c39092d18f",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/advanced/period-gods.json",
+      "id": "비견:natal-link:1",
+      "before": "원국의 뿌리와 독립성",
+      "after": "혼자 정할 일과 도움받을 일",
+      "before_hash": "41b39a53757fd0ca3351b75fdc82432dd436e6991c4b95994d0c990d07f5ec2b",
+      "after_hash": "5ef1a50c4707ffc13a0799ceb12f0526209609bf750ca329eb2d7f0894e82212",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/advanced/period-gods.json",
+      "id": "식신:natal-link:13",
+      "before": "표현을 받쳐주는 뿌리",
+      "after": "배우고 표현할 여유를 함께 살피기",
+      "before_hash": "44902132390eb432b404fba3df1ceff171a0a1852adc4d0ce0f28ae794a50d67",
+      "after_hash": "7e9c0f5868c06f95233ea8dbccc0c8398f2515ccdaebd5a383821aba15d47f1b",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/advanced/period-gods.json",
+      "id": "정재:flow:30",
+      "before": "계속 유지할 자원을 살피는 시기",
+      "after": "시간과 비용을 얼마나 이어갈 수 있을지",
+      "before_hash": "3aa53d0a227c1a2893f7fa6004c1ab216ad664ba148af0a801c976ac7d8144c5",
+      "after_hash": "508c2728e6d9fe5b6a1aaa28d15b80708e00cf7eb67a397e675229adb94d0405",
+      "review": "author-edited-pending-independent"
+    },
+    {
+      "file": "src/content/advanced/period-gods.json",
+      "id": "정재:natal-link:31",
+      "before": "관리할 힘과 자원의 크기",
+      "after": "맡을 수 있는 책임의 범위 살피기",
+      "before_hash": "9c98b47fbb5655b8e57fb1c03767c4da7a4425a2521ad2542847a1daae78d206",
+      "after_hash": "8dc9296ce164b69487d0b204ab992f3f6d434c80931eacb248afbe19e96b0776",
+      "review": "author-edited-pending-independent"
+    }
+  ],
+  "notes": "원문과 함께 제목 의미를 확인한 작성자 검토. 독립 검토 미완료."
+}

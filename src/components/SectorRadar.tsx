@@ -8,6 +8,6 @@ export function SectorRadar({reading}:{reading:SectorReading}){
  {[25,50,75,100].map(v=><polygon key={v} points={order.map((_,i)=>point(i,v*1.05).join(',')).join(' ')} fill="none" stroke="#b5b9b1" strokeWidth="1"/>)}
  {order.map((d,i)=>{const [x,y]=point(i,105),[tx,ty]=point(i,139);return <g key={d}><line x1="170" y1="160" x2={x} y2={y} stroke="#c6c8c0"/><a href={`#sector-${d}`} aria-label={`${domainNames[d]} 본문으로 이동`}><rect x={tx-44} y={ty-28} width="88" height="56" fill="transparent"/><text x={tx} y={ty} textAnchor="middle" dominantBaseline="middle" fill="#273a33" fontSize="18" fontWeight="600">{domainNames[d]}</text></a></g>;})}
  {complete?<polygon data-testid="radar-shape" points={order.map((d,i)=>point(i,reading.sectors[d].score!*1.05).join(',')).join(' ')} fill="#14806a" fillOpacity=".23" stroke="#126b59" strokeWidth="2"/>:<text x="170" y="164" textAnchor="middle" fill="#273a33" fontSize="18">산출 보류</text>}</svg>
- <dl className="sector-index-list">{order.map(d=><div key={d}><dt><a href={`#sector-${d}`}>{domainNames[d]}</a></dt><dd><strong>{reading.sectors[d].score??'—'}</strong><span>{reading.sectors[d].band}</span></dd></div>)}</dl>
+ <dl className="sector-index-list">{order.map(d=><div key={d}><dt><a href={`#sector-${d}`}>{domainNames[d]}</a></dt><dd><span className="sector-bar" aria-hidden="true"><i style={{width:`${reading.sectors[d].score??0}%`}} /></span><strong>{reading.sectors[d].score??'—'}</strong><span>{reading.sectors[d].band}</span></dd></div>)}</dl>
  <p className="helper">지수는 운세를 읽는 참고값이며 사건의 확률이나 실제 건강 상태를 뜻하지 않아요.</p></section>;
 }

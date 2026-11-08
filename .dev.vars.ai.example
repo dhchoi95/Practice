@@ -1,0 +1,15 @@
+# Copy names only. Production secrets must be entered directly in your own terminal/console.
+DATA_ENCRYPTION_KEY=
+IDENTITY_HMAC_KEY=
+REQUEST_HMAC_KEY=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+KAKAO_CLIENT_ID=
+KAKAO_CLIENT_SECRET=
+KAKAO_APP_ID=
+KAKAO_UNLINK_ADMIN_KEY=
+NAVER_CLIENT_ID=
+NAVER_CLIENT_SECRET=
+AI_API_KEY=
+# Non-secret production settings are described in USER_ACTION_REQUIRED.md.
+# Never put any secret in NEXT_PUBLIC_* variables.

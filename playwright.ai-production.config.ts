@@ -1,0 +1,2 @@
+import {defineConfig,devices} from '@playwright/test';
+export default defineConfig({testDir:'./tests/ai-production',workers:1,timeout:30000,reporter:[['list']],outputDir:'reports/ai-saju/production-local-results',use:{baseURL:'http://127.0.0.1:8788',launchOptions:{executablePath:'/usr/bin/chromium',args:['--no-sandbox']}},projects:[{name:'production-worker-local',use:{...devices['Desktop Chrome']}}],webServer:{command:'node scripts/ai-local-test-server.mjs --production',url:'http://127.0.0.1:8788/api/session',reuseExistingServer:false,timeout:60000}});
