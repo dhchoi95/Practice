@@ -252,7 +252,7 @@
       {
         "domain": "business",
         "title": "바뀐 요구에 맞출 때",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:day:business:day-clash",
@@ -315,7 +315,7 @@
       {
         "domain": "overall",
         "title": "대화한 내용을 실행에 옮기는 달",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:month:overall:detail-09",
@@ -448,7 +448,7 @@
       {
         "domain": "money",
         "title": "납부와 정산을 먼저 살피는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:money:order",
@@ -506,7 +506,7 @@
       {
         "domain": "health",
         "title": "역할이 늘어도 잠은 줄이지 않기",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:month:health:order",
@@ -581,7 +581,7 @@
       {
         "domain": "love",
         "title": "서로 편한 약속을 맞추는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:love:agreement",
@@ -783,7 +783,7 @@
       {
         "domain": "study",
         "title": "배운 것을 내 것으로 만드는 해",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:study:wealth",
@@ -849,7 +849,7 @@
       {
         "domain": "money",
         "title": "수입과 생활비를 나누어 보는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:money:wealth",
@@ -1047,7 +1047,7 @@
       {
         "domain": "business",
         "title": "내 일이 필요한 곳을 찾는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:business:wealth",
@@ -1133,11 +1133,16 @@
       {
         "domain": "overall",
         "title": "필요한 준비를 채울 때",
-        "score": 50,
+        "score": 45,
         "paragraphs": [
           {
             "recordId": "sector:day:overall:resource",
-            "text": "앞으로 나아가기 전에 필요한 준비를 채우기 좋은 날입니다. 손에 잡히지 않는 일이 있다면 자료나 설명이 부족한 부분부터 드러날 수 있습니다. 혼자 오래 붙들기보다 필요한 도움을 구하는 편이 시작에 도움이 되겠습니다.",
+            "text": "오늘의 천간은 내 일간을 돕는 관계인 인성으로 분류돼요. 이 관계는 준비와 배움을 살펴보는 상징으로 해석하며, 실제로 누군가의 도움이 온다는 뜻은 아니에요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:overall:resource",
+            "text": "시작하기 어려운 일이 있다면 부족한 정보가 무엇인지 한 줄로 적어 보세요. 필요한 자료나 설명을 찾은 뒤 첫 단계를 정하면 좋아요.",
             "role": "core"
           },
           {
@@ -1152,6 +1157,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:overall:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:overall:resource",
             "role": "core",
@@ -1197,7 +1214,12 @@
         "paragraphs": [
           {
             "recordId": "sector:day:study:resource",
-            "text": "기초를 보충한 만큼 다음 내용을 읽기 수월해질 수 있는 하루입니다. 모르는 표현을 그냥 넘기지 말고 실제 예시 하나와 연결해 보시기 바랍니다.",
+            "text": "새로운 내용을 익힐 때 기초를 먼저 이해하는 방향으로 풀이해요. 오늘의 천간은 내 일간을 돕는 인성 관계로, 배움과 연결해 볼 수 있어요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:study:resource",
+            "text": "모르는 개념을 하나 골라 자기 말로 설명해 보세요. 막히는 부분은 교재의 예시와 연결한 뒤 다시 확인하면 좋아요.",
             "role": "core"
           },
           {
@@ -1212,6 +1234,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:study:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:study:resource",
             "role": "core",
@@ -1257,7 +1291,12 @@
         "paragraphs": [
           {
             "recordId": "sector:day:money:resource",
-            "text": "복잡한 설명을 넘기지 않는 신중함이 필요한 날입니다. 할인 금액만 보면 이용 기간이나 추가 조건을 놓칠 수 있습니다. 무엇에 돈을 내는지 모호하다면 결정을 늦추는 편이 좋겠습니다.",
+            "text": "돈을 쓰기 전에 조건을 이해하는 데 초점을 두어요. 오늘의 천간과 내 일간의 인성 관계를 준비와 학습의 관점에서 읽은 것이며, 수익 예측은 아니에요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:money:resource",
+            "text": "결제 전 이용 기간과 추가 비용을 확인해 보세요. 조건을 이해하기 어렵다면 바로 결정하지 말고 필요한 설명을 더 찾아보세요.",
             "role": "core"
           },
           {
@@ -1272,6 +1311,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:money:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:money:resource",
             "role": "core",
@@ -1317,7 +1368,12 @@
         "paragraphs": [
           {
             "recordId": "sector:day:health:resource",
-            "text": "자료나 화면을 오래 보고 있다면 잠깐 다른 곳으로 눈을 돌려볼 날입니다. 궁금한 것을 전부 알아낸 뒤에만 쉬어야 하는 것은 아닙니다. 필요한 내용을 찾았다면 화면을 내려놓고 식사나 휴식을 먼저 챙겨보세요.",
+            "text": "건강에 관한 정보를 이해하고 살펴보는 관점으로 풀이해요. 오늘의 천간과 일간의 인성 관계가 실제 몸 상태나 치료 효과를 알려주는 것은 아니에요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:health:resource",
+            "text": "건강 정보를 볼 때 출처와 적용 대상을 확인해 보세요. 증상이 있거나 치료를 고민한다면 전문가와 상담하는 편이 좋아요.",
             "role": "core"
           },
           {
@@ -1332,6 +1388,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:health:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:health:resource",
             "role": "core",
@@ -1373,11 +1441,16 @@
       {
         "domain": "love",
         "title": "생각과 실제로 들은 말",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:day:love:resource",
-            "text": "마음에 걸리는 말이 있다면 혼자 뜻을 짐작하기보다 상대에게 가볍게 물어보세요. 새로 알아가는 사이라면 대답하기 편한 질문부터 건네도 좋겠습니다.",
+            "text": "관계에서는 상대의 말을 이해하는 데 관심을 둘 수 있어요. 오늘의 천간과 일간의 인성 관계를 배움의 관점에서 읽은 것이며, 상대의 마음을 알 수 있다는 뜻은 아니에요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:love:resource",
+            "text": "마음에 남은 말이 있다면 내가 이해한 뜻이 맞는지 물어보세요. 대답을 재촉하지 않고 상대가 말할 시간을 두어도 좋아요.",
             "role": "core"
           },
           {
@@ -1392,6 +1465,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:love:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:love:resource",
             "role": "core",
@@ -1433,11 +1518,16 @@
       {
         "domain": "business",
         "title": "모르는 일을 준비할 때",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:day:business:resource",
-            "text": "서둘러 답하기보다 필요한 배경을 익힐 날입니다. 낯선 업무나 지원 분야에서는 익숙한 설명만으로 뜻이 잘 전해지지 않을 수 있습니다. 상대가 요구한 내용을 중심으로 준비를 좁히는 편이 좋겠습니다.",
+            "text": "일에서는 낯선 조건을 배우고 이해하는 데 초점을 두어요. 오늘의 천간과 일간의 인성 관계를 준비의 관점에서 풀이하며, 성과나 채용 여부를 예측하지는 않아요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:business:resource",
+            "text": "새 업무나 지원 공고를 살핀다면 요구사항을 항목별로 적어 보세요. 뜻이 불분명한 항목은 착수하거나 제출하기 전에 확인해 보세요.",
             "role": "core"
           },
           {
@@ -1452,6 +1542,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:business:resource",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:business:resource",
             "role": "core",
@@ -1588,7 +1690,7 @@
       {
         "domain": "study",
         "title": "공부한 내용을 활용하는 달",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:month:study:wealth",
@@ -2167,7 +2269,7 @@
       {
         "domain": "money",
         "title": "성과를 수입으로 잇기 전에 비용을 보는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:money:produce-trade",
@@ -2273,7 +2375,7 @@
       {
         "domain": "health",
         "title": "바쁜 달에도 지킬 생활 습관",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:health:month-clash",
@@ -2381,7 +2483,7 @@
       {
         "domain": "love",
         "title": "표현의 차이를 서로 설명하는 해",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:love:detail-02",
@@ -2460,7 +2562,7 @@
       {
         "domain": "business",
         "title": "결과와 실제 수요를 연결하는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:business:produce-trade",
@@ -2586,7 +2688,7 @@
       {
         "domain": "overall",
         "title": "대화 뒤의 약속",
-        "score": 50,
+        "score": 45,
         "paragraphs": [
           {
             "recordId": "sector:day:overall:detail-09",
@@ -2633,7 +2735,12 @@
         "paragraphs": [
           {
             "recordId": "sector:day:study:month-clash",
-            "text": "예상했던 공부 시간을 온전히 쓰기 어려울 수 있는 날입니다. 해야 할 일이 겹쳐 진도가 늦어진다면 많은 분량을 욕심내기보다 꼭 마칠 내용을 정해보세요. 짧게 공부하더라도 복습할 시간은 남겨두는 편이 좋겠습니다.",
+            "text": "태어난 달의 지지와 오늘의 일진이 충하는 관계라, 공부 계획을 조정하는 관점에서 살펴봐요. 이 관계만으로 집중력이나 시험 결과를 판단할 수는 없어요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:study:month-clash",
+            "text": "공부할 시간이 짧다면 한 단원이나 문제 유형 하나를 먼저 정하세요. 끝나기 전에는 틀린 부분을 다시 볼 시간을 남겨 보세요.",
             "role": "core"
           },
           {
@@ -2643,6 +2750,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:study:month-clash",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:study:month-clash",
             "role": "core",
@@ -2715,11 +2834,16 @@
       {
         "domain": "health",
         "title": "일정이 밀려도 식사는 챙기기",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:day:health:month-clash",
-            "text": "약속 순서가 달라지더라도 식사와 휴식 시간을 남겨둘 만한 날입니다. 다음 일에 늦을까 급해지면 잠깐 멈출 틈을 놓치기 쉽습니다. 꼭 그날 하지 않아도 되는 일이 있다면 먼저 줄여보세요.",
+            "text": "오늘의 일진이 태어난 달의 지지와 충하는 관계를 이뤄요. 건강운에서는 일상의 리듬을 살피는 관점으로만 해석하며, 몸 상태나 질병을 뜻하지는 않아요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:health:month-clash",
+            "text": "오늘 일정에 식사와 쉬는 시간을 먼저 넣어 보세요. 몸에 불편함이 있다면 운세보다 실제 증상과 필요한 전문 진료를 우선하세요.",
             "role": "core"
           },
           {
@@ -2729,6 +2853,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:health:month-clash",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:health:month-clash",
             "role": "core",
@@ -2758,11 +2894,16 @@
       {
         "domain": "love",
         "title": "약속이 어긋나도 마음을 단정하지 않기",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:day:love:month-clash",
-            "text": "서로의 일정이 맞지 않아 아쉬움을 느낄 수 있는 날입니다. 만날 시간을 잡기 어렵다는 이유만으로 관심이 없다고 단정하지는 마십시오. 가능한 시간과 어려운 사정을 차분히 나누는 편이 좋겠습니다. 약속을 서두르기보다 서로 편한 방법을 찾으면 불필요한 서운함을 줄일 수 있습니다.",
+            "text": "일진과 원국의 월지에서 충이 확인되어, 관계에서는 서로의 일정과 기대를 맞춰 보는 쪽에 초점을 두었어요. 상대의 마음이나 관계의 결과를 알 수 있다는 뜻은 아니에요.",
+            "role": "core"
+          },
+          {
+            "recordId": "sector:day:love:month-clash",
+            "text": "약속을 잡을 때 가능한 시간과 원하는 방식을 구체적으로 말해 보세요. 일정이 맞지 않더라도 이유를 확인하기 전에는 관심의 크기를 단정하지 않아도 좋아요.",
             "role": "core"
           },
           {
@@ -2772,6 +2913,18 @@
           }
         ],
         "trace": [
+          {
+            "recordId": "sector:day:love:month-clash",
+            "role": "core",
+            "segments": [
+              0
+            ],
+            "owner": [
+              1792940400000,
+              1793026800000
+            ],
+            "reason": "가장 오래 적용되는 중심 원고의 실제 문단"
+          },
           {
             "recordId": "sector:day:love:month-clash",
             "role": "core",
@@ -2864,7 +3017,7 @@
       {
         "domain": "overall",
         "title": "익숙한 방법을 조금 바꾸는 달",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:month:overall:day-clash",
@@ -3238,7 +3391,7 @@
       {
         "domain": "business",
         "title": "기존 방법을 요구에 맞춰 고치는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:business:day-clash",
@@ -3492,7 +3645,7 @@
       {
         "domain": "money",
         "title": "내게 필요한 소비를 고르는 해",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:money:peer",
@@ -4008,7 +4161,7 @@
       {
         "domain": "business",
         "title": "바뀐 요구에 맞출 때",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:day:business:day-clash",
@@ -4187,7 +4340,7 @@
       {
         "domain": "money",
         "title": "납부와 정산을 먼저 살피는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:money:order",
@@ -4245,7 +4398,7 @@
       {
         "domain": "health",
         "title": "역할이 늘어도 잠은 줄이지 않기",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:month:health:order",
@@ -4522,7 +4675,7 @@
       {
         "domain": "study",
         "title": "배운 것을 내 것으로 만드는 해",
-        "score": 45,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:study:wealth",
@@ -4588,7 +4741,7 @@
       {
         "domain": "money",
         "title": "수입과 생활비를 나누어 보는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:money:wealth",
@@ -4786,7 +4939,7 @@
       {
         "domain": "business",
         "title": "내 일이 필요한 곳을 찾는 해",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:year:business:wealth",

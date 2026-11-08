@@ -7,19 +7,21 @@ import { calculatePeriod,parseTarget,type ContextSegment } from '../advanced/per
 import { hiddenStems } from '../advanced/mappings';
 import { tenGod } from '../saju/tables';
 import type { PeriodKind } from '../fortune/period';
-import { domains,FOUNDATION_VERSION,SECTOR_POLICY,type Test,type Condition,type SectorRecord,type ScheduleRecord,type Domain,type ScheduleContext,type SectorJudgment } from './types';
+import { domains,FOUNDATION_VERSION,SECTOR_POLICY,SCORE_VERSION,type Test,type Condition,type SectorRecord,type ScheduleRecord,type Domain,type ScheduleContext,type SectorJudgment } from './types';
 const testSchema=z.object({path:z.string().min(1),op:z.enum(['eq','gte','in']),value:z.union([z.string(),z.number(),z.boolean(),z.array(z.string())])});
 const conditionSchema=z.object({all:z.array(testSchema).min(1),any:z.array(testSchema).min(1).optional()});
-const recordSchema=z.object({id:z.string().min(1),version:z.enum(['2.1.0','2.2.0','2.2.1','2.2.2','2.3.0','2.4.0','2.4.1','2.4.2','2.4.3']),domain:z.enum(domains),unit:z.enum(['day','month','year']),role:z.enum(['core','supplement']),scenario:z.string(),semanticId:z.string(),requires:conditionSchema,premises:z.array(z.string()).min(1),exclusions:z.array(testSchema),neededInputs:z.array(z.string()).min(1),unknownHandling:z.string(),evidenceRefs:z.array(z.string()).min(1),sourceRefs:z.array(z.string()).min(1),policyRefs:z.array(z.string()).min(1),meaningAxis:z.string(),conflictGroup:z.string(),duplicateGroup:z.string(),priority:z.number(),title:z.string().min(1),paragraphs:z.array(z.string().min(1)).min(1),proposal:z.string(),assumesLifeStatus:z.literal(false),status:z.literal('author-reviewed-pending-independent'),editorial:z.object({question:z.string(),refines:z.string(),counter:z.string()}).optional(),incompatibleWith:z.array(z.string()).optional(),variantOf:z.string().nullable(),contribution:z.object({group:z.string(),delta:z.number().min(-10).max(10)})}).strict();
+const recordSchema=z.object({id:z.string().min(1),version:z.enum(['2.1.0','2.2.0','2.2.1','2.2.2','2.3.0','2.4.0','2.4.1','2.4.2','2.4.3','2.4.4']),domain:z.enum(domains),unit:z.enum(['day','month','year']),role:z.enum(['core','supplement']),scenario:z.string(),semanticId:z.string(),requires:conditionSchema,premises:z.array(z.string()).min(1),exclusions:z.array(testSchema),neededInputs:z.array(z.string()).min(1),unknownHandling:z.string(),evidenceRefs:z.array(z.string()).min(1),sourceRefs:z.array(z.string()).min(1),policyRefs:z.array(z.string()).min(1),meaningAxis:z.string(),conflictGroup:z.string(),duplicateGroup:z.string(),priority:z.number(),title:z.string().min(1),paragraphs:z.array(z.string().min(1)).min(1),proposal:z.string(),assumesLifeStatus:z.literal(false),status:z.literal('author-reviewed-pending-independent'),editorial:z.object({question:z.string(),refines:z.string(),counter:z.string()}).optional(),incompatibleWith:z.array(z.string()).optional(),variantOf:z.string().nullable(),contribution:z.object({group:z.string(),delta:z.number().min(-10).max(10)})}).strict();
 export const sectorRecords:SectorRecord[]=z.array(recordSchema).parse(raw);
-const scheduleSchema=z.object({id:z.string(),version:z.enum(['2.1.0','2.2.0','2.2.1','2.2.2','2.3.0','2.4.0','2.4.1','2.4.2','2.4.3']),context:z.enum(['general','interview','exam','presentation','contract','meeting']),requires:conditionSchema,semanticId:z.string(),text:z.string().min(1),checks:z.array(z.string()).min(2).max(3),policyRefs:z.array(z.string()).min(1),sourceRefs:z.array(z.string()).min(1),status:z.literal('author-reviewed-pending-independent')}).strict();
+const scheduleSchema=z.object({id:z.string(),version:z.enum(['2.1.0','2.2.0','2.2.1','2.2.2','2.3.0','2.4.0','2.4.1','2.4.2','2.4.3','2.4.4']),context:z.enum(['general','interview','exam','presentation','contract','meeting']),requires:conditionSchema,semanticId:z.string(),text:z.string().min(1),checks:z.array(z.string()).min(2).max(3),policyRefs:z.array(z.string()).min(1),sourceRefs:z.array(z.string()).min(1),status:z.literal('author-reviewed-pending-independent')}).strict();
 export const scheduleRecords:ScheduleRecord[]=z.array(scheduleSchema).parse(schedulesRaw);
 const buckets=new Map<string,SectorRecord[]>();
 for(const r of sectorRecords){const key=`${r.unit}:${r.domain}`;buckets.set(key,[...(buckets.get(key)??[]),r]);}
 export function matchesTest(test:Test,facts:Facts){const v=facts[test.path];if(v===null||v===undefined)return false;return test.op==='eq'?v===test.value:test.op==='gte'?typeof v==='number'&&typeof test.value==='number'&&v>=test.value:Array.isArray(test.value)&&typeof v==='string'&&test.value.includes(v);}
 export function matches(condition:Condition,facts:Facts){return condition.all.every(t=>matchesTest(t,facts))&&(!condition.any||condition.any.some(t=>matchesTest(t,facts)));}
 export const roundIndex=(value:number)=>Math.max(0,Math.min(100,Math.round(value/5)*5));
-export const scoreBand=(score:number|null)=>score===null?'산출 보류':score>=70?'활용할 요소가 많아요':score>=55?'활용과 조율을 함께 봐요':score>=40?'준비와 조율부터 살펴요':'범위를 줄여 살펴요';
+// The fixed scale expands differences without treating 50 as a scientific baseline.
+export const displayScore=(rawScore:number)=>roundIndex(50+2*(rawScore-50));
+export const scoreBand=(score:number|null)=>score===null?'산출 보류':score>=90?'활용할 요소가 많아요':score>=60?'활용과 조율을 함께 봐요':score>=30?'준비와 조율부터 살펴요':'범위를 줄여 살펴요';
 function group(g:unknown){return g==='비견'||g==='겁재'?'peer':g==='식신'||g==='상관'?'output':g==='정재'||g==='편재'?'wealth':g==='정관'||g==='편관'?'order':g==='정인'||g==='편인'?'resource':null;}
 export function sectorFacts(chart:AdvancedChart,segment:ContextSegment):Facts {
  const dm=chart.pillars.day?.stem,focus=group(segment.facts['period.god']),branch=group(segment.facts['period.branchGod']);
@@ -58,15 +60,15 @@ export function selectSectorRecords(records:SectorRecord[],facts:Facts){
  return {selected,trace};
 }
 export function judgeSector(domain:Domain,unit:PeriodKind,facts:Facts):SectorJudgment {
- if(!facts['known.day'])return {domain,score:null,band:scoreBand(null),records:[],facts,contributions:[],selectionTrace:[],uncertainty:['출생 일간이 미확정이라 지수와 개인 본문을 정하지 않았어요.']};
+ if(!facts['known.day'])return {domain,rawScore:null,score:null,band:scoreBand(null),records:[],facts,contributions:[],selectionTrace:[],uncertainty:['출생 일간이 미확정이라 지수와 개인 본문을 정하지 않았어요.']};
  const selection=selectSectorRecords(buckets.get(`${unit}:${domain}`)??[],facts),records=selection.selected;
  if(!records.some(r=>r.role==='core'))throw new Error(`분야 중심 원고 누락: ${domain}/${unit}`);
  const seen=new Set<string>();const contributions=records.flatMap(r=>{if(seen.has(r.contribution.group))return [];seen.add(r.contribution.group);return [{recordId:r.id,...r.contribution,facts}];});
- const delta=Math.max(-25,Math.min(25,contributions.reduce((sum,c)=>sum+c.delta,0))),score=roundIndex(50+delta);
- return {domain,score,band:scoreBand(score),records,facts,contributions,selectionTrace:selection.trace,uncertainty:facts['known.hour']?[]:['시주는 제외하고 확인된 기둥만 반영했어요.']};
+ const delta=Math.max(-25,Math.min(25,contributions.reduce((sum,c)=>sum+c.delta,0))),rawScore=50+delta,score=displayScore(rawScore);
+ return {domain,rawScore,score,band:scoreBand(score),records,facts,contributions,selectionTrace:selection.trace,uncertainty:facts['known.hour']?[]:['시주는 제외하고 확인된 기둥만 반영했어요.']};
 }
 export interface SectorSegment {start:number;end:number;context:ContextSegment;sectors:Record<Domain,SectorJudgment>}
-export interface SectorReading {kind:PeriodKind;target:string;label:string;start:number;end:number;segments:SectorSegment[];sectors:Record<Domain,{score:number|null;band:string;records:SectorRecord[];uncertainty:string[]}>;policy:string;contentVersion:string}
+export interface SectorReading {kind:PeriodKind;target:string;label:string;start:number;end:number;segments:SectorSegment[];sectors:Record<Domain,{rawScore:number|null;score:number|null;band:string;records:SectorRecord[];uncertainty:string[]}>;policy:string;contentVersion:string;scoreVersion:string}
 export function buildSectorReading(chart:AdvancedChart,kind:PeriodKind,target:string):SectorReading{
  const date=parseTarget(target),base=calculatePeriod(chart,kind,target);
  // Annual calculation visits every actual monthly boundary and luck transition, rather than selecting a representative day.
@@ -76,20 +78,25 @@ export function buildSectorReading(chart:AdvancedChart,kind:PeriodKind,target:st
  const segments:SectorSegment[]=contexts.map(context=>{
   const facts=sectorFacts(chart,context),sectors=Object.fromEntries(domains.map(d=>[d,judgeSector(d,kind,facts)])) as Record<Domain,SectorJudgment>;
   const others=domains.filter(d=>d!=='overall').map(d=>sectors[d].score);
+  const rawOthers=domains.filter(d=>d!=='overall').map(d=>sectors[d].rawScore);
+  sectors.overall.rawScore=rawOthers.every(v=>v!==null)?(rawOthers as number[]).reduce((a,b)=>a+b,0)/5:null;
   sectors.overall.score=others.every(v=>v!==null)?roundIndex((others as number[]).reduce((a,b)=>a+b,0)/5):null;sectors.overall.band=scoreBand(sectors.overall.score);
   return {start:context.start,end:context.end,context,sectors};
  });
  const sectors=Object.fromEntries(domains.map(domain=>{
   const missing=segments.some(s=>s.sectors[domain].score===null);
+  const rawScore=missing?null:segments.reduce((sum,s)=>sum+s.sectors[domain].rawScore!*(s.end-s.start),0)/(base.end-base.start);
   const score=missing?null:roundIndex(segments.reduce((sum,s)=>sum+s.sectors[domain].score!*(s.end-s.start),0)/(base.end-base.start));
   // Identical paragraphs are printed once and their full coverage is retained in segment traces.
   const records=[...new Map(segments.flatMap(s=>s.sectors[domain].records).map(r=>[r.id,r])).values()];
-  return [domain,{score,band:scoreBand(score),records,uncertainty:[...new Set(segments.flatMap(s=>s.sectors[domain].uncertainty))]}];
+  return [domain,{rawScore,score,band:scoreBand(score),records,uncertainty:[...new Set(segments.flatMap(s=>s.sectors[domain].uncertainty))]}];
  })) as SectorReading['sectors'];
  // The public total is the same rounded equal-weight mean of the five displayed aggregate indices.
  const values=domains.filter(d=>d!=='overall').map(d=>sectors[d].score);
+ const rawValues=domains.filter(d=>d!=='overall').map(d=>sectors[d].rawScore);
+ sectors.overall.rawScore=rawValues.every(v=>v!==null)?(rawValues as number[]).reduce((a,b)=>a+b,0)/5:null;
  sectors.overall.score=values.every(v=>v!==null)?roundIndex((values as number[]).reduce((a,b)=>a+b,0)/5):null;sectors.overall.band=scoreBand(sectors.overall.score);
- return {kind,target:base.target,label:base.label,start:base.start,end:base.end,segments,sectors,policy:SECTOR_POLICY,contentVersion:FOUNDATION_VERSION};
+ return {kind,target:base.target,label:base.label,start:base.start,end:base.end,segments,sectors,policy:SECTOR_POLICY,contentVersion:FOUNDATION_VERSION,scoreVersion:SCORE_VERSION};
 }
 export function scheduleFor(reading:SectorReading,context:ScheduleContext){
  if(!reading.segments[0].sectors.overall.facts['known.day'])return null;

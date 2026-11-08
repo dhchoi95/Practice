@@ -1,0 +1,169 @@
+{
+  "sample": "deterministic synthetic solar births; standard time; 20% unknown birth time; not representative population",
+  "seed": "0x59214a3b",
+  "requestedPeople": 1000,
+  "completedPeople": 1000,
+  "dates": [
+    "2026-01-15",
+    "2026-02-04",
+    "2026-03-21",
+    "2026-06-21",
+    "2026-09-23",
+    "2026-11-08",
+    "2026-12-31"
+  ],
+  "completedReadings": 7000,
+  "expectedReadings": 7000,
+  "expectedSectorResults": 42000,
+  "unknownScores": 336,
+  "segments": 8003,
+  "equalSixSectorReadings": 58,
+  "consecutiveDifferentDayPillar": {
+    "changes": 6000,
+    "comparisons": 6000
+  },
+  "coveredDayStems": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "coveredMonthBranches": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "strengths": {
+    "강약 미확정": 200,
+    "신약 경향": 318,
+    "신강 경향": 209,
+    "중화·경계": 273
+  },
+  "absentElementPeople": {
+    "목": 208,
+    "화": 205,
+    "토": 77,
+    "금": 228,
+    "수": 236
+  },
+  "stats": {
+    "overall": {
+      "count": 6944,
+      "min": 45,
+      "max": 60,
+      "median": 50,
+      "near50": 6686,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 206,
+      "repeatOccurrences": 6794
+    },
+    "study": {
+      "count": 6944,
+      "min": 45,
+      "max": 65,
+      "median": 50,
+      "near50": 6666,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 175,
+      "repeatOccurrences": 6825
+    },
+    "money": {
+      "count": 6944,
+      "min": 40,
+      "max": 65,
+      "median": 50,
+      "near50": 6228,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 160,
+      "repeatOccurrences": 6840
+    },
+    "health": {
+      "count": 6944,
+      "min": 40,
+      "max": 60,
+      "median": 50,
+      "near50": 6652,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 209,
+      "repeatOccurrences": 6791
+    },
+    "love": {
+      "count": 6944,
+      "min": 40,
+      "max": 60,
+      "median": 50,
+      "near50": 6706,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 176,
+      "repeatOccurrences": 6824
+    },
+    "business": {
+      "count": 6944,
+      "min": 45,
+      "max": 65,
+      "median": 55,
+      "near50": 6068,
+      "low": 0,
+      "high": 0,
+      "uniqueBodies": 225,
+      "repeatOccurrences": 6775
+    }
+  },
+  "selectedDayRecords": 158,
+  "eligibleDayRecords": 180,
+  "unselectedDayRecords": [
+    "sector:day:overall:express-standard",
+    "sector:day:money:express-standard",
+    "supplement:day:overall:repeat-luck",
+    "supplement:day:study:repeat-luck",
+    "supplement:day:money:repeat-luck",
+    "supplement:day:health:repeat-luck",
+    "supplement:day:love:repeat-luck",
+    "supplement:day:business:repeat-luck",
+    "sector:day:study:detail-01",
+    "sector:day:study:detail-04",
+    "sector:day:study:detail-09",
+    "sector:day:study:detail-10",
+    "sector:day:study:detail-11",
+    "sector:day:money:detail-06",
+    "sector:day:money:detail-11",
+    "sector:day:business:detail-11",
+    "sector:day:love:detail-11",
+    "sector:day:love:detail-12",
+    "sector:day:health:detail-08",
+    "sector:day:health:detail-11",
+    "sector:day:overall:detail-01",
+    "sector:day:overall:detail-11"
+  ],
+  "selectionSkipReasons": {
+    "필수 전제 미충족 또는 미확정": 1271414,
+    "우선하는 중심 원고 있음": 29858,
+    "보완 표시 범위 초과": 7648,
+    "같은 시점의 상충군 대안": 80,
+    "같은 설명의 중복군": 92
+  },
+  "failures": [],
+  "elapsedSeconds": 9.795586777999999,
+  "apiCostUsd": 0,
+  "limits": "Automated rules and exact text duplicates only; no independent accuracy, qualitative similarity, prose quality or UI review. Baseline or changed version must be identified by invocation."
+}

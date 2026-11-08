@@ -1,0 +1,723 @@
+{
+  "edits": [
+    {
+      "id": "supplement:day:money:supported-preparation",
+      "before": {
+        "id": "supplement:day:money:supported-preparation",
+        "version": "2.3.0",
+        "domain": "money",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "supported-preparation",
+        "semanticId": "money:supported-preparation",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            },
+            {
+              "path": "group.wealth",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 출생 일간",
+          "해당 원국·기간 조건"
+        ],
+        "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+        "evidenceRefs": [
+          "strength.class",
+          "group.wealth"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "SEASON-ROOT-CANDIDATES-1.0"
+        ],
+        "meaningAxis": "money:supported-preparation",
+        "conflictGroup": "money:capacity",
+        "duplicateGroup": "money:supported-preparation",
+        "priority": 60,
+        "title": "새 비용을 감당할 여유",
+        "paragraphs": [
+          "지출을 늘리기 전에 지금의 예산을 지키는 편이 낫겠습니다. 아직 받지 않은 돈까지 여유로 보지 않으면 새 비용의 부담을 줄일 수 있습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "capacity",
+          "delta": -5
+        }
+      },
+      "after": {
+        "id": "supplement:day:money:supported-preparation",
+        "version": "2.4.4",
+        "domain": "money",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "supported-preparation",
+        "semanticId": "money:supported-preparation",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "strength.class",
+              "op": "eq",
+              "value": "weak"
+            },
+            {
+              "path": "group.wealth",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 출생 일간",
+          "해당 원국·기간 조건"
+        ],
+        "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+        "evidenceRefs": [
+          "strength.class",
+          "group.wealth"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "SEASON-ROOT-CANDIDATES-1.0"
+        ],
+        "meaningAxis": "money:supported-preparation",
+        "conflictGroup": "money:capacity",
+        "duplicateGroup": "money:supported-preparation",
+        "priority": 60,
+        "title": "새 지출을 줄여야 할 때",
+        "paragraphs": [
+          "새로 이용할 서비스를 고른다면 나중에 사용을 줄이거나 그만둘 수 있는지도 살펴보세요. 해지 수수료나 환불 조건을 미리 알아두면 사정이 달라졌을 때 선택하기 쉽습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "capacity",
+          "delta": -5
+        }
+      },
+      "beforeHash": "d9282bbf8ef491a7977f23947b9ed09c555869fc3839f4c864ac5a591d3a16ce",
+      "afterHash": "1b2ac16422bf3a80081cdb4f08a75c2a0bcbeae6dbd0b7b4d0dc8eb3355ed67d",
+      "status": "author-reviewed-pending-independent",
+      "reason": "같은 결과의 다른 문단과 반복되던 조언을 조건에 맞는 별도 상황으로 조정"
+    },
+    {
+      "id": "supplement:day:love:repeat-day",
+      "before": {
+        "id": "supplement:day:love:repeat-day",
+        "version": "2.3.0",
+        "domain": "love",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "repeat-day",
+        "semanticId": "love:repeat-day",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.day",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 출생 일간",
+          "해당 원국·기간 조건"
+        ],
+        "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+        "evidenceRefs": [
+          "same.day"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "SEASON-ROOT-CANDIDATES-1.0"
+        ],
+        "meaningAxis": "love:repeat-day",
+        "conflictGroup": "love:supplement:3",
+        "duplicateGroup": "love:repeat-day",
+        "priority": 57,
+        "title": "내게 자연스러운 표현",
+        "paragraphs": [
+          "자신에게 자연스러운 표현도 상대에게는 다르게 들릴 수 있습니다. 바라는 것을 말하되 같은 방식의 답을 요구하지 않는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "natal-day",
+          "delta": 0
+        }
+      },
+      "after": {
+        "id": "supplement:day:love:repeat-day",
+        "version": "2.4.4",
+        "domain": "love",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "repeat-day",
+        "semanticId": "love:repeat-day",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "same.day",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 출생 일간",
+          "해당 원국·기간 조건"
+        ],
+        "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+        "evidenceRefs": [
+          "same.day"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "SEASON-ROOT-CANDIDATES-1.0"
+        ],
+        "meaningAxis": "love:repeat-day",
+        "conflictGroup": "love:supplement:3",
+        "duplicateGroup": "love:repeat-day",
+        "priority": 57,
+        "title": "함께하는 시간과 혼자 쉬는 시간",
+        "paragraphs": [
+          "가까운 관계에서도 함께 있고 싶은 시간과 혼자 쉬고 싶은 시간은 다를 수 있습니다. 각자 필요한 여유를 존중하면 연락이나 만남을 쉬는 시간에도 부담을 덜 수 있겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "natal-day",
+          "delta": 0
+        }
+      },
+      "beforeHash": "30a27bbc5786f3b15c2186d85b39eff9478dac06b5a0e9a85452efad3cfdeb2a",
+      "afterHash": "6d85b3860dc6b4b80bf74a27a9cf31e1ba130738360c167fc56aaa392fd7a360",
+      "status": "author-reviewed-pending-independent",
+      "reason": "같은 결과의 다른 문단과 반복되던 조언을 조건에 맞는 별도 상황으로 조정"
+    },
+    {
+      "id": "sector:day:money:detail-05",
+      "before": {
+        "id": "sector:day:money:detail-05",
+        "version": "2.3.0",
+        "domain": "money",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-05",
+        "semanticId": "money:detail-05",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "premises": [
+          "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.monthMainGod"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "money:detail-05",
+        "conflictGroup": "money:detailed-expansion",
+        "duplicateGroup": "money:detail-05",
+        "priority": 203,
+        "title": "공동 비용의 개인별 한도",
+        "paragraphs": [
+          "함께 쓰는 돈에서 각자의 한도를 지킬 날입니다. 전체 금액에 동의해도 모두 같은 시점에 같은 몫을 낼 수 있는 것은 아닙니다. 사정이 달라졌다면 결제 전에 조정하는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+          "refines": "money:peer",
+          "counter": "이 관계가 금전 손실이나 타인의 의도를 뜻하지는 않아요."
+        }
+      },
+      "after": {
+        "id": "sector:day:money:detail-05",
+        "version": "2.4.4",
+        "domain": "money",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-05",
+        "semanticId": "money:detail-05",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "겁재"
+            },
+            {
+              "path": "natal.monthMainGod",
+              "op": "in",
+              "value": [
+                "정재",
+                "편재"
+              ]
+            }
+          ]
+        },
+        "premises": [
+          "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.monthMainGod"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "money:detail-05",
+        "conflictGroup": "money:detailed-expansion",
+        "duplicateGroup": "money:detail-05",
+        "priority": 203,
+        "title": "함께 쓴 돈의 내역 남기기",
+        "paragraphs": [
+          "여럿이 쓸 돈을 한 사람이 먼저 냈다면 무엇을 위해 얼마를 결제했는지 함께 볼 수 있게 남겨보세요. 나중에 기억이 달라져도 내역을 보며 이야기할 수 있습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+          "refines": "money:peer",
+          "counter": "이 관계가 금전 손실이나 타인의 의도를 뜻하지는 않아요."
+        }
+      },
+      "beforeHash": "dfe5b76c8acd10075213409e1a7778770c2f26afe3d6fb0020821d9c5f4e78e6",
+      "afterHash": "319cd8125200b72dd59799a452fc3233105b115b2b39e8592d9403cda54c9359",
+      "status": "author-reviewed-pending-independent",
+      "reason": "같은 결과의 다른 문단과 반복되던 조언을 조건에 맞는 별도 상황으로 조정"
+    },
+    {
+      "id": "sector:day:business:detail-04",
+      "before": {
+        "id": "sector:day:business:detail-04",
+        "version": "2.3.0",
+        "domain": "business",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-04",
+        "semanticId": "business:detail-04",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "premises": [
+          "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.visible.정인"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "business:detail-04",
+        "conflictGroup": "business:detailed-expansion",
+        "duplicateGroup": "business:detail-04",
+        "priority": 203,
+        "title": "바꿀 방법을 시험할 때",
+        "paragraphs": [
+          "다른 방법을 제안한다면 실제로 달라질 부분을 보여줄 날입니다. 불편하다는 말만으로는 어디를 바꿔야 할지 전하기 어려울 수 있습니다. 작은 범위에서 해본 결과와 함께 이야기하는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+          "refines": "business:output",
+          "counter": "새 제안이 항상 더 낫다고 판정하는 구성은 아니에요."
+        }
+      },
+      "after": {
+        "id": "sector:day:business:detail-04",
+        "version": "2.4.4",
+        "domain": "business",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-04",
+        "semanticId": "business:detail-04",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "상관"
+            },
+            {
+              "path": "natal.visible.정인",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "premises": [
+          "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.visible.정인"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "business:detail-04",
+        "conflictGroup": "business:detailed-expansion",
+        "duplicateGroup": "business:detail-04",
+        "priority": 203,
+        "title": "의견을 듣고 고칠 부분 고르기",
+        "paragraphs": [
+          "일하는 방식을 바꿀 생각이라면 제안에 대한 의견을 들어보세요. 여러 조언이 한꺼번에 들어와도 지금 적용할 수 있는 것과 나중에 살펴볼 것을 나누면 됩니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+          "refines": "business:output",
+          "counter": "새 제안이 항상 더 낫다고 판정하는 구성은 아니에요."
+        }
+      },
+      "beforeHash": "0b629237b148a7a23b05435fc63e09ce2bfceb09a53030a93e79e9d6698844ce",
+      "afterHash": "e2e8d19f5188415a65d51d26f6f095c4ce98e2a47da4717788f9b579c80f3028",
+      "status": "author-reviewed-pending-independent",
+      "reason": "같은 결과의 다른 문단과 반복되던 조언을 조건에 맞는 별도 상황으로 조정"
+    },
+    {
+      "id": "sector:day:health:detail-07",
+      "before": {
+        "id": "sector:day:health:detail-07",
+        "version": "2.4.1",
+        "domain": "health",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-07",
+        "semanticId": "health:detail-07",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.visible.겁재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "premises": [
+          "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.visible.겁재"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "health:detail-07",
+        "conflictGroup": "health:detailed-expansion",
+        "duplicateGroup": "health:detail-07",
+        "priority": 203,
+        "title": "함께 운동해도 내 속도로",
+        "paragraphs": [
+          "함께하는 운동이나 활동에서도 자신의 속도를 지켜볼 날입니다. 다른 사람이 더 할 수 있다고 같은 양을 채울 필요는 없습니다. 숨을 돌리거나 먼저 쉬고 싶다면 편하게 이야기해 보십시오."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+          "refines": "health:peer",
+          "counter": "사람들과의 경쟁이나 실제 체력 차이를 판정하지 않아요."
+        }
+      },
+      "after": {
+        "id": "sector:day:health:detail-07",
+        "version": "2.4.4",
+        "domain": "health",
+        "unit": "day",
+        "role": "supplement",
+        "scenario": "detail-07",
+        "semanticId": "health:detail-07",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "period.god",
+              "op": "eq",
+              "value": "비견"
+            },
+            {
+              "path": "natal.visible.겁재",
+              "op": "gte",
+              "value": 1
+            }
+          ]
+        },
+        "premises": [
+          "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+          "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "확정된 일간",
+          "전제에 명시된 실제 원국 자리",
+          "해당 기간과 선택된 대운"
+        ],
+        "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+        "evidenceRefs": [
+          "period.god",
+          "natal.visible.겁재"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-2.0",
+          "KR-SOLAR-MIDNIGHT-1.0"
+        ],
+        "meaningAxis": "health:detail-07",
+        "conflictGroup": "health:detailed-expansion",
+        "duplicateGroup": "health:detail-07",
+        "priority": 203,
+        "title": "운동할 때 낯선 동작 살피기",
+        "paragraphs": [
+          "새로운 운동이나 기구를 이용한다면 사용법부터 익혀보세요. 속도를 높이기 전에 편안하게 움직일 수 있는 범위를 살피고, 통증이 있다면 무리하지 않는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        },
+        "editorial": {
+          "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+          "refines": "health:peer",
+          "counter": "사람들과의 경쟁이나 실제 체력 차이를 판정하지 않아요."
+        }
+      },
+      "beforeHash": "d3ea986b4d41ecb1d2acea27c7b71a31c1007ea409c5d079dbdc84212c691680",
+      "afterHash": "5357a3ccf74e93c213e4d8b328c92008058b7b9950cb3e5db3cb29f4f9ab50a6",
+      "status": "author-reviewed-pending-independent",
+      "reason": "같은 결과의 다른 문단과 반복되던 조언을 조건에 맞는 별도 상황으로 조정"
+    }
+  ],
+  "hashMethod": "SHA-256 of sorted, compact UTF-8 JSON",
+  "independentApproval": false
+}

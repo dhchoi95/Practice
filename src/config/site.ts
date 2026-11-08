@@ -10,9 +10,9 @@ export const siteConfig = {
   url: parsedOrigin.origin,
   contactEmail,
   instagram: '',
-  contentVersion: '2.4.3',
+  contentVersion: '2.4.4',
   advancedContentVersion: '2.4.3',
-  sectorContentVersion: '2.4.3',
+  sectorContentVersion: '2.4.4',
 };
 export const categories = [
   {slug:'saju', name:'신년운세', short:'선택한 해의 운세와 상세 사주', description:'다가오는 새해를 기본으로, 선택한 연도의 여섯 분야 운세와 출생 사주를 살펴봐요.', system:'saju', content:'general', icon:'book', color:'sand'},

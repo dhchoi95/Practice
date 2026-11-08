@@ -12745,5 +12745,201 @@
     "reviewer": "implementation-author",
     "status": "author-edited-pending-independent",
     "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:overall:month-clash",
+    "hash": "40b9d85b4edda6dfc47de9c4e71dc28c1cab22396888e59c354e8839320eb7ed",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:overall:resource",
+    "hash": "a662af3d6c9abed99b7a4ccf66e94c32508ca807f60423fca4dc61fcaad5127f",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:study:month-clash",
+    "hash": "7a05a025cd86a40271365d754b4296838e11841e3d2b028a262530329d3f63be",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:study:resource",
+    "hash": "ebb9977565214a0450a282c10e191ededd1a7a4c9d3b68f4959a2e377dca6086",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:money:month-clash",
+    "hash": "957dbb12eb7c6fef490e4af0a1103151cec61fa0820768a6df265836c1534d9a",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:money:resource",
+    "hash": "93e4b4d325ec476ff4a63a7a13e74175f41481c900f6d40afe1e4e9de779ad68",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:health:month-clash",
+    "hash": "6ace4b8521680268635b350e3630beb1817b579635bc03b30d4a76ad1da08126",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:health:resource",
+    "hash": "9b8fe66a464c8323b8d0ff38cfb49fa130160cd80942ad3f33f4ba65c3192b14",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:love:month-clash",
+    "hash": "5db016b737efdb0008d4311172e27e56391c0371f23d30b8809f461ad8233ffe",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:love:resource",
+    "hash": "d14c7b5d04a208e18389b2b6039a90ce44ec586418d4e9a0bd7f09642ca34326",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:business:month-clash",
+    "hash": "551737667709894bf7d7db69dd3164004c894b6685e03a5c9ec57516a0aefab4",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:business:resource",
+    "hash": "aca147fd88d6b96fc68ad201db2f21e6284680d68386973259830c9e8db3b6d2",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/components/NatalChart.tsx",
+    "hash": "c6d2dfaa2805377b95a70a54d57c1aaa8253e93f96caa2d897be4f6faa0d5f87",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/components/SectorRadar.tsx",
+    "hash": "258c637415732cce19c7fda922fd6e90778ead168341143890d2ceb0c1e5cacf",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/config/site.ts",
+    "hash": "616c9841a2529dc7482e6fb38fb982cd71b6217b93d79f03276302733886e2db",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/engine.ts",
+    "hash": "91e764abbb266bc9a909a3e38f923d4abe5472cd175399c3bbc9c72bb7fdf455",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/tables.ts",
+    "hash": "13602d0c3da892ec8220551ca0a8d2a0c680b774a7697c3b97e7b207070fe65a",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/types.ts",
+    "hash": "3a05ab3725f8990369db629902a7bbb9115ff544fd81c72408a174b1a5e0af9e",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:supplement:day:money:supported-preparation",
+    "hash": "1b2ac16422bf3a80081cdb4f08a75c2a0bcbeae6dbd0b7b4d0dc8eb3355ed67d",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:supplement:day:love:repeat-day",
+    "hash": "6d85b3860dc6b4b80bf74a27a9cf31e1ba130738360c167fc56aaa392fd7a360",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:money:detail-05",
+    "hash": "319cd8125200b72dd59799a452fc3233105b115b2b39e8592d9403cda54c9359",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:business:detail-04",
+    "hash": "e2e8d19f5188415a65d51d26f6f095c4ce98e2a47da4717788f9b579c80f3028",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:health:detail-07",
+    "hash": "5357a3ccf74e93c213e4d8b328c92008058b7b9950cb3e5db3cb29f4f9ab50a6",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:study:resource",
+    "hash": "03f6e7b2bb9f50df4772404678c382d343feeb332a778f73476931c53bbda276",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:money:resource",
+    "hash": "05a3551c3c2c1c4d403118c97ce08833ee4abe7aaeef85576470d98f6116b5c8",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:health:resource",
+    "hash": "e6c7c7783ed043b58e32bef41004a5308073f423c078c5c2e021b7968d2a168c",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:love:resource",
+    "hash": "0070431f7d4d5027a05fa16122b66286d7c87fa5973435a7b274011c91b60ed4",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "sectors:sector:day:business:resource",
+    "hash": "a546b677bd3be66e69d7ea4c3a7bd3dd86280c4050f42e12221991108e279139",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
   }
 ]

@@ -1,0 +1,779 @@
+{
+  "description": "선택 조건은 유지하고 일일 원고의 확인 가능한 근거와 분야별 조언을 분리. 독립 명리 검토 미완료.",
+  "entries": [
+    {
+      "id": "sector:day:overall:month-clash",
+      "beforeHash": "e93280788be7092ba6b2613fe7e550d6e66fb96888f1f02fbba5474982a71777",
+      "afterHash": "40b9d85b4edda6dfc47de9c4e71dc28c1cab22396888e59c354e8839320eb7ed",
+      "before": {
+        "id": "sector:day:overall:month-clash",
+        "version": "2.3.0",
+        "domain": "overall",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "overall:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "overall:month-clash",
+        "conflictGroup": "overall:core",
+        "duplicateGroup": "overall:month-clash",
+        "priority": 170,
+        "title": "지킬 기한을 먼저 살필 때",
+        "paragraphs": [
+          "정해둔 순서와 다른 사람의 일정이 어긋날 때 조급함을 경계할 하루입니다. 급해 보이는 일을 모두 떠안기보다 실제 기한이 있는 일부터 마치는 편이 좋겠습니다. 모든 부탁을 한 번에 끝낼 필요는 없습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "after": {
+        "id": "sector:day:overall:month-clash",
+        "version": "2.4.4",
+        "domain": "overall",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "overall:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "overall:month-clash",
+        "conflictGroup": "overall:core",
+        "duplicateGroup": "overall:month-clash",
+        "priority": 170,
+        "title": "지킬 기한을 먼저 살필 때",
+        "paragraphs": [
+          "오늘의 일진과 태어난 달의 지지가 서로 충하는 관계로 나타나요. 이 관계를 하루의 흐름을 조정해 볼 단서로 풀이하며, 실제 일정에 문제가 생긴다는 예측은 아니에요.",
+          "오늘 할 일 가운데 마감이 정해진 것부터 적어 보세요. 급한 부탁이 더해지면 맡을 범위와 마칠 수 있는 시간을 확인해 보세요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "status": "author-edited-pending-independent"
+    },
+    {
+      "id": "sector:day:study:month-clash",
+      "beforeHash": "2ae3b4e789d3bfa79dd498cd0c40d4819970bfc0281f66b06fbb15e1eb58142d",
+      "afterHash": "7a05a025cd86a40271365d754b4296838e11841e3d2b028a262530329d3f63be",
+      "before": {
+        "id": "sector:day:study:month-clash",
+        "version": "2.4.2",
+        "domain": "study",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "study:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "study:month-clash",
+        "conflictGroup": "study:core",
+        "duplicateGroup": "study:month-clash",
+        "priority": 130,
+        "title": "분량보다 공부할 시간을 지키기",
+        "paragraphs": [
+          "예상했던 공부 시간을 온전히 쓰기 어려울 수 있는 날입니다. 해야 할 일이 겹쳐 진도가 늦어진다면 많은 분량을 욕심내기보다 꼭 마칠 내용을 정해보세요. 짧게 공부하더라도 복습할 시간은 남겨두는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "after": {
+        "id": "sector:day:study:month-clash",
+        "version": "2.4.4",
+        "domain": "study",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "study:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "study:month-clash",
+        "conflictGroup": "study:core",
+        "duplicateGroup": "study:month-clash",
+        "priority": 130,
+        "title": "분량보다 공부할 시간을 지키기",
+        "paragraphs": [
+          "태어난 달의 지지와 오늘의 일진이 충하는 관계라, 공부 계획을 조정하는 관점에서 살펴봐요. 이 관계만으로 집중력이나 시험 결과를 판단할 수는 없어요.",
+          "공부할 시간이 짧다면 한 단원이나 문제 유형 하나를 먼저 정하세요. 끝나기 전에는 틀린 부분을 다시 볼 시간을 남겨 보세요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "status": "author-edited-pending-independent"
+    },
+    {
+      "id": "sector:day:money:month-clash",
+      "beforeHash": "b3290c23375b035b9cf9023096c75522a780e148b529df3755d15e72fade8b56",
+      "afterHash": "957dbb12eb7c6fef490e4af0a1103151cec61fa0820768a6df265836c1534d9a",
+      "before": {
+        "id": "sector:day:money:month-clash",
+        "version": "2.3.0",
+        "domain": "money",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "money:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "money:month-clash",
+        "conflictGroup": "money:core",
+        "duplicateGroup": "money:month-clash",
+        "priority": 120,
+        "title": "돈이 오가는 날짜를 살필 때",
+        "paragraphs": [
+          "들어올 돈과 나갈 돈의 시점이 어긋나지 않는지 살펴야 할 날입니다. 전체 금액만 보고 안심하면 당장 필요한 비용을 놓칠 수 있겠습니다. 예정된 결제와 정산부터 차분히 챙기시기 바랍니다. 아직 받지 않은 돈을 이미 쓸 수 있는 돈처럼 생각하지 않는 편이 좋습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "after": {
+        "id": "sector:day:money:month-clash",
+        "version": "2.4.4",
+        "domain": "money",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "money:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "money:month-clash",
+        "conflictGroup": "money:core",
+        "duplicateGroup": "money:month-clash",
+        "priority": 120,
+        "title": "돈이 오가는 날짜를 살필 때",
+        "paragraphs": [
+          "원국의 월지와 오늘의 일진 사이에 충이 보여요. 재물 분야에서는 이를 지출과 결제 순서를 점검할 계기로 보며, 손익을 예측하는 근거로 삼지는 않아요.",
+          "예정된 결제일과 현재 사용할 수 있는 금액을 함께 확인하세요. 아직 받지 않은 돈은 입금되기 전까지 따로 적어 두면 계획을 세우기 편해요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "status": "author-edited-pending-independent"
+    },
+    {
+      "id": "sector:day:health:month-clash",
+      "beforeHash": "68669b5219158872b1f5897ef0ab83c9a49d76bfc5ec6a22650eead6f3eb2b3e",
+      "afterHash": "6ace4b8521680268635b350e3630beb1817b579635bc03b30d4a76ad1da08126",
+      "before": {
+        "id": "sector:day:health:month-clash",
+        "version": "2.4.2",
+        "domain": "health",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "health:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "health:month-clash",
+        "conflictGroup": "health:core",
+        "duplicateGroup": "health:month-clash",
+        "priority": 180,
+        "title": "일정이 밀려도 식사는 챙기기",
+        "paragraphs": [
+          "약속 순서가 달라지더라도 식사와 휴식 시간을 남겨둘 만한 날입니다. 다음 일에 늦을까 급해지면 잠깐 멈출 틈을 놓치기 쉽습니다. 꼭 그날 하지 않아도 되는 일이 있다면 먼저 줄여보세요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": -5
+        }
+      },
+      "after": {
+        "id": "sector:day:health:month-clash",
+        "version": "2.4.4",
+        "domain": "health",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "health:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "health:month-clash",
+        "conflictGroup": "health:core",
+        "duplicateGroup": "health:month-clash",
+        "priority": 180,
+        "title": "일정이 밀려도 식사는 챙기기",
+        "paragraphs": [
+          "오늘의 일진이 태어난 달의 지지와 충하는 관계를 이뤄요. 건강운에서는 일상의 리듬을 살피는 관점으로만 해석하며, 몸 상태나 질병을 뜻하지는 않아요.",
+          "오늘 일정에 식사와 쉬는 시간을 먼저 넣어 보세요. 몸에 불편함이 있다면 운세보다 실제 증상과 필요한 전문 진료를 우선하세요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": -5
+        }
+      },
+      "status": "author-edited-pending-independent"
+    },
+    {
+      "id": "sector:day:love:month-clash",
+      "beforeHash": "d7b065d1cf82b008ab4f69cd632d25eea584596f267445125ba60959dd221a68",
+      "afterHash": "5db016b737efdb0008d4311172e27e56391c0371f23d30b8809f461ad8233ffe",
+      "before": {
+        "id": "sector:day:love:month-clash",
+        "version": "2.3.0",
+        "domain": "love",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "love:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "love:month-clash",
+        "conflictGroup": "love:core",
+        "duplicateGroup": "love:month-clash",
+        "priority": 160,
+        "title": "약속이 어긋나도 마음을 단정하지 않기",
+        "paragraphs": [
+          "서로의 일정이 맞지 않아 아쉬움을 느낄 수 있는 날입니다. 만날 시간을 잡기 어렵다는 이유만으로 관심이 없다고 단정하지는 마십시오. 가능한 시간과 어려운 사정을 차분히 나누는 편이 좋겠습니다. 약속을 서두르기보다 서로 편한 방법을 찾으면 불필요한 서운함을 줄일 수 있습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": -5
+        }
+      },
+      "after": {
+        "id": "sector:day:love:month-clash",
+        "version": "2.4.4",
+        "domain": "love",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "love:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "love:month-clash",
+        "conflictGroup": "love:core",
+        "duplicateGroup": "love:month-clash",
+        "priority": 160,
+        "title": "약속이 어긋나도 마음을 단정하지 않기",
+        "paragraphs": [
+          "일진과 원국의 월지에서 충이 확인되어, 관계에서는 서로의 일정과 기대를 맞춰 보는 쪽에 초점을 두었어요. 상대의 마음이나 관계의 결과를 알 수 있다는 뜻은 아니에요.",
+          "약속을 잡을 때 가능한 시간과 원하는 방식을 구체적으로 말해 보세요. 일정이 맞지 않더라도 이유를 확인하기 전에는 관심의 크기를 단정하지 않아도 좋아요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": -5
+        }
+      },
+      "status": "author-edited-pending-independent"
+    },
+    {
+      "id": "sector:day:business:month-clash",
+      "beforeHash": "6363b8d1f132fd6181256d9e882bc072bd75032ba1ec9352331d6a2053814a23",
+      "afterHash": "551737667709894bf7d7db69dd3164004c894b6685e03a5c9ec57516a0aefab4",
+      "before": {
+        "id": "sector:day:business:month-clash",
+        "version": "2.3.0",
+        "domain": "business",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "business:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "business:month-clash",
+        "conflictGroup": "business:core",
+        "duplicateGroup": "business:month-clash",
+        "priority": 165,
+        "title": "급한 요청에도 순서를 지킬 때",
+        "paragraphs": [
+          "주변의 요청과 자신의 계획이 어긋나기 쉬운 날입니다. 급하다는 말에 하던 일을 모두 뒤로 미루면 오히려 진행이 더 복잡해질 수 있습니다. 먼저 지켜야 할 약속을 살피고 바꿀 순서를 이야기하시기 바랍니다. 혼자 모든 변경을 떠안기보다 필요한 사람에게 미리 알리는 편이 좋겠습니다."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "after": {
+        "id": "sector:day:business:month-clash",
+        "version": "2.4.4",
+        "domain": "business",
+        "unit": "day",
+        "role": "core",
+        "scenario": "month-clash",
+        "semanticId": "business:month-clash",
+        "requires": {
+          "all": [
+            {
+              "path": "known.day",
+              "op": "eq",
+              "value": true
+            },
+            {
+              "path": "target.monthClash",
+              "op": "eq",
+              "value": true
+            }
+          ]
+        },
+        "premises": [
+          "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+        ],
+        "exclusions": [],
+        "neededInputs": [
+          "출생 일간",
+          "확정된 출생 기둥",
+          "기간 경계와 간지"
+        ],
+        "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+        "evidenceRefs": [
+          "target.monthClash"
+        ],
+        "sourceRefs": [
+          "service-adopted-symbolic-interpretation",
+          "lunar-typescript@1.8.6"
+        ],
+        "policyRefs": [
+          "SIX-SECTOR-CONTEXT-1.0",
+          "KR-SOLAR-MIDNIGHT-1.0",
+          "SIX-SECTOR-CONTEXT-2.0"
+        ],
+        "meaningAxis": "business:month-clash",
+        "conflictGroup": "business:core",
+        "duplicateGroup": "business:month-clash",
+        "priority": 165,
+        "title": "급한 요청에도 순서를 지킬 때",
+        "paragraphs": [
+          "오늘의 일진과 원국 월지 사이의 충을 일의 순서를 살피는 단서로 읽어요. 직장이나 사업에서 변화가 반드시 생긴다는 뜻은 아니에요.",
+          "새 요청을 받으면 기존 마감과 걸리는 시간을 먼저 비교하세요. 순서를 바꿔야 한다면 영향을 받는 사람에게 변경 범위를 알려 보세요."
+        ],
+        "proposal": "",
+        "assumesLifeStatus": false,
+        "status": "author-reviewed-pending-independent",
+        "variantOf": null,
+        "contribution": {
+          "group": "focus",
+          "delta": 0
+        }
+      },
+      "status": "author-edited-pending-independent"
+    }
+  ]
+}

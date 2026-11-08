@@ -52,7 +52,7 @@
     "RETENTION_CONFIRMED": "false",
     "STORAGE_ENABLED": "false",
     "APP_ORIGIN": "https://spring-voice-4bdc-ai-stg.eogjs9595.workers.dev",
-    "RELEASE_VERSION": "2.5.4",
+    "RELEASE_VERSION": "2.5.5",
     "STORAGE_HEALTH_CHECK": "true",
     "KAKAO_LOGIN_ENABLED": "false",
     "GOOGLE_LOGIN_ENABLED": "false",

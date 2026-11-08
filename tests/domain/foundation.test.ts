@@ -1,7 +1,7 @@
 import { describe,it,expect } from 'vitest';
 import { foundationTables } from '../../src/domain/foundation/tables';
 import { calculateAdvanced } from '../../src/domain/advanced/chart';
-import { buildSectorReading,judgeSector,matches,roundIndex,scheduleFor,sectorRecords,scheduleRecords,sectorFacts } from '../../src/domain/foundation/engine';
+import { buildSectorReading,judgeSector,matches,roundIndex,displayScore,scheduleFor,sectorRecords,scheduleRecords,sectorFacts } from '../../src/domain/foundation/engine';
 import { domains,contexts } from '../../src/domain/foundation/types';
 import { calculatePeriod } from '../../src/domain/advanced/period';
 import { solarTerms } from '../../src/domain/calendar/terms';
@@ -65,4 +65,33 @@ it('different hour pillars can change natal-capacity evidence and the selected s
  const solar=calculateAdvanced(input,{enabled:true,timePolicy:'true-solar',cityId:'suwon',luckClass:'male'});let different=false;
  for(let day=0;day<60;day++){const date=new Date(Date.UTC(2026,0,1+day)).toISOString().slice(0,10);const a=buildSectorReading(chart,'day',date),b=buildSectorReading(solar,'day',date);if(JSON.stringify(a.sectors.study.records.map(r=>r.id))!==JSON.stringify(b.sectors.study.records.map(r=>r.id)))different=true;}
  expect(different).toBe(true);
+});
+
+it('separates the deterministic raw index from a bounded monotone display scale',()=>{
+ const values=Array.from({length:101},(_,i)=>displayScore(i));
+ expect(values.every((v,i)=>v>=0&&v<=100&&(i===0||v>=values[i-1]))).toBe(true);
+ expect([50,55,60].map(displayScore)).toEqual([50,60,70]);
+ const reading=buildSectorReading(chart,'day','2026-10-23');
+ expect(reading.scoreVersion).toBe('3.0.0');
+ for(const segment of reading.segments)for(const domain of domains.filter(d=>d!=='overall')){
+  const judgment=segment.sectors[domain];
+  expect(judgment.rawScore).toBe(50+Math.max(-25,Math.min(25,judgment.contributions.reduce((sum,c)=>sum+c.delta,0))));
+  expect(judgment.score).toBe(displayScore(judgment.rawScore!));
+ }
+});
+it('retains weighted raw and display aggregation and null uncertainty',()=>{
+ for(const kind of ['day','month','year'] as const){
+  const reading=buildSectorReading(chart,kind,'2026-10-23');
+  for(const domain of domains.filter(d=>d!=='overall')){
+   const raw=reading.segments.reduce((sum,s)=>sum+s.sectors[domain].rawScore!*(s.end-s.start),0)/(reading.end-reading.start);
+   const displayed=reading.segments.reduce((sum,s)=>sum+s.sectors[domain].score!*(s.end-s.start),0)/(reading.end-reading.start);
+   expect(reading.sectors[domain].rawScore).toBeCloseTo(raw,10);
+   expect(reading.sectors[domain].score).toBe(roundIndex(displayed));
+  }
+  const others=domains.filter(d=>d!=='overall');
+  expect(reading.sectors.overall.rawScore).toBeCloseTo(others.reduce((sum,d)=>sum+reading.sectors[d].rawScore!,0)/5,10);
+  expect(reading.sectors.overall.score).toBe(roundIndex(others.reduce((sum,d)=>sum+reading.sectors[d].score!,0)/5));
+ }
+ const unknown=judgeSector('study','day',{'known.day':false});
+ expect(unknown.rawScore).toBeNull();expect(unknown.score).toBeNull();
 });

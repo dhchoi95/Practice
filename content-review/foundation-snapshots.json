@@ -220917,5 +220917,1466 @@
         "delta": 0
       }
     }
+  },
+  {
+    "hash": "40b9d85b4edda6dfc47de9c4e71dc28c1cab22396888e59c354e8839320eb7ed",
+    "record": {
+      "id": "sector:day:overall:month-clash",
+      "version": "2.4.4",
+      "domain": "overall",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "overall:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "overall:month-clash",
+      "conflictGroup": "overall:core",
+      "duplicateGroup": "overall:month-clash",
+      "priority": 170,
+      "title": "지킬 기한을 먼저 살필 때",
+      "paragraphs": [
+        "오늘의 일진과 태어난 달의 지지가 서로 충하는 관계로 나타나요. 이 관계를 하루의 흐름을 조정해 볼 단서로 풀이하며, 실제 일정에 문제가 생긴다는 예측은 아니에요.",
+        "오늘 할 일 가운데 마감이 정해진 것부터 적어 보세요. 급한 부탁이 더해지면 맡을 범위와 마칠 수 있는 시간을 확인해 보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "a662af3d6c9abed99b7a4ccf66e94c32508ca807f60423fca4dc61fcaad5127f",
+    "record": {
+      "id": "sector:day:overall:resource",
+      "version": "2.4.4",
+      "domain": "overall",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "overall:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "overall:resource",
+      "conflictGroup": "overall:core",
+      "duplicateGroup": "overall:resource",
+      "priority": 120,
+      "title": "필요한 준비를 채울 때",
+      "paragraphs": [
+        "오늘의 천간은 내 일간을 돕는 관계인 인성으로 분류돼요. 이 관계는 준비와 배움을 살펴보는 상징으로 해석하며, 실제로 누군가의 도움이 온다는 뜻은 아니에요.",
+        "시작하기 어려운 일이 있다면 부족한 정보가 무엇인지 한 줄로 적어 보세요. 필요한 자료나 설명을 찾은 뒤 첫 단계를 정하면 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "7a05a025cd86a40271365d754b4296838e11841e3d2b028a262530329d3f63be",
+    "record": {
+      "id": "sector:day:study:month-clash",
+      "version": "2.4.4",
+      "domain": "study",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "study:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:month-clash",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:month-clash",
+      "priority": 130,
+      "title": "분량보다 공부할 시간을 지키기",
+      "paragraphs": [
+        "태어난 달의 지지와 오늘의 일진이 충하는 관계라, 공부 계획을 조정하는 관점에서 살펴봐요. 이 관계만으로 집중력이나 시험 결과를 판단할 수는 없어요.",
+        "공부할 시간이 짧다면 한 단원이나 문제 유형 하나를 먼저 정하세요. 끝나기 전에는 틀린 부분을 다시 볼 시간을 남겨 보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "ebb9977565214a0450a282c10e191ededd1a7a4c9d3b68f4959a2e377dca6086",
+    "record": {
+      "id": "sector:day:study:resource",
+      "version": "2.4.4",
+      "domain": "study",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "study:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:resource",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:resource",
+      "priority": 110,
+      "title": "뜻을 이해하는 공부",
+      "paragraphs": [
+        "내 일간을 기준으로 오늘의 천간은 인성, 곧 배우고 익히는 주제와 연결되는 관계예요. 이해에 필요한 기초를 살펴보는 방향으로 풀이해요.",
+        "모르는 개념을 하나 골라 자기 말로 설명해 보세요. 막히는 부분은 교재의 예시와 연결한 뒤 다시 확인하면 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "957dbb12eb7c6fef490e4af0a1103151cec61fa0820768a6df265836c1534d9a",
+    "record": {
+      "id": "sector:day:money:month-clash",
+      "version": "2.4.4",
+      "domain": "money",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "money:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "money:month-clash",
+      "conflictGroup": "money:core",
+      "duplicateGroup": "money:month-clash",
+      "priority": 120,
+      "title": "돈이 오가는 날짜를 살필 때",
+      "paragraphs": [
+        "원국의 월지와 오늘의 일진 사이에 충이 보여요. 재물 분야에서는 이를 지출과 결제 순서를 점검할 계기로 보며, 손익을 예측하는 근거로 삼지는 않아요.",
+        "예정된 결제일과 현재 사용할 수 있는 금액을 함께 확인하세요. 아직 받지 않은 돈은 입금되기 전까지 따로 적어 두면 계획을 세우기 편해요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "93e4b4d325ec476ff4a63a7a13e74175f41481c900f6d40afe1e4e9de779ad68",
+    "record": {
+      "id": "sector:day:money:resource",
+      "version": "2.4.4",
+      "domain": "money",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "money:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "money:resource",
+      "conflictGroup": "money:core",
+      "duplicateGroup": "money:resource",
+      "priority": 100,
+      "title": "비용의 뜻을 이해할 때",
+      "paragraphs": [
+        "오늘의 천간은 내 일간을 돕는 인성 관계에 해당해요. 재물 분야에서는 수익을 예상하기보다 돈에 관한 설명을 이해하는 데 초점을 두어요.",
+        "결제 전 이용 기간과 추가 비용을 확인해 보세요. 조건을 이해하기 어렵다면 바로 결정하지 말고 필요한 설명을 더 찾아보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "6ace4b8521680268635b350e3630beb1817b579635bc03b30d4a76ad1da08126",
+    "record": {
+      "id": "sector:day:health:month-clash",
+      "version": "2.4.4",
+      "domain": "health",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "health:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "health:month-clash",
+      "conflictGroup": "health:core",
+      "duplicateGroup": "health:month-clash",
+      "priority": 180,
+      "title": "일정이 밀려도 식사는 챙기기",
+      "paragraphs": [
+        "오늘의 일진이 태어난 달의 지지와 충하는 관계를 이뤄요. 건강운에서는 일상의 리듬을 살피는 관점으로만 해석하며, 몸 상태나 질병을 뜻하지는 않아요.",
+        "오늘 일정에 식사와 쉬는 시간을 먼저 넣어 보세요. 몸에 불편함이 있다면 운세보다 실제 증상과 필요한 전문 진료를 우선하세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": -5
+      }
+    }
+  },
+  {
+    "hash": "9b8fe66a464c8323b8d0ff38cfb49fa130160cd80942ad3f33f4ba65c3192b14",
+    "record": {
+      "id": "sector:day:health:resource",
+      "version": "2.4.4",
+      "domain": "health",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "health:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "health:resource",
+      "conflictGroup": "health:core",
+      "duplicateGroup": "health:resource",
+      "priority": 110,
+      "title": "정보를 보다가 잠시 쉬어가기",
+      "paragraphs": [
+        "일간을 기준으로 오늘 나타나는 인성 관계를 건강 정보를 차분히 살피는 단서로 읽어요. 이 관계는 건강 상태를 진단하거나 치료 효과를 알려주지 않아요.",
+        "건강 정보를 볼 때 출처와 적용 대상을 확인해 보세요. 증상이 있거나 치료를 고민한다면 전문가와 상담하는 편이 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "5db016b737efdb0008d4311172e27e56391c0371f23d30b8809f461ad8233ffe",
+    "record": {
+      "id": "sector:day:love:month-clash",
+      "version": "2.4.4",
+      "domain": "love",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "love:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "love:month-clash",
+      "conflictGroup": "love:core",
+      "duplicateGroup": "love:month-clash",
+      "priority": 160,
+      "title": "약속이 어긋나도 마음을 단정하지 않기",
+      "paragraphs": [
+        "일진과 원국의 월지에서 충이 확인되어, 관계에서는 서로의 일정과 기대를 맞춰 보는 쪽에 초점을 두었어요. 상대의 마음이나 관계의 결과를 알 수 있다는 뜻은 아니에요.",
+        "약속을 잡을 때 가능한 시간과 원하는 방식을 구체적으로 말해 보세요. 일정이 맞지 않더라도 이유를 확인하기 전에는 관심의 크기를 단정하지 않아도 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": -5
+      }
+    }
+  },
+  {
+    "hash": "d14c7b5d04a208e18389b2b6039a90ce44ec586418d4e9a0bd7f09642ca34326",
+    "record": {
+      "id": "sector:day:love:resource",
+      "version": "2.4.4",
+      "domain": "love",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "love:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "love:resource",
+      "conflictGroup": "love:core",
+      "duplicateGroup": "love:resource",
+      "priority": 100,
+      "title": "생각과 실제로 들은 말",
+      "paragraphs": [
+        "오늘의 천간이 내 일간과 맺는 인성 관계를 상대의 말을 이해하려는 관점으로 풀이해요. 이것만으로 상대방의 생각을 알 수 있는 것은 아니에요.",
+        "마음에 남은 말이 있다면 내가 이해한 뜻이 맞는지 물어보세요. 대답을 재촉하지 않고 상대가 말할 시간을 두어도 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "551737667709894bf7d7db69dd3164004c894b6685e03a5c9ec57516a0aefab4",
+    "record": {
+      "id": "sector:day:business:month-clash",
+      "version": "2.4.4",
+      "domain": "business",
+      "unit": "day",
+      "role": "core",
+      "scenario": "month-clash",
+      "semanticId": "business:month-clash",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "target.monthClash",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "target.monthClash"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "business:month-clash",
+      "conflictGroup": "business:core",
+      "duplicateGroup": "business:month-clash",
+      "priority": 165,
+      "title": "급한 요청에도 순서를 지킬 때",
+      "paragraphs": [
+        "오늘의 일진과 원국 월지 사이의 충을 일의 순서를 살피는 단서로 읽어요. 직장이나 사업에서 변화가 반드시 생긴다는 뜻은 아니에요.",
+        "새 요청을 받으면 기존 마감과 걸리는 시간을 먼저 비교하세요. 순서를 바꿔야 한다면 영향을 받는 사람에게 변경 범위를 알려 보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "aca147fd88d6b96fc68ad201db2f21e6284680d68386973259830c9e8db3b6d2",
+    "record": {
+      "id": "sector:day:business:resource",
+      "version": "2.4.4",
+      "domain": "business",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "business:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "business:resource",
+      "conflictGroup": "business:core",
+      "duplicateGroup": "business:resource",
+      "priority": 110,
+      "title": "모르는 일을 준비할 때",
+      "paragraphs": [
+        "오늘의 천간은 내 일간과 인성 관계를 이루어, 일에서는 익숙하지 않은 조건을 배우고 확인하는 주제로 읽어요. 성과나 채용 여부를 예측하는 근거는 아니에요.",
+        "새 업무나 지원 공고를 살핀다면 요구사항을 항목별로 적어 보세요. 뜻이 불분명한 항목은 착수하거나 제출하기 전에 확인해 보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "1b2ac16422bf3a80081cdb4f08a75c2a0bcbeae6dbd0b7b4d0dc8eb3355ed67d",
+    "record": {
+      "id": "supplement:day:money:supported-preparation",
+      "version": "2.4.4",
+      "domain": "money",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "supported-preparation",
+      "semanticId": "money:supported-preparation",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "strength.class",
+            "op": "eq",
+            "value": "weak"
+          },
+          {
+            "path": "group.wealth",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 출생 일간",
+        "해당 원국·기간 조건"
+      ],
+      "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+      "evidenceRefs": [
+        "strength.class",
+        "group.wealth"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "SEASON-ROOT-CANDIDATES-1.0"
+      ],
+      "meaningAxis": "money:supported-preparation",
+      "conflictGroup": "money:capacity",
+      "duplicateGroup": "money:supported-preparation",
+      "priority": 60,
+      "title": "새 지출을 줄여야 할 때",
+      "paragraphs": [
+        "새로 이용할 서비스를 고른다면 나중에 사용을 줄이거나 그만둘 수 있는지도 살펴보세요. 해지 수수료나 환불 조건을 미리 알아두면 사정이 달라졌을 때 선택하기 쉽습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "capacity",
+        "delta": -5
+      }
+    }
+  },
+  {
+    "hash": "6d85b3860dc6b4b80bf74a27a9cf31e1ba130738360c167fc56aaa392fd7a360",
+    "record": {
+      "id": "supplement:day:love:repeat-day",
+      "version": "2.4.4",
+      "domain": "love",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "repeat-day",
+      "semanticId": "love:repeat-day",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "same.day",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "premises": [
+        "원국 조건과 기간 조건이 함께 확인된 범위만 보완"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 출생 일간",
+        "해당 원국·기간 조건"
+      ],
+      "unknownHandling": "불확정인 전제는 충족으로 간주하지 않음",
+      "evidenceRefs": [
+        "same.day"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "SEASON-ROOT-CANDIDATES-1.0"
+      ],
+      "meaningAxis": "love:repeat-day",
+      "conflictGroup": "love:supplement:3",
+      "duplicateGroup": "love:repeat-day",
+      "priority": 57,
+      "title": "함께하는 시간과 혼자 쉬는 시간",
+      "paragraphs": [
+        "가까운 관계에서도 함께 있고 싶은 시간과 혼자 쉬고 싶은 시간은 다를 수 있습니다. 각자 필요한 여유를 존중하면 연락이나 만남을 쉬는 시간에도 부담을 덜 수 있겠습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "natal-day",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "319cd8125200b72dd59799a452fc3233105b115b2b39e8592d9403cda54c9359",
+    "record": {
+      "id": "sector:day:money:detail-05",
+      "version": "2.4.4",
+      "domain": "money",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "detail-05",
+      "semanticId": "money:detail-05",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "겁재"
+          },
+          {
+            "path": "natal.monthMainGod",
+            "op": "in",
+            "value": [
+              "정재",
+              "편재"
+            ]
+          }
+        ]
+      },
+      "premises": [
+        "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "natal.monthMainGod"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "money:detail-05",
+      "conflictGroup": "money:detailed-expansion",
+      "duplicateGroup": "money:detail-05",
+      "priority": 203,
+      "title": "함께 쓴 돈의 내역 남기기",
+      "paragraphs": [
+        "여럿이 쓸 돈을 한 사람이 먼저 냈다면 무엇을 위해 얼마를 결제했는지 함께 볼 수 있게 남겨보세요. 나중에 기억이 달라져도 내역을 보며 이야기할 수 있습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "editorial": {
+        "question": "겁재와 월지 본기의 재성이 함께 있을 때 분배 전에 무엇을 정해야 할까?",
+        "refines": "money:peer",
+        "counter": "이 관계가 금전 손실이나 타인의 의도를 뜻하지는 않아요."
+      },
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "e2e8d19f5188415a65d51d26f6f095c4ce98e2a47da4717788f9b579c80f3028",
+    "record": {
+      "id": "sector:day:business:detail-04",
+      "version": "2.4.4",
+      "domain": "business",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "detail-04",
+      "semanticId": "business:detail-04",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "상관"
+          },
+          {
+            "path": "natal.visible.정인",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "premises": [
+        "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "natal.visible.정인"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "business:detail-04",
+      "conflictGroup": "business:detailed-expansion",
+      "duplicateGroup": "business:detail-04",
+      "priority": 203,
+      "title": "의견을 듣고 고칠 부분 고르기",
+      "paragraphs": [
+        "일하는 방식을 바꿀 생각이라면 제안에 대한 의견을 들어보세요. 여러 조언이 한꺼번에 들어와도 지금 적용할 수 있는 것과 나중에 살펴볼 것을 나누면 됩니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "editorial": {
+        "question": "상관과 드러난 정인이 함께 있을 때 비판을 제안으로 바꾸는 근거는 무엇일까?",
+        "refines": "business:output",
+        "counter": "새 제안이 항상 더 낫다고 판정하는 구성은 아니에요."
+      },
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "5357a3ccf74e93c213e4d8b328c92008058b7b9950cb3e5db3cb29f4f9ab50a6",
+    "record": {
+      "id": "sector:day:health:detail-07",
+      "version": "2.4.4",
+      "domain": "health",
+      "unit": "day",
+      "role": "supplement",
+      "scenario": "detail-07",
+      "semanticId": "health:detail-07",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "period.god",
+            "op": "eq",
+            "value": "비견"
+          },
+          {
+            "path": "natal.visible.겁재",
+            "op": "gte",
+            "value": 1
+          }
+        ]
+      },
+      "premises": [
+        "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+        "일간·실제 자리·지정 기간에서 확인한 출현만 서비스 해석으로 연결. 특정 구조·합화·사건 성립은 유보."
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "확정된 일간",
+        "전제에 명시된 실제 원국 자리",
+        "해당 기간과 선택된 대운"
+      ],
+      "unknownHandling": "각 전제의 null은 충족으로 보지 않음. 원국 노출의 부재는 전체 기둥이 있어야 판단.",
+      "evidenceRefs": [
+        "period.god",
+        "natal.visible.겁재"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-2.0",
+        "KR-SOLAR-MIDNIGHT-1.0"
+      ],
+      "meaningAxis": "health:detail-07",
+      "conflictGroup": "health:detailed-expansion",
+      "duplicateGroup": "health:detail-07",
+      "priority": 203,
+      "title": "운동할 때 낯선 동작 살피기",
+      "paragraphs": [
+        "새로운 운동이나 기구를 이용한다면 사용법부터 익혀보세요. 속도를 높이기 전에 편안하게 움직일 수 있는 범위를 살피고, 통증이 있다면 무리하지 않는 편이 좋겠습니다."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "editorial": {
+        "question": "비견과 원국 겁재가 함께 있으면 집단 활동의 속도를 어떻게 정할까?",
+        "refines": "health:peer",
+        "counter": "사람들과의 경쟁이나 실제 체력 차이를 판정하지 않아요."
+      },
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "03f6e7b2bb9f50df4772404678c382d343feeb332a778f73476931c53bbda276",
+    "record": {
+      "id": "sector:day:study:resource",
+      "version": "2.4.4",
+      "domain": "study",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "study:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "study:resource",
+      "conflictGroup": "study:core",
+      "duplicateGroup": "study:resource",
+      "priority": 110,
+      "title": "뜻을 이해하는 공부",
+      "paragraphs": [
+        "새로운 내용을 익힐 때 기초를 먼저 이해하는 방향으로 풀이해요. 오늘의 천간은 내 일간을 돕는 인성 관계로, 배움과 연결해 볼 수 있어요.",
+        "모르는 개념을 하나 골라 자기 말로 설명해 보세요. 막히는 부분은 교재의 예시와 연결한 뒤 다시 확인하면 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "05a3551c3c2c1c4d403118c97ce08833ee4abe7aaeef85576470d98f6116b5c8",
+    "record": {
+      "id": "sector:day:money:resource",
+      "version": "2.4.4",
+      "domain": "money",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "money:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "money:resource",
+      "conflictGroup": "money:core",
+      "duplicateGroup": "money:resource",
+      "priority": 100,
+      "title": "비용의 뜻을 이해할 때",
+      "paragraphs": [
+        "돈을 쓰기 전에 조건을 이해하는 데 초점을 두어요. 오늘의 천간과 내 일간의 인성 관계를 준비와 학습의 관점에서 읽은 것이며, 수익 예측은 아니에요.",
+        "결제 전 이용 기간과 추가 비용을 확인해 보세요. 조건을 이해하기 어렵다면 바로 결정하지 말고 필요한 설명을 더 찾아보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "e6c7c7783ed043b58e32bef41004a5308073f423c078c5c2e021b7968d2a168c",
+    "record": {
+      "id": "sector:day:health:resource",
+      "version": "2.4.4",
+      "domain": "health",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "health:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "health:resource",
+      "conflictGroup": "health:core",
+      "duplicateGroup": "health:resource",
+      "priority": 110,
+      "title": "정보를 보다가 잠시 쉬어가기",
+      "paragraphs": [
+        "건강에 관한 정보를 이해하고 살펴보는 관점으로 풀이해요. 오늘의 천간과 일간의 인성 관계가 실제 몸 상태나 치료 효과를 알려주는 것은 아니에요.",
+        "건강 정보를 볼 때 출처와 적용 대상을 확인해 보세요. 증상이 있거나 치료를 고민한다면 전문가와 상담하는 편이 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 5
+      }
+    }
+  },
+  {
+    "hash": "0070431f7d4d5027a05fa16122b66286d7c87fa5973435a7b274011c91b60ed4",
+    "record": {
+      "id": "sector:day:love:resource",
+      "version": "2.4.4",
+      "domain": "love",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "love:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "love:resource",
+      "conflictGroup": "love:core",
+      "duplicateGroup": "love:resource",
+      "priority": 100,
+      "title": "생각과 실제로 들은 말",
+      "paragraphs": [
+        "관계에서는 상대의 말을 이해하는 데 관심을 둘 수 있어요. 오늘의 천간과 일간의 인성 관계를 배움의 관점에서 읽은 것이며, 상대의 마음을 알 수 있다는 뜻은 아니에요.",
+        "마음에 남은 말이 있다면 내가 이해한 뜻이 맞는지 물어보세요. 대답을 재촉하지 않고 상대가 말할 시간을 두어도 좋아요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
+  },
+  {
+    "hash": "a546b677bd3be66e69d7ea4c3a7bd3dd86280c4050f42e12221991108e279139",
+    "record": {
+      "id": "sector:day:business:resource",
+      "version": "2.4.4",
+      "domain": "business",
+      "unit": "day",
+      "role": "core",
+      "scenario": "resource",
+      "semanticId": "business:resource",
+      "requires": {
+        "all": [
+          {
+            "path": "known.day",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "path": "focus",
+            "op": "eq",
+            "value": "resource"
+          }
+        ]
+      },
+      "premises": [
+        "구성 출현을 서비스 생활 주제로 연결하며 실제 상태·구조 성립은 추정하지 않음"
+      ],
+      "exclusions": [],
+      "neededInputs": [
+        "출생 일간",
+        "확정된 출생 기둥",
+        "기간 경계와 간지"
+      ],
+      "unknownHandling": "일간 미확정이면 미선정; 시주 미상은 공통 확정 조건만 사용",
+      "evidenceRefs": [
+        "focus"
+      ],
+      "sourceRefs": [
+        "service-adopted-symbolic-interpretation",
+        "lunar-typescript@1.8.6"
+      ],
+      "policyRefs": [
+        "SIX-SECTOR-CONTEXT-1.0",
+        "KR-SOLAR-MIDNIGHT-1.0",
+        "SIX-SECTOR-CONTEXT-2.0"
+      ],
+      "meaningAxis": "business:resource",
+      "conflictGroup": "business:core",
+      "duplicateGroup": "business:resource",
+      "priority": 110,
+      "title": "모르는 일을 준비할 때",
+      "paragraphs": [
+        "일에서는 낯선 조건을 배우고 이해하는 데 초점을 두어요. 오늘의 천간과 일간의 인성 관계를 준비의 관점에서 풀이하며, 성과나 채용 여부를 예측하지는 않아요.",
+        "새 업무나 지원 공고를 살핀다면 요구사항을 항목별로 적어 보세요. 뜻이 불분명한 항목은 착수하거나 제출하기 전에 확인해 보세요."
+      ],
+      "proposal": "",
+      "assumesLifeStatus": false,
+      "status": "author-reviewed-pending-independent",
+      "variantOf": null,
+      "contribution": {
+        "group": "focus",
+        "delta": 0
+      }
+    }
   }
 ]

@@ -20,8 +20,8 @@
     "periodNotes": 3
   },
   "publicCodeFiles": 44,
-  "checkedStrings": 32302,
-  "protectedEngineFiles": 35,
+  "checkedStrings": 32352,
+  "protectedEngineFiles": 34,
   "engineChecks": [
     {
       "path": "src/domain/advanced/chart.ts",
@@ -97,10 +97,6 @@
     },
     {
       "path": "src/domain/foundation/detail-facts.ts",
-      "passed": true
-    },
-    {
-      "path": "src/domain/foundation/engine.ts",
       "passed": true
     },
     {
