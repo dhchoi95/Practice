@@ -19,9 +19,9 @@ for(const r of sectorRecords){const key=`${r.unit}:${r.domain}`;buckets.set(key,
 export function matchesTest(test:Test,facts:Facts){const v=facts[test.path];if(v===null||v===undefined)return false;return test.op==='eq'?v===test.value:test.op==='gte'?typeof v==='number'&&typeof test.value==='number'&&v>=test.value:Array.isArray(test.value)&&typeof v==='string'&&test.value.includes(v);}
 export function matches(condition:Condition,facts:Facts){return condition.all.every(t=>matchesTest(t,facts))&&(!condition.any||condition.any.some(t=>matchesTest(t,facts)));}
 export const roundIndex=(value:number)=>Math.max(0,Math.min(100,Math.round(value/5)*5));
-// The fixed scale expands differences without treating 50 as a scientific baseline.
-export const displayScore=(rawScore:number)=>roundIndex(50+2*(rawScore-50));
-export const scoreBand=(score:number|null)=>score===null?'산출 보류':score>=90?'활용할 요소가 많아요':score>=60?'활용과 조율을 함께 봐요':score>=30?'준비와 조율부터 살펴요':'범위를 줄여 살펴요';
+// A display scale, not a statistical or classical fortune-telling measurement.
+export const displayScore=(rawScore:number)=>{const delta=rawScore-50;return roundIndex(50+(delta<=0?2*delta:3*Math.min(delta,10)+2*Math.max(0,delta-10)));};
+export const scoreBand=(score:number|null)=>score===null?'산출 보류':score>=90?'활용할 요소가 많아요':score>=65?'활용과 조율을 함께 봐요':score>=30?'준비와 조율부터 살펴요':'범위를 줄여 살펴요';
 function group(g:unknown){return g==='비견'||g==='겁재'?'peer':g==='식신'||g==='상관'?'output':g==='정재'||g==='편재'?'wealth':g==='정관'||g==='편관'?'order':g==='정인'||g==='편인'?'resource':null;}
 export function sectorFacts(chart:AdvancedChart,segment:ContextSegment):Facts {
  const dm=chart.pillars.day?.stem,focus=group(segment.facts['period.god']),branch=group(segment.facts['period.branchGod']);
@@ -63,7 +63,16 @@ export function judgeSector(domain:Domain,unit:PeriodKind,facts:Facts):SectorJud
  if(!facts['known.day'])return {domain,rawScore:null,score:null,band:scoreBand(null),records:[],facts,contributions:[],selectionTrace:[],uncertainty:['출생 일간이 미확정이라 지수와 개인 본문을 정하지 않았어요.']};
  const selection=selectSectorRecords(buckets.get(`${unit}:${domain}`)??[],facts),records=selection.selected;
  if(!records.some(r=>r.role==='core'))throw new Error(`분야 중심 원고 누락: ${domain}/${unit}`);
- const seen=new Set<string>();const contributions=records.flatMap(r=>{if(seen.has(r.contribution.group))return [];seen.add(r.contribution.group);return [{recordId:r.id,...r.contribution,facts}];});
+ // Within each evidence group, count the strongest positive and negative once.
+ // Opposing selected interpretations therefore balance instead of being silently discarded.
+ const grouped=new Map<string,SectorRecord[]>();for(const r of records){const key=r.contribution.group;grouped.set(key,[...(grouped.get(key)??[]),r]);}
+ const contributions=[...grouped].map(([group,items])=>{
+  const positive=items.reduce((best,r)=>r.contribution.delta>best.contribution.delta?r:best,items[0]);
+  const negative=items.reduce((best,r)=>r.contribution.delta<best.contribution.delta?r:best,items[0]);
+  const chosen=[...(positive.contribution.delta>0?[positive]:[]),...(negative.contribution.delta<0?[negative]:[])];
+  const used=chosen.length?chosen:[items[0]];
+  return {recordId:used[0].id,recordIds:used.map(r=>r.id),group,delta:used.reduce((sum,r)=>sum+r.contribution.delta,0),components:items.map(r=>({recordId:r.id,delta:r.contribution.delta})),facts};
+ });
  const delta=Math.max(-25,Math.min(25,contributions.reduce((sum,c)=>sum+c.delta,0))),rawScore=50+delta,score=displayScore(rawScore);
  return {domain,rawScore,score,band:scoreBand(score),records,facts,contributions,selectionTrace:selection.trace,uncertainty:facts['known.hour']?[]:['시주는 제외하고 확인된 기둥만 반영했어요.']};
 }
@@ -79,6 +88,9 @@ export function buildSectorReading(chart:AdvancedChart,kind:PeriodKind,target:st
   const facts=sectorFacts(chart,context),sectors=Object.fromEntries(domains.map(d=>[d,judgeSector(d,kind,facts)])) as Record<Domain,SectorJudgment>;
   const others=domains.filter(d=>d!=='overall').map(d=>sectors[d].score);
   const rawOthers=domains.filter(d=>d!=='overall').map(d=>sectors[d].rawScore);
+  // The total is an equal-weight aggregate, not the overall prose record's contribution.
+  sectors.overall.contributions=[];
+  sectors.overall.scoreInputs=domains.filter(d=>d!=='overall').map(domain=>({domain,rawScore:sectors[domain].rawScore,score:sectors[domain].score}));
   sectors.overall.rawScore=rawOthers.every(v=>v!==null)?(rawOthers as number[]).reduce((a,b)=>a+b,0)/5:null;
   sectors.overall.score=others.every(v=>v!==null)?roundIndex((others as number[]).reduce((a,b)=>a+b,0)/5):null;sectors.overall.band=scoreBand(sectors.overall.score);
   return {start:context.start,end:context.end,context,sectors};

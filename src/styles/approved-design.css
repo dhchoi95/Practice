@@ -88,3 +88,8 @@
 .natal-elements-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; text-align: left; }
 .natal-elements-table th, .natal-elements-table td { border-bottom: 1px solid var(--line); padding: 10px 6px; vertical-align: top; }
 .natal-elements-table th:first-child, .natal-elements-table td:nth-child(2) { white-space: nowrap; }
+.natal-brief-item { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.natal-brief-item h4 { margin: 0 0 7px; display: flex; align-items: center; gap: 8px; font-size: 16px; }
+.natal-brief-item h4 svg { width: 21px; height: 21px; color: var(--accent); flex: none; }
+.natal-brief-item strong { display: block; font-size: 16px; }
+.natal-brief-item p { margin-top: 6px; color: var(--muted); font-size: 15px; }

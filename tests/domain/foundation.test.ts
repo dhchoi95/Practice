@@ -23,7 +23,7 @@ describe('normalized foundation',()=>{
 for(const kind of ['day','month','year'] as const)for(const domain of domains)it(`${kind}/${domain}: applicable source premises and score share one decision`,()=>{
  const reading=buildSectorReading(chart,kind,'2026-10-23');
  expect(reading.sectors[domain].records.length).toBeGreaterThan(0);
- for(const s of reading.segments){const j=s.sectors[domain];expect(j.score!%5).toBe(0);expect(j.score).toBeGreaterThanOrEqual(0);expect(j.score).toBeLessThanOrEqual(100);for(const r of j.records){expect(matches(r.requires,j.facts)).toBe(true);expect(r.unit).toBe(kind);expect(r.domain).toBe(domain);}expect(new Set(j.contributions.map(c=>c.group)).size).toBe(j.contributions.length);for(const c of j.contributions)expect(j.records.some(r=>r.id===c.recordId&&r.contribution.delta===c.delta)).toBe(true);}
+ for(const s of reading.segments){const j=s.sectors[domain];expect(j.score!%5).toBe(0);expect(j.score).toBeGreaterThanOrEqual(0);expect(j.score).toBeLessThanOrEqual(100);for(const r of j.records){expect(matches(r.requires,j.facts)).toBe(true);expect(r.unit).toBe(kind);expect(r.domain).toBe(domain);}expect(new Set(j.contributions.map(c=>c.group)).size).toBe(j.contributions.length);for(const c of j.contributions){expect(c.recordIds.every(id=>j.records.some(r=>r.id===id))).toBe(true);expect(c.components.every(x=>j.records.some(r=>r.id===x.recordId&&r.contribution.delta===x.delta))).toBe(true);}}
 });
 it('returns different sector indices and a rounded equal-weight total, without context mutation',()=>{
  const reading=buildSectorReading(chart,'day','2026-10-23'),before=JSON.stringify(reading);expect(new Set(domains.map(d=>reading.sectors[d].score)).size).toBeGreaterThan(1);
@@ -70,14 +70,22 @@ it('different hour pillars can change natal-capacity evidence and the selected s
 it('separates the deterministic raw index from a bounded monotone display scale',()=>{
  const values=Array.from({length:101},(_,i)=>displayScore(i));
  expect(values.every((v,i)=>v>=0&&v<=100&&(i===0||v>=values[i-1]))).toBe(true);
- expect([50,55,60].map(displayScore)).toEqual([50,60,70]);
+ expect([40,45,50,55,60,65].map(displayScore)).toEqual([30,40,50,65,80,90]);
  const reading=buildSectorReading(chart,'day','2026-10-23');
- expect(reading.scoreVersion).toBe('3.0.0');
+ expect(reading.scoreVersion).toBe('4.0.0');
  for(const segment of reading.segments)for(const domain of domains.filter(d=>d!=='overall')){
   const judgment=segment.sectors[domain];
   expect(judgment.rawScore).toBe(50+Math.max(-25,Math.min(25,judgment.contributions.reduce((sum,c)=>sum+c.delta,0))));
   expect(judgment.score).toBe(displayScore(judgment.rawScore!));
  }
+});
+
+it('balances opposing selected contributions without adding the same sign twice',()=>{
+ const facts={'known.day':true,focus:'wealth','group.wealth':true,'strength.class':'weak','period.god':'편재'};
+ const judgment=judgeSector('money','day',facts),focus=judgment.contributions.find(c=>c.group==='focus')!;
+ expect(focus.components.map(c=>c.delta)).toEqual([5,-5]);
+ expect(focus.delta).toBe(0);expect(focus.recordIds).toHaveLength(2);
+ expect(judgment.rawScore).toBe(45);expect(judgment.score).toBe(40);
 });
 it('retains weighted raw and display aggregation and null uncertainty',()=>{
  for(const kind of ['day','month','year'] as const){

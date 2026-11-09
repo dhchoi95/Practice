@@ -12941,5 +12941,68 @@
     "reviewer": "implementation-author",
     "status": "author-edited-pending-independent",
     "date": "2026-11-08"
+  },
+  {
+    "key": "src/components/NatalChart.tsx",
+    "hash": "9aaa0c9b3229718d17841ecf2279567a0cc038bf0780e1d25b8e7d9d0b03888c",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/engine.ts",
+    "hash": "8962f2ae00bbd6efc682d8288c9b6fbc13d98f092abb25fc0bc6dd7278741807",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/tables.ts",
+    "hash": "33a0472d34979f049a222844032ffe907d73da243b792d953b9aacb55fea4f7c",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/types.ts",
+    "hash": "7c529939c8db48b5bc7d9fbb50bbddcb459007724bdaebfdf426bbcf23bbadbb",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/components/NatalChart.tsx",
+    "hash": "c30b1199393bcc61b0115a32d0ee1eb0e4f7d589a4281e90dae6119b33e71af6",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/engine.ts",
+    "hash": "90218a878310e72160a1b1e4d48a1c8d004f45eafec67c548eb4fb04e03057f5",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/domain/foundation/types.ts",
+    "hash": "42419cd0df689ab18a25e0e3c8329340b6de563e2e20707db8e251634398c2f5",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "src/components/NatalChart.tsx",
+    "hash": "8023d5e4bc68d636c06460f70bdb254474427f65a8de78559733c46caaddc66d",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-09"
+  },
+  {
+    "key": "src/components/NatalChart.tsx",
+    "hash": "f04c00769ad6463d60a733598ed471fc49ee3959e92de93be46f2eb5ebd1f7aa",
+    "reviewer": "implementation-author",
+    "status": "author-edited-pending-independent",
+    "date": "2026-11-09"
   }
 ]

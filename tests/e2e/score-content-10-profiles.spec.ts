@@ -22,7 +22,7 @@ test('ten synthetic natal charts produce actual six-domain UI and printable resu
   await page.getByLabel('시간 모름',{exact:true}).uncheck();await page.getByLabel('시 (0~23)',{exact:true}).fill(row.hour);await page.getByLabel('분 (0~59)',{exact:true}).fill(row.minute);await page.getByRole('button',{name:/무료로 .* 보기/}).click();
   await expect(page.locator('.natal-table')).toBeVisible();await expect(page.locator('.sector-body')).toHaveCount(6);
   await expect(page.locator('.sector-body h3')).toHaveCount(6);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  await page.locator('.natal-explanation summary').click();await page.screenshot({path:`${output}/case-${String(index+1).padStart(2,'0')}.png`,fullPage:true});
+  await page.locator('.natal-explanation summary').click();await expect(page.locator('.natal-brief-item')).toHaveCount(4);await expect(page.locator('.natal-brief-item h4')).toHaveText(['직업·일','재물','연애·관계','대인관계']);await page.screenshot({path:`${output}/case-${String(index+1).padStart(2,'0')}.png`,fullPage:true});
   summaries.push({id:`synthetic-${String(index+1).padStart(2,'0')}`,natal:await page.locator('.natal-table').innerText(),sections:await page.locator('.sector-body').allInnerTexts()});
   if(index===0)await page.pdf({path:`${output}/case-01.pdf`,format:'A4',printBackground:true});
  }

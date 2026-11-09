@@ -1,0 +1,131 @@
+{
+  "meaning": "합성 10인, 대표 오행 순서는 목·화·토·금·수. 5명 시간미상/5명 시간입력. 성별과 생일은 tests/e2e/natal-time-elements.spec.ts에 기록.",
+  "cases": [
+    {
+      "id": "A1",
+      "counts": [
+        3,
+        0,
+        3,
+        0,
+        0
+      ],
+      "hour": null
+    },
+    {
+      "id": "A2",
+      "counts": [
+        1,
+        2,
+        2,
+        0,
+        1
+      ],
+      "hour": null
+    },
+    {
+      "id": "A3",
+      "counts": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "hour": null
+    },
+    {
+      "id": "A4",
+      "counts": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "hour": null
+    },
+    {
+      "id": "A5",
+      "counts": [
+        0,
+        2,
+        2,
+        0,
+        2
+      ],
+      "hour": null
+    },
+    {
+      "id": "B1",
+      "counts": [
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "hour": {
+        "stem": 8,
+        "branch": 2
+      }
+    },
+    {
+      "id": "B2",
+      "counts": [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "hour": {
+        "stem": 4,
+        "branch": 4
+      }
+    },
+    {
+      "id": "B3",
+      "counts": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "hour": {
+        "stem": 9,
+        "branch": 7
+      }
+    },
+    {
+      "id": "B4",
+      "counts": [
+        0,
+        1,
+        3,
+        2,
+        2
+      ],
+      "hour": {
+        "stem": 9,
+        "branch": 9
+      }
+    },
+    {
+      "id": "B5",
+      "counts": [
+        0,
+        3,
+        0,
+        3,
+        2
+      ],
+      "hour": {
+        "stem": 6,
+        "branch": 0
+      }
+    }
+  ],
+  "independentCheck": "시간을 입력한 다섯 사례의 일주를 sxtwl 2.0.7로, 시주는 해당 일주의 표준시 자정 경계식으로 대조. 독립 명리학 승인 아님."
+}

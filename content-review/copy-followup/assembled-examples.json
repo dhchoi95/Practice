@@ -20,7 +20,7 @@
       {
         "domain": "overall",
         "title": "익숙한 방법의 작은 변화",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:day:overall:day-clash",
@@ -252,7 +252,7 @@
       {
         "domain": "business",
         "title": "바뀐 요구에 맞출 때",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:day:business:day-clash",
@@ -373,7 +373,7 @@
       {
         "domain": "study",
         "title": "설명을 듣고 내 말로 답하는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:study:agreement",
@@ -639,7 +639,7 @@
       {
         "domain": "business",
         "title": "함께 하기로 한 일의 담당과 기한",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:month:business:detail-12",
@@ -717,7 +717,7 @@
       {
         "domain": "overall",
         "title": "내가 만족할 선택을 찾는 해",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:year:overall:wealth",
@@ -849,7 +849,7 @@
       {
         "domain": "money",
         "title": "수입과 생활비를 나누어 보는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:money:wealth",
@@ -1047,7 +1047,7 @@
       {
         "domain": "business",
         "title": "내 일이 필요한 곳을 찾는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:business:wealth",
@@ -1615,7 +1615,7 @@
       {
         "domain": "overall",
         "title": "고른 일을 끝까지 해보는 달",
-        "score": 50,
+        "score": 45,
         "paragraphs": [
           {
             "recordId": "sector:month:overall:wealth",
@@ -1765,7 +1765,7 @@
       {
         "domain": "money",
         "title": "이번 달 쓸 수 있는 돈",
-        "score": 50,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:month:money:wealth",
@@ -2269,7 +2269,7 @@
       {
         "domain": "money",
         "title": "성과를 수입으로 잇기 전에 비용을 보는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:money:produce-trade",
@@ -2562,7 +2562,7 @@
       {
         "domain": "business",
         "title": "결과와 실제 수요를 연결하는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:business:produce-trade",
@@ -3092,7 +3092,7 @@
       {
         "domain": "study",
         "title": "익숙한 풀이를 다시 보는 달",
-        "score": 55,
+        "score": 60,
         "paragraphs": [
           {
             "recordId": "sector:month:study:day-clash",
@@ -3486,7 +3486,7 @@
       {
         "domain": "overall",
         "title": "자기 방식과 다른 의견을 함께 보는 해",
-        "score": 50,
+        "score": 45,
         "paragraphs": [
           {
             "recordId": "sector:year:overall:peer",
@@ -3552,7 +3552,7 @@
       {
         "domain": "study",
         "title": "나에게 맞는 속도를 찾는 해",
-        "score": 50,
+        "score": 40,
         "paragraphs": [
           {
             "recordId": "sector:year:study:peer",
@@ -3929,7 +3929,7 @@
       {
         "domain": "overall",
         "title": "익숙한 방법의 작은 변화",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:day:overall:day-clash",
@@ -4161,7 +4161,7 @@
       {
         "domain": "business",
         "title": "바뀐 요구에 맞출 때",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:day:business:day-clash",
@@ -4531,7 +4531,7 @@
       {
         "domain": "business",
         "title": "함께 하기로 한 일의 담당과 기한",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:month:business:detail-12",
@@ -4609,7 +4609,7 @@
       {
         "domain": "overall",
         "title": "내가 만족할 선택을 찾는 해",
-        "score": 50,
+        "score": 55,
         "paragraphs": [
           {
             "recordId": "sector:year:overall:wealth",
@@ -4741,7 +4741,7 @@
       {
         "domain": "money",
         "title": "수입과 생활비를 나누어 보는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:money:wealth",
@@ -4939,7 +4939,7 @@
       {
         "domain": "business",
         "title": "내 일이 필요한 곳을 찾는 해",
-        "score": 60,
+        "score": 65,
         "paragraphs": [
           {
             "recordId": "sector:year:business:wealth",
